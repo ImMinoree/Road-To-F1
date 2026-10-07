@@ -1,0 +1,21 @@
+# Unreal Engine generated files
+RoadToF1/Binaries/
+RoadToF1/DerivedDataCache/
+RoadToF1/Intermediate/
+RoadToF1/Saved/
+
+# Visual Studio
+RoadToF1/.vs/
+RoadToF1/*.VC.db
+RoadToF1/*.VC.opendb
+RoadToF1/*.suo
+RoadToF1/*.user
+RoadToF1/*.sln
+RoadToF1/*.slnx
+
+# IDEs
+RoadToF1/.idea/
+
+# OS junk
+.DS_Store
+Thumbs.db
