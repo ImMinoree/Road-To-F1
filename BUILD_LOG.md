@@ -1,0 +1,58 @@
+# RoadToF1 build log
+
+## 2026-10-07 — Phase 1: verified baseline and editing route
+- Branch: `milestone-1-race-loop`, tracking `origin/milestone-1-race-loop` at `00d4d94`.
+- Installed Unreal: 5.8.3, changelist 58210709.
+- No AGENTS.md files found in the repository or applicable parent directories.
+- Existing untracked Blueprints, RoadToF1 map, external actors, and external objects are preserved.
+- Vehicle template C++ module and time-trial variant exist. No new race-loop implementation yet.
+- Computer Use enumerates Unreal but both fresh capture attempts failed (`FrameArrived timed out` / `window capture timed out`). No UI edits performed.
+- Direct project filesystem access works. Investigating read-only commandlet asset inspection and native build/test route.
+- Prior log remains at `C:\Users\GBURG-4\Documents\Codex\2026-10-07\referenced-chatgpt-conversation-this-is-an\outputs\BUILD_LOG.md`; this repository log continues it.
+
+## Phase 2: saved-asset inspection and implementation
+- Read-only Unreal Python commandlet successfully loaded the saved RacePrototype map; 0 errors in the successful inspection.
+- Saved BP_StartFinish: `(4489.925, 601.219, 20)`, StartFinishTrigger extent `(100,1200,250)`, facing approximately -Y. PlayerStart at `(4450,0,102)`, facing +Y. `CompletedLaps` is absent in the saved asset.
+- Landscape spline meshes confirm a circular 4500 cm radius circuit. Configured CP1 `(0,4500,100)` facing -X, CP2 `(-4500,0,100)` facing -Y, CP3 `(0,-4500,100)` facing +X.
+- Added deterministic race state, forward swept gate detection, map-scoped runtime integration, native UMG HUD, timers, finish state, F5/button restart, and visible gate markers. No Content asset writes.
+- Inspection initially encountered Zen startup failure; successful commandlets use `InstalledNoZenLocalFallback`. A spline-property inspection attempt failed, then was corrected to use the supported spline-mesh API.
+- Initial sandboxed build hit an access denial while backing up UBT's default log. Retried with approved build access and a workspace log.
+- First isolated editor build succeeded in 142.30 seconds. Build/test copy: `D:\Boring\RaceValidation\RaceLoop-20261007` (copied Content, not linked to originals).
+- Final build adds PIE integration tests and fixes explicit HUD height plus teleport detection. Tests are pending; no gameplay success claimed yet.
+- Existing open editor still has the old DLL loaded. No editor shutdown, hot reload, commit, or push performed.
+
+## Phase 3: automated validation passed
+- Final isolated editor build: **Succeeded**, 100.96 seconds.
+- Unreal automation report: **3 succeeded, 0 failed, 0 warnings/errors in the tests**.
+- `RoadToF1.RaceLoop.GateGeometry`: passed swept forward/high-speed/rotated gates and reverse/lateral/vertical/repeated-sample rejection.
+- `RoadToF1.RaceLoop.Rules`: passed ordered checkpoints, skipped/repeated/reverse rejection, three-lap completion, lap records, frozen timers, reset and second race.
+- `RoadToF1.RaceLoop.PrototypePIE`: passed in the saved RacePrototype map copy. Verified existing trigger discovery, HUD creation, scripted vehicle-position crossings, finish, frozen total time, and restart to PlayerStart.
+- These are automated/scripted integration tests. Manual driving and HUD visual appearance have not been validated.
+- Machine-readable result: `TestResults/RaceLoop-20261007.json`. Full logs/report remain in `D:\Boring\RaceValidation\RaceLoop-20261007`.
+- Google Drive plugin created and readback-verified a native build-log document in the ChatGPT folder: https://docs.google.com/document/d/1G50AjsZ8HPWBww885N6fpBy7-2dn4fBq4sYXDAxsy_k/edit
+- Independent rendered screenshot instance launched; shaders compiling. Screenshot still pending.
+- Asked user to save unsaved assets and close the original Unreal editor before rebuilding the actual project's DLL. Capture failure prevents checking unsaved state safely. Original project source/config is updated; original loaded binary remains unchanged.
+
+## Phase 4: rendered HUD inspection
+- Standalone game from the isolated copy successfully rendered the prototype at 1280 × 720 using the existing PC shader cache.
+- Captured and visually inspected `TestResults/RaceHUD.png`: waiting-state lap/checkpoint labels, lap/total/last-lap timers, instructions and restart button are visible without clipping. The template speed/gear HUD remains visible.
+- Transient engine texture-loading messages were hidden only in the screenshot instance using DisableAllScreenMessages; the original Blueprint print behavior and project settings are untouched.
+- Rendering used the existing sports car placeholder. This phase does not claim kart artwork/handling or manual driving validation.
+- Closed the separate screenshot instances after capture. Kept the original editor running.
+- Original BP_StartFinish and RacePrototype hashes match the pre-test copied assets. `git diff --check` passes. Requested branch remains active.
+- **Pending:** user saves/closes original Unreal, then actual-project build and reopening to load the new classes. Source/config changes, docs and tests remain uncommitted on milestone-1-race-loop.
+
+## Phase 5: actual project built and tested
+- User closed Unreal; process check confirmed neither UnrealEditor nor UnrealEditor-Cmd was running before the build.
+- Built the actual `RoadToF1.uproject` on `milestone-1-race-loop`: **Succeeded**, 70.41 seconds. Native module DLL updated successfully.
+- Ran the complete race-loop automation suite against the actual saved project: **3 succeeded, 0 failed, 0 test warnings/errors**, process exit 0.
+- Actual-project report: `TestResults/RaceLoop-ActualProject-20261007.json`; full logs/report in `RoadToF1/Saved/Logs/RaceLoopBuild.log`, `RaceLoopActualTests.log`, and `RoadToF1/Saved/RaceLoopActualReport`.
+- Requested reopening the actual editor directly on `/Game/RoadToF1/RacePrototype` to load the new module. Manual driving validation remains the next step.
+- Reopen verified: UnrealEditor process 18740 is responsive; startup log confirms engine initialization and loading the actual RacePrototype map. Start/finish Blueprint and map asset hashes are unchanged across the actual-project tests. Google Doc log updated and readback-verified.
+- No commits, pushes, or Content asset edits performed. Existing untracked work remains preserved.
+
+## Phase 6: version-control handoff
+- User requested committing and pushing the completed work to GitHub.
+- Included race-loop source/config, the existing prototype Blueprint/map with all World Partition external actors/objects, documentation, inspection tool, test reports, and HUD screenshot.
+- Validation carried forward: actual-project build succeeded; all three automation suites passed with zero test warnings/errors; `git diff --check` passes.
+- Target: `origin/milestone-1-race-loop`. Git history records the commit and remote synchronization.
