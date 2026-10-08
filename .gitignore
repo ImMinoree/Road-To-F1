@@ -19,3 +19,11 @@ RoadToF1/.idea/
 # OS junk
 .DS_Store
 Thumbs.db
+
+# Local engine logs and intermediate validation output
+TestResults/**/*.log
+TestResults/DriverAI/Automation/
+TestResults/DriverAI/AutomationFixed/
+TestResults/DriverAI/build*.json
+TestResults/DriverAI/Grid.png
+TestResults/DriverAI/DriverCloseup.png

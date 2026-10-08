@@ -120,3 +120,9 @@
 - Include driver source/Unreal assets, native AI director, 20-slot grid, 57/55 km/h limits, position HUD/reset, import/review tools and final successful test report/screenshots.
 - Final validation: all five automation suites passed with zero errors/warnings; all 19 AI completed three ordered laps; all 20 suit colours distinct and six driver meshes loaded per racer.
 - Keep unrelated VehicleBasic external-actor edits and raw engine logs local. Target: origin/milestone-1-race-loop.
+
+## 2026-10-08 — remaining local changes handoff
+- User reported changes remaining after the driver/AI push. Verified all source commits were already synchronized with GitHub.
+- Remaining tracked changes are two pre-existing VehicleBasic external-actor assets; include their current saved versions to preserve the user's map edits in GitHub.
+- Added ignore rules for raw engine logs and intermediate driver/AI build reports/screenshots. These files remain on disk; final test report and final screenshots remain tracked.
+- No gameplay source changes. Existing five-suite validation applies to the driver/AI implementation; these older map asset edits were not separately gameplay-tested.
