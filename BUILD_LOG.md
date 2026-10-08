@@ -104,3 +104,19 @@
 - Validation: native build succeeded; four Unreal automation suites passed, zero errors (one unrelated network timeout warning); 48 driven grass-to-road recovery cases and 16,840 triangle geometry checks passed.
 - Existing changes to two old VehicleBasic external actors remain local and preserved, outside this implementation commit.
 - Target branch: origin/milestone-1-race-loop. Next phase: seated helmeted driver model using the supplied image as visual reference, followed by AI opponents.
+
+## 2026-10-08 — seated drivers and 19 AI opponents
+- Added original F1-inspired seated driver art: suit/panels, gloves, boots, full-face helmet and curved visor. Six imported mesh batches and runtime livery parameters; 20 distinct suit colours verified. Driver assets included in cooking. Static seated prototype, without a skeletal animation rig.
+- Expanded the open-ended starting boxes to 20 slots on the straight. Player starts P20; native KartRaceDirector spawns 19 opponents. Player cap 57 km/h, AI cap 55 km/h; AI slow in corners, avoid traffic and reverse to recover from blocked movement.
+- Opponents wait for player acceleration. Position HUD and retained finish order added; F5 resets the complete field. Ordered gate rules/timers retained.
+- Full-race test first found route switching at nearby track sections and bunching. Restricted AI tracking to contiguous route samples, retained lane choices, added swept recovery and static-world ground probes so karts cannot serve as ground for each other.
+- Final build succeeded (59.25s); final asset import succeeded. All five automation suites passed with zero errors/warnings. All 19 AI physically drove three ordered laps within 600 simulated seconds; speed limits, 20 unique colours, six loaded meshes per racer, field/grid reset and previous handling/rejoin/rules regressions passed.
+- Visually inspected GridFinal.png and DriverFinal.png. Evidence: TestResults/DriverAI/RESULTS.md and AutomationFinal/index.json. Human player's kart is parked off-track during autonomous race verification; human competitive race remains the next driving check.
+- User saved/closed Unreal before edits. Backups in D:/Boring/RaceValidation/DriverAI-Before. Original RacePrototype and user-modified VehicleBasic actors preserved. Reopening SouthGarda_KartRace for user testing.
+- This phase is saved locally; no commit or push performed.
+
+## 2026-10-08 — driver and AI GitHub handoff
+- User requested pushing the seated-driver and 19-opponent phase.
+- Include driver source/Unreal assets, native AI director, 20-slot grid, 57/55 km/h limits, position HUD/reset, import/review tools and final successful test report/screenshots.
+- Final validation: all five automation suites passed with zero errors/warnings; all 19 AI completed three ordered laps; all 20 suit colours distinct and six driver meshes loaded per racer.
+- Keep unrelated VehicleBasic external-actor edits and raw engine logs local. Target: origin/milestone-1-race-loop.

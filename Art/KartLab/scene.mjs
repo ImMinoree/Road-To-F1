@@ -48,7 +48,37 @@ tube(drive,'Drive chain',[[.23,.14,.57],[.23,.2,.4],[.23,.29,.4],[.23,.22,.72],[
 box(drive,'Fuel tank',[0,.26,-.23],[.18,.18,.24],white);rod(drive,'Fuel cap',[0,.35,-.23],[0,.38,-.23],.025,black);
 box(drive,'Water radiator',[-.31,.43,.3],[.045,.32,.22],alloy);for(let i=0;i<15;i++)box(drive,'Radiator fin',[-.337,.28+i*.02,.3],[.006,.008,.205],dark);
 tube(drive,'Coolant hose',[[-.32,.56,.3],[-.12,.52,.46],[.29,.47,.48]],.012,black);
+const driver=part('Seated racing driver');driver.add(createDriver());
 kart.userData.parts=parts;return kart;}
+const suit=material('Suit',0xc81d31,0,.78),accent=material('SuitAccent',0xf2ece2,0,.7),helmet=material('Helmet',0xe7e8ec,.2,.23),visor=material('Visor',0x12212f,.65,.18),boots=material('Boots',0x202329,0,.75),gloves=material('Gloves',0xf1eee5,0,.68);
+export function createDriver(){
+const g=new T.Group();g.name='SeatedDriver';
+const ellipsoid=(name,p,s,m)=>{const o=mesh(new T.SphereGeometry(1,32,20),m,p,g,name);o.scale.set(...s);return o;};
+const points=[[.14,.3],[.16,.36],[.15,.48],[.19,.6],[.155,.66]].map(([x,y])=>new T.Vector2(x,y));
+const torso=mesh(new T.LatheGeometry(points,32),suit,[0,0,.25],g,'Fitted racing suit torso');torso.scale.z=.62;
+ellipsoid('Suit shoulders',[0,.63,.26],[.19,.08,.105],suit);ellipsoid('Seated hips',[0,.3,.23],[.17,.095,.14],suit);
+rod(g,'Padded collar',[0,.665,.26],[0,.705,.26],.066,accent);
+for(const side of [-1,1]){
+const shoulder=[side*.17,.615,.24],elbow=[side*.24,.445,-.02],hand=[side*.132,.58,-.24];
+rod(g,'Suit upper sleeve',shoulder,elbow,.059,suit);ellipsoid('Elbow',elbow,[.061,.065,.062],suit);
+rod(g,'Suit forearm',elbow,hand,.047,suit);ellipsoid('Racing glove',hand,[.043,.042,.05],gloves);
+rod(g,'Sleeve accent',[side*.204,.57,.165],[side*.252,.465,.015],.012,accent);
+const hip=[side*.105,.3,.19],knee=[side*.18,.32,-.22],ankle=[side*.2,.185,-.63];
+rod(g,'Bent suit thigh',hip,knee,.075,suit);ellipsoid('Suit knee',knee,[.075,.073,.081],suit);
+rod(g,'Suit shin',knee,ankle,.058,suit);ellipsoid('Racing boot',[side*.2,.165,-.68],[.059,.053,.115],boots);
+rod(g,'Leg seam',[side*.218,.315,-.22],[side*.235,.21,-.58],.009,accent);
+rod(g,'Suit side stripe',[side*.145,.36,.19],[side*.172,.59,.19],.013,accent);
+}
+ellipsoid('Full-face helmet',[0,.845,.245],[.137,.162,.15],helmet);
+const v=mesh(new T.SphereGeometry(.153,40,16,Math.PI,Math.PI,Math.PI*.34,Math.PI*.23),visor,[0,.845,.245],g,'Curved dark visor');v.scale.set(.93,1.04,1.02);
+ellipsoid('Helmet chin guard',[0,.764,.166],[.12,.047,.09],helmet);
+rod(g,'Helmet crown stripe',[0,.993,.2],[0,.988,.29],.017,accent);
+box(g,'Suit chest panel',[0,.565,.135],[.13,.09,.008],accent);box(g,'Chest inset',[0,.565,.126],[.082,.045,.009],suit);
+box(g,'Suit waist band',[0,.36,.141],[.22,.025,.01],accent);
+rod(g,'Suit front zip',[0,.38,.14],[0,.51,.14],.004,boots);
+for(const side of [-1,1])ellipsoid('Contrasting shoulder panel',[side*.105,.655,.172],[.045,.025,.01],accent);
+return g;
+}
 const asphalt=material('Asphalt',0x666968,0,.92), grass=material('Grass',0x61744a,0,.97), curbBlue=material('Kerb_blue',0x326dab,0,.7), building=material('Concrete',0xb6b7ac,0,.86), roof=material('Roof',0x727c83,.5,.5), leaves=material('Foliage',0x344e2a,0,.95), bark=material('Bark',0x64543b,0,.9), gravel=material('Gravel',0xb4aa91,0,.95), glass=material('Glass',0x32566b,.3,.2);
 // Art blockout, not a survey or a homologated reconstruction. Coordinates in metres.
 export const route=[[-135,-52],[85,-52],[130,-43],[145,-18],[125,-5],[70,-12],[22,-15],[-15,-5],[-20,14],[8,23],[72,18],[120,26],[138,43],[112,57],[63,52],[37,34],[8,38],[-13,58],[-45,61],[-67,42],[-91,24],[-122,32],[-143,21],[-147,0],[-123,-10],[-84,-1],[-48,-16],[-73,-33],[-128,-27],[-151,-37]];
@@ -74,7 +104,7 @@ for(let x=-73;x<97;x+=8){box(group,'Garage shutter',[x,2,-63.45],[5.8,3.7,.1],ro
 box(group,'Grandstand back',[0,3,-85],[110,6,1],building);for(let i=0;i<7;i++){box(group,'Grandstand terrace',[0,.5+i*.6,-79-i*.9],[110,1+i*1.2,.9],building);for(let x=-52;x<53;x+=3)box(group,'Spectator seats',[x,1.1+i*.6,-79-i*.9],[2,.3,.6],i%2?curbBlue:white);}
 box(group,'Grandstand canopy',[0,6.7,-82],[114,.25,11],roof);for(const x of [-54,-27,0,27,54])rod(group,'Canopy column',[x,0,-86],[x,6.7,-86],.16,alloy);
 for(let i=0;i<20;i++){const x=-125+i*13;box(group,'Team tent',[x,2,-115],[9,4,6],i%3?white:curbBlue);box(group,'Service truck',[x,1.4,-126],[8,2.8,2.6],white);}
-for(let row=0;row<6;row++)for(const lane of [-1,1]){const x=-76-row*6,z=-52+lane*2;box(group,'Grid position rear line',[x,.029,z],[.06,.001,1.3],paint);for(const side of [-1,1])box(group,'Grid position side line',[x+.85,.029,z+side*.65],[1.7,.001,.06],paint);}
+for(const slot of startingGrid(c)){const marker=new T.Group();marker.position.set(slot.location[0]/100,.029,slot.location[1]/100);marker.rotation.y=-slot.yaw*Math.PI/180;group.add(marker);box(marker,'Grid position rear line',[-1,0,0],[.06,.001,1.7],paint);for(const side of [-1,1])box(marker,'Grid position side line',[0,0,side*.85],[2,.001,.06],paint);}
 const finish=c.getPointAt(.06),finishDir=c.getTangentAt(.06),finishNormal=new T.Vector3(-finishDir.z,0,finishDir.x);
 for(let row=0;row<2;row++)for(let column=0;column<12;column++){const p=finish.clone().addScaledVector(finishDir,(row-.5)*.6).addScaledVector(finishNormal,(column-5.5)*.75);const o=box(group,'Finish checker',[p.x,.03,p.z],[.6,.001,.75],(row+column)%2?paint:black);o.rotation.y=Math.atan2(-finishDir.z,finishDir.x);}
 for(const z of [-58,-46])rod(group,'Start gantry post',[-55,0,z],[-55,6,z],.18,roof);box(group,'Start gantry',[-55,6,-52],[.45,.8,13],white);
@@ -86,3 +116,4 @@ for(let i=0;i<20;i++){const x=-320+i*35;const hill=mesh(new T.SphereGeometry(1,2
 // The first circuit uses a continuous kerb boundary. Omit the previous sparse
 // barrier blocks until a proper safety-barrier layout is authored.
 group.userData.routeLength=c.getLength();group.userData.start=[-75,.5,-52];return group;}
+export function startingGrid(c=trackCurve()){return Array.from({length:20},(_,i)=>{const t=(.06-(8.5+Math.floor(i/2)*5)/c.getLength()+1)%1,p=c.getPointAt(t),d=c.getTangentAt(t),n=new T.Vector3(-d.z,0,d.x);p.addScaledVector(n,i%2?2:-2);return{location:[p.x*100,p.z*100,24.5],yaw:Math.atan2(d.z,d.x)*180/Math.PI};});}

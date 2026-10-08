@@ -1,0 +1,333 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "867D3D7E41D31C0F44A69DA571CC42AC",
+			"instanceName": "DESKTOP-ERDHE74-14724",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.08-10.56.54",
+	"succeeded": 5,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 94.141098022460938,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "AIRacePIE",
+			"fullTestPath": "RoadToF1.Kart.AIRacePIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"867D3D7E41D31C0F44A69DA571CC42AC"
+			],
+			"duration": 88.908927917480469,
+			"dateTime": "2026.10.08-10.55.20",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 45.1, pos X=17.031 Y=2030.207 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 52.1, pos X=1332.306 Y=-1480.280 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 13.5, pos X=-13112.078 Y=-3063.434 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 41.6, pos X=-4260.152 Y=-5384.211 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 19.7, pos X=14064.958 Y=-1719.206 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 37.9, pos X=13063.675 Y=-772.007 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 40.1, pos X=5964.943 Y=-1465.446 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 35.4, pos X=-5982.299 Y=-2708.760 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 54.6, pos X=8785.094 Y=5630.015 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 31.1, pos X=14106.731 Y=-2874.013 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 54.8, pos X=-7305.080 Y=-5686.024 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 9.2, pos X=-5361.875 Y=-1568.619 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 54.4, pos X=9960.406 Y=-4664.235 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 43.4, pos X=-1644.705 Y=-5014.545 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 46.3, pos X=4361.216 Y=-4907.417 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 12.6, pos X=13568.810 Y=-4132.073 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 4.3, pos X=-12751.328 Y=-3095.323 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 21.8, pos X=-5903.048 Y=-1228.006 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 13.5, pos X=-5507.812 Y=-1153.612 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-10.56.49"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "SouthGardaPIE",
+			"fullTestPath": "RoadToF1.Kart.SouthGardaPIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"867D3D7E41D31C0F44A69DA571CC42AC"
+			],
+			"duration": 2.9243888854980469,
+			"dateTime": "2026.10.08-10.56.49",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "GateGeometry",
+			"fullTestPath": "RoadToF1.RaceLoop.GateGeometry",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"867D3D7E41D31C0F44A69DA571CC42AC"
+			],
+			"duration": 0.0081933997571468353,
+			"dateTime": "2026.10.08-10.56.52",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "PrototypePIE",
+			"fullTestPath": "RoadToF1.RaceLoop.PrototypePIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"867D3D7E41D31C0F44A69DA571CC42AC"
+			],
+			"duration": 2.2927837371826172,
+			"dateTime": "2026.10.08-10.56.52",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "Rules",
+			"fullTestPath": "RoadToF1.RaceLoop.Rules",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"867D3D7E41D31C0F44A69DA571CC42AC"
+			],
+			"duration": 0.0068078003823757172,
+			"dateTime": "2026.10.08-10.56.54",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

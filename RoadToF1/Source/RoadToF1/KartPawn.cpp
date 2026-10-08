@@ -6,6 +6,7 @@
 #include "Engine/CollisionProfile.h"
 #include "Engine/StaticMesh.h"
 #include "Engine/World.h"
+#include "Materials/MaterialInstanceDynamic.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "InputCoreTypes.h"
 #include "UObject/ConstructorHelpers.h"
@@ -41,6 +42,50 @@ AKartPawn::AKartPawn()
     Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("FollowCamera"));
     Camera->SetupAttachment(Boom);
     Camera->FieldOfView = 80;
+    const TCHAR* DriverNames[] = {TEXT("Suit"), TEXT("SuitAccent"), TEXT("Helmet"), TEXT("Visor"), TEXT("Boots"), TEXT("Gloves")};
+    for (const TCHAR* Name : DriverNames)
+    {
+        UStaticMeshComponent* Piece = CreateDefaultSubobject<UStaticMeshComponent>(*FString::Printf(TEXT("Driver_%s"), Name));
+        Piece->SetupAttachment(Body);
+        Piece->SetRelativeLocation(FVector(0, 0, -22));
+        Piece->SetRelativeRotation(FRotator(0, 90, 0));
+        Piece->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+        DriverArt.Add(Piece);
+    }
+}
+
+void AKartPawn::BeginPlay()
+{
+    Super::BeginPlay();
+    for (UStaticMeshComponent* Piece : DriverArt)
+    {
+        const FString Name = Piece->GetName();
+        Piece->SetStaticMesh(LoadObject<UStaticMesh>(nullptr, *FString::Printf(TEXT("/Game/RoadToF1/Art/DriversV01/Meshes/%s.%s"), *Name, *Name)));
+    }
+    ConfigureRacer(0, false);
+}
+
+void AKartPawn::ConfigureRacer(int32 Index, bool bOpponent)
+{
+    SpeedLimitKmh = bOpponent ? 55 : 57;
+    SuitColor = FLinearColor::MakeFromHSV8((Index * 97) % 256, 210, 235);
+    const FLinearColor Accent = FLinearColor::MakeFromHSV8((Index * 97 + 100) % 256, Index % 2 ? 180 : 30, 255);
+    for (UStaticMeshComponent* Piece : DriverArt)
+        for (int32 Slot = 0; Slot < Piece->GetNumMaterials(); ++Slot)
+            if (UMaterialInstanceDynamic* Mat = Piece->CreateAndSetMaterialInstanceDynamic(Slot))
+                Mat->SetVectorParameterValue(TEXT("LiveryColor"), Piece->GetName() == TEXT("Driver_Suit") ? SuitColor : Accent);
+    if (bOpponent)
+    {
+        Boom->SetComponentTickEnabled(false);
+        Camera->Deactivate();
+    }
+}
+
+int32 AKartPawn::GetDriverMeshCount() const
+{
+    int32 Count = 0;
+    for (const UStaticMeshComponent* Piece : DriverArt) if (Piece->GetStaticMesh()) ++Count;
+    return Count;
 }
 
 void AKartPawn::SetupPlayerInputComponent(UInputComponent* Input)
@@ -84,7 +129,8 @@ void AKartPawn::Tick(float DeltaSeconds)
         FCollisionQueryParams Query(SCENE_QUERY_STAT(KartGround), false, this);
         FHitResult Ground;
         const FVector Position = GetActorLocation();
-        bool bGrounded = GetWorld()->LineTraceSingleByChannel(Ground, Position + FVector(0, 0, 50), Position - FVector(0, 0, 65), ECC_Visibility, Query)
+        const FCollisionObjectQueryParams GroundObjects(ECC_WorldStatic);
+        bool bGrounded = GetWorld()->LineTraceSingleByObjectType(Ground, Position + FVector(0, 0, 50), Position - FVector(0, 0, 65), GroundObjects, Query)
             && Ground.Normal.Z > .55f && Position.Z - Ground.ImpactPoint.Z < 55;
         // Support the whole footprint, including its next movement. A centre-only
         // trace lowered the box onto grass while its nose still touched asphalt,
@@ -98,7 +144,7 @@ void AKartPawn::Tick(float DeltaSeconds)
             {
                 const FVector Probe = Position + Ahead + GetActorForwardVector() * X + GetActorRightVector() * Y;
                 FHitResult Support;
-                if (GetWorld()->LineTraceSingleByChannel(Support, Probe + FVector(0, 0, 40), Probe - FVector(0, 0, 65), ECC_Visibility, Query)
+                if (GetWorld()->LineTraceSingleByObjectType(Support, Probe + FVector(0, 0, 40), Probe - FVector(0, 0, 65), GroundObjects, Query)
                     && Support.Normal.Z > .55f && Support.ImpactPoint.Z <= Position.Z - 22 + 12)
                     SupportHeight = FMath::Max(SupportHeight, Support.ImpactPoint.Z);
             }
@@ -115,7 +161,7 @@ void AKartPawn::Tick(float DeltaSeconds)
             if (bBrake || (Speed * Throttle < 0)) Speed = FMath::FInterpConstantTo(Speed, 0.f, Dt, 1500.f);
             else if (!FMath::IsNearlyZero(Throttle)) Speed += Throttle * 300.f * Dt;
             else Speed = FMath::FInterpConstantTo(Speed, 0.f, Dt, 180.f);
-            Speed = FMath::Clamp(Speed, -400.f, 55.f / .036f);
+            Speed = FMath::Clamp(Speed, -400.f, SpeedLimitKmh / .036f);
             const float DesiredSteering = Right - Left;
             SmoothedSteering = FMath::FInterpTo(SmoothedSteering, DesiredSteering, Dt, FMath::IsNearlyZero(DesiredSteering) ? 5.f : 4.f);
             const float SteeringAngle = FMath::DegreesToRadians(SmoothedSteering * 22.f / (1.f + FMath::Abs(Speed) / 1400.f));

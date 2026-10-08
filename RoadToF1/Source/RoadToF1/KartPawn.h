@@ -11,12 +11,17 @@ class ROADTOF1_API AKartPawn : public APawn
     GENERATED_BODY()
 public:
     AKartPawn();
+    virtual void BeginPlay() override;
     virtual void Tick(float DeltaSeconds) override;
     virtual void SetupPlayerInputComponent(UInputComponent* Input) override;
     virtual FVector GetVelocity() const override { return GetActorForwardVector() * Speed; }
     void ResetKart();
     void SetDriveInput(float Throttle, float Steering, bool Brake = false);
     float GetSpeedKmh() const { return Speed * .036f; }
+    void ConfigureRacer(int32 Index, bool bOpponent);
+    float GetSpeedLimitKmh() const { return SpeedLimitKmh; }
+    FLinearColor GetSuitColor() const { return SuitColor; }
+    int32 GetDriverMeshCount() const;
 private:
     void BrakePressed() { bBrake = true; }
     void BrakeReleased() { bBrake = false; }
@@ -24,6 +29,9 @@ private:
     UPROPERTY(VisibleAnywhere) TObjectPtr<class USpringArmComponent> Boom;
     UPROPERTY(VisibleAnywhere) TObjectPtr<class UCameraComponent> Camera;
     UPROPERTY(VisibleAnywhere) TArray<TObjectPtr<class UStaticMeshComponent>> Art;
+    UPROPERTY(VisibleAnywhere) TArray<TObjectPtr<class UStaticMeshComponent>> DriverArt;
+    float SpeedLimitKmh = 57;
+    FLinearColor SuitColor = FLinearColor::Red;
     float Speed = 0;
     float VerticalSpeed = 0;
     float SmoothedSteering = 0;

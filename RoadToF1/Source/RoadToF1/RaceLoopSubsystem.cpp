@@ -2,6 +2,7 @@
 #include "RaceLoopWidget.h"
 #include "RaceTrackGate.h"
 #include "KartPawn.h"
+#include "KartRaceDirector.h"
 #include "RoadToF1.h"
 #include "Components/BoxComponent.h"
 #include "Components/InputComponent.h"
@@ -132,7 +133,7 @@ void URaceLoopSubsystem::AttachPlayer()
         if (RaceWidget)
         {
             RaceWidget->AddToPlayerScreen(10);
-            RaceWidget->SetDesiredSizeInViewport(FVector2D(420, GetWorld()->GetMapName().EndsWith(TEXT("SouthGarda_KartRace")) ? 510 : 420));
+            RaceWidget->SetDesiredSizeInViewport(FVector2D(420, GetWorld()->GetMapName().EndsWith(TEXT("SouthGarda_KartRace")) ? 550 : 420));
             RaceWidget->SetPositionInViewport(FVector2D(28, 28));
         }
     }
@@ -217,6 +218,7 @@ void URaceLoopSubsystem::RestartRace()
         }
     }
     UE_LOG(LogRoadToF1, Display, TEXT("Race reset: timing and checkpoint progress cleared, vehicle returned to PlayerStart."));
+    if (AKartRaceDirector* Director = Cast<AKartRaceDirector>(UGameplayStatics::GetActorOfClass(GetWorld(), AKartRaceDirector::StaticClass()))) Director->ResetField();
 }
 
 void URaceLoopSubsystem::Deinitialize()

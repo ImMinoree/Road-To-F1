@@ -1,6 +1,7 @@
 #include "RaceLoopWidget.h"
 #include "RaceLoopSubsystem.h"
 #include "KartPawn.h"
+#include "KartRaceDirector.h"
 #include "Kismet/GameplayStatics.h"
 #include "Blueprint/WidgetTree.h"
 #include "Components/Border.h"
@@ -52,6 +53,7 @@ void URaceLoopWidget::NativeOnInitialized()
     AddLine(Lines, TEXT("Pass checkpoints in order. Follow the green gate."), 14);
     if (bKartTrack)
     {
+        Position = AddLine(Lines, TEXT("Position 20 / 20"), 20);
         Speed = AddLine(Lines, TEXT("0 km/h"), 20);
         AddLine(Lines, TEXT("W: accelerate | S: brake / reverse\nA/D: steer | Space: brake | F5: restart"), 14);
     }
@@ -71,6 +73,9 @@ void URaceLoopWidget::NativeTick(const FGeometry& Geometry, float DeltaTime)
     if (!Race || !Status) return;
     const FRaceProgress& P = Race->GetProgress();
     const double Now = GetWorld()->GetTimeSeconds();
+    if (Position)
+        if (const AKartRaceDirector* Director = Cast<AKartRaceDirector>(UGameplayStatics::GetActorOfClass(GetWorld(), AKartRaceDirector::StaticClass())))
+            Position->SetText(FText::FromString(FString::Printf(TEXT("Position %d / 20"), Director->GetPlayerPlace())));
     if (Speed)
         if (const AKartPawn* Kart = Cast<AKartPawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0)))
             Speed->SetText(FText::FromString(FString::Printf(TEXT("%d km/h"), FMath::RoundToInt(FMath::Abs(Kart->GetSpeedKmh())))));
