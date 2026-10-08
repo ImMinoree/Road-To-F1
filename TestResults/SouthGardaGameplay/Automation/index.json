@@ -1,0 +1,1170 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "5B80560C4ACA2D75F0D4FF811A386025",
+			"instanceName": "DESKTOP-ERDHE74-8924",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.08-07.26.06",
+	"succeeded": 3,
+	"succeededWithWarnings": 0,
+	"failed": 1,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 17.807853698730469,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "SouthGardaPIE",
+			"fullTestPath": "RoadToF1.Kart.SouthGardaPIE",
+			"tags": [],
+			"state": "Fail",
+			"deviceInstance": [
+				"5B80560C4ACA2D75F0D4FF811A386025"
+			],
+			"duration": 15.485446929931641,
+			"dateTime": "2026.10.08-07.25.48",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogStreaming: FlushAsyncLoading(404): 1 QueuedPackages, 0 AsyncPackages",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.48"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogEditorAutomationTests: SouthGarda_KartRace took 0.265 to load.",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.48"
+				},
+				{
+					"event":
+					{
+						"type": "Warning",
+						"message": "LogOutputDevice: \n\nScript Stack (1 frames) :\n/Script/Engine.PlayerController.ClientRestart\n",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.48"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: === Handled ensure: ===",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: ",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: Ensure condition failed: AxisKey.IsAxis1D()  [File:D:\\Boring\\UE_5.8\\Engine\\Source\\Runtime\\Engine\\Classes\\Components\\InputComponent.h] [Line: 574] ",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: ",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: Stack: ",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x000002733670c0dc UnrealEditor-RoadToF1.dll!UInputComponent::BindAxisKey<AKartPawn>() [D:\\Boring\\UE_5.8\\Engine\\Source\\Runtime\\Engine\\Classes\\Components\\InputComponent.h:973]",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x000002733670e60f UnrealEditor-RoadToF1.dll!AKartPawn::SetupPlayerInputComponent() [D:\\Boring\\GitHub\\Road-To-F1\\RoadToF1\\Source\\RoadToF1\\KartPawn.cpp:50]",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3eb5a95c UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3eb2d436 UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3ed16061 UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3ed6815c UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fffc0e67b2c UnrealEditor-CoreUObject.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fffc11e19b2 UnrealEditor-CoreUObject.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3d5b614d UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3ed3b33c UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3df7683e UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3e283274 UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3e2b3937 UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3e2b362d UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3e295690 UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3e5c4627 UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3e66c280 UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff3e2be525 UnrealEditor-Engine.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff620a202a UnrealEditor-UnrealEd.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff620cae93 UnrealEditor-UnrealEd.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff620a2d6f UnrealEditor-UnrealEd.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff620e359f UnrealEditor-UnrealEd.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff620e79c9 UnrealEditor-UnrealEd.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff620e708e UnrealEditor-UnrealEd.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff61a2c5e7 UnrealEditor-UnrealEd.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007fff62597696 UnrealEditor-UnrealEd.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007ff664562779 UnrealEditor-Cmd.exe!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007ff66454c4ac UnrealEditor-Cmd.exe!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007ff66454c5ba UnrealEditor-Cmd.exe!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007ff664551256 UnrealEditor-Cmd.exe!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007ff664565c74 UnrealEditor-Cmd.exe!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007ff66456838a UnrealEditor-Cmd.exe!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007ffffa4d7374 KERNEL32.DLL!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: [Callstack] 0x00007ffffbb9cc91 ntdll.dll!UnknownFunction []",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "LogOutputDevice: ",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.25.49"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race loop ready: 3 laps, 12 ordered checkpoints, existing start trigger preserved.",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "EnsureFailed: Ensure condition failed: AxisKey.IsAxis1D()  [File:D:\\Boring\\UE_5.8\\Engine\\Source\\Runtime\\Engine\\Classes\\Components\\InputComponent.h] [Line: 574] \r\n\r\nStack: \r\n0x000002733670c0dc UnrealEditor-RoadToF1.dll!UInputComponent::BindAxisKey<AKartPawn>() [D:\\Boring\\UE_5.8\\Engine\\Source\\Runtime\\Engine\\Classes\\Components\\InputComponent.h:973]\r\n0x000002733670e60f UnrealEditor-RoadToF1.dll!AKartPawn::SetupPlayerInputComponent() [D:\\Boring\\GitHub\\Road-To-F1\\RoadToF1\\Source\\RoadToF1\\KartPawn.cpp:50]\r\n0x00007fff3eb5a95c UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3eb2d436 UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3ed16061 UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3ed6815c UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fffc0e67b2c UnrealEditor-CoreUObject.dll!UnknownFunction []\r\n0x00007fffc11e19b2 UnrealEditor-CoreUObject.dll!UnknownFunction []\r\n0x00007fff3d5b614d UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3ed3b33c UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3df7683e UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3e283274 UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3e2b3937 UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3e2b362d UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3e295690 UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3e5c4627 UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3e66c280 UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff3e2be525 UnrealEditor-Engine.dll!UnknownFunction []\r\n0x00007fff620a202a UnrealEditor-UnrealEd.dll!UnknownFunction []\r\n0x00007fff620cae93 UnrealEditor-UnrealEd.dll!UnknownFunction []\r\n0x00007fff620a2d6f UnrealEditor-UnrealEd.dll!UnknownFunction []\r\n0x00007fff620e359f UnrealEditor-UnrealEd.dll!UnknownFunction []\r\n0x00007fff620e79c9 UnrealEditor-UnrealEd.dll!UnknownFunction []\r\n0x00007fff620e708e UnrealEditor-UnrealEd.dll!UnknownFunction []\r\n0x00007fff61a2c5e7 UnrealEditor-UnrealEd.dll!UnknownFunction []\r\n0x00007fff62597696 UnrealEditor-UnrealEd.dll!UnknownFunction []\r\n0x00007ff664562779 UnrealEditor-Cmd.exe!UnknownFunction []\r\n0x00007ff66454c4ac UnrealEditor-Cmd.exe!UnknownFunction []\r\n0x00007ff66454c5ba UnrealEditor-Cmd.exe!UnknownFunction []\r\n0x00007ff664551256 UnrealEditor-Cmd.exe!UnknownFunction []\r\n0x00007ff664565c74 UnrealEditor-Cmd.exe!UnknownFunction []\r\n0x00007ff66456838a UnrealEditor-Cmd.exe!UnknownFunction []\r\n0x00007ffffa4d7374 KERNEL32.DLL!UnknownFunction []\r\n0x00007ffffbb9cc91 ntdll.dll!UnknownFunction []\r\n",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race reset: timing and checkpoint progress cleared, vehicle returned to PlayerStart.",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 0 accepted: completed laps 0, checkpoints 0, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race reset: timing and checkpoint progress cleared, vehicle returned to PlayerStart.",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 0 accepted: completed laps 0, checkpoints 0, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 1 accepted: completed laps 0, checkpoints 1, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 2 accepted: completed laps 0, checkpoints 2, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 3 accepted: completed laps 0, checkpoints 3, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 4 accepted: completed laps 0, checkpoints 4, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 5 accepted: completed laps 0, checkpoints 5, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 6 accepted: completed laps 0, checkpoints 6, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 7 accepted: completed laps 0, checkpoints 7, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 8 accepted: completed laps 0, checkpoints 8, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 9 accepted: completed laps 0, checkpoints 9, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 10 accepted: completed laps 0, checkpoints 10, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 11 accepted: completed laps 0, checkpoints 11, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 12 accepted: completed laps 0, checkpoints 12, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 0 accepted: completed laps 1, checkpoints 0, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 1 accepted: completed laps 1, checkpoints 1, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 2 accepted: completed laps 1, checkpoints 2, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 3 accepted: completed laps 1, checkpoints 3, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 4 accepted: completed laps 1, checkpoints 4, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 5 accepted: completed laps 1, checkpoints 5, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 6 accepted: completed laps 1, checkpoints 6, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 7 accepted: completed laps 1, checkpoints 7, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 8 accepted: completed laps 1, checkpoints 8, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 9 accepted: completed laps 1, checkpoints 9, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 10 accepted: completed laps 1, checkpoints 10, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 11 accepted: completed laps 1, checkpoints 11, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 12 accepted: completed laps 1, checkpoints 12, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 0 accepted: completed laps 2, checkpoints 0, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 1 accepted: completed laps 2, checkpoints 1, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 2 accepted: completed laps 2, checkpoints 2, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 3 accepted: completed laps 2, checkpoints 3, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 4 accepted: completed laps 2, checkpoints 4, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 5 accepted: completed laps 2, checkpoints 5, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 6 accepted: completed laps 2, checkpoints 6, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 7 accepted: completed laps 2, checkpoints 7, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 8 accepted: completed laps 2, checkpoints 8, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 9 accepted: completed laps 2, checkpoints 9, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 10 accepted: completed laps 2, checkpoints 10, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 11 accepted: completed laps 2, checkpoints 11, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 12 accepted: completed laps 2, checkpoints 12, finished 0",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race gate 0 accepted: completed laps 3, checkpoints 0, finished 1",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race reset: timing and checkpoint progress cleared, vehicle returned to PlayerStart.",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogPlayLevel: Shutting down PIE online subsystems",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-07.26.03"
+				}
+			],
+			"warnings": 1,
+			"errors": 41,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "GateGeometry",
+			"fullTestPath": "RoadToF1.RaceLoop.GateGeometry",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"5B80560C4ACA2D75F0D4FF811A386025"
+			],
+			"duration": 0.0057249031960964203,
+			"dateTime": "2026.10.08-07.26.04",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "PrototypePIE",
+			"fullTestPath": "RoadToF1.RaceLoop.PrototypePIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"5B80560C4ACA2D75F0D4FF811A386025"
+			],
+			"duration": 2.3086459636688232,
+			"dateTime": "2026.10.08-07.26.04",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "Rules",
+			"fullTestPath": "RoadToF1.RaceLoop.Rules",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"5B80560C4ACA2D75F0D4FF811A386025"
+			],
+			"duration": 0.0080352015793323517,
+			"dateTime": "2026.10.08-07.26.06",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

@@ -1,5 +1,7 @@
 #include "RaceLoopSubsystem.h"
 #include "RaceLoopWidget.h"
+#include "RaceTrackGate.h"
+#include "KartPawn.h"
 #include "RoadToF1.h"
 #include "Components/BoxComponent.h"
 #include "Components/InputComponent.h"
@@ -29,8 +31,31 @@ void URaceLoopSubsystem::OnWorldBeginPlay(UWorld& InWorld)
 
 void URaceLoopSubsystem::DiscoverTrack()
 {
-    // GetMapName includes UEDPIE prefixes in PIE. Never activate on the template's other maps.
-    if (!GetWorld()->GetMapName().EndsWith(TEXT("RacePrototype"))) return;
+    const bool bKartTrack = GetWorld()->GetMapName().EndsWith(TEXT("SouthGarda_KartRace"));
+    if (!bKartTrack && !GetWorld()->GetMapName().EndsWith(TEXT("RacePrototype"))) return;
+    if (bKartTrack)
+    {
+        TArray<ARaceTrackGate*> AuthoredGates;
+        for (TActorIterator<ARaceTrackGate> It(GetWorld()); It; ++It) AuthoredGates.Add(*It);
+        AuthoredGates.Sort([](const ARaceTrackGate& A, const ARaceTrackGate& B) { return A.Order < B.Order; });
+        if (AuthoredGates.Num() < 2) { StatusMessage = TEXT("Track needs start and checkpoints."); return; }
+        for (int32 Index = 0; Index < AuthoredGates.Num(); ++Index)
+            if (AuthoredGates[Index]->Order != Index) { StatusMessage = TEXT("Track gate orders must be unique and consecutive."); return; }
+        APlayerStart* Start = nullptr;
+        for (TActorIterator<APlayerStart> It(GetWorld()); It; ++It) { Start = *It; break; }
+        if (!Start) { StatusMessage = TEXT("PlayerStart missing: race disabled."); return; }
+        RestartTransform = Start->GetActorTransform();
+        for (ARaceTrackGate* Actor : AuthoredGates)
+        {
+            FRaceGateGeometry Gate;
+            Gate.Transform = Actor->GateBounds->GetComponentTransform();
+            Gate.Extent = Actor->GateBounds->GetScaledBoxExtent();
+            Gates.Add(Gate);
+        }
+        Progress.Reset(TargetLaps, Gates.Num() - 1);
+    }
+    else
+    {
     UBoxComponent* StartBox = nullptr;
     for (TActorIterator<AActor> It(GetWorld()); It; ++It)
     {
@@ -68,6 +93,7 @@ void URaceLoopSubsystem::DiscoverTrack()
         Gate.Transform = FTransform(FRotator(0, CheckpointYaw[Index], 0), CheckpointLocations[Index]);
         Gates.Add(Gate);
     }
+    }
     bReady = true;
     StatusMessage = TEXT("Cross START to begin");
     for (int32 Index = 0; Index < Gates.Num(); ++Index)
@@ -85,7 +111,7 @@ void URaceLoopSubsystem::DiscoverTrack()
         Marker->SetActorRotation((-Gate.Transform.GetUnitAxis(EAxis::X)).Rotation());
         GateMarkers.Add(Marker);
     }
-    UE_LOG(LogRoadToF1, Display, TEXT("Race loop ready: %d laps, %d ordered checkpoints, existing start trigger preserved."), Progress.TargetLaps, Progress.CheckpointCount);
+    UE_LOG(LogRoadToF1, Display, TEXT("Race loop ready: %d laps, %d ordered checkpoints."), Progress.TargetLaps, Progress.CheckpointCount);
 }
 
 void URaceLoopSubsystem::AttachPlayer()
@@ -106,14 +132,14 @@ void URaceLoopSubsystem::AttachPlayer()
         if (RaceWidget)
         {
             RaceWidget->AddToPlayerScreen(10);
-            RaceWidget->SetDesiredSizeInViewport(FVector2D(420, 420));
+            RaceWidget->SetDesiredSizeInViewport(FVector2D(420, GetWorld()->GetMapName().EndsWith(TEXT("SouthGarda_KartRace")) ? 510 : 420));
             RaceWidget->SetPositionInViewport(FVector2D(28, 28));
         }
     }
     if (TrackedPawn != PC->GetPawn())
     {
         TrackedPawn = PC->GetPawn();
-        Progress.Reset(TargetLaps, CheckpointLocations.Num());
+        Progress.Reset(TargetLaps, bReady ? Gates.Num() - 1 : CheckpointLocations.Num());
         bHavePreviousPosition = false; // Respawn must not inherit a previous vehicle's lap/position.
     }
 }
@@ -121,7 +147,7 @@ void URaceLoopSubsystem::AttachPlayer()
 void URaceLoopSubsystem::Tick(float DeltaTime)
 {
     Super::Tick(DeltaTime);
-    if (!GetWorld()->GetMapName().EndsWith(TEXT("RacePrototype"))) return;
+    if (!GetWorld()->GetMapName().EndsWith(TEXT("RacePrototype")) && !GetWorld()->GetMapName().EndsWith(TEXT("SouthGarda_KartRace"))) return;
     if (!bReady) DiscoverTrack();
     AttachPlayer();
     if (!bReady || !TrackedPawn.IsValid()) return;
@@ -159,7 +185,13 @@ void URaceLoopSubsystem::RefreshGateMarkers()
         const FColor Color = Progress.bFinished ? FColor::Silver : Index == Next ? FColor::Green : FColor(90, 140, 190);
         const auto& Gate = Gates[Index];
         // A thin visible gate above the asphalt, spanning the same bounds as the crossing test.
-        DrawDebugBox(GetWorld(), Gate.Transform.GetLocation() + FVector(0, 0, 250), FVector(10, Gate.Extent.Y, 250), Gate.Transform.GetRotation(), Color, false, 0, 0, 8);
+        if (GetWorld()->GetMapName().EndsWith(TEXT("SouthGarda_KartRace")))
+        {
+            const FVector Center = Gate.Transform.GetLocation() - FVector(0, 0, 75);
+            const FVector Side = Gate.Transform.GetUnitAxis(EAxis::Y) * Gate.Extent.Y;
+            DrawDebugLine(GetWorld(), Center - Side, Center + Side, Color, false, 0, 0, 5);
+        }
+        else DrawDebugBox(GetWorld(), Gate.Transform.GetLocation() + FVector(0, 0, 250), FVector(10, Gate.Extent.Y, 250), Gate.Transform.GetRotation(), Color, false, 0, 0, 8);
         if (GateMarkers.IsValidIndex(Index))
             if (UTextRenderComponent* Text = Cast<UTextRenderComponent>(GateMarkers[Index]->GetRootComponent())) Text->SetTextRenderColor(Color);
     }
@@ -168,11 +200,12 @@ void URaceLoopSubsystem::RefreshGateMarkers()
 void URaceLoopSubsystem::RestartRace()
 {
     if (!bReady) return;
-    Progress.Reset(TargetLaps, CheckpointLocations.Num());
+    Progress.Reset(TargetLaps, Gates.Num() - 1);
     bHavePreviousPosition = false;
     if (APawn* Pawn = TrackedPawn.Get())
     {
         Pawn->SetActorTransform(RestartTransform, false, nullptr, ETeleportType::TeleportPhysics);
+        if (AKartPawn* Kart = Cast<AKartPawn>(Pawn)) Kart->ResetKart();
         if (UPrimitiveComponent* Body = Cast<UPrimitiveComponent>(Pawn->GetRootComponent()))
         {
             Body->SetPhysicsLinearVelocity(FVector::ZeroVector);

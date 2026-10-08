@@ -1,0 +1,102 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "95E97A3C4ADE8A6FF06DE39E98CA81DA",
+			"instanceName": "DESKTOP-ERDHE74-21808",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.08-09.42.46",
+	"succeeded": 3,
+	"succeededWithWarnings": 1,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 5.1539154052734375,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "SouthGardaPIE",
+			"fullTestPath": "RoadToF1.Kart.SouthGardaPIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"95E97A3C4ADE8A6FF06DE39E98CA81DA"
+			],
+			"duration": 2.8439528942108154,
+			"dateTime": "2026.10.08-09.42.41",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Warning",
+						"message": "LogHttp: HTTP request timed out after 3.00 seconds URL=https://www.google.com/generate_204",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.08-09.42.43"
+				}
+			],
+			"warnings": 1,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "GateGeometry",
+			"fullTestPath": "RoadToF1.RaceLoop.GateGeometry",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"95E97A3C4ADE8A6FF06DE39E98CA81DA"
+			],
+			"duration": 0.0083073005080223083,
+			"dateTime": "2026.10.08-09.42.44",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "PrototypePIE",
+			"fullTestPath": "RoadToF1.RaceLoop.PrototypePIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"95E97A3C4ADE8A6FF06DE39E98CA81DA"
+			],
+			"duration": 2.2935795783996582,
+			"dateTime": "2026.10.08-09.42.44",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "Rules",
+			"fullTestPath": "RoadToF1.RaceLoop.Rules",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"95E97A3C4ADE8A6FF06DE39E98CA81DA"
+			],
+			"duration": 0.0080759003758430481,
+			"dateTime": "2026.10.08-09.42.46",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

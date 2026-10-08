@@ -1,0 +1,108 @@
+{
+  "map": "/Game/RoadToF1/SouthGarda_ArtPreview",
+  "notice": "South Garda-inspired art blockout. Approximate layout, not a surveyed replica. Kart is an authored visual concept.",
+  "meshes": [
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Grass.Circuit_Grass",
+      "material": "Grass",
+      "actor": "SG_Circuit_Grass"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Asphalt.Circuit_Asphalt",
+      "material": "Asphalt",
+      "actor": "SG_Circuit_Asphalt"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Kerb_blue.Circuit_Kerb_blue",
+      "material": "Kerb_blue",
+      "actor": "SG_Circuit_Kerb_blue"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_White.Circuit_White",
+      "material": "White",
+      "actor": "SG_Circuit_White"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Concrete.Circuit_Concrete",
+      "material": "Concrete",
+      "actor": "SG_Circuit_Concrete"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Roof.Circuit_Roof",
+      "material": "Roof",
+      "actor": "SG_Circuit_Roof"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Glass.Circuit_Glass",
+      "material": "Glass",
+      "actor": "SG_Circuit_Glass"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Aluminium.Circuit_Aluminium",
+      "material": "Aluminium",
+      "actor": "SG_Circuit_Aluminium"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Rubber.Circuit_Rubber",
+      "material": "Rubber",
+      "actor": "SG_Circuit_Rubber"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Fairing.Circuit_Fairing",
+      "material": "Fairing",
+      "actor": "SG_Circuit_Fairing"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Bark.Circuit_Bark",
+      "material": "Bark",
+      "actor": "SG_Circuit_Bark"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Foliage.Circuit_Foliage",
+      "material": "Foliage",
+      "actor": "SG_Circuit_Foliage"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Chassis.Kart_Chassis",
+      "material": "Chassis",
+      "actor": "SG_Kart_Chassis"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Rubber.Kart_Rubber",
+      "material": "Rubber",
+      "actor": "SG_Kart_Rubber"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Aluminium.Kart_Aluminium",
+      "material": "Aluminium",
+      "actor": "SG_Kart_Aluminium"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Engine.Kart_Engine",
+      "material": "Engine",
+      "actor": "SG_Kart_Engine"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Fairing.Kart_Fairing",
+      "material": "Fairing",
+      "actor": "SG_Kart_Fairing"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_White.Kart_White",
+      "material": "White",
+      "actor": "SG_Kart_White"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Carbon.Kart_Carbon",
+      "material": "Carbon",
+      "actor": "SG_Kart_Carbon"
+    },
+    {
+      "asset": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Chain.Kart_Chain",
+      "material": "Chain",
+      "actor": "SG_Kart_Chain"
+    }
+  ],
+  "actors": 26,
+  "status": "Imported and saved; driving gameplay and race loop not validated in this art map."
+}

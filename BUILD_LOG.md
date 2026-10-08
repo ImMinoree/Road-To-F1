@@ -56,3 +56,51 @@
 - Included race-loop source/config, the existing prototype Blueprint/map with all World Partition external actors/objects, documentation, inspection tool, test reports, and HUD screenshot.
 - Validation carried forward: actual-project build succeeded; all three automation suites passed with zero test warnings/errors; `git diff --check` passes.
 - Target: `origin/milestone-1-race-loop`. Git history records the commit and remote synchronization.
+
+## 2026-10-08 — Startup-map correction
+- User reported the lap/timer HUD missing after reopening. Runtime log confirms PIE started `VehicleBasic`, rather than `RacePrototype`.
+- Cause: EditorStartupMap and GameDefaultMap still pointed to the original Vehicle template map. The race subsystem intentionally activates only in RacePrototype.
+- Changed both defaults in DefaultEngine.ini to `/Game/RoadToF1/RacePrototype.RacePrototype`. No C++ rebuild required.
+- Verified RacePrototype exists and no Saved/Config map defaults override the settings.
+- Preserved two existing user modifications in VehicleBasic external-actor assets.
+- Current editor session still needs to open RacePrototype; defaults apply on subsequent launches. This config-only correction uses the previously built/tested race implementation.
+
+## 2026-10-08 — South Garda and kart art pass
+- User selected South Garda Karting, Italy. Created Art/KartLab/index.html and local Three.js viewer with all requested kart parts, orbit/zoom, component isolation, exploded view, paint and turntable controls.
+- Downloaded Three.js 0.180.0 (MIT) and Poly Haven Asphalt Track diffuse (CC0). Author/source and licenses recorded in Art/KartLab/README.md. All meshes authored locally; no purchases.
+- Imported 20 material mesh batches into a new /Game/RoadToF1/Art/SouthGardaV01 folder and saved /Game/RoadToF1/SouthGarda_ArtPreview. Existing RacePrototype and user-modified VehicleBasic external actors preserved.
+- Verified browser interactions and empty warning/error log. Unreal import succeeded; saved map reloaded and scale/material actors verified. Corrected camera rotation and imported handedness. Visually inspected final Unreal render. Evidence and detailed results in TestResults/SouthGardaArt/RESULTS.md.
+- Initial art blockout only: approximate route; scenery placeholders still need realistic replacements. Kart is static art, not a rigged driving pawn. Race gates/HUD have not been integrated or driving-tested on the new map. Existing RacePrototype remains the tested race-loop map.
+- No C++ changes, commit or push in this phase. Next: accurate layout/scenery refinement, kart rig, race-loop integration and full driving validation.
+
+## 2026-10-08 — playable Unreal kart and South Garda integration
+- Added native KartPawn/KartGameMode and ordered RaceTrackGate actors. Created separate SouthGarda_KartRace map with kart spawn, follow camera, 12 checkpoints and start/finish. Connected HUD, speed, lap/total timers, three-lap finish and F5 reset.
+- Controls: W accelerate, S brake/reverse, A/D steer, Space brake, F5 restart. First arcade movement implementation; no Chaos kart rig, animated driver/wheels, AI or penalties yet.
+- User saved and closed Unreal before the C++ build. UBA stalled; -NoUBA standard compiler build succeeded. First automation found invalid keyboard-axis binding; fixed press/release bindings and rebuilt successfully.
+- Final automation: all four suites passed, zero errors/warnings, including original prototype regression. New map tests actual movement, braking/ground support, 600 road collision samples, ordered gate rules, three-lap finish/frozen timing and reset. Programmatic gate sweeps are not a full human-driven lap test.
+- Rendered and visually inspected TestResults/SouthGardaGameplay/KartRace.png. Detailed evidence: TestResults/SouthGardaGameplay/RESULTS.md and AutomationFinal/index.json.
+- Updated project startup/default map to SouthGarda_KartRace. Preserved RacePrototype, SouthGarda_ArtPreview and user-modified VehicleBasic external actors. No commit/push performed.
+- Next: user handling feedback, kart/wheel/driver animation, authentic layout and realistic scenery refinement, then AI/flags/penalties.
+
+## 2026-10-08 — user-reported track and handling fixes
+- Replaced raised collision-enabled grid/finish meshes with flush non-colliding surface paint and proper two-lane positioning boxes. Finish paint now aligns with the actual race gate.
+- Replaced spaced kerb boxes with continuous curve-following strips and white edge paint. Removed sparse placeholder barriers and floating debug gate outlines in the kart driving view; checkpoint hints are surface lines.
+- Reduced forward cap 90 -> 55 km/h and acceleration 6.5 -> 3 m/s². Added gradual A/D steering, smooth recentring and filtered/capped yaw. Reset clears steering/yaw state.
+- User saved/closed Unreal for the build. Backed up affected maps/meshes in D:/Boring/RaceValidation/KartControlFixes-Before. Preserved map actors/transforms and unrelated user work.
+- Build succeeded; surface patch completed. All four automation suites passed, zero errors/warnings. Extended regression verifies long straight traversal past markings, speed limit and steering ramp, alongside road collision/lap/finish/reset tests. Visual evidence and results: TestResults/KartControlFixes/.
+- Saved locally, not committed/pushed. Next: user driving feedback before more handling tuning.
+
+## 2026-10-08 — black corner patches and grass-edge trapping
+- Found reversed/folded road and kerb triangles at tight original curve bends. Smoothed uniformly sampled route; all 16,840 road/kerb/paint triangles now have positive upward area. Updated existing checkpoint/spawn alignment.
+- Replaced centre-only ground support with footprint probes and a bounded 12cm climb, retaining swept collision. Kart can cross grass/asphalt transitions in forward and reverse.
+- User saved/closed Unreal. Backups in D:/Boring/RaceValidation/CornerRejoinFix-Before; unrelated user changes retained.
+- Build and asset import succeeded. All four Unreal automation suites passed, zero errors; one unrelated HTTP connectivity timeout warning. All 48 driven rejoin regression cases passed.
+- Evidence and limitations: TestResults/CornerRejoinFix/RESULTS.md. Separate review-camera map used for corner rendering; playable map preserved. Next: user driving validation at the reported bends.
+- No commit or push performed.
+
+## 2026-10-08 — South Garda/kart GitHub handoff
+- User requested pushing the completed map, kart and fixes before driver-model work, then AI/NPCs.
+- Package includes native kart/gates/HUD integration, startup map, authored Three.js/OBJ assets, imported Unreal assets/maps, tools, test evidence and latest corner/rejoin fixes.
+- Validation: native build succeeded; four Unreal automation suites passed, zero errors (one unrelated network timeout warning); 48 driven grass-to-road recovery cases and 16,840 triangle geometry checks passed.
+- Existing changes to two old VehicleBasic external actors remain local and preserved, outside this implementation commit.
+- Target branch: origin/milestone-1-race-loop. Next phase: seated helmeted driver model using the supplied image as visual reference, followed by AI opponents.

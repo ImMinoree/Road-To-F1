@@ -1,0 +1,322 @@
+[
+  {
+    "label": "SG_Circuit_Grass",
+    "origin": [
+      1250.0,
+      5000.0,
+      -2200.0001220703125
+    ],
+    "extent": [
+      38250.0,
+      18000.0,
+      4485.9110107421875
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Grass.Circuit_Grass",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Grass.M_Grass"
+  },
+  {
+    "label": "SG_Circuit_Asphalt",
+    "origin": [
+      -372.3359375,
+      -3323.382568359375,
+      1.5
+    ],
+    "extent": [
+      15324.0615234375,
+      9926.617431640625,
+      1.5
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Asphalt.Circuit_Asphalt",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Asphalt.M_Asphalt"
+  },
+  {
+    "label": "SG_Circuit_Kerb_blue",
+    "origin": [
+      -385.37109375,
+      -2568.237060546875,
+      212.5
+    ],
+    "extent": [
+      15366.005859375,
+      9231.762939453125,
+      212.5
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Kerb_blue.Circuit_Kerb_blue",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Kerb_blue.M_Kerb_blue"
+  },
+  {
+    "label": "SG_Circuit_White",
+    "origin": [
+      -373.033203125,
+      -3033.08740234375,
+      320.0
+    ],
+    "extent": [
+      15387.4423828125,
+      9696.91259765625,
+      320.0
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_White.Circuit_White",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_White.M_White"
+  },
+  {
+    "label": "SG_Circuit_Concrete",
+    "origin": [
+      1200.0,
+      -7450.0,
+      410.0
+    ],
+    "extent": [
+      9100.0,
+      1100.0,
+      410.0
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Concrete.Circuit_Concrete",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Concrete.M_Concrete"
+  },
+  {
+    "label": "SG_Circuit_Roof",
+    "origin": [
+      1200.0,
+      -6666.0,
+      341.25
+    ],
+    "extent": [
+      9300.0,
+      2084.0,
+      341.25
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Roof.Circuit_Roof",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Roof.M_Roof"
+  },
+  {
+    "label": "SG_Circuit_Glass",
+    "origin": [
+      1100.0,
+      -6340.0,
+      500.0
+    ],
+    "extent": [
+      8690.0,
+      6.0,
+      50.0
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Glass.Circuit_Glass",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Glass.M_Glass"
+  },
+  {
+    "label": "SG_Circuit_Aluminium",
+    "origin": [
+      0.0,
+      -8600.0,
+      335.0
+    ],
+    "extent": [
+      5416.0,
+      16.0,
+      335.0
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Aluminium.Circuit_Aluminium",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Aluminium.M_Aluminium"
+  },
+  {
+    "label": "SG_Circuit_Rubber",
+    "origin": [
+      -5500.0,
+      -5235.0,
+      7.0
+    ],
+    "extent": [
+      30.0,
+      450.0,
+      0.75
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Rubber.Circuit_Rubber",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Rubber.M_Rubber"
+  },
+  {
+    "label": "SG_Circuit_Fairing",
+    "origin": [
+      -5475.0,
+      -5200.0,
+      585.0
+    ],
+    "extent": [
+      19.0,
+      118.06982421875,
+      19.0
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Fairing.Circuit_Fairing",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Fairing.M_Fairing"
+  },
+  {
+    "label": "SG_Circuit_Bark",
+    "origin": [
+      -35.9853515625,
+      -1500.0,
+      453.0945129394531
+    ],
+    "extent": [
+      20234.5947265625,
+      13030.0,
+      453.0945129394531
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Bark.Circuit_Bark",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Bark.M_Bark"
+  },
+  {
+    "label": "SG_Circuit_Foliage",
+    "origin": [
+      -15.72265625,
+      -1496.14599609375,
+      845.1030158996582
+    ],
+    "extent": [
+      20343.740234375,
+      13416.03466796875,
+      739.4530143737793
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Circuit_Foliage.Circuit_Foliage",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Foliage.M_Foliage"
+  },
+  {
+    "label": "SG_Kart_Chassis",
+    "origin": [
+      -4500.0,
+      -6101.178001403809,
+      34.89949989318848
+    ],
+    "extent": [
+      51.27399826049805,
+      78.1780014038086,
+      2.499500274658203
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Chassis.Kart_Chassis",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Chassis.M_Chassis"
+  },
+  {
+    "label": "SG_Kart_Rubber",
+    "origin": [
+      -4500.0,
+      -6088.662502288818,
+      55.33250045776367
+    ],
+    "extent": [
+      68.65899658203125,
+      89.13750076293945,
+      35.33250045776367
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Rubber.Kart_Rubber",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Rubber.M_Rubber"
+  },
+  {
+    "label": "SG_Kart_Aluminium",
+    "origin": [
+      -4500.0,
+      -6096.8569984436035,
+      56.76150131225586
+    ],
+    "extent": [
+      71.0,
+      81.14599990844727,
+      31.76150131225586
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Aluminium.Kart_Aluminium",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Aluminium.M_Aluminium"
+  },
+  {
+    "label": "SG_Kart_Engine",
+    "origin": [
+      -4500.0,
+      -6087.459499359131,
+      57.596498012542725
+    ],
+    "extent": [
+      67.80000305175781,
+      81.0984992980957,
+      27.146498203277588
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Engine.Kart_Engine",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Engine.M_Engine"
+  },
+  {
+    "label": "SG_Kart_Fairing",
+    "origin": [
+      -4498.5,
+      -6132.8125,
+      43.5
+    ],
+    "extent": [
+      63.5,
+      84.6875,
+      10.0
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Fairing.Kart_Fairing",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Fairing.M_Fairing"
+  },
+  {
+    "label": "SG_Kart_White",
+    "origin": [
+      -4492.748999595642,
+      -6127.89999961853,
+      52.97949981689453
+    ],
+    "extent": [
+      28.949000358581543,
+      78.10000038146973,
+      22.02050018310547
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_White.Kart_White",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_White.M_White"
+  },
+  {
+    "label": "SG_Kart_Carbon",
+    "origin": [
+      -4500.0,
+      -6078.0419998168945,
+      61.40699863433838
+    ],
+    "extent": [
+      26.523000717163086,
+      24.45800018310547,
+      25.874999046325684
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Carbon.Kart_Carbon",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Carbon.M_Carbon"
+  },
+  {
+    "label": "SG_Kart_Chain",
+    "origin": [
+      -4477.325000762939,
+      -6043.426000595093,
+      38.45550012588501
+    ],
+    "extent": [
+      1.125,
+      18.71700096130371,
+      12.155499935150146
+    ],
+    "mesh": "/Game/RoadToF1/Art/SouthGardaV01/Meshes/Kart_Chain.Kart_Chain",
+    "material_slots": 1,
+    "material": "/Game/RoadToF1/Art/SouthGardaV01/Materials/M_Chain.M_Chain"
+  }
+]

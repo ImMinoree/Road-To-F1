@@ -1,5 +1,7 @@
 #include "RaceLoopWidget.h"
 #include "RaceLoopSubsystem.h"
+#include "KartPawn.h"
+#include "Kismet/GameplayStatics.h"
 #include "Blueprint/WidgetTree.h"
 #include "Components/Border.h"
 #include "Components/Button.h"
@@ -39,14 +41,20 @@ void URaceLoopWidget::NativeOnInitialized()
     WidgetTree->RootWidget = Panel;
     UVerticalBox* Lines = WidgetTree->ConstructWidget<UVerticalBox>();
     Panel->SetContent(Lines);
-    AddLine(Lines, TEXT("ROAD TO F1 | RACE PROTOTYPE"), 18);
+    const bool bKartTrack = GetWorld()->GetMapName().EndsWith(TEXT("SouthGarda_KartRace"));
+    AddLine(Lines, bKartTrack ? TEXT("ROAD TO F1 | SOUTH GARDA") : TEXT("ROAD TO F1 | RACE PROTOTYPE"), 18);
     Status = AddLine(Lines, TEXT("Cross START to begin"), 20);
     Lap = AddLine(Lines, TEXT("Lap 0 / 3"), 24);
     Checkpoints = AddLine(Lines, TEXT("Checkpoints 0 / 3"), 18);
     LapTimer = AddLine(Lines, TEXT("Lap    00:00.000"), 22);
     RaceTimer = AddLine(Lines, TEXT("Total  00:00.000"), 22);
     LastLap = AddLine(Lines, TEXT("Last lap --:--.---"), 18);
-    AddLine(Lines, TEXT("Pass CP1 > CP2 > CP3 > FINISH. Follow the green gate."), 14);
+    AddLine(Lines, TEXT("Pass checkpoints in order. Follow the green gate."), 14);
+    if (bKartTrack)
+    {
+        Speed = AddLine(Lines, TEXT("0 km/h"), 20);
+        AddLine(Lines, TEXT("W: accelerate | S: brake / reverse\nA/D: steer | Space: brake | F5: restart"), 14);
+    }
     UButton* Restart = WidgetTree->ConstructWidget<UButton>();
     UTextBlock* Label = WidgetTree->ConstructWidget<UTextBlock>();
     Label->SetText(FText::FromString(TEXT("Restart race [F5]")));
@@ -63,6 +71,9 @@ void URaceLoopWidget::NativeTick(const FGeometry& Geometry, float DeltaTime)
     if (!Race || !Status) return;
     const FRaceProgress& P = Race->GetProgress();
     const double Now = GetWorld()->GetTimeSeconds();
+    if (Speed)
+        if (const AKartPawn* Kart = Cast<AKartPawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0)))
+            Speed->SetText(FText::FromString(FString::Printf(TEXT("%d km/h"), FMath::RoundToInt(FMath::Abs(Kart->GetSpeedKmh())))));
     Status->SetText(FText::FromString(!Race->IsRaceAvailable() ? Race->GetStatusMessage() :
         P.bFinished ? TEXT("FINISHED - F5 to race again") : P.bStarted ? TEXT("RACING") : TEXT("Cross START to begin")));
     Status->SetColorAndOpacity(FSlateColor(P.bFinished ? FLinearColor(0.2f, 1, 0.5f) : FLinearColor::White));

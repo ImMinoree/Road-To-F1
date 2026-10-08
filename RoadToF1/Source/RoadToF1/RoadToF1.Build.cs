@@ -35,6 +35,7 @@ public class RoadToF1 : ModuleRules
 		if (Target.bBuildEditor)
 		{
 			PrivateDependencyModuleNames.Add("UnrealEd");
+			PrivateDependencyModuleNames.Add("Json");
 		}
 
 		// Uncomment if you are using Slate UI

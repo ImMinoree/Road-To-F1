@@ -1,0 +1,13 @@
+import * as T from './vendor/three.module.js';
+import {createKart,createCircuit,trackCurve} from './scene.mjs';
+import {writeFileSync,mkdirSync} from 'node:fs';
+import {fileURLToPath} from 'node:url';
+const out=fileURLToPath(new URL('./exports/',import.meta.url));mkdirSync(out,{recursive:true});
+// OBJ uses centimetres and Unreal Z-up. Group per material to keep import predictable.
+function exportGroup(root,prefix){root.updateMatrixWorld(true);const batches=new Map();root.traverse(o=>{if(!o.isMesh)return;const m=o.material;if(!batches.has(m.name))batches.set(m.name,{material:m,meshes:[]});batches.get(m.name).meshes.push(o);});const result=[];
+for(const [name,batch]of batches){let lines=['# RoadToF1 authored geometry. Centimetres, Z up.'],base=1;for(const o of batch.meshes){const g=o.geometry,p=g.attributes.position,uv=g.attributes.uv;for(let i=0;i<p.count;i++){const v=new T.Vector3().fromBufferAttribute(p,i).applyMatrix4(o.matrixWorld);lines.push(`v ${(v.x*100).toFixed(3)} ${(-v.z*100).toFixed(3)} ${(v.y*100).toFixed(3)}`);}for(let i=0;i<p.count;i++)lines.push(`vt ${uv?uv.getX(i).toFixed(5):0} ${uv?uv.getY(i).toFixed(5):0}`);const index=g.index,count=index?index.count:p.count;for(let i=0;i<count;i+=3){const ids=[0,1,2].map(k=>base+(index?index.getX(i+k):i+k));lines.push('f '+ids.map(n=>`${n}/${n}`).join(' '));}base+=p.count;}
+const file=`${prefix}_${name}.obj`;writeFileSync(out+file,lines.join('\n'));const color=batch.material.color.clone().convertLinearToSRGB();result.push({file,material:name,color:[color.r,color.g,color.b],metalness:batch.material.metalness,roughness:batch.material.roughness});}return result;}
+const kart=createKart(),circuit=createCircuit(),curve=trackCurve();
+const gates=Array.from({length:13},(_,i)=>{const t=(.06+i/13)%1,p=curve.getPointAt(t),d=curve.getTangentAt(t);return{order:i,location:[p.x*100,p.z*100,80],yaw:Math.atan2(d.z,d.x)*180/Math.PI};});
+const drivePath=Array.from({length:600},(_,i)=>{const p=curve.getPointAt((.06+i/600)%1);return[p.x*100,p.z*100,25];});
+const manifest={kart:exportGroup(kart,'Kart'),circuit:exportGroup(circuit,'Circuit'),routeLength:circuit.userData.routeLength,start:circuit.userData.start,gates,drivePath,notice:'South Garda-inspired art blockout. Approximate layout, not a surveyed replica. Kart is an authored visual concept.'};writeFileSync(out+'manifest.json',JSON.stringify(manifest,null,2));console.log(JSON.stringify({kartMaterials:manifest.kart.length,circuitMaterials:manifest.circuit.length,routeLength:manifest.routeLength}));
