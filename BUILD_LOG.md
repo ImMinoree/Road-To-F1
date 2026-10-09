@@ -176,3 +176,8 @@
 - Final validation: all 11 Unreal suites passed with no errors; six PIE suites recorded the virtual WASAPI raw-mode compatibility warning and one connectivity probe warning. Report retains those warnings. Editor and standalone Development targets passed; two presentation suites passed again after changing numbers to reference-inspired round badges. Standalone badge render inspected. Human listening remains needed for actual output balance.
 - User supplied a round numbered-ball reference during implementation. Used original sphere geometry, suit-coloured outer shells, white centres and black numbers; no image texture copied. Badge identity and distance/mph HUD tests passed. Documented temporary narration source, voice replacement workflow and unaddressed launch/traffic findings.
 - Prepared clear feature/validation/limitations Git description on kart-audio-race-hud. Publish branch for user testing; merge awaits explicit approval of this new gameplay version.
+
+## 2026-10-09 — approved audio/HUD merge
+- User explicitly requested merging kart-audio-race-hud. Verified clean starting tree and fetched origin; main was an ancestor of the tested branch at80db677.
+- Unreal locked the saved map and five sound assets during branch switching. Verified each file's Git blob hash exactly matched the tested commit, then advanced main/index and synchronized only unlocked files. Saved locked assets remained intact; working tree was clean.
+- Fast-forwarded main to the tested audio/HUD/video-review commits. Existing11-suite and final presentation/build validation applies; this merge adds no gameplay changes.
