@@ -1,0 +1,7 @@
+clip_id,start_seconds,end_seconds,event_type,actor_number,evidence_status,confidence,visible_speed_kmh,description,hypothesis,eligible_for_reference,frame_refs
+bad_start,11,35,failed_launch,unknown,observed,0.9,,"Pack bunches on straight; several NPCs yaw across lanes; player slows from moving speeds to 0 near33s.","Queue recovery or launch lane convergence may contribute; unconfirmed.",no,"frame_0006.jpg..frame_0018.jpg"
+bad_start,45,51,collision,unknown,observed,0.9,,"Flames visible on NPCs ahead/left on approach to first bend; precise impact initiator not visible.",,no,"frame_0023.jpg..frame_0026.jpg"
+bad_start,93,95,uncertain,20,observed,0.95,57,"HUD shows player first by93s after20th at47s. This records ordering; it does not establish AI competitive pace independently.",,no,"frame_0047.jpg..frame_0048.jpg"
+bad_start,125,125,clean_reference,20,observed,0.95,57,"HUD advances to lap2; lastlap1:45.734. Lap/reset correctness is visual evidence only.",,no,"frame_0063.jpg"
+bad_start,291,295,collision,unknown,observed,0.85,,"HUD finished at291s total4:32.561 position1; NPC reaches stopped player rear at295s. Postfinish contact remains possible.","Finished drivers may need safe stopping or cooldown control.",no,"frame_0146.jpg..frame_0148.jpg"
+bad_start,297,355,uncertain,unknown,observed,0.95,0,"Viewport becomes green with complexity scale and checkerboard background; consistent with Unreal diagnostic view. Cause/user input not visible.",,no,"frame_0149.jpg..frame_0178.jpg"
