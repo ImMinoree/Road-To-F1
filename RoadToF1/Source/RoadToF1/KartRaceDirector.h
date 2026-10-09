@@ -27,7 +27,7 @@ struct FKartOpponentState
 
 struct FKartStanding
 {
-    int32 Position = 0, Number = 0, FinishPlace = 0;
+    int32 Position = 0, Number = 0, FinishPlace = 0, Lap = 0;
     FString Name;
     float SpeedKmh = 0;
     double Distance = 0;
@@ -47,6 +47,9 @@ public:
     void ResetField();
     int32 GetPlayerPlace() const;
     TArray<FKartStanding> GetStandings() const;
+    double DistanceToLapFinishCm(const FVector& P, const FRaceProgress& Progress) const;
+    FString GetCommentaryCaption() const;
+    bool IsCommentaryPlaying() const;
     bool HasStarted() const { return bReleased; }
     const TArray<FKartOpponentState>& GetOpponents() const { return Opponents; }
     class UKartTrainingRecorder* GetTrainingRecorder() const { return TrainingRecorder; }
@@ -54,6 +57,14 @@ public:
     UPROPERTY(EditAnywhere, Category="Race") TArray<FVector> RoutePoints;
     UPROPERTY(EditAnywhere, Category="Race") TArray<FTransform> Grid;
 private:
+    void UpdateCommentary();
+    void Announce(const TCHAR* Cue, const FString& Caption);
+    UPROPERTY(VisibleAnywhere) TObjectPtr<class UAudioComponent> CommentaryAudio;
+    UPROPERTY(EditAnywhere, Category="Commentary") TMap<FName, TObjectPtr<class USoundBase>> CommentaryClips;
+    FString CommentaryCaption;
+    double CaptionUntil = 0, CommentaryCooldownUntil = 0;
+    int32 AnnouncedLap = 0, PreviousPlayerPlace = 20;
+    bool bAnnouncedFinish = false, bPreviousFire = false;
     UPROPERTY(VisibleAnywhere) TObjectPtr<class UKartTrainingRecorder> TrainingRecorder;
     TArray<FKartTrainingStyle> LearnedStyles;
     int32 NearestPoint(const FVector& P) const;

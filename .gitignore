@@ -41,3 +41,10 @@ TestResults/Racecraft/Incident.png
 TestResults/Racecraft/build*.json
 TestResults/Training/build*.json
 AI Agent for game training/**/__pycache__/
+
+# Intermediate presentation test browser exports remain local
+TestResults/AudioHUD/VisualAutomation/
+TestResults/AudioHUD/Automation/index.html
+TestResults/AudioHUD/Automation/*.js
+TestResults/AudioHUD/Automation/*.css
+TestResults/AudioHUD/Automation/*.png

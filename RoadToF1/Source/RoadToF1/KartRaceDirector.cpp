@@ -1,4 +1,6 @@
 #include "KartRaceDirector.h"
+#include "Components/AudioComponent.h"
+#include "Sound/SoundBase.h"
 #include "KartTrainingRecorder.h"
 #include "Misc/Paths.h"
 #include "Misc/FileHelper.h"
@@ -11,6 +13,10 @@
 AKartRaceDirector::AKartRaceDirector()
 {
     PrimaryActorTick.bCanEverTick = true;
+    CommentaryAudio = CreateDefaultSubobject<UAudioComponent>(TEXT("CommentaryAudio"));
+    CommentaryAudio->bAutoActivate = false;
+    CommentaryAudio->bIsUISound = true;
+    CommentaryAudio->SetVolumeMultiplier(.8f);
     TrainingRecorder = CreateDefaultSubobject<UKartTrainingRecorder>(TEXT("TrainingRecorder"));
 }
 
@@ -45,6 +51,10 @@ void AKartRaceDirector::BeginPlay()
 void AKartRaceDirector::ResetField()
 {
     bReleased = false;
+    CommentaryAudio->Stop(); CommentaryCaption.Empty();
+    CaptionUntil = CommentaryCooldownUntil = 0;
+    AnnouncedLap = 0; PreviousPlayerPlace = 20;
+    bAnnouncedFinish = bPreviousFire = false;
     FinishCount = PlayerFinishPlace = 0;
     const URaceLoopSubsystem* Race = GetWorld()->GetSubsystem<URaceLoopSubsystem>();
     const int32 Laps = Race ? Race->GetProgress().TargetLaps : 3;
@@ -107,6 +117,7 @@ void AKartRaceDirector::Tick(float Dt)
     if (!Player || !Race || !Race->IsRaceAvailable() || RoutePoints.IsEmpty()) return;
     if (FMath::Abs(Player->GetSpeedKmh()) > .5f) bReleased = true;
     if (Race->GetProgress().bFinished && PlayerFinishPlace == 0) PlayerFinishPlace = ++FinishCount;
+    UpdateCommentary();
     const auto& Gates = Race->GetGates();
     for (int32 Agent = 0; Agent < Opponents.Num(); ++Agent)
     {
@@ -262,6 +273,7 @@ TArray<FKartStanding> AKartRaceDirector::GetStandings() const
     {
         FKartStanding Row;
         Row.Number = Kart->GetKartNumber(); Row.Name = Kart->GetDriverName();
+        Row.Lap = Progress.CurrentLap();
         Row.SpeedKmh = FMath::Abs(Kart->GetSpeedKmh());
         Row.bPlayer = bPlayer; Row.bIncident = Kart->IsBurning();
         Row.FinishPlace = Finish; Row.Color = Kart->GetSuitColor();
@@ -282,4 +294,54 @@ TArray<FKartStanding> AKartRaceDirector::GetStandings() const
     });
     for (int32 Index = 0; Index < Rows.Num(); ++Index) Rows[Index].Position = Index + 1;
     return Rows;
+}
+
+double AKartRaceDirector::DistanceToLapFinishCm(const FVector& P, const FRaceProgress& Progress) const
+{
+    if (Progress.bFinished || RoutePoints.Num() < 2) return 0;
+    // Project onto the centreline, then sum forward segments to start/finish.
+    // This is route distance, not a straight-line shortcut across the infield.
+    const int32 Near = NearestPoint(P);
+    double Remaining = 0;
+    for (int32 I = Near; I < RoutePoints.Num(); ++I)
+        Remaining += FVector::Dist2D(RoutePoints[I], RoutePoints[(I + 1) % RoutePoints.Num()]);
+    const FVector Direction = (RoutePoints[(Near + 1) % RoutePoints.Num()] - RoutePoints[Near]).GetSafeNormal2D();
+    Remaining -= FVector::DotProduct(P - RoutePoints[Near], Direction);
+    if (Near == 0 && (!Progress.bStarted || Progress.NextCheckpoint == Progress.CheckpointCount))
+        return FMath::Max(0., -FVector::DotProduct(P - RoutePoints[0], Direction));
+    return FMath::Max(0., Remaining);
+}
+
+bool AKartRaceDirector::IsCommentaryPlaying() const { return CommentaryAudio->IsPlaying(); }
+FString AKartRaceDirector::GetCommentaryCaption() const
+{
+    return GetWorld()->GetTimeSeconds() < CaptionUntil ? CommentaryCaption : FString();
+}
+void AKartRaceDirector::Announce(const TCHAR* Cue, const FString& Caption)
+{
+    const double Now = GetWorld()->GetTimeSeconds();
+    CommentaryCaption = Caption; CaptionUntil = Now + 5;
+    CommentaryCooldownUntil = Now + 8;
+    CommentaryAudio->Stop();
+    if (const auto* Clip = CommentaryClips.Find(FName(Cue)); Clip && *Clip)
+    {
+        CommentaryAudio->SetSound(*Clip); CommentaryAudio->Play();
+    }
+}
+void AKartRaceDirector::UpdateCommentary()
+{
+    const URaceLoopSubsystem* Race = GetWorld()->GetSubsystem<URaceLoopSubsystem>();
+    const AKartPawn* Player = Cast<AKartPawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0));
+    if (!Race || !Player) return;
+    const auto& P = Race->GetProgress();
+    const int32 Place = GetPlayerPlace();
+    const double Now = GetWorld()->GetTimeSeconds();
+    if (P.bFinished && !bAnnouncedFinish) { Announce(TEXT("Finish"), TEXT("Across the line! The race is complete.")); bAnnouncedFinish = true; }
+    else if (!P.bFinished && Player->IsBurning() && !bPreviousFire && Now >= CommentaryCooldownUntil)
+        Announce(TEXT("Incident"), TEXT("Contact on track! Give the recovering karts room."));
+    else if (P.CurrentLap() > AnnouncedLap)
+        Announce(P.CurrentLap() == 1 ? TEXT("Start") : TEXT("Lap"), P.CurrentLap() == 1 ? TEXT("We're racing at South Garda! Keep it clean into the first corner.") : FString::Printf(TEXT("Lap %d of %d. Keep the momentum going!"), P.CurrentLap(), P.TargetLaps));
+    else if (!P.bFinished && P.bStarted && Place < PreviousPlayerPlace && Now >= CommentaryCooldownUntil)
+        Announce(TEXT("Overtake"), TEXT("A position gained! Keep looking ahead."));
+    AnnouncedLap = P.CurrentLap(); PreviousPlayerPlace = Place; bPreviousFire = Player->IsBurning();
 }

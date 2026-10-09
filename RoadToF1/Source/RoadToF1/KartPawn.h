@@ -2,6 +2,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
 #include "GameFramework/GameModeBase.h"
+#include "KartEngineSound.h"
 #include "KartPawn.generated.h"
 
 /** First playable kart: swept arcade movement on traced ground, using the authored art. */
@@ -31,6 +32,14 @@ public:
     bool IsBrakeHeld() const { return bBrake; }
     void ReceiveCollision(float ImpactSpeed, const FVector& Normal);
 private:
+    void UpdateAudioAndNumber(float Dt);
+    FKartEngineSound EngineSynth;
+    UPROPERTY(Transient) TObjectPtr<class USoundWaveProcedural> EngineWave;
+    UPROPERTY(VisibleAnywhere) TObjectPtr<class UAudioComponent> EngineAudio;
+    UPROPERTY(VisibleAnywhere) TObjectPtr<class USceneComponent> NumberBadge;
+    UPROPERTY(VisibleAnywhere) TObjectPtr<class UStaticMeshComponent> NumberShell;
+    UPROPERTY(VisibleAnywhere) TObjectPtr<class UStaticMeshComponent> NumberFace;
+    UPROPERTY(VisibleAnywhere) TObjectPtr<class UTextRenderComponent> RacerNumber;
     void UpdateIncident(float Dt);
     void ToggleTrainingRecording();
     void BrakePressed() { bBrake = true; }

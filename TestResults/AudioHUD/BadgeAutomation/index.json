@@ -1,0 +1,72 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "0273E9DC4633EC26DA37F6AA96DE6574",
+			"instanceName": "DESKTOP-ERDHE74-21308",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "D3D12_SM6",
+			"rHI": "D3D12 (SM6)",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.09-11.43.08",
+	"succeeded": 1,
+	"succeededWithWarnings": 1,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 4.8522543907165527,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "EnginePCM",
+			"fullTestPath": "RoadToF1.Presentation.EnginePCM",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"0273E9DC4633EC26DA37F6AA96DE6574"
+			],
+			"duration": 0.0059509985148906708,
+			"dateTime": "2026.10.09-11.43.03",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "RacePIE",
+			"fullTestPath": "RoadToF1.Presentation.RacePIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"0273E9DC4633EC26DA37F6AA96DE6574"
+			],
+			"duration": 4.8463034629821777,
+			"dateTime": "2026.10.09-11.43.03",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Warning",
+						"message": "LogAudioMixerWasapi: InitializeHardware failed SetClientProperties AUDCLNT_E_RAW_MODE_UNSUPPORTED",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-11.43.04"
+				}
+			],
+			"warnings": 1,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

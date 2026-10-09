@@ -1,4 +1,9 @@
 #include "KartPawn.h"
+#include "Sound/SoundWaveProcedural.h"
+#include "Components/AudioComponent.h"
+#include "Components/TextRenderComponent.h"
+#include "Sound/SoundAttenuation.h"
+#include "GameFramework/PlayerController.h"
 #include "KartRaceDirector.h"
 #include "KartTrainingRecorder.h"
 #include "Kismet/GameplayStatics.h"
@@ -73,6 +78,38 @@ AKartPawn::AKartPawn()
         AddEffect(FString::Printf(TEXT("Flame%d"), Index), Cone.Object, Flames);
         AddEffect(FString::Printf(TEXT("Smoke%d"), Index), Sphere.Object, Smoke);
     }
+    EngineAudio = CreateDefaultSubobject<UAudioComponent>(TEXT("EngineAudio"));
+    EngineAudio->SetupAttachment(Body);
+    EngineAudio->bAutoActivate = false;
+    EngineAudio->bOverrideAttenuation = true;
+    EngineAudio->AttenuationOverrides.bAttenuate = true;
+    EngineAudio->AttenuationOverrides.bSpatialize = true;
+    EngineAudio->AttenuationOverrides.AttenuationShapeExtents = FVector(100);
+    EngineAudio->AttenuationOverrides.FalloffDistance = 2200;
+    NumberBadge = CreateDefaultSubobject<USceneComponent>(TEXT("NumberBadge"));
+    NumberBadge->SetupAttachment(Body);
+    NumberBadge->SetRelativeLocation(FVector(-10, 0, 110));
+    NumberShell = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("NumberShell"));
+    NumberShell->SetupAttachment(NumberBadge);
+    NumberShell->SetStaticMesh(Sphere.Object);
+    NumberShell->SetRelativeScale3D(FVector(.28));
+    NumberShell->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    NumberShell->SetCastShadow(false);
+    NumberFace = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("NumberFace"));
+    NumberFace->SetupAttachment(NumberBadge);
+    NumberFace->SetStaticMesh(Sphere.Object);
+    NumberFace->SetRelativeLocation(FVector(13.8, 0, 0));
+    NumberFace->SetRelativeScale3D(FVector(.012, .20, .20));
+    NumberFace->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    NumberFace->SetCastShadow(false);
+    RacerNumber = CreateDefaultSubobject<UTextRenderComponent>(TEXT("RacerNumber"));
+    RacerNumber->SetupAttachment(NumberBadge);
+    RacerNumber->SetRelativeLocation(FVector(14.5, 0, 0));
+    RacerNumber->SetHorizontalAlignment(EHTA_Center);
+    RacerNumber->SetVerticalAlignment(EVRTA_TextCenter);
+    RacerNumber->SetWorldSize(12);
+    RacerNumber->SetCastShadow(false);
+    RacerNumber->SetCollisionEnabled(ECollisionEnabled::NoCollision);
     FireLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("IncidentLight"));
     FireLight->SetupAttachment(Body);
     FireLight->SetRelativeLocation(FVector(-45, 35, 50));
@@ -91,6 +128,13 @@ void AKartPawn::BeginPlay()
         Piece->SetStaticMesh(LoadObject<UStaticMesh>(nullptr, *FString::Printf(TEXT("/Game/RoadToF1/Art/DriversV01/Meshes/%s.%s"), *Name, *Name)));
     }
     ConfigureRacer(0, false);
+    EngineWave = NewObject<USoundWaveProcedural>(this);
+    EngineWave->SetSampleRate(FKartEngineSound::SampleRate);
+    EngineWave->NumChannels = 1;
+    EngineWave->Duration = INDEFINITELY_LOOPING_DURATION;
+    EngineAudio->SetSound(EngineWave);
+    UpdateAudioAndNumber(0);
+    EngineAudio->Play();
     UMaterialInterface* FlameMat = LoadObject<UMaterialInterface>(nullptr, TEXT("/Game/RoadToF1/Art/IncidentV01/M_Flame.M_Flame"));
     UMaterialInterface* SmokeMat = LoadObject<UMaterialInterface>(nullptr, TEXT("/Game/RoadToF1/Art/IncidentV01/M_Smoke.M_Smoke"));
     for (UStaticMeshComponent* Piece : Flames) if (FlameMat) Piece->SetMaterial(0, FlameMat);
@@ -103,12 +147,16 @@ void AKartPawn::ConfigureRacer(int32 Index, bool bOpponent)
     static const TCHAR* Names[] = {TEXT("YOU"), TEXT("Luca Rossi"), TEXT("Noah Weber"), TEXT("Maya Patel"), TEXT("Leo Martin"), TEXT("Eva Novak"), TEXT("Kai Tanaka"), TEXT("Zara Khan"), TEXT("Finn Walsh"), TEXT("Mila Costa"), TEXT("Theo Laurent"), TEXT("Aria Singh"), TEXT("Hugo Silva"), TEXT("Nina Berg"), TEXT("Owen Clarke"), TEXT("Sara Malik"), TEXT("Alex Chen"), TEXT("Isla Reed"), TEXT("Enzo Romano"), TEXT("Freya Olsen")};
     DriverName = Names[FMath::Clamp(Index, 0, 19)];
     KartNumber = bOpponent ? Index : 20;
+    RacerNumber->SetText(FText::FromString(FString::Printf(TEXT("%d"), KartNumber)));
+    RacerNumber->SetTextRenderColor(FColor::Black);
+    EngineAudio->SetVolumeMultiplier(bOpponent ? .045f : .14f);
     SuitColor = FLinearColor::MakeFromHSV8((Index * 97) % 256, 210, 235);
     const FLinearColor Accent = FLinearColor::MakeFromHSV8((Index * 97 + 100) % 256, Index % 2 ? 180 : 30, 255);
     for (UStaticMeshComponent* Piece : DriverArt)
         for (int32 Slot = 0; Slot < Piece->GetNumMaterials(); ++Slot)
             if (UMaterialInstanceDynamic* Mat = Piece->CreateAndSetMaterialInstanceDynamic(Slot))
                 Mat->SetVectorParameterValue(TEXT("LiveryColor"), Piece->GetName() == TEXT("Driver_Suit") ? SuitColor : Accent);
+    if (!DriverArt.IsEmpty() && DriverArt[0]->GetNumMaterials() > 0) NumberShell->SetMaterial(0, DriverArt[0]->GetMaterial(0));
     if (bOpponent)
     {
         Boom->SetComponentTickEnabled(false);
@@ -162,6 +210,7 @@ void AKartPawn::SetDriveInput(float Throttle, float Steering, bool Brake)
 void AKartPawn::Tick(float DeltaSeconds)
 {
     Super::Tick(DeltaSeconds);
+    UpdateAudioAndNumber(DeltaSeconds);
     // Bounded substeps keep swept movement, braking and steering stable during hitches.
     float Remaining = FMath::Min(DeltaSeconds, .25f);
     while (Remaining > UE_SMALL_NUMBER)
@@ -242,6 +291,8 @@ void AKartPawn::Tick(float DeltaSeconds)
 void AKartPawn::ResetKart()
 {
     Speed = VerticalSpeed = SmoothedSteering = YawRate = 0;
+    EngineSynth = FKartEngineSound();
+    if (EngineWave) EngineWave->ResetAudio();
     FireSeconds = StunSeconds = CollisionCooldown = IncidentClock = 0;
     CollisionCount = 0;
     UpdateIncident(0);
@@ -288,4 +339,26 @@ void AKartPawn::UpdateIncident(float Dt)
 AKartGameMode::AKartGameMode()
 {
     DefaultPawnClass = AKartPawn::StaticClass();
+}
+
+void AKartPawn::UpdateAudioAndNumber(float Dt)
+{
+    if (APlayerController* PC = GetWorld()->GetFirstPlayerController())
+    {
+        FVector Eye; FRotator Look;
+        PC->GetPlayerViewPoint(Eye, Look);
+        NumberBadge->SetWorldRotation((Eye - NumberBadge->GetComponentLocation()).Rotation());
+        const bool bNear = FVector::DistSquared(Eye, GetActorLocation()) < FMath::Square(4500.f);
+        RacerNumber->SetVisibility(bNear); NumberShell->SetVisibility(bNear); NumberFace->SetVisibility(bNear);
+    }
+    if (!EngineWave) return;
+    while (EngineWave->GetAvailableAudioByteCount() < 8192)
+    {
+        TArray<int16> Samples;
+        EngineSynth.Render(Samples, 2048, FMath::Abs(GetSpeedKmh()) / SpeedLimitKmh, GetThrottleInput(), IsBurning(), KartNumber);
+        EngineWave->QueueAudio(reinterpret_cast<const uint8*>(Samples.GetData()), Samples.Num() * sizeof(int16));
+    }
+    const AKartRaceDirector* Director = Cast<AKartRaceDirector>(UGameplayStatics::GetActorOfClass(GetWorld(), AKartRaceDirector::StaticClass()));
+    const float Base = IsPlayerControlled() ? .14f : .045f;
+    EngineAudio->SetVolumeMultiplier(Base * (Director && Director->IsCommentaryPlaying() ? .4f : 1.f));
 }

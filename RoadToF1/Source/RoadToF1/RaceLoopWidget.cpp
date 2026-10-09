@@ -58,10 +58,12 @@ void URaceLoopWidget::NativeOnInitialized()
         UBorder* Tower = WidgetTree->ConstructWidget<UBorder>();
         Tower->SetBrushColor(FLinearColor(.012f, .018f, .03f, .94f)); Tower->SetPadding(FMargin(10));
         UCanvasPanelSlot* TowerSlot = Canvas->AddChildToCanvas(Tower);
-        TowerSlot->SetPosition(FVector2D(20, 20)); TowerSlot->SetSize(FVector2D(315, 620));
+        TowerSlot->SetPosition(FVector2D(20, 20)); TowerSlot->SetSize(FVector2D(355, 720));
         UVerticalBox* Table = WidgetTree->ConstructWidget<UVerticalBox>(); Tower->SetContent(Table);
         AddLine(Table, TEXT("ROAD TO F1 | LIVE ORDER"), 16);
-        AddLine(Table, TEXT("POS  KART     DRIVER                  SPEED"), 11);
+        TowerLap = AddLine(Table, TEXT("LAP 0 / 3"), 18);
+        TowerDistance = AddLine(Table, TEXT("TO LAP LINE: -- ft"), 13);
+        AddLine(Table, TEXT("POS  KART     DRIVER                   LAP    MPH"), 11);
         for (int32 Index = 0; Index < 20; ++Index)
         {
             UBorder* Row = WidgetTree->ConstructWidget<UBorder>(); Row->SetPadding(FMargin(5, 4));
@@ -78,7 +80,8 @@ void URaceLoopWidget::NativeOnInitialized()
             };
             UTextBlock* Number = Cell(55, false);
             UTextBlock* Name = Cell(0, true);
-            UTextBlock* SpeedText = Cell(60, false);
+            UTextBlock* LapText = Cell(30, false); StandingLaps.Add(LapText);
+            UTextBlock* SpeedText = Cell(64, false);
             StandingNumbers.Add(Number); StandingNames.Add(Name); StandingSpeeds.Add(SpeedText); StandingRows.Add(Row);
             Table->AddChildToVerticalBox(Row)->SetPadding(FMargin(0, 1));
         }
@@ -94,7 +97,8 @@ void URaceLoopWidget::NativeOnInitialized()
     if (bKartTrack)
     {
         Position = AddLine(Lines, TEXT("Position 20 / 20"), 20);
-        Speed = AddLine(Lines, TEXT("0 km/h"), 20);
+        Speed = AddLine(Lines, TEXT("0.0 mph"), 20);
+        Commentary = AddLine(Lines, TEXT(""), 14);
         AddLine(Lines, TEXT("W: accelerate | S: brake / reverse\nA/D: steer | Space: brake | F5: restart"), 14);
         TrainingStatus = AddLine(Lines, TEXT("F9: record training drive (off)"), 12);
     }
@@ -117,6 +121,11 @@ void URaceLoopWidget::NativeTick(const FGeometry& Geometry, float DeltaTime)
     if (const AKartRaceDirector* Director = Cast<AKartRaceDirector>(UGameplayStatics::GetActorOfClass(GetWorld(), AKartRaceDirector::StaticClass())))
     {
         const auto Rows = Director->GetStandings();
+        if (TowerLap) TowerLap->SetText(FText::FromString(FString::Printf(TEXT("LAP %d / %d"), P.CurrentLap(), P.TargetLaps)));
+        if (TowerDistance)
+            if (const AKartPawn* Player = Cast<AKartPawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0)))
+                TowerDistance->SetText(FText::FromString(P.bFinished ? TEXT("RACE COMPLETE") : FString::Printf(TEXT("TO LAP LINE: %.0f ft"), Director->DistanceToLapFinishCm(Player->GetActorLocation(), P) / 30.48)));
+        if (Commentary) Commentary->SetText(FText::FromString(Director->GetCommentaryCaption()));
         if (TrainingStatus)
         {
             const UKartTrainingRecorder* Recorder = Director->GetTrainingRecorder();
@@ -127,9 +136,10 @@ void URaceLoopWidget::NativeTick(const FGeometry& Geometry, float DeltaTime)
         {
             const auto& Row = Rows[Index];
             StandingNumbers[Index]->SetText(FText::FromString(FString::Printf(TEXT("%02d #%02d"), Row.Position, Row.Number)));
+            StandingLaps[Index]->SetText(FText::AsNumber(Row.Lap));
             StandingNames[Index]->SetText(FText::FromString(Row.Name));
             StandingNames[Index]->SetColorAndOpacity(FSlateColor(Row.bPlayer ? FLinearColor::White : Row.Color.Desaturate(.45f) * 1.8f));
-            StandingSpeeds[Index]->SetText(FText::FromString(FString::Printf(TEXT("%02d km/h"), FMath::RoundToInt(Row.SpeedKmh))));
+            StandingSpeeds[Index]->SetText(FText::FromString(FString::Printf(TEXT("%.1f mph"), Row.SpeedKmh * .621371f)));
             StandingRows[Index]->SetBrushColor(Row.bPlayer ? FLinearColor(.12f, .28f, .22f, 1) : Row.bIncident ? FLinearColor(.4f, .06f, .01f, 1) : FLinearColor(.03f, .04f, .06f, .8f));
         }
     }
@@ -138,7 +148,7 @@ void URaceLoopWidget::NativeTick(const FGeometry& Geometry, float DeltaTime)
             Position->SetText(FText::FromString(FString::Printf(TEXT("Position %d / 20"), Director->GetPlayerPlace())));
     if (Speed)
         if (const AKartPawn* Kart = Cast<AKartPawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0)))
-            Speed->SetText(FText::FromString(FString::Printf(TEXT("%d km/h"), FMath::RoundToInt(FMath::Abs(Kart->GetSpeedKmh())))));
+            Speed->SetText(FText::FromString(FString::Printf(TEXT("%.1f mph"), FMath::Abs(Kart->GetSpeedKmh()) * .621371f)));
     Status->SetText(FText::FromString(!Race->IsRaceAvailable() ? Race->GetStatusMessage() :
         P.bFinished ? TEXT("FINISHED - F5 to race again") : P.bStarted ? TEXT("RACING") : TEXT("Cross START to begin")));
     if (const AKartPawn* Kart = Cast<AKartPawn>(UGameplayStatics::GetPlayerPawn(GetWorld(), 0)))

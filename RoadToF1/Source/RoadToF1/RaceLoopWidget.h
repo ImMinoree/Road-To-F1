@@ -26,6 +26,10 @@ private:
     UPROPERTY(Transient) TObjectPtr<UTextBlock> Speed;
     UPROPERTY(Transient) TObjectPtr<UTextBlock> Position;
     UPROPERTY(Transient) TObjectPtr<UTextBlock> TrainingStatus;
+    UPROPERTY(Transient) TObjectPtr<UTextBlock> TowerLap;
+    UPROPERTY(Transient) TObjectPtr<UTextBlock> TowerDistance;
+    UPROPERTY(Transient) TObjectPtr<UTextBlock> Commentary;
+    UPROPERTY(Transient) TArray<TObjectPtr<UTextBlock>> StandingLaps;
     UPROPERTY(Transient) TArray<TObjectPtr<UTextBlock>> StandingNames;
     UPROPERTY(Transient) TArray<TObjectPtr<UTextBlock>> StandingNumbers;
     UPROPERTY(Transient) TArray<TObjectPtr<UTextBlock>> StandingSpeeds;
