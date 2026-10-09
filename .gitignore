@@ -48,3 +48,5 @@ TestResults/AudioHUD/Automation/index.html
 TestResults/AudioHUD/Automation/*.js
 TestResults/AudioHUD/Automation/*.css
 TestResults/AudioHUD/Automation/*.png
+TestResults/AudioHUD/BadgeAutomation/index.html
+TestResults/AudioHUD/HUD00000.png
