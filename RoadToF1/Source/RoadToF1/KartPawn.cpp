@@ -7,6 +7,7 @@
 #include "Engine/StaticMesh.h"
 #include "Engine/World.h"
 #include "Materials/MaterialInstanceDynamic.h"
+#include "Components/PointLightComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "InputCoreTypes.h"
 #include "UObject/ConstructorHelpers.h"
@@ -52,6 +53,30 @@ AKartPawn::AKartPawn()
         Piece->SetCollisionEnabled(ECollisionEnabled::NoCollision);
         DriverArt.Add(Piece);
     }
+    ConstructorHelpers::FObjectFinder<UStaticMesh> Cone(TEXT("/Engine/BasicShapes/Cone.Cone"));
+    ConstructorHelpers::FObjectFinder<UStaticMesh> Sphere(TEXT("/Engine/BasicShapes/Sphere.Sphere"));
+    for (int32 Index = 0; Index < 6; ++Index)
+    {
+        auto AddEffect = [&](const FString& Name, UStaticMesh* Mesh, auto& Array)
+        {
+            UStaticMeshComponent* Piece = CreateDefaultSubobject<UStaticMeshComponent>(*Name);
+            Piece->SetupAttachment(Body);
+            Piece->SetStaticMesh(Mesh);
+            Piece->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+            Piece->SetCastShadow(false);
+            Piece->SetVisibility(false);
+            Array.Add(Piece);
+        };
+        AddEffect(FString::Printf(TEXT("Flame%d"), Index), Cone.Object, Flames);
+        AddEffect(FString::Printf(TEXT("Smoke%d"), Index), Sphere.Object, Smoke);
+    }
+    FireLight = CreateDefaultSubobject<UPointLightComponent>(TEXT("IncidentLight"));
+    FireLight->SetupAttachment(Body);
+    FireLight->SetRelativeLocation(FVector(-45, 35, 50));
+    FireLight->SetLightColor(FLinearColor(1.f, .18f, .01f));
+    FireLight->SetAttenuationRadius(250);
+    FireLight->SetCastShadows(false);
+    FireLight->SetVisibility(false);
 }
 
 void AKartPawn::BeginPlay()
@@ -63,11 +88,18 @@ void AKartPawn::BeginPlay()
         Piece->SetStaticMesh(LoadObject<UStaticMesh>(nullptr, *FString::Printf(TEXT("/Game/RoadToF1/Art/DriversV01/Meshes/%s.%s"), *Name, *Name)));
     }
     ConfigureRacer(0, false);
+    UMaterialInterface* FlameMat = LoadObject<UMaterialInterface>(nullptr, TEXT("/Game/RoadToF1/Art/IncidentV01/M_Flame.M_Flame"));
+    UMaterialInterface* SmokeMat = LoadObject<UMaterialInterface>(nullptr, TEXT("/Game/RoadToF1/Art/IncidentV01/M_Smoke.M_Smoke"));
+    for (UStaticMeshComponent* Piece : Flames) if (FlameMat) Piece->SetMaterial(0, FlameMat);
+    for (UStaticMeshComponent* Piece : Smoke) if (SmokeMat) Piece->SetMaterial(0, SmokeMat);
 }
 
 void AKartPawn::ConfigureRacer(int32 Index, bool bOpponent)
 {
     SpeedLimitKmh = bOpponent ? 55 : 57;
+    static const TCHAR* Names[] = {TEXT("YOU"), TEXT("Luca Rossi"), TEXT("Noah Weber"), TEXT("Maya Patel"), TEXT("Leo Martin"), TEXT("Eva Novak"), TEXT("Kai Tanaka"), TEXT("Zara Khan"), TEXT("Finn Walsh"), TEXT("Mila Costa"), TEXT("Theo Laurent"), TEXT("Aria Singh"), TEXT("Hugo Silva"), TEXT("Nina Berg"), TEXT("Owen Clarke"), TEXT("Sara Malik"), TEXT("Alex Chen"), TEXT("Isla Reed"), TEXT("Enzo Romano"), TEXT("Freya Olsen")};
+    DriverName = Names[FMath::Clamp(Index, 0, 19)];
+    KartNumber = bOpponent ? Index : 20;
     SuitColor = FLinearColor::MakeFromHSV8((Index * 97) % 256, 210, 235);
     const FLinearColor Accent = FLinearColor::MakeFromHSV8((Index * 97 + 100) % 256, Index % 2 ? 180 : 30, 255);
     for (UStaticMeshComponent* Piece : DriverArt)
@@ -126,6 +158,7 @@ void AKartPawn::Tick(float DeltaSeconds)
     {
         const float Dt = FMath::Min(Remaining, 1.f / 120.f);
         Remaining -= Dt;
+        UpdateIncident(Dt);
         FCollisionQueryParams Query(SCENE_QUERY_STAT(KartGround), false, this);
         FHitResult Ground;
         const FVector Position = GetActorLocation();
@@ -155,10 +188,11 @@ void AKartPawn::Tick(float DeltaSeconds)
                 AddActorWorldOffset(FVector(0, 0, Rise), true, &Ceiling);
             }
         }
-        const float Throttle = Forward - Reverse;
+        const bool bDisabled = FireSeconds > 0 || StunSeconds > 0;
+        const float Throttle = bDisabled ? 0 : Forward - Reverse;
         if (bGrounded)
         {
-            if (bBrake || (Speed * Throttle < 0)) Speed = FMath::FInterpConstantTo(Speed, 0.f, Dt, 1500.f);
+            if (bDisabled || bBrake || (Speed * Throttle < 0)) Speed = FMath::FInterpConstantTo(Speed, 0.f, Dt, 1500.f);
             else if (!FMath::IsNearlyZero(Throttle)) Speed += Throttle * 300.f * Dt;
             else Speed = FMath::FInterpConstantTo(Speed, 0.f, Dt, 180.f);
             Speed = FMath::Clamp(Speed, -400.f, SpeedLimitKmh / .036f);
@@ -177,7 +211,19 @@ void AKartPawn::Tick(float DeltaSeconds)
         AddActorWorldOffset(Delta, true, &Hit);
         if (Hit.bBlockingHit)
         {
-            if (Hit.Normal.Z < .55f) Speed = 0;
+            if (Hit.Normal.Z < .55f)
+            {
+                if (AKartPawn* Other = Cast<AKartPawn>(Hit.GetActor()))
+                {
+                    const float Closing = FMath::Max(0., -FVector::DotProduct(GetVelocity() - Other->GetVelocity(), Hit.Normal));
+                    if (Closing > 100)
+                    {
+                        ReceiveCollision(Closing, Hit.Normal);
+                        Other->ReceiveCollision(Closing, -Hit.Normal);
+                    }
+                }
+                Speed = 0;
+            }
             else VerticalSpeed = 0;
         }
     }
@@ -186,10 +232,47 @@ void AKartPawn::Tick(float DeltaSeconds)
 void AKartPawn::ResetKart()
 {
     Speed = VerticalSpeed = SmoothedSteering = YawRate = 0;
+    FireSeconds = StunSeconds = CollisionCooldown = IncidentClock = 0;
+    CollisionCount = 0;
+    UpdateIncident(0);
     SetDriveInput(0, 0);
     Boom->bEnableCameraLag = false;
     Boom->TickComponent(0, LEVELTICK_All, nullptr);
     Boom->bEnableCameraLag = true;
+}
+
+void AKartPawn::ReceiveCollision(float ImpactSpeed, const FVector& Normal)
+{
+    if (CollisionCooldown > 0 || ImpactSpeed < 100) return;
+    CollisionCooldown = 1;
+    ++CollisionCount;
+    Speed *= .25f;
+    StunSeconds = FMath::Clamp(ImpactSpeed / 1500.f, .15f, 1.f);
+    const float Side = FVector::DotProduct(Normal, GetActorRightVector());
+    AddActorWorldRotation(FRotator(0, FMath::Clamp(Side * ImpactSpeed / 70.f, -12.f, 12.f), 0));
+    if (ImpactSpeed >= 700) FireSeconds = 6;
+}
+
+void AKartPawn::UpdateIncident(float Dt)
+{
+    FireSeconds = FMath::Max(0.f, FireSeconds - Dt);
+    StunSeconds = FMath::Max(0.f, StunSeconds - Dt);
+    CollisionCooldown = FMath::Max(0.f, CollisionCooldown - Dt);
+    IncidentClock += Dt;
+    const bool bFire = FireSeconds > 0;
+    for (int32 Index = 0; Index < Flames.Num(); ++Index)
+    {
+        const float Pulse = .75f + .25f * FMath::Sin(IncidentClock * 19 + Index * 2.1f);
+        Flames[Index]->SetVisibility(bFire);
+        Flames[Index]->SetRelativeLocation(FVector(-45 + (Index % 3 - 1) * 12, 35 + (Index / 3 - .5f) * 14, 15 + Pulse * 18));
+        Flames[Index]->SetRelativeScale3D(FVector(.11f * Pulse, .11f * Pulse, .35f * Pulse));
+        const float Rise = FMath::Fmod(IncidentClock * .55f + Index / 6.f, 1.f);
+        Smoke[Index]->SetVisibility(bFire);
+        Smoke[Index]->SetRelativeLocation(FVector(-45 - Rise * 20, 35, 35 + Rise * 110));
+        Smoke[Index]->SetRelativeScale3D(FVector(.08f + Rise * .4f));
+    }
+    FireLight->SetVisibility(bFire);
+    if (bFire) FireLight->SetIntensity(1500 + 500 * FMath::Sin(IncidentClock * 17));
 }
 
 AKartGameMode::AKartGameMode()

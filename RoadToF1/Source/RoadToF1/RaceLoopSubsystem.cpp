@@ -133,8 +133,16 @@ void URaceLoopSubsystem::AttachPlayer()
         if (RaceWidget)
         {
             RaceWidget->AddToPlayerScreen(10);
-            RaceWidget->SetDesiredSizeInViewport(FVector2D(420, GetWorld()->GetMapName().EndsWith(TEXT("SouthGarda_KartRace")) ? 550 : 420));
-            RaceWidget->SetPositionInViewport(FVector2D(28, 28));
+            if (GetWorld()->GetMapName().EndsWith(TEXT("SouthGarda_KartRace")))
+            {
+                RaceWidget->SetPositionInViewport(FVector2D::ZeroVector);
+                RaceWidget->SetAnchorsInViewport(FAnchors(0, 0, 1, 1));
+            }
+            else
+            {
+                RaceWidget->SetDesiredSizeInViewport(FVector2D(420, 420));
+                RaceWidget->SetPositionInViewport(FVector2D(28, 28));
+            }
         }
     }
     if (TrackedPawn != PC->GetPawn())

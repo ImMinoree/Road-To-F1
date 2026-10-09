@@ -22,7 +22,13 @@ public:
     float GetSpeedLimitKmh() const { return SpeedLimitKmh; }
     FLinearColor GetSuitColor() const { return SuitColor; }
     int32 GetDriverMeshCount() const;
+    const FString& GetDriverName() const { return DriverName; }
+    int32 GetKartNumber() const { return KartNumber; }
+    bool IsBurning() const { return FireSeconds > 0; }
+    int32 GetCollisionCount() const { return CollisionCount; }
+    void ReceiveCollision(float ImpactSpeed, const FVector& Normal);
 private:
+    void UpdateIncident(float Dt);
     void BrakePressed() { bBrake = true; }
     void BrakeReleased() { bBrake = false; }
     UPROPERTY(VisibleAnywhere) TObjectPtr<class UBoxComponent> Body;
@@ -30,6 +36,13 @@ private:
     UPROPERTY(VisibleAnywhere) TObjectPtr<class UCameraComponent> Camera;
     UPROPERTY(VisibleAnywhere) TArray<TObjectPtr<class UStaticMeshComponent>> Art;
     UPROPERTY(VisibleAnywhere) TArray<TObjectPtr<class UStaticMeshComponent>> DriverArt;
+    UPROPERTY(VisibleAnywhere) TArray<TObjectPtr<class UStaticMeshComponent>> Flames;
+    UPROPERTY(VisibleAnywhere) TArray<TObjectPtr<class UStaticMeshComponent>> Smoke;
+    UPROPERTY(VisibleAnywhere) TObjectPtr<class UPointLightComponent> FireLight;
+    FString DriverName = TEXT("YOU");
+    int32 KartNumber = 20;
+    float FireSeconds = 0, StunSeconds = 0, CollisionCooldown = 0, IncidentClock = 0;
+    int32 CollisionCount = 0;
     float SpeedLimitKmh = 57;
     FLinearColor SuitColor = FLinearColor::Red;
     float Speed = 0;

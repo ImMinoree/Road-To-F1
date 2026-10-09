@@ -27,3 +27,15 @@ TestResults/DriverAI/AutomationFixed/
 TestResults/DriverAI/build*.json
 TestResults/DriverAI/Grid.png
 TestResults/DriverAI/DriverCloseup.png
+
+# Prevent an engine-created duplicate from being committed again
+/RoadToF1 5.8/
+
+# Intermediate racecraft validation (retain final evidence separately)
+TestResults/Racecraft/Automation/
+TestResults/Racecraft/AutomationFixed/
+TestResults/Racecraft/AutomationVisual/
+TestResults/Racecraft/HUD.png
+TestResults/Racecraft/HUDFixed.png
+TestResults/Racecraft/Incident.png
+TestResults/Racecraft/build*.json

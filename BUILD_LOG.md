@@ -126,3 +126,27 @@
 - Remaining tracked changes are two pre-existing VehicleBasic external-actor assets; include their current saved versions to preserve the user's map edits in GitHub.
 - Added ignore rules for raw engine logs and intermediate driver/AI build reports/screenshots. These files remain on disk; final test report and final screenshots remain tracked.
 - No gameplay source changes. Existing five-suite validation applies to the driver/AI implementation; these older map asset edits were not separately gameplay-tested.
+
+## 2026-10-09 — racecraft, collisions, leaderboard and engine compatibility
+- User requested less repetitive NPC driving, collision/fire response, incident avoidance and a named/numbered speed leaderboard; push and merge only after user testing and approval.
+- Repository was on main at dea3d96 after an external merge. Created local ai-racecraft-incidents; preserved all saved assets. Backed up original project/source to D:/Boring/RaceValidation/Racecraft-Before.
+- Engine-created RoadToF1 5.8 copy matched original Source/Config/Content by SHA-256 before edits. Both use the installed UE 5.8.3, CL58210709. Corrected original EngineAssociation from a custom GUID to 5.8. The copy remains local and ignored; its editor is still open, so consolidation awaits saved/closed confirmation and a fresh comparison.
+- Implemented 19 individual driving profiles, traffic-scored gradual lane changes with commitment periods on straights, swept collision slowdown/stun, hard-impact six-second mesh flame/smoke/lighting, contact cooldown/reset, and slowing/holding/choosing open lanes around burning incidents. Kept player57/NPC55 km/h limits.
+- Added live 20-row leaderboard with unique fictional names, kart numbers, positions, speeds and player/incident highlighting. Retained lap/checkpoint/timing/finish/reset UI on the right.
+- Initial full-field regressions exposed traffic deadlock: a rear kart blocked forward escape. Fixed occupied-lane rejection to apply to lane changes, not current-lane forward travel. Reduced corner profiles to the controller's tested range. Visual checks exposed viewport anchors being reset by SetPositionInViewport; fixed call order and incident text/panel sizing.
+- Native build succeeded. All six automation suites passed, zero errors/warnings. All 19 AI physically completed three ordered laps in 600 simulated movement seconds. Actual swept collision, hard/light impact, cooldown/reset, and a follower avoiding a two-kart burning blockage passed. Rendered incident validation also passed; screenshots inspected.
+- Evidence and prototype limitations: TestResults/Racecraft/RESULTS.md. Fire uses lightweight animated meshes; competitive difficulty and collision feel still need human driving feedback. Raw logs and intermediate failed reports retained locally.
+- Changes saved locally; no commit, push or merge. Next: save/close copied editor, preserve any new unique copy edits, retire duplicate safely, open original for user driving test, then request push/merge approval.
+
+## 2026-10-09 — single-project consolidation
+- User confirmed the copied project was saved and closed. Verified no Unreal processes remained before moving files.
+- Fresh SHA-256 comparison found identical Content; copy Source matched the pre-change backup and copy Config matched HEAD. No unique saved user changes needed transfer.
+- Moved the entire duplicate with native Move-Item to D:/Boring/RaceValidation/RetiredProjects/RoadToF1-5.8-20261009 after checking exact source and destination paths. No files deleted. Repository now has only the original RoadToF1 project folder; retired copy is a recovery backup outside Git.
+- Original project uses UE5.8.3 and already has the successful native build, six-suite regression and rendered incident validation. No gameplay changes during consolidation.
+- Reopened original SouthGarda_KartRace with the UE5.8.3 executable; verified the process command line targets the original project and the editor is responsive (RoadToF1 - Unreal Editor). Launch log retained at TestResults/Racecraft/user-review-launch.log.
+- Next: user driving test. Push and merge remain pending explicit approval.
+
+## 2026-10-09 — racecraft publication authorization
+- User explicitly requested pushing and merging all work completed so far, then creating a subagent and a separate AI Agent for game training directory.
+- Publishing the completed and consolidated racecraft phase with its six passing regression suites and rendered incident evidence. Live manual driving by the assistant remains unverified because Computer Use capture timed out.
+- Training-agent files are excluded from this publication and developed as a separate phase.

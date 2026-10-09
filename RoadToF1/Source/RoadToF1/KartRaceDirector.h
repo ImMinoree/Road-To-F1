@@ -15,6 +15,22 @@ struct FKartOpponentState
     float Lane = 0;
     float StalledSeconds = 0;
     float RecoverySeconds = 0;
+    float Aggression = 0;
+    float CornerSkill = 1;
+    float PreferredLane = 0;
+    float DesiredLane = 0;
+    float DecisionCooldown = 0;
+    float TargetSpeed = 0;
+};
+
+struct FKartStanding
+{
+    int32 Position = 0, Number = 0, FinishPlace = 0;
+    FString Name;
+    float SpeedKmh = 0;
+    double Distance = 0;
+    bool bPlayer = false, bIncident = false;
+    FLinearColor Color;
 };
 
 /** Authored route and 20-slot grid; opponents use the same swept kart movement. */
@@ -28,6 +44,7 @@ public:
     virtual void Tick(float DeltaSeconds) override;
     void ResetField();
     int32 GetPlayerPlace() const;
+    TArray<FKartStanding> GetStandings() const;
     bool HasStarted() const { return bReleased; }
     const TArray<FKartOpponentState>& GetOpponents() const { return Opponents; }
     UPROPERTY(EditAnywhere, Category="Race") TArray<FVector> RoutePoints;

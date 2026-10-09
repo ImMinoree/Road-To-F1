@@ -11,6 +11,9 @@
 #include "Kismet/GameplayStatics.h"
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
+#include "Misc/CommandLine.h"
+#include "Misc/Parse.h"
+#include "UnrealClient.h"
 #include "Serialization/JsonReader.h"
 #include "Serialization/JsonSerializer.h"
 
@@ -156,6 +159,14 @@ bool FVerifyAIRace::Update()
     URaceLoopSubsystem* Race = World->GetSubsystem<URaceLoopSubsystem>();
     if (!Director || !Player || !Race) { Test->AddError(TEXT("AI field not available")); return true; }
     Race->Tick(0); Race->RestartRace();
+    TSet<FString> Names;
+    TSet<int32> Numbers;
+    TSet<FString> Profiles;
+    for (const auto& Row : Director->GetStandings()) { Names.Add(Row.Name); Numbers.Add(Row.Number); }
+    for (const auto& State : Director->GetOpponents()) Profiles.Add(FString::Printf(TEXT("%.4f %.4f %.4f"), State.Aggression, State.CornerSkill, State.PreferredLane));
+    Test->TestEqual(TEXT("20 unique driver names in standings"), Names.Num(), 20);
+    Test->TestEqual(TEXT("20 unique kart numbers in standings"), Numbers.Num(), 20);
+    Test->TestEqual(TEXT("19 individual driving profiles"), Profiles.Num(), 19);
     Director->Tick(.05f);
     Test->TestFalse(TEXT("Field waits for player throttle"), Director->HasStarted());
     Player->SetDriveInput(1, 0); Player->Tick(.1f); Director->Tick(.05f);
@@ -177,10 +188,11 @@ bool FVerifyAIRace::Update()
     for (const auto& State : Director->GetOpponents())
     {
         if (State.Progress.bFinished) ++Finished;
-        Test->AddInfo(FString::Printf(TEXT("AI: laps %d, CP %d, speed %.1f, pos %s"), State.Progress.CompletedLaps, State.Progress.NextCheckpoint, State.Kart->GetSpeedKmh(), *State.Kart->GetActorLocation().ToString()));
+        Test->AddInfo(FString::Printf(TEXT("AI: laps %d, CP %d, speed %.1f, contacts %d, route %d, lane %.0f, pos %s"), State.Progress.CompletedLaps, State.Progress.NextCheckpoint, State.Kart->GetSpeedKmh(), State.Kart->GetCollisionCount(), State.RouteIndex, State.Lane, *State.Kart->GetActorLocation().ToString()));
     }
     Test->TestEqual(TEXT("All 19 AI drive three ordered laps within ten simulated minutes"), Finished, 19);
     Test->TestTrue(TEXT("AI never exceeds 55 km/h"), PeakSpeed <= 55.01f && PeakSpeed > 50);
+    Test->TestEqual(TEXT("Finished AI rank ahead of parked player"), Director->GetPlayerPlace(), 20);
     Race->RestartRace();
     Test->TestFalse(TEXT("F5 reset holds AI field again"), Director->HasStarted());
     for (int32 Index = 0; Index < Director->GetOpponents().Num(); ++Index)
@@ -189,6 +201,82 @@ bool FVerifyAIRace::Update()
         Test->TestTrue(TEXT("AI returns to its grid box"), State.Kart->GetActorLocation().Equals(Director->Grid[Index].GetLocation(), 2));
         Test->TestEqual(TEXT("AI lap progress resets"), State.Progress.CompletedLaps, 0);
     }
+    return true;
+}
+
+DEFINE_LATENT_AUTOMATION_COMMAND_ONE_PARAMETER(FVerifyIncidents, FAutomationTestBase*, Test);
+bool FVerifyIncidents::Update()
+{
+    UWorld* World = AutomationCommon::GetAnyGameWorld();
+    if (!World) { Test->AddError(TEXT("Incident test world missing")); return true; }
+    AKartPawn* Player = Cast<AKartPawn>(UGameplayStatics::GetPlayerPawn(World, 0));
+    AKartRaceDirector* Director = Cast<AKartRaceDirector>(UGameplayStatics::GetActorOfClass(World, AKartRaceDirector::StaticClass()));
+    URaceLoopSubsystem* Race = World->GetSubsystem<URaceLoopSubsystem>();
+    if (!Player || !Director || Director->GetOpponents().Num() != 19 || !Race) { Test->AddError(TEXT("Incident field missing")); return true; }
+    Race->Tick(0); Race->RestartRace();
+    for (const auto& State : Director->GetOpponents()) State.Kart->SetActorEnableCollision(false);
+    AKartPawn* Other = Director->GetOpponents()[0].Kart.Get();
+    Other->SetActorEnableCollision(true);
+    Other->SetActorLocation(FVector(-8500, -5200, 24.5)); Other->SetActorRotation(FRotator::ZeroRotator);
+    Player->SetActorLocation(FVector(-10000, -5200, 24.5)); Player->SetActorRotation(FRotator::ZeroRotator);
+    Player->SetDriveInput(1, 0);
+    for (int32 Frame = 0; Frame < 400 && Player->GetCollisionCount() == 0; ++Frame) Player->Tick(1.f / 60.f);
+    Test->TestTrue(TEXT("Actual swept rear-end impact registers on both karts"), Player->GetCollisionCount() > 0 && Other->GetCollisionCount() > 0);
+    Test->TestTrue(TEXT("Hard impact ignites both karts"), Player->IsBurning() && Other->IsBurning());
+    Player->ResetKart();
+    Player->ReceiveCollision(200, FVector(-1, 0, 0));
+    Test->TestFalse(TEXT("Light bump cannot ignite a kart"), Player->IsBurning());
+    Player->ReceiveCollision(1000, FVector(-1, 0, 0));
+    Test->TestEqual(TEXT("Contact cooldown prevents duplicate incidents"), Player->GetCollisionCount(), 1);
+    Race->RestartRace();
+    Test->TestFalse(TEXT("Restart clears fire"), Other->IsBurning());
+    const TArray<FTransform> OriginalGrid = Director->Grid;
+    Director->Grid[0] = FTransform(FRotator::ZeroRotator, FVector(-7500, -5340, 24.5));
+    Director->Grid[1] = FTransform(FRotator::ZeroRotator, FVector(-7500, -5060, 24.5));
+    Director->Grid[2] = FTransform(FRotator::ZeroRotator, FVector(-8700, -5200, 24.5));
+    Director->ResetField();
+    for (int32 Index = 3; Index < 19; ++Index) Director->GetOpponents()[Index].Kart->SetActorLocation(FVector(Index * 400, -12000, 25));
+    Player->SetDriveInput(1, 0); Player->Tick(.1f); Director->Tick(.05f);
+    Player->ResetKart(); Player->SetActorLocation(FVector(0, -12000, 25));
+    for (int32 Index : {0, 1})
+    {
+        AKartPawn* Blocker = Director->GetOpponents()[Index].Kart.Get();
+        Blocker->SetActorEnableCollision(true); Blocker->ReceiveCollision(1000, FVector(-1, 0, 0));
+    }
+    AKartPawn* Follower = Director->GetOpponents()[2].Kart.Get();
+    Follower->SetActorEnableCollision(true);
+    float PeakApproach = 0;
+    for (int32 Frame = 0; Frame < 100; ++Frame)
+    {
+        Director->Tick(.05f); Follower->Tick(.05f);
+        PeakApproach = FMath::Max(PeakApproach, Follower->GetSpeedKmh());
+    }
+    Test->TestTrue(TEXT("AI slows for burning collision ahead"), PeakApproach <= 18.5f);
+    Test->TestEqual(TEXT("Follower avoids adding another crash to blocked incident"), Follower->GetCollisionCount(), 0);
+    Director->Grid = OriginalGrid; Race->RestartRace();
+    for (const auto& State : Director->GetOpponents()) State.Kart->SetActorEnableCollision(true);
+    Test->TestEqual(TEXT("Leaderboard remains complete after incidents/reset"), Director->GetStandings().Num(), 20);
+    FString ScreenshotPath;
+    if (FParse::Value(FCommandLine::Get(), TEXT("RacecraftScreenshot="), ScreenshotPath))
+    {
+        // Optional rendered QA after the collision assertions; never alters saved assets.
+        Player->ReceiveCollision(1000, FVector(-1, 0, 0));
+        Player->Tick(.1f);
+        FScreenshotRequest::RequestScreenshot(ScreenshotPath, true, false);
+    }
+    return true;
+}
+
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FKartIncidentPIETest, "RoadToF1.Kart.IncidentsPIE", EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+bool FKartIncidentPIETest::RunTest(const FString& Parameters)
+{
+    ADD_LATENT_AUTOMATION_COMMAND(FEditorLoadMap(TEXT("/Game/RoadToF1/SouthGarda_KartRace")));
+    ADD_LATENT_AUTOMATION_COMMAND(FStartPIECommand(false));
+    ADD_LATENT_AUTOMATION_COMMAND(FWaitLatentCommand(2));
+    ADD_LATENT_AUTOMATION_COMMAND(FVerifyIncidents(this));
+    if (FParse::Param(FCommandLine::Get(), TEXT("RacecraftVisualQA")))
+        ADD_LATENT_AUTOMATION_COMMAND(FWaitLatentCommand(2));
+    ADD_LATENT_AUTOMATION_COMMAND(FEndPlayMapCommand());
     return true;
 }
 

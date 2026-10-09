@@ -1,0 +1,348 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "B64088C14D66F3BF6079D4AED062A609",
+			"instanceName": "DESKTOP-ERDHE74-9180",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.09-08.40.01",
+	"succeeded": 6,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 115.78455352783203,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "AIRacePIE",
+			"fullTestPath": "RoadToF1.Kart.AIRacePIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"B64088C14D66F3BF6079D4AED062A609"
+			],
+			"duration": 107.97318267822266,
+			"dateTime": "2026.10.09-08.38.05",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 45.2, contacts 1, route 153, lane 130, pos X=6486.537 Y=-1274.936 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 54.5, contacts 1, route 232, lane 130, pos X=3904.434 Y=1993.930 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 33.8, contacts 13, route 13, lane -28, pos X=-3735.605 Y=-4998.563 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 20.1, contacts 14, route 494, lane -112, pos X=-6075.581 Y=-957.185 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 31.2, contacts 20, route 506, lane -130, pos X=-6185.961 Y=-2583.146 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 38.1, contacts 6, route 177, lane -130, pos X=1653.673 Y=-1380.687 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 9.1, contacts 23, route 498, lane 130, pos X=-5188.385 Y=-1393.133 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 44.4, contacts 24, route 461, lane 84, pos X=-12297.691 Y=-680.563 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 21.2, contacts 14, route 554, lane -130, pos X=-15012.506 Y=-4136.483 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 16.1, contacts 36, route 353, lane 130, pos X=567.020 Y=3763.035 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 49.2, contacts 33, route 297, lane -130, pos X=11458.092 Y=5656.511 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 34.7, contacts 26, route 361, lane 14, pos X=-588.215 Y=4690.858 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 23.9, contacts 20, route 485, lane -70, pos X=-7648.282 Y=-431.970 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 28.0, contacts 21, route 288, lane 112, pos X=12889.824 Y=4746.286 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 54.5, contacts 23, route 309, lane -130, pos X=8986.219 Y=5487.313 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 42.6, contacts 27, route 349, lane -130, pos X=1439.092 Y=3684.978 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 35.9, contacts 16, route 504, lane 126, pos X=-5569.124 Y=-2699.799 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 53.4, contacts 22, route 303, lane 130, pos X=10267.882 Y=5678.404 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 44.3, contacts 29, route 348, lane 130, pos X=1753.547 Y=3509.432 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.09-08.39.53"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "IncidentsPIE",
+			"fullTestPath": "RoadToF1.Kart.IncidentsPIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"B64088C14D66F3BF6079D4AED062A609"
+			],
+			"duration": 2.2327938079833984,
+			"dateTime": "2026.10.09-08.39.53",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "SouthGardaPIE",
+			"fullTestPath": "RoadToF1.Kart.SouthGardaPIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"B64088C14D66F3BF6079D4AED062A609"
+			],
+			"duration": 3.27683424949646,
+			"dateTime": "2026.10.09-08.39.55",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "GateGeometry",
+			"fullTestPath": "RoadToF1.RaceLoop.GateGeometry",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"B64088C14D66F3BF6079D4AED062A609"
+			],
+			"duration": 0.0067420974373817444,
+			"dateTime": "2026.10.09-08.39.58",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "PrototypePIE",
+			"fullTestPath": "RoadToF1.RaceLoop.PrototypePIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"B64088C14D66F3BF6079D4AED062A609"
+			],
+			"duration": 2.2869129180908203,
+			"dateTime": "2026.10.09-08.39.58",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "Rules",
+			"fullTestPath": "RoadToF1.RaceLoop.Rules",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"B64088C14D66F3BF6079D4AED062A609"
+			],
+			"duration": 0.0080909021198749542,
+			"dateTime": "2026.10.09-08.40.01",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

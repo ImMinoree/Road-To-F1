@@ -1,0 +1,44 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "E5DC821F4C6DD94A48F956BCD8EEFC1D",
+			"instanceName": "DESKTOP-ERDHE74-9824",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "D3D12_SM6",
+			"rHI": "D3D12 (SM6)",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.09-08.48.34",
+	"succeeded": 1,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 4.3284964561462402,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "IncidentsPIE",
+			"fullTestPath": "RoadToF1.Kart.IncidentsPIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"E5DC821F4C6DD94A48F956BCD8EEFC1D"
+			],
+			"duration": 4.3284964561462402,
+			"dateTime": "2026.10.09-08.48.29",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}
