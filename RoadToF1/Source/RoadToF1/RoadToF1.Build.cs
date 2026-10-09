@@ -30,12 +30,11 @@ public class RoadToF1 : ModuleRules
 			"RoadToF1/Variant_TimeTrial/UI"
 		});
 
-		PrivateDependencyModuleNames.AddRange(new string[] { });
+		PrivateDependencyModuleNames.AddRange(new string[] { "Json" });
 
 		if (Target.bBuildEditor)
 		{
 			PrivateDependencyModuleNames.Add("UnrealEd");
-			PrivateDependencyModuleNames.Add("Json");
 		}
 
 		// Uncomment if you are using Slate UI

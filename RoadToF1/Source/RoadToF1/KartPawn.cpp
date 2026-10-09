@@ -1,4 +1,7 @@
 #include "KartPawn.h"
+#include "KartRaceDirector.h"
+#include "KartTrainingRecorder.h"
+#include "Kismet/GameplayStatics.h"
 #include "Camera/CameraComponent.h"
 #include "Components/BoxComponent.h"
 #include "Components/InputComponent.h"
@@ -138,6 +141,13 @@ void AKartPawn::SetupPlayerInputComponent(UInputComponent* Input)
     BindHeldKey(EKeys::D, &Right);
     Input->BindKey(EKeys::SpaceBar, IE_Pressed, this, &AKartPawn::BrakePressed);
     Input->BindKey(EKeys::SpaceBar, IE_Released, this, &AKartPawn::BrakeReleased);
+    Input->BindKey(EKeys::F9, IE_Pressed, this, &AKartPawn::ToggleTrainingRecording);
+}
+
+void AKartPawn::ToggleTrainingRecording()
+{
+    if (AKartRaceDirector* Director = Cast<AKartRaceDirector>(UGameplayStatics::GetActorOfClass(GetWorld(), AKartRaceDirector::StaticClass())))
+        Director->GetTrainingRecorder()->ToggleCapture();
 }
 
 void AKartPawn::SetDriveInput(float Throttle, float Steering, bool Brake)

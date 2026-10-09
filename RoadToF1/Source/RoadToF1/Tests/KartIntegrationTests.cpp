@@ -3,6 +3,9 @@
 #include "Tests/AutomationEditorCommon.h"
 #include "Tests/AutomationCommon.h"
 #include "KartPawn.h"
+#include "KartTrainingProfiles.h"
+#include "KartTrainingLearner.h"
+#include "KartTrainingRecorder.h"
 #include "KartRaceDirector.h"
 #include "RaceLoopSubsystem.h"
 #include "RaceLoopWidget.h"
@@ -299,6 +302,106 @@ bool FKartTrackPIETest::RunTest(const FString& Parameters)
     ADD_LATENT_AUTOMATION_COMMAND(FWaitLatentCommand(2));
     ADD_LATENT_AUTOMATION_COMMAND(FVerifyKartTrack(this));
     ADD_LATENT_AUTOMATION_COMMAND(FEndPlayMapCommand());
+    return true;
+}
+
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FTrainingProfilesTest, "RoadToF1.Training.ProfileValidation", EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+bool FTrainingProfilesTest::RunTest(const FString& Parameters)
+{
+    auto Root = MakeShared<FJsonObject>();
+    Root->SetNumberField(TEXT("schema_version"), 1);
+    Root->SetStringField(TEXT("track_id"), TEXT("SouthGarda_KartRace"));
+    auto Training = MakeShared<FJsonObject>(); Training->SetStringField(TEXT("source"), TEXT("telemetry"));
+    Root->SetObjectField(TEXT("training"), Training);
+    TArray<TSharedPtr<FJsonValue>> Rows;
+    for (int32 Index = 0; Index < 19; ++Index)
+    {
+        auto Row = MakeShared<FJsonObject>();
+        Row->SetNumberField(TEXT("racer_index"), Index + 1);
+        Row->SetNumberField(TEXT("aggression"), .3 + Index * .03);
+        Row->SetNumberField(TEXT("corner_skill"), .95 + Index * .002);
+        Row->SetNumberField(TEXT("preferred_lane_cm"), (Index - 9) * 13);
+        Row->SetNumberField(TEXT("decision_seconds"), 1.3 + Index * .1);
+        Rows.Add(MakeShared<FJsonValueObject>(Row));
+    }
+    Root->SetArrayField(TEXT("profiles"), Rows);
+    auto Encode = [&]() { FString Text; FJsonSerializer::Serialize(Root, TJsonWriterFactory<>::Create(&Text)); return Text; };
+    TArray<FKartTrainingStyle> Profiles;
+    TestTrue(TEXT("19 valid varied styles accepted"), FKartTrainingProfiles::Parse(Encode(), TEXT("SouthGarda_KartRace"), Profiles));
+    TestEqual(TEXT("19 styles loaded"), Profiles.Num(), 19);
+    TestFalse(TEXT("Wrong track rejected"), FKartTrainingProfiles::Parse(Encode(), TEXT("OtherTrack"), Profiles));
+    Rows[0]->AsObject()->SetNumberField(TEXT("aggression"), 2);
+    TestFalse(TEXT("Unsafe profile rejected atomically"), FKartTrainingProfiles::Parse(Encode(), TEXT("SouthGarda_KartRace"), Profiles));
+    TestTrue(TEXT("Rejected profile leaves no partial styles"), Profiles.IsEmpty());
+    Rows[0]->AsObject()->SetNumberField(TEXT("aggression"), .3);
+    Rows[1]->AsObject()->SetNumberField(TEXT("racer_index"), 1);
+    TestFalse(TEXT("Duplicate racer rejected"), FKartTrainingProfiles::Parse(Encode(), TEXT("SouthGarda_KartRace"), Profiles));
+    Rows[1]->AsObject()->SetNumberField(TEXT("racer_index"), 2);
+    Training->SetStringField(TEXT("source"), TEXT("synthetic_demo"));
+    TestFalse(TEXT("Synthetic demo cannot be deployed as learned driving"), FKartTrainingProfiles::Parse(Encode(), TEXT("SouthGarda_KartRace"), Profiles));
+    return true;
+}
+
+DEFINE_LATENT_AUTOMATION_COMMAND_ONE_PARAMETER(FVerifyTrainingCapture, FAutomationTestBase*, Test);
+bool FVerifyTrainingCapture::Update()
+{
+    UWorld* World = AutomationCommon::GetAnyGameWorld();
+    if (!World) { Test->AddError(TEXT("Training PIE world missing")); return true; }
+    AKartPawn* Player = Cast<AKartPawn>(UGameplayStatics::GetPlayerPawn(World, 0));
+    AKartRaceDirector* Director = Cast<AKartRaceDirector>(UGameplayStatics::GetActorOfClass(World, AKartRaceDirector::StaticClass()));
+    if (!Player || !Director) { Test->AddError(TEXT("Training race missing")); return true; }
+    UKartTrainingRecorder* Recorder = Director->GetTrainingRecorder();
+    Test->TestFalse(TEXT("Collection is off by default"), Recorder->IsRecording());
+    Test->TestTrue(TEXT("Explicit capture starts"), Recorder->StartCapture());
+    const FString First = Recorder->GetCapturePath();
+    Player->SetDriveInput(1, .1f);
+    for (int32 Frame = 0; Frame < 20; ++Frame) { Player->Tick(.1f); Recorder->TickComponent(.1f, LEVELTICK_All, nullptr); }
+    Recorder->StopCapture();
+    Test->TestFalse(TEXT("Capture stop is respected"), Recorder->IsRecording());
+    Test->TestTrue(TEXT("Insufficient coverage cannot propose a learned policy"), Recorder->GetCandidatePath().IsEmpty());
+    FString Csv;
+    Test->TestTrue(TEXT("Native gameplay CSV is readable"), FFileHelper::LoadFileToString(Csv, *First));
+    TArray<FString> Lines; Csv.ParseIntoArrayLines(Lines);
+    Test->TestEqual(TEXT("10Hz capture plus first sample and CSV header"), Lines.Num(), 22);
+    Test->TestTrue(TEXT("Recorder includes context and controls"), Lines[0].Contains(TEXT("curvature,nearest_ahead_cm,relative_speed_kmh")));
+    for (const FString& Line : Lines) { TArray<FString> Columns; Line.ParseIntoArray(Columns, TEXT(","), false); Test->TestEqual(TEXT("CSV column alignment"), Columns.Num(), 19); }
+    Recorder->StartCapture();
+    const FString BeforeReset = Recorder->GetCapturePath();
+    for (int32 Frame = 0; Frame < 12; ++Frame) Recorder->TickComponent(.1f, LEVELTICK_All, nullptr);
+    World->GetSubsystem<URaceLoopSubsystem>()->RestartRace();
+    Test->TestTrue(TEXT("F5 rotates capture into a new session"), Recorder->IsRecording() && Recorder->GetCapturePath() != BeforeReset);
+    for (int32 Frame = 0; Frame < 12; ++Frame) Recorder->TickComponent(.1f, LEVELTICK_All, nullptr);
+    Recorder->StopCapture();
+    Test->TestFalse(TEXT("No approved profiles means unchanged default NPC styles"), Director->HasLearnedStyles());
+    return true;
+}
+
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FTrainingCapturePIETest, "RoadToF1.Training.CapturePIE", EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+bool FTrainingCapturePIETest::RunTest(const FString& Parameters)
+{
+    ADD_LATENT_AUTOMATION_COMMAND(FEditorLoadMap(TEXT("/Game/RoadToF1/SouthGarda_KartRace")));
+    ADD_LATENT_AUTOMATION_COMMAND(FStartPIECommand(false));
+    ADD_LATENT_AUTOMATION_COMMAND(FWaitLatentCommand(2));
+    ADD_LATENT_AUTOMATION_COMMAND(FVerifyTrainingCapture(this));
+    ADD_LATENT_AUTOMATION_COMMAND(FEndPlayMapCommand());
+    return true;
+}
+
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FNativeLearningTest, "RoadToF1.Training.NativeLearning", EAutomationTestFlags::EditorContext | EAutomationTestFlags::EngineFilter)
+bool FNativeLearningTest::RunTest(const FString& Parameters)
+{
+    FKartDrivingSummary Summary;
+    TestTrue(TEXT("No data produces no candidate"), FKartTrainingLearner::Propose(TEXT("SouthGarda_KartRace"), 42, Summary).IsEmpty());
+    Summary = {600, 200, 400, 600 * 38., 600 * .7, 600 * 20., 200 * 25.};
+    const FString Proposal = FKartTrainingLearner::Propose(TEXT("SouthGarda_KartRace"), 42, Summary);
+    TArray<FKartTrainingStyle> Styles;
+    TestTrue(TEXT("Native proposal satisfies deployment schema and diversity"), FKartTrainingProfiles::Parse(Proposal, TEXT("SouthGarda_KartRace"), Styles));
+    TestEqual(TEXT("Native proposal contains 19 distinct bounded racers"), Styles.Num(), 19);
+    TestEqual(TEXT("Same aggregate and seed are reproducible"), FKartTrainingLearner::Propose(TEXT("SouthGarda_KartRace"), 42, Summary), Proposal);
+    TestTrue(TEXT("Different seed changes driver field"), FKartTrainingLearner::Propose(TEXT("SouthGarda_KartRace"), 43, Summary) != Proposal);
+    TestFalse(TEXT("Proposal contains no recorded control timeline"), Proposal.Contains(TEXT("steering")) || Proposal.Contains(TEXT("route_index")) || Proposal.Contains(TEXT("time_seconds")));
+    Summary.CornerSamples = 0; Summary.StraightSamples = 600;
+    TestTrue(TEXT("Straight-only data cannot establish corner skills"), FKartTrainingLearner::Propose(TEXT("SouthGarda_KartRace"), 42, Summary).IsEmpty());
     return true;
 }
 #endif

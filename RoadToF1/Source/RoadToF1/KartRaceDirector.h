@@ -2,6 +2,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "RaceProgress.h"
+#include "KartTrainingProfiles.h"
 #include "KartRaceDirector.generated.h"
 
 class AKartPawn;
@@ -21,6 +22,7 @@ struct FKartOpponentState
     float DesiredLane = 0;
     float DecisionCooldown = 0;
     float TargetSpeed = 0;
+    float DecisionSeconds = 2.5f;
 };
 
 struct FKartStanding
@@ -47,9 +49,13 @@ public:
     TArray<FKartStanding> GetStandings() const;
     bool HasStarted() const { return bReleased; }
     const TArray<FKartOpponentState>& GetOpponents() const { return Opponents; }
+    class UKartTrainingRecorder* GetTrainingRecorder() const { return TrainingRecorder; }
+    bool HasLearnedStyles() const { return LearnedStyles.Num() == 19; }
     UPROPERTY(EditAnywhere, Category="Race") TArray<FVector> RoutePoints;
     UPROPERTY(EditAnywhere, Category="Race") TArray<FTransform> Grid;
 private:
+    UPROPERTY(VisibleAnywhere) TObjectPtr<class UKartTrainingRecorder> TrainingRecorder;
+    TArray<FKartTrainingStyle> LearnedStyles;
     int32 NearestPoint(const FVector& P) const;
     FVector LanePoint(int32 Index, float Lane) const;
     double RaceDistance(const FVector& P, const FRaceProgress& Progress) const;

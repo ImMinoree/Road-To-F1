@@ -26,9 +26,13 @@ public:
     int32 GetKartNumber() const { return KartNumber; }
     bool IsBurning() const { return FireSeconds > 0; }
     int32 GetCollisionCount() const { return CollisionCount; }
+    float GetThrottleInput() const { return Forward - Reverse; }
+    float GetSteeringInput() const { return Right - Left; }
+    bool IsBrakeHeld() const { return bBrake; }
     void ReceiveCollision(float ImpactSpeed, const FVector& Normal);
 private:
     void UpdateIncident(float Dt);
+    void ToggleTrainingRecording();
     void BrakePressed() { bBrake = true; }
     void BrakeReleased() { bBrake = false; }
     UPROPERTY(VisibleAnywhere) TObjectPtr<class UBoxComponent> Body;

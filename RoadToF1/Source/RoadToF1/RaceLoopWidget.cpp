@@ -2,6 +2,7 @@
 #include "RaceLoopSubsystem.h"
 #include "KartPawn.h"
 #include "KartRaceDirector.h"
+#include "KartTrainingRecorder.h"
 #include "Kismet/GameplayStatics.h"
 #include "Blueprint/WidgetTree.h"
 #include "Components/Border.h"
@@ -95,6 +96,7 @@ void URaceLoopWidget::NativeOnInitialized()
         Position = AddLine(Lines, TEXT("Position 20 / 20"), 20);
         Speed = AddLine(Lines, TEXT("0 km/h"), 20);
         AddLine(Lines, TEXT("W: accelerate | S: brake / reverse\nA/D: steer | Space: brake | F5: restart"), 14);
+        TrainingStatus = AddLine(Lines, TEXT("F9: record training drive (off)"), 12);
     }
     UButton* Restart = WidgetTree->ConstructWidget<UButton>();
     UTextBlock* Label = WidgetTree->ConstructWidget<UTextBlock>();
@@ -115,6 +117,12 @@ void URaceLoopWidget::NativeTick(const FGeometry& Geometry, float DeltaTime)
     if (const AKartRaceDirector* Director = Cast<AKartRaceDirector>(UGameplayStatics::GetActorOfClass(GetWorld(), AKartRaceDirector::StaticClass())))
     {
         const auto Rows = Director->GetStandings();
+        if (TrainingStatus)
+        {
+            const UKartTrainingRecorder* Recorder = Director->GetTrainingRecorder();
+            const FString Recording = Recorder->IsRecording() ? FString::Printf(TEXT("RECORDING | %d samples | F9: stop"), Recorder->GetSampleCount()) : TEXT("F9: record training drive (off)");
+            TrainingStatus->SetText(FText::FromString(Recording + (Director->HasLearnedStyles() ? TEXT("\nAI: experimental learned styles") : TEXT("\nAI: default styles"))));
+        }
         for (int32 Index = 0; Index < Rows.Num() && Index < StandingNames.Num(); ++Index)
         {
             const auto& Row = Rows[Index];

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RoadToF1 aggregate NPC profile candidates",
+  "type": "object",
+  "required": ["schema_version", "track_id", "seed", "training", "profiles", "diversity"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": 1},
+    "track_id": {"type": "string", "minLength": 1},
+    "seed": {"type": "integer"},
+    "training": {"type": "object", "required": ["source"], "properties": {"source": {"enum": ["telemetry", "observations", "synthetic_demo"]}}},
+    "diversity": {"type": "object"},
+    "profiles": {
+      "type": "array", "minItems": 19, "maxItems": 19,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["racer_index", "aggression", "corner_skill", "preferred_lane_cm", "decision_seconds"],
+        "properties": {
+          "racer_index": {"type": "integer", "minimum": 1, "maximum": 19},
+          "aggression": {"type": "number", "minimum": 0.25, "maximum": 0.97},
+          "corner_skill": {"type": "number", "minimum": 0.95, "maximum": 1},
+          "preferred_lane_cm": {"type": "number", "minimum": -130, "maximum": 130},
+          "decision_seconds": {"type": "number", "minimum": 1.2, "maximum": 3.5}
+        }
+      },
+      "$comment": "Runtime also verifies racer_index uniqueness, complete IDs 1..19 and nonzero variance; schema alone cannot express all these constraints."
+    }
+  }
+}

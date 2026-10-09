@@ -39,3 +39,5 @@ TestResults/Racecraft/HUD.png
 TestResults/Racecraft/HUDFixed.png
 TestResults/Racecraft/Incident.png
 TestResults/Racecraft/build*.json
+TestResults/Training/build*.json
+AI Agent for game training/**/__pycache__/

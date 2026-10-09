@@ -1,4 +1,8 @@
 #include "KartRaceDirector.h"
+#include "KartTrainingRecorder.h"
+#include "Misc/Paths.h"
+#include "Misc/FileHelper.h"
+#include "HAL/FileManager.h"
 #include "KartPawn.h"
 #include "RaceLoopSubsystem.h"
 #include "Engine/World.h"
@@ -7,12 +11,23 @@
 AKartRaceDirector::AKartRaceDirector()
 {
     PrimaryActorTick.bCanEverTick = true;
+    TrainingRecorder = CreateDefaultSubobject<UKartTrainingRecorder>(TEXT("TrainingRecorder"));
 }
 
 void AKartRaceDirector::BeginPlay()
 {
     Super::BeginPlay();
     if (RoutePoints.Num() < 100 || Grid.Num() != 20) return;
+    // Explicit approval file only. Never install a freshly fitted candidate automatically.
+    FString ProfilePath = FPaths::Combine(FPaths::ProjectSavedDir(), TEXT("Training/approved_profiles.json"));
+    if (!IFileManager::Get().FileExists(*ProfilePath))
+        ProfilePath = FPaths::Combine(FPaths::ProjectContentDir(), TEXT("Training/approved_profiles.json"));
+    if (IFileManager::Get().FileExists(*ProfilePath))
+    {
+        FString Json;
+        if (!FFileHelper::LoadFileToString(Json, *ProfilePath) || !FKartTrainingProfiles::Parse(Json, TEXT("SouthGarda_KartRace"), LearnedStyles))
+            UE_LOG(LogTemp, Warning, TEXT("Training profiles rejected; retaining default racecraft: %s"), *ProfilePath);
+    }
     for (int32 Index = 0; Index < 19; ++Index)
     {
         FActorSpawnParameters Params;
@@ -45,6 +60,13 @@ void AKartRaceDirector::ResetField()
         State.CornerSkill = .95f + ((Index * 11) % 19) / 360.f;
         State.PreferredLane = ((Index * 13) % 19 - 9) * 14.f;
         State.DecisionCooldown = 1.f + Index * .13f;
+        State.DecisionSeconds = 3.5f - State.Aggression;
+        if (HasLearnedStyles())
+        {
+            const auto& Style = LearnedStyles[Index];
+            State.Aggression = Style.Aggression; State.CornerSkill = Style.CornerSkill;
+            State.PreferredLane = Style.PreferredLane; State.DecisionSeconds = Style.DecisionSeconds;
+        }
         State.StalledSeconds = State.RecoverySeconds = 0;
         if (AKartPawn* Kart = State.Kart.Get())
         {
@@ -54,6 +76,7 @@ void AKartRaceDirector::ResetField()
             State.RouteIndex = NearestPoint(State.Previous);
         }
     }
+    TrainingRecorder->RestartSessionIfActive();
 }
 
 int32 AKartRaceDirector::NearestPoint(const FVector& P) const
@@ -165,7 +188,7 @@ void AKartRaceDirector::Tick(float Dt)
             if (FMath::Abs(BestLane - State.DesiredLane) > 20)
             {
                 State.DesiredLane = BestLane;
-                State.DecisionCooldown = 3.5f - State.Aggression;
+                State.DecisionCooldown = State.DecisionSeconds;
             }
             else State.DecisionCooldown = .6f + (1 - State.Aggression) * .6f;
         }
