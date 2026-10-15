@@ -181,3 +181,11 @@
 - User explicitly requested merging kart-audio-race-hud. Verified clean starting tree and fetched origin; main was an ancestor of the tested branch at80db677.
 - Unreal locked the saved map and five sound assets during branch switching. Verified each file's Git blob hash exactly matched the tested commit, then advanced main/index and synchronized only unlocked files. Saved locked assets remained intact; working tree was clean.
 - Fast-forwarded main to the tested audio/HUD/video-review commits. Existing11-suite and final presentation/build validation applies; this merge adds no gameplay changes.
+
+## 2026-10-14 — dynamic racing HUD
+- Inspected existing native C++ UMG widget, RaceLoopSubsystem progress and KartRaceDirector standings; reused them on dynamic-racing-hud from main. UE 5.8.3. User saved and closed Unreal for build work.
+- Added compact seven-racer window, player accent, full-field Tab override, scheduled/position-triggered fades, start briefing and permanent position/lap/MPH/lap-time corner panels. Widgets are allocated once; standings update at 20 Hz.
+- One game-clock opacity controller handles holds, fades and retriggers. F5/respawn resets presentation. Removed the conflicting engine F5 shader-complexity debug shortcut after detecting it in rendered QA.
+- Editor build succeeded. All 13 Unreal suites passed with zero test warnings/errors, including existing gameplay regression. Fixed a test helper endpoint and explicitly synchronized UMG in commandlet PIE, which has no painted viewport.
+- Actual standalone UMG captures inspected at 1600x900 and final 1280x720; corrected cramped columns/time display. Final captures confirm initial, minimal, full standings and restart states. No manual driving session performed; periodic/position transitions verified with controlled schedule tests.
+- Files and evidence: TestResults/DynamicHUD/RESULTS.md. No AI, physics, assets, checkpoint or timing logic changed. Next: user playtest, especially fades during overtakes and preferred readability. Publication/merge held for user review.

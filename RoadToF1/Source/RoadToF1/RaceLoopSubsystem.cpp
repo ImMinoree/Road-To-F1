@@ -149,6 +149,7 @@ void URaceLoopSubsystem::AttachPlayer()
     {
         TrackedPawn = PC->GetPawn();
         Progress.Reset(TargetLaps, bReady ? Gates.Num() - 1 : CheckpointLocations.Num());
+        if (RaceWidget) RaceWidget->ResetPresentation();
         bHavePreviousPosition = false; // Respawn must not inherit a previous vehicle's lap/position.
     }
 }
@@ -210,6 +211,7 @@ void URaceLoopSubsystem::RestartRace()
 {
     if (!bReady) return;
     Progress.Reset(TargetLaps, Gates.Num() - 1);
+    if (RaceWidget) RaceWidget->ResetPresentation();
     bHavePreviousPosition = false;
     if (APawn* Pawn = TrackedPawn.Get())
     {
