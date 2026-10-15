@@ -1,0 +1,985 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "07968F4E40D791ED613A499D495933BD",
+			"instanceName": "DESKTOP-ERDHE74-22536",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.15-03.59.53",
+	"succeeded": 14,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 124.55689239501953,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "InputAndResetPIE",
+			"fullTestPath": "RoadToF1.HUD.InputAndResetPIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 2.3284175395965576,
+			"dateTime": "2026.10.15-03.57.48",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "VisibilitySchedule",
+			"fullTestPath": "RoadToF1.HUD.VisibilitySchedule",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 0.0083590000867843628,
+			"dateTime": "2026.10.15-03.57.51",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "AIRacePIE",
+			"fullTestPath": "RoadToF1.Kart.AIRacePIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 103.12763214111328,
+			"dateTime": "2026.10.15-03.57.51",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "MISSED gate7 racer7 at387.9s lateral-513 bound480 lane-320",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.10"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer1 finish417.0s queued4.5s stopped2.7s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 0, route 0, lane 125, pos X=-5897.942 Y=-5080.806 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer2 finish398.4s queued0.1s stopped0.3s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 0, route 0, lane 30, pos X=-5553.762 Y=-5395.082 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer3 finish415.9s queued22.2s stopped3.1s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 0, route 0, lane -81, pos X=-5861.855 Y=-5414.752 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer4 finish424.7s queued68.1s stopped11.9s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 2, route 0, lane 13, pos X=-4702.010 Y=-5273.266 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer5 finish432.3s queued91.0s stopped24.1s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 5, route 0, lane 128, pos X=-5759.109 Y=-5017.896 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer6 finish437.2s queued133.1s stopped13.0s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 4, route 0, lane -143, pos X=-5187.564 Y=-4897.041 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer7 finish596.9s queued164.1s stopped23.7s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 4, route 0, lane -129, pos X=-6006.683 Y=-5249.478 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer8 finish446.0s queued170.3s stopped18.0s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 3, route 0, lane 22, pos X=-4894.609 Y=-5550.340 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer9 finish428.5s queued92.6s stopped20.5s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 4, route 0, lane 25, pos X=-4910.759 Y=-5215.918 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer10 finish420.0s queued86.8s stopped8.9s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 2, route 0, lane -69, pos X=-5342.844 Y=-5199.715 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer11 finish430.8s queued61.2s stopped13.8s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 2, route 0, lane -139, pos X=-5506.949 Y=-4881.776 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer12 finish444.4s queued155.5s stopped11.8s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 3, route 0, lane -65, pos X=-5472.828 Y=-5353.032 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer13 finish436.1s queued101.4s stopped20.6s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 6, route 0, lane 61, pos X=-5918.392 Y=-5329.640 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer14 finish441.7s queued142.7s stopped7.0s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 0, route 0, lane -107, pos X=-5672.176 Y=-5298.051 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer15 finish459.9s queued123.7s stopped19.0s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 3, route 0, lane 130, pos X=-5740.414 Y=-4957.423 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer16 finish452.0s queued137.2s stopped14.9s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 2, route 0, lane -159, pos X=-3362.558 Y=-5574.107 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer17 finish453.8s queued160.4s stopped15.5s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 3, route 0, lane 149, pos X=-5796.291 Y=-4997.183 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer18 finish446.4s queued203.5s stopped14.2s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 4, route 0, lane -101, pos X=-4668.499 Y=-4707.507 Z=18.000",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Racer19 finish450.6s queued136.3s stopped6.9s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "AI: laps 3, CP 0, speed 0.0, contacts 2, route 0, lane -81, pos X=-5374.001 Y=-5149.799 Z=24.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.34"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "IncidentsPIE",
+			"fullTestPath": "RoadToF1.Kart.IncidentsPIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 2.2428855895996094,
+			"dateTime": "2026.10.15-03.59.34",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "SouthGardaPIE",
+			"fullTestPath": "RoadToF1.Kart.SouthGardaPIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 3.4413025379180908,
+			"dateTime": "2026.10.15-03.59.36",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "EnginePCM",
+			"fullTestPath": "RoadToF1.Presentation.EnginePCM",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 0.0080243982374668121,
+			"dateTime": "2026.10.15-03.59.40",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "RacePIE",
+			"fullTestPath": "RoadToF1.Presentation.RacePIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 4.1776332855224609,
+			"dateTime": "2026.10.15-03.59.40",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "PackedSafety",
+			"fullTestPath": "RoadToF1.Racecraft.PackedSafety",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 3.8518791198730469,
+			"dateTime": "2026.10.15-03.59.44",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Initial lane mismatch 0.0 cm",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.45"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "20-kart 8s launch: contacts 0, first-second lane drift 0.1 cm",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame0 lane-12 desired-300 actual-9 speed0.5 target400 yaw0 gapX=649.612 Y=0.000 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame60 lane-300 desired-300 actual-376 speed8.4 target1528 yaw-33 gapX=73.385 Y=377.931 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame120 lane-170 desired-130 actual-289 speed34.8 target1528 yaw-11 gapX=-1574.463 Y=302.906 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame180 lane-23 desired108 actual-408 speed32.5 target1528 yaw4 gapX=-5103.015 Y=416.807 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame240 lane130 desired130 actual89 speed23.1 target1528 yaw-14 gapX=-6937.845 Y=-71.576 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame300 lane69 desired-41 actual-41 speed51.9 target1528 yaw16 gapX=-9967.190 Y=23.124 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid two=0 slow=0: travel 12911 contacts 0 lane 145",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame0 lane-12 desired-300 actual-9 speed0.5 target400 yaw0 gapX=649.721 Y=0.000 Z=0.000",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame60 lane-300 desired-300 actual-376 speed8.4 target1528 yaw-33 gapX=423.182 Y=377.931 Z=0.000",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame120 lane-250 desired-209 actual-348 speed34.8 target1528 yaw-18 gapX=-290.994 Y=367.760 Z=0.000",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame180 lane-183 desired-130 actual-498 speed28.5 target1528 yaw-15 gapX=-2696.326 Y=520.240 Z=0.000",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame240 lane-126 desired-61 actual-61 speed19.1 target1528 yaw-20 gapX=-2956.560 Y=80.215 Z=0.000",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame300 lane-61 desired-61 actual-180 speed47.9 target1528 yaw-21 gapX=-4624.933 Y=209.548 Z=0.000",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid two=0 slow=1: travel 13718 contacts 0 lane -25",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame0 lane-12 desired-300 actual-9 speed0.5 target400 yaw0 gapX=649.612 Y=-80.000 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame60 lane-300 desired-300 actual-381 speed8.4 target1528 yaw-33 gapX=68.810 Y=302.569 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame120 lane-170 desired-130 actual-292 speed34.8 target1528 yaw-11 gapX=-1576.580 Y=225.725 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame180 lane-23 desired102 actual-407 speed32.5 target1528 yaw4 gapX=-5108.165 Y=335.204 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame240 lane130 desired130 actual-47 speed32.6 target1528 yaw-11 gapX=-7345.215 Y=-15.149 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid frame300 lane100 desired-176 actual-176 speed36.0 target1528 yaw0 gapX=-10642.289 Y=94.950 Z=0.500",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Avoid two=1 slow=0: travel 13133 contacts 0 lane 170",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-03.59.47"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "GateGeometry",
+			"fullTestPath": "RoadToF1.RaceLoop.GateGeometry",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 0.0082090981304645538,
+			"dateTime": "2026.10.15-03.59.48",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "PrototypePIE",
+			"fullTestPath": "RoadToF1.RaceLoop.PrototypePIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 2.287987232208252,
+			"dateTime": "2026.10.15-03.59.48",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "Rules",
+			"fullTestPath": "RoadToF1.RaceLoop.Rules",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 0.0080235004425048828,
+			"dateTime": "2026.10.15-03.59.50",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "CapturePIE",
+			"fullTestPath": "RoadToF1.Training.CapturePIE",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 3.0520455837249756,
+			"dateTime": "2026.10.15-03.59.50",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "NativeLearning",
+			"fullTestPath": "RoadToF1.Training.NativeLearning",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 0.0080917999148368835,
+			"dateTime": "2026.10.15-03.59.53",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "ProfileValidation",
+			"fullTestPath": "RoadToF1.Training.ProfileValidation",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"07968F4E40D791ED613A499D495933BD"
+			],
+			"duration": 0.0063988007605075836,
+			"dateTime": "2026.10.15-03.59.53",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

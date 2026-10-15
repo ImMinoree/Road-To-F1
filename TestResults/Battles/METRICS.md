@@ -1,0 +1,125 @@
+# Battle regression metrics
+
+Contacts are summed per-kart counters, not unique incidents. Moving speed means >1 mph. Automated fixtures are not a human competitive benchmark.
+
+## Baseline
+
+Suites: 15 passed / 0 failed.
+
+Mean finish 376.54s; last 487.50s; contacts 42.
+Mean moving speed 22.72 mph; mean time above 30 mph 31.97%.
+Pass attempts 63; completions 3; ratio 0.048.
+Defenses 0; repass attempts/completions 0/0. Player is parked during full-field test, so player repass counts should be zero.
+
+| NPC | Finish s | Avg mph | Peak mph | >30 % | Traffic s | Brakes | Contacts | Pass attempts/completions | Defense | Alongside s | Loss | Repass attempts/completions |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | 348.6 | 23.66 | 34.18 | 34.1 | 17.2 | 146.0 | 0 | 0/0 | 0 | 0 | 0 | 0/0 |
+| 2 | 351.8 | 23.36 | 34.18 | 33.7 | 41.1 | 161.0 | 0 | 0/0 | 0 | 0 | 0 | 0/0 |
+| 3 | 354.7 | 23.48 | 34.18 | 33.5 | 53.4 | 171.0 | 1 | 4/0 | 0 | 0 | 0 | 0/0 |
+| 4 | 353.5 | 23.44 | 34.18 | 34.3 | 34.1 | 147.0 | 2 | 0/0 | 0 | 0 | 0 | 0/0 |
+| 5 | 385.6 | 21.94 | 34.18 | 30.1 | 111.1 | 186.0 | 0 | 4/0 | 0 | 0 | 0 | 0/0 |
+| 6 | 353.6 | 23.75 | 34.18 | 35.8 | 64.6 | 152.0 | 2 | 8/0 | 0 | 0 | 0 | 0/0 |
+| 7 | 374.0 | 22.73 | 34.18 | 31.6 | 60.9 | 167.0 | 4 | 1/0 | 0 | 0 | 0 | 0/0 |
+| 8 | 361.7 | 23.28 | 34.18 | 34.5 | 54.2 | 171.0 | 0 | 0/0 | 0 | 0 | 0 | 0/0 |
+| 9 | 372.6 | 22.59 | 34.18 | 31.9 | 74.5 | 174.0 | 1 | 3/0 | 0 | 0 | 0 | 0/0 |
+| 10 | 384.5 | 22.55 | 34.18 | 31.0 | 61.2 | 164.0 | 6 | 1/0 | 0 | 0 | 0 | 0/0 |
+| 11 | 487.5 | 23.38 | 34.18 | 34.3 | 120.7 | 210.0 | 4 | 3/0 | 0 | 0 | 0 | 0/0 |
+| 12 | 364.2 | 22.76 | 34.18 | 32.1 | 67.8 | 185.0 | 1 | 1/0 | 0 | 0 | 0 | 0/0 |
+| 13 | 377.4 | 22.6 | 34.18 | 32.1 | 103.7 | 157.0 | 4 | 4/2 | 0 | 0 | 0 | 0/0 |
+| 14 | 379.7 | 22.22 | 34.18 | 30.8 | 94.9 | 164.0 | 4 | 5/0 | 0 | 0 | 0 | 0/0 |
+| 15 | 368.1 | 22.36 | 34.18 | 29.8 | 81.6 | 173.0 | 3 | 3/0 | 0 | 0 | 0 | 0/0 |
+| 16 | 386.1 | 21.76 | 34.18 | 28.4 | 154.6 | 185.0 | 2 | 7/0 | 0 | 0 | 0 | 0/0 |
+| 17 | 385.7 | 21.92 | 34.18 | 30.1 | 112.4 | 184.0 | 3 | 5/0 | 0 | 0 | 0 | 0/0 |
+| 18 | 378.6 | 22.21 | 34.18 | 30.2 | 87.1 | 164.0 | 4 | 4/0 | 0 | 0 | 0 | 0/0 |
+| 19 | 386.4 | 21.7 | 34.18 | 29.1 | 116.6 | 175.0 | 1 | 10/1 | 0 | 0 | 0 | 0/0 |
+
+### Captured scenarios and outcomes
+
+```
+CLEAR speed_kmh=54.85 t90=4.75 d90_cm=3288 t95=5.00 d95_cm=3643
+EXIT120 apex_kmh=25.38 one=35.86 two=46.33 three=54.32 t90=2.35 d90_cm=2427 t95=2.60 d95_cm=2781 contacts=0
+EXIT210 apex_kmh=25.38 one=35.86 two=46.33 three=54.32 t90=2.35 d90_cm=2446 t95=2.60 d95_cm=2799 contacts=0
+EXIT300 apex_kmh=25.38 one=35.86 two=46.33 three=51.51 t90=2.35 d90_cm=2456 t95=2.60 d95_cm=2812 contacts=0
+TRAIN0 min_kmh=38.88 final_kmh=54.68 contacts=0 ahead_cm=-1.0 closing_cms=0.0 peak_mph=34.18 moving_avg_mph=29.61 under20_pct=0.0 under25_pct=28.5 over30_pct=50.0 traffic_s=2.1 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=1 brake_s=0.1 longest_queue_s=0.0
+TRAIN1 min_kmh=40.26 final_kmh=54.72 contacts=0 ahead_cm=-1.0 closing_cms=0.0 peak_mph=34.18 moving_avg_mph=31.53 under20_pct=0.0 under25_pct=0.0 over30_pct=69.0 traffic_s=2.8 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=1 brake_s=0.1 longest_queue_s=0.0
+TRAIN2 min_kmh=40.57 final_kmh=54.85 contacts=0 ahead_cm=499.6 closing_cms=3.7 peak_mph=34.18 moving_avg_mph=31.51 under20_pct=0.0 under25_pct=0.0 over30_pct=66.0 traffic_s=3.7 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=0 brake_s=0.0 longest_queue_s=0.0
+TRAIN3 min_kmh=41.07 final_kmh=54.72 contacts=0 ahead_cm=-1.0 closing_cms=0.0 peak_mph=34.18 moving_avg_mph=31.60 under20_pct=0.0 under25_pct=0.0 over30_pct=64.5 traffic_s=3.3 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=0 brake_s=0.0 longest_queue_s=0.0
+TRAIN4 min_kmh=41.69 final_kmh=54.85 contacts=0 ahead_cm=488.9 closing_cms=4.1 peak_mph=34.18 moving_avg_mph=31.62 under20_pct=0.0 under25_pct=0.0 over30_pct=67.5 traffic_s=4.3 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=0 brake_s=0.0 longest_queue_s=0.0
+TRAIN5 min_kmh=42.39 final_kmh=54.98 contacts=0 ahead_cm=1584.1 closing_cms=-1.6 peak_mph=34.18 moving_avg_mph=31.66 under20_pct=0.0 under25_pct=0.0 over30_pct=69.5 traffic_s=4.6 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=0 brake_s=0.0 longest_queue_s=0.0
+PASS success=1 flips=0 contacts=0 emergency=0 final_kmh=54.77 attempts=1 completed=1
+RELEASE blocked_cms=188.3 clear_cms=1527.8 after_s=2
+20-kart 8s launch: contacts 0, first-second lane drift 0.1 cm
+```
+
+## Final
+
+Suites: 16 passed / 0 failed.
+
+Mean finish 367.56s; last 378.90s; contacts 28.
+Mean moving speed 22.87 mph; mean time above 30 mph 32.85%.
+Pass attempts 52; completions 3; ratio 0.058.
+Defenses 45; repass attempts/completions 0/0. Player is parked during full-field test, so player repass counts should be zero.
+
+| NPC | Finish s | Avg mph | Peak mph | >30 % | Traffic s | Brakes | Contacts | Pass attempts/completions | Defense | Alongside s | Loss | Repass attempts/completions |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | 372.6 | 22.85 | 34.18 | 32.2 | 59.6 | 155.0 | 3 | 1/0 | 2 | 109.15 | 0 | 0/0 |
+| 2 | 342.3 | 24.21 | 34.18 | 38.3 | 5.2 | 157.0 | 0 | 0/0 | 2 | 23.3 | 0 | 0/0 |
+| 3 | 349.5 | 23.76 | 34.18 | 34.5 | 35.1 | 158.0 | 1 | 3/0 | 1 | 56.65 | 0 | 0/0 |
+| 4 | 358.7 | 23.44 | 34.18 | 34.7 | 46.2 | 160.0 | 3 | 1/0 | 3 | 55.45 | 0 | 0/0 |
+| 5 | 345.1 | 23.89 | 34.18 | 35.3 | 37.3 | 161.0 | 0 | 1/0 | 3 | 56.05 | 0 | 0/0 |
+| 6 | 371.6 | 22.9 | 34.18 | 33.6 | 98.6 | 166.0 | 2 | 4/0 | 3 | 119.0 | 0 | 0/0 |
+| 7 | 372.0 | 22.67 | 34.18 | 32.3 | 109.0 | 192.0 | 2 | 4/1 | 3 | 106.6 | 0 | 0/0 |
+| 8 | 357.7 | 23.16 | 34.18 | 34.3 | 55.8 | 160.0 | 0 | 0/0 | 4 | 110.55 | 0 | 0/0 |
+| 9 | 373.3 | 22.75 | 34.18 | 33.3 | 76.6 | 155.0 | 1 | 3/0 | 3 | 96.7 | 0 | 0/0 |
+| 10 | 373.6 | 22.51 | 34.18 | 32.2 | 89.8 | 185.0 | 1 | 3/0 | 0 | 85.4 | 0 | 0/0 |
+| 11 | 375.7 | 22.21 | 34.18 | 32.0 | 73.1 | 154.0 | 3 | 0/0 | 3 | 76.4 | 0 | 0/0 |
+| 12 | 370.5 | 22.96 | 34.18 | 31.9 | 105.2 | 153.0 | 4 | 1/0 | 2 | 83.0 | 0 | 0/0 |
+| 13 | 377.3 | 22.39 | 34.18 | 32.0 | 77.6 | 161.0 | 2 | 3/0 | 3 | 82.0 | 0 | 0/0 |
+| 14 | 374.1 | 22.35 | 34.18 | 30.6 | 87.6 | 167.0 | 0 | 6/1 | 0 | 84.55 | 0 | 0/0 |
+| 15 | 378.0 | 22.54 | 34.18 | 30.5 | 85.6 | 180.0 | 3 | 3/0 | 2 | 99.7 | 0 | 0/0 |
+| 16 | 378.9 | 22.02 | 34.18 | 31.1 | 87.0 | 164.0 | 1 | 6/1 | 1 | 71.75 | 0 | 0/0 |
+| 17 | 360.6 | 23.42 | 34.18 | 33.3 | 63.9 | 153.0 | 1 | 3/0 | 3 | 103.25 | 0 | 0/0 |
+| 18 | 376.1 | 22.19 | 34.18 | 30.8 | 99.1 | 153.0 | 1 | 7/0 | 1 | 66.25 | 0 | 0/0 |
+| 19 | 376.1 | 22.39 | 34.18 | 31.3 | 95.1 | 163.0 | 0 | 3/0 | 6 | 121.05 | 0 | 0/0 |
+
+Abort totals: occupied=26, corner=0, guidance=0, speed_loss=0, timeout=16, contact_risk=7, rival_unavailable=0.
+Corner/guidance/speed-loss outcomes remain zero when there is no explicit cancellation for that reason; speed limits are recorded separately.
+
+### Captured scenarios and outcomes
+
+```
+BATTLE racer1 defenses=2 alongside_s=109.15 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=1 corner=0 guidance=0 speed_loss=0 timeout=0 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer2 defenses=2 alongside_s=23.30 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=0 corner=0 guidance=0 speed_loss=0 timeout=0 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer3 defenses=1 alongside_s=56.65 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=3 corner=0 guidance=0 speed_loss=0 timeout=0 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer4 defenses=3 alongside_s=55.45 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=0 corner=0 guidance=0 speed_loss=0 timeout=0 contact_risk=1 rival_unavailable=0 hidden=1
+BATTLE racer5 defenses=3 alongside_s=56.05 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=1 corner=0 guidance=0 speed_loss=0 timeout=0 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer6 defenses=3 alongside_s=119.00 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=1 corner=0 guidance=0 speed_loss=0 timeout=3 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer7 defenses=3 alongside_s=106.60 losses=0 repass_attempts=0 repass_completed=0 completed=1 occupied=2 corner=0 guidance=0 speed_loss=0 timeout=1 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer8 defenses=4 alongside_s=110.55 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=0 corner=0 guidance=0 speed_loss=0 timeout=0 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer9 defenses=3 alongside_s=96.70 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=0 corner=0 guidance=0 speed_loss=0 timeout=2 contact_risk=1 rival_unavailable=0 hidden=1
+BATTLE racer10 defenses=0 alongside_s=85.40 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=1 corner=0 guidance=0 speed_loss=0 timeout=2 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer11 defenses=3 alongside_s=76.40 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=0 corner=0 guidance=0 speed_loss=0 timeout=0 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer12 defenses=2 alongside_s=83.00 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=1 corner=0 guidance=0 speed_loss=0 timeout=0 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer13 defenses=3 alongside_s=82.00 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=2 corner=0 guidance=0 speed_loss=0 timeout=1 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer14 defenses=0 alongside_s=84.55 losses=0 repass_attempts=0 repass_completed=0 completed=1 occupied=3 corner=0 guidance=0 speed_loss=0 timeout=1 contact_risk=1 rival_unavailable=0 hidden=1
+BATTLE racer15 defenses=2 alongside_s=99.70 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=3 corner=0 guidance=0 speed_loss=0 timeout=0 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer16 defenses=1 alongside_s=71.75 losses=0 repass_attempts=0 repass_completed=0 completed=1 occupied=3 corner=0 guidance=0 speed_loss=0 timeout=1 contact_risk=1 rival_unavailable=0 hidden=1
+BATTLE racer17 defenses=3 alongside_s=103.25 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=2 corner=0 guidance=0 speed_loss=0 timeout=1 contact_risk=0 rival_unavailable=0 hidden=1
+BATTLE racer18 defenses=1 alongside_s=66.25 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=1 corner=0 guidance=0 speed_loss=0 timeout=3 contact_risk=3 rival_unavailable=0 hidden=1
+BATTLE racer19 defenses=6 alongside_s=121.05 losses=0 repass_attempts=0 repass_completed=0 completed=0 occupied=2 corner=0 guidance=0 speed_loss=0 timeout=1 contact_risk=0 rival_unavailable=0 hidden=1
+SIDE min_kmh=41.02 contacts=0 alongside_s=3.00 defenses=0
+REPASS losses=1 attempts=1 completed=1 contacts=0
+CLEAR speed_kmh=54.85 t90=4.75 d90_cm=3288 t95=5.00 d95_cm=3643
+EXIT120 apex_kmh=25.38 one=35.86 two=46.33 three=54.32 t90=2.35 d90_cm=2427 t95=2.60 d95_cm=2781 contacts=0
+EXIT210 apex_kmh=25.38 one=35.86 two=46.33 three=54.32 t90=2.35 d90_cm=2446 t95=2.60 d95_cm=2799 contacts=0
+EXIT300 apex_kmh=25.38 one=35.86 two=46.33 three=51.51 t90=2.35 d90_cm=2456 t95=2.60 d95_cm=2812 contacts=0
+TRAIN0 min_kmh=38.88 final_kmh=54.68 contacts=0 ahead_cm=-1.0 closing_cms=0.0 peak_mph=34.18 moving_avg_mph=29.61 under20_pct=0.0 under25_pct=28.5 over30_pct=50.0 traffic_s=0.0 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=1 brake_s=0.1 longest_queue_s=0.0
+TRAIN1 min_kmh=40.26 final_kmh=54.72 contacts=0 ahead_cm=-1.0 closing_cms=0.0 peak_mph=34.18 moving_avg_mph=31.53 under20_pct=0.0 under25_pct=0.0 over30_pct=69.0 traffic_s=2.8 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=1 brake_s=0.1 longest_queue_s=0.0
+TRAIN2 min_kmh=40.57 final_kmh=54.85 contacts=0 ahead_cm=506.4 closing_cms=4.3 peak_mph=34.18 moving_avg_mph=31.51 under20_pct=0.0 under25_pct=0.0 over30_pct=66.0 traffic_s=3.7 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=0 brake_s=0.0 longest_queue_s=0.0
+TRAIN3 min_kmh=41.07 final_kmh=54.72 contacts=0 ahead_cm=-1.0 closing_cms=0.0 peak_mph=34.18 moving_avg_mph=31.60 under20_pct=0.0 under25_pct=0.0 over30_pct=64.5 traffic_s=3.3 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=0 brake_s=0.0 longest_queue_s=0.0
+TRAIN4 min_kmh=41.69 final_kmh=54.85 contacts=0 ahead_cm=488.9 closing_cms=4.1 peak_mph=34.18 moving_avg_mph=31.62 under20_pct=0.0 under25_pct=0.0 over30_pct=67.5 traffic_s=4.3 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=0 brake_s=0.0 longest_queue_s=0.0
+TRAIN5 min_kmh=42.39 final_kmh=54.98 contacts=0 ahead_cm=1584.1 closing_cms=-1.6 peak_mph=34.18 moving_avg_mph=31.66 under20_pct=0.0 under25_pct=0.0 over30_pct=69.5 traffic_s=4.6 corner_s=0.0 obstruction_s=0.0 guidance_s=0.0 recovery_s=0.0 brake_events=0 brake_s=0.0 longest_queue_s=0.0
+PASS success=1 flips=0 contacts=0 emergency=0 final_kmh=54.77 attempts=1 completed=1
+RELEASE blocked_cms=188.3 clear_cms=1527.8 after_s=2
+20-kart 8s launch: contacts 0, first-second lane drift 0.1 cm
+```

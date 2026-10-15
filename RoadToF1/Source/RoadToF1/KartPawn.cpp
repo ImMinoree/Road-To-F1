@@ -200,6 +200,7 @@ void AKartPawn::ToggleTrainingRecording()
 
 void AKartPawn::SetDriveInput(float Throttle, float Steering, bool Brake)
 {
+    if (bRaceFinished) { Throttle = 0; Steering = 0; Brake = false; }
     Forward = FMath::Max(0.f, FMath::Clamp(Throttle, -1.f, 1.f));
     Reverse = FMath::Max(0.f, -FMath::Clamp(Throttle, -1.f, 1.f));
     Right = FMath::Max(0.f, FMath::Clamp(Steering, -1.f, 1.f));
@@ -248,14 +249,15 @@ void AKartPawn::Tick(float DeltaSeconds)
             }
         }
         const bool bDisabled = FireSeconds > 0 || StunSeconds > 0;
-        const float Throttle = bDisabled ? 0 : Forward - Reverse;
+        const float Throttle = (bDisabled || bRaceFinished) ? 0 : Forward - Reverse;
         if (bGrounded)
         {
-            if (bDisabled || bBrake || (Speed * Throttle < 0)) Speed = FMath::FInterpConstantTo(Speed, 0.f, Dt, 1500.f);
+            if (bRaceFinished) Speed = FMath::FInterpConstantTo(Speed, 0.f, Dt, 400.f);
+            else if (bDisabled || bBrake || (Speed * Throttle < 0)) Speed = FMath::FInterpConstantTo(Speed, 0.f, Dt, 1500.f);
             else if (!FMath::IsNearlyZero(Throttle)) Speed += Throttle * 300.f * Dt;
             else Speed = FMath::FInterpConstantTo(Speed, 0.f, Dt, 180.f);
             Speed = FMath::Clamp(Speed, -400.f, SpeedLimitKmh / .036f);
-            const float DesiredSteering = Right - Left;
+            const float DesiredSteering = bRaceFinished ? 0 : Right - Left;
             SmoothedSteering = FMath::FInterpTo(SmoothedSteering, DesiredSteering, Dt, FMath::IsNearlyZero(DesiredSteering) ? 5.f : 4.f);
             const float SteeringAngle = FMath::DegreesToRadians(SmoothedSteering * 22.f / (1.f + FMath::Abs(Speed) / 1400.f));
             const float DesiredYawRate = FMath::Clamp(FMath::RadiansToDegrees(Speed / 104.f * FMath::Tan(SteeringAngle)), -55.f, 55.f);
@@ -288,8 +290,21 @@ void AKartPawn::Tick(float DeltaSeconds)
     }
 }
 
+FVector AKartPawn::GetCollisionHalfExtent() const { return Body->GetScaledBoxExtent(); }
+
+void AKartPawn::SetRaceFinished()
+{
+    bRaceFinished = true;
+    // Retain track collision, but a cooling-down finisher cannot block the racing field.
+    Body->SetCollisionResponseToChannel(ECC_Pawn, ECR_Ignore);
+    SetDriveInput(0, 0);
+}
+
 void AKartPawn::ResetKart()
 {
+    bRaceFinished = false;
+    SetActorHiddenInGame(false);
+    Body->SetCollisionResponseToChannel(ECC_Pawn, ECR_Block);
     Speed = VerticalSpeed = SmoothedSteering = YawRate = 0;
     EngineSynth = FKartEngineSound();
     if (EngineWave) EngineWave->ResetAudio();
@@ -304,7 +319,7 @@ void AKartPawn::ResetKart()
 
 void AKartPawn::ReceiveCollision(float ImpactSpeed, const FVector& Normal)
 {
-    if (CollisionCooldown > 0 || ImpactSpeed < 100) return;
+    if (bRaceFinished || CollisionCooldown > 0 || ImpactSpeed < 100) return;
     CollisionCooldown = 1;
     ++CollisionCount;
     Speed *= .25f;

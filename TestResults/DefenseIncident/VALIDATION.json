@@ -1,0 +1,37 @@
+{
+  "branch": "fix/packed-race-stability",
+  "head": "761e6d0bddfe3e6dc3a90e6b2d9e58dbeb9ddc82",
+  "engine": "5.8.3",
+  "caps_kmh": {
+    "player": 57,
+    "npc": 55
+  },
+  "automation": {
+    "baseline_passed": 16,
+    "final_passed": 17,
+    "final_failed": 0,
+    "final_warnings": 0
+  },
+  "builds": {
+    "editor": {
+      "result": "Succeeded",
+      "seconds": 15.83
+    },
+    "game": {
+      "result": "Succeeded",
+      "seconds": 263.47
+    }
+  },
+  "source_sha256": {
+    "RoadToF1/Source/RoadToF1/KartRaceDirector.cpp": "3b9c3e510b2df67d99108184581738ea0c570cb81cb4ad3bca33763bacc6a645",
+    "RoadToF1/Source/RoadToF1/KartBattleState.h": "f473c15df1c487cf6c848e9a3826ac8d5ade94b2b1946bc08654bcea901a92fd",
+    "RoadToF1/Source/RoadToF1/Tests/BattleTests.cpp": "5558cf9fadbf3b7f7cc2c4eb95807c552796ea4e89ecfe94021b888e15b8ac1d",
+    "RoadToF1/Source/RoadToF1/Tests/IncidentTests.cpp": "d002464edcf4fbaa1f1fb9857a5cbc1666f1c3ca2d81fb646aa1f2535b437083",
+    "RoadToF1/Source/RoadToF1/Tests/KartIntegrationTests.cpp": "503d44fff91b911d99342977cfb6f9a9a3a7040ae1229bf2d602766f0511c34f"
+  },
+  "human_driving_verified": false,
+  "committed": false,
+  "pushed": false,
+  "merged": false,
+  "post_validation_changes": "Removed trailing blank lines at EOF in IncidentTests.cpp and PackedRace/RESULTS.md before publication; no code behavior changed."
+}

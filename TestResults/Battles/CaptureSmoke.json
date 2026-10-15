@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "source": "D:\\Boring\\GitHub\\Road-To-F1\\RoadToF1\\Saved\\Training\\Telemetry\\41E9AA154C9D60E9AF230D9161FB8A0D.csv.battle-v1.csv",
+  "first_sample_s": 0.25,
+  "last_sample_s": 0.25,
+  "first_reached_position_s": {
+    "20": 0.25
+  },
+  "milestone_intervals_s": {},
+  "position_gain_events": [],
+  "limitation": "Times are relative to F9 capture, not video or race start. Counter changes and nearby slowdowns are context, not proof of clean/incident-caused overtakes. Sampling is 5 Hz. No training performed."
+}

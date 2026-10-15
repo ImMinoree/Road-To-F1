@@ -3,6 +3,7 @@
 #include "Tests/AutomationEditorCommon.h"
 #include "Tests/AutomationCommon.h"
 #include "KartPawn.h"
+#include "PaceMetrics.h"
 #include "KartTrainingProfiles.h"
 #include "KartTrainingLearner.h"
 #include "KartTrainingRecorder.h"
@@ -176,23 +177,52 @@ bool FVerifyAIRace::Update()
     Test->TestTrue(TEXT("Player throttle releases opponents"), Director->HasStarted());
     // Park the player safely off-track while testing actual autonomous driving.
     Player->ResetKart(); Player->SetActorLocation(FVector(0, -12000, 25));
+    Director->bPaceDiagnostics = true;
+    FPaceMetrics Pace[19];
+    float MultiQueue=0,LongestMultiQueue=0;
     float PeakSpeed = 0;
+    float QueueTime[19] = {}, StoppedTime[19] = {}, FinishSeconds[19] = {};
     for (int32 Frame = 0; Frame < 12000; ++Frame)
     {
         Director->Tick(.05f);
+        int32 SlowQueued=0;for(const auto& A:Director->GetOpponents())if(!A.Progress.bFinished && A.bQueued && A.Kart->GetSpeedKmh()<10)++SlowQueued;
+        MultiQueue=SlowQueued>=3?MultiQueue+.05f:0;LongestMultiQueue=FMath::Max(LongestMultiQueue,MultiQueue);
         for (const auto& State : Director->GetOpponents())
         {
+            Pace[State.Kart->GetKartNumber()-1].Sample(State,.05f);
+            const FVector Before = State.Kart->GetActorLocation();
             State.Kart->Tick(.05f);
+            if (!State.Progress.bFinished)
+            {
+                const int32 Expected = !State.Progress.bStarted || State.Progress.NextCheckpoint == 12 ? 0 : State.Progress.NextCheckpoint + 1;
+                const auto& Gate = Race->GetGates()[Expected];
+                const FVector A=Gate.Transform.InverseTransformPosition(Before), B=Gate.Transform.InverseTransformPosition(State.Kart->GetActorLocation());
+                if(A.X<0 && B.X>=0 && FMath::Abs(B.Y)<2000 && FMath::Abs(B.Y)>Gate.Extent.Y)
+                    Test->AddInfo(FString::Printf(TEXT("MISSED gate%d racer%d at%.1fs lateral%.0f bound%.0f lane%.0f"),Expected,State.Kart->GetKartNumber(),Frame*.05f,B.Y,Gate.Extent.Y,State.Lane));
+            }
             PeakSpeed = FMath::Max(PeakSpeed, State.Kart->GetSpeedKmh());
+            const int32 I = State.Kart->GetKartNumber() - 1;
+            if (!State.Progress.bFinished) { QueueTime[I] += State.bQueued ? .05f : 0; StoppedTime[I] += FMath::Abs(State.Kart->GetSpeedKmh()) < 1 ? .05f : 0; }
+            else if (FinishSeconds[I] == 0) FinishSeconds[I] = Frame * .05f;
         }
     }
     Director->Tick(0);
-    int32 Finished = 0;
+    int32 Finished = 0,FieldContacts=0;
+    Test->AddInfo(FString::Printf(TEXT("CONTAIN_FIELD longest_multi_queue_s=%.2f"),LongestMultiQueue));
     for (const auto& State : Director->GetOpponents())
     {
+        FieldContacts+=State.Kart->GetCollisionCount();
         if (State.Progress.bFinished) ++Finished;
+        Test->TestTrue(TEXT("Cooldown finishers do not remain in a visible parked stack"),State.Progress.bFinished && State.Kart->IsHidden());
+        const int32 I = State.Kart->GetKartNumber() - 1;
+        Test->AddInfo(FString::Printf(TEXT("PACE racer%d %s pass_attempts=%d completed_passes=%d"),I+1,*Pace[I].Describe(),State.PassAttempts,State.CompletedPasses));
+        const auto& B=State.Battle;
+        Test->AddInfo(FString::Printf(TEXT("BATTLE racer%d defenses=%d alongside_s=%.2f losses=%d repass_attempts=%d repass_completed=%d completed=%d occupied=%d corner=%d guidance=%d speed_loss=%d timeout=%d contact_risk=%d rival_unavailable=%d hidden=%d"),I+1,B.Defenses,B.AlongsideSeconds,B.PositionsLost,B.RepassAttempts,B.RepassCompletions,B.Outcomes[0],B.Outcomes[1],B.Outcomes[2],B.Outcomes[3],B.Outcomes[4],B.Outcomes[5],B.Outcomes[6],B.Outcomes[7],State.Kart->IsHidden()));
+        Test->AddInfo(FString::Printf(TEXT("CONTAIN racer%d held=%d late=%d alongside=%d occupied=%d threat_clear=%d lost_speed=%d too_wide=%d risk=%d incidents=%d secondary=%d longest_queue=%.2f incident_clear_sum=%.2f recovery_sum=%.2f clears=%d recoveries=%d"),I+1,B.DefenseOutcomes[1],B.DefenseOutcomes[2],B.DefenseOutcomes[3],B.DefenseOutcomes[4],B.DefenseOutcomes[5],B.DefenseOutcomes[6],B.DefenseOutcomes[7],B.DefenseOutcomes[8],B.IncidentEvents,B.SecondaryContacts,B.LongestQueue,B.IncidentClearSeconds,B.SpeedRecoverySeconds,B.IncidentClears,B.SpeedRecoveries));
+        Test->AddInfo(FString::Printf(TEXT("Racer%d finish%.1fs queued%.1fs stopped%.1fs"),I+1,FinishSeconds[I],QueueTime[I],StoppedTime[I]));
         Test->AddInfo(FString::Printf(TEXT("AI: laps %d, CP %d, speed %.1f, contacts %d, route %d, lane %.0f, pos %s"), State.Progress.CompletedLaps, State.Progress.NextCheckpoint, State.Kart->GetSpeedKmh(), State.Kart->GetCollisionCount(), State.RouteIndex, State.Lane, *State.Kart->GetActorLocation().ToString()));
     }
+    Test->TestTrue(TEXT("Full-field contacts do not materially exceed the 28-contact baseline"),FieldContacts<=30);
     Test->TestEqual(TEXT("All 19 AI drive three ordered laps within ten simulated minutes"), Finished, 19);
     Test->TestTrue(TEXT("AI never exceeds 55 km/h"), PeakSpeed <= 55.01f && PeakSpeed > 50);
     Test->TestEqual(TEXT("Finished AI rank ahead of parked player"), Director->GetPlayerPlace(), 20);

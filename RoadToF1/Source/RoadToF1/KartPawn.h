@@ -17,6 +17,10 @@ public:
     virtual void SetupPlayerInputComponent(UInputComponent* Input) override;
     virtual FVector GetVelocity() const override { return GetActorForwardVector() * Speed; }
     void ResetKart();
+    void SetRaceFinished();
+    bool IsRaceFinished() const { return bRaceFinished; }
+    bool IsRecoveringFromContact() const { return StunSeconds > 0 || FireSeconds > 0; }
+    FVector GetCollisionHalfExtent() const;
     void SetDriveInput(float Throttle, float Steering, bool Brake = false);
     float GetSpeedKmh() const { return Speed * .036f; }
     void ConfigureRacer(int32 Index, bool bOpponent);
@@ -64,6 +68,7 @@ private:
     float YawRate = 0;
     float Forward = 0, Reverse = 0, Left = 0, Right = 0;
     bool bBrake = false;
+    bool bRaceFinished = false;
 };
 
 UCLASS()

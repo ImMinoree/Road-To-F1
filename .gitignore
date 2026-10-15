@@ -56,3 +56,38 @@ TestResults/DynamicHUD/HUDTests/
 TestResults/DynamicHUD/RenderedTests/
 TestResults/DynamicHUD/Automation/index.html
 TestResults/DynamicHUD/Visual1600/
+
+# Packed-race intermediate reports remain local; retain baseline/final JSON evidence
+TestResults/PackedRace/*/
+!TestResults/PackedRace/Baseline/
+!TestResults/PackedRace/Final/
+TestResults/PackedRace/Baseline/*
+!TestResults/PackedRace/Baseline/index.json
+TestResults/PackedRace/Final/*
+!TestResults/PackedRace/Final/index.json
+
+# Race-pace iteration outputs remain local; keep reproducible baseline/final JSON
+TestResults/RacePace/*/
+!TestResults/RacePace/Baseline/
+!TestResults/RacePace/Final/
+TestResults/RacePace/Baseline/*
+!TestResults/RacePace/Baseline/index.json
+TestResults/RacePace/Final/*
+!TestResults/RacePace/Final/index.json
+
+# Battle iterations remain local; preserve baseline/final automation evidence.
+TestResults/Battles/*/
+!TestResults/Battles/Baseline/
+!TestResults/Battles/Final/
+TestResults/Battles/Baseline/*
+!TestResults/Battles/Baseline/index.json
+TestResults/Battles/Final/*
+!TestResults/Battles/Final/index.json
+# Defense/incident iteration outputs remain local; retain baseline/final evidence.
+TestResults/DefenseIncident/*/
+!TestResults/DefenseIncident/Baseline/
+!TestResults/DefenseIncident/Final/
+TestResults/DefenseIncident/Baseline/*
+!TestResults/DefenseIncident/Baseline/index.json
+TestResults/DefenseIncident/Final/*
+!TestResults/DefenseIncident/Final/index.json

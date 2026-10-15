@@ -1,0 +1,177 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "380ED12046AB8F0CF46DF3891AB2DCD3",
+			"instanceName": "DESKTOP-ERDHE74-16076",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.15-02.56.13",
+	"succeeded": 0,
+	"succeededWithWarnings": 0,
+	"failed": 1,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 1.2684894800186157,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "PackedSafety",
+			"fullTestPath": "RoadToF1.Racecraft.PackedSafety",
+			"tags": [],
+			"state": "Fail",
+			"deviceInstance": [
+				"380ED12046AB8F0CF46DF3891AB2DCD3"
+			],
+			"duration": 1.2684894800186157,
+			"dateTime": "2026.10.15-02.56.11",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogStreaming: FlushAsyncLoading(364): 1 QueuedPackages, 0 AsyncPackages",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-02.56.12"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogEditorAutomationTests: SouthGarda_KartRace took 0.138 to load.",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-02.56.12"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race loop ready: 3 laps, 12 ordered checkpoints.",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-02.56.12"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race reset: timing and checkpoint progress cleared, vehicle returned to PlayerStart.",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-02.56.13"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "Expected 'Reverse player movement must not release field' to be false.",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "D:\\Boring\\GitHub\\Road-To-F1\\RoadToF1\\Source\\RoadToF1\\Tests\\PackedRaceTests.cpp",
+					"lineNumber": 22,
+					"timestamp": "2026.10.15-02.56.13"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race reset: timing and checkpoint progress cleared, vehicle returned to PlayerStart.",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-02.56.13"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Initial lane mismatch 70.0 cm",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-02.56.13"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "Expected 'Launch lanes match physical grid corridors' to be true.",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "D:\\Boring\\GitHub\\Road-To-F1\\RoadToF1\\Source\\RoadToF1\\Tests\\PackedRaceTests.cpp",
+					"lineNumber": 35,
+					"timestamp": "2026.10.15-02.56.13"
+				},
+				{
+					"event":
+					{
+						"type": "Error",
+						"message": "Expected 'Queued NPC must not reverse into rear traffic' to be false.",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "D:\\Boring\\GitHub\\Road-To-F1\\RoadToF1\\Source\\RoadToF1\\Tests\\PackedRaceTests.cpp",
+					"lineNumber": 44,
+					"timestamp": "2026.10.15-02.56.13"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogRoadToF1: Race reset: timing and checkpoint progress cleared, vehicle returned to PlayerStart.",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-02.56.13"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "LogPlayLevel: Shutting down PIE online subsystems",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.15-02.56.13"
+				}
+			],
+			"warnings": 0,
+			"errors": 3,
+			"artifacts": []
+		}
+	]
+}
