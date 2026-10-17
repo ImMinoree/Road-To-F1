@@ -16,6 +16,9 @@ RoadToF1/*.slnx
 # IDEs
 RoadToF1/.idea/
 
+#Refrence
+Refrence/
+
 # OS junk
 .DS_Store
 Thumbs.db
