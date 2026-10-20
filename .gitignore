@@ -1,0 +1,12 @@
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+.vs/
+*.sln
+*.blend1
+Evidence/*.log
+Evidence/Build*.json
+# Third party assets stay uncommitted pending user permission.
+Art/Textures/
+Content/RoadToF1/Textures/

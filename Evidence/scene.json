@@ -1,0 +1,47 @@
+{
+  "length_m": 150,
+  "width_m": 8,
+  "eye_height_m": 0.8,
+  "shots": [
+    [
+      "01_DriverEye",
+      [
+        1200,
+        0,
+        80
+      ],
+      [
+        -3,
+        3,
+        0
+      ]
+    ],
+    [
+      "02_Ground",
+      [
+        3900,
+        -550,
+        45
+      ],
+      [
+        -2,
+        30,
+        0
+      ]
+    ],
+    [
+      "03_Wide",
+      [
+        6200,
+        -1700,
+        750
+      ],
+      [
+        -18,
+        42,
+        0
+      ]
+    ]
+  ],
+  "status": "Foundation only; vegetation, barriers, soil PBR and cockpit absent"
+}
