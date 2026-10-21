@@ -1,16 +1,23 @@
 {
   "FileVersion": 3,
   "EngineAssociation": "5.8",
-  "Category": "Simulation",
-  "Description": "Independent visual proof; art acceptance pending.",
+  "Category": "",
+  "Description": "",
   "Modules": [
     {
-      "Name": "RoadToF1Realism",
+      "Name": "Road_To_F1_New",
       "Type": "Runtime",
       "LoadingPhase": "Default"
     }
   ],
   "Plugins": [
+    {
+      "Name": "ModelingToolsEditorMode",
+      "Enabled": true,
+      "TargetAllowList": [
+        "Editor"
+      ]
+    },
     {
       "Name": "PythonScriptPlugin",
       "Enabled": true
@@ -18,10 +25,6 @@
     {
       "Name": "EditorScriptingUtilities",
       "Enabled": true
-    },
-    {
-      "Name": "AndroidFileServer",
-      "Enabled": false
     }
   ]
 }

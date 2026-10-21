@@ -9,7 +9,6 @@
 #include "Misc/FileHelper.h"
 #include "Misc/Paths.h"
 #include "HAL/PlatformMisc.h"
-IMPLEMENT_PRIMARY_GAME_MODULE(FDefaultGameModuleImpl,RoadToF1Realism,"RoadToF1Realism");
 AProofPawn::AProofPawn(){
  PrimaryActorTick.bCanEverTick=true;
  Body=CreateDefaultSubobject<USphereComponent>(TEXT("Collision")); RootComponent=Body;

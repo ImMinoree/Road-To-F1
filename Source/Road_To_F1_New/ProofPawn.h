@@ -7,7 +7,7 @@ class UCameraComponent;
 class USphereComponent;
 // Temporary swept kinematic driving. No production kart physics or cockpit claims.
 UCLASS()
-class ROADTOF1REALISM_API AProofPawn : public APawn {
+class ROAD_TO_F1_NEW_API AProofPawn : public APawn {
  GENERATED_BODY()
 public:
  AProofPawn();
@@ -23,7 +23,7 @@ private:
  void Reset();
 };
 UCLASS()
-class ROADTOF1REALISM_API AProofGameMode : public AGameModeBase {
+class ROAD_TO_F1_NEW_API AProofGameMode : public AGameModeBase {
  GENERATED_BODY()
 public: AProofGameMode();
 };

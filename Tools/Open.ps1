@@ -1,4 +1,4 @@
 param([ValidateSet('Balanced','Validation')][string]$Profile='Balanced')
-$projectPath = Join-Path $PSScriptRoot '..\RoadToF1-Realism.uproject'
+$projectPath = Join-Path $PSScriptRoot '..\Road_To_F1_New.uproject'
 $qualityCommands = if ($Profile -eq 'Validation') { 'r.Shadow.Virtual.Enable 1,sg.ViewDistanceQuality 3,sg.AntiAliasingQuality 3,sg.ShadowQuality 3,sg.GlobalIlluminationQuality 3,sg.ReflectionQuality 3,sg.PostProcessQuality 3,sg.TextureQuality 3,sg.EffectsQuality 3,sg.FoliageQuality 3,r.ScreenPercentage 100' } else { 'r.Shadow.Virtual.Enable 0,sg.ViewDistanceQuality 2,sg.AntiAliasingQuality 2,sg.ShadowQuality 2,sg.GlobalIlluminationQuality 2,sg.ReflectionQuality 2,sg.PostProcessQuality 2,sg.TextureQuality 2,sg.EffectsQuality 2,sg.FoliageQuality 2,r.ScreenPercentage 75' }
 & 'D:\Boring\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe' $projectPath '/Game/RoadToF1/Maps/VisualProof' -game -windowed -ResX=1920 -ResY=1080 "-ExecCmds=$qualityCommands"

@@ -1,12 +1,61 @@
+# Unreal Engine generated files
 Binaries/
 Intermediate/
 Saved/
 DerivedDataCache/
+
+# Visual Studio generated files
 .vs/
 *.sln
-*.blend1
+*.slnx
+*.vsidx
+*.db
+*.db-shm
+*.db-wal
+*.VC.db
+*.VC.opendb
+
+# Generated evidence files
 Evidence/*.log
 Evidence/Build*.json
-# Third party assets stay uncommitted pending user permission.
+
+# Third-party assets pending license review
 Art/Textures/
 Content/RoadToF1/Textures/
+
+
+# Blender temporary files
+*.blend2
+*.blend@
+*.blend~
+*.blend_autosave
+
+# Python cache
+__pycache__/
+*.py[cod]
+.venv/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.autosave
+*.dmp
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# IDE settings
+.idea/
+.vscode/
+*.suo
+*.VC.db
+
+# Windows
+Thumbs.db
+desktop.ini
+.DS_Store
+*.slnx
