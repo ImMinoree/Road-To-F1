@@ -1,0 +1,10 @@
+{
+  "DesertKarting": {
+    "protected_actors_matched": 93,
+    "geometry_markers_spawns_visibility_collision_unchanged": true
+  },
+  "DesertKarting_Visual": {
+    "protected_actors_matched": 103,
+    "geometry_markers_spawns_visibility_collision_unchanged": true
+  }
+}

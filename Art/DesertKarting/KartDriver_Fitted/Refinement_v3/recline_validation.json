@@ -1,0 +1,95 @@
+{
+  "source": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\DesertKarting\\KartDriver_Fitted\\Refinement_v2\\Kart_With_MakeHuman_Fitted_v2.blend",
+  "selected": {
+    "hip_x": 0.055,
+    "hip_z": 0.59,
+    "lean_deg": -14,
+    "pelvic_tilt_deg": -40,
+    "shoulder_reach_m": 0.12
+  },
+  "before": {
+    "glute_support": {
+      "min_m": -0.0009904914562817169,
+      "contact_quartile_mean_m": 0.005554024841078292,
+      "count": 71
+    },
+    "back_support": {
+      "min_m": 0.07588319169008173,
+      "contact_quartile_mean_m": 0.0952215379039482,
+      "count": 99
+    },
+    "collisions": {
+      "kart_driverMesh": {
+        "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 40
+      },
+      "male_casualsuit04Mesh": {
+        "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 16,
+        "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 148,
+        "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 17,
+        "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 15,
+        "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 12,
+        "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 56
+      },
+      "shoes05Mesh": {
+        "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 48,
+        "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 82,
+        "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 3,
+        "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+      }
+    },
+    "actual_torso_lean_deg": 4.897616230109996,
+    "elbow_flexion_deg": [
+      41.39319532374705,
+      40.67639429111088
+    ],
+    "control_errors_m": {
+      "hand_l": 1.4901161193847656e-08,
+      "hand_r": 4.2146848510894035e-08,
+      "foot_l": 5.960464477539063e-08,
+      "foot_r": 1.6118070224511577e-07
+    }
+  },
+  "after": {
+    "glute_support": {
+      "min_m": -0.0010657727659690863,
+      "contact_quartile_mean_m": 0.0047270097095600885,
+      "count": 71
+    },
+    "back_support": {
+      "min_m": 0.009684422357167932,
+      "contact_quartile_mean_m": 0.029649868184375303,
+      "count": 139
+    },
+    "collisions": {
+      "kart_driverMesh": {
+        "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 38
+      },
+      "male_casualsuit04Mesh": {
+        "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 6,
+        "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 40,
+        "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 21,
+        "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 14,
+        "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 14,
+        "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 6,
+        "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 56
+      },
+      "shoes05Mesh": {
+        "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 48,
+        "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 82,
+        "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 3,
+        "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20
+      }
+    },
+    "actual_torso_lean_deg": -14.83715638990244,
+    "elbow_flexion_deg": [
+      24.344988513881844,
+      23.038796797386965
+    ],
+    "control_errors_m": {
+      "hand_l": 2.9802322387695312e-08,
+      "hand_r": 1.2377834115800373e-07,
+      "foot_l": 9.541398640621973e-08,
+      "foot_r": 6.664001874625056e-08
+    }
+  }
+}

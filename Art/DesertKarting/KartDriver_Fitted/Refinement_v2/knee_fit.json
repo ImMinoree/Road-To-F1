@@ -1,0 +1,1470 @@
+{
+  "l": {
+    "before": {
+      "score": 177.92177228927613,
+      "hits": {
+        "kart_driverMesh": {
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+        },
+        "male_casualsuit04Mesh": {
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 23,
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+        },
+        "shoes05Mesh": {
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+        }
+      },
+      "knee": [
+        0.4259800314903259,
+        0.2621772289276123,
+        0.6951163411140442
+      ]
+    },
+    "selected": {
+      "pole": [
+        0.35,
+        0.65
+      ],
+      "metrics": {
+        "score": 177.8603660941124,
+        "hits": {
+          "kart_driverMesh": {
+            "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+          },
+          "male_casualsuit04Mesh": {
+            "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 23,
+            "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+            "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+          },
+          "shoes05Mesh": {
+            "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+            "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+          }
+        },
+        "knee": [
+          0.42841121554374695,
+          0.2560366094112396,
+          0.6956848502159119
+        ]
+      }
+    },
+    "candidates": [
+      {
+        "pole": [
+          0.35,
+          0.65
+        ],
+        "metrics": {
+          "score": 177.8603660941124,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 23,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.42841121554374695,
+            0.2560366094112396,
+            0.6956848502159119
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.35,
+          0.55
+        ],
+        "metrics": {
+          "score": 177.9217716932297,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 23,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4259800612926483,
+            0.26217716932296753,
+            0.6951163411140442
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.4,
+          0.85
+        ],
+        "metrics": {
+          "score": 178.01347016096116,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 23,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4221869707107544,
+            0.2713470160961151,
+            0.6940920948982239
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.35,
+          0.75
+        ],
+        "metrics": {
+          "score": 182.81438409090043,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 24,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.43017569184303284,
+            0.2514384090900421,
+            0.6960503458976746
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.35,
+          0.85
+        ],
+        "metrics": {
+          "score": 187.82131775021554,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 25,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.43151310086250305,
+            0.24786822497844696,
+            0.6962988972663879
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.4,
+          0.75
+        ],
+        "metrics": {
+          "score": 208.07601271867753,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 23,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite": 6,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4194856584072113,
+            0.2776012718677521,
+            0.6932703852653503
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.3,
+          0.55
+        ],
+        "metrics": {
+          "score": 209.23735319375996,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 26,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.43954554200172424,
+            0.224605530500412,
+            0.6971834301948547
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.3,
+          0.65
+        ],
+        "metrics": {
+          "score": 211.48464261293415,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 26,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4397841691970825,
+            0.22385892271995544,
+            0.6971911787986755
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.3,
+          0.75
+        ],
+        "metrics": {
+          "score": 213.14409523010258,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 26,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4399595856666565,
+            0.22330760955810547,
+            0.6971960663795471
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.3,
+          0.85
+        ],
+        "metrics": {
+          "score": 214.41952078342442,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 26,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4400940537452698,
+            0.22288388013839722,
+            0.6971994042396545
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.4,
+          0.65
+        ],
+        "metrics": {
+          "score": 229.78028773069374,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 22,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite": 8,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.41591888666152954,
+            0.2855416238307953,
+            0.6920792460441589
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.45,
+          0.85
+        ],
+        "metrics": {
+          "score": 252.61603860855095,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 22,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite": 8,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4123638868331909,
+            0.29312825202941895,
+            0.6907826066017151
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.4,
+          0.55
+        ],
+        "metrics": {
+          "score": 261.0587134838104,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 22,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite": 8,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4110122621059418,
+            0.2959331274032593,
+            0.6902629733085632
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.45,
+          0.75
+        ],
+        "metrics": {
+          "score": 287.95940278768535,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 22,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.40824466943740845,
+            0.30154797434806824,
+            0.6891562342643738
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.25,
+          0.85
+        ],
+        "metrics": {
+          "score": 288.0768903553486,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 27,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 8,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.44768378138542175,
+            0.19668541848659515,
+            0.6966258883476257
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.25,
+          0.75
+        ],
+        "metrics": {
+          "score": 297.30771327614787,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 27,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 8,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4484807848930359,
+            0.19361869990825653,
+            0.6964600682258606
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.45,
+          0.65
+        ],
+        "metrics": {
+          "score": 309.3820265889167,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 20,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.40283846855163574,
+            0.3120538294315338,
+            0.6868395209312439
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.25,
+          0.65
+        ],
+        "metrics": {
+          "score": 324.3744249105454,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 27,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 11,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.44949406385421753,
+            0.1896098256111145,
+            0.6962128281593323
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.25,
+          0.55
+        ],
+        "metrics": {
+          "score": 350.81264013648035,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 29,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 11,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4508226811885834,
+            0.1841486245393753,
+            0.6958200335502625
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.45,
+          0.55
+        ],
+        "metrics": {
+          "score": 359.5712499856948,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 20,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite": 12,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 18,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.39548033475875854,
+            0.3254721760749817,
+            0.6833924651145935
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.2,
+          0.85
+        ],
+        "metrics": {
+          "score": 399.4377467989922,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 31,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.45406168699264526,
+            0.1696552336215973,
+            0.6944683194160461
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.2,
+          0.75
+        ],
+        "metrics": {
+          "score": 419.6814719796181,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 30,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 11,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4554236829280853,
+            0.1629297435283661,
+            0.6936891674995422
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.2,
+          0.65
+        ],
+        "metrics": {
+          "score": 466.1111187398434,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 33,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 9,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 3,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4570681154727936,
+            0.154149129986763,
+            0.6925275921821594
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.2,
+          0.55
+        ],
+        "metrics": {
+          "score": 506.99307004213335,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 32,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 8,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 6,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.4590587019920349,
+            0.14222821593284607,
+            0.6906898617744446
+          ]
+        }
+      }
+    ]
+  },
+  "r": {
+    "before": {
+      "score": 439.011278885603,
+      "hits": {
+        "kart_driverMesh": {
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+        },
+        "male_casualsuit04Mesh": {
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 23,
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+        },
+        "shoes05Mesh": {
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+        }
+      },
+      "knee": [
+        0.4616233706474304,
+        -0.14328528940677643,
+        0.682594358921051
+      ]
+    },
+    "selected": {
+      "pole": [
+        0.35,
+        0.85
+      ],
+      "metrics": {
+        "score": 231.8094583630562,
+        "hits": {
+          "kart_driverMesh": {
+            "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 40
+          },
+          "male_casualsuit04Mesh": {
+            "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 17,
+            "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 15,
+            "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 12,
+            "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 56
+          },
+          "shoes05Mesh": {
+            "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+          }
+        },
+        "knee": [
+          0.43372204899787903,
+          -0.2490541636943817,
+          0.6893817782402039
+        ]
+      }
+    },
+    "candidates": [
+      {
+        "pole": [
+          0.35,
+          0.85
+        ],
+        "metrics": {
+          "score": 231.8094583630562,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 40
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 17,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 15,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 12,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 56
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.43372204899787903,
+            -0.2490541636943817,
+            0.6893817782402039
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.35,
+          0.75
+        ],
+        "metrics": {
+          "score": 236.81717925071717,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 40
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 17,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 16,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 12,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 56
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.43270784616470337,
+            -0.2517179250717163,
+            0.6892419457435608
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.4,
+          0.75
+        ],
+        "metrics": {
+          "score": 237.07566939592363,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 38
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 16,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 15,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 14,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.42199569940567017,
+            -0.27756693959236145,
+            0.687015950679779
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.4,
+          0.85
+        ],
+        "metrics": {
+          "score": 245.92332966327666,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 27
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 16,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 17,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 14,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.42429524660110474,
+            -0.27233296632766724,
+            0.68759685754776
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.4,
+          0.65
+        ],
+        "metrics": {
+          "score": 249.47204722166052,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 39
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 16,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 15,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 14,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 56
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.4190089702606201,
+            -0.2841435372829437,
+            0.6861887574195862
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.35,
+          0.55
+        ],
+        "metrics": {
+          "score": 251.5956493616104,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 37
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 17,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 17,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 14,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 56
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.42962461709976196,
+            -0.25956493616104126,
+            0.6887344717979431
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.35,
+          0.65
+        ],
+        "metrics": {
+          "score": 251.65107551813125,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 38
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 17,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 17,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 14,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 56
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.43139368295669556,
+            -0.2551075518131256,
+            0.6890403628349304
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.3,
+          0.85
+        ],
+        "metrics": {
+          "score": 254.36571013927463,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 40
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 22,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 13,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.44238147139549255,
+            -0.22429710626602173,
+            0.6899171471595764
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.3,
+          0.75
+        ],
+        "metrics": {
+          "score": 255.3422386646271,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 40
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 22,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 13,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.4424859583377838,
+            -0.22397267818450928,
+            0.6899152398109436
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.3,
+          0.65
+        ],
+        "metrics": {
+          "score": 256.5958210527897,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 40
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 22,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 13,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.4426197409629822,
+            -0.22355620563030243,
+            0.6899124979972839
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.3,
+          0.55
+        ],
+        "metrics": {
+          "score": 258.26384049654007,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 40
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 22,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 13,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.4427972137928009,
+            -0.22300204634666443,
+            0.689907968044281
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.4,
+          0.55
+        ],
+        "metrics": {
+          "score": 269.0541163802146,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 27
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 15,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 13,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 16,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.4149845838546753,
+            -0.2926425635814667,
+            0.6849557757377625
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.45,
+          0.85
+        ],
+        "metrics": {
+          "score": 272.9899228334426,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 27
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 15,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 13,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 16,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.4143485426902771,
+            -0.2939501404762268,
+            0.6847493052482605
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.45,
+          0.75
+        ],
+        "metrics": {
+          "score": 304.35968279838556,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 15,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 13,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 18,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.4106973707675934,
+            -0.30128228664398193,
+            0.6835063099861145
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.25,
+          0.85
+        ],
+        "metrics": {
+          "score": 322.69844279885297,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 44
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 21,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 12,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 56
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.4500289857387543,
+            -0.19833938777446747,
+            0.6890497803688049
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.45,
+          0.65
+        ],
+        "metrics": {
+          "score": 326.8634598374366,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 12,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 13,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 60
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.40597546100616455,
+            -0.3103533089160919,
+            0.681764543056488
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.25,
+          0.65
+        ],
+        "metrics": {
+          "score": 327.842081540823,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 44
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 21,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 8,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.4521716833114624,
+            -0.19005246460437775,
+            0.688474714756012
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.25,
+          0.75
+        ],
+        "metrics": {
+          "score": 333.7970609009266,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 44
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 21,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 12,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.45098280906677246,
+            -0.19471858441829681,
+            0.6888160109519958
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.25,
+          0.55
+        ],
+        "metrics": {
+          "score": 346.6134787142277,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 44
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 21,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 8,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.4536902904510498,
+            -0.1838161200284958,
+            0.6879482865333557
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.45,
+          0.55
+        ],
+        "metrics": {
+          "score": 349.1054428458213,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 20
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 9,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 13,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 20,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 67
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+            }
+          },
+          "knee": [
+            0.39966273307800293,
+            -0.32182905077934265,
+            0.6792226433753967
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.2,
+          0.85
+        ],
+        "metrics": {
+          "score": 380.04757984876636,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 39,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 12
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 22,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 6,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 60
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 6
+            }
+          },
+          "knee": [
+            0.4564451575279236,
+            -0.17154565453529358,
+            0.6866797804832458
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.2,
+          0.75
+        ],
+        "metrics": {
+          "score": 391.61389706730847,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 31,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 20
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 22,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 4,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 60
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 9
+            }
+          },
+          "knee": [
+            0.4578917622566223,
+            -0.16448043286800385,
+            0.6858101487159729
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.2,
+          0.65
+        ],
+        "metrics": {
+          "score": 423.5766999900342,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 14,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 30
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 23,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 4,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 60
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 12
+            }
+          },
+          "knee": [
+            0.45960381627082825,
+            -0.15538980066776276,
+            0.6845423579216003
+          ]
+        }
+      },
+      {
+        "pole": [
+          0.2,
+          0.55
+        ],
+        "metrics": {
+          "score": 439.01100977063186,
+          "hits": {
+            "kart_driverMesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 24
+            },
+            "male_casualsuit04Mesh": {
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 23,
+              "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 64
+            },
+            "shoes05Mesh": {
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22,
+              "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 18
+            }
+          },
+          "knee": [
+            0.46162334084510803,
+            -0.1432853788137436,
+            0.6825944781303406
+          ]
+        }
+      }
+    ]
+  }
+}

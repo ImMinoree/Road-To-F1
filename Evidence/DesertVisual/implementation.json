@@ -1,0 +1,754 @@
+{
+  "map": "/Game/RoadToF1/Maps/DesertKarting_Visual",
+  "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_BeforeVisual",
+  "original_map_change": "Kart actors hidden only; original driving game mode retained",
+  "hidden_original_kart_actors": [
+    "DK_10 Race karts chassis wheels engine and drivers | blue",
+    "DK_10 Race karts chassis wheels engine and drivers | dark",
+    "DK_10 Race karts chassis wheels engine and drivers | glass",
+    "DK_10 Race karts chassis wheels engine and drivers | metal",
+    "DK_10 Race karts chassis wheels engine and drivers | red",
+    "DK_10 Race karts chassis wheels engine and drivers | rubber",
+    "DK_10 Race karts chassis wheels engine and drivers | white",
+    "DK_10 Race karts chassis wheels engine and drivers | yellow"
+  ],
+  "visible_kart_actors_after_reload": [],
+  "environment_default_pawn": "SpectatorPawn (invisible, no vehicle spawning)",
+  "lighting_unchanged": true,
+  "original_collision_signature": {
+    "DK_01 Desert terrain and access roads | asphalt": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_asphalt.SM_DK_01_Desert_terrain_and_access_roads_asphalt",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_01 Desert terrain and access roads | sand": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_sand.SM_DK_01_Desert_terrain_and_access_roads_sand",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_01 Desert terrain and access roads | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_white.SM_DK_01_Desert_terrain_and_access_roads_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_02 Track surface curbs and runoff | asphalt": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_asphalt.SM_DK_02_Track_surface_curbs_and_runoff_asphalt",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_02 Track surface curbs and runoff | red": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_red.SM_DK_02_Track_surface_curbs_and_runoff_red",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_02 Track surface curbs and runoff | rubbermark": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_rubbermark.SM_DK_02_Track_surface_curbs_and_runoff_rubbermark",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_02 Track surface curbs and runoff | runoff": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_runoff.SM_DK_02_Track_surface_curbs_and_runoff_runoff",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_02 Track surface curbs and runoff | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_white.SM_DK_02_Track_surface_curbs_and_runoff_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_03 Infield lawns and pit lane | asphalt": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_asphalt.SM_DK_03_Infield_lawns_and_pit_lane_asphalt",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_03 Infield lawns and pit lane | dark": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_dark.SM_DK_03_Infield_lawns_and_pit_lane_dark",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_03 Infield lawns and pit lane | grass": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_grass.SM_DK_03_Infield_lawns_and_pit_lane_grass",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_03 Infield lawns and pit lane | grassdark": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_grassdark.SM_DK_03_Infield_lawns_and_pit_lane_grassdark",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_03 Infield lawns and pit lane | red": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_red.SM_DK_03_Infield_lawns_and_pit_lane_red",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_03 Infield lawns and pit lane | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_white.SM_DK_03_Infield_lawns_and_pit_lane_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_04 Safety barriers and perimeter fence | green": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_green.SM_DK_04_Safety_barriers_and_perimeter_fence_green",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_04 Safety barriers and perimeter fence | metal": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_metal.SM_DK_04_Safety_barriers_and_perimeter_fence_metal",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_04 Safety barriers and perimeter fence | red": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_red.SM_DK_04_Safety_barriers_and_perimeter_fence_red",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_04 Safety barriers and perimeter fence | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_white.SM_DK_04_Safety_barriers_and_perimeter_fence_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_05 Grandstand steps seating and crowd | blue": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_blue.SM_DK_05_Grandstand_steps_seating_and_crowd_blue",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_05 Grandstand steps seating and crowd | cream": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_cream.SM_DK_05_Grandstand_steps_seating_and_crowd_cream",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_05 Grandstand steps seating and crowd | dark": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_dark.SM_DK_05_Grandstand_steps_seating_and_crowd_dark",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_05 Grandstand steps seating and crowd | metal": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_metal.SM_DK_05_Grandstand_steps_seating_and_crowd_metal",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_05 Grandstand steps seating and crowd | red": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_red.SM_DK_05_Grandstand_steps_seating_and_crowd_red",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_05 Grandstand steps seating and crowd | shirt": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_shirt.SM_DK_05_Grandstand_steps_seating_and_crowd_shirt",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_05 Grandstand steps seating and crowd | skin": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_skin.SM_DK_05_Grandstand_steps_seating_and_crowd_skin",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_05 Grandstand steps seating and crowd | stone": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_stone.SM_DK_05_Grandstand_steps_seating_and_crowd_stone",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_05 Grandstand steps seating and crowd | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_white.SM_DK_05_Grandstand_steps_seating_and_crowd_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_06 Sculpted tensile canopy roofs | canvas": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_canvas.SM_DK_06_Sculpted_tensile_canopy_roofs_canvas",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_06 Sculpted tensile canopy roofs | metal": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_metal.SM_DK_06_Sculpted_tensile_canopy_roofs_metal",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_06 Sculpted tensile canopy roofs | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_white.SM_DK_06_Sculpted_tensile_canopy_roofs_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_07 Arabian pit building arches towers and domes | amber": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_amber.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_amber",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_07 Arabian pit building arches towers and domes | cream": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_cream.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_cream",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_07 Arabian pit building arches towers and domes | dark": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_dark.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_dark",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_07 Arabian pit building arches towers and domes | lamp": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_lamp.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_lamp",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_07 Arabian pit building arches towers and domes | metal": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_metal.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_metal",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_07 Arabian pit building arches towers and domes | stone": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_stone.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_stone",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_07 Arabian pit building arches towers and domes | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_white.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_08 Parking vehicles | blue": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_blue.SM_DK_08_Parking_vehicles_blue",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_08 Parking vehicles | dark": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_dark.SM_DK_08_Parking_vehicles_dark",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_08 Parking vehicles | glass": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_glass.SM_DK_08_Parking_vehicles_glass",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_08 Parking vehicles | metal": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_metal.SM_DK_08_Parking_vehicles_metal",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_08 Parking vehicles | red": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_red.SM_DK_08_Parking_vehicles_red",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_08 Parking vehicles | rubber": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_rubber.SM_DK_08_Parking_vehicles_rubber",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_08 Parking vehicles | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_white.SM_DK_08_Parking_vehicles_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | asphalt": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_asphalt.SM_DK_09_Paddock_transporters_tents_and_service_equipment_asphalt",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | blue": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_blue.SM_DK_09_Paddock_transporters_tents_and_service_equipment_blue",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | canvas": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_canvas.SM_DK_09_Paddock_transporters_tents_and_service_equipment_canvas",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | cream": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_cream.SM_DK_09_Paddock_transporters_tents_and_service_equipment_cream",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | dark": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_dark.SM_DK_09_Paddock_transporters_tents_and_service_equipment_dark",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | glass": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_glass.SM_DK_09_Paddock_transporters_tents_and_service_equipment_glass",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | metal": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_metal.SM_DK_09_Paddock_transporters_tents_and_service_equipment_metal",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | red": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_red.SM_DK_09_Paddock_transporters_tents_and_service_equipment_red",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | rubber": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_rubber.SM_DK_09_Paddock_transporters_tents_and_service_equipment_rubber",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | shirt": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_shirt.SM_DK_09_Paddock_transporters_tents_and_service_equipment_shirt",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | skin": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_skin.SM_DK_09_Paddock_transporters_tents_and_service_equipment_skin",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_09 Paddock transporters tents and service equipment | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_white.SM_DK_09_Paddock_transporters_tents_and_service_equipment_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_10 Race karts chassis wheels engine and drivers | blue": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_blue.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_blue",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_10 Race karts chassis wheels engine and drivers | dark": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_dark.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_dark",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_10 Race karts chassis wheels engine and drivers | glass": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_glass.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_glass",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_10 Race karts chassis wheels engine and drivers | metal": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_metal.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_metal",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_10 Race karts chassis wheels engine and drivers | red": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_red.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_red",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_10 Race karts chassis wheels engine and drivers | rubber": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_rubber.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_rubber",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_10 Race karts chassis wheels engine and drivers | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_white.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_10 Race karts chassis wheels engine and drivers | yellow": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_yellow.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_yellow",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_11 Floodlight poles and lamp arrays | lamp": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_lamp.SM_DK_11_Floodlight_poles_and_lamp_arrays_lamp",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_11 Floodlight poles and lamp arrays | metal": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_metal.SM_DK_11_Floodlight_poles_and_lamp_arrays_metal",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_11 Floodlight poles and lamp arrays | stone": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_stone.SM_DK_11_Floodlight_poles_and_lamp_arrays_stone",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_12 Palms shrubs rocks and landscaping | leaf": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_leaf.SM_DK_12_Palms_shrubs_rocks_and_landscaping_leaf",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_12 Palms shrubs rocks and landscaping | sandlight": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_sandlight.SM_DK_12_Palms_shrubs_rocks_and_landscaping_sandlight",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_12 Palms shrubs rocks and landscaping | trunk": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_trunk.SM_DK_12_Palms_shrubs_rocks_and_landscaping_trunk",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_13 Distant illuminated secondary circuit | asphalt": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_asphalt.SM_DK_13_Distant_illuminated_secondary_circuit_asphalt",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_13 Distant illuminated secondary circuit | canvas": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_canvas.SM_DK_13_Distant_illuminated_secondary_circuit_canvas",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_13 Distant illuminated secondary circuit | cream": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_cream.SM_DK_13_Distant_illuminated_secondary_circuit_cream",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_13 Distant illuminated secondary circuit | lamp": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_lamp.SM_DK_13_Distant_illuminated_secondary_circuit_lamp",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_13 Distant illuminated secondary circuit | metal": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_metal.SM_DK_13_Distant_illuminated_secondary_circuit_metal",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_13 Distant illuminated secondary circuit | red": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_red.SM_DK_13_Distant_illuminated_secondary_circuit_red",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_13 Distant illuminated secondary circuit | runoff": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_runoff.SM_DK_13_Distant_illuminated_secondary_circuit_runoff",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_13 Distant illuminated secondary circuit | stone": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_stone.SM_DK_13_Distant_illuminated_secondary_circuit_stone",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_13 Distant illuminated secondary circuit | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_white.SM_DK_13_Distant_illuminated_secondary_circuit_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_14 Timing gantry signs and pit furniture | amber": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber.SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_14 Timing gantry signs and pit furniture | dark": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark.SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_14 Timing gantry signs and pit furniture | glass": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_glass.SM_DK_14_Timing_gantry_signs_and_pit_furniture_glass",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_14 Timing gantry signs and pit furniture | green": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_green.SM_DK_14_Timing_gantry_signs_and_pit_furniture_green",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_14 Timing gantry signs and pit furniture | metal": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_metal.SM_DK_14_Timing_gantry_signs_and_pit_furniture_metal",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_14 Timing gantry signs and pit furniture | red": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_red.SM_DK_14_Timing_gantry_signs_and_pit_furniture_red",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_14 Timing gantry signs and pit furniture | white": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_white.SM_DK_14_Timing_gantry_signs_and_pit_furniture_white",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ],
+    "DK_DESERT KARTING": [
+      "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_DESERT_KARTING.SM_DK_DESERT_KARTING",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>",
+      "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+    ]
+  },
+  "lighting_signature": {
+    "DirectionalLight": [
+      "DirectionalLight",
+      [
+        0.0,
+        0.0,
+        1000.0,
+        -31.999999999999993,
+        145.0,
+        1.8752206955469954e-15
+      ],
+      65000.0,
+      "<Struct 'Color' (0x0000015B07117AB8) {b: 221, g: 241, r: 255, a: 0}>",
+      "<ComponentMobility.MOVABLE: 2>"
+    ],
+    "SkyAtmosphere": [
+      "SkyAtmosphere",
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "ExponentialHeightFog": [
+      "ExponentialHeightFog",
+      [
+        0.0,
+        0.0,
+        -500.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "PostProcessVolume": [
+      "PostProcessVolume",
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "DirectionalLight2": [
+      "DirectionalLight",
+      [
+        0.0,
+        0.0,
+        1000.0,
+        -31.999999999999993,
+        145.0,
+        1.8752206955469954e-15
+      ],
+      65000.0,
+      "<Struct 'Color' (0x0000015B071180B8) {b: 221, g: 241, r: 255, a: 0}>",
+      "<ComponentMobility.MOVABLE: 2>"
+    ],
+    "SkyAtmosphere2": [
+      "SkyAtmosphere",
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "ExponentialHeightFog2": [
+      "ExponentialHeightFog",
+      [
+        0.0,
+        0.0,
+        -500.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "PostProcessVolume2": [
+      "PostProcessVolume",
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "DirectionalLight3": [
+      "DirectionalLight",
+      [
+        0.0,
+        0.0,
+        1000.0,
+        -31.999999999999993,
+        145.0,
+        1.8752206955469954e-15
+      ],
+      65000.0,
+      "<Struct 'Color' (0x0000015B071126B8) {b: 221, g: 241, r: 255, a: 0}>",
+      "<ComponentMobility.MOVABLE: 2>"
+    ],
+    "SkyAtmosphere3": [
+      "SkyAtmosphere",
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "ExponentialHeightFog3": [
+      "ExponentialHeightFog",
+      [
+        0.0,
+        0.0,
+        -500.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "PostProcessVolume3": [
+      "PostProcessVolume",
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ]
+  },
+  "instances": {
+    "SM_DV_PitBay": 21,
+    "SM_DV_Banner": 5,
+    "SM_DV_BarrierTeal": 42,
+    "SM_DV_BarrierIvory": 40,
+    "SM_DV_ToolChest": 14,
+    "SM_DV_TireStack": 4,
+    "SM_DV_Drain": 20,
+    "SM_DV_Extinguisher": 5,
+    "SM_DV_SeatBlue": 648,
+    "SM_DV_SeatRed": 336,
+    "SM_DV_SeatGold": 24,
+    "SM_DV_CapBlue": 105,
+    "SM_DV_CapRed": 70,
+    "SM_DV_CapIvory": 70,
+    "SM_DV_PitSignPod": 13
+  },
+  "mesh_assets": 25,
+  "new_mesh_triangles": 370144,
+  "protected_hashes": {
+    "Source\\Road_To_F1_New.Target.cs": "d533bf3dbaac5ac4b7c1cc63029fea0a2f33030de8e7b62280b47776dc5b6184",
+    "Source\\Road_To_F1_NewEditor.Target.cs": "6b549179732d133c23dbf2de869ccae832e13c66c3037a3ca25a5b2f06b430bc",
+    "Source\\Road_To_F1_New\\ProofPawn.cpp": "7a6ec36496bab3a2d6ea03ac38cdc4bb9353cf69b4a74f4b358521eb0f591367",
+    "Source\\Road_To_F1_New\\ProofPawn.h": "5db64146c1f0a0e2284333fab03ae460d76d3f92f223cf7ce9042a1b119b7c8a",
+    "Source\\Road_To_F1_New\\Road_To_F1_New.Build.cs": "641de1fcd9e8bfb206c7ed6e5adb85f212155cb6747e3c06a25317cf32309c07",
+    "Source\\Road_To_F1_New\\Road_To_F1_New.cpp": "4b45bfac7fee356a89715e9bb428e1474837d26d57f958f3676e3e01533c98ab",
+    "Source\\Road_To_F1_New\\Road_To_F1_New.h": "4694b655856b269fc41b195971214f8e629857c7e5d6f34002a066cd4af3037c",
+    "Config\\DefaultEditor.ini": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "Config\\DefaultEngine.ini": "762794a63f82551f7a22adb80cdd4d2a83c9d6b855827f7b4763fd233984ae92",
+    "Config\\DefaultGame.ini": "fa851fd5a60c28346f3016531390142cff35efe58414ea01c531f835724e4ee8",
+    "Config\\DefaultGameUserSettings.ini": "eccc9a8cf91f53b9bb645af45a56835d4fa6fd432b3af1800409efb18e968310",
+    "Config\\DefaultInput.ini": "c2b9e47a4950a681d4adb682b452aab37b623b56018c6d0535ccdc491ad7cf56",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_amber.uasset": "d8dc4da7161dcda763fd1a97a4352a6723ae7fd2088d80447b27cc14f2eebdf7",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_asphalt.uasset": "f077ab4c160ae68235ba4253acb2bf9ebbc840554ca3575540bf370f9360cb72",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_blue.uasset": "2b4077d8d75042ec31d6c3d5e9d78913b63ce74c0ddbc3a430effffe8cec388f",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_canvas.uasset": "fa7f4ee836b58a7a3f4ca82b4c5e51b771ff58d9c1b088177f5f025ea8c1c8bf",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_cream.uasset": "b394657582ea61e508fb74a6ff8d86433663441fc79ff23c77a6c25fc316ef6a",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_dark.uasset": "33db08a44cd2f5d197efc815993dbc8760583233ec1e33ca8cc39659cf9cf8df",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_glass.uasset": "c3af96953b8f9b815f2e71048a237b22090d24b681dfd1c347b389537a03d782",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_grass.uasset": "6a2f386e877fc05449a64a43ff193fcc93d3d6ca35890f953e56c0e7588b1b67",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_grassdark.uasset": "025f4653367dae5527c85ec1da5ecc499f153586d68662a572ddb9cfac9e2d1f",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_green.uasset": "3bb2413fc198cd72d47741036f941c3f0ea272ef10fcf734ce2e3e946072b9dc",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_lamp.uasset": "42cb676e84a072e53a24163777f262960157b9d24c90149c679f4f4a53038cd2",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_leaf.uasset": "597752113dd0529cd33017088a10d80d28069a744c325174c23b987535a394f4",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_metal.uasset": "9209d8b6aa5fc365d8f2a30ab10aa690c28b8f3e9e5906465fc894bfdba8a7a1",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_red.uasset": "eb3752df552b1319674f39d89b920cbac0f66e355f4f63606175e70fac25dca6",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_rubber.uasset": "f5fd1e13172bc1af91635076ee54b781257f55766de6b53f884608ea0188db65",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_rubbermark.uasset": "24dc644c2b57fd955e24a4b6c341482f64b9de3dd9b993a567f3cce7e5fc7df3",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_runoff.uasset": "1bc5a026fcd52f8f36d6b0d863927e62593bd896b467cbbba35dfccbfe6f97ce",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_sand.uasset": "6d2aa5569774533be60ea538070cdfdb9a861679173dae7baec0e8c1361d3340",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_sandlight.uasset": "009a6246479194abdd2006a21cee7e8a5e7e3191fbb78fa0265874c66e3ae389",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_shirt.uasset": "8f8cab248235da2f3866d46d7b4500debd6b9f1649a26759239c40fa6ad2f9b6",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_skin.uasset": "47bf45ba83bd010970382a608dbcf335acc4cd49c3e79da18bcad5b7290651fc",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_stone.uasset": "316a4ba66c0564fdbe3fee9c6f132ec5c333b963658878d8c36b6873de930cc5",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_trunk.uasset": "945edb646f2bc974adea8d8c4a515daa7458082f8080ba384a972b6a5a187683",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_white.uasset": "cadebc6ea7203dbbb9bc12f958d0c4255d492ca96cc12155bcd9d91ffa130f64",
+    "Content\\RoadToF1\\DesertKarting\\Materials\\M_DK_yellow.uasset": "951e4f6513340309337cbb0b9db4f82098064c027af3e5583da73c92b891a499",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_01_Desert_terrain_and_access_roads_asphalt.uasset": "c552afff232e15f9e9a8fa7fc3f036aaffb40e82bf360c925bd792e4139c0af1",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_01_Desert_terrain_and_access_roads_sand.uasset": "2a71b5075826e0864b597bcb11ceffde0412536625cc4f01744a705c6c516f11",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_01_Desert_terrain_and_access_roads_white.uasset": "74a64698b581b5f4cd7a86ee4674a48d7421f3ce8b17dda957c4e1079a9359ef",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_02_Track_surface_curbs_and_runoff_asphalt.uasset": "186bb4529edb37b539875144e03ba2b15e0d4e03f9c723bad9dbbf63ac37ab4b",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_02_Track_surface_curbs_and_runoff_red.uasset": "a5e390557a080ae4a6bd1e69619b17c4afe47e16be822595d69d201f0b93b745",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_02_Track_surface_curbs_and_runoff_rubbermark.uasset": "3721d699a09542874e552e10297e15371b7857196884e932298fb19311dd1270",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_02_Track_surface_curbs_and_runoff_runoff.uasset": "47a2d10aa46f0be321d71714ae941963c788626c3d4c5a72457104ceca0c4a5c",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_02_Track_surface_curbs_and_runoff_white.uasset": "878e3cdb9ce27c2d2c1f7092e8ff93652d45ca12963e4c7c5d9d91d95f7e7ced",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_03_Infield_lawns_and_pit_lane_asphalt.uasset": "d4e273d50a9d0a6091b667d400fc18d1b36f5070b4b4eff68b82161bca5f3277",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_03_Infield_lawns_and_pit_lane_dark.uasset": "df2510bd44c7decf7f3580863b7b41b1838321d9f67c8b1956465750cff6964c",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_03_Infield_lawns_and_pit_lane_grass.uasset": "f0d4e1420ae5e0475812bb49fa13c15707da103daae276562c5e93963847acd6",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_03_Infield_lawns_and_pit_lane_grassdark.uasset": "a76daf515bfc8783bef4c4c51a3ae5438d181771663feadfcb8124e79506d0fa",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_03_Infield_lawns_and_pit_lane_red.uasset": "b296709d69bfdd35c63ee2a45e9220bef3cdff398aca5fc0bbc4458c07238b21",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_03_Infield_lawns_and_pit_lane_white.uasset": "111ee16c60f558a7ddd58ae39859b59381651fcb4600991f44a480931f02273b",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_04_Safety_barriers_and_perimeter_fence_green.uasset": "8a87d5dc28e8c50f56250a653c7a7a0971ce753f0714175b1977ee628d742f8d",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_04_Safety_barriers_and_perimeter_fence_metal.uasset": "2612d072a44dd8334f0ff135ae657efacfe25334204c051f0b56d6b098abbda4",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_04_Safety_barriers_and_perimeter_fence_red.uasset": "3c1108c241834bfe115e5c8983e8af9738a1a9f1dc33b042965518470874af08",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_04_Safety_barriers_and_perimeter_fence_white.uasset": "ddd03035e086b1f81791d852efe6223b66766143d798d0053f8e7b6677311d45",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_05_Grandstand_steps_seating_and_crowd_blue.uasset": "184551ebeeac61bf036f974e225549e214eee3f00c6d8dea80783ea840d8b452",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_05_Grandstand_steps_seating_and_crowd_cream.uasset": "1bcb735a39fe2494b7463e595c4f56df3c717d018f6697c5061e4145cbf34b55",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_05_Grandstand_steps_seating_and_crowd_dark.uasset": "53b8e0600740ffc8d8e8aa526442a65abaccf01d4ddd6b8bbc4d8b0f81f2f5ac",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_05_Grandstand_steps_seating_and_crowd_metal.uasset": "7e453e6a6201d0622fca72e9e845ccecfd2e003fdd2ec7af384d63e83a7d552a",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_05_Grandstand_steps_seating_and_crowd_red.uasset": "b9d1a195d9aa05241c36cf0a50308dad269750ce674f1ba5d12a463bcc1879e8",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_05_Grandstand_steps_seating_and_crowd_shirt.uasset": "82431f6f411f5fc8b1ebc94702f0a1e50dcb634346bfdcf6ff31b581d58cdbed",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_05_Grandstand_steps_seating_and_crowd_skin.uasset": "457fffff4a55838621cffef40cfb2bedef67bb1c16a60305a1fed8a5b910fbbf",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_05_Grandstand_steps_seating_and_crowd_stone.uasset": "ec3c3b33661c55bde7888a539945facc7cf6542271033a46bb6f39440dbe849f",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_05_Grandstand_steps_seating_and_crowd_white.uasset": "e1091c8b14c27a556b753d45367930fcf753885566fa4bc980a8204119865f5c",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_06_Sculpted_tensile_canopy_roofs_canvas.uasset": "3ccccdec5cb368cb3a3ed0b153e9d01884e891c02b2bf565b550f2d66d042460",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_06_Sculpted_tensile_canopy_roofs_metal.uasset": "9356afa39fd8998d7f547d62944b0ec5fc302175e9e7b8207e9e0ee2affc238f",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_06_Sculpted_tensile_canopy_roofs_white.uasset": "c626b1c5ff9077d845e5efe60f0be6635f4529d882c0842c99d4fe7ceb264d33",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_07_Arabian_pit_building_arches_towers_and_domes_amber.uasset": "06fa768969a64c6024e3179ae700fd2c11427f40d2877fadb46cc6e81cd15632",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_07_Arabian_pit_building_arches_towers_and_domes_cream.uasset": "ddcb5aef609618bed190cbec101ec0cec94a0a0d5ec803612a8a0402d84b2960",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_07_Arabian_pit_building_arches_towers_and_domes_dark.uasset": "513bdb1c4c4241dcf5bcf889feaa14707b841274f796fd5fab6acc489723ef5b",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_07_Arabian_pit_building_arches_towers_and_domes_lamp.uasset": "7c6d01011ceb65d6f66329b63dc79eaa0a55b3d53f4f57d4cd33942ffaed8650",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_07_Arabian_pit_building_arches_towers_and_domes_metal.uasset": "71d4aa2700e109babbc47b9e3640d96692386011205fbd4e4b521264b88b077c",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_07_Arabian_pit_building_arches_towers_and_domes_stone.uasset": "199684169f9ffb5a217268aa81f28d62abc42a22c92c49e4795288d596a045f0",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_07_Arabian_pit_building_arches_towers_and_domes_white.uasset": "fbd1c2e495677c85e94144e0378d813cc8aa0282468e5326ca86d94d21001327",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_08_Parking_vehicles_blue.uasset": "97e8a3fc7de66212664f4446d22603f5362b3f25b91fe891f17c4feff9544c1e",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_08_Parking_vehicles_dark.uasset": "2696ae24710e0792c85cea6facd76d9e129076303a7d60a2554c19c8a285f7a6",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_08_Parking_vehicles_glass.uasset": "9b5a61ab39cbb77974761aa74c1c7df5635893a0cfbf8dae8ce53de9b0b30307",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_08_Parking_vehicles_metal.uasset": "de46b87a5cc660c6cd064c646ff41fd464b0c928ca23634c9ff7efd85b870c22",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_08_Parking_vehicles_red.uasset": "9455d054109c5edb3f6c60ec369a9c2fc67c28aa258506927fff36ad0372a31e",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_08_Parking_vehicles_rubber.uasset": "4ec87f7974151d6134e6b4738b3aaf4587d7f9628f9d20f1ca84a83752ce5bb0",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_08_Parking_vehicles_white.uasset": "c70a7cee7b242514680ceed5985e00619fdb0756b4e32f55e64a604c80ee7f0f",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_asphalt.uasset": "d4f07045735db9d89752cb11b61bb91eb3a77d131713efd37b06d12e8e74e32f",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_blue.uasset": "6f0b1497a240689415ca6b4faf7469b2de0fa8c544dd1501eec9a26a6c1a066c",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_canvas.uasset": "60ef1e55b45b28ba4719cdc9baa538a056c24338c8c77ea6501c1ea005a6e705",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_cream.uasset": "78ea7b2323553d844afc5f84f8e035fb67a9b82815acc1086eefbef4bc1203bd",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_dark.uasset": "ebddfbb9efcc15b54b7bbb8d3b240bd3ce75f266c3dc71a33ea6cc77c5831c3a",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_glass.uasset": "a018e52b35b90e2b6b883f79fcf2a36f1f988ea789c0a776bab8c737566a2db6",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_metal.uasset": "6a0ff1f40a2a3f855d2b964c1b78a6cf1c8e7d5fee26ecdbd46dd65a79474681",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_red.uasset": "f16feb52346cb49435eb9879c6a7f2289ca684bf7250869d6b7d0bdb6b77edcf",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_rubber.uasset": "7e235a49aa579bc5bd72082f40ca95b76e683ac649a0b0ee2aa07f2a17260e9b",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_shirt.uasset": "23fad5b88fc13720fd2ee809e68df9de466675e7887a2781bb2378ed4dbd6b7c",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_skin.uasset": "cd4bf7856ffed168acb977b86af3ed9270554d2e9ed633660e851b88f45780cb",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_09_Paddock_transporters_tents_and_service_equipment_white.uasset": "eadf8c40d200f9d743b1de7eef866dffa28df777a2bbcda583958ecf6dda0a69",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_blue.uasset": "1198fb1182968157292257b0b1324ce1cf06880bc10fbb59eec574b987cf6824",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_dark.uasset": "b393f716369c1460ddee890d6223623d53a7bd8d6c17c08ab72d3bf919b10237",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_glass.uasset": "42f32b4b8d9642c0fbb7d1edf7a8feeb6c9953cc14117eaabe7b18366fb360ef",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_metal.uasset": "c03b77cb171e65db94eba856a222d4984eb80c857f5c8f28ca568a1b272cc6e2",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_red.uasset": "838b951725b495a455d2a89042e8a31954f4707166e197323316decdfb70bda1",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_rubber.uasset": "e2bb64281a3f9a7f3bad0d76d8ae37ba079fb7ca5ef4541529bf63803c577e1f",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_white.uasset": "6655a483ae1360e09bf016609357245eb81b7de0a6534b5ebb43517edf8dbc64",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_yellow.uasset": "46f058258c4018245817473e5cd418bb3361bdc483a6f47dc3b307fd75c2502e",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_11_Floodlight_poles_and_lamp_arrays_lamp.uasset": "9e2f29578fc6fa3b150160e78c69ea3abba1ddbb479d08f52aea0445e20b0136",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_11_Floodlight_poles_and_lamp_arrays_metal.uasset": "02a8402b960ac04ee2b4f8de1f3552354001cba03125b5e99887a81c88bda309",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_11_Floodlight_poles_and_lamp_arrays_stone.uasset": "3666da9ff72e50f980a1d4dbc7e11a3aef4c79bda897a26a898146c88835ae9d",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_12_Palms_shrubs_rocks_and_landscaping_leaf.uasset": "51ca409c33fb02491809433f6485e2e2b81cad8f4c9f31fd1396cd932dec311e",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_12_Palms_shrubs_rocks_and_landscaping_sandlight.uasset": "94a71f95b5c087e4dc427ff952d3030e95dfce9a5087b1cc2cf4996e99fc43d7",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_12_Palms_shrubs_rocks_and_landscaping_trunk.uasset": "8305c01d7fafc44ffb42710b34a9dc19c65019f576ae37bfa34fb8364c64ed4c",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_13_Distant_illuminated_secondary_circuit_asphalt.uasset": "a494d64a8d39cf502a8f78088373db4e521e537138952cfda5bb06613278587f",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_13_Distant_illuminated_secondary_circuit_canvas.uasset": "2ecd575f6e6a11a34ac43ce40fcf89e9e9bac76eda0c4dda932449e35992afcd",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_13_Distant_illuminated_secondary_circuit_cream.uasset": "5523a64a4cdf58a8f8e560c7d17906c2decac1c00620b647ad604cfbd8dffcb6",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_13_Distant_illuminated_secondary_circuit_lamp.uasset": "072816a3655189b23d224e80f1082cd8c1f1ab7a38b095dfcce58ae5f3f9c81b",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_13_Distant_illuminated_secondary_circuit_metal.uasset": "97dd6ba0827baa95096bad1d1a55047a067fd6d53c8bc44e3be6e81480e76c18",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_13_Distant_illuminated_secondary_circuit_red.uasset": "253e823eaedd63c0c3f11a6dee5af1be3d5cd41703b22cca302b87aed40dd8fa",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_13_Distant_illuminated_secondary_circuit_runoff.uasset": "b6e9a90e8208ece00b187059e066532b6dbe6540d925e5e226de2836e691bbe8",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_13_Distant_illuminated_secondary_circuit_stone.uasset": "7e83578ff3201e90828c19debe3d5ab74ae37e2e67484b3c3f42ddc08e625e18",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_13_Distant_illuminated_secondary_circuit_white.uasset": "cb0f332447413323e72da41585690abbf03d2d4c9649c4e0aa78fa8ddb3667fb",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber.uasset": "cad63211aa9e685d6d7ca9e62ea99d59bf4f467422e4af2772520d31a8c140f6",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark.uasset": "45182206969a43a2eaa77914a47689c29c1d3a6863f5e0da32e1cb757f217c6c",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_14_Timing_gantry_signs_and_pit_furniture_glass.uasset": "58ba63fb9886b3246779c819b545206e59459ba14953562f694fa74830d46b24",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_14_Timing_gantry_signs_and_pit_furniture_green.uasset": "410c5f00bc75df198b4826c2ef696415e92004311aa7746da916c31f515c3408",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_14_Timing_gantry_signs_and_pit_furniture_metal.uasset": "91dc655d03fa5f0da2192141ca375b091ac1d5961f414f2e6e9cc86da6c31aaf",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_14_Timing_gantry_signs_and_pit_furniture_red.uasset": "acbfb51831b74db695b54fae5327ae6457389c57426c641fe135a5d0cf8aea21",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_14_Timing_gantry_signs_and_pit_furniture_white.uasset": "a9de560710f221bf4f33558aa3261209a98a6c50e79323185e243b858ea14605",
+    "Content\\RoadToF1\\DesertKarting\\Meshes\\SM_DK_DESERT_KARTING.uasset": "2be104dd3b797cfa56db0aaecdc8866f5b78c644475c27c5303d0cb73b39cd83",
+    "Content\\RoadToF1\\Maps\\CircuitDevelopment.umap": "3b033060f11dda12df68b462758d011d981d66ea0b1c74a01b13896ce672a6b1",
+    "Content\\RoadToF1\\Maps\\VisualProof.umap": "81fedf27e7c8a5bc0f0322c114d7d55d9558e4754a0e4b9ec15650adf4fbaa7f"
+  },
+  "remaining_placeholders": [
+    "Source spectators retain simple bodies/heads; new seat backs and cap variety improve distance presentation",
+    "Source palms/shrubs and parked road cars retain original silhouettes",
+    "Garage shutters have modeled relief; no new garage interiors",
+    "Perimeter fence retains original wire spacing"
+  ],
+  "sources": "User GLB; new original procedural PBR maps and secondary modeling. No external downloads.",
+  "render_inspected": true,
+  "visual_review": "final_validation.json"
+}

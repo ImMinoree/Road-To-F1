@@ -1,0 +1,123 @@
+{
+  "visual": [
+    {
+      "epoch": 1,
+      "staged": 20,
+      "pole_slot": 1,
+      "red_intervals_s": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "all_red_hold_s": 1.25,
+      "start_events": 1,
+      "all_participants_held_then_moved": true,
+      "pole_crossed_new_finish_within_3s_sample": false
+    },
+    {
+      "epoch": 2,
+      "staged": 20,
+      "pole_slot": 1,
+      "red_intervals_s": [
+        1.0,
+        1.0,
+        1.0,
+        1.0000000000000018
+      ],
+      "all_red_hold_s": 1.2501999999999995,
+      "start_events": 1,
+      "all_participants_held_then_moved": true,
+      "pole_crossed_new_finish_within_3s_sample": true
+    }
+  ],
+  "original": [
+    {
+      "epoch": 1,
+      "staged": 20,
+      "pole_slot": 1,
+      "red_intervals_s": [
+        1.0,
+        1.0,
+        1.0002000000000004,
+        1.0
+      ],
+      "all_red_hold_s": 1.2581999999999995,
+      "start_events": 1,
+      "all_participants_held_then_moved": true,
+      "pole_crossed_new_finish_within_3s_sample": true
+    },
+    {
+      "epoch": 2,
+      "staged": 20,
+      "pole_slot": 1,
+      "red_intervals_s": [
+        1.0,
+        1.0,
+        1.0,
+        1.0000000000000018
+      ],
+      "all_red_hold_s": 1.25,
+      "start_events": 1,
+      "all_participants_held_then_moved": true,
+      "pole_crossed_new_finish_within_3s_sample": true
+    }
+  ],
+  "single": [
+    {
+      "epoch": 1,
+      "staged": 1,
+      "pole_slot": 1,
+      "red_intervals_s": [
+        1.0,
+        1.0000999999999998,
+        1.0005000000000006,
+        1.0004999999999997
+      ],
+      "all_red_hold_s": 1.2509999999999994,
+      "start_events": 1,
+      "all_participants_held_then_moved": true,
+      "pole_crossed_new_finish_within_3s_sample": true
+    },
+    {
+      "epoch": 2,
+      "staged": 1,
+      "pole_slot": 1,
+      "red_intervals_s": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "all_red_hold_s": 1.2500999999999998,
+      "start_events": 1,
+      "all_participants_held_then_moved": true,
+      "pole_crossed_new_finish_within_3s_sample": true
+    }
+  ],
+  "saved_map_geometry": {
+    "DesertKarting": {
+      "persisted_slots": 20,
+      "footprint_support_rays": 180,
+      "full_safety_box_checks": 20,
+      "route_support_rays": 2244,
+      "route_swept_segments": 748,
+      "failures": 0,
+      "checkpoint_actor_classes": []
+    },
+    "DesertKarting_Visual": {
+      "persisted_slots": 20,
+      "footprint_support_rays": 180,
+      "full_safety_box_checks": 20,
+      "route_support_rays": 2244,
+      "route_swept_segments": 748,
+      "failures": 0,
+      "checkpoint_actor_classes": []
+    }
+  },
+  "pairwise_safety_envelopes": {
+    "pairs": 190,
+    "overlaps": 0
+  },
+  "limitations": "Twenty-participant runs use explicit test-only ProofPawn instances, not a production AI field. Normal Play has only its existing assigned player. No checkpoint actors, lap system or AI navigation exist to validate actual race/checkpoint behavior."
+}

@@ -1,0 +1,62 @@
+{
+  "/Game/RoadToF1/Maps/DesertKarting": {
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_BeforeClearance",
+    "actors": {
+      "DK_14 Timing gantry signs and pit furniture | glass": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_glass.SM_DK_14_Timing_gantry_signs_and_pit_furniture_glass",
+        "collision_profile": "BlockAll",
+        "actor_collision": true
+      },
+      "DK_14 Timing gantry signs and pit furniture | green": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_green.SM_DK_14_Timing_gantry_signs_and_pit_furniture_green",
+        "collision_profile": "BlockAll",
+        "actor_collision": true
+      },
+      "DK_14 Timing gantry signs and pit furniture | metal": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_metal.SM_DK_14_Timing_gantry_signs_and_pit_furniture_metal",
+        "collision_profile": "BlockAll",
+        "actor_collision": true
+      },
+      "DK_14 Timing gantry signs and pit furniture | white": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_white.SM_DK_14_Timing_gantry_signs_and_pit_furniture_white",
+        "collision_profile": "BlockAll",
+        "actor_collision": true
+      },
+      "DK_14 Timing gantry signs and pit furniture | red": {
+        "visible": true,
+        "actor_collision": true
+      }
+    },
+    "removed_instance_type": "/Game/RoadToF1/DesertVisual/Instancing/FT_SM_DV_PitSignPod.FT_SM_DV_PitSignPod"
+  },
+  "/Game/RoadToF1/Maps/DesertKarting_Visual": {
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_Visual_BeforeClearance",
+    "actors": {
+      "DK_14 Timing gantry signs and pit furniture | glass": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_glass.SM_DK_14_Timing_gantry_signs_and_pit_furniture_glass",
+        "collision_profile": "BlockAll",
+        "actor_collision": true
+      },
+      "DK_14 Timing gantry signs and pit furniture | green": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_green.SM_DK_14_Timing_gantry_signs_and_pit_furniture_green",
+        "collision_profile": "BlockAll",
+        "actor_collision": true
+      },
+      "DK_14 Timing gantry signs and pit furniture | metal": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_metal.SM_DK_14_Timing_gantry_signs_and_pit_furniture_metal",
+        "collision_profile": "BlockAll",
+        "actor_collision": true
+      },
+      "DK_14 Timing gantry signs and pit furniture | white": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_white.SM_DK_14_Timing_gantry_signs_and_pit_furniture_white",
+        "collision_profile": "BlockAll",
+        "actor_collision": true
+      },
+      "DK_14 Timing gantry signs and pit furniture | red": {
+        "visible": false,
+        "actor_collision": true
+      }
+    },
+    "removed_instance_type": "/Game/RoadToF1/DesertVisual/Instancing/FT_SM_DV_PitSignPod.FT_SM_DV_PitSignPod"
+  }
+}

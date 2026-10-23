@@ -1,0 +1,38 @@
+{
+  "DesertKarting": {
+    "saved": true,
+    "slots": 20,
+    "pole_cm": [
+      3603.484375,
+      -106.2420654296875,
+      40.00000762939453
+    ],
+    "finish_cm": [
+      5000.0,
+      82.41767120361328,
+      8.58306884765625e-06
+    ],
+    "finish_yaw": -3.878812164749407,
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_BeforeGrid20",
+    "existing_mode_preserved": "/Script/Road_To_F1_New.ProofGameMode",
+    "participants_auto_spawned": 0
+  },
+  "DesertKarting_Visual": {
+    "saved": true,
+    "slots": 20,
+    "pole_cm": [
+      3603.484375,
+      -106.2420654296875,
+      40.00000762939453
+    ],
+    "finish_cm": [
+      5000.0,
+      82.41767120361328,
+      8.58306884765625e-06
+    ],
+    "finish_yaw": -3.878812164749407,
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_Visual_BeforeGrid20",
+    "existing_mode_preserved": "/Script/Road_To_F1_New.ProofGameMode",
+    "participants_auto_spawned": 0
+  }
+}

@@ -1,0 +1,264 @@
+{
+  "/Game/RoadToF1/Maps/DesertKarting": {
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_BeforeOpenInfield",
+    "actors": {
+      "DK_03 Infield lawns and pit lane | asphalt": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_asphalt.SM_DK_03_Infield_lawns_and_pit_lane_asphalt",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | asphalt": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_asphalt.SM_DK_09_Paddock_transporters_tents_and_service_equipment_asphalt",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | blue": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_blue.SM_DK_09_Paddock_transporters_tents_and_service_equipment_blue",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | canvas": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_canvas.SM_DK_09_Paddock_transporters_tents_and_service_equipment_canvas",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | cream": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_cream.SM_DK_09_Paddock_transporters_tents_and_service_equipment_cream",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | dark": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_dark.SM_DK_09_Paddock_transporters_tents_and_service_equipment_dark",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | glass": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_glass.SM_DK_09_Paddock_transporters_tents_and_service_equipment_glass",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | metal": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_metal.SM_DK_09_Paddock_transporters_tents_and_service_equipment_metal",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | red": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_red.SM_DK_09_Paddock_transporters_tents_and_service_equipment_red",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | rubber": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_rubber.SM_DK_09_Paddock_transporters_tents_and_service_equipment_rubber",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | shirt": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_shirt.SM_DK_09_Paddock_transporters_tents_and_service_equipment_shirt",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | skin": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_skin.SM_DK_09_Paddock_transporters_tents_and_service_equipment_skin",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | white": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_white.SM_DK_09_Paddock_transporters_tents_and_service_equipment_white",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_03 Infield lawns and pit lane | white": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_white.SM_DK_03_Infield_lawns_and_pit_lane_white",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      }
+    },
+    "removed_instances": {
+      "SM_DV_ToolChest": [],
+      "SM_DV_TireStack": []
+    }
+  },
+  "/Game/RoadToF1/Maps/DesertKarting_Visual": {
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_Visual_BeforeOpenInfield",
+    "actors": {
+      "DK_03 Infield lawns and pit lane | asphalt": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_asphalt.SM_DK_03_Infield_lawns_and_pit_lane_asphalt",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | asphalt": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_asphalt.SM_DK_09_Paddock_transporters_tents_and_service_equipment_asphalt",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | blue": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_blue.SM_DK_09_Paddock_transporters_tents_and_service_equipment_blue",
+        "visible": false,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | canvas": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_canvas.SM_DK_09_Paddock_transporters_tents_and_service_equipment_canvas",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | cream": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_cream.SM_DK_09_Paddock_transporters_tents_and_service_equipment_cream",
+        "visible": false,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | dark": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_dark.SM_DK_09_Paddock_transporters_tents_and_service_equipment_dark",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | glass": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_glass.SM_DK_09_Paddock_transporters_tents_and_service_equipment_glass",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | metal": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_metal.SM_DK_09_Paddock_transporters_tents_and_service_equipment_metal",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | red": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_red.SM_DK_09_Paddock_transporters_tents_and_service_equipment_red",
+        "visible": false,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | rubber": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_rubber.SM_DK_09_Paddock_transporters_tents_and_service_equipment_rubber",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | shirt": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_shirt.SM_DK_09_Paddock_transporters_tents_and_service_equipment_shirt",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | skin": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_skin.SM_DK_09_Paddock_transporters_tents_and_service_equipment_skin",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_09 Paddock transporters tents and service equipment | white": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_white.SM_DK_09_Paddock_transporters_tents_and_service_equipment_white",
+        "visible": false,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DK_03 Infield lawns and pit lane | white": {
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_white.SM_DK_03_Infield_lawns_and_pit_lane_white",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "BlockAll",
+        "folder": "None"
+      },
+      "DV_09 Paddock transporters tents and service equipment | blue": {
+        "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_09_Paddock_transporters_tents_and_service_equipment_blue.SM_DV_09_Paddock_transporters_tents_and_service_equipment_blue",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "Custom",
+        "folder": "VisualUpgrade/Geometry"
+      },
+      "DV_09 Paddock transporters tents and service equipment | cream": {
+        "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_09_Paddock_transporters_tents_and_service_equipment_cream.SM_DV_09_Paddock_transporters_tents_and_service_equipment_cream",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "Custom",
+        "folder": "VisualUpgrade/Geometry"
+      },
+      "DV_09 Paddock transporters tents and service equipment | red": {
+        "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_09_Paddock_transporters_tents_and_service_equipment_red.SM_DV_09_Paddock_transporters_tents_and_service_equipment_red",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "Custom",
+        "folder": "VisualUpgrade/Geometry"
+      },
+      "DV_09 Paddock transporters tents and service equipment | white": {
+        "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_09_Paddock_transporters_tents_and_service_equipment_white.SM_DV_09_Paddock_transporters_tents_and_service_equipment_white",
+        "visible": true,
+        "actor_collision": true,
+        "profile": "Custom",
+        "folder": "VisualUpgrade/Geometry"
+      }
+    },
+    "removed_instances": {
+      "SM_DV_ToolChest": [
+        "<Struct 'Transform' (0x0000027049B30C30) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -3500.000000, y: -3400.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x000002706075B9C0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -2700.000000, y: -3400.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x0000027049B30C30) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -1900.000000, y: -3400.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x000002706075B9C0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -1100.000000, y: -3400.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x0000027049B30C30) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -300.000000, y: -3400.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x000002706075B9C0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 500.000000, y: -3400.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x0000027049B30C30) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 1300.000000, y: -3400.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x000002706075B9C0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -3500.000000, y: -5100.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x0000027049B30C30) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -2700.000000, y: -5100.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x000002706075B9C0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -1900.000000, y: -5100.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x0000027049B30C30) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -1100.000000, y: -5100.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x000002706075B9C0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -300.000000, y: -5100.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x0000027049B30C30) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 500.000000, y: -5100.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x000002706075B9C0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 1300.000000, y: -5100.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>"
+      ],
+      "SM_DV_TireStack": [
+        "<Struct 'Transform' (0x0000027049B30C30) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -3700.000000, y: -5600.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x000002706075B9C0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -2100.000000, y: -5600.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x0000027049B30C30) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: -500.000000, y: -5600.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>",
+        "<Struct 'Transform' (0x000002706075B9C0) {rotation: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}, translation: {x: 1100.000000, y: -5600.000000, z: -16.000000}, scale3d: {x: 1.000000, y: 1.000000, z: 1.000000}}>"
+      ]
+    }
+  }
+}

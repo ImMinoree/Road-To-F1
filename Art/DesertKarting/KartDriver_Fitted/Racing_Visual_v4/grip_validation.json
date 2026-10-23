@@ -1,0 +1,103 @@
+{
+  "tested": [
+    {
+      "offset": 0.042,
+      "xoff": 0,
+      "intersections": 418,
+      "closest_5pct_gap_m": 0.004042162068966831,
+      "final_hits": 418
+    },
+    {
+      "offset": 0.042,
+      "xoff": 0.006,
+      "intersections": 465,
+      "closest_5pct_gap_m": 0.004165652067765802
+    },
+    {
+      "offset": 0.042,
+      "xoff": -0.006,
+      "intersections": 590,
+      "closest_5pct_gap_m": 0.00291131601756948
+    },
+    {
+      "offset": 0.036,
+      "xoff": 0.006,
+      "intersections": 614,
+      "closest_5pct_gap_m": 0.002540302495578126
+    },
+    {
+      "offset": 0.036,
+      "xoff": 0,
+      "intersections": 683,
+      "closest_5pct_gap_m": 0.0018679340130619171
+    },
+    {
+      "offset": 0.036,
+      "xoff": -0.006,
+      "intersections": 1268,
+      "closest_5pct_gap_m": 0.0012484204738169903
+    },
+    {
+      "offset": 0.03,
+      "xoff": 0.006,
+      "intersections": 1466,
+      "closest_5pct_gap_m": 0.000934880217172238
+    },
+    {
+      "offset": 0.03,
+      "xoff": 0,
+      "intersections": 1704,
+      "closest_5pct_gap_m": 0.0008250596995519658
+    },
+    {
+      "offset": 0.03,
+      "xoff": -0.006,
+      "intersections": 2007,
+      "closest_5pct_gap_m": 0.0008006117471144965
+    },
+    {
+      "offset": 0.024,
+      "xoff": 0.006,
+      "intersections": 2032,
+      "closest_5pct_gap_m": 0.0007352301178122138
+    },
+    {
+      "offset": 0.018,
+      "xoff": 0.006,
+      "intersections": 2441,
+      "closest_5pct_gap_m": 0.0005662971824782715
+    },
+    {
+      "offset": 0.024,
+      "xoff": 0,
+      "intersections": 2546,
+      "closest_5pct_gap_m": 0.0005610833460754503
+    },
+    {
+      "offset": 0.018,
+      "xoff": 0,
+      "intersections": 2572,
+      "closest_5pct_gap_m": 0.00045900193308512794
+    },
+    {
+      "offset": 0.018,
+      "xoff": -0.006,
+      "intersections": 2846,
+      "closest_5pct_gap_m": 0.00045795935868799757
+    },
+    {
+      "offset": 0.024,
+      "xoff": -0.006,
+      "intersections": 2931,
+      "closest_5pct_gap_m": 0.0004922136354697411
+    }
+  ],
+  "selected": {
+    "offset": 0.042,
+    "xoff": 0,
+    "intersections": 418,
+    "closest_5pct_gap_m": 0.004042162068966831,
+    "final_hits": 418
+  },
+  "limitation": "Finger pose improves rim clearance, but this is not a production hand contact solver."
+}

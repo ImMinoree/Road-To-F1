@@ -1,0 +1,137 @@
+{
+  "source_file_unchanged": true,
+  "source_sha256": "b7f2b6dc078ed6bda007617e8a26a0e6d7ad199a7a43fb700c451581bcdaa924",
+  "changed_mesh_geometry": [],
+  "changed_skin_weights": [],
+  "rest_skeleton_unchanged": true,
+  "kart_parts_with_transform_changes": [
+    "SK_Kart_Fuel_Tank_And_Cap_Fuel_Tank_Clouded_Polymer",
+    "SK_Kart_Fuel_Tank_And_Cap_Frame_Brushed_Chromoly",
+    "SK_Kart_Fuel_Tank_And_Cap_Hub_Black_Anodised",
+    "SK_Kart_Fuel_Tank_And_Cap_Fastener_Stainless"
+  ],
+  "only_authorized_tank_transforms_changed": true,
+  "maximum_posed_bone_length_change_m": 3.650730767829069e-06,
+  "before_collisions": {
+    "kart_driverMesh": {
+      "SK_Kart_Steering_Column_And_Wheel_Rubber_Grip": 175,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 16,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 6
+    },
+    "male_casualsuit04Mesh": {
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 60,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 144,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 13,
+      "SK_Kart_Fuel_Tank_And_Cap_Fuel_Tank_Clouded_Polymer": 158,
+      "SK_Kart_Fuel_Tank_And_Cap_Frame_Brushed_Chromoly": 36,
+      "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 8,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 58
+    },
+    "shoes05Mesh": {
+      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 162,
+      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 94,
+      "SK_Kart_Driver_Controls_And_Pedals_Hub_Black_Anodised": 18,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 51
+    },
+    "tank_assembly_against_driver_and_all_other_kart_parts": {
+      "SK_Kart_Fuel_Tank_And_Cap_Fuel_Tank_Clouded_Polymer / SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 82,
+      "SK_Kart_Fuel_Tank_And_Cap_Fuel_Tank_Clouded_Polymer / SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 54,
+      "SK_Kart_Fuel_Tank_And_Cap_Fuel_Tank_Clouded_Polymer / SK_Kart_Fuel_Line_And_Clamps_Hydraulic_Brake_Hose": 20,
+      "SK_Kart_Fuel_Tank_And_Cap_Fuel_Tank_Clouded_Polymer / male_casualsuit04Mesh": 158,
+      "SK_Kart_Fuel_Tank_And_Cap_Frame_Brushed_Chromoly / SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 35,
+      "SK_Kart_Fuel_Tank_And_Cap_Frame_Brushed_Chromoly / SK_Kart_Fuel_Line_And_Clamps_Hydraulic_Brake_Hose": 12,
+      "SK_Kart_Fuel_Tank_And_Cap_Frame_Brushed_Chromoly / male_casualsuit04Mesh": 36
+    }
+  },
+  "after_collisions": {
+    "kart_driverMesh": {
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 40
+    },
+    "male_casualsuit04Mesh": {
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 16,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 148,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 17,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 15,
+      "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 12,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 56
+    },
+    "shoes05Mesh": {
+      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 48,
+      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 82,
+      "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 3,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+    },
+    "tank_assembly_against_driver_and_all_other_kart_parts": {}
+  },
+  "joint_positions": {
+    "pelvis": [
+      0.06000000238418579,
+      4.819667581701381e-11,
+      0.5799999833106995
+    ],
+    "neck_01": [
+      0.10609922558069229,
+      8.229876584664453e-06,
+      1.1179871559143066
+    ],
+    "upperarm_l": [
+      0.10575029999017715,
+      0.20391245186328888,
+      1.012843132019043
+    ],
+    "upperarm_r": [
+      0.10621710121631622,
+      -0.20506568253040314,
+      1.0151424407958984
+    ],
+    "hand_l": [
+      0.4900001585483551,
+      0.22499997913837433,
+      0.7149997353553772
+    ],
+    "hand_r": [
+      0.49000000953674316,
+      -0.22499996423721313,
+      0.7149999737739563
+    ],
+    "thigh_l": [
+      0.0552678145468235,
+      0.1000288724899292,
+      0.5677257180213928
+    ],
+    "thigh_r": [
+      0.05523074418306351,
+      -0.10016091912984848,
+      0.5688709020614624
+    ],
+    "calf_l": [
+      0.42841121554374695,
+      0.2560366094112396,
+      0.6956848502159119
+    ],
+    "calf_r": [
+      0.43372204899787903,
+      -0.2490541636943817,
+      0.6893817782402039
+    ],
+    "foot_l": [
+      0.41000017523765564,
+      0.2100001871585846,
+      0.23860442638397217
+    ],
+    "foot_r": [
+      0.38999971747398376,
+      -0.21000079810619354,
+      0.23337316513061523
+    ]
+  },
+  "elbow_flexion_deg": [
+    41.39319532374705,
+    40.67638063073255
+  ],
+  "knee_flexion_deg": [
+    111.8351082342446,
+    113.35544004159775
+  ],
+  "fit_status": "Tank and wheel rim clear. Residual garment/seat-rib and lower-leg/shoe contacts with unchanged chassis, axle and hoses remain. Not a fully collision-free production fit."
+}

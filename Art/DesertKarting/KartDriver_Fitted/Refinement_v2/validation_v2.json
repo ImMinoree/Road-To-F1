@@ -1,0 +1,129 @@
+{
+  "source_file": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\DesertKarting\\KartDriver_Fitted\\Kart_With_MakeHuman_Fitted.blend",
+  "source_sha256": "b7f2b6dc078ed6bda007617e8a26a0e6d7ad199a7a43fb700c451581bcdaa924",
+  "source_unchanged": true,
+  "geometry_weights_rest_skeleton_and_kart_transforms_unchanged": true,
+  "before": {
+    "kart_driverMesh": {
+      "tank": 0,
+      "seat": 0,
+      "pedals": 0,
+      "wheel": 175,
+      "tank_inside_vertices": 0,
+      "tank_max_vertex_depth_m": 0
+    },
+    "male_casualsuit04Mesh": {
+      "tank": 194,
+      "seat": 60,
+      "pedals": 8,
+      "wheel": 0,
+      "tank_inside_vertices": 453,
+      "tank_max_vertex_depth_m": 0.1115884780883789
+    },
+    "shoes05Mesh": {
+      "tank": 0,
+      "seat": 0,
+      "pedals": 18,
+      "wheel": 0,
+      "tank_inside_vertices": 0,
+      "tank_max_vertex_depth_m": 0
+    },
+    "knees_z_m": [
+      0.7445445656776428,
+      0.7443985939025879
+    ],
+    "score": 12419.234274844826
+  },
+  "after": {
+    "kart_driverMesh": {
+      "tank": 0,
+      "seat": 0,
+      "pedals": 0,
+      "wheel": 308,
+      "tank_inside_vertices": 0,
+      "tank_max_vertex_depth_m": 0
+    },
+    "male_casualsuit04Mesh": {
+      "tank": 212,
+      "seat": 51,
+      "pedals": 0,
+      "wheel": 0,
+      "tank_inside_vertices": 409,
+      "tank_max_vertex_depth_m": 0.10656824707984924
+    },
+    "shoes05Mesh": {
+      "tank": 0,
+      "seat": 0,
+      "pedals": 18,
+      "wheel": 0,
+      "tank_inside_vertices": 0,
+      "tank_max_vertex_depth_m": 0
+    },
+    "knees_z_m": [
+      0.6879881620407104,
+      0.6880254745483398
+    ],
+    "score": 10914.06670442503
+  },
+  "pose_parameters": {
+    "hip_x": 0.1,
+    "hip_z": 0.52,
+    "lean_deg": -5,
+    "ankle_x": 0.48,
+    "knee_pole_y": 0.45,
+    "knee_pole_z": 0.65
+  },
+  "joint_positions": {
+    "pelvis": [
+      0.09999998658895493,
+      -5.0938989137883084e-11,
+      0.5199999213218689
+    ],
+    "neck_01": [
+      0.05215667188167572,
+      7.998020024047037e-10,
+      1.066851258277893
+    ],
+    "upperarm_l": [
+      0.07288067787885666,
+      0.20389661192893982,
+      0.9637545347213745
+    ],
+    "upperarm_r": [
+      0.07260162383317947,
+      -0.20508168637752533,
+      0.9660754203796387
+    ],
+    "hand_l": [
+      0.49000006914138794,
+      0.22500000894069672,
+      0.7149999141693115
+    ],
+    "hand_r": [
+      0.4900001585483551,
+      -0.22499997913837433,
+      0.7149999141693115
+    ],
+    "calf_l": [
+      0.40489462018013,
+      0.3272254467010498,
+      0.6879881620407104
+    ],
+    "calf_r": [
+      0.4054006040096283,
+      -0.32734450697898865,
+      0.6880254745483398
+    ],
+    "foot_l": [
+      0.47000014781951904,
+      0.18699993193149567,
+      0.2549998164176941
+    ],
+    "foot_r": [
+      0.4700000286102295,
+      -0.18699996173381805,
+      0.25499963760375977
+    ]
+  },
+  "status": "Incomplete; collisions require further review, not a collision-free fit."
+}

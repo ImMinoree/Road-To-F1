@@ -1,0 +1,69 @@
+{
+  "source_kart": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\DesertKarting\\Kart\\Kart_Reference.blend",
+  "units": "meters",
+  "forward_axis": "+X",
+  "mesh_objects": 80,
+  "armature": "SK_KartDriver_Armature",
+  "deform_bones": 63,
+  "all_driver_meshes_skinned": true,
+  "seat_bounds_m": [
+    [
+      -0.4317161440849304,
+      0.10000000149011612
+    ],
+    [
+      -0.3078000247478485,
+      0.3078000247478485
+    ],
+    [
+      0.36500000953674316,
+      0.8552559018135071
+    ]
+  ],
+  "steering_wheel_bounds_m": [
+    [
+      0.6029999852180481,
+      0.6370000243186951
+    ],
+    [
+      -0.20100000500679016,
+      0.20100000500679016
+    ],
+    [
+      0.49900001287460327,
+      0.9010000228881836
+    ]
+  ],
+  "pedal_bounds_m": [
+    [
+      0.4030330777168274,
+      0.6380919218063354
+    ],
+    [
+      -0.21831835806369781,
+      0.21831835806369781
+    ],
+    [
+      0.13199999928474426,
+      0.3310604393482208
+    ]
+  ],
+  "hand_ik_controls": [
+    "CTRL_HandTarget_l",
+    "CTRL_HandTarget_r"
+  ],
+  "foot_ik_controls": [
+    "CTRL_FootTarget_l",
+    "CTRL_FootTarget_r"
+  ],
+  "animation": "Driving_Steer_Pedals_48f",
+  "fbx": "Kart_Driver_UE58.fbx",
+  "renders": [
+    "Renders/front.png",
+    "Renders/side.png",
+    "Renders/rear.png",
+    "Renders/cockpit.png",
+    "Renders/driver_perspective.png"
+  ],
+  "animation_preview": "AnimationPreview/frame_0001.png through frame_0048.png"
+}

@@ -1,0 +1,1376 @@
+{
+  "source_v4_unchanged": true,
+  "all_protected_signatures_match_v4": true,
+  "summary": {
+    "tested_degrees": [
+      -25,
+      25
+    ],
+    "samples": 49,
+    "maximum_wrist_target_error_m": 4.702727150338739E-07,
+    "maximum_arm_length_delta_m": 2.539096546905206E-07,
+    "minimum_elbow_flex_deg": 26.38628616998855,
+    "maximum_glove_penetration_m": 0,
+    "maximum_nearest_hand_gap_m": 0.0010443329811096191,
+    "maximum_glove_wheel_triangle_pairs": 0,
+    "maximum_skin_wheel_triangle_pairs": 0,
+    "minimum_points_near_rim_per_hand": 157
+  },
+  "steering_geometric_gate_passed": true,
+  "visual_steering_review": "Reviewed actual Cycles left, center, right, side, three-quarter and grip close-up renders. Both hands retain a believable rim grip with bent elbows, no visible significant rim penetration and no excessive arm extension. Validated only for the tested +/-25 degree range; retained helmet/neck and back-support limitations are documented.",
+  "samples": [
+    {
+      "frame": 1,
+      "steering_deg": -25,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.568019619526578E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 27.830925820959607,
+          "closest_surface_gap_m": 0.0010440908372402191,
+          "closest_2p5_percent_mean_gap_m": 0.004457851871848106,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.0282737959774696E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 64.33175727383123,
+          "closest_surface_gap_m": 0.0007585771381855011,
+          "closest_2p5_percent_mean_gap_m": 0.004781676921993494,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 158
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.7600418839025522E-07
+    },
+    {
+      "frame": 2,
+      "steering_deg": -24,
+      "hands": {
+        "l": {
+          "wrist_error_m": 1.718485742013275E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 28.663840069485985,
+          "closest_surface_gap_m": 0.0010442715138196945,
+          "closest_2p5_percent_mean_gap_m": 0.004458010662347078,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.54196558118007E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 63.75149172270362,
+          "closest_surface_gap_m": 0.0007582977414131165,
+          "closest_2p5_percent_mean_gap_m": 0.004781506024301052,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.007922887958813E-07
+    },
+    {
+      "frame": 3,
+      "steering_deg": -23,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.009887021291875E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 29.474337637156367,
+          "closest_surface_gap_m": 0.0010442696511745453,
+          "closest_2p5_percent_mean_gap_m": 0.0044579049572348595,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.7342202920143806E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 63.15121371730788,
+          "closest_surface_gap_m": 0.0007582176476716995,
+          "closest_2p5_percent_mean_gap_m": 0.004781500902026892,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 158
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1672749744849895E-07
+    },
+    {
+      "frame": 4,
+      "steering_deg": -22,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.874031889734553E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 30.263784561804783,
+          "closest_surface_gap_m": 0.0010441988706588745,
+          "closest_2p5_percent_mean_gap_m": 0.004457870963960886,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.11145380404906E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 62.53074567272559,
+          "closest_surface_gap_m": 0.0007582493126392365,
+          "closest_2p5_percent_mean_gap_m": 0.004781528376042843,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 158
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.4682733862357864E-07
+    },
+    {
+      "frame": 5,
+      "steering_deg": -21,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.839760639287569E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 31.033260013320074,
+          "closest_surface_gap_m": 0.0010442771017551422,
+          "closest_2p5_percent_mean_gap_m": 0.0044580744579434395,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 2.9690353341655844E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 61.88978706063324,
+          "closest_surface_gap_m": 0.0007584858685731888,
+          "closest_2p5_percent_mean_gap_m": 0.004781654104590416,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1141576111993743E-07
+    },
+    {
+      "frame": 6,
+      "steering_deg": -20,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.602375924076584E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 31.78389780310448,
+          "closest_surface_gap_m": 0.0010442640632390976,
+          "closest_2p5_percent_mean_gap_m": 0.004457950592041016,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.1680303253932744E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 61.22816029611245,
+          "closest_surface_gap_m": 0.0007583387196063995,
+          "closest_2p5_percent_mean_gap_m": 0.0047816066071391106,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.7954534548003664E-07
+    },
+    {
+      "frame": 7,
+      "steering_deg": -19,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.945291726253547E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 32.51646291234502,
+          "closest_surface_gap_m": 0.0010440181940793991,
+          "closest_2p5_percent_mean_gap_m": 0.004457799717783928,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.449868232843347E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 60.54555119046138,
+          "closest_surface_gap_m": 0.0007585640996694565,
+          "closest_2p5_percent_mean_gap_m": 0.004781628493219614,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 158
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.007922887958813E-07
+    },
+    {
+      "frame": 8,
+      "steering_deg": -18,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.3513635751693695E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 33.231747642985454,
+          "closest_surface_gap_m": 0.0010441336780786514,
+          "closest_2p5_percent_mean_gap_m": 0.0044579585082829,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.3085947202406106E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 59.84165921535654,
+          "closest_surface_gap_m": 0.0007582437247037888,
+          "closest_2p5_percent_mean_gap_m": 0.004781531170010567,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 158
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2912154928889095E-07
+    },
+    {
+      "frame": 9,
+      "steering_deg": -17,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.568019619526578E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 33.93038037242937,
+          "closest_surface_gap_m": 0.0010441504418849945,
+          "closest_2p5_percent_mean_gap_m": 0.004457980860024691,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.397987559733206E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 59.11612920096111,
+          "closest_surface_gap_m": 0.0007580593228340149,
+          "closest_2p5_percent_mean_gap_m": 0.004781354684382677,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 158
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.9725113148405526E-07
+    },
+    {
+      "frame": 10,
+      "steering_deg": -16,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.009887021291875E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 34.612770912027,
+          "closest_surface_gap_m": 0.0010443199425935745,
+          "closest_2p5_percent_mean_gap_m": 0.004457972943782806,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.3085947202406106E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 58.36859231705989,
+          "closest_surface_gap_m": 0.000758536159992218,
+          "closest_2p5_percent_mean_gap_m": 0.0047815837897360325,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 158
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.8694112935424556E-07
+    },
+    {
+      "frame": 11,
+      "steering_deg": -15,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.7957056521316944E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 35.27980718637045,
+          "closest_surface_gap_m": 0.001044154167175293,
+          "closest_2p5_percent_mean_gap_m": 0.004457898437976837,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.185504425530426E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 57.59858411078933,
+          "closest_surface_gap_m": 0.0007583033293485641,
+          "closest_2p5_percent_mean_gap_m": 0.004781627096235752,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1318633991462832E-07
+    },
+    {
+      "frame": 12,
+      "steering_deg": -14,
+      "hands": {
+        "l": {
+          "wrist_error_m": 1.7943374184954607E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 35.931489195459704,
+          "closest_surface_gap_m": 0.0010441690683364868,
+          "closest_2p5_percent_mean_gap_m": 0.004458088893443346,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.6010283153040923E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 56.80565378966422,
+          "closest_surface_gap_m": 0.0007582996040582657,
+          "closest_2p5_percent_mean_gap_m": 0.004781592171639204,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.539096546905206E-07
+    },
+    {
+      "frame": 13,
+      "steering_deg": -12,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.29514509253144E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 37.1907848331133,
+          "closest_surface_gap_m": 0.0010442957282066345,
+          "closest_2p5_percent_mean_gap_m": 0.0044579836539924145,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.677297436968406E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 55.148909444207575,
+          "closest_surface_gap_m": 0.0007584486156702042,
+          "closest_2p5_percent_mean_gap_m": 0.004781618714332581,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.061040249023982E-07
+    },
+    {
+      "frame": 14,
+      "steering_deg": -11,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.2236140449023154E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 37.79902683908128,
+          "closest_surface_gap_m": 0.001044074073433876,
+          "closest_2p5_percent_mean_gap_m": 0.004458018112927675,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.819467311494439E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 54.28379768393377,
+          "closest_surface_gap_m": 0.0007579978555440903,
+          "closest_2p5_percent_mean_gap_m": 0.0047814506106078625,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.432861806456188E-07
+    },
+    {
+      "frame": 15,
+      "steering_deg": -10,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.3513635751693695E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 38.39340356103412,
+          "closest_surface_gap_m": 0.001044105738401413,
+          "closest_2p5_percent_mean_gap_m": 0.004457870498299599,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 4.020553101072324E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 53.3932776199475,
+          "closest_surface_gap_m": 0.000758318230509758,
+          "closest_2p5_percent_mean_gap_m": 0.0047815944999456406,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2203923388808278E-07
+    },
+    {
+      "frame": 16,
+      "steering_deg": -9,
+      "hands": {
+        "l": {
+          "wrist_error_m": 1.999200562387517E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 38.97384669708015,
+          "closest_surface_gap_m": 0.0010440871119499207,
+          "closest_2p5_percent_mean_gap_m": 0.004457930102944374,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.449868232843347E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 52.47643400690001,
+          "closest_surface_gap_m": 0.0007581617683172226,
+          "closest_2p5_percent_mean_gap_m": 0.004781537689268589,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.273509704386889E-07
+    },
+    {
+      "frame": 17,
+      "steering_deg": -8,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.0282737959774696E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 39.540779718947874,
+          "closest_surface_gap_m": 0.0010441448539495468,
+          "closest_2p5_percent_mean_gap_m": 0.00445790309458971,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.591767189858541E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 51.53241990133421,
+          "closest_surface_gap_m": 0.0007582772523164749,
+          "closest_2p5_percent_mean_gap_m": 0.004781562369316816,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1141576111993743E-07
+    },
+    {
+      "frame": 18,
+      "steering_deg": -7,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.009887021291875E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 40.094298249285714,
+          "closest_surface_gap_m": 0.0010443329811096191,
+          "closest_2p5_percent_mean_gap_m": 0.004457924980670214,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.185504425530426E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 50.56016979373956,
+          "closest_surface_gap_m": 0.000758076086640358,
+          "closest_2p5_percent_mean_gap_m": 0.0047815656289458275,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.136470160785109E-07
+    },
+    {
+      "frame": 19,
+      "steering_deg": -6,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.086375471533534E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 40.63445692960701,
+          "closest_surface_gap_m": 0.0010442957282066345,
+          "closest_2p5_percent_mean_gap_m": 0.0044579701498150826,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.725290298461914E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 49.558522551957196,
+          "closest_surface_gap_m": 0.0007581990212202072,
+          "closest_2p5_percent_mean_gap_m": 0.004781625233590603,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1495691865380806E-07
+    },
+    {
+      "frame": 20,
+      "steering_deg": -5,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.8115454709698567E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 41.16143334483016,
+          "closest_surface_gap_m": 0.0010440926998853683,
+          "closest_2p5_percent_mean_gap_m": 0.004457945469766855,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.819467311494439E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 48.52619410042314,
+          "closest_surface_gap_m": 0.0007581505924463272,
+          "closest_2p5_percent_mean_gap_m": 0.004781574942171574,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2203923388808278E-07
+    },
+    {
+      "frame": 21,
+      "steering_deg": -4,
+      "hands": {
+        "l": {
+          "wrist_error_m": 1.6323404237781945E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 41.67520017419852,
+          "closest_surface_gap_m": 0.0010440796613693237,
+          "closest_2p5_percent_mean_gap_m": 0.00445786165073514,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.7342202920143806E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 47.46157251449324,
+          "closest_surface_gap_m": 0.0007581580430269241,
+          "closest_2p5_percent_mean_gap_m": 0.004781618714332581,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.096451823807577E-07
+    },
+    {
+      "frame": 22,
+      "steering_deg": -3,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.9200193199910854E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 42.17597598376551,
+          "closest_surface_gap_m": 0.0010438859462738037,
+          "closest_2p5_percent_mean_gap_m": 0.004457864910364151,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.5762786865234375E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 46.36304586952343,
+          "closest_surface_gap_m": 0.0007581710815429688,
+          "closest_2p5_percent_mean_gap_m": 0.00478158937767148,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2026865503788073E-07
+    },
+    {
+      "frame": 23,
+      "steering_deg": -2,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.6151431761360534E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 42.66361050936942,
+          "closest_surface_gap_m": 0.0010441318154335022,
+          "closest_2p5_percent_mean_gap_m": 0.004457956179976463,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.625608998714816E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 45.22863341065434,
+          "closest_surface_gap_m": 0.0007582176476716995,
+          "closest_2p5_percent_mean_gap_m": 0.004781575873494148,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2380981273828482E-07
+    },
+    {
+      "frame": 24,
+      "steering_deg": -1,
+      "hands": {
+        "l": {
+          "wrist_error_m": 4.27743795347432E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 43.13826767555028,
+          "closest_surface_gap_m": 0.0010441076010465622,
+          "closest_2p5_percent_mean_gap_m": 0.004457845352590084,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.7726726833498965E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 44.05610849621658,
+          "closest_surface_gap_m": 0.000758044421672821,
+          "closest_2p5_percent_mean_gap_m": 0.004781645257025957,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.0256286747954988E-07
+    },
+    {
+      "frame": 25,
+      "steering_deg": 0,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.79967400849699E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 43.599865520038094,
+          "closest_surface_gap_m": 0.0010439734905958176,
+          "closest_2p5_percent_mean_gap_m": 0.004457761067897081,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.911377414586153E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 42.84287565432558,
+          "closest_surface_gap_m": 0.0007582735270261765,
+          "closest_2p5_percent_mean_gap_m": 0.004781677387654781,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.3620386491174372E-07
+    },
+    {
+      "frame": 26,
+      "steering_deg": 1,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.5669533024984074E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 44.78717096383974,
+          "closest_surface_gap_m": 0.0010442640632390976,
+          "closest_2p5_percent_mean_gap_m": 0.004457990173250437,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.919883500923486E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 42.36741252582263,
+          "closest_surface_gap_m": 0.0007581822574138641,
+          "closest_2p5_percent_mean_gap_m": 0.004781736526638269,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.0640474140964926E-07
+    },
+    {
+      "frame": 27,
+      "steering_deg": 2,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.9351883535969567E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 45.935790216182454,
+          "closest_surface_gap_m": 0.0010440368205308914,
+          "closest_2p5_percent_mean_gap_m": 0.004457940813153982,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.0719530773294425E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 41.8781524151963,
+          "closest_surface_gap_m": 0.0007582232356071472,
+          "closest_2p5_percent_mean_gap_m": 0.004781695548444986,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1141576111993743E-07
+    },
+    {
+      "frame": 28,
+      "steering_deg": 3,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.677297436968406E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 47.048004560248984,
+          "closest_surface_gap_m": 0.0010439995676279068,
+          "closest_2p5_percent_mean_gap_m": 0.0044578490778803825,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 2.2745635393967848E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 41.3753002281216,
+          "closest_surface_gap_m": 0.0007581580430269241,
+          "closest_2p5_percent_mean_gap_m": 0.004781728610396385,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.8485708114246435E-07
+    },
+    {
+      "frame": 29,
+      "steering_deg": 4,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.9950963321688443E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 48.12589037354704,
+          "closest_surface_gap_m": 0.0010439902544021606,
+          "closest_2p5_percent_mean_gap_m": 0.004457890521734953,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 4.519745972187251E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 40.85874668157189,
+          "closest_surface_gap_m": 0.0007581021636724472,
+          "closest_2p5_percent_mean_gap_m": 0.004781707655638456,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.8308650256981807E-07
+    },
+    {
+      "frame": 30,
+      "steering_deg": 5,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.862419592186592E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 49.171237165639155,
+          "closest_surface_gap_m": 0.0010441560298204422,
+          "closest_2p5_percent_mean_gap_m": 0.004457993432879448,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 4.2067748944440794E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 40.32828686987202,
+          "closest_surface_gap_m": 0.0007584225386381149,
+          "closest_2p5_percent_mean_gap_m": 0.00478181941434741,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1849807624318984E-07
+    },
+    {
+      "frame": 31,
+      "steering_deg": 6,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.9351883535969567E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 50.185561238521046,
+          "closest_surface_gap_m": 0.0010443013161420822,
+          "closest_2p5_percent_mean_gap_m": 0.004457944538444281,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 4.2696442550106056E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 39.783893472265305,
+          "closest_surface_gap_m": 0.0007582250982522964,
+          "closest_2p5_percent_mean_gap_m": 0.0047817775048315525,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.9016881691591436E-07
+    },
+    {
+      "frame": 32,
+      "steering_deg": 7,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.554481399618555E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 51.17024229040513,
+          "closest_surface_gap_m": 0.0010439027100801468,
+          "closest_2p5_percent_mean_gap_m": 0.004457816947251558,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.2236140449023154E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 39.22555282837345,
+          "closest_surface_gap_m": 0.000758092850446701,
+          "closest_2p5_percent_mean_gap_m": 0.004781734198331833,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1407162925646261E-07
+    },
+    {
+      "frame": 33,
+      "steering_deg": 8,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.2098083538618706E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 52.12659171761196,
+          "closest_surface_gap_m": 0.0010441076010465622,
+          "closest_2p5_percent_mean_gap_m": 0.004457907751202583,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.967740224508747E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 38.65308735327801,
+          "closest_surface_gap_m": 0.0007578432559967041,
+          "closest_2p5_percent_mean_gap_m": 0.004781619179993868,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.7511889915944323E-07
+    },
+    {
+      "frame": 34,
+      "steering_deg": 9,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.9950963321688443E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 53.05559306738208,
+          "closest_surface_gap_m": 0.0010439399629831314,
+          "closest_2p5_percent_mean_gap_m": 0.004457883071154356,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.1150199413846245E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 38.0662374997905,
+          "closest_surface_gap_m": 0.0007581301033496857,
+          "closest_2p5_percent_mean_gap_m": 0.004781700205057859,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.7157774212517296E-07
+    },
+    {
+      "frame": 35,
+      "steering_deg": 10,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.2098083538618706E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 53.95818890582092,
+          "closest_surface_gap_m": 0.0010439734905958176,
+          "closest_2p5_percent_mean_gap_m": 0.004457883536815643,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 2.893282151065409E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 37.46475738110084,
+          "closest_surface_gap_m": 0.0007581301033496857,
+          "closest_2p5_percent_mean_gap_m": 0.004781731870025396,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.67151295971113E-07
+    },
+    {
+      "frame": 36,
+      "steering_deg": 11,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.665201031043781E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 54.83532179903395,
+          "closest_surface_gap_m": 0.00104428268969059,
+          "closest_2p5_percent_mean_gap_m": 0.004457985050976276,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.839760639287569E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 36.848496733047284,
+          "closest_surface_gap_m": 0.0007580108940601349,
+          "closest_2p5_percent_mean_gap_m": 0.004781679250299931,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.082153100491091E-07
+    },
+    {
+      "frame": 37,
+      "steering_deg": 13,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.264680847556389E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 56.516026448099,
+          "closest_surface_gap_m": 0.0010438542813062668,
+          "closest_2p5_percent_mean_gap_m": 0.004457779228687286,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.0282737959774696E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 35.57033611290612,
+          "closest_surface_gap_m": 0.000758076086640358,
+          "closest_2p5_percent_mean_gap_m": 0.004781811498105526,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.6440848649157402E-07
+    },
+    {
+      "frame": 38,
+      "steering_deg": 14,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.1680303253932744E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 57.32088227951496,
+          "closest_surface_gap_m": 0.0010440833866596222,
+          "closest_2p5_percent_mean_gap_m": 0.00445792218670249,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 2.938968378799561E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 34.907739461523164,
+          "closest_surface_gap_m": 0.0007581915706396103,
+          "closest_2p5_percent_mean_gap_m": 0.004781829193234444,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.061040249023982E-07
+    },
+    {
+      "frame": 39,
+      "steering_deg": 15,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.2544627290728025E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 58.10289795834639,
+          "closest_surface_gap_m": 0.0010441839694976807,
+          "closest_2p5_percent_mean_gap_m": 0.004457954317331314,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.40125328615705E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 34.22885963915891,
+          "closest_surface_gap_m": 0.0007580369710922241,
+          "closest_2p5_percent_mean_gap_m": 0.004781854338943958,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.0946007600608496E-07
+    },
+    {
+      "frame": 40,
+      "steering_deg": 16,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.516800320507868E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 58.86245597518683,
+          "closest_surface_gap_m": 0.0010440889745950699,
+          "closest_2p5_percent_mean_gap_m": 0.004457931499928236,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 4.702727150338739E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 33.533273174084826,
+          "closest_surface_gap_m": 0.0007581952959299088,
+          "closest_2p5_percent_mean_gap_m": 0.004781892988830805,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1868266025792948E-07
+    },
+    {
+      "frame": 41,
+      "steering_deg": 17,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.042903223136386E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 59.600089084791534,
+          "closest_surface_gap_m": 0.0010439865291118622,
+          "closest_2p5_percent_mean_gap_m": 0.004457819275557995,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.591767189858541E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 32.820338028518904,
+          "closest_surface_gap_m": 0.0007582250982522964,
+          "closest_2p5_percent_mean_gap_m": 0.004781893454492092,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.176127868458444E-07
+    },
+    {
+      "frame": 42,
+      "steering_deg": 18,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.862419592186592E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 60.31616611737567,
+          "closest_surface_gap_m": 0.0010441262274980545,
+          "closest_2p5_percent_mean_gap_m": 0.004457896575331688,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.665201031043781E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 32.08938484392246,
+          "closest_surface_gap_m": 0.000757995992898941,
+          "closest_2p5_percent_mean_gap_m": 0.004781786818057299,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.839717918561412E-07
+    },
+    {
+      "frame": 43,
+      "steering_deg": 19,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.79967400849699E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 61.01106956353277,
+          "closest_surface_gap_m": 0.0010439921170473099,
+          "closest_2p5_percent_mean_gap_m": 0.004457811824977398,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 4.097141946812725E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 31.339716941000205,
+          "closest_surface_gap_m": 0.0007578842341899872,
+          "closest_2p5_percent_mean_gap_m": 0.004781704396009445,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2079654532491944E-07
+    },
+    {
+      "frame": 44,
+      "steering_deg": 20,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.43697148402655E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 61.685017989316265,
+          "closest_surface_gap_m": 0.0010440591722726822,
+          "closest_2p5_percent_mean_gap_m": 0.004457852803170681,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 2.7516760397880357E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 30.570173187593213,
+          "closest_surface_gap_m": 0.0007579587399959564,
+          "closest_2p5_percent_mean_gap_m": 0.0047818394377827644,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.0381218895915154E-07
+    },
+    {
+      "frame": 45,
+      "steering_deg": 21,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.9200193199910854E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 62.33842120607636,
+          "closest_surface_gap_m": 0.0010438915342092514,
+          "closest_2p5_percent_mean_gap_m": 0.004457851871848106,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 2.407356265396403E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 29.780166187432854,
+          "closest_surface_gap_m": 0.0007581505924463272,
+          "closest_2p5_percent_mean_gap_m": 0.00478186784312129,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2532570725930512E-07
+    },
+    {
+      "frame": 46,
+      "steering_deg": 22,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.1680303253932744E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 62.97151144024484,
+          "closest_surface_gap_m": 0.0010437928140163422,
+          "closest_2p5_percent_mean_gap_m": 0.0044578202068805695,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 4.172325134277344E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 28.968193298901753,
+          "closest_surface_gap_m": 0.0007579699158668518,
+          "closest_2p5_percent_mean_gap_m": 0.004781717900186777,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.19890712971349E-07
+    },
+    {
+      "frame": 47,
+      "steering_deg": 23,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.042903223136386E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 63.584507257875146,
+          "closest_surface_gap_m": 0.001044226810336113,
+          "closest_2p5_percent_mean_gap_m": 0.004457881208509207,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.1994149913763833E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 28.133038748327607,
+          "closest_surface_gap_m": 0.0007581841200590134,
+          "closest_2p5_percent_mean_gap_m": 0.0047818454913794994,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2668445581741636E-07
+    },
+    {
+      "frame": 48,
+      "steering_deg": 24,
+      "hands": {
+        "l": {
+          "wrist_error_m": 3.29514509253144E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 64.17757258350736,
+          "closest_surface_gap_m": 0.0010437723249197006,
+          "closest_2p5_percent_mean_gap_m": 0.004457690753042698,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 249
+        },
+        "r": {
+          "wrist_error_m": 3.538829710196828E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 27.272994988417935,
+          "closest_surface_gap_m": 0.0007581226527690887,
+          "closest_2p5_percent_mean_gap_m": 0.004781880881637335,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.918099111208882E-07
+    },
+    {
+      "frame": 49,
+      "steering_deg": 25,
+      "hands": {
+        "l": {
+          "wrist_error_m": 2.862419592186592E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 64.75093964357325,
+          "closest_surface_gap_m": 0.001043800264596939,
+          "closest_2p5_percent_mean_gap_m": 0.0044577959924936295,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 248
+        },
+        "r": {
+          "wrist_error_m": 3.4142849556772706E-07,
+          "orientation_error_deg": 0.0,
+          "elbow_flex_deg": 26.38628616998855,
+          "closest_surface_gap_m": 0.0007577687501907349,
+          "closest_2p5_percent_mean_gap_m": 0.004781722091138363,
+          "glove_max_torus_penetration_m": 0,
+          "evaluated_points_within_3mm": 157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.228346681620863E-07
+    }
+  ],
+  "full_render_resolution_kart_intersections_at_left_center_right": {
+    "1": {},
+    "25": {},
+    "49": {}
+  },
+  "existing_helmet_body_surface_contacts": {
+    "1": {
+      "HELMET | profiled composite shell and chin bar": 122,
+      "HELMET | padded neck roll": 380
+    },
+    "25": {
+      "HELMET | profiled composite shell and chin bar": 122,
+      "HELMET | padded neck roll": 380
+    },
+    "49": {
+      "HELMET | profiled composite shell and chin bar": 122,
+      "HELMET | padded neck roll": 380
+    }
+  },
+  "sampled_pedal_gap_m": {
+    "-1": 0.001720657804980874,
+    "1": 0.0013609931338578463
+  },
+  "limitations": [
+    "The tested range is +/-25 degrees of the original steering wheel, not the kart mechanical lock or vehicle handling.",
+    "BVH surface-pair tests and analytic wheel clearance are diagnostics, not a physical contact simulation or a volumetric collision certificate.",
+    "V4 helmet/neck padding contacts and imperfect full-back seat support are retained; the source gear construction/realism is not upgraded.",
+    "The original wheel meshes articulate using non-destructive Hook modifiers; the chassis, tank, seat, pedals, steering shaft and front wheels are otherwise fixed."
+  ],
+  "steering_validated_for_tested_range": true
+}

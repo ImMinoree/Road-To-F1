@@ -1,0 +1,84 @@
+{
+  "selected": {
+    "x": 0.608,
+    "y": 0.16,
+    "glove_pairs": 0,
+    "skin_pairs": 0,
+    "thumb_near_gap_m": 0.004937936528585851,
+    "score": 3.4379365285858507
+  },
+  "candidates": [
+    {
+      "x": 0.608,
+      "y": 0.16,
+      "glove_pairs": 0,
+      "skin_pairs": 0,
+      "thumb_near_gap_m": 0.004937936528585851,
+      "score": 3.4379365285858507
+    },
+    {
+      "x": 0.603,
+      "y": 0.16,
+      "glove_pairs": 0,
+      "skin_pairs": 0,
+      "thumb_near_gap_m": 0.006290969834662974,
+      "score": 4.790969834662973
+    },
+    {
+      "x": 0.608,
+      "y": 0.154,
+      "glove_pairs": 0,
+      "skin_pairs": 0,
+      "thumb_near_gap_m": 0.007445851736702025,
+      "score": 5.945851736702024
+    },
+    {
+      "x": 0.598,
+      "y": 0.16,
+      "glove_pairs": 0,
+      "skin_pairs": 0,
+      "thumb_near_gap_m": 0.008081598114222288,
+      "score": 6.581598114222289
+    },
+    {
+      "x": 0.603,
+      "y": 0.154,
+      "glove_pairs": 0,
+      "skin_pairs": 0,
+      "thumb_near_gap_m": 0.008924094401299954,
+      "score": 7.424094401299954
+    },
+    {
+      "x": 0.608,
+      "y": 0.148,
+      "glove_pairs": 0,
+      "skin_pairs": 0,
+      "thumb_near_gap_m": 0.009543377999216318,
+      "score": 8.043377999216318
+    },
+    {
+      "x": 0.598,
+      "y": 0.154,
+      "glove_pairs": 0,
+      "skin_pairs": 0,
+      "thumb_near_gap_m": 0.010743900993838906,
+      "score": 9.243900993838906
+    },
+    {
+      "x": 0.603,
+      "y": 0.148,
+      "glove_pairs": 0,
+      "skin_pairs": 0,
+      "thumb_near_gap_m": 0.011034121457487344,
+      "score": 9.534121457487345
+    },
+    {
+      "x": 0.598,
+      "y": 0.148,
+      "glove_pairs": 0,
+      "skin_pairs": 0,
+      "thumb_near_gap_m": 0.012748490553349257,
+      "score": 11.248490553349257
+    }
+  ]
+}

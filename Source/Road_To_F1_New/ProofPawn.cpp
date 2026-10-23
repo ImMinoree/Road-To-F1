@@ -1,4 +1,13 @@
 #include "ProofPawn.h"
+#include "LocalKartDriverVisuals.h"
+#include "RaceStartGantry.h"
+#include "GridStartSlot.h"
+#include "TimerManager.h"
+#include "EngineUtils.h"
+#include "GameFramework/PlayerStart.h"
+#include "GameFramework/PlayerController.h"
+#include "UnrealClient.h"
+#include "HAL/FileManager.h"
 #include "Camera/CameraComponent.h"
 #include "Components/SphereComponent.h"
 #include "Components/InputComponent.h"
@@ -15,13 +24,18 @@ AProofPawn::AProofPawn(){
  Body->InitSphereRadius(28); Body->SetCollisionProfileName(TEXT("Pawn"));
  Camera=CreateDefaultSubobject<UCameraComponent>(TEXT("DriverEye")); Camera->SetupAttachment(Body);
  Camera->SetRelativeLocation(FVector(0,0,49)); Camera->SetFieldOfView(85);
+ LocalDriverVisuals=CreateDefaultSubobject<ULocalKartDriverVisuals>(TEXT("LocalDriverVisuals"));
  AutoPossessPlayer=EAutoReceiveInput::Player0;
 }
 void AProofPawn::SetupPlayerInputComponent(UInputComponent* I){
  Super::SetupPlayerInputComponent(I); I->BindAxis("Throttle",this,&AProofPawn::Drive);
  I->BindAxis("Steer",this,&AProofPawn::Turn); I->BindAction("Reset",IE_Pressed,this,&AProofPawn::Reset);
 }
-void AProofPawn::Reset(){SetActorLocationAndRotation(FVector(800,0,31),FRotator::ZeroRotator);Speed=0;}
+void AProofPawn::StageForRace(const FTransform& T){SetActorTransform(T,false,nullptr,ETeleportType::TeleportPhysics);Speed=0;}
+void AProofPawn::Reset(){
+ if(auto* GM=GetWorld()->GetAuthGameMode<AProofGameMode>())if(auto* Start=GM->GetGridSlotForPawn(this)?static_cast<APlayerStart*>(GM->GetGridSlotForPawn(this)):GM->FindPlayerStart(GetController())){FTransform T=Start->GetActorTransform();T.SetLocation(T.GetLocation()+FVector(0,0,-9));StageForRace(T);return;}
+ SetActorLocationAndRotation(FVector(800,0,31),FRotator::ZeroRotator);Speed=0;
+}
 void AProofPawn::Tick(float Dt){
  Super::Tick(Dt); Dt=FMath::Min(Dt,0.05f);
  if(FParse::Param(FCommandLine::Get(),TEXT("ProofSmokeTest"))){
@@ -36,6 +50,9 @@ void AProofPawn::Tick(float Dt){
    FPlatformMisc::RequestExit(false);
   }
  }
+ if(FParse::Param(FCommandLine::Get(),TEXT("RaceStartTest"))){Throttle=1.f;Steer=0.f;}
+ LocalDriverVisuals->SetSteeringInput(Steer);
+ if(auto* GM=GetWorld()->GetAuthGameMode<AProofGameMode>())if(GM->IsStartGateClosed()){Speed=0;return;}
  Speed=FMath::Clamp(Speed+(Throttle*430.f-Speed*0.32f)*Dt,-350.f,1600.f);
  AddActorWorldRotation(FRotator(0,Steer*Speed/1600.f*65.f*Dt,0));
  FHitResult Hit; AddActorWorldOffset(GetActorForwardVector()*Speed*Dt,true,&Hit); if(Hit.bBlockingHit) Speed=0;
@@ -44,4 +61,122 @@ void AProofPawn::Tick(float Dt){
  P.Z=Hit.ImpactPoint.Z+31; SetActorLocation(P);
  } else Reset();
 }
-AProofGameMode::AProofGameMode(){DefaultPawnClass=AProofPawn::StaticClass();}
+AProofGameMode::AProofGameMode(){DefaultPawnClass=AProofPawn::StaticClass();HUDClass=ARaceStartHUD::StaticClass();}
+AActor* AProofGameMode::ChoosePlayerStart_Implementation(AController* Player){
+ const auto Slots=FindGridSlots();
+ if(Slots.Num()){
+  if(const int32* Number=ControllerGridSlots.Find(Player))for(auto* Slot:Slots)if(Slot->PositionNumber==*Number)return Slot;
+  TSet<int32> Used;for(const auto& E:ControllerGridSlots)if(E.Key.IsValid())Used.Add(E.Value);for(const auto& E:GridAssignments)if(E.Key.IsValid())Used.Add(E.Value);
+  for(auto* Slot:Slots)if(!Used.Contains(Slot->PositionNumber)){ControllerGridSlots.Add(Player,Slot->PositionNumber);return Slot;}
+  return nullptr;
+ }
+ for(TActorIterator<APlayerStart> It(GetWorld());It;++It)if(It->ActorHasTag(TEXT("RaceGridStart")))return *It;
+ return Super::ChoosePlayerStart_Implementation(Player);
+}
+void AProofGameMode::BeginPlay(){
+ Super::BeginPlay();bTesting=FParse::Param(FCommandLine::Get(),TEXT("RaceStartTest"));
+ for(TActorIterator<ARaceStartGantry> It(GetWorld());It;++It){Gantry=*It;break;}
+ for(TActorIterator<APlayerStart> It(GetWorld());It;++It)if(It->ActorHasTag(TEXT("RaceGridStart"))){bStartEnabled=true;break;}
+ bStartEnabled=bStartEnabled||IsValid(Gantry);
+ if(FParse::Param(FCommandLine::Get(),TEXT("RaceStartMissingGantry")))Gantry=nullptr;
+ if(bTesting){IFileManager::Get().MakeDirectory(*(StartEvidenceDirectory()),true);FFileHelper::SaveStringToFile(TEXT(""),*(StartEvidenceDirectory()/TEXT("runtime_events.jsonl")));}
+ if(FParse::Param(FCommandLine::Get(),TEXT("Grid20Test"))){
+  // Explicit test-only participants; never populate empty slots during normal Play.
+  const auto Slots=FindGridSlots();for(auto* Slot:Slots)if(Slot->PositionNumber>1){FTransform T=Slot->GetActorTransform();T.SetLocation(T.GetLocation()+FVector(0,0,-9));auto* P=GetWorld()->SpawnActorDeferred<AProofPawn>(AProofPawn::StaticClass(),T,nullptr,nullptr,ESpawnActorCollisionHandlingMethod::AlwaysSpawn);if(P){P->AutoPossessPlayer=EAutoReceiveInput::Disabled;P->PreferredGridPosition=Slot->PositionNumber;P->FinishSpawning(T);}}
+ }
+ if(bStartEnabled)RestartRaceStart();
+}
+void AProofGameMode::EndPlay(const EEndPlayReason::Type Reason){GetWorldTimerManager().ClearAllTimersForObject(this);Super::EndPlay(Reason);}
+float AProofGameMode::GetRaceElapsedSeconds() const{return RaceStartWorldSeconds<0?0.f:float(GetWorld()->GetTimeSeconds()-RaceStartWorldSeconds);}
+void AProofGameMode::RestartRaceStart(){
+ if(!bStartEnabled)return;
+ GetWorldTimerManager().ClearAllTimersForObject(this);RacePhase=ERaceStartPhase::PreGrid;RedLightCount=0;RaceStartWorldSeconds=-1;StartEventCount=0;++TestEpoch;
+ if(IsValid(Gantry))Gantry->SetRedLightCount(0);else UE_LOG(LogTemp,Warning,TEXT("RACE_START: missing display; authoritative timer remains active"));
+ StageGridParticipants();
+ Record(TEXT("PRE_GRID"));GetWorldTimerManager().SetTimer(ReadyTimer,this,&AProofGameMode::WaitForGrid,.1f,true);
+}
+void AProofGameMode::WaitForGrid(){
+ bool bHasPlayer=false;
+ for(FConstPlayerControllerIterator It=GetWorld()->GetPlayerControllerIterator();It;++It){auto* PC=It->Get();if(!PC||!PC->GetPawn())return;bHasPlayer=true;}
+ if(!bHasPlayer)return;
+ if(!StageGridParticipants())return;
+ GetWorldTimerManager().ClearTimer(ReadyTimer);
+ if(auto* PC=GetWorld()->GetFirstPlayerController())if(APawn* P=PC->GetPawn())TestGridPosition=P->GetActorLocation();
+ Record(TEXT("GRID_READY"));GetWorldTimerManager().SetTimer(SequenceTimer,this,&AProofGameMode::AddRed,FMath::Max(.1f,StagingDelay),false);
+}
+void AProofGameMode::AddRed(){
+ if(RaceStartWorldSeconds>=0)return;
+ RacePhase=ERaceStartPhase::Countdown;RedLightCount=FMath::Min(5,RedLightCount+1);
+ if(IsValid(Gantry)){Gantry->SetRedLightCount(RedLightCount);Gantry->PlayCue(false);}Record(TEXT("RED_ON"));
+ if(RedLightCount==5){RacePhase=ERaceStartPhase::AllRed;Record(TEXT("ALL_RED"));GetWorldTimerManager().SetTimer(SequenceTimer,this,&AProofGameMode::ReleaseRace,FMath::Max(.1f,AllRedHold),false);if(bTesting&&TestEpoch==1)GetWorldTimerManager().SetTimer(TestCaptureTimer,FTimerDelegate::CreateWeakLambda(this,[this](){Capture(TEXT("AllRed"));}),.35f,false);}
+ else GetWorldTimerManager().SetTimer(SequenceTimer,this,&AProofGameMode::AddRed,FMath::Max(.1f,RedInterval),false);
+}
+void AProofGameMode::ReleaseRace(){
+ if(StartEventCount!=0||RaceStartWorldSeconds>=0)return;
+ if(IsValid(Gantry)){Gantry->SetRedLightCount(0);Gantry->PlayCue(true);}
+ RedLightCount=0;RacePhase=ERaceStartPhase::LightsOut;RaceStartWorldSeconds=GetWorld()->GetTimeSeconds();++StartEventCount;
+ OnLightsOut.Broadcast(RaceStartWorldSeconds);Record(TEXT("LIGHTS_OUT"));GetWorldTimerManager().SetTimerForNextTick(this,&AProofGameMode::EnterRacing);
+ if(bTesting){if(TestEpoch==1)GetWorldTimerManager().SetTimer(TestCaptureTimer,FTimerDelegate::CreateWeakLambda(this,[this](){Capture(TEXT("LightsOut"));}),.12f,false);GetWorldTimerManager().SetTimer(TestControlTimer,this,&AProofGameMode::TestAfterRelease,FindGridSlots().Num()?3.f:1.5f,false);}
+}
+void AProofGameMode::EnterRacing(){RacePhase=ERaceStartPhase::Racing;Record(TEXT("RACING"));}
+void AProofGameMode::Record(const TCHAR* Event){
+ FVector P=FVector::ZeroVector;if(auto* PC=GetWorld()->GetFirstPlayerController())if(APawn* Pawn=PC->GetPawn())P=Pawn->GetActorLocation();
+ if(bTesting&&RacePhase!=ERaceStartPhase::PreGrid&&RaceStartWorldSeconds<0&&FVector::Dist2D(P,TestGridPosition)>1.f)bTestMovedEarly=true;
+ FString Line=FString::Printf(TEXT("{\"event\":\"%s\",\"time\":%.4f,\"epoch\":%d,\"reds\":%d,\"start_events\":%d,\"x\":%.3f,\"y\":%.3f,\"moved_early\":%s}\n"),Event,GetWorld()->GetTimeSeconds(),TestEpoch,RedLightCount,StartEventCount,P.X,P.Y,bTestMovedEarly?TEXT("true"):TEXT("false"));
+ if(bTesting&&RaceStartWorldSeconds<0)for(const auto& E:StagedPositions)if(E.Key.IsValid()&&FVector::Dist2D(E.Key->GetActorLocation(),E.Value)>1.f)bTestMovedEarly=true;
+ Line=Line.Replace(TEXT("}\n"),*FString::Printf(TEXT(",\"staged\":%d,\"grid_slot\":%d}\n"),StagedParticipantCount,GetWorld()->GetFirstPlayerController()&&Cast<AProofPawn>(GetWorld()->GetFirstPlayerController()->GetPawn())?Cast<AProofPawn>(GetWorld()->GetFirstPlayerController()->GetPawn())->AssignedGridPosition:0));
+ UE_LOG(LogTemp,Display,TEXT("RACE_START %s"),*Line);
+ if(bTesting)FFileHelper::SaveStringToFile(Line,*(StartEvidenceDirectory()/TEXT("runtime_events.jsonl")),FFileHelper::EEncodingOptions::ForceUTF8WithoutBOM,&IFileManager::Get(),FILEWRITE_Append);
+}
+void AProofGameMode::Capture(const TCHAR* Name){FScreenshotRequest::RequestScreenshot(StartEvidenceDirectory()/(FString(Name)+TEXT(".png")),false,false);}
+void AProofGameMode::TestAfterRelease(){
+ FVector P=TestGridPosition;if(auto* PC=GetWorld()->GetFirstPlayerController())if(APawn* Pawn=PC->GetPawn())P=Pawn->GetActorLocation();
+ bool bPassed=!bTestMovedEarly&&StartEventCount==1&&FVector::Dist2D(P,TestGridPosition)>50.f;
+ for(const auto& E:StagedPositions)if(E.Key.IsValid()&&FVector::Dist2D(E.Key->GetActorLocation(),E.Value)<50.f)bPassed=false;
+ for(TActorIterator<AActor> It(GetWorld());It;++It)if(It->ActorHasTag(TEXT("GridFinish"))){FVector C,E;It->GetActorBounds(false,C,E);if(P.X>C.X)Record(TEXT("GRID_FINISH_CROSSED"));}
+ Record(bPassed?TEXT("TEST_PASS"):TEXT("TEST_FAIL"));
+ if(TestEpoch==1)RestartRaceStart();else FPlatformMisc::RequestExit(false);
+}
+
+
+
+TArray<AGridStartSlot*> AProofGameMode::FindGridSlots() const {
+ TArray<AGridStartSlot*> Slots;for(TActorIterator<AGridStartSlot> It(GetWorld());It;++It)Slots.Add(*It);
+ Slots.Sort([](const AGridStartSlot& A,const AGridStartSlot& B){return A.PositionNumber<B.PositionNumber;});return Slots;
+}
+AGridStartSlot* AProofGameMode::GetGridSlotForPawn(AProofPawn* Pawn) const {
+ if(const int32* Number=GridAssignments.Find(Pawn))for(auto* Slot:FindGridSlots())if(Slot->PositionNumber==*Number)return Slot;
+ return nullptr;
+}
+bool AProofGameMode::RegisterGridParticipant(AProofPawn* Pawn,int32 RequestedPosition){
+ if(!IsValid(Pawn)||RacePhase!=ERaceStartPhase::PreGrid)return false;
+ if(GridAssignments.Contains(Pawn))return RequestedPosition==0||GridAssignments[Pawn]==RequestedPosition;
+ const auto Slots=FindGridSlots();if(Slots.Num()!=20)return false;
+ if(!RequestedPosition)RequestedPosition=Pawn->PreferredGridPosition;
+ if(!RequestedPosition)if(const int32* Pending=ControllerGridSlots.Find(Pawn->GetController()))RequestedPosition=*Pending;
+ TSet<int32> Used;for(const auto& E:GridAssignments)if(E.Key.IsValid())Used.Add(E.Value);
+ for(const auto& E:ControllerGridSlots)if(E.Key.IsValid()&&E.Key.Get()!=Pawn->GetController())Used.Add(E.Value);
+ if(!RequestedPosition)for(auto* Slot:Slots)if(!Used.Contains(Slot->PositionNumber)){RequestedPosition=Slot->PositionNumber;break;}
+ if(RequestedPosition<1||RequestedPosition>20||Used.Contains(RequestedPosition))return false;
+ GridAssignments.Add(Pawn,RequestedPosition);if(Pawn->IsPlayerControlled())ControllerGridSlots.Add(Pawn->GetController(),RequestedPosition);Pawn->AssignedGridPosition=RequestedPosition;return true;
+}
+bool AProofGameMode::StageGridParticipants(){
+ const auto Slots=FindGridSlots();
+ if(!Slots.Num()){
+  for(FConstPlayerControllerIterator It=GetWorld()->GetPlayerControllerIterator();It;++It)if(auto* PC=It->Get())if(auto* P=Cast<AProofPawn>(PC->GetPawn()))if(auto* Start=FindPlayerStart(PC)){FTransform T=Start->GetActorTransform();T.SetLocation(T.GetLocation()+FVector(0,0,-9));P->StageForRace(T);}return true;
+ }
+ if(Slots.Num()!=20)return false;
+ for(int32 I=0;I<20;++I)if(Slots[I]->PositionNumber!=I+1)return false;
+ for(auto It=GridAssignments.CreateIterator();It;++It)if(!It.Key().IsValid())It.RemoveCurrent();
+ TArray<AProofPawn*> Participants;for(TActorIterator<AProofPawn> It(GetWorld());It;++It)Participants.Add(*It);
+ Participants.Sort([](const AProofPawn& A,const AProofPawn& B){if(A.IsPlayerControlled()!=B.IsPlayerControlled())return A.IsPlayerControlled();return A.GetName()<B.GetName();});
+ StagedParticipantCount=0;StagedPositions.Reset();
+ for(auto* Pawn:Participants){
+  if(!RegisterGridParticipant(Pawn))return false;
+  auto* Slot=GetGridSlotForPawn(Pawn);if(!Slot)return false;FTransform T=Slot->GetActorTransform();T.SetLocation(T.GetLocation()+FVector(0,0,-9));Pawn->StageForRace(T);
+  if(FVector::DistSquared(Pawn->GetActorLocation(),T.GetLocation())>1.f)return false;StagedPositions.Add(Pawn,Pawn->GetActorLocation());++StagedParticipantCount;
+ }
+ return StagedParticipantCount>0;
+}
+
+FString AProofGameMode::StartEvidenceDirectory() const{return FPaths::ProjectDir()/ (FParse::Param(FCommandLine::Get(),TEXT("Grid20Test"))?TEXT("Evidence/Grid20"):TEXT("Evidence/RaceStart"));}

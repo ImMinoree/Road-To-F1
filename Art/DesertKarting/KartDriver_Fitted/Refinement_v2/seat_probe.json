@@ -1,0 +1,2898 @@
+{
+  "baseline": {
+    "seat_surface_pairs": 211,
+    "other_surface_pairs": 0,
+    "pelvic_garment_minimum_seat_distance_m": 0.0005712111014872789,
+    "score": 211.00000157356263,
+    "hits": {
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 52,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 159
+    },
+    "knees": [
+      [
+        0.4149230420589447,
+        0.31421709060668945,
+        0.6863768100738525
+      ],
+      [
+        0.41989660263061523,
+        -0.3123241364955902,
+        0.6806073188781738
+      ]
+    ]
+  },
+  "selected": {
+    "params": [
+      0.1,
+      0.62,
+      25
+    ],
+    "metrics": {
+      "seat_surface_pairs": 4,
+      "other_surface_pairs": 0,
+      "pelvic_garment_minimum_seat_distance_m": 0.001809142529964447,
+      "score": 5.99999771118164,
+      "hits": {
+        "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 4
+      },
+      "knees": [
+        [
+          0.44498544931411743,
+          0.32054436206817627,
+          0.6835104823112488
+        ],
+        [
+          0.447904109954834,
+          -0.3192873001098633,
+          0.6761888861656189
+        ]
+      ]
+    }
+  },
+  "candidates": [
+    {
+      "params": [
+        0.1,
+        0.62,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 4,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.001809142529964447,
+        "score": 5.99999771118164,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 4
+        },
+        "knees": [
+          [
+            0.44498544931411743,
+            0.32054436206817627,
+            0.6835104823112488
+          ],
+          [
+            0.447904109954834,
+            -0.3192873001098633,
+            0.6761888861656189
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.62,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 0,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.005083321128040552,
+        "score": 7.416603351384401,
+        "hits": {},
+        "knees": [
+          [
+            0.44608116149902344,
+            0.3208744525909424,
+            0.6833406090736389
+          ],
+          [
+            0.44888168573379517,
+            -0.3195791244506836,
+            0.6759878993034363
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.62,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 0,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.006260234862565994,
+        "score": 13.301172024011612,
+        "hits": {},
+        "knees": [
+          [
+            0.41192910075187683,
+            0.3126554787158966,
+            0.6867601275444031
+          ],
+          [
+            0.41434550285339355,
+            -0.3111611604690552,
+            0.6812081933021545
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.62,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 10,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.007582717575132847,
+        "score": 29.913585586845876,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 10
+        },
+        "knees": [
+          [
+            0.41055887937545776,
+            0.31227678060531616,
+            0.6868504881858826
+          ],
+          [
+            0.4131128191947937,
+            -0.3108266294002533,
+            0.681348979473114
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.62,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 0,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.010518901981413364,
+        "score": 34.594507618248464,
+        "hits": {},
+        "knees": [
+          [
+            0.46266627311706543,
+            0.32515212893486023,
+            0.6805906891822815
+          ],
+          [
+            0.4656306803226471,
+            -0.3240247666835785,
+            0.6723045706748962
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.62,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 41,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0042891111224889755,
+        "score": 44.44555332362652,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 41
+        },
+        "knees": [
+          [
+            0.4094812273979187,
+            0.31195032596588135,
+            0.6869248747825623
+          ],
+          [
+            0.4121549129486084,
+            -0.31054452061653137,
+            0.6814606785774231
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.6,
+        -5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 32,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.006857178173959255,
+        "score": 47.885891346633436,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 32
+        },
+        "knees": [
+          [
+            0.46242639422416687,
+            0.3255402445793152,
+            0.6805176138877869
+          ],
+          [
+            0.4655509889125824,
+            -0.32429778575897217,
+            0.6722474694252014
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.62,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 60,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.001967273885384202,
+        "score": 61.99999771118164,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 60
+        },
+        "knees": [
+          [
+            0.37509387731552124,
+            0.30425748229026794,
+            0.687249481678009
+          ],
+          [
+            0.37725692987442017,
+            -0.3027973473072052,
+            0.6834939122200012
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.6,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 61,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.002529272111132741,
+        "score": 62.60000047683716,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 61
+        },
+        "knees": [
+          [
+            0.46082040667533875,
+            0.32511264085769653,
+            0.6808167099952698
+          ],
+          [
+            0.4640982747077942,
+            -0.32390257716178894,
+            0.672597348690033
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.62,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 0,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.016649972647428513,
+        "score": 65.2498609483242,
+        "hits": {},
+        "knees": [
+          [
+            0.44746553897857666,
+            0.3212668299674988,
+            0.6831281781196594
+          ],
+          [
+            0.4501280188560486,
+            -0.3199329078197479,
+            0.6757323145866394
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.62,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 0,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.016970383003354073,
+        "score": 66.851912727952,
+        "hits": {},
+        "knees": [
+          [
+            0.46516120433807373,
+            0.3258969187736511,
+            0.6800910830497742
+          ],
+          [
+            0.46786895394325256,
+            -0.32469823956489563,
+            0.6717372536659241
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.6,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 70,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0021597370505332947,
+        "score": 71.60000047683715,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 70
+        },
+        "knees": [
+          [
+            0.45947957038879395,
+            0.3247489929199219,
+            0.6810632348060608
+          ],
+          [
+            0.46289196610450745,
+            -0.32357168197631836,
+            0.6728852391242981
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.62,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 76,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0006543344352394342,
+        "score": 77.99999771118163,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 76
+        },
+        "knees": [
+          [
+            0.37402892112731934,
+            0.3039194941520691,
+            0.687236487865448
+          ],
+          [
+            0.3763147294521332,
+            -0.30251020193099976,
+            0.6835255026817322
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.62,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 0,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.019745267927646637,
+        "score": 80.72633734941482,
+        "hits": {},
+        "knees": [
+          [
+            0.46377140283584595,
+            0.3254905045032501,
+            0.680368959903717
+          ],
+          [
+            0.46661806106567383,
+            -0.32432782649993896,
+            0.6720543503761292
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.58,
+        -5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 87,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0025485926307737827,
+        "score": 88.19999966621398,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 87
+        },
+        "knees": [
+          [
+            0.45697203278541565,
+            0.3242712914943695,
+            0.6814600229263306
+          ],
+          [
+            0.46067723631858826,
+            -0.32299453020095825,
+            0.6733953952789307
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.6,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 111,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.001231393776834011,
+        "score": 112.60000047683715,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 111
+        },
+        "knees": [
+          [
+            0.4429236948490143,
+            0.32063478231430054,
+            0.6836451888084412
+          ],
+          [
+            0.44609880447387695,
+            -0.31926000118255615,
+            0.6764280200004578
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.58,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 115,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0010647452436387539,
+        "score": 116.19999966621398,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 115
+        },
+        "knees": [
+          [
+            0.45539963245391846,
+            0.3238847553730011,
+            0.6817234754562378
+          ],
+          [
+            0.45925429463386536,
+            -0.322637140750885,
+            0.6737128496170044
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.6,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 116,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0025228073354810476,
+        "score": 117.60000047683715,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 116
+        },
+        "knees": [
+          [
+            0.4405674636363983,
+            0.32000043988227844,
+            0.6839706301689148
+          ],
+          [
+            0.4439884126186371,
+            -0.3186964690685272,
+            0.6768286824226379
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.58,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 117,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0019793270621448755,
+        "score": 118.19999966621398,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 117
+        },
+        "knees": [
+          [
+            0.45411384105682373,
+            0.3235678970813751,
+            0.6819347143173218
+          ],
+          [
+            0.45809775590896606,
+            -0.3223496079444885,
+            0.6739667654037476
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.6,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 114,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.005564454942941666,
+        "score": 123.42227519154548,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 114
+        },
+        "knees": [
+          [
+            0.44159236550331116,
+            0.32028457522392273,
+            0.6838286519050598
+          ],
+          [
+            0.44490107893943787,
+            -0.31894534826278687,
+            0.6766554713249207
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.6,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 122,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.002788820303976536,
+        "score": 123.60000047683715,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 122
+        },
+        "knees": [
+          [
+            0.4058305621147156,
+            0.3120254576206207,
+            0.6868889927864075
+          ],
+          [
+            0.4087787866592407,
+            -0.31048783659935,
+            0.6816276907920837
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.6,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 108,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00760991033166647,
+        "score": 127.6495521351695,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 108
+        },
+        "knees": [
+          [
+            0.40714117884635925,
+            0.31236398220062256,
+            0.6868218779563904
+          ],
+          [
+            0.4099561870098114,
+            -0.31078454852104187,
+            0.6815100312232971
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.56,
+        -5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 127,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0012605799129232764,
+        "score": 127.80000004768371,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 127
+        },
+        "knees": [
+          [
+            0.450359970331192,
+            0.3225458562374115,
+            0.6825524568557739
+          ],
+          [
+            0.4546457529067993,
+            -0.3212009370326996,
+            0.674777626991272
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.6,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 118,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.008012990467250347,
+        "score": 139.6649528130889,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 118
+        },
+        "knees": [
+          [
+            0.4584421217441559,
+            0.3244578540325165,
+            0.6812536120414734
+          ],
+          [
+            0.46196630597114563,
+            -0.32331252098083496,
+            0.6731047034263611
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.56,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 151,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0004138559743296355,
+        "score": 151.8000000476837,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 151
+        },
+        "knees": [
+          [
+            0.4488276541233063,
+            0.3222052752971649,
+            0.6827752590179443
+          ],
+          [
+            0.4532581865787506,
+            -0.3208862841129303,
+            0.6750572919845581
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.56,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 152,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.001799470279365778,
+        "score": 152.8000000476837,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 152
+        },
+        "knees": [
+          [
+            0.44760408997535706,
+            0.3219393491744995,
+            0.6829476356506348
+          ],
+          [
+            0.45215803384780884,
+            -0.32064661383628845,
+            0.6752737760543823
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.62,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 153,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00016759771096985787,
+        "score": 154.99999771118163,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 94,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 59
+        },
+        "knees": [
+          [
+            0.3398633599281311,
+            0.2965177893638611,
+            0.6846770644187927
+          ],
+          [
+            0.34155189990997314,
+            -0.29518747329711914,
+            0.6825706362724304
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.52,
+        -5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 163,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0006719538359902799,
+        "score": 163.00000038146973,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 163
+        },
+        "knees": [
+          [
+            0.433353066444397,
+            0.317695289850235,
+            0.6849693655967712
+          ],
+          [
+            0.43875497579574585,
+            -0.3160755932331085,
+            0.678068220615387
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.62,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 166,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 1.3894315998186357e-05,
+        "score": 167.99999771118163,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 93,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 73
+        },
+        "knees": [
+          [
+            0.338802307844162,
+            0.2961556315422058,
+            0.6845791935920715
+          ],
+          [
+            0.3406178951263428,
+            -0.29488301277160645,
+            0.6825267672538757
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.58,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 167,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0011588428169488907,
+        "score": 168.19999966621398,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 167
+        },
+        "knees": [
+          [
+            0.43732020258903503,
+            0.3195934295654297,
+            0.6842818260192871
+          ],
+          [
+            0.4410054087638855,
+            -0.3181518316268921,
+            0.6773145198822021
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.54,
+        -5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 170,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 8.509646431775764e-05,
+        "score": 170.39999804496765,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 170
+        },
+        "knees": [
+          [
+            0.44251346588134766,
+            0.32035598158836365,
+            0.6837445497512817
+          ],
+          [
+            0.4473693072795868,
+            -0.3189001679420471,
+            0.6763540506362915
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.52,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 174,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0032833500299602747,
+        "score": 174.00000038146973,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 174
+        },
+        "knees": [
+          [
+            0.4319256544113159,
+            0.31746360659599304,
+            0.6850976347923279
+          ],
+          [
+            0.43746066093444824,
+            -0.31586378812789917,
+            0.6782583594322205
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.52,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 181,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0001064379102899693,
+        "score": 181.00000038146973,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 181
+        },
+        "knees": [
+          [
+            0.43085435032844543,
+            0.31731510162353516,
+            0.6851847767829895
+          ],
+          [
+            0.43649888038635254,
+            -0.3157365322113037,
+            0.6783902049064636
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.58,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 180,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0031410320661962032,
+        "score": 181.19999966621398,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 34,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 146
+        },
+        "knees": [
+          [
+            0.40134164690971375,
+            0.3117225468158722,
+            0.6868934631347656
+          ],
+          [
+            0.4045388102531433,
+            -0.31003519892692566,
+            0.6818863153457642
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.54,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 190,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00126719253603369,
+        "score": 190.39999804496765,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 190
+        },
+        "knees": [
+          [
+            0.44102874398231506,
+            0.3200666606426239,
+            0.6839221715927124
+          ],
+          [
+            0.4460240304470062,
+            -0.31863370537757874,
+            0.6765916347503662
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.6,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 191,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00035747751826420426,
+        "score": 192.60000047683715,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 8,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 183
+        },
+        "knees": [
+          [
+            0.404828280210495,
+            0.3117419481277466,
+            0.6869428753852844
+          ],
+          [
+            0.4078909456729889,
+            -0.31024616956710815,
+            0.6817181706428528
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.54,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 193,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0009769783355295658,
+        "score": 193.39999804496765,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 193
+        },
+        "knees": [
+          [
+            0.43987634778022766,
+            0.31985679268836975,
+            0.6840527057647705
+          ],
+          [
+            0.4449883997440338,
+            -0.31844741106033325,
+            0.6767669916152954
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.58,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 181,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.006885008420795202,
+        "score": 196.62504177019,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 181
+        },
+        "knees": [
+          [
+            0.43604785203933716,
+            0.3192885220050812,
+            0.6844327449798584
+          ],
+          [
+            0.43986159563064575,
+            -0.31787973642349243,
+            0.6775108575820923
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.6,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 197,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0001012978536891751,
+        "score": 198.60000047683715,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 115,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 82
+        },
+        "knees": [
+          [
+            0.3342150151729584,
+            0.2966820001602173,
+            0.6837206482887268
+          ],
+          [
+            0.33621931076049805,
+            -0.29527270793914795,
+            0.6819475293159485
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.6,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 203,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00021952543465886265,
+        "score": 204.60000047683715,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 128,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 75
+        },
+        "knees": [
+          [
+            0.3351960778236389,
+            0.29700636863708496,
+            0.68382328748703
+          ],
+          [
+            0.337078332901001,
+            -0.2955417037010193,
+            0.6819983124732971
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.52,
+        -5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 211,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0005712275742553174,
+        "score": 211.00000038146973,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 52,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 159
+        },
+        "knees": [
+          [
+            0.41492313146591187,
+            0.31421715021133423,
+            0.6863766312599182
+          ],
+          [
+            0.4198964834213257,
+            -0.3123243749141693,
+            0.6806076169013977
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.56,
+        -5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 201,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0061410944908857346,
+        "score": 212.50547250211238,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 201
+        },
+        "knees": [
+          [
+            0.432110458612442,
+            0.3184632956981659,
+            0.6848467588424683
+          ],
+          [
+            0.4361524283885956,
+            -0.3168932795524597,
+            0.6781500577926636
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.56,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 215,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0010437873424962163,
+        "score": 215.8000000476837,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 215
+        },
+        "knees": [
+          [
+            0.4305940270423889,
+            0.31814044713974,
+            0.6849976778030396
+          ],
+          [
+            0.4347785711288452,
+            -0.31659966707229614,
+            0.6783605813980103
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.58,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 216,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0002679717435967177,
+        "score": 217.19999966621398,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 216
+        },
+        "knees": [
+          [
+            0.43510010838508606,
+            0.3190530240535736,
+            0.6845449209213257
+          ],
+          [
+            0.43901997804641724,
+            -0.3176768124103546,
+            0.6776539087295532
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.6,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 230,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0009033734677359462,
+        "score": 231.60000047683715,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 85,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 145
+        },
+        "knees": [
+          [
+            0.3693273961544037,
+            0.30407312512397766,
+            0.6868024468421936
+          ],
+          [
+            0.37189656496047974,
+            -0.30254557728767395,
+            0.6833623051643372
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.52,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 232,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00022393571271095425,
+        "score": 232.00000038146973,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 7,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 225
+        },
+        "knees": [
+          [
+            0.43016698956489563,
+            0.3172512650489807,
+            0.6852317452430725
+          ],
+          [
+            0.4358947277069092,
+            -0.3156944513320923,
+            0.6784630417823792
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.52,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 233,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 8.928775059757754e-05,
+        "score": 233.00000038146973,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 56,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 177
+        },
+        "knees": [
+          [
+            0.4135211110115051,
+            0.3139978051185608,
+            0.6864408850669861
+          ],
+          [
+            0.41862598061561584,
+            -0.31212958693504333,
+            0.6807350516319275
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.58,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 210,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.010153215378522873,
+        "score": 241.96607655882835,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 210
+        },
+        "knees": [
+          [
+            0.4531507194042206,
+            0.32332727313041687,
+            0.682091236114502
+          ],
+          [
+            0.4572400152683258,
+            -0.3221379816532135,
+            0.6741524934768677
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.06,
+        0.62,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 241,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0002516375679988414,
+        "score": 242.99999771118163,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 148,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 93
+        },
+        "knees": [
+          [
+            0.3038710355758667,
+            0.28838223218917847,
+            0.6790342926979065
+          ],
+          [
+            0.30518102645874023,
+            -0.28738343715667725,
+            0.6785699725151062
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.58,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 244,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0007650796906091273,
+        "score": 245.19999966621398,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 45,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 199
+        },
+        "knees": [
+          [
+            0.4000961184501648,
+            0.31142643094062805,
+            0.6869345903396606
+          ],
+          [
+            0.4034218192100525,
+            -0.3097786009311676,
+            0.6819783449172974
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.6,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 246,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 1.1707013072737027e-05,
+        "score": 247.60000047683715,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 79,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 167
+        },
+        "knees": [
+          [
+            0.37031427025794983,
+            0.3043709695339203,
+            0.6868284344673157
+          ],
+          [
+            0.37276560068130493,
+            -0.3027949333190918,
+            0.6833450198173523
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.56,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 224,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.008811518549919128,
+        "score": 248.85759279727935,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 224
+        },
+        "knees": [
+          [
+            0.4293878972530365,
+            0.3178845942020416,
+            0.685113787651062
+          ],
+          [
+            0.4336952269077301,
+            -0.31637388467788696,
+            0.6785223484039307
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.54,
+        -5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 253,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0020219958387315273,
+        "score": 253.39999804496765,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 253
+        },
+        "knees": [
+          [
+            0.4241458475589752,
+            0.3165484666824341,
+            0.6856309175491333
+          ],
+          [
+            0.42867082357406616,
+            -0.3148415982723236,
+            0.6793500185012817
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.52,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 254,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0014602221781387925,
+        "score": 254.00000038146973,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 69,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 185
+        },
+        "knees": [
+          [
+            0.4124729037284851,
+            0.31385236978530884,
+            0.6864816546440125
+          ],
+          [
+            0.41768795251846313,
+            -0.3120100796222687,
+            0.6808212399482727
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.56,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 256,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00018399297550786287,
+        "score": 256.80000004768374,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 65,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 191
+        },
+        "knees": [
+          [
+            0.39448949694633484,
+            0.3107379674911499,
+            0.6869311332702637
+          ],
+          [
+            0.3980434536933899,
+            -0.30891454219818115,
+            0.6822981834411621
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.56,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 256,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0020756558515131474,
+        "score": 256.80000004768374,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 256
+        },
+        "knees": [
+          [
+            0.4285247325897217,
+            0.3177007734775543,
+            0.6851948499679565
+          ],
+          [
+            0.43293172121047974,
+            -0.316220223903656,
+            0.678633451461792
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.06,
+        0.6,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 257,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0005382944364100695,
+        "score": 258.6000004768372,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 143,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 114
+        },
+        "knees": [
+          [
+            0.29953861236572266,
+            0.28928524255752563,
+            0.6778058409690857
+          ],
+          [
+            0.30095458030700684,
+            -0.288136750459671,
+            0.6776121258735657
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.54,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 264,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0009289309964515269,
+        "score": 264.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 264
+        },
+        "knees": [
+          [
+            0.42268216609954834,
+            0.31627485156059265,
+            0.6857399940490723
+          ],
+          [
+            0.42734435200691223,
+            -0.3145946264266968,
+            0.6795209646224976
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.54,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 275,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0007653321954421699,
+        "score": 275.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 11,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 264
+        },
+        "knees": [
+          [
+            0.4215501546859741,
+            0.31607192754745483,
+            0.6858187913894653
+          ],
+          [
+            0.426329106092453,
+            -0.31441962718963623,
+            0.6796456575393677
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.06,
+        0.58,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 287,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 7.829527021385729e-05,
+        "score": 288.199999666214,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 168,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 119
+        },
+        "knees": [
+          [
+            0.29437902569770813,
+            0.2899409532546997,
+            0.6763564348220825
+          ],
+          [
+            0.29586952924728394,
+            -0.2886348068714142,
+            0.6764745712280273
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.06,
+        0.58,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 289,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0005460995016619563,
+        "score": 290.199999666214,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 154,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 135
+        },
+        "knees": [
+          [
+            0.29528266191482544,
+            0.29026734828948975,
+            0.6765342950820923
+          ],
+          [
+            0.29665032029151917,
+            -0.28890037536621094,
+            0.6765923500061035
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.56,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 248,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.012427284382283688,
+        "score": 290.9364219591022,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 248
+        },
+        "knees": [
+          [
+            0.44672316312789917,
+            0.32175329327583313,
+            0.6830681562423706
+          ],
+          [
+            0.45137569308280945,
+            -0.3204866051673889,
+            0.6754233837127686
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.52,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 295,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0025055676233023405,
+        "score": 295.0000003814697,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 76,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 219
+        },
+        "knees": [
+          [
+            0.4118056297302246,
+            0.31378230452537537,
+            0.6865012049674988
+          ],
+          [
+            0.41710638999938965,
+            -0.3119666874408722,
+            0.6808670163154602
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.54,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 315,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0007079139468260109,
+        "score": 315.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 79,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 236
+        },
+        "knees": [
+          [
+            0.38654327392578125,
+            0.3094181716442108,
+            0.6868804693222046
+          ],
+          [
+            0.39041855931282043,
+            -0.30742523074150085,
+            0.682695746421814
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.56,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 319,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.002110229106619954,
+        "score": 319.80000004768374,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 69,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 250
+        },
+        "knees": [
+          [
+            0.3933151662349701,
+            0.31048640608787537,
+            0.6869453191757202
+          ],
+          [
+            0.39699265360832214,
+            -0.3087005019187927,
+            0.6823631525039673
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.1,
+        0.54,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 323,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0006690726149827242,
+        "score": 323.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 33,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 290
+        },
+        "knees": [
+          [
+            0.420780211687088,
+            0.31594327092170715,
+            0.685868501663208
+          ],
+          [
+            0.42565199732780457,
+            -0.31431901454925537,
+            0.679723858833313
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.06,
+        0.56,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 325,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 6.203485827427357e-05,
+        "score": 325.80000004768374,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 170,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 143,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 12
+        },
+        "knees": [
+          [
+            0.28839409351348877,
+            0.2903681695461273,
+            0.674653172492981
+          ],
+          [
+            0.2899218797683716,
+            -0.2888943552970886,
+            0.675122857093811
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.12,
+        0.54,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 287,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.011730428785085678,
+        "score": 326.05214197039606,
+        "hits": {
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 287
+        },
+        "knees": [
+          [
+            0.4390869736671448,
+            0.3197294771671295,
+            0.6841363906860352
+          ],
+          [
+            0.4442899525165558,
+            -0.3183436691761017,
+            0.6768780946731567
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.52,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 337,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 4.296216047805501e-06,
+        "score": 337.0000003814697,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 108,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 46,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 183
+        },
+        "knees": [
+          [
+            0.3774644136428833,
+            0.3077738881111145,
+            0.6866748929023743
+          ],
+          [
+            0.3816133141517639,
+            -0.3055720329284668,
+            0.6830154061317444
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.58,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 336,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 6.347896123770624e-05,
+        "score": 337.199999666214,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 67,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 269
+        },
+        "knees": [
+          [
+            0.39917483925819397,
+            0.3111874759197235,
+            0.6869673728942871
+          ],
+          [
+            0.402609258890152,
+            -0.30957916378974915,
+            0.6820462942123413
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.06,
+        0.56,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 351,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0009887212654575706,
+        "score": 351.80000004768374,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 168,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 143,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 40
+        },
+        "knees": [
+          [
+            0.2892122268676758,
+            0.29065990447998047,
+            0.6748267412185669
+          ],
+          [
+            0.29062166810035706,
+            -0.2891272008419037,
+            0.675239086151123
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.54,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 358,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 5.170440272195265e-05,
+        "score": 358.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 82,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 276
+        },
+        "knees": [
+          [
+            0.38544729351997375,
+            0.30921366810798645,
+            0.6868667602539062
+          ],
+          [
+            0.38944071531295776,
+            -0.30725646018981934,
+            0.682732105255127
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.52,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 366,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0001593261695234105,
+        "score": 366.0000003814697,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 94,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 59,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 213
+        },
+        "knees": [
+          [
+            0.3764547109603882,
+            0.3076191246509552,
+            0.6866342425346375
+          ],
+          [
+            0.3807162046432495,
+            -0.30545178055763245,
+            0.6830235123634338
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.58,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 368,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00013544959074351937,
+        "score": 369.199999666214,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 131,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 90,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 147
+        },
+        "knees": [
+          [
+            0.3287447690963745,
+            0.2969399094581604,
+            0.6827040910720825
+          ],
+          [
+            0.3309078812599182,
+            -0.2953808307647705,
+            0.6812580823898315
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.56,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 381,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0005108148907311261,
+        "score": 381.80000004768374,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 73,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 308
+        },
+        "knees": [
+          [
+            0.3924810290336609,
+            0.31029370427131653,
+            0.6869567632675171
+          ],
+          [
+            0.3962615132331848,
+            -0.30854544043540955,
+            0.6824079751968384
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.58,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 388,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.000626475375611335,
+        "score": 389.199999666214,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 134,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 86,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 168
+        },
+        "knees": [
+          [
+            0.3296428322792053,
+            0.2972266972064972,
+            0.6828113794326782
+          ],
+          [
+            0.33168837428092957,
+            -0.29561421275138855,
+            0.6813157796859741
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.06,
+        0.54,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 402,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 8.335518032254186e-06,
+        "score": 402.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 163,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 156,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 83
+        },
+        "knees": [
+          [
+            0.28231745958328247,
+            0.2908438742160797,
+            0.6728243827819824
+          ],
+          [
+            0.2837251126766205,
+            -0.28913334012031555,
+            0.6736301183700562
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.52,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 403,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0005511430790647864,
+        "score": 403.0000003814697,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 108,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 75,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 220
+        },
+        "knees": [
+          [
+            0.3758162558078766,
+            0.30752459168434143,
+            0.6866065859794617
+          ],
+          [
+            0.38016948103904724,
+            -0.3053922951221466,
+            0.6830245852470398
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.58,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 403,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 6.748797750333324e-05,
+        "score": 404.199999666214,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 93,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 45,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 265
+        },
+        "knees": [
+          [
+            0.36458757519721985,
+            0.30418261885643005,
+            0.6863240003585815
+          ],
+          [
+            0.36730149388313293,
+            -0.30247223377227783,
+            0.6831690073013306
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.06,
+        0.54,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 407,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00012495904229581356,
+        "score": 407.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 182,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 153,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 72
+        },
+        "knees": [
+          [
+            0.2815872132778168,
+            0.29058581590652466,
+            0.6726570129394531
+          ],
+          [
+            0.2831091582775116,
+            -0.2889326214790344,
+            0.6735169887542725
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.58,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 411,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0008123480947688222,
+        "score": 412.199999666214,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 92,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 62,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 257
+        },
+        "knees": [
+          [
+            0.36368343234062195,
+            0.3039255738258362,
+            0.6862854957580566
+          ],
+          [
+            0.3665100634098053,
+            -0.3022615909576416,
+            0.6831716299057007
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.06,
+        0.54,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 418,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0002999244024977088,
+        "score": 418.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 84,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 29,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 305
+        },
+        "knees": [
+          [
+            0.3847072422504425,
+            0.3090692162513733,
+            0.6868578195571899
+          ],
+          [
+            0.38879796862602234,
+            -0.3071480989456177,
+            0.6827542781829834
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.52,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 470,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0004926355904899538,
+        "score": 470.0000003814697,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 144,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 91,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 235
+        },
+        "knees": [
+          [
+            0.34149661660194397,
+            0.3019384443759918,
+            0.6838459372520447
+          ],
+          [
+            0.3447599709033966,
+            -0.29967740178108215,
+            0.6820310950279236
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.56,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 471,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00013427066733129323,
+        "score": 471.80000004768374,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 120,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 59,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 292
+        },
+        "knees": [
+          [
+            0.35903969407081604,
+            0.3039688467979431,
+            0.6857717037200928
+          ],
+          [
+            0.3618570864200592,
+            -0.30205750465393066,
+            0.6829462051391602
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.56,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 475,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 6.433231192204403e-06,
+        "score": 475.80000004768374,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 99,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 70,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 306
+        },
+        "knees": [
+          [
+            0.357073575258255,
+            0.30348917841911316,
+            0.6856437921524048
+          ],
+          [
+            0.3601241409778595,
+            -0.30166709423065186,
+            0.6829142570495605
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.52,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 477,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00022652934421785176,
+        "score": 477.0000003814697,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 152,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 109,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 216
+        },
+        "knees": [
+          [
+            0.34248021245002747,
+            0.3021177351474762,
+            0.6839593052864075
+          ],
+          [
+            0.3456273078918457,
+            -0.29981476068496704,
+            0.6820902228355408
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.56,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 487,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0008876862702891231,
+        "score": 487.80000004768374,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 110,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 69,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 308
+        },
+        "knees": [
+          [
+            0.35788998007774353,
+            0.30370479822158813,
+            0.6856944561004639
+          ],
+          [
+            0.36083298921585083,
+            -0.3018379509449005,
+            0.6829259395599365
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.52,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 490,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 4.0849376091500744e-05,
+        "score": 490.0000003814697,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 157,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 101,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 232
+        },
+        "knees": [
+          [
+            0.3408716320991516,
+            0.301807701587677,
+            0.6837764382362366
+          ],
+          [
+            0.34423306584358215,
+            -0.2995891869068146,
+            0.6819954514503479
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.06,
+        0.52,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 530,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 8.006043572095223e-06,
+        "score": 530.0000003814697,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 192,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 163,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 175
+        },
+        "knees": [
+          [
+            0.2739654779434204,
+            0.29061388969421387,
+            0.6703237891197205
+          ],
+          [
+            0.2754320502281189,
+            -0.2887682616710663,
+            0.6716112494468689
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.54,
+        5
+      ],
+      "metrics": {
+        "seat_surface_pairs": 537,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0003339996619615704,
+        "score": 537.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 127,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 79,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 331
+        },
+        "knees": [
+          [
+            0.3512689173221588,
+            0.3031737208366394,
+            0.6849840879440308
+          ],
+          [
+            0.35427746176719666,
+            -0.30108150839805603,
+            0.68260657787323
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.54,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 548,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0004835248691961169,
+        "score": 548.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 136,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 79,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 333
+        },
+        "knees": [
+          [
+            0.35019928216934204,
+            0.3029514253139496,
+            0.6848882436752319
+          ],
+          [
+            0.3533287048339844,
+            -0.30090227723121643,
+            0.6825664043426514
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.56,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 555,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 2.602292806841433e-05,
+        "score": 555.8000000476837,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 143,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 107,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 305
+        },
+        "knees": [
+          [
+            0.32319313287734985,
+            0.29719480872154236,
+            0.6816023588180542
+          ],
+          [
+            0.3253650665283203,
+            -0.29541832208633423,
+            0.6804846525192261
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.56,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 559,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0004126809653826058,
+        "score": 559.8000000476837,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 143,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 100,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 316
+        },
+        "knees": [
+          [
+            0.322381854057312,
+            0.2969455122947693,
+            0.6814916133880615
+          ],
+          [
+            0.3246667683124542,
+            -0.2952207028865814,
+            0.680420994758606
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.06,
+        0.52,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 564,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0002834963670466095,
+        "score": 564.0000003814697,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 174,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 164,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 226
+        },
+        "knees": [
+          [
+            0.27460503578186035,
+            0.2908390164375305,
+            0.6704825758934021
+          ],
+          [
+            0.275961309671402,
+            -0.2889373302459717,
+            0.6717186570167542
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        0.02,
+        0.54,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 572,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 1.8622935385792516e-05,
+        "score": 572.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 123,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 85,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 364
+        },
+        "knees": [
+          [
+            0.349475622177124,
+            0.3027779161930084,
+            0.6848269701004028
+          ],
+          [
+            0.3527078628540039,
+            -0.30077216029167175,
+            0.6825416088104248
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.54,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 661,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00024695764295756817,
+        "score": 661.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 159,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 109,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 393
+        },
+        "knees": [
+          [
+            0.31511855125427246,
+            0.29671579599380493,
+            0.6800377368927002
+          ],
+          [
+            0.3174808621406555,
+            -0.2948070168495178,
+            0.6793904304504395
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.54,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 673,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.0003957900917157531,
+        "score": 673.3999980449677,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 163,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 130,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 380
+        },
+        "knees": [
+          [
+            0.3158392012119293,
+            0.29692769050598145,
+            0.6801502704620361
+          ],
+          [
+            0.3180929124355316,
+            -0.29496872425079346,
+            0.6794586181640625
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.52,
+        15
+      ],
+      "metrics": {
+        "seat_surface_pairs": 721,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 9.905789920594543e-05,
+        "score": 721.0000003814697,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 161,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 139,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 421
+        },
+        "knees": [
+          [
+            0.30757686495780945,
+            0.29644420742988586,
+            0.6784026026725769
+          ],
+          [
+            0.30986014008522034,
+            -0.2942817211151123,
+            0.6781840920448303
+          ]
+        ]
+      }
+    },
+    {
+      "params": [
+        -0.02,
+        0.52,
+        25
+      ],
+      "metrics": {
+        "seat_surface_pairs": 787,
+        "other_surface_pairs": 0,
+        "pelvic_garment_minimum_seat_distance_m": 0.00013071898138150573,
+        "score": 787.0000003814697,
+        "hits": {
+          "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 167,
+          "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 145,
+          "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 475
+        },
+        "knees": [
+          [
+            0.30695104598999023,
+            0.29626935720443726,
+            0.6782907843589783
+          ],
+          [
+            0.3093384802341461,
+            -0.2941560745239258,
+            0.6781137585639954
+          ]
+        ]
+      }
+    }
+  ]
+}

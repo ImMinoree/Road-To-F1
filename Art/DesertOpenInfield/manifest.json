@@ -1,0 +1,7 @@
+{
+  "removed_parking_marks": 22,
+  "terrain_vertices": 1163,
+  "terrain_triangles": 2172,
+  "terrain_collision": "None; existing continuous infield ground retained",
+  "route_exclusion_m": 11.8
+}

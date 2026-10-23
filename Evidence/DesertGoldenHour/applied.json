@@ -1,0 +1,64 @@
+{
+  "maps": {
+    "/Game/RoadToF1/Maps/DesertKarting": {
+      "saved": true,
+      "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_BeforeGoldenHour",
+      "changes": [
+        "Disabled duplicate DirectionalLight2",
+        "Disabled duplicate DirectionalLight3",
+        "Sun: elevation 17deg, yaw120, 28000lux, 5500K, source angle1.2deg",
+        "Disabled duplicate SkyLight2",
+        "Disabled duplicate SkyLight3",
+        "Disabled duplicate SkyAtmosphere2",
+        "Disabled duplicate SkyAtmosphere3",
+        "Disabled duplicate ExponentialHeightFog2",
+        "Disabled duplicate ExponentialHeightFog3"
+      ],
+      "material_tuning": {},
+      "local_lights": 4
+    },
+    "/Game/RoadToF1/Maps/DesertKarting_Visual": {
+      "saved": true,
+      "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_Visual_BeforeGoldenHour",
+      "changes": [
+        "Disabled duplicate DirectionalLight2",
+        "Disabled duplicate DirectionalLight3",
+        "Sun: elevation 17deg, yaw120, 28000lux, 5500K, source angle1.2deg",
+        "Disabled duplicate SkyLight2",
+        "Disabled duplicate SkyLight3",
+        "Disabled duplicate SkyAtmosphere2",
+        "Disabled duplicate SkyAtmosphere3",
+        "Disabled duplicate ExponentialHeightFog2",
+        "Disabled duplicate ExponentialHeightFog3"
+      ],
+      "material_tuning": {
+        "asphalt": {
+          "before": [
+            0.8799999952316284,
+            0.9399999976158142,
+            1.0
+          ],
+          "after": [
+            0.8271999955177307,
+            0.8835999977588653,
+            0.94
+          ]
+        },
+        "runoff": {
+          "before": [
+            0.04500000178813934,
+            0.47999998927116394,
+            0.33000001311302185
+          ],
+          "after": [
+            0.07290000155568123,
+            0.405674991980195,
+            0.2909250102192163
+          ]
+        }
+      },
+      "local_lights": 4
+    }
+  },
+  "source_config_existing_assets_unchanged": true
+}

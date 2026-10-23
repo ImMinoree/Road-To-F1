@@ -1,0 +1,14 @@
+{
+  "authorship": "Original deterministic procedural texture art. Not photogrammetry and not acquired marketplace assets.",
+  "tile_m": 2,
+  "normal_convention": "DirectX tangent normal from physical height derivatives",
+  "world_mask_origin_cm": [
+    -14216.304340741852,
+    -6402.037360936396
+  ],
+  "world_mask_size_cm": [
+    41957.42350331255,
+    24191.82233138018
+  ],
+  "limitations": "Sward is a ground surface, not 3D foliage. Scanned ground and curb surfaces would improve quality."
+}

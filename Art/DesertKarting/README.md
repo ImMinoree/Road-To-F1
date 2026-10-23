@@ -1,0 +1,15 @@
+# DesertKarting integration
+
+Source: the user-supplied `artifacts/desert-karting-circuit/desert_karting.glb` in the repository root. No downloaded assets. Original GLB and Blender source are untouched. `manifest.json` records its SHA-256, original object/material names, triangles, metre units, and the single rigid alignment applied to the entire scene.
+
+Unreal assets: `/Game/RoadToF1/DesertKarting/{Meshes,Materials}`. Playable map: `/Game/RoadToF1/Maps/DesertKarting`. There are 87 mesh assets and 25 source PBR materials. The site is rotated/translated so the starting straight faces +X and the existing temporary pawn's reset position stays valid. The main road is at Z=0 cm. The source geometry, including the secondary circuit, remains intact.
+
+From the project directory, launch with `powershell -ExecutionPolicy Bypass -File Tools/OpenDesert.ps1`. Add `-Editor` to edit the map, or `-Profile Validation` for the higher quality profile. W/S accelerate/brake/reverse, A/D steer, R resets. The existing ProofPawn is temporary driving physics. Static source karts are scenery; there is no race AI or animated driver integration here. Existing maps, startup settings and C++ source are preserved.
+
+Reproduce conversion: `& 'D:/Boring/blender.exe' --background --python Tools/desert_export.py`. Then run installed UnrealEditor-Cmd.exe against this .uproject with `-run=pythonscript -script=<absolute path to Tools/desert_import.py> -nullrhi -unattended`. Imports skip existing meshes; delete only DesertKarting mesh assets in the editor before reimporting a changed source. The importer recreates only the dedicated DesertKarting level's environment.
+
+Roads, curbs, terrain and barriers use static complex collision. Decorative meshes are nonblocking. The large horizon terrain is excluded from distance-field lighting. Source material double-sided flags, metallic/roughness values, and emissive factors are preserved. Unreal sky, warm directional sunlight and stable manual exposure provide lighting; source Blender area-light/compositor effects are not recreated. The GLB contains no texture maps and cannot carry the Blender procedural bump shaders. This integration preserves the supplied model's stylized geometry; it does not establish photorealistic quality.
+
+Actual editor renders and validation logs are stored in `Evidence/DesertKarting`. `Tools/desert_capture.py` captures repeatable driver, ground and overview views and checks starting-straight collision in the live editor world.
+
+Validated in Unreal 5.8.3: all 15 starting-straight probes hit the imported racing surface. A standalone 20-second driving test finished at Z=31 cm after moving approximately 34 m. Its final 10.0133 seconds averaged 139.91 FPS / 7.147 ms on an RTX 3080 and i7-10700KF, 1920×1080 output, 75% render scale, High scalability level 2. This does not measure a full lap or multiple racing karts. `Evidence/DesertKarting/validation.json` records settings and preservation checks; `runtime_raw.json` retains the existing pawn's output verbatim (its hardcoded “co-running editor” scope text does not describe this standalone run).

@@ -1,0 +1,5 @@
+import bpy,json
+from pathlib import Path
+from mathutils import Matrix
+P=Path(__file__).resolve().parent;bpy.ops.wm.open_mainfile(filepath=str(P/'FP_KartArms.blend'));bpy.context.scene.frame_set(25);bpy.context.view_layer.update();rig=bpy.data.objects['FP_KartArms_Rig'];o=bpy.data.objects['SK_FP_KartArms'];deps=bpy.context.evaluated_depsgraph_get();ev=o.evaluated_get(deps);me=ev.to_mesh()
+r={'pose_rest_matrix_delta':{b.name:max(abs(x-y) for a,c in zip(b.matrix,b.bone.matrix_local) for x,y in zip(a,c)) for b in rig.pose.bones},'base_bounds':[[min(v.co[i] for v in o.data.vertices),max(v.co[i] for v in o.data.vertices)] for i in range(3)],'eval_bounds':[[min(v.co[i] for v in me.vertices),max(v.co[i] for v in me.vertices)] for i in range(3)],'max_mesh_deform_at_bind_m':max((v.co-o.data.vertices[v.index].co).length for v in me.vertices),'objects':[(x.name,list(map(list,x.matrix_world))) for x in [o,rig]],'group_names':[g.name for g in o.vertex_groups]};ev.to_mesh_clear();(P/'bind_inspection.json').write_text(json.dumps(r,indent=2));print(json.dumps(r),flush=True)

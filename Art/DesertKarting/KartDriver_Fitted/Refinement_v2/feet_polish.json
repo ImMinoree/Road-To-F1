@@ -1,0 +1,293 @@
+{
+  "l": {
+    "before_overlaps": {
+      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 102,
+      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 68,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 13,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+      "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 8,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+    },
+    "before_clearance_m": -9.106099605560303e-05,
+    "best": {
+      "params": [
+        0.41,
+        0.21,
+        0.23860520911216737,
+        -12
+      ],
+      "score": 92.75001931190491,
+      "pairs": 92,
+      "clearance_m": 0.0014999806880950928,
+      "overlaps": {
+        "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 22,
+        "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 48,
+        "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+      },
+      "knee": [
+        0.4149357080459595,
+        0.3142183721065521,
+        0.6863737106323242
+      ]
+    },
+    "top_candidates": [
+      {
+        "params": [
+          0.41,
+          0.21,
+          0.23860520911216737,
+          -12
+        ],
+        "score": 92.75001931190491,
+        "pairs": 92,
+        "clearance_m": 0.0014999806880950928,
+        "overlaps": {
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 22,
+          "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 48,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+        },
+        "knee": [
+          0.4149357080459595,
+          0.3142183721065521,
+          0.6863737106323242
+        ]
+      },
+      {
+        "params": [
+          0.41,
+          0.21,
+          0.2354722399711609,
+          -7
+        ],
+        "score": 93.00004029273987,
+        "pairs": 92,
+        "clearance_m": 0.0015000402927398682,
+        "overlaps": {
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 24,
+          "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 40,
+          "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 8,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20
+        },
+        "knee": [
+          0.4166652262210846,
+          0.3142434060573578,
+          0.6832126379013062
+        ]
+      },
+      {
+        "params": [
+          0.43,
+          0.21,
+          0.24225265574455263,
+          -12
+        ],
+        "score": 101.75013852119446,
+        "pairs": 101,
+        "clearance_m": 0.001499861478805542,
+        "overlaps": {
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 22,
+          "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 48,
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 4,
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 7,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20
+        },
+        "knee": [
+          0.41175106167793274,
+          0.3166290819644928,
+          0.6891093254089355
+        ]
+      },
+      {
+        "params": [
+          0.43,
+          0.21,
+          0.24072010111808778,
+          -7
+        ],
+        "score": 102.00013852119446,
+        "pairs": 101,
+        "clearance_m": 0.001499861478805542,
+        "overlaps": {
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 24,
+          "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 38,
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 4,
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 7,
+          "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 8,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20
+        },
+        "knee": [
+          0.4126253128051758,
+          0.3165915906429291,
+          0.6876204013824463
+        ]
+      },
+      {
+        "params": [
+          0.45,
+          0.21,
+          0.2461315770149231,
+          -7
+        ],
+        "score": 108.00033831596375,
+        "pairs": 107,
+        "clearance_m": 0.0015003383159637451,
+        "overlaps": {
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 26,
+          "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 38,
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 9,
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 12,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 22
+        },
+        "knee": [
+          0.4089653789997101,
+          0.31919121742248535,
+          0.6908529996871948
+        ]
+      }
+    ]
+  },
+  "r": {
+    "before_overlaps": {
+      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 102,
+      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 68,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 13,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 10,
+      "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 10,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 20,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 9
+    },
+    "before_clearance_m": -0.0006109029054641724,
+    "best": {
+      "params": [
+        0.39,
+        0.21,
+        0.2333737988471985,
+        -7
+      ],
+      "score": 60.00024890899658,
+      "pairs": 59,
+      "clearance_m": 0.001500248908996582,
+      "overlaps": {
+        "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 24,
+        "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 30,
+        "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 5
+      },
+      "knee": [
+        0.4198940694332123,
+        -0.312322735786438,
+        0.6806066036224365
+      ]
+    },
+    "top_candidates": [
+      {
+        "params": [
+          0.39,
+          0.21,
+          0.2333737988471985,
+          -7
+        ],
+        "score": 60.00024890899658,
+        "pairs": 59,
+        "clearance_m": 0.001500248908996582,
+        "overlaps": {
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 24,
+          "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 30,
+          "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 5
+        },
+        "knee": [
+          0.4198940694332123,
+          -0.312322735786438,
+          0.6806066036224365
+        ]
+      },
+      {
+        "params": [
+          0.41,
+          0.21,
+          0.2386267263889313,
+          -7
+        ],
+        "score": 72.00010871887207,
+        "pairs": 71,
+        "clearance_m": 0.0014998912811279297,
+        "overlaps": {
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 24,
+          "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 36,
+          "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 7,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 4
+        },
+        "knee": [
+          0.41539862751960754,
+          -0.31442803144454956,
+          0.6863397359848022
+        ]
+      },
+      {
+        "params": [
+          0.41,
+          0.21,
+          0.24011049461364747,
+          -12
+        ],
+        "score": 77.75015950202942,
+        "pairs": 77,
+        "clearance_m": 0.001500159502029419,
+        "overlaps": {
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 22,
+          "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 46,
+          "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 5,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 4
+        },
+        "knee": [
+          0.414572536945343,
+          -0.3144174814224243,
+          0.6878350973129272
+        ]
+      },
+      {
+        "params": [
+          0.39,
+          0.21,
+          0.232434787273407,
+          -12
+        ],
+        "score": 83.75001049041748,
+        "pairs": 83,
+        "clearance_m": 0.0015000104904174805,
+        "overlaps": {
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 26,
+          "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 52,
+          "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 5
+        },
+        "knee": [
+          0.42038729786872864,
+          -0.3123588562011719,
+          0.6796259880065918
+        ]
+      },
+      {
+        "params": [
+          0.43,
+          0.21,
+          0.24657354545593263,
+          -7
+        ],
+        "score": 90.00001049041748,
+        "pairs": 89,
+        "clearance_m": 0.0015000104904174805,
+        "overlaps": {
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 41,
+          "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 30,
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 3,
+          "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 7,
+          "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 8
+        },
+        "knee": [
+          0.40974825620651245,
+          -0.316934734582901,
+          0.693268895149231
+        ]
+      }
+    ]
+  }
+}

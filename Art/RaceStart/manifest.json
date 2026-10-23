@@ -1,0 +1,29 @@
+{
+  "assets": [
+    {
+      "mesh": "SM_RS_Housing",
+      "slots": [
+        "Charcoal",
+        "Hardware"
+      ]
+    },
+    {
+      "mesh": "SM_RS_MountFrame",
+      "slots": [
+        "Hardware"
+      ]
+    },
+    {
+      "mesh": "SM_RS_RedLens",
+      "slots": [
+        "Lens"
+      ]
+    }
+  ],
+  "sources": "Original Blender modeling, generated LED mask and original synthesized beep waveforms; no third-party downloads",
+  "module_width_m": 0.75,
+  "module_spacing_m": 0.95,
+  "lens_diameter_m": 0.464,
+  "mount_height_cm": 560,
+  "all_geometry_collision": "None; existing gantry supports retained"
+}

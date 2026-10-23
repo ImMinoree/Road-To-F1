@@ -1,0 +1,4 @@
+import unreal as u
+from pathlib import Path
+root=Path(u.Paths.project_dir()).resolve();t=u.AssetImportTask();t.filename=str(root/'Art/Grid20/Meshes/SM_Grid20_BoxPaint.fbx');t.destination_path='/Game/RoadToF1/Grid20/Meshes';t.automated=True;t.replace_existing=True;t.save=True
+o=u.FbxImportUI();o.automated_import_should_detect_type=False;o.mesh_type_to_import=u.FBXImportType.FBXIT_STATIC_MESH;o.import_materials=False;o.import_textures=False;o.static_mesh_import_data.set_editor_property('combine_meshes',True);o.static_mesh_import_data.set_editor_property('auto_generate_collision',False);t.options=o;u.AssetToolsHelpers.get_asset_tools().import_asset_tasks([t]);m=u.load_asset('/Game/RoadToF1/Grid20/Meshes/SM_Grid20_BoxPaint');m.set_material(0,u.load_asset('/Game/RoadToF1/DesertVisual/Materials/MI_DV_white'));assert u.EditorAssetLibrary.save_loaded_asset(m)

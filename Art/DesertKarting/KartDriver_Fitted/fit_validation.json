@@ -1,0 +1,163 @@
+{
+  "source_hashes": {
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\HumanBase\\KartDriver_Base.blend": "66f480e51f6a10b6d5ea00e3d34fdf496d819d499081232dfebac665fef001ce",
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\DesertKarting\\Kart\\Kart_Reference.blend": "16d1b0bd03fc13cff4b85afc1b5cfc7ee625a2398ade16725e4de225ad2ca3b4"
+  },
+  "source_files_unchanged": true,
+  "character_stature_m": 1.795,
+  "bindings": {
+    "shoes05Mesh": {
+      "groups": 6,
+      "max_source_vertex_delta": 4.5816086385590795e-05,
+      "weight_origin": "Original companion KartDriver_Rigged.fbx, exact vertex correspondence"
+    },
+    "male_casualsuit04Mesh": {
+      "groups": 18,
+      "max_source_vertex_delta": 3.0517578125e-05,
+      "weight_origin": "Original companion KartDriver_Rigged.fbx, exact vertex correspondence"
+    },
+    "kart_driverMesh": {
+      "groups": 45,
+      "max_source_vertex_delta": 6.104260637590507e-05,
+      "weight_origin": "Original companion KartDriver_Rigged.fbx, exact vertex correspondence"
+    },
+    "high-polyMesh": {
+      "groups": 1,
+      "max_source_vertex_delta": 1.1920928955078125e-06,
+      "weight_origin": "Original companion KartDriver_Rigged.fbx, exact vertex correspondence"
+    }
+  },
+  "fit": {
+    "arm_l": {
+      "target": [
+        0.5049999952316284,
+        0.22499999403953552,
+        0.7099999785423279
+      ],
+      "joint": [
+        0.2643691301345825,
+        0.27047839760780334,
+        0.7885853052139282
+      ],
+      "actual_error_m": 8.429369702178807e-08,
+      "lengths_m": [
+        0.2629997389686004,
+        0.25719090506407377
+      ]
+    },
+    "leg_l": {
+      "target": [
+        0.38499999046325684,
+        0.20499999821186066,
+        0.28600001335144043
+      ],
+      "joint": [
+        0.418096661567688,
+        0.20973500609397888,
+        0.7445445656776428
+      ],
+      "actual_error_m": 1.7881393432617188e-07,
+      "lengths_m": [
+        0.4242028503112349,
+        0.4597617996452138
+      ]
+    },
+    "arm_r": {
+      "target": [
+        0.5049999952316284,
+        -0.22499999403953552,
+        0.7099999785423279
+      ],
+      "joint": [
+        0.2649367153644562,
+        -0.2712627351284027,
+        0.7893503904342651
+      ],
+      "actual_error_m": 0.0,
+      "lengths_m": [
+        0.26299966850515966,
+        0.25703522525484446
+      ]
+    },
+    "leg_r": {
+      "target": [
+        0.38499999046325684,
+        -0.20499999821186066,
+        0.28600001335144043
+      ],
+      "joint": [
+        0.4199749827384949,
+        -0.21033501625061035,
+        0.7443984746932983
+      ],
+      "actual_error_m": 2.2745635393967848e-07,
+      "lengths_m": [
+        0.4242026809859514,
+        0.4597617177957514
+      ]
+    }
+  },
+  "kart_unchanged": true,
+  "bone_heads": {
+    "pelvis": [
+      0.10000026226043701,
+      1.9999401956738438e-07,
+      0.5049999952316284
+    ],
+    "head": [
+      0.057244062423706055,
+      1.7441439581489249e-07,
+      1.1698684692382812
+    ],
+    "upperarm_l": [
+      0.06626898795366287,
+      0.20395757257938385,
+      0.9482730627059937
+    ],
+    "upperarm_r": [
+      0.06818865984678268,
+      -0.20501504838466644,
+      0.9508132934570312
+    ],
+    "hand_l": [
+      0.5049999356269836,
+      0.22499999403953552,
+      0.7100000381469727
+    ],
+    "hand_r": [
+      0.5049999952316284,
+      -0.22499999403953552,
+      0.7100000381469727
+    ],
+    "thigh_l": [
+      0.09492573142051697,
+      0.09999913722276688,
+      0.49261894822120667
+    ],
+    "thigh_r": [
+      0.09586533904075623,
+      -0.10018805414438248,
+      0.4938623011112213
+    ],
+    "calf_l": [
+      0.4180968403816223,
+      0.20973503589630127,
+      0.744544506072998
+    ],
+    "calf_r": [
+      0.4199751019477844,
+      -0.21033519506454468,
+      0.7443984746932983
+    ],
+    "foot_l": [
+      0.3850000500679016,
+      0.2050001174211502,
+      0.2859998941421509
+    ],
+    "foot_r": [
+      0.3849998116493225,
+      -0.2049999237060547,
+      0.28600013256073
+    ]
+  }
+}
