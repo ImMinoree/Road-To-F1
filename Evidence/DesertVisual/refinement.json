@@ -1,0 +1,15 @@
+{
+  "render_observed_defects": [
+    "Mirrored pit lettering",
+    "Black grass caused by world-space normals on backfaces",
+    "Stretched plastic detail on vertical faces"
+  ],
+  "corrections": [
+    "Reflected text orientation corrected in two source-derived detail meshes",
+    "Ground-cover master retains native two-sided geometry normals",
+    "World-space normals include two-sided sign",
+    "Paint and rubber UVs project vertically on walls"
+  ],
+  "lighting_changes": false,
+  "collision_changes": false
+}

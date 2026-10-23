@@ -1,0 +1,3726 @@
+{
+  "baseline": {
+    "kart_driverMesh": {
+      "tank": 0,
+      "seat": 0,
+      "pedals": 0,
+      "wheel": 175,
+      "tank_inside_vertices": 0,
+      "tank_max_vertex_depth_m": 0
+    },
+    "male_casualsuit04Mesh": {
+      "tank": 194,
+      "seat": 60,
+      "pedals": 8,
+      "wheel": 0,
+      "tank_inside_vertices": 453,
+      "tank_max_vertex_depth_m": 0.1115884780883789
+    },
+    "shoes05Mesh": {
+      "tank": 0,
+      "seat": 0,
+      "pedals": 18,
+      "wheel": 0,
+      "tank_inside_vertices": 0,
+      "tank_max_vertex_depth_m": 0
+    },
+    "knees_z_m": [
+      0.7445445656776428,
+      0.7443985939025879
+    ],
+    "score": 12419.234274844826
+  },
+  "tested": 90,
+  "candidates": [
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 250,
+          "seat": 64,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 413,
+          "tank_max_vertex_depth_m": 0.09620162844657898
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 86,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6216621398925781,
+          0.6218955516815186
+        ],
+        "score": 10385.792456331292
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": -5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 242,
+          "seat": 45,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 405,
+          "tank_max_vertex_depth_m": 0.09328676015138626
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 116,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6217951774597168,
+          0.6219795942306519
+        ],
+        "score": 10415.072208855488
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 252,
+          "seat": 64,
+          "pedals": 4,
+          "wheel": 0,
+          "tank_inside_vertices": 416,
+          "tank_max_vertex_depth_m": 0.09673135727643967
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 177,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6293737888336182,
+          0.6295721530914307
+        ],
+        "score": 10469.447584238647
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": -5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 242,
+          "seat": 47,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 405,
+          "tank_max_vertex_depth_m": 0.09382279217243195
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 217,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6294999122619629,
+          0.6296536922454834
+        ],
+        "score": 10486.71827222351
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 261,
+          "seat": 76,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 410,
+          "tank_max_vertex_depth_m": 0.09185513108968735
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6216435432434082,
+          0.6219093799591064
+        ],
+        "score": 10554.455726155453
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 261,
+          "seat": 76,
+          "pedals": 10,
+          "wheel": 0,
+          "tank_inside_vertices": 413,
+          "tank_max_vertex_depth_m": 0.09241682291030884
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6293498277664185,
+          0.6295778751373291
+        ],
+        "score": 10643.127601314894
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 239,
+          "seat": 262,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 278,
+          "tank_max_vertex_depth_m": 0.1245882585644722
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 72,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.605480432510376,
+          0.6058152914047241
+        ],
+        "score": 10809.104547572135
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 217,
+          "seat": 262,
+          "pedals": 13,
+          "wheel": 0,
+          "tank_inside_vertices": 304,
+          "tank_max_vertex_depth_m": 0.1074736937880516
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 76,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.5993281602859497,
+          0.5997447967529297
+        ],
+        "score": 10812.029195560703
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 229,
+          "seat": 288,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 282,
+          "tank_max_vertex_depth_m": 0.11232507973909378
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.599360466003418,
+          0.5997294187545776
+        ],
+        "score": 10818.599060256407
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 223,
+          "seat": 262,
+          "pedals": 10,
+          "wheel": 0,
+          "tank_inside_vertices": 278,
+          "tank_max_vertex_depth_m": 0.12471003830432892
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6141443252563477,
+          0.6144574880599976
+        ],
+        "score": 10856.715340114384
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 207,
+          "seat": 264,
+          "pedals": 24,
+          "wheel": 0,
+          "tank_inside_vertices": 305,
+          "tank_max_vertex_depth_m": 0.10762181878089905
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 185,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6082704067230225,
+          0.6086658239364624
+        ],
+        "score": 10862.315522681176
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 213,
+          "seat": 290,
+          "pedals": 15,
+          "wheel": 0,
+          "tank_inside_vertices": 283,
+          "tank_max_vertex_depth_m": 0.11285649985074997
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 185,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6083072423934937,
+          0.6086567640304565
+        ],
+        "score": 10873.133740499243
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": -5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 210,
+          "seat": 51,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 407,
+          "tank_max_vertex_depth_m": 0.10606814175844193
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 104,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6829946041107178,
+          0.6830384731292725
+        ],
+        "score": 10883.67250320073
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 240,
+          "seat": 163,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 315,
+          "tank_max_vertex_depth_m": 0.11134088784456253
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 72,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6142064332962036,
+          0.6144958734512329
+        ],
+        "score": 10898.216861503384
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 227,
+          "seat": 53,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 417,
+          "tank_max_vertex_depth_m": 0.1071174368262291
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 86,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6828813552856445,
+          0.6829513311386108
+        ],
+        "score": 10902.335949553923
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 253,
+          "seat": 171,
+          "pedals": 6,
+          "wheel": 0,
+          "tank_inside_vertices": 326,
+          "tank_max_vertex_depth_m": 0.11081314831972122
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6141774654388428,
+          0.6145057678222656
+        ],
+        "score": 10924.467119407655
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": -5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 212,
+          "seat": 51,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 410,
+          "tank_max_vertex_depth_m": 0.10662513226270676
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 211,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6863725185394287,
+          0.6863915920257568
+        ],
+        "score": 10951.432544382662
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 229,
+          "seat": 56,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 417,
+          "tank_max_vertex_depth_m": 0.10769332945346832
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 177,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6863018274307251,
+          0.686337947845459
+        ],
+        "score": 10952.738058523833
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 238,
+          "seat": 164,
+          "pedals": 10,
+          "wheel": 0,
+          "tank_inside_vertices": 316,
+          "tank_max_vertex_depth_m": 0.11184658110141754
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 179,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6224523782730103,
+          0.6227141618728638
+        ],
+        "score": 10982.120800960436
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 255,
+          "seat": 171,
+          "pedals": 14,
+          "wheel": 0,
+          "tank_inside_vertices": 327,
+          "tank_max_vertex_depth_m": 0.1113913506269455
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 183,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6224184036254883,
+          0.6227173805236816
+        ],
+        "score": 10992.267985323071
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 250,
+          "seat": 67,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 407,
+          "tank_max_vertex_depth_m": 0.10381339490413666
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 72,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6828076839447021,
+          0.682898998260498
+        ],
+        "score": 10994.571096023545
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 229,
+          "seat": 259,
+          "pedals": 8,
+          "wheel": 0,
+          "tank_inside_vertices": 294,
+          "tank_max_vertex_depth_m": 0.11425352841615677
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 74,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6054342985153198,
+          0.6058148145675659
+        ],
+        "score": 11003.504617155342
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 255,
+          "seat": 188,
+          "pedals": 8,
+          "wheel": 0,
+          "tank_inside_vertices": 329,
+          "tank_max_vertex_depth_m": 0.10975456982851028
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 74,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6086772680282593,
+          0.6090441942214966
+        ],
+        "score": 11026.94300132878
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 250,
+          "seat": 68,
+          "pedals": 8,
+          "wheel": 0,
+          "tank_inside_vertices": 408,
+          "tank_max_vertex_depth_m": 0.10447089374065399
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6862562894821167,
+          0.6863064765930176
+        ],
+        "score": 11055.570332894846
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 223,
+          "seat": 256,
+          "pedals": 17,
+          "wheel": 0,
+          "tank_inside_vertices": 296,
+          "tank_max_vertex_depth_m": 0.1147933080792427
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 175,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6140962839126587,
+          0.6144537925720215
+        ],
+        "score": 11062.812661208027
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 205,
+          "seat": 65,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 402,
+          "tank_max_vertex_depth_m": 0.09906923770904541
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 106,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6170982122421265,
+          0.6173118352890015
+        ],
+        "score": 11076.46279978361
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 254,
+          "seat": 188,
+          "pedals": 17,
+          "wheel": 0,
+          "tank_inside_vertices": 331,
+          "tank_max_vertex_depth_m": 0.11053449660539627
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 175,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6173028945922852,
+          0.6176420450210571
+        ],
+        "score": 11122.870693731495
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 219,
+          "seat": 68,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 422,
+          "tank_max_vertex_depth_m": 0.09866039454936981
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6169466972351074,
+          0.6172159910202026
+        ],
+        "score": 11135.913367325813
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 218,
+          "seat": 53,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 432,
+          "tank_max_vertex_depth_m": 0.10667166113853455
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 86,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7059310674667358,
+          0.7059688568115234
+        ],
+        "score": 11153.284481037408
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 228,
+          "seat": 66,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 402,
+          "tank_max_vertex_depth_m": 0.09968504309654236
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 211,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6253223419189453,
+          0.6255043745040894
+        ],
+        "score": 11167.58922844343
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 263,
+          "seat": 185,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 320,
+          "tank_max_vertex_depth_m": 0.11003883183002472
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 86,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6088719367980957,
+          0.6091330051422119
+        ],
+        "score": 11173.672357633151
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 218,
+          "seat": 53,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 433,
+          "tank_max_vertex_depth_m": 0.10677585750818253
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7070820331573486,
+          0.7070872783660889
+        ],
+        "score": 11187.589389252847
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": -5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 194,
+          "seat": 32,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 435,
+          "tank_max_vertex_depth_m": 0.10747762024402618
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 88,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7060176134109497,
+          0.7060375213623047
+        ],
+        "score": 11227.022949511744
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 229,
+          "seat": 66,
+          "pedals": 8,
+          "wheel": 0,
+          "tank_inside_vertices": 425,
+          "tank_max_vertex_depth_m": 0.09922434389591217
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6251705884933472,
+          0.6254051923751831
+        ],
+        "score": 11233.942034666612
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 238,
+          "seat": 194,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 321,
+          "tank_max_vertex_depth_m": 0.11061494052410126
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 72,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.608700156211853,
+          0.6090250015258789
+        ],
+        "score": 11236.82029866986
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": -5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 192,
+          "seat": 32,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 435,
+          "tank_max_vertex_depth_m": 0.10763739794492722
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 179,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.707109808921814,
+          0.707108736038208
+        ],
+        "score": 11252.4842511639
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 269,
+          "seat": 189,
+          "pedals": 4,
+          "wheel": 0,
+          "tank_inside_vertices": 320,
+          "tank_max_vertex_depth_m": 0.11056556552648544
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 179,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6175069808959961,
+          0.6177442073822021
+        ],
+        "score": 11263.196597373857
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 219,
+          "seat": 83,
+          "pedals": 6,
+          "wheel": 0,
+          "tank_inside_vertices": 413,
+          "tank_max_vertex_depth_m": 0.09634889662265778
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6169251203536987,
+          0.6172302961349487
+        ],
+        "score": 11276.057305626013
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 242,
+          "seat": 201,
+          "pedals": 10,
+          "wheel": 0,
+          "tank_inside_vertices": 322,
+          "tank_max_vertex_depth_m": 0.11131489276885986
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6173347234725952,
+          0.6176332235336304
+        ],
+        "score": 11337.956749376654
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 238,
+          "seat": 62,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 433,
+          "tank_max_vertex_depth_m": 0.10771925002336502
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.705863356590271,
+          0.7059170007705688
+        ],
+        "score": 11384.672976373695
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.6,
+        "knee_pole_z": 0.5
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 232,
+          "seat": 84,
+          "pedals": 15,
+          "wheel": 0,
+          "tank_inside_vertices": 418,
+          "tank_max_vertex_depth_m": 0.09660923480987549
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 183,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6251373291015625,
+          0.6254063844680786
+        ],
+        "score": 11391.016719831712
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 240,
+          "seat": 61,
+          "pedals": 9,
+          "wheel": 0,
+          "tank_inside_vertices": 433,
+          "tank_max_vertex_depth_m": 0.1076880395412445
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 183,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7070566415786743,
+          0.7070684432983398
+        ],
+        "score": 11415.530484847352
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 221,
+          "seat": 64,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 416,
+          "tank_max_vertex_depth_m": 0.10969814658164978
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 88,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6814848184585571,
+          0.6815474033355713
+        ],
+        "score": 11747.863726958074
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 217,
+          "seat": 67,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 441,
+          "tank_max_vertex_depth_m": 0.1093333512544632
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 86,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6813427209854126,
+          0.6814380884170532
+        ],
+        "score": 11788.71385135837
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 205,
+          "seat": 150,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 341,
+          "tank_max_vertex_depth_m": 0.11840085685253143
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 68,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6781597137451172,
+          0.6782886981964111
+        ],
+        "score": 11799.940504508466
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 219,
+          "seat": 64,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 416,
+          "tank_max_vertex_depth_m": 0.10994621366262436
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 201,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.685350775718689,
+          0.6853870153427124
+        ],
+        "score": 11815.263225781173
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 205,
+          "seat": 153,
+          "pedals": 8,
+          "wheel": 0,
+          "tank_inside_vertices": 341,
+          "tank_max_vertex_depth_m": 0.11894697695970535
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.682759165763855,
+          0.6828596591949463
+        ],
+        "score": 11851.243477799742
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 227,
+          "seat": 67,
+          "pedals": 6,
+          "wheel": 0,
+          "tank_inside_vertices": 442,
+          "tank_max_vertex_depth_m": 0.10972541570663452
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6852458715438843,
+          0.685306191444397
+        ],
+        "score": 11858.28181643784
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 233,
+          "seat": 259,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 310,
+          "tank_max_vertex_depth_m": 0.12702085077762604
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6710793972015381,
+          0.6712591648101807
+        ],
+        "score": 11913.4279956216
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 246,
+          "seat": 64,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 423,
+          "tank_max_vertex_depth_m": 0.10877755284309387
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6812524795532227,
+          0.6813739538192749
+        ],
+        "score": 11916.713586348109
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 221,
+          "seat": 167,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 346,
+          "tank_max_vertex_depth_m": 0.11980607360601425
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.678024172782898,
+          0.6781895160675049
+        ],
+        "score": 11917.649587144702
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 222,
+          "seat": 259,
+          "pedals": 12,
+          "wheel": 0,
+          "tank_inside_vertices": 310,
+          "tank_max_vertex_depth_m": 0.126449316740036
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 183,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6767462491989136,
+          0.6769018173217773
+        ],
+        "score": 11940.991414584778
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 222,
+          "seat": 167,
+          "pedals": 13,
+          "wheel": 0,
+          "tank_inside_vertices": 346,
+          "tank_max_vertex_depth_m": 0.12016874551773071
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 185,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6826502084732056,
+          0.6827800273895264
+        ],
+        "score": 11967.08041594159
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 244,
+          "seat": 64,
+          "pedals": 13,
+          "wheel": 0,
+          "tank_inside_vertices": 423,
+          "tank_max_vertex_depth_m": 0.10918320715427399
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6851778030395508,
+          0.6852576732635498
+        ],
+        "score": 11982.66556405723
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 228,
+          "seat": 280,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 320,
+          "tank_max_vertex_depth_m": 0.12422142177820206
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 72,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6680260896682739,
+          0.6682336330413818
+        ],
+        "score": 12096.01074359212
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 207,
+          "seat": 151,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 357,
+          "tank_max_vertex_depth_m": 0.12224812805652618
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7022452354431152,
+          0.702340841293335
+        ],
+        "score": 12115.880862535536
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 228,
+          "seat": 280,
+          "pedals": 11,
+          "wheel": 0,
+          "tank_inside_vertices": 320,
+          "tank_max_vertex_depth_m": 0.12459083646535873
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6740202903747559,
+          0.6742031574249268
+        ],
+        "score": 12148.610000014118
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 207,
+          "seat": 151,
+          "pedals": 8,
+          "wheel": 0,
+          "tank_inside_vertices": 358,
+          "tank_max_vertex_depth_m": 0.12240678817033768
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 179,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7048437595367432,
+          0.7049113512039185
+        ],
+        "score": 12149.765253429114
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 230,
+          "seat": 251,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 327,
+          "tank_max_vertex_depth_m": 0.1268637776374817
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6958019733428955,
+          0.6959476470947266
+        ],
+        "score": 12163.847846850938
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 230,
+          "seat": 251,
+          "pedals": 9,
+          "wheel": 0,
+          "tank_inside_vertices": 327,
+          "tank_max_vertex_depth_m": 0.12717431783676147
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.699738621711731,
+          0.6998602151870728
+        ],
+        "score": 12172.88007600922
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 218,
+          "seat": 243,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 324,
+          "tank_max_vertex_depth_m": 0.1269436925649643
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.670880913734436,
+          0.6711106300354004
+        ],
+        "score": 12180.88539073821
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 237,
+          "seat": 179,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 341,
+          "tank_max_vertex_depth_m": 0.12285950034856796
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 86,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6760126352310181,
+          0.6761192083358765
+        ],
+        "score": 12186.812656764872
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 215,
+          "seat": 243,
+          "pedals": 13,
+          "wheel": 0,
+          "tank_inside_vertices": 323,
+          "tank_max_vertex_depth_m": 0.12651968002319336
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 183,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6765748262405396,
+          0.6767741441726685
+        ],
+        "score": 12213.714692692272
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 222,
+          "seat": 283,
+          "pedals": 5,
+          "wheel": 0,
+          "tank_inside_vertices": 338,
+          "tank_max_vertex_depth_m": 0.12437044829130173
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6678284406661987,
+          0.6680885553359985
+        ],
+        "score": 12216.210848836228
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 219,
+          "seat": 148,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 359,
+          "tank_max_vertex_depth_m": 0.11675256490707397
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 72,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7020940780639648,
+          0.7022233009338379
+        ],
+        "score": 12225.342936873436
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 208,
+          "seat": 69,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 465,
+          "tank_max_vertex_depth_m": 0.112412229180336
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 68,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7051852941513062,
+          0.705245852470398
+        ],
+        "score": 12228.14960212335
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 230,
+          "seat": 181,
+          "pedals": 6,
+          "wheel": 0,
+          "tank_inside_vertices": 341,
+          "tank_max_vertex_depth_m": 0.12318290024995804
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 181,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6809804439544678,
+          0.6810652017593384
+        ],
+        "score": 12248.560625026003
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 219,
+          "seat": 148,
+          "pedals": 9,
+          "wheel": 0,
+          "tank_inside_vertices": 359,
+          "tank_max_vertex_depth_m": 0.11684013158082962
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7047330141067505,
+          0.704825758934021
+        ],
+        "score": 12254.370443844795
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 198,
+          "seat": 82,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 443,
+          "tank_max_vertex_depth_m": 0.11223948001861572
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 86,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7053005695343018,
+          0.705337405204773
+        ],
+        "score": 12257.4975893626
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 208,
+          "seat": 69,
+          "pedals": 2,
+          "wheel": 0,
+          "tank_inside_vertices": 465,
+          "tank_max_vertex_depth_m": 0.11254211515188217
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7067910432815552,
+          0.7068181037902832
+        ],
+        "score": 12267.818146217242
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 222,
+          "seat": 284,
+          "pedals": 19,
+          "wheel": 0,
+          "tank_inside_vertices": 340,
+          "tank_max_vertex_depth_m": 0.12382285296916962
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 183,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6738458871841431,
+          0.6740760803222656
+        ],
+        "score": 12284.613085020892
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 198,
+          "seat": 82,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 443,
+          "tank_max_vertex_depth_m": 0.1123732179403305
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 181,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7068535089492798,
+          0.7068672180175781
+        ],
+        "score": 12289.907149140538
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 241,
+          "seat": 192,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 355,
+          "tank_max_vertex_depth_m": 0.12470870465040207
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6756495237350464,
+          0.6758456230163574
+        ],
+        "score": 12294.44358532559
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 241,
+          "seat": 192,
+          "pedals": 13,
+          "wheel": 0,
+          "tank_inside_vertices": 357,
+          "tank_max_vertex_depth_m": 0.12526065111160278
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 183,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6806730031967163,
+          0.6808335781097412
+        ],
+        "score": 12375.721683385782
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 215,
+          "seat": 187,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 349,
+          "tank_max_vertex_depth_m": 0.12338732928037643
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 72,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6757919788360596,
+          0.6759482622146606
+        ],
+        "score": 12382.005193814635
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 231,
+          "seat": 73,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 453,
+          "tank_max_vertex_depth_m": 0.11834729462862015
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 72,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7050987482070923,
+          0.7051805257797241
+        ],
+        "score": 12452.421404696443
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.45,
+        "knee_pole_z": 0.65
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 212,
+          "seat": 188,
+          "pedals": 11,
+          "wheel": 0,
+          "tank_inside_vertices": 352,
+          "tank_max_vertex_depth_m": 0.12417931854724884
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 181,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6807940006256104,
+          0.6809207201004028
+        ],
+        "score": 12461.46008886844
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.1,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 233,
+          "seat": 73,
+          "pedals": 8,
+          "wheel": 0,
+          "tank_inside_vertices": 453,
+          "tank_max_vertex_depth_m": 0.11852172017097473
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7067422866821289,
+          0.706781268119812
+        ],
+        "score": 12493.956911770067
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 212,
+          "seat": 234,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 345,
+          "tank_max_vertex_depth_m": 0.12564176321029663
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6955682039260864,
+          0.695764422416687
+        ],
+        "score": 12516.35779947061
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.52,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 212,
+          "seat": 234,
+          "pedals": 11,
+          "wheel": 0,
+          "tank_inside_vertices": 347,
+          "tank_max_vertex_depth_m": 0.1258329451084137
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 187,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6995456218719482,
+          0.6997096538543701
+        ],
+        "score": 12542.643509164265
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 226,
+          "seat": 268,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 344,
+          "tank_max_vertex_depth_m": 0.12465346604585648
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6935790777206421,
+          0.6937501430511475
+        ],
+        "score": 12586.8473264331
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 226,
+          "seat": 267,
+          "pedals": 9,
+          "wheel": 0,
+          "tank_inside_vertices": 344,
+          "tank_max_vertex_depth_m": 0.12391985952854156
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.69783616065979,
+          0.6979832649230957
+        ],
+        "score": 12605.18090095911
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 222,
+          "seat": 276,
+          "pedals": 5,
+          "wheel": 0,
+          "tank_inside_vertices": 364,
+          "tank_max_vertex_depth_m": 0.12710824608802795
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.693344235420227,
+          0.6935691833496094
+        ],
+        "score": 12731.262306709401
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.02,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 222,
+          "seat": 276,
+          "pedals": 11,
+          "wheel": 0,
+          "tank_inside_vertices": 362,
+          "tank_max_vertex_depth_m": 0.12662021815776825
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 183,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.6976383924484253,
+          0.6978311538696289
+        ],
+        "score": 12745.38313649688
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 235,
+          "seat": 192,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 357,
+          "tank_max_vertex_depth_m": 0.12795041501522064
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 86,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.700911283493042,
+          0.7009880542755127
+        ],
+        "score": 12779.14706500359
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": -5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 235,
+          "seat": 192,
+          "pedals": 9,
+          "wheel": 0,
+          "tank_inside_vertices": 357,
+          "tank_max_vertex_depth_m": 0.12805546820163727
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 189,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.70384681224823,
+          0.7039046287536621
+        ],
+        "score": 12807.832693276554
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 210,
+          "seat": 185,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 363,
+          "tank_max_vertex_depth_m": 0.12510919570922852
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 72,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7006937265396118,
+          0.7008143663406372
+        ],
+        "score": 12860.264094136282
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.48,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 248,
+          "seat": 185,
+          "pedals": 0,
+          "wheel": 0,
+          "tank_inside_vertices": 373,
+          "tank_max_vertex_depth_m": 0.1287534385919571
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 70,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7005339860916138,
+          0.7006921768188477
+        ],
+        "score": 12877.179281086288
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 5,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 210,
+          "seat": 185,
+          "pedals": 9,
+          "wheel": 0,
+          "tank_inside_vertices": 362,
+          "tank_max_vertex_depth_m": 0.12476416677236557
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 181,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7036788463592529,
+          0.7037707567214966
+        ],
+        "score": 12885.164311204851
+      }
+    },
+    {
+      "params": {
+        "hip_x": 0.06,
+        "hip_z": 0.5,
+        "lean_deg": 15,
+        "ankle_x": 0.46,
+        "knee_pole_y": 0.33,
+        "knee_pole_z": 0.85
+      },
+      "metrics": {
+        "kart_driverMesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 0,
+          "wheel": 250,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "male_casualsuit04Mesh": {
+          "tank": 248,
+          "seat": 185,
+          "pedals": 9,
+          "wheel": 0,
+          "tank_inside_vertices": 372,
+          "tank_max_vertex_depth_m": 0.12851209938526154
+        },
+        "shoes05Mesh": {
+          "tank": 0,
+          "seat": 0,
+          "pedals": 185,
+          "wheel": 0,
+          "tank_inside_vertices": 0,
+          "tank_max_vertex_depth_m": 0
+        },
+        "knees_z_m": [
+          0.7035547494888306,
+          0.7036762237548828
+        ],
+        "score": 12908.098201715015
+      }
+    }
+  ]
+}

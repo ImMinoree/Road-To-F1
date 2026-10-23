@@ -1,0 +1,10 @@
+{
+  "DesertKarting": {
+    "protected_actors_matched": 22,
+    "geometry_markers_lighting_unchanged": true
+  },
+  "DesertKarting_Visual": {
+    "protected_actors_matched": 22,
+    "geometry_markers_lighting_unchanged": true
+  }
+}

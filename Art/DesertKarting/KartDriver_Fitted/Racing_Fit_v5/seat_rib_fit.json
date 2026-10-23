@@ -1,0 +1,12 @@
+[
+  {
+    "pass": 0,
+    "vertices": 33,
+    "maximum_world_lift_m": 0.007474285550415516
+  },
+  {
+    "pass": 1,
+    "vertices": 0,
+    "maximum_world_lift_m": 0
+  }
+]

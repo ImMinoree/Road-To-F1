@@ -1,0 +1,1336 @@
+{
+  "source": "D:\\Boring\\GitHub\\Road-To-F1-New\\artifacts\\desert-karting-circuit\\desert_karting.glb",
+  "sha256": "2e009effeac22c533298e4c8c2824459d629aaff7c68c761af2be03bb7caa6c4",
+  "source_units": "metres",
+  "alignment_blender": [
+    [
+      0.0,
+      1.0,
+      0.0,
+      28.0
+    ],
+    [
+      -1.0,
+      0.0,
+      0.0,
+      103.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      -0.1599999964237213
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "unreal_spawn_cm": [
+    800,
+    0,
+    31
+  ],
+  "assets": [
+    {
+      "name": "SM_DK_01_Desert_terrain_and_access_roads_asphalt",
+      "source_object": "01 Desert terrain and access roads | asphalt",
+      "materials": [
+        "asphalt"
+      ],
+      "collision": true,
+      "triangles": 572,
+      "vertices": 584
+    },
+    {
+      "name": "SM_DK_01_Desert_terrain_and_access_roads_sand",
+      "source_object": "01 Desert terrain and access roads | sand",
+      "materials": [
+        "sand"
+      ],
+      "collision": true,
+      "triangles": 16212,
+      "vertices": 24421
+    },
+    {
+      "name": "SM_DK_01_Desert_terrain_and_access_roads_white",
+      "source_object": "01 Desert terrain and access roads | white",
+      "materials": [
+        "white"
+      ],
+      "collision": true,
+      "triangles": 1116,
+      "vertices": 2232
+    },
+    {
+      "name": "SM_DK_02_Track_surface_curbs_and_runoff_asphalt",
+      "source_object": "02 Track surface curbs and runoff | asphalt",
+      "materials": [
+        "asphalt"
+      ],
+      "collision": true,
+      "triangles": 1496,
+      "vertices": 1496
+    },
+    {
+      "name": "SM_DK_02_Track_surface_curbs_and_runoff_red",
+      "source_object": "02 Track surface curbs and runoff | red",
+      "materials": [
+        "red"
+      ],
+      "collision": true,
+      "triangles": 1496,
+      "vertices": 2992
+    },
+    {
+      "name": "SM_DK_02_Track_surface_curbs_and_runoff_rubbermark",
+      "source_object": "02 Track surface curbs and runoff | rubbermark",
+      "materials": [
+        "rubbermark"
+      ],
+      "collision": true,
+      "triangles": 2040,
+      "vertices": 2104
+    },
+    {
+      "name": "SM_DK_02_Track_surface_curbs_and_runoff_runoff",
+      "source_object": "02 Track surface curbs and runoff | runoff",
+      "materials": [
+        "runoff"
+      ],
+      "collision": true,
+      "triangles": 1496,
+      "vertices": 1496
+    },
+    {
+      "name": "SM_DK_02_Track_surface_curbs_and_runoff_white",
+      "source_object": "02 Track surface curbs and runoff | white",
+      "materials": [
+        "white"
+      ],
+      "collision": true,
+      "triangles": 7480,
+      "vertices": 8976
+    },
+    {
+      "name": "SM_DK_03_Infield_lawns_and_pit_lane_asphalt",
+      "source_object": "03 Infield lawns and pit lane | asphalt",
+      "materials": [
+        "asphalt"
+      ],
+      "collision": true,
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "name": "SM_DK_03_Infield_lawns_and_pit_lane_dark",
+      "source_object": "03 Infield lawns and pit lane | dark",
+      "materials": [
+        "dark"
+      ],
+      "collision": true,
+      "triangles": 144,
+      "vertices": 288
+    },
+    {
+      "name": "SM_DK_03_Infield_lawns_and_pit_lane_grass",
+      "source_object": "03 Infield lawns and pit lane | grass",
+      "materials": [
+        "grass"
+      ],
+      "collision": true,
+      "triangles": 248,
+      "vertices": 256
+    },
+    {
+      "name": "SM_DK_03_Infield_lawns_and_pit_lane_grassdark",
+      "source_object": "03 Infield lawns and pit lane | grassdark",
+      "materials": [
+        "grassdark"
+      ],
+      "collision": true,
+      "triangles": 250,
+      "vertices": 252
+    },
+    {
+      "name": "SM_DK_03_Infield_lawns_and_pit_lane_red",
+      "source_object": "03 Infield lawns and pit lane | red",
+      "materials": [
+        "red"
+      ],
+      "collision": true,
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "name": "SM_DK_03_Infield_lawns_and_pit_lane_white",
+      "source_object": "03 Infield lawns and pit lane | white",
+      "materials": [
+        "white"
+      ],
+      "collision": true,
+      "triangles": 660,
+      "vertices": 1320
+    },
+    {
+      "name": "SM_DK_04_Safety_barriers_and_perimeter_fence_green",
+      "source_object": "04 Safety barriers and perimeter fence | green",
+      "materials": [
+        "green"
+      ],
+      "collision": true,
+      "triangles": 504,
+      "vertices": 1008
+    },
+    {
+      "name": "SM_DK_04_Safety_barriers_and_perimeter_fence_metal",
+      "source_object": "04 Safety barriers and perimeter fence | metal",
+      "materials": [
+        "metal"
+      ],
+      "collision": true,
+      "triangles": 11468,
+      "vertices": 22278
+    },
+    {
+      "name": "SM_DK_04_Safety_barriers_and_perimeter_fence_red",
+      "source_object": "04 Safety barriers and perimeter fence | red",
+      "materials": [
+        "red"
+      ],
+      "collision": true,
+      "triangles": 286416,
+      "vertices": 477360
+    },
+    {
+      "name": "SM_DK_04_Safety_barriers_and_perimeter_fence_white",
+      "source_object": "04 Safety barriers and perimeter fence | white",
+      "materials": [
+        "white"
+      ],
+      "collision": true,
+      "triangles": 281712,
+      "vertices": 469680
+    },
+    {
+      "name": "SM_DK_05_Grandstand_steps_seating_and_crowd_blue",
+      "source_object": "05 Grandstand steps seating and crowd | blue",
+      "materials": [
+        "blue"
+      ],
+      "collision": false,
+      "triangles": 9636,
+      "vertices": 19272
+    },
+    {
+      "name": "SM_DK_05_Grandstand_steps_seating_and_crowd_cream",
+      "source_object": "05 Grandstand steps seating and crowd | cream",
+      "materials": [
+        "cream"
+      ],
+      "collision": false,
+      "triangles": 1728,
+      "vertices": 3456
+    },
+    {
+      "name": "SM_DK_05_Grandstand_steps_seating_and_crowd_dark",
+      "source_object": "05 Grandstand steps seating and crowd | dark",
+      "materials": [
+        "dark"
+      ],
+      "collision": false,
+      "triangles": 30864,
+      "vertices": 55848
+    },
+    {
+      "name": "SM_DK_05_Grandstand_steps_seating_and_crowd_metal",
+      "source_object": "05 Grandstand steps seating and crowd | metal",
+      "materials": [
+        "metal"
+      ],
+      "collision": false,
+      "triangles": 280,
+      "vertices": 480
+    },
+    {
+      "name": "SM_DK_05_Grandstand_steps_seating_and_crowd_red",
+      "source_object": "05 Grandstand steps seating and crowd | red",
+      "materials": [
+        "red"
+      ],
+      "collision": false,
+      "triangles": 5328,
+      "vertices": 10656
+    },
+    {
+      "name": "SM_DK_05_Grandstand_steps_seating_and_crowd_shirt",
+      "source_object": "05 Grandstand steps seating and crowd | shirt",
+      "materials": [
+        "shirt"
+      ],
+      "collision": false,
+      "triangles": 1536,
+      "vertices": 3072
+    },
+    {
+      "name": "SM_DK_05_Grandstand_steps_seating_and_crowd_skin",
+      "source_object": "05 Grandstand steps seating and crowd | skin",
+      "materials": [
+        "skin"
+      ],
+      "collision": false,
+      "triangles": 88200,
+      "vertices": 52920
+    },
+    {
+      "name": "SM_DK_05_Grandstand_steps_seating_and_crowd_stone",
+      "source_object": "05 Grandstand steps seating and crowd | stone",
+      "materials": [
+        "stone"
+      ],
+      "collision": false,
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "name": "SM_DK_05_Grandstand_steps_seating_and_crowd_white",
+      "source_object": "05 Grandstand steps seating and crowd | white",
+      "materials": [
+        "white"
+      ],
+      "collision": false,
+      "triangles": 1648,
+      "vertices": 3216
+    },
+    {
+      "name": "SM_DK_06_Sculpted_tensile_canopy_roofs_canvas",
+      "source_object": "06 Sculpted tensile canopy roofs | canvas",
+      "materials": [
+        "canvas"
+      ],
+      "collision": false,
+      "triangles": 4000,
+      "vertices": 8000
+    },
+    {
+      "name": "SM_DK_06_Sculpted_tensile_canopy_roofs_metal",
+      "source_object": "06 Sculpted tensile canopy roofs | metal",
+      "materials": [
+        "metal"
+      ],
+      "collision": false,
+      "triangles": 280,
+      "vertices": 480
+    },
+    {
+      "name": "SM_DK_06_Sculpted_tensile_canopy_roofs_white",
+      "source_object": "06 Sculpted tensile canopy roofs | white",
+      "materials": [
+        "white"
+      ],
+      "collision": false,
+      "triangles": 140,
+      "vertices": 240
+    },
+    {
+      "name": "SM_DK_07_Arabian_pit_building_arches_towers_and_domes_amber",
+      "source_object": "07 Arabian pit building arches towers and domes | amber",
+      "materials": [
+        "amber"
+      ],
+      "collision": false,
+      "triangles": 1800,
+      "vertices": 3600
+    },
+    {
+      "name": "SM_DK_07_Arabian_pit_building_arches_towers_and_domes_cream",
+      "source_object": "07 Arabian pit building arches towers and domes | cream",
+      "materials": [
+        "cream"
+      ],
+      "collision": false,
+      "triangles": 2508,
+      "vertices": 4848
+    },
+    {
+      "name": "SM_DK_07_Arabian_pit_building_arches_towers_and_domes_dark",
+      "source_object": "07 Arabian pit building arches towers and domes | dark",
+      "materials": [
+        "dark"
+      ],
+      "collision": false,
+      "triangles": 1072,
+      "vertices": 2136
+    },
+    {
+      "name": "SM_DK_07_Arabian_pit_building_arches_towers_and_domes_lamp",
+      "source_object": "07 Arabian pit building arches towers and domes | lamp",
+      "materials": [
+        "lamp"
+      ],
+      "collision": false,
+      "triangles": 124,
+      "vertices": 192
+    },
+    {
+      "name": "SM_DK_07_Arabian_pit_building_arches_towers_and_domes_metal",
+      "source_object": "07 Arabian pit building arches towers and domes | metal",
+      "materials": [
+        "metal"
+      ],
+      "collision": false,
+      "triangles": 2100,
+      "vertices": 3672
+    },
+    {
+      "name": "SM_DK_07_Arabian_pit_building_arches_towers_and_domes_stone",
+      "source_object": "07 Arabian pit building arches towers and domes | stone",
+      "materials": [
+        "stone"
+      ],
+      "collision": false,
+      "triangles": 5976,
+      "vertices": 10272
+    },
+    {
+      "name": "SM_DK_07_Arabian_pit_building_arches_towers_and_domes_white",
+      "source_object": "07 Arabian pit building arches towers and domes | white",
+      "materials": [
+        "white"
+      ],
+      "collision": false,
+      "triangles": 124,
+      "vertices": 192
+    },
+    {
+      "name": "SM_DK_08_Parking_vehicles_blue",
+      "source_object": "08 Parking vehicles | blue",
+      "materials": [
+        "blue"
+      ],
+      "collision": false,
+      "triangles": 744,
+      "vertices": 1488
+    },
+    {
+      "name": "SM_DK_08_Parking_vehicles_dark",
+      "source_object": "08 Parking vehicles | dark",
+      "materials": [
+        "dark"
+      ],
+      "collision": false,
+      "triangles": 216,
+      "vertices": 432
+    },
+    {
+      "name": "SM_DK_08_Parking_vehicles_glass",
+      "source_object": "08 Parking vehicles | glass",
+      "materials": [
+        "glass"
+      ],
+      "collision": false,
+      "triangles": 2592,
+      "vertices": 5184
+    },
+    {
+      "name": "SM_DK_08_Parking_vehicles_metal",
+      "source_object": "08 Parking vehicles | metal",
+      "materials": [
+        "metal"
+      ],
+      "collision": false,
+      "triangles": 456,
+      "vertices": 912
+    },
+    {
+      "name": "SM_DK_08_Parking_vehicles_red",
+      "source_object": "08 Parking vehicles | red",
+      "materials": [
+        "red"
+      ],
+      "collision": false,
+      "triangles": 672,
+      "vertices": 1344
+    },
+    {
+      "name": "SM_DK_08_Parking_vehicles_rubber",
+      "source_object": "08 Parking vehicles | rubber",
+      "materials": [
+        "rubber"
+      ],
+      "collision": false,
+      "triangles": 15552,
+      "vertices": 8640
+    },
+    {
+      "name": "SM_DK_08_Parking_vehicles_white",
+      "source_object": "08 Parking vehicles | white",
+      "materials": [
+        "white"
+      ],
+      "collision": false,
+      "triangles": 3096,
+      "vertices": 6192
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_asphalt",
+      "source_object": "09 Paddock transporters tents and service equipment | asphalt",
+      "materials": [
+        "asphalt"
+      ],
+      "collision": false,
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_blue",
+      "source_object": "09 Paddock transporters tents and service equipment | blue",
+      "materials": [
+        "blue"
+      ],
+      "collision": false,
+      "triangles": 144,
+      "vertices": 288
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_canvas",
+      "source_object": "09 Paddock transporters tents and service equipment | canvas",
+      "materials": [
+        "canvas"
+      ],
+      "collision": false,
+      "triangles": 184,
+      "vertices": 384
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_cream",
+      "source_object": "09 Paddock transporters tents and service equipment | cream",
+      "materials": [
+        "cream"
+      ],
+      "collision": false,
+      "triangles": 60,
+      "vertices": 120
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_dark",
+      "source_object": "09 Paddock transporters tents and service equipment | dark",
+      "materials": [
+        "dark"
+      ],
+      "collision": false,
+      "triangles": 2352,
+      "vertices": 4296
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_glass",
+      "source_object": "09 Paddock transporters tents and service equipment | glass",
+      "materials": [
+        "glass"
+      ],
+      "collision": false,
+      "triangles": 168,
+      "vertices": 336
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_metal",
+      "source_object": "09 Paddock transporters tents and service equipment | metal",
+      "materials": [
+        "metal"
+      ],
+      "collision": false,
+      "triangles": 1288,
+      "vertices": 2352
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_red",
+      "source_object": "09 Paddock transporters tents and service equipment | red",
+      "materials": [
+        "red"
+      ],
+      "collision": false,
+      "triangles": 180,
+      "vertices": 360
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_rubber",
+      "source_object": "09 Paddock transporters tents and service equipment | rubber",
+      "materials": [
+        "rubber"
+      ],
+      "collision": false,
+      "triangles": 2016,
+      "vertices": 1120
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_shirt",
+      "source_object": "09 Paddock transporters tents and service equipment | shirt",
+      "materials": [
+        "shirt"
+      ],
+      "collision": false,
+      "triangles": 96,
+      "vertices": 192
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_skin",
+      "source_object": "09 Paddock transporters tents and service equipment | skin",
+      "materials": [
+        "skin"
+      ],
+      "collision": false,
+      "triangles": 6120,
+      "vertices": 3672
+    },
+    {
+      "name": "SM_DK_09_Paddock_transporters_tents_and_service_equipment_white",
+      "source_object": "09 Paddock transporters tents and service equipment | white",
+      "materials": [
+        "white"
+      ],
+      "collision": false,
+      "triangles": 420,
+      "vertices": 840
+    },
+    {
+      "name": "SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_blue",
+      "source_object": "10 Race karts chassis wheels engine and drivers | blue",
+      "materials": [
+        "blue"
+      ],
+      "collision": false,
+      "triangles": 2688,
+      "vertices": 5184
+    },
+    {
+      "name": "SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_dark",
+      "source_object": "10 Race karts chassis wheels engine and drivers | dark",
+      "materials": [
+        "dark"
+      ],
+      "collision": false,
+      "triangles": 4608,
+      "vertices": 8064
+    },
+    {
+      "name": "SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_glass",
+      "source_object": "10 Race karts chassis wheels engine and drivers | glass",
+      "materials": [
+        "glass"
+      ],
+      "collision": false,
+      "triangles": 576,
+      "vertices": 1152
+    },
+    {
+      "name": "SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_metal",
+      "source_object": "10 Race karts chassis wheels engine and drivers | metal",
+      "materials": [
+        "metal"
+      ],
+      "collision": false,
+      "triangles": 10752,
+      "vertices": 18432
+    },
+    {
+      "name": "SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_red",
+      "source_object": "10 Race karts chassis wheels engine and drivers | red",
+      "materials": [
+        "red"
+      ],
+      "collision": false,
+      "triangles": 2688,
+      "vertices": 5184
+    },
+    {
+      "name": "SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_rubber",
+      "source_object": "10 Race karts chassis wheels engine and drivers | rubber",
+      "materials": [
+        "rubber"
+      ],
+      "collision": false,
+      "triangles": 8448,
+      "vertices": 4608
+    },
+    {
+      "name": "SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_white",
+      "source_object": "10 Race karts chassis wheels engine and drivers | white",
+      "materials": [
+        "white"
+      ],
+      "collision": false,
+      "triangles": 11904,
+      "vertices": 23616
+    },
+    {
+      "name": "SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_yellow",
+      "source_object": "10 Race karts chassis wheels engine and drivers | yellow",
+      "materials": [
+        "yellow"
+      ],
+      "collision": false,
+      "triangles": 3264,
+      "vertices": 6336
+    },
+    {
+      "name": "SM_DK_11_Floodlight_poles_and_lamp_arrays_lamp",
+      "source_object": "11 Floodlight poles and lamp arrays | lamp",
+      "materials": [
+        "lamp"
+      ],
+      "collision": false,
+      "triangles": 1296,
+      "vertices": 2592
+    },
+    {
+      "name": "SM_DK_11_Floodlight_poles_and_lamp_arrays_metal",
+      "source_object": "11 Floodlight poles and lamp arrays | metal",
+      "materials": [
+        "metal"
+      ],
+      "collision": false,
+      "triangles": 2592,
+      "vertices": 4752
+    },
+    {
+      "name": "SM_DK_11_Floodlight_poles_and_lamp_arrays_stone",
+      "source_object": "11 Floodlight poles and lamp arrays | stone",
+      "materials": [
+        "stone"
+      ],
+      "collision": false,
+      "triangles": 216,
+      "vertices": 432
+    },
+    {
+      "name": "SM_DK_12_Palms_shrubs_rocks_and_landscaping_leaf",
+      "source_object": "12 Palms shrubs rocks and landscaping | leaf",
+      "materials": [
+        "leaf"
+      ],
+      "collision": false,
+      "triangles": 86100,
+      "vertices": 59314
+    },
+    {
+      "name": "SM_DK_12_Palms_shrubs_rocks_and_landscaping_sandlight",
+      "source_object": "12 Palms shrubs rocks and landscaping | sandlight",
+      "materials": [
+        "sandlight"
+      ],
+      "collision": false,
+      "triangles": 20664,
+      "vertices": 41328
+    },
+    {
+      "name": "SM_DK_12_Palms_shrubs_rocks_and_landscaping_trunk",
+      "source_object": "12 Palms shrubs rocks and landscaping | trunk",
+      "materials": [
+        "trunk"
+      ],
+      "collision": false,
+      "triangles": 10592,
+      "vertices": 5354
+    },
+    {
+      "name": "SM_DK_13_Distant_illuminated_secondary_circuit_asphalt",
+      "source_object": "13 Distant illuminated secondary circuit | asphalt",
+      "materials": [
+        "asphalt"
+      ],
+      "collision": false,
+      "triangles": 690,
+      "vertices": 690
+    },
+    {
+      "name": "SM_DK_13_Distant_illuminated_secondary_circuit_canvas",
+      "source_object": "13 Distant illuminated secondary circuit | canvas",
+      "materials": [
+        "canvas"
+      ],
+      "collision": false,
+      "triangles": 72,
+      "vertices": 144
+    },
+    {
+      "name": "SM_DK_13_Distant_illuminated_secondary_circuit_cream",
+      "source_object": "13 Distant illuminated secondary circuit | cream",
+      "materials": [
+        "cream"
+      ],
+      "collision": false,
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "name": "SM_DK_13_Distant_illuminated_secondary_circuit_lamp",
+      "source_object": "13 Distant illuminated secondary circuit | lamp",
+      "materials": [
+        "lamp"
+      ],
+      "collision": false,
+      "triangles": 384,
+      "vertices": 768
+    },
+    {
+      "name": "SM_DK_13_Distant_illuminated_secondary_circuit_metal",
+      "source_object": "13 Distant illuminated secondary circuit | metal",
+      "materials": [
+        "metal"
+      ],
+      "collision": false,
+      "triangles": 448,
+      "vertices": 768
+    },
+    {
+      "name": "SM_DK_13_Distant_illuminated_secondary_circuit_red",
+      "source_object": "13 Distant illuminated secondary circuit | red",
+      "materials": [
+        "red"
+      ],
+      "collision": false,
+      "triangles": 688,
+      "vertices": 1376
+    },
+    {
+      "name": "SM_DK_13_Distant_illuminated_secondary_circuit_runoff",
+      "source_object": "13 Distant illuminated secondary circuit | runoff",
+      "materials": [
+        "runoff"
+      ],
+      "collision": false,
+      "triangles": 690,
+      "vertices": 690
+    },
+    {
+      "name": "SM_DK_13_Distant_illuminated_secondary_circuit_stone",
+      "source_object": "13 Distant illuminated secondary circuit | stone",
+      "materials": [
+        "stone"
+      ],
+      "collision": false,
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "name": "SM_DK_13_Distant_illuminated_secondary_circuit_white",
+      "source_object": "13 Distant illuminated secondary circuit | white",
+      "materials": [
+        "white"
+      ],
+      "collision": false,
+      "triangles": 1028,
+      "vertices": 1960
+    },
+    {
+      "name": "SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber",
+      "source_object": "14 Timing gantry signs and pit furniture | amber",
+      "materials": [
+        "amber"
+      ],
+      "collision": false,
+      "triangles": 600,
+      "vertices": 1200
+    },
+    {
+      "name": "SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark",
+      "source_object": "14 Timing gantry signs and pit furniture | dark",
+      "materials": [
+        "dark"
+      ],
+      "collision": false,
+      "triangles": 12,
+      "vertices": 24
+    },
+    {
+      "name": "SM_DK_14_Timing_gantry_signs_and_pit_furniture_glass",
+      "source_object": "14 Timing gantry signs and pit furniture | glass",
+      "materials": [
+        "glass"
+      ],
+      "collision": false,
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "name": "SM_DK_14_Timing_gantry_signs_and_pit_furniture_green",
+      "source_object": "14 Timing gantry signs and pit furniture | green",
+      "materials": [
+        "green"
+      ],
+      "collision": false,
+      "triangles": 36,
+      "vertices": 72
+    },
+    {
+      "name": "SM_DK_14_Timing_gantry_signs_and_pit_furniture_metal",
+      "source_object": "14 Timing gantry signs and pit furniture | metal",
+      "materials": [
+        "metal"
+      ],
+      "collision": false,
+      "triangles": 420,
+      "vertices": 720
+    },
+    {
+      "name": "SM_DK_14_Timing_gantry_signs_and_pit_furniture_red",
+      "source_object": "14 Timing gantry signs and pit furniture | red",
+      "materials": [
+        "red"
+      ],
+      "collision": false,
+      "triangles": 156,
+      "vertices": 312
+    },
+    {
+      "name": "SM_DK_14_Timing_gantry_signs_and_pit_furniture_white",
+      "source_object": "14 Timing gantry signs and pit furniture | white",
+      "materials": [
+        "white"
+      ],
+      "collision": false,
+      "triangles": 204,
+      "vertices": 408
+    },
+    {
+      "name": "SM_DK_DESERT_KARTING",
+      "source_object": "DESERT KARTING",
+      "materials": [
+        "white"
+      ],
+      "collision": false,
+      "triangles": 2132,
+      "vertices": 2202
+    }
+  ],
+  "materials": {
+    "amber": {
+      "base": [
+        1.0,
+        0.25999999046325684,
+        0.03500000014901161,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        0.25999999046325684,
+        0.03500000014901161,
+        1.0
+      ],
+      "emission_strength": 5.0
+    },
+    "asphalt": {
+      "base": [
+        0.06499999761581421,
+        0.07100000232458115,
+        0.07800000160932541,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "blue": {
+      "base": [
+        0.014999999664723873,
+        0.0949999988079071,
+        0.3199999928474426,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "canvas": {
+      "base": [
+        0.8500000238418579,
+        0.8199999928474426,
+        0.699999988079071,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "cream": {
+      "base": [
+        0.7900000214576721,
+        0.6299999952316284,
+        0.38999998569488525,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "dark": {
+      "base": [
+        0.03999999910593033,
+        0.04500000178813934,
+        0.05000000074505806,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "glass": {
+      "base": [
+        0.04500000178813934,
+        0.10000000149011612,
+        0.14000000059604645,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "grass": {
+      "base": [
+        0.1899999976158142,
+        0.25,
+        0.06499999761581421,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "grassdark": {
+      "base": [
+        0.10000000149011612,
+        0.15000000596046448,
+        0.04500000178813934,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "green": {
+      "base": [
+        0.02500000037252903,
+        0.30000001192092896,
+        0.1899999976158142,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "lamp": {
+      "base": [
+        1.0,
+        0.800000011920929,
+        0.4300000071525574,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        0.800000011920929,
+        0.4300000071525574,
+        1.0
+      ],
+      "emission_strength": 12.0
+    },
+    "leaf": {
+      "base": [
+        0.11999999731779099,
+        0.20000000298023224,
+        0.06499999761581421,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "metal": {
+      "base": [
+        0.23999999463558197,
+        0.27000001072883606,
+        0.28999999165534973,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.6499999761581421,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "red": {
+      "base": [
+        0.6299999952316284,
+        0.02500000037252903,
+        0.02199999988079071,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "rubber": {
+      "base": [
+        0.017999999225139618,
+        0.020999999716877937,
+        0.02500000037252903,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "rubbermark": {
+      "base": [
+        0.03799999877810478,
+        0.041999999433755875,
+        0.04399999976158142,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "runoff": {
+      "base": [
+        0.04500000178813934,
+        0.47999998927116394,
+        0.33000001311302185,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "sand": {
+      "base": [
+        0.3400000035762787,
+        0.23000000417232513,
+        0.14000000059604645,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "sandlight": {
+      "base": [
+        0.5099999904632568,
+        0.36000001430511475,
+        0.2199999988079071,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "shirt": {
+      "base": [
+        0.1599999964237213,
+        0.2199999988079071,
+        0.30000001192092896,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "skin": {
+      "base": [
+        0.47999998927116394,
+        0.2800000011920929,
+        0.15000000596046448,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "stone": {
+      "base": [
+        0.6000000238418579,
+        0.4300000071525574,
+        0.23999999463558197,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "trunk": {
+      "base": [
+        0.25,
+        0.14000000059604645,
+        0.07000000029802322,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "white": {
+      "base": [
+        0.8299999833106995,
+        0.8199999928474426,
+        0.7200000286102295,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    },
+    "yellow": {
+      "base": [
+        0.9200000166893005,
+        0.5400000214576721,
+        0.03500000014901161,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0,
+      "emission": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "emission_strength": 0.0
+    }
+  },
+  "source_texture_count": 0
+}

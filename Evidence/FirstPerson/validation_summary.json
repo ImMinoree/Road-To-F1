@@ -1,0 +1,16 @@
+{
+  "engine": "Unreal Engine 5.8.3",
+  "editor_build": "passed (build_fp9058.log)",
+  "asset_import_and_material_save": "passed (import_finish.log, import.json)",
+  "automation": "RoadToF1.PlayerVisuals.OwnershipAndSteering: Success",
+  "automated_ownership_cases": ["two local ULocalPlayer controllers", "remote controller excluded", "AI/unpossessed excluded", "OnlyOwnerSee ownership chains", "third-person OwnerNoSee restoration", "no visual collision or replication"],
+  "steering_import_check": "five compressed animation samples, both hand bones within 0.5 cm of Blender source",
+  "blender_mesh_check": "49 poses, 42128 hand-weighted vertices, closest rim clearance 0.000787868 m, no tested vertex penetration",
+  "geometry_check_limit": "Analytic rim torus and evaluated vertex checks, not full triangle collision detection",
+  "actual_runtime_images_reviewed": ["ue_center.png", "ue_left.png", "ue_right.png"],
+  "art_quality": "Improved V5-derived first-person placeholder; not production photorealistic gloves",
+  "full_body_runtime_limit": "Prototype pawn has no existing full-body skeletal renderer. Static world/AI visuals and source full-body Blender file are unchanged. Optional same-pawn third-person renderer hook is supplied.",
+  "network_limit": "Ownership filtering tested locally; no live two-machine/listen-server multiplayer session run",
+  "packaging_limit": "Cooking label supplied; packaged-build cook not run",
+  "preserved_v5_sha256": "09fe224ec22f6656154a2ab42a47a1b220db13933245fc7b86df925c88438bb6"
+}

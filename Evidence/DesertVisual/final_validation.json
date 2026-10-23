@@ -1,0 +1,118 @@
+{
+  "map": "/Game/RoadToF1/Maps/DesertKarting_Visual",
+  "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_BeforeVisual",
+  "engine": "5.8.3",
+  "all_four_priorities_implemented": true,
+  "lighting_unchanged": true,
+  "collision_unchanged": true,
+  "road_rays_passed_each_map": 15,
+  "zero_visible_karts_editor": true,
+  "standalone_preview_spawn": "SpectatorPawn only",
+  "protected_files_verified": 126,
+  "protected_file_failures": [],
+  "source_glb_unchanged": true,
+  "hardware": "RTX 3080 / Intel i7-10700KF",
+  "output_resolution": [
+    1920,
+    1080
+  ],
+  "screen_percentage": 75,
+  "profile": "High scalability 2 (same view distance, AA, shadows, GI, reflections, textures); VSync/frame cap off",
+  "performance": {
+    "Baseline": {
+      "fps": 180.12,
+      "average_ms": 5.552,
+      "sample_seconds": 10.0046,
+      "position_cm": [
+        3657.79,
+        -32.1,
+        31.0
+      ],
+      "csv_warm_tail_frames": 200,
+      "csv_frame_cpu_draws": {
+        "FrameTime": 5.5424,
+        "RenderThreadTime": 5.5361,
+        "GameThreadTime": 1.5008,
+        "GPUTime": 4.9859,
+        "RenderThreadTime_CriticalPath": 5.5361,
+        "GameThreadTime_CriticalPath": 1.5008,
+        "DrawCall/Basepass": 46.75,
+        "DrawCall/ShadowDepths": 374.655,
+        "RHI/DrawCalls": 544.925
+      },
+      "gpu_largest_scopes_ms": {
+        "GPU/ShadowDepths": 1.9798,
+        "GPU/TemporalSuperResolution": 0.6152,
+        "GPU/Unaccounted": 0.5226,
+        "GPU/DistanceFieldShadows": 0.2357,
+        "GPU/RenderDeferredLighting": 0.2021,
+        "GPU/Basepass": 0.1881,
+        "GPU/Postprocessing": 0.1614,
+        "GPU/Prepass": 0.124,
+        "GPU/Lights": 0.1156,
+        "GPU/LumenSceneUpdate": 0.0888
+      },
+      "csv_scope": "Last 200 warm frames of boot CSV, earlier than final 10-second FPS sample; nested GPU scopes overlap and must not be summed."
+    },
+    "Visual": {
+      "fps": 177.39,
+      "average_ms": 5.637,
+      "sample_seconds": 10.0064,
+      "position_cm": [
+        4245.75,
+        88.54,
+        31.0
+      ],
+      "csv_warm_tail_frames": 200,
+      "csv_frame_cpu_draws": {
+        "FrameTime": 5.867,
+        "RenderThreadTime": 5.8606,
+        "GameThreadTime": 1.4857,
+        "GPUTime": 5.2668,
+        "RenderThreadTime_CriticalPath": 5.8606,
+        "GameThreadTime_CriticalPath": 1.4857,
+        "DrawCall/Basepass": 66.44,
+        "DrawCall/ShadowDepths": 464.295,
+        "RHI/DrawCalls": 670.51
+      },
+      "gpu_largest_scopes_ms": {
+        "GPU/ShadowDepths": 2.0774,
+        "GPU/TemporalSuperResolution": 0.6146,
+        "GPU/Unaccounted": 0.5326,
+        "GPU/Basepass": 0.2806,
+        "GPU/DistanceFieldShadows": 0.2369,
+        "GPU/RenderDeferredLighting": 0.1998,
+        "GPU/Prepass": 0.1645,
+        "GPU/Postprocessing": 0.1622,
+        "GPU/Lights": 0.1183,
+        "GPU/LumenSceneUpdate": 0.09
+      },
+      "csv_scope": "Last 200 warm frames of boot CSV, earlier than final 10-second FPS sample; nested GPU scopes overlap and must not be summed."
+    }
+  },
+  "frame_time_change_percent": 1.53,
+  "benchmark_limit": "20-second temporary-pawn standalone driving test, final 10 seconds sampled; no full-lap or 20-kart test. Existing raw scope string says co-running editor but these runs were solo. CSV boot profiling can change initial movement due to load stalls.",
+  "mesh_assets": 25,
+  "instanced_detail_count": 1417,
+  "instance_types": 15,
+  "remaining_placeholders": [
+    "Source spectators retain simple bodies/heads; new seat backs and cap variety improve distance presentation",
+    "Source palms/shrubs and parked road cars retain original silhouettes",
+    "Garage shutters have modeled relief; no new garage interiors",
+    "Perimeter fence retains original wire spacing"
+  ],
+  "render_review": {
+    "Track": "Aggregate grain and roughness visibly replace the plain surface; continuous rubber lines read in aerial view.",
+    "Pit": "Shutter relief, trim, handles, sandstone joints and corrected readable text are visible at driver height.",
+    "Barriers": "Rounded covers, feet, reflectors and handles replace flat green/white blocks; material wear remains stylized.",
+    "Stands": "Bucket backs and cap variants add detail; spectator anatomy remains visibly primitive up close.",
+    "Aerial": "Layout preserved; ground backface artifact corrected; no karts/drivers visible. Large infield still has simple flat geometry."
+  },
+  "screenshots": [
+    "Visual/Track.png",
+    "Visual/Pit.png",
+    "Visual/Barriers.png",
+    "Visual/Stands.png",
+    "Visual/Aerial.png"
+  ]
+}

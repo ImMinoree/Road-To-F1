@@ -1,0 +1,1060 @@
+{
+  "steering_samples": [
+    {
+      "frame": 1,
+      "angle": -25,
+      "rotation_actual_deg": -25.00000012650595,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.19878163933753967,
+            0.6128231287002563
+          ],
+          "target": [
+            0.47999992966651917,
+            0.1987818330526352,
+            0.6128232479095459
+          ],
+          "target_error_m": 2.568019619526578e-07,
+          "elbow_flex_deg": 27.830925820959607,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004536994267255068
+        },
+        "r": {
+          "wrist": [
+            0.48000019788742065,
+            -0.194555401802063,
+            0.7962397933006287
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.19455568492412567,
+            0.7962397336959839
+          ],
+          "target_error_m": 3.0282737959774696e-07,
+          "elbow_flex_deg": 64.33175727383123,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818144254386425
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.7600418839025522e-07
+    },
+    {
+      "frame": 3,
+      "angle": -23,
+      "rotation_actual_deg": -22.999999501668448,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.47999972105026245,
+            0.20170295238494873,
+            0.6198137998580933
+          ],
+          "target": [
+            0.47999992966651917,
+            0.20170316100120544,
+            0.6198137402534485
+          ],
+          "target_error_m": 3.009887021291875e-07,
+          "elbow_flex_deg": 29.474337637156367,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537020809948444
+        },
+        "r": {
+          "wrist": [
+            0.48000019788742065,
+            -0.1977955400943756,
+            0.7893912196159363
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.19779589772224426,
+            0.7893911600112915
+          ],
+          "target_error_m": 3.7342202920143806e-07,
+          "elbow_flex_deg": 63.15121371730788,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004817948676645756
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1672749744849895e-07
+    },
+    {
+      "frame": 5,
+      "angle": -21,
+      "rotation_actual_deg": -21.00000058437824,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.47999972105026245,
+            0.20437847077846527,
+            0.6269017457962036
+          ],
+          "target": [
+            0.47999992966651917,
+            0.20437873899936676,
+            0.6269019246101379
+          ],
+          "target_error_m": 3.839760639287569e-07,
+          "elbow_flex_deg": 31.033260013320074,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537215922027826
+        },
+        "r": {
+          "wrist": [
+            0.48000019788742065,
+            -0.20079481601715088,
+            0.7824336886405945
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.20079509913921356,
+            0.7824336886405945
+          ],
+          "target_error_m": 2.9690353341655844e-07,
+          "elbow_flex_deg": 61.88978706063324,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818112589418888
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1141576111993743e-07
+    },
+    {
+      "frame": 7,
+      "angle": -19,
+      "rotation_actual_deg": -18.999999959540737,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.47999972105026245,
+            0.206805020570755,
+            0.6340790390968323
+          ],
+          "target": [
+            0.47999992966651917,
+            0.20680533349514008,
+            0.6340791583061218
+          ],
+          "target_error_m": 3.945291726253547e-07,
+          "elbow_flex_deg": 32.51646291234502,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004536916967481375
+        },
+        "r": {
+          "wrist": [
+            0.48000019788742065,
+            -0.2035493552684784,
+            0.7753759026527405
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.20354968309402466,
+            0.7753758430480957
+          ],
+          "target_error_m": 3.449868232843347e-07,
+          "elbow_flex_deg": 60.54555119046138,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818079527467489
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.007922887958813e-07
+    },
+    {
+      "frame": 9,
+      "angle": -17,
+      "rotation_actual_deg": -16.999999334703237,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.2089797705411911,
+            0.6413366198539734
+          ],
+          "target": [
+            0.47999992966651917,
+            0.20897996425628662,
+            0.6413367390632629
+          ],
+          "target_error_m": 2.568019619526578e-07,
+          "elbow_flex_deg": 33.93038037242937,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537130240350962
+        },
+        "r": {
+          "wrist": [
+            0.48000019788742065,
+            -0.20605593919754028,
+            0.7682262063026428
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.20605626702308655,
+            0.7682262063026428
+          ],
+          "target_error_m": 3.397987559733206e-07,
+          "elbow_flex_deg": 59.11612920096111,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.0048177954740822315
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.9725113148405526e-07
+    },
+    {
+      "frame": 11,
+      "angle": -15,
+      "rotation_actual_deg": -15.000000417413029,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.21089978516101837,
+            0.6486656069755554
+          ],
+          "target": [
+            0.47999992966651917,
+            0.2108999639749527,
+            0.6486657857894897
+          ],
+          "target_error_m": 2.7957056521316944e-07,
+          "elbow_flex_deg": 35.27980718637045,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537035245448351
+        },
+        "r": {
+          "wrist": [
+            0.4800001084804535,
+            -0.20831148326396942,
+            0.7609933018684387
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.2083117961883545,
+            0.7609933614730835
+          ],
+          "target_error_m": 3.185504425530426e-07,
+          "elbow_flex_deg": 57.59858411078933,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818066954612732
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1318633991462832e-07
+    },
+    {
+      "frame": 13,
+      "angle": -12,
+      "rotation_actual_deg": -12.000000333930423,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.21329738199710846,
+            0.6597735285758972
+          ],
+          "target": [
+            0.47999992966651917,
+            0.21329757571220398,
+            0.6597737669944763
+          ],
+          "target_error_m": 3.29514509253144e-07,
+          "elbow_flex_deg": 37.1907848331133,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537111613899469
+        },
+        "r": {
+          "wrist": [
+            0.48000016808509827,
+            -0.21121811866760254,
+            0.7500074505805969
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21121846139431,
+            0.7500075697898865
+          ],
+          "target_error_m": 3.677297436968406e-07,
+          "elbow_flex_deg": 55.148909444207575,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818068817257881
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.061040249023982e-07
+    },
+    {
+      "frame": 15,
+      "angle": -10,
+      "rotation_actual_deg": -9.99999970909292,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.21457131206989288,
+            0.6672422289848328
+          ],
+          "target": [
+            0.47999992966651917,
+            0.2145715057849884,
+            0.6672422885894775
+          ],
+          "target_error_m": 2.3513635751693695e-07,
+          "elbow_flex_deg": 38.39340356103412,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.00453701289370656
+        },
+        "r": {
+          "wrist": [
+            0.48000019788742065,
+            -0.21283464133739471,
+            0.7426056265830994
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21283502876758575,
+            0.7426056861877441
+          ],
+          "target_error_m": 4.020553101072324e-07,
+          "elbow_flex_deg": 53.3932776199475,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818040411919355
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2203923388808278e-07
+    },
+    {
+      "frame": 17,
+      "angle": -8,
+      "rotation_actual_deg": -7.999999938029066,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799997806549072,
+            0.21558383107185364,
+            0.6747505068778992
+          ],
+          "target": [
+            0.47999992966651917,
+            0.21558402478694916,
+            0.6747506856918335
+          ],
+          "target_error_m": 3.0282737959774696e-07,
+          "elbow_flex_deg": 39.540779718947874,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537035711109638
+        },
+        "r": {
+          "wrist": [
+            0.48000019788742065,
+            -0.21419194340705872,
+            0.7351518273353577
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21419228613376617,
+            0.7351518869400024
+          ],
+          "target_error_m": 3.591767189858541e-07,
+          "elbow_flex_deg": 51.53241990133421,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818005487322807
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1141576111993743e-07
+    },
+    {
+      "frame": 19,
+      "angle": -6,
+      "rotation_actual_deg": -6.000000166965211,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.47999972105026245,
+            0.21633370220661163,
+            0.6822896599769592
+          ],
+          "target": [
+            0.47999992966651917,
+            0.21633389592170715,
+            0.6822897791862488
+          ],
+          "target_error_m": 3.086375471533534e-07,
+          "elbow_flex_deg": 40.63445692960701,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537089262157679
+        },
+        "r": {
+          "wrist": [
+            0.4800001084804535,
+            -0.21528823673725128,
+            0.7276552319526672
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21528860926628113,
+            0.7276552319526672
+          ],
+          "target_error_m": 3.725290298461914e-07,
+          "elbow_flex_deg": 49.558522551957196,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818061366677284
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1495691865380806e-07
+    },
+    {
+      "frame": 21,
+      "angle": -4,
+      "rotation_actual_deg": -3.999999969014533,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998998641968,
+            0.21682004630565643,
+            0.6898505091667175
+          ],
+          "target": [
+            0.47999992966651917,
+            0.21682019531726837,
+            0.6898505687713623
+          ],
+          "target_error_m": 1.6323404237781945e-07,
+          "elbow_flex_deg": 41.67520017419852,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537004046142101
+        },
+        "r": {
+          "wrist": [
+            0.48000019788742065,
+            -0.21612226963043213,
+            0.7201249003410339
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21612262725830078,
+            0.7201249599456787
+          ],
+          "target_error_m": 3.7342202920143806e-07,
+          "elbow_flex_deg": 47.46157251449324,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818066023290157
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.096451823807577e-07
+    },
+    {
+      "frame": 23,
+      "angle": -2,
+      "rotation_actual_deg": -1.9999999845072665,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799997806549072,
+            0.21704213321208954,
+            0.69742351770401
+          ],
+          "target": [
+            0.47999992966651917,
+            0.21704231202602386,
+            0.6974236369132996
+          ],
+          "target_error_m": 2.6151431761360534e-07,
+          "elbow_flex_deg": 42.66361050936942,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537106025964022
+        },
+        "r": {
+          "wrist": [
+            0.48000016808509827,
+            -0.2166929543018341,
+            0.7125701308250427
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21669331192970276,
+            0.7125701308250427
+          ],
+          "target_error_m": 3.625608998714816e-07,
+          "elbow_flex_deg": 45.22863341065434,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818015266209841
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2380981273828482e-07
+    },
+    {
+      "frame": 25,
+      "angle": 0,
+      "rotation_actual_deg": 0.0,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.21699975430965424,
+            0.7049998641014099
+          ],
+          "target": [
+            0.47999992966651917,
+            0.21700000762939453,
+            0.7049998641014099
+          ],
+          "target_error_m": 2.79967400849699e-07,
+          "elbow_flex_deg": 43.599865520038094,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004536869935691357
+        },
+        "r": {
+          "wrist": [
+            0.4800001084804535,
+            -0.2169996201992035,
+            0.7049998641014099
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21699999272823334,
+            0.7049999833106995
+          ],
+          "target_error_m": 3.911377414586153e-07,
+          "elbow_flex_deg": 42.84287565432558,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.0048181163147091866
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.3620386491174372e-07
+    },
+    {
+      "frame": 27,
+      "angle": 2,
+      "rotation_actual_deg": 1.9999999845072665,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.21669305860996246,
+            0.7125700116157532
+          ],
+          "target": [
+            0.47999992966651917,
+            0.21669332683086395,
+            0.7125700116157532
+          ],
+          "target_error_m": 2.9351883535969567e-07,
+          "elbow_flex_deg": 45.935790216182454,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.0045370967127382755
+        },
+        "r": {
+          "wrist": [
+            0.4800001084804535,
+            -0.2170420140028,
+            0.6974238753318787
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21704229712486267,
+            0.6974237561225891
+          ],
+          "target_error_m": 3.0719530773294425e-07,
+          "elbow_flex_deg": 41.8781524151963,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818148910999298
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.1141576111993743e-07
+    },
+    {
+      "frame": 29,
+      "angle": 4,
+      "rotation_actual_deg": 3.999999969014533,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.21612237393856049,
+            0.7201247811317444
+          ],
+          "target": [
+            0.47999992966651917,
+            0.21612264215946198,
+            0.7201248407363892
+          ],
+          "target_error_m": 2.9950963321688443e-07,
+          "elbow_flex_deg": 48.12589037354704,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537039902061224
+        },
+        "r": {
+          "wrist": [
+            0.48000001907348633,
+            -0.2168198525905609,
+            0.6898509860038757
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21682018041610718,
+            0.6898506879806519
+          ],
+          "target_error_m": 4.519745972187251e-07,
+          "elbow_flex_deg": 40.85874668157189,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.00481814332306385
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.8308650256981807e-07
+    },
+    {
+      "frame": 31,
+      "angle": 6,
+      "rotation_actual_deg": 6.000000166965211,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.21528837084770203,
+            0.7276551127433777
+          ],
+          "target": [
+            0.47999992966651917,
+            0.21528863906860352,
+            0.7276551127433777
+          ],
+          "target_error_m": 2.9351883535969567e-07,
+          "elbow_flex_deg": 50.185561238521046,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537086933851242
+        },
+        "r": {
+          "wrist": [
+            0.48000001907348633,
+            -0.2163335531949997,
+            0.6822901368141174
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21633389592170715,
+            0.6822898983955383
+          ],
+          "target_error_m": 4.2696442550106056e-07,
+          "elbow_flex_deg": 39.783893472265305,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.00481822295114398
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.9016881691591436e-07
+    },
+    {
+      "frame": 33,
+      "angle": 8,
+      "rotation_actual_deg": 7.999999938029066,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.21419207751750946,
+            0.7351515889167786
+          ],
+          "target": [
+            0.47999992966651917,
+            0.21419231593608856,
+            0.7351517677307129
+          ],
+          "target_error_m": 3.2098083538618706e-07,
+          "elbow_flex_deg": 52.12659171761196,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537025932222605
+        },
+        "r": {
+          "wrist": [
+            0.48000001907348633,
+            -0.2155836820602417,
+            0.6747509837150574
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21558402478694916,
+            0.674750804901123
+          ],
+          "target_error_m": 3.967740224508747e-07,
+          "elbow_flex_deg": 38.65308735327801,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818054381757975
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.7511889915944323e-07
+    },
+    {
+      "frame": 35,
+      "angle": 10,
+      "rotation_actual_deg": 9.99999970909292,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.21283483505249023,
+            0.7426053881645203
+          ],
+          "target": [
+            0.47999992966651917,
+            0.21283507347106934,
+            0.7426055669784546
+          ],
+          "target_error_m": 3.2098083538618706e-07,
+          "elbow_flex_deg": 53.95818890582092,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537016153335571
+        },
+        "r": {
+          "wrist": [
+            0.4800001084804535,
+            -0.21457123756408691,
+            0.6672423481941223
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.2145715206861496,
+            0.6672424077987671
+          ],
+          "target_error_m": 2.893282151065409e-07,
+          "elbow_flex_deg": 37.46475738110084,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818175919353962
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.67151295971113e-07
+    },
+    {
+      "frame": 37,
+      "angle": 13,
+      "rotation_actual_deg": 12.999999792575526,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.21031329035758972,
+            0.7536860108375549
+          ],
+          "target": [
+            0.47999992966651917,
+            0.2103135883808136,
+            0.7536860704421997
+          ],
+          "target_error_m": 3.264680847556389e-07,
+          "elbow_flex_deg": 56.516026448099,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004536892287433147
+        },
+        "r": {
+          "wrist": [
+            0.48000001907348633,
+            -0.21256276965141296,
+            0.6560575366020203
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.21256305277347565,
+            0.6560574769973755
+          ],
+          "target_error_m": 3.0282737959774696e-07,
+          "elbow_flex_deg": 35.57033611290612,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818249959498644
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 1.6440848649157402e-07
+    },
+    {
+      "frame": 39,
+      "angle": 15,
+      "rotation_actual_deg": 15.000000417413029,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799997806549072,
+            0.2083115577697754,
+            0.7609931826591492
+          ],
+          "target": [
+            0.47999992966651917,
+            0.20831184089183807,
+            0.760993242263794
+          ],
+          "target_error_m": 3.2544627290728025e-07,
+          "elbow_flex_deg": 58.10289795834639,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004537080880254507
+        },
+        "r": {
+          "wrist": [
+            0.47999998927116394,
+            -0.21089966595172882,
+            0.6486658453941345
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.2108999788761139,
+            0.6486659049987793
+          ],
+          "target_error_m": 3.40125328615705e-07,
+          "elbow_flex_deg": 34.22885963915891,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818301647901535
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.0946007600608496e-07
+    },
+    {
+      "frame": 41,
+      "angle": 17,
+      "rotation_actual_deg": 16.999997627155945,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.20605607330799103,
+            0.7682259678840637
+          ],
+          "target": [
+            0.47999992966651917,
+            0.20605632662773132,
+            0.7682260870933533
+          ],
+          "target_error_m": 3.042903223136386e-07,
+          "elbow_flex_deg": 59.600089084791534,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.0045369649305939674
+        },
+        "r": {
+          "wrist": [
+            0.48000001907348633,
+            -0.2089797407388687,
+            0.6413370966911316
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.208979994058609,
+            0.6413368582725525
+          ],
+          "target_error_m": 3.591767189858541e-07,
+          "elbow_flex_deg": 32.820338028518904,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818342160433531
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.176127868458444e-07
+    },
+    {
+      "frame": 43,
+      "angle": 19,
+      "rotation_actual_deg": 18.999999959540737,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.20354947447776794,
+            0.7753757834434509
+          ],
+          "target": [
+            0.47999992966651917,
+            0.20354972779750824,
+            0.7753757834434509
+          ],
+          "target_error_m": 2.79967400849699e-07,
+          "elbow_flex_deg": 61.01106956353277,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004536939784884453
+        },
+        "r": {
+          "wrist": [
+            0.48000001907348633,
+            -0.20680499076843262,
+            0.6340795159339905
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.20680534839630127,
+            0.6340793371200562
+          ],
+          "target_error_m": 4.097141946812725e-07,
+          "elbow_flex_deg": 31.339716941000205,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818148910999298
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2079654532491944e-07
+    },
+    {
+      "frame": 45,
+      "angle": 21,
+      "rotation_actual_deg": 21.00000058437824,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.20079492032527924,
+            0.7824334502220154
+          ],
+          "target": [
+            0.47999992966651917,
+            0.20079515874385834,
+            0.7824335694313049
+          ],
+          "target_error_m": 2.9200193199910854e-07,
+          "elbow_flex_deg": 62.33842120607636,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004536977969110012
+        },
+        "r": {
+          "wrist": [
+            0.48000001907348633,
+            -0.20437854528427124,
+            0.6269020438194275
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.20437876880168915,
+            0.6269020438194275
+          ],
+          "target_error_m": 2.407356265396403e-07,
+          "elbow_flex_deg": 29.780166187432854,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818315152078867
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2532570725930512e-07
+    },
+    {
+      "frame": 47,
+      "angle": 23,
+      "rotation_actual_deg": 22.999999501668448,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.19779570400714874,
+            0.7893909811973572
+          ],
+          "target": [
+            0.47999992966651917,
+            0.19779595732688904,
+            0.7893911004066467
+          ],
+          "target_error_m": 3.042903223136386e-07,
+          "elbow_flex_deg": 63.584507257875146,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.0045370012521743774
+        },
+        "r": {
+          "wrist": [
+            0.48000001907348633,
+            -0.20170290768146515,
+            0.6198139190673828
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.20170319080352783,
+            0.6198137998580933
+          ],
+          "target_error_m": 3.1994149913763833e-07,
+          "elbow_flex_deg": 28.133038748327607,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.00481828348711133
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.2668445581741636e-07
+    },
+    {
+      "frame": 49,
+      "angle": 25,
+      "rotation_actual_deg": 25.00000012650595,
+      "hands": {
+        "l": {
+          "wrist": [
+            0.4799998104572296,
+            0.19455549120903015,
+            0.7962395548820496
+          ],
+          "target": [
+            0.47999992966651917,
+            0.19455574452877045,
+            0.7962396144866943
+          ],
+          "target_error_m": 2.862419592186592e-07,
+          "elbow_flex_deg": 64.75093964357325,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004536919761449099
+        },
+        "r": {
+          "wrist": [
+            0.47999995946884155,
+            -0.1987815797328949,
+            0.612823486328125
+          ],
+          "target": [
+            0.4800001084804535,
+            -0.19878186285495758,
+            0.6128233671188354
+          ],
+          "target_error_m": 3.4142849556772706e-07,
+          "elbow_flex_deg": 26.38628616998855,
+          "glove_max_penetration_m": 0,
+          "closest_2p5_percent_gap_m": 0.004818152170628309
+        }
+      },
+      "glove_wheel_triangle_pairs": 0,
+      "skin_wheel_triangle_pairs": 0,
+      "max_arm_length_delta_m": 2.228346681620863e-07
+    }
+  ],
+  "center_contacts": {},
+  "contact_regions": {},
+  "pedal_contact_gap_m": {
+    "-1": 0.001720657804980874,
+    "1": 0.0013609931338578463
+  }
+}

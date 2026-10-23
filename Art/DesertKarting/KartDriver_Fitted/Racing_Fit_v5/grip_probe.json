@@ -1,0 +1,650 @@
+[
+  {
+    "params": {
+      "x": 0.488,
+      "y": 0.229,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.042
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 0,
+        "worst_penetration_m": 0.00044969841837882996,
+        "penetration_cost": 2.7399630653235363e-07,
+        "near_contact_gap_m": 0.0027610664255917072
+      },
+      "kart_driverMesh": {
+        "pairs": 0,
+        "worst_penetration_m": -0.0010515935719013214,
+        "penetration_cost": 0.0,
+        "near_contact_gap_m": 0.005240837577730417
+      }
+    },
+    "score": 1.7884660562449426
+  },
+  {
+    "params": {
+      "x": 0.48,
+      "y": 0.217,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.054
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 0,
+        "worst_penetration_m": 0.00019120238721370697,
+        "penetration_cost": 5.753296861144008e-08,
+        "near_contact_gap_m": 0.0033413623459637165
+      },
+      "kart_driverMesh": {
+        "pairs": 0,
+        "worst_penetration_m": -0.0012602787464857101,
+        "penetration_cost": 0.0,
+        "near_contact_gap_m": 0.006173369940370321
+      }
+    },
+    "score": 2.3471156428248605
+  },
+  {
+    "params": {
+      "x": 0.488,
+      "y": 0.229,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.054
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 0,
+        "worst_penetration_m": 0.00022239983081817627,
+        "penetration_cost": 5.093878385764583e-08,
+        "near_contact_gap_m": 0.005395878572016954
+      },
+      "kart_driverMesh": {
+        "pairs": 0,
+        "worst_penetration_m": -0.001215388998389244,
+        "penetration_cost": 0.0,
+        "near_contact_gap_m": 0.009123040363192558
+      }
+    },
+    "score": 4.400972450402719
+  },
+  {
+    "params": {
+      "x": 0.472,
+      "y": 0.229,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.054
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 0,
+        "worst_penetration_m": -0.00200519897043705,
+        "penetration_cost": 0.0,
+        "near_contact_gap_m": 0.006864252965897322
+      },
+      "kart_driverMesh": {
+        "pairs": 0,
+        "worst_penetration_m": -0.0033995136618614197,
+        "penetration_cost": 0.0,
+        "near_contact_gap_m": 0.009699162095785141
+      }
+    },
+    "score": 5.864252965897322
+  },
+  {
+    "params": {
+      "x": 0.48,
+      "y": 0.229,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.054
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 0,
+        "worst_penetration_m": -0.0035790614783763885,
+        "penetration_cost": 0.0,
+        "near_contact_gap_m": 0.007563208229839802
+      },
+      "kart_driverMesh": {
+        "pairs": 0,
+        "worst_penetration_m": -0.004960661754012108,
+        "penetration_cost": 0.0,
+        "near_contact_gap_m": 0.010156202130019665
+      }
+    },
+    "score": 6.563208229839802
+  },
+  {
+    "params": {
+      "x": 0.48,
+      "y": 0.229,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.042
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 10,
+        "worst_penetration_m": 0.0006155986338853836,
+        "penetration_cost": 8.542351679352578e-07,
+        "near_contact_gap_m": 0.003237569471821189
+      },
+      "kart_driverMesh": {
+        "pairs": 0,
+        "worst_penetration_m": -0.0008704625070095062,
+        "penetration_cost": 0.0,
+        "near_contact_gap_m": 0.005689526908099651
+      }
+    },
+    "score": 12.322992988614715
+  },
+  {
+    "params": {
+      "x": 0.472,
+      "y": 0.217,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.054
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 58,
+        "worst_penetration_m": 0.0018730461597442627,
+        "penetration_cost": 2.9259477742016315e-05,
+        "near_contact_gap_m": 0.0036806913558393717
+      },
+      "kart_driverMesh": {
+        "pairs": 0,
+        "worst_penetration_m": 0.0004306044429540634,
+        "penetration_cost": 5.63041567147593e-07,
+        "near_contact_gap_m": 0.006394264288246632
+      }
+    },
+    "score": 63.66294328675576
+  },
+  {
+    "params": {
+      "x": 0.472,
+      "y": 0.229,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.042
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 98,
+        "worst_penetration_m": 0.0024003181606531143,
+        "penetration_cost": 8.310489647556096e-05,
+        "near_contact_gap_m": 0.0020312180276960135
+      },
+      "kart_driverMesh": {
+        "pairs": 24,
+        "worst_penetration_m": 0.0009854547679424286,
+        "penetration_cost": 4.533567334874533e-06,
+        "near_contact_gap_m": 0.004649952054023743
+      }
+    },
+    "score": 131.79506440873956
+  },
+  {
+    "params": {
+      "x": 0.48,
+      "y": 0.217,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.042
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 132,
+        "worst_penetration_m": 0.003354688175022602,
+        "penetration_cost": 0.00022429708042182028,
+        "near_contact_gap_m": 0.0009688982972875237
+      },
+      "kart_driverMesh": {
+        "pairs": 38,
+        "worst_penetration_m": 0.0018732445314526558,
+        "penetration_cost": 2.7088286515208893e-05,
+        "near_contact_gap_m": 0.0029004071839153767
+      }
+    },
+    "score": 195.1696383964154
+  },
+  {
+    "params": {
+      "x": 0.472,
+      "y": 0.217,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.042
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 254,
+        "worst_penetration_m": 0.005423004738986492,
+        "penetration_cost": 0.0013284101150929928,
+        "near_contact_gap_m": 0.0008291616104543209
+      },
+      "kart_driverMesh": {
+        "pairs": 98,
+        "worst_penetration_m": 0.0039382437244057655,
+        "penetration_cost": 0.00032490273588337004,
+        "near_contact_gap_m": 0.0026836704928427935
+      }
+    },
+    "score": 517.502123487182
+  },
+  {
+    "params": {
+      "x": 0.472,
+      "y": 0.205,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.054
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 220,
+        "worst_penetration_m": 0.00690368190407753,
+        "penetration_cost": 0.002392990980297327,
+        "near_contact_gap_m": 0.0008966603199951351
+      },
+      "kart_driverMesh": {
+        "pairs": 76,
+        "worst_penetration_m": 0.005453094840049744,
+        "penetration_cost": 0.000773455947637558,
+        "near_contact_gap_m": 0.0026854698080569506
+      }
+    },
+    "score": 612.7480324734934
+  },
+  {
+    "params": {
+      "x": 0.48,
+      "y": 0.205,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.054
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 400,
+        "worst_penetration_m": 0.005033678375184536,
+        "penetration_cost": 0.0011986501049250364,
+        "near_contact_gap_m": 0.0005914761568419635
+      },
+      "kart_driverMesh": {
+        "pairs": 134,
+        "worst_penetration_m": 0.0036079762503504753,
+        "penetration_cost": 0.00023827049881219864,
+        "near_contact_gap_m": 0.002029257360845804
+      }
+    },
+    "score": 678.1005842168815
+  },
+  {
+    "params": {
+      "x": 0.488,
+      "y": 0.217,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.054
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 269,
+        "worst_penetration_m": 0.006437177769839764,
+        "penetration_cost": 0.0027980711311101913,
+        "near_contact_gap_m": 0.0022629685699939728
+      },
+      "kart_driverMesh": {
+        "pairs": 131,
+        "worst_penetration_m": 0.004984733648598194,
+        "penetration_cost": 0.0008544580778107047,
+        "near_contact_gap_m": 0.004952162504196167
+      }
+    },
+    "score": 766.5158894620836
+  },
+  {
+    "params": {
+      "x": 0.488,
+      "y": 0.217,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.042
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 372,
+        "worst_penetration_m": 0.00679702777415514,
+        "penetration_cost": 0.003647507168352604,
+        "near_contact_gap_m": 0.0010032487334683537
+      },
+      "kart_driverMesh": {
+        "pairs": 145,
+        "worst_penetration_m": 0.005320183001458645,
+        "penetration_cost": 0.0011256332509219646,
+        "near_contact_gap_m": 0.0026186665054410696
+      }
+    },
+    "score": 994.3172906609252
+  },
+  {
+    "params": {
+      "x": 0.488,
+      "y": 0.229,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.03
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 794,
+        "worst_penetration_m": 0.005257659591734409,
+        "penetration_cost": 0.0034197228960692883,
+        "near_contact_gap_m": 0.0002685687504708767
+      },
+      "kart_driverMesh": {
+        "pairs": 308,
+        "worst_penetration_m": 0.003879958763718605,
+        "penetration_cost": 0.0006476614507846534,
+        "near_contact_gap_m": 0.0008202787721529603
+      }
+    },
+    "score": 1509.4698659349233
+  },
+  {
+    "params": {
+      "x": 0.48,
+      "y": 0.229,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.03
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 712,
+        "worst_penetration_m": 0.005267455242574215,
+        "penetration_cost": 0.005392867140471935,
+        "near_contact_gap_m": 0.00032699943403713405
+      },
+      "kart_driverMesh": {
+        "pairs": 292,
+        "worst_penetration_m": 0.0037825647741556168,
+        "penetration_cost": 0.0011201337911188602,
+        "near_contact_gap_m": 0.0008547651814296842
+      }
+    },
+    "score": 1655.9730937250424
+  },
+  {
+    "params": {
+      "x": 0.48,
+      "y": 0.205,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.042
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 774,
+        "worst_penetration_m": 0.007142561487853527,
+        "penetration_cost": 0.008204115554690361,
+        "near_contact_gap_m": 0.00034473263076506555
+      },
+      "kart_driverMesh": {
+        "pairs": 334,
+        "worst_penetration_m": 0.005718003027141094,
+        "penetration_cost": 0.002114772330969572,
+        "near_contact_gap_m": 0.0008312424179166555
+      }
+    },
+    "score": 2140.5440559352282
+  },
+  {
+    "params": {
+      "x": 0.472,
+      "y": 0.205,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.042
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 534,
+        "worst_penetration_m": 0.009607721120119095,
+        "penetration_cost": 0.012722128070890903,
+        "near_contact_gap_m": 0.0004680277779698372
+      },
+      "kart_driverMesh": {
+        "pairs": 232,
+        "worst_penetration_m": 0.008131233975291252,
+        "penetration_cost": 0.004288543947041035,
+        "near_contact_gap_m": 0.0013067914405837655
+      }
+    },
+    "score": 2467.599174015224
+  },
+  {
+    "params": {
+      "x": 0.472,
+      "y": 0.229,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.03
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 748,
+        "worst_penetration_m": 0.006995142437517643,
+        "penetration_cost": 0.013175520114600658,
+        "near_contact_gap_m": 0.0003891075903084129
+      },
+      "kart_driverMesh": {
+        "pairs": 338,
+        "worst_penetration_m": 0.00548207014799118,
+        "penetration_cost": 0.003873048583045602,
+        "near_contact_gap_m": 0.0009404791635461152
+      }
+    },
+    "score": 2791.4677621743176
+  },
+  {
+    "params": {
+      "x": 0.488,
+      "y": 0.205,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.054
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 610,
+        "worst_penetration_m": 0.010414626449346542,
+        "penetration_cost": 0.014179348945617676,
+        "near_contact_gap_m": 0.0005426127463579178
+      },
+      "kart_driverMesh": {
+        "pairs": 269,
+        "worst_penetration_m": 0.009019925259053707,
+        "penetration_cost": 0.005298878997564316,
+        "near_contact_gap_m": 0.0015949012013152242
+      }
+    },
+    "score": 2827.2801815718412
+  },
+  {
+    "params": {
+      "x": 0.48,
+      "y": 0.217,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.03
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 1086,
+        "worst_penetration_m": 0.006856313906610012,
+        "penetration_cost": 0.01300627551972866,
+        "near_contact_gap_m": 0.0002281147608300671
+      },
+      "kart_driverMesh": {
+        "pairs": 441,
+        "worst_penetration_m": 0.005345255136489868,
+        "penetration_cost": 0.003631035564467311,
+        "near_contact_gap_m": 0.0005489708273671567
+      }
+    },
+    "score": 3191.502993658767
+  },
+  {
+    "params": {
+      "x": 0.488,
+      "y": 0.217,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.03
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 1145,
+        "worst_penetration_m": 0.007807777263224125,
+        "penetration_cost": 0.014659757725894451,
+        "near_contact_gap_m": 0.00022674284991808236
+      },
+      "kart_driverMesh": {
+        "pairs": 472,
+        "worst_penetration_m": 0.006300405599176884,
+        "penetration_cost": 0.004635345656424761,
+        "near_contact_gap_m": 0.0005416788626462221
+      }
+    },
+    "score": 3547.283595382003
+  },
+  {
+    "params": {
+      "x": 0.488,
+      "y": 0.205,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.042
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 897,
+        "worst_penetration_m": 0.010376463644206524,
+        "penetration_cost": 0.022257691249251366,
+        "near_contact_gap_m": 0.0003321794210933149
+      },
+      "kart_driverMesh": {
+        "pairs": 429,
+        "worst_penetration_m": 0.008892654441297054,
+        "penetration_cost": 0.007844438776373863,
+        "near_contact_gap_m": 0.0008288940298371017
+      }
+    },
+    "score": 4336.88082314143
+  },
+  {
+    "params": {
+      "x": 0.472,
+      "y": 0.217,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.03
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 876,
+        "worst_penetration_m": 0.009035150520503521,
+        "penetration_cost": 0.025726664811372757,
+        "near_contact_gap_m": 0.0003290553286205977
+      },
+      "kart_driverMesh": {
+        "pairs": 408,
+        "worst_penetration_m": 0.007522008381783962,
+        "penetration_cost": 0.008696779608726501,
+        "near_contact_gap_m": 0.0008385448018088937
+      }
+    },
+    "score": 4727.015386681305
+  },
+  {
+    "params": {
+      "x": 0.48,
+      "y": 0.205,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.03
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 1304,
+        "worst_penetration_m": 0.010725632309913635,
+        "penetration_cost": 0.054364465177059174,
+        "near_contact_gap_m": 0.0002260564942844212
+      },
+      "kart_driverMesh": {
+        "pairs": 634,
+        "worst_penetration_m": 0.009217205457389355,
+        "penetration_cost": 0.020259004086256027,
+        "near_contact_gap_m": 0.0005659153102897108
+      }
+    },
+    "score": 9401.120869837236
+  },
+  {
+    "params": {
+      "x": 0.488,
+      "y": 0.205,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.03
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 1489,
+        "worst_penetration_m": 0.011894868686795235,
+        "penetration_cost": 0.06332489848136902,
+        "near_contact_gap_m": 0.00019483055802993476
+      },
+      "kart_driverMesh": {
+        "pairs": 712,
+        "worst_penetration_m": 0.010398599319159985,
+        "penetration_cost": 0.024596644565463066,
+        "near_contact_gap_m": 0.00046680658124387264
+      }
+    },
+    "score": 10993.959474125179
+  },
+  {
+    "params": {
+      "x": 0.472,
+      "y": 0.205,
+      "aim_y": 0.021,
+      "aim_z": 0,
+      "out": 0.03
+    },
+    "metrics": {
+      "RACER | anatomical five-finger gloves": {
+        "pairs": 1150,
+        "worst_penetration_m": 0.012506313621997833,
+        "penetration_cost": 0.06833299994468689,
+        "near_contact_gap_m": 0.000246274983510375
+      },
+      "kart_driverMesh": {
+        "pairs": 542,
+        "worst_penetration_m": 0.011001436971127987,
+        "penetration_cost": 0.026868073269724846,
+        "near_contact_gap_m": 0.0005921244737692177
+      }
+    },
+    "score": 11212.861046457663
+  }
+]

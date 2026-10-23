@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kart driver animation preview</title>
+<style>
+  body{margin:0;background:#161a20;color:#edf0f4;font:15px system-ui,sans-serif;display:grid;place-items:center;min-height:100vh}
+  main{width:min(960px,96vw)} img{width:100%;display:block;border-radius:8px;background:#252a32}
+  .controls{display:flex;align-items:center;gap:12px;margin-top:12px} button{padding:8px 16px}
+  input{flex:1} output{min-width:7ch;text-align:right}
+</style>
+<main>
+  <img id="frame" alt="Rendered kart driver animation preview">
+  <div class="controls">
+    <button id="toggle">Play</button>
+    <input id="scrub" type="range" min="1" max="48" value="1" aria-label="Animation frame">
+    <output id="label">1 / 48</output>
+  </div>
+  <p>48 rendered frames · 24 fps · Blender EEVEE preview</p>
+</main>
+<script>
+  const img=document.querySelector('#frame'), scrub=document.querySelector('#scrub');
+  const label=document.querySelector('#label'), toggle=document.querySelector('#toggle');
+  let frame=1, timer=null;
+  function show(n){frame=((n-1+48)%48)+1;scrub.value=frame;label.value=`${frame} / 48`;img.src=`frame_${String(frame).padStart(4,'0')}.png`;}
+  scrub.addEventListener('input',()=>show(Number(scrub.value)));
+  toggle.addEventListener('click',()=>{if(timer){clearInterval(timer);timer=null;toggle.textContent='Play';}else{toggle.textContent='Pause';timer=setInterval(()=>show(frame+1),1000/24);}});
+  show(1);
+</script>
+</html>

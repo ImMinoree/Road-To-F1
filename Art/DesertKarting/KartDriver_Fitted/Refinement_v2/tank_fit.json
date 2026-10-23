@@ -1,0 +1,224 @@
+{
+  "authorization": "User allowed repositioning and proportional resizing of existing fuel tank in new fitted scene only. No other kart object transform changed.",
+  "source_shell_litres": 27.393668682162986,
+  "selected": {
+    "scale": 0.6575724818886723,
+    "center": [
+      0.3,
+      0,
+      0.14
+    ],
+    "external_shell_volume_litres": 7.788988998708014,
+    "minimum_vertex_clearance_m": 0.0035069072619080544,
+    "nearest": [
+      [
+        0.0035069072619080544,
+        "SK_Kart_Steering_Column_And_Wheel_Frame_Brushed_Chromoly"
+      ],
+      [
+        0.01863189972937107,
+        "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly"
+      ],
+      [
+        0.04901059344410896,
+        "male_casualsuit04Mesh"
+      ],
+      [
+        0.05908278748393059,
+        "shoes05Mesh"
+      ],
+      [
+        0.07863831520080566,
+        "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black"
+      ],
+      [
+        0.1314324289560318,
+        "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite"
+      ],
+      [
+        0.1314324289560318,
+        "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite"
+      ]
+    ],
+    "score": 0.7308884244311908
+  },
+  "candidates": [
+    {
+      "scale": 0.6575724818886723,
+      "center": [
+        0.3,
+        0,
+        0.14
+      ],
+      "external_shell_volume_litres": 7.788988998708014,
+      "minimum_vertex_clearance_m": 0.0035069072619080544,
+      "nearest": [
+        [
+          0.0035069072619080544,
+          "SK_Kart_Steering_Column_And_Wheel_Frame_Brushed_Chromoly"
+        ],
+        [
+          0.01863189972937107,
+          "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly"
+        ],
+        [
+          0.04901059344410896,
+          "male_casualsuit04Mesh"
+        ],
+        [
+          0.05908278748393059,
+          "shoes05Mesh"
+        ],
+        [
+          0.07863831520080566,
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black"
+        ],
+        [
+          0.1314324289560318,
+          "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite"
+        ],
+        [
+          0.1314324289560318,
+          "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite"
+        ]
+      ],
+      "score": 0.7308884244311908
+    },
+    {
+      "scale": 0.6425724818886724,
+      "center": [
+        0.3,
+        0,
+        0.14
+      ],
+      "external_shell_volume_litres": 7.268027598630863,
+      "minimum_vertex_clearance_m": 0.0062014092691242695,
+      "nearest": [
+        [
+          0.0062014092691242695,
+          "SK_Kart_Steering_Column_And_Wheel_Frame_Brushed_Chromoly"
+        ],
+        [
+          0.021830826997756958,
+          "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly"
+        ],
+        [
+          0.05222610384225845,
+          "male_casualsuit04Mesh"
+        ],
+        [
+          0.061860110610723495,
+          "shoes05Mesh"
+        ],
+        [
+          0.07991232722997665,
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black"
+        ],
+        [
+          0.1342552751302719,
+          "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite"
+        ],
+        [
+          0.1342552751302719,
+          "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite"
+        ]
+      ],
+      "score": 0.7428884244311909
+    },
+    {
+      "scale": 0.6275724818886724,
+      "center": [
+        0.3,
+        0,
+        0.14
+      ],
+      "external_shell_volume_litres": 6.770829462412437,
+      "minimum_vertex_clearance_m": 0.008895883336663246,
+      "nearest": [
+        [
+          0.008895883336663246,
+          "SK_Kart_Steering_Column_And_Wheel_Frame_Brushed_Chromoly"
+        ],
+        [
+          0.025029774755239487,
+          "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly"
+        ],
+        [
+          0.055447887629270554,
+          "male_casualsuit04Mesh"
+        ],
+        [
+          0.06448748707771301,
+          "shoes05Mesh"
+        ],
+        [
+          0.08126436173915863,
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black"
+        ],
+        [
+          0.1370890736579895,
+          "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite"
+        ],
+        [
+          0.1370890736579895,
+          "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite"
+        ]
+      ],
+      "score": 0.7548884244311909
+    },
+    {
+      "scale": 0.6275724818886724,
+      "center": [
+        0.32,
+        0,
+        0.14
+      ],
+      "external_shell_volume_litres": 6.770829462412437,
+      "minimum_vertex_clearance_m": 0.014507069252431393,
+      "nearest": [
+        [
+          0.014507069252431393,
+          "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly"
+        ],
+        [
+          0.02146260067820549,
+          "SK_Kart_Steering_Column_And_Wheel_Frame_Brushed_Chromoly"
+        ],
+        [
+          0.05252663046121597,
+          "male_casualsuit04Mesh"
+        ],
+        [
+          0.06284826993942261,
+          "shoes05Mesh"
+        ],
+        [
+          0.06340325623750687,
+          "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black"
+        ],
+        [
+          0.12023171782493591,
+          "SK_Kart_Driver_Controls_And_Pedals_Hub_Black_Anodised"
+        ],
+        [
+          0.12737570703029633,
+          "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly"
+        ]
+      ],
+      "score": 0.7631301657775644
+    }
+  ],
+  "final_surface_intersections": {},
+  "tank_objects": [
+    "SK_Kart_Fuel_Tank_And_Cap_Fuel_Tank_Clouded_Polymer",
+    "SK_Kart_Fuel_Tank_And_Cap_Frame_Brushed_Chromoly",
+    "SK_Kart_Fuel_Tank_And_Cap_Hub_Black_Anodised",
+    "SK_Kart_Fuel_Tank_And_Cap_Fastener_Stainless"
+  ],
+  "geometry_unchanged": true,
+  "volume_note": "Closed external shell geometric volume; not measured internal fuel capacity. Official KG and OTK adult kart tank catalogs list 8.5 and 9.5 L products.",
+  "sources": [
+    "https://www.kgkarting.it/products/fuel-tanks/?lang=en",
+    "https://www.tonykart.com/parts_en.php?ID_categoria=21&ID_macrocategoria=2"
+  ]
+}

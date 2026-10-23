@@ -1,0 +1,25 @@
+{
+  "maps": {
+    "/Game/RoadToF1/Maps/DesertKarting_Visual": {}
+  },
+  "camera": {
+    "center_cm": [
+      2500,
+      -7000,
+      40000
+    ],
+    "rotation": [
+      -90,
+      0,
+      0
+    ],
+    "projection": "ORTHOGRAPHIC",
+    "ortho_width_cm": 33500,
+    "resolution": [
+      2400,
+      2000
+    ],
+    "image_right_world_axis": "+Y",
+    "image_up_world_axis": "+X"
+  }
+}

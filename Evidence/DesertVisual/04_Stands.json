@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "instances": {
+    "SM_DV_PitBay": 21,
+    "SM_DV_Banner": 5,
+    "SM_DV_BarrierTeal": 42,
+    "SM_DV_BarrierIvory": 40,
+    "SM_DV_ToolChest": 14,
+    "SM_DV_TireStack": 4,
+    "SM_DV_Drain": 20,
+    "SM_DV_Extinguisher": 5,
+    "SM_DV_SeatBlue": 648,
+    "SM_DV_SeatRed": 336,
+    "SM_DV_SeatGold": 24,
+    "SM_DV_CapBlue": 105,
+    "SM_DV_CapRed": 70,
+    "SM_DV_CapIvory": 70
+  },
+  "saved_and_reloaded": true
+}

@@ -1,0 +1,746 @@
+{
+  "source": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\DesertKarting\\KartDriver_Fitted\\Refinement_v3\\Kart_With_MakeHuman_Fitted_v3.blend",
+  "original_source_file_unchanged": true,
+  "original_human_geometry_weights_rest_skeleton_kart_lighting_unchanged": true,
+  "final_protected_recheck": {
+    "kart": true,
+    "lighting": true,
+    "rig": true,
+    "body_weights": true,
+    "body_geometry": true
+  },
+  "binding": {
+    "RACER | fitted one-piece suit": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | raised panel seam piping": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | seam top stitching": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | tailored long anatomical sleeves": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | right continuous red chest panel": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | right continuous red chest panel | sewn edges": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | right white chest accent": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | right white chest accent | sewn edges": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | right red thigh insert": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | right red thigh insert | sewn edges": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | right white sleeve panel": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | right white sleeve panel | sewn edges": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | right rear red panel": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | right rear red panel | sewn edges": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | left continuous red chest panel": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | left continuous red chest panel | sewn edges": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | left white chest accent": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | left white chest accent | sewn edges": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | left red thigh insert": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | left red thigh insert | sewn edges": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | left white sleeve panel": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | left white sleeve panel | sewn edges": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | left rear red panel": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | left rear red panel | sewn edges": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | central zipper placket": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | central zipper placket | sewn edges": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | sculpted racing boots": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | l boot lacing": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | r boot lacing": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | anatomical five-finger gloves": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | raised glove knuckle panels": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | l knitted gauntlet cuff": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | r knitted gauntlet cuff": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | raised padded collar": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | profiled composite shell and chin bar": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | red sweep -1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | white pinstripe -1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | red sweep 1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | white pinstripe 1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | curved smoked visor": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | visor gasket and brow trim": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | lower shell rolled trim": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | visor pivot base -1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 0
+    },
+    "HELMET | visor hinge plate -1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 0
+    },
+    "HELMET | visor pivot screw -1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 0
+    },
+    "HELMET | visor pivot base 1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 0
+    },
+    "HELMET | visor hinge plate 1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 0
+    },
+    "HELMET | visor pivot screw 1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 0
+    },
+    "HELMET | chin vent surround -1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | recessed chin vent -1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 0
+    },
+    "HELMET | chin vent surround 0": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | recessed chin vent 0": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 0
+    },
+    "HELMET | chin vent surround 1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | recessed chin vent 1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 0
+    },
+    "HELMET | crown intake -1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | crown intake 1": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "HELMET | padded neck roll": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | smooth shoulder epaulette l": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | smooth shoulder epaulette r": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 1
+    },
+    "RACER | neck underlayer": {
+      "armature": true,
+      "unweighted_vertices": 0,
+      "uv_layers": 0
+    }
+  },
+  "mesh_quality": {
+    "RACER | fitted one-piece suit": {
+      "vertices": 14519,
+      "faces": 13972,
+      "finite": true
+    },
+    "RACER | raised panel seam piping": {
+      "vertices": 1320,
+      "faces": 660,
+      "finite": true
+    },
+    "RACER | seam top stitching": {
+      "vertices": 4840,
+      "faces": 2420,
+      "finite": true
+    },
+    "RACER | tailored long anatomical sleeves": {
+      "vertices": 880,
+      "faces": 836,
+      "finite": true
+    },
+    "RACER | right continuous red chest panel": {
+      "vertices": 245,
+      "faces": 204,
+      "finite": true
+    },
+    "RACER | right continuous red chest panel | sewn edges": {
+      "vertices": 350,
+      "faces": 340,
+      "finite": true
+    },
+    "RACER | right white chest accent": {
+      "vertices": 175,
+      "faces": 136,
+      "finite": true
+    },
+    "RACER | right white chest accent | sewn edges": {
+      "vertices": 350,
+      "faces": 340,
+      "finite": true
+    },
+    "RACER | right red thigh insert": {
+      "vertices": 405,
+      "faces": 352,
+      "finite": true
+    },
+    "RACER | right red thigh insert | sewn edges": {
+      "vertices": 450,
+      "faces": 440,
+      "finite": true
+    },
+    "RACER | right white sleeve panel": {
+      "vertices": 210,
+      "faces": 174,
+      "finite": true
+    },
+    "RACER | right white sleeve panel | sewn edges": {
+      "vertices": 300,
+      "faces": 290,
+      "finite": true
+    },
+    "RACER | right rear red panel": {
+      "vertices": 224,
+      "faces": 186,
+      "finite": true
+    },
+    "RACER | right rear red panel | sewn edges": {
+      "vertices": 320,
+      "faces": 310,
+      "finite": true
+    },
+    "RACER | left continuous red chest panel": {
+      "vertices": 245,
+      "faces": 204,
+      "finite": true
+    },
+    "RACER | left continuous red chest panel | sewn edges": {
+      "vertices": 350,
+      "faces": 340,
+      "finite": true
+    },
+    "RACER | left white chest accent": {
+      "vertices": 175,
+      "faces": 136,
+      "finite": true
+    },
+    "RACER | left white chest accent | sewn edges": {
+      "vertices": 350,
+      "faces": 340,
+      "finite": true
+    },
+    "RACER | left red thigh insert": {
+      "vertices": 405,
+      "faces": 352,
+      "finite": true
+    },
+    "RACER | left red thigh insert | sewn edges": {
+      "vertices": 450,
+      "faces": 440,
+      "finite": true
+    },
+    "RACER | left white sleeve panel": {
+      "vertices": 210,
+      "faces": 174,
+      "finite": true
+    },
+    "RACER | left white sleeve panel | sewn edges": {
+      "vertices": 300,
+      "faces": 290,
+      "finite": true
+    },
+    "RACER | left rear red panel": {
+      "vertices": 224,
+      "faces": 186,
+      "finite": true
+    },
+    "RACER | left rear red panel | sewn edges": {
+      "vertices": 320,
+      "faces": 310,
+      "finite": true
+    },
+    "RACER | central zipper placket": {
+      "vertices": 240,
+      "faces": 177,
+      "finite": true
+    },
+    "RACER | central zipper placket | sewn edges": {
+      "vertices": 600,
+      "faces": 590,
+      "finite": true
+    },
+    "RACER | sculpted racing boots": {
+      "vertices": 1594,
+      "faces": 1532,
+      "finite": true
+    },
+    "RACER | l boot lacing": {
+      "vertices": 492,
+      "faces": 450,
+      "finite": true
+    },
+    "RACER | r boot lacing": {
+      "vertices": 492,
+      "faces": 450,
+      "finite": true
+    },
+    "RACER | anatomical five-finger gloves": {
+      "vertices": 3250,
+      "faces": 3222,
+      "finite": true
+    },
+    "RACER | raised glove knuckle panels": {
+      "vertices": 180,
+      "faces": 129,
+      "finite": true
+    },
+    "RACER | l knitted gauntlet cuff": {
+      "vertices": 288,
+      "faces": 240,
+      "finite": true
+    },
+    "RACER | r knitted gauntlet cuff": {
+      "vertices": 288,
+      "faces": 240,
+      "finite": true
+    },
+    "RACER | raised padded collar": {
+      "vertices": 288,
+      "faces": 240,
+      "finite": true
+    },
+    "HELMET | profiled composite shell and chin bar": {
+      "vertices": 1440,
+      "faces": 1200,
+      "finite": true
+    },
+    "HELMET | red sweep -1": {
+      "vertices": 126,
+      "faces": 72,
+      "finite": true
+    },
+    "HELMET | white pinstripe -1": {
+      "vertices": 126,
+      "faces": 72,
+      "finite": true
+    },
+    "HELMET | red sweep 1": {
+      "vertices": 126,
+      "faces": 72,
+      "finite": true
+    },
+    "HELMET | white pinstripe 1": {
+      "vertices": 126,
+      "faces": 72,
+      "finite": true
+    },
+    "HELMET | curved smoked visor": {
+      "vertices": 637,
+      "faces": 576,
+      "finite": true
+    },
+    "HELMET | visor gasket and brow trim": {
+      "vertices": 1952,
+      "faces": 1920,
+      "finite": true
+    },
+    "HELMET | lower shell rolled trim": {
+      "vertices": 1032,
+      "faces": 1024,
+      "finite": true
+    },
+    "HELMET | visor pivot base -1": {
+      "vertices": 96,
+      "faces": 50,
+      "finite": true
+    },
+    "HELMET | visor hinge plate -1": {
+      "vertices": 96,
+      "faces": 50,
+      "finite": true
+    },
+    "HELMET | visor pivot screw -1": {
+      "vertices": 96,
+      "faces": 50,
+      "finite": true
+    },
+    "HELMET | visor pivot base 1": {
+      "vertices": 96,
+      "faces": 50,
+      "finite": true
+    },
+    "HELMET | visor hinge plate 1": {
+      "vertices": 96,
+      "faces": 50,
+      "finite": true
+    },
+    "HELMET | visor pivot screw 1": {
+      "vertices": 96,
+      "faces": 50,
+      "finite": true
+    },
+    "HELMET | chin vent surround -1": {
+      "vertices": 264,
+      "faces": 256,
+      "finite": true
+    },
+    "HELMET | recessed chin vent -1": {
+      "vertices": 34,
+      "faces": 32,
+      "finite": true
+    },
+    "HELMET | chin vent surround 0": {
+      "vertices": 264,
+      "faces": 256,
+      "finite": true
+    },
+    "HELMET | recessed chin vent 0": {
+      "vertices": 34,
+      "faces": 32,
+      "finite": true
+    },
+    "HELMET | chin vent surround 1": {
+      "vertices": 264,
+      "faces": 256,
+      "finite": true
+    },
+    "HELMET | recessed chin vent 1": {
+      "vertices": 34,
+      "faces": 32,
+      "finite": true
+    },
+    "HELMET | crown intake -1": {
+      "vertices": 240,
+      "faces": 224,
+      "finite": true
+    },
+    "HELMET | crown intake 1": {
+      "vertices": 240,
+      "faces": 224,
+      "finite": true
+    },
+    "HELMET | padded neck roll": {
+      "vertices": 776,
+      "faces": 768,
+      "finite": true
+    },
+    "RACER | smooth shoulder epaulette l": {
+      "vertices": 175,
+      "faces": 144,
+      "finite": true
+    },
+    "RACER | smooth shoulder epaulette r": {
+      "vertices": 175,
+      "faces": 144,
+      "finite": true
+    },
+    "RACER | neck underlayer": {
+      "vertices": 270,
+      "faces": 218,
+      "finite": true
+    }
+  },
+  "triangle_intersection_pairs": {
+    "RACER | fitted one-piece suit": {
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 52,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 146,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 77,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 74,
+      "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite": 116,
+      "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite": 68,
+      "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 32,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 142
+    },
+    "RACER | sculpted racing boots": {
+      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 100,
+      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 236,
+      "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 7,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 24
+    },
+    "RACER | anatomical five-finger gloves": {
+      "SK_Kart_Steering_Column_And_Wheel_Rubber_Grip": 418
+    },
+    "kart_driverMesh": {
+      "SK_Kart_Steering_Column_And_Wheel_Rubber_Grip": 108,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 42
+    }
+  },
+  "tank_wheel_intersection_pairs": {
+    "RACER | anatomical five-finger gloves": {
+      "SK_Kart_Steering_Column_And_Wheel_Rubber_Grip": 418
+    },
+    "kart_driverMesh": {
+      "SK_Kart_Steering_Column_And_Wheel_Rubber_Grip": 108
+    }
+  },
+  "reprojected_panels": [
+    "RACER | right continuous red chest panel",
+    "RACER | right continuous red chest panel | sewn edges",
+    "RACER | right white chest accent",
+    "RACER | right white chest accent | sewn edges",
+    "RACER | right red thigh insert",
+    "RACER | right red thigh insert | sewn edges",
+    "RACER | right rear red panel",
+    "RACER | right rear red panel | sewn edges",
+    "RACER | left continuous red chest panel",
+    "RACER | left continuous red chest panel | sewn edges",
+    "RACER | left white chest accent",
+    "RACER | left white chest accent | sewn edges",
+    "RACER | left red thigh insert",
+    "RACER | left red thigh insert | sewn edges",
+    "RACER | left rear red panel",
+    "RACER | left rear red panel | sewn edges",
+    "RACER | central zipper placket",
+    "RACER | central zipper placket | sewn edges"
+  ],
+  "actions_preserved": [
+    [
+      "Action",
+      [
+        0.0,
+        0.0
+      ]
+    ],
+    [
+      "Kart | seated fit inspection",
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    [
+      "Kart | supported recline v3",
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    [
+      "Kart | supported seated posture v2.001",
+      [
+        1.0,
+        1.0
+      ]
+    ],
+    [
+      "Racer V4 | recline and steering grip",
+      [
+        1.0,
+        1.0
+      ]
+    ]
+  ],
+  "limitations": [
+    "Not photorealistic or equivalent to the reference. Shoulder transitions, suit tailoring, wrinkles, glove fit and helmet graphics remain procedural and need manual refinement.",
+    "Surface intersection tests report triangle pairs, not penetration depth or solid containment; they do not certify collision-free geometry.",
+    "Existing backrest gap, pedal/shoe/frame fit and some garment/seat/bodywork intersections remain.",
+    "The source recline action is a static fitted pose, not a completed gameplay steering/pedal animation. Skin bindings are retained; no Unreal import or animation integration was performed."
+  ],
+  "helmet_body_triangle_contacts": {
+    "HELMET | profiled composite shell and chin bar": 92,
+    "HELMET | padded neck roll": 228
+  },
+  "temporary_articulation_tests": [
+    {
+      "steering_degrees": -8,
+      "arm_targets_reachable": [
+        false,
+        true
+      ],
+      "pedal_rotation_degrees": 3,
+      "evaluated_outfit_finite": true,
+      "qualification": "Articulation smoke test only; not contact/deformation quality certification."
+    },
+    {
+      "steering_degrees": 8,
+      "arm_targets_reachable": [
+        true,
+        false
+      ],
+      "pedal_rotation_degrees": 3,
+      "evaluated_outfit_finite": true,
+      "qualification": "Articulation smoke test only; not contact/deformation quality certification."
+    }
+  ],
+  "grip_fit": {
+    "offset": 0.042,
+    "xoff": 0,
+    "intersections": 418,
+    "closest_5pct_gap_m": 0.004042162068966831,
+    "final_hits": 418
+  },
+  "final_status": "Partial visual upgrade. Reference-level realism NOT achieved; garment fit, hand/wheel clearance, shoulder transitions, boot/chassis contacts and seat support still require manual work."
+}

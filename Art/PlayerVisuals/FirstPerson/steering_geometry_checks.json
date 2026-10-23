@@ -1,0 +1,303 @@
+{
+  "source_unchanged": true,
+  "hand_weighted_vertices_checked": 42128,
+  "method": "Evaluated glove vertices vs measured analytic wheel torus (R .184m, tube .017m), 49 poses. Vertex distances are not a watertight mesh collision proof.",
+  "poses": [
+    {
+      "frame": 1,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880713504073364,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 2,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880327335391783,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 3,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007881605294573248,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 4,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007881760308159347,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 5,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007881433960601099,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 6,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007882202292730685,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 7,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880503229990288,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 8,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007882159337205194,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 9,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007882420408645181,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 10,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007883448675821067,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 11,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007881756895353545,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 12,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007881190009094846,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 13,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007879673027492984,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 14,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880911883433005,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 15,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880619904771201,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 16,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007882146217147827,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 17,
+      "minimum_glove_to_rim_signed_distance_m": 0.000788092455338188,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 18,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880491385022573,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 19,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007879349511733559,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 20,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007879745055330324,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 21,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880156258002965,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 22,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007881586982059624,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 23,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007881510190210529,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 24,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007879691977451427,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 25,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880254528266455,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 26,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007882104832493894,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 27,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007881453940475625,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 28,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007882889077045103,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 29,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880115385468199,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 30,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007881401989690631,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 31,
+      "minimum_glove_to_rim_signed_distance_m": 0.000788090516377158,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 32,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880996645774109,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 33,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007881872778934124,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 34,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880575665019686,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 35,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007881986364216866,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 36,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880653271756174,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 37,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880453937263547,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 38,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007879984921416207,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 39,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880802714970783,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 40,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007878994041224455,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 41,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880394874361929,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 42,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007879192320397986,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 43,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007878681503292358,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 44,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007879298338621631,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 45,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007879729954314504,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 46,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007879689861776361,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 47,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007879799720845564,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 48,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880270370454918,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    },
+    {
+      "frame": 49,
+      "minimum_glove_to_rim_signed_distance_m": 0.0007880675684510882,
+      "vertices_deeper_than_3mm": 0,
+      "vertices_within_5mm_of_rim": 792
+    }
+  ],
+  "worst_signed_distance_m": 0.0007878681503292358,
+  "max_vertices_deeper_than_3mm": 0
+}

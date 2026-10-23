@@ -1,0 +1,40 @@
+{
+  "DesertKarting": {
+    "saved": true,
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_BeforeRaceStart",
+    "stage_cm": [
+      -3400,
+      200,
+      40
+    ],
+    "finish_x_cm": -1800.0,
+    "display_origin_cm": [
+      -1840,
+      0,
+      0
+    ],
+    "lens_center_z_cm": 560,
+    "lens_bottom_z_cm": 536.8,
+    "audio": "Original procedural waveform assets",
+    "default_game_mode": "ProofGameMode"
+  },
+  "DesertKarting_Visual": {
+    "saved": true,
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_Visual_BeforeRaceStart",
+    "stage_cm": [
+      -3400,
+      200,
+      40
+    ],
+    "finish_x_cm": -1800.0,
+    "display_origin_cm": [
+      -1840,
+      0,
+      0
+    ],
+    "lens_center_z_cm": 560,
+    "lens_bottom_z_cm": 536.8,
+    "audio": "Original procedural waveform assets",
+    "default_game_mode": "ProofGameMode"
+  }
+}

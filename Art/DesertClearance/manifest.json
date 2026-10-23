@@ -1,0 +1,271 @@
+{
+  "filtered": [
+    {
+      "source_object": "14 Timing gantry signs and pit furniture | glass",
+      "mesh": "SM_Clear_14_Timing_gantry_signs_and_pit_furniture_glass",
+      "removed": [
+        {
+          "kind": "booth",
+          "center_ue_m": [
+            -43.48999786376953,
+            -20.0,
+            1.440000057220459
+          ]
+        }
+      ],
+      "remaining_triangles": 24
+    },
+    {
+      "source_object": "14 Timing gantry signs and pit furniture | green",
+      "mesh": "SM_Clear_14_Timing_gantry_signs_and_pit_furniture_green",
+      "removed": [
+        {
+          "kind": "booth",
+          "center_ue_m": [
+            -45.0,
+            -20.0,
+            2.5399999618530273
+          ]
+        }
+      ],
+      "remaining_triangles": 24
+    },
+    {
+      "source_object": "14 Timing gantry signs and pit furniture | metal",
+      "mesh": "SM_Clear_14_Timing_gantry_signs_and_pit_furniture_metal",
+      "removed": [
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            -45.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            -37.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            -29.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            -21.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            -13.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            -5.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            3.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            11.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            19.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            27.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            35.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            43.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        },
+        {
+          "kind": "pit_sign_post",
+          "center_ue_m": [
+            51.0,
+            -11.099998474121094,
+            1.3899999856948853
+          ]
+        }
+      ],
+      "remaining_triangles": 56
+    },
+    {
+      "source_object": "14 Timing gantry signs and pit furniture | white",
+      "mesh": "SM_Clear_14_Timing_gantry_signs_and_pit_furniture_white",
+      "removed": [
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            -45.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            -37.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            -29.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            -21.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            -13.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            -5.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            3.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            11.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            19.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            27.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            35.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            43.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "pit_sign_board",
+          "center_ue_m": [
+            51.0,
+            -11.10000228881836,
+            2.0399999618530273
+          ]
+        },
+        {
+          "kind": "booth",
+          "center_ue_m": [
+            -45.0,
+            -20.0,
+            1.0399999618530273
+          ]
+        }
+      ],
+      "remaining_triangles": 36
+    }
+  ],
+  "booth_ue_cm": [
+    -4500,
+    -2000,
+    0
+  ],
+  "pit_sign_bases": 13,
+  "retained": "Start/finish gantry, two other marshal booths, paddock buildings, track, route markings"
+}

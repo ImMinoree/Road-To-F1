@@ -1,0 +1,100 @@
+{
+  "visual": [
+    {
+      "epoch": 1,
+      "red_intervals_s": [
+        1.0050000000000003,
+        1.0,
+        1.0,
+        1.0003000000000002
+      ],
+      "all_red_hold_s": 1.2500999999999998,
+      "start_events": 1,
+      "held_throttle_blocked": true,
+      "released_motion_verified": true
+    },
+    {
+      "epoch": 2,
+      "red_intervals_s": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "all_red_hold_s": 1.2500000000000018,
+      "start_events": 1,
+      "held_throttle_blocked": true,
+      "released_motion_verified": true
+    }
+  ],
+  "original": [
+    {
+      "epoch": 1,
+      "red_intervals_s": [
+        1.0001000000000002,
+        1.0,
+        1.0,
+        1.0084999999999997
+      ],
+      "all_red_hold_s": 1.2519,
+      "start_events": 1,
+      "held_throttle_blocked": true,
+      "released_motion_verified": true
+    },
+    {
+      "epoch": 2,
+      "red_intervals_s": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "all_red_hold_s": 1.2500000000000018,
+      "start_events": 1,
+      "held_throttle_blocked": true,
+      "released_motion_verified": true
+    }
+  ],
+  "missing_display": [
+    {
+      "epoch": 1,
+      "red_intervals_s": [
+        1.0,
+        0.9999999999999996,
+        1.0,
+        1.0
+      ],
+      "all_red_hold_s": 1.2503000000000002,
+      "start_events": 1,
+      "held_throttle_blocked": true,
+      "released_motion_verified": true
+    },
+    {
+      "epoch": 2,
+      "red_intervals_s": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "all_red_hold_s": 1.2500000000000018,
+      "start_events": 1,
+      "held_throttle_blocked": true,
+      "released_motion_verified": true
+    }
+  ],
+  "live_loop_validation": {
+    "/Game/RoadToF1/Maps/DesertKarting": {
+      "support_rays": 2244,
+      "sphere_segments": 748,
+      "failures": 0,
+      "persisted_gantry_count": 1
+    },
+    "/Game/RoadToF1/Maps/DesertKarting_Visual": {
+      "support_rays": 2244,
+      "sphere_segments": 748,
+      "failures": 0,
+      "persisted_gantry_count": 1
+    }
+  }
+}

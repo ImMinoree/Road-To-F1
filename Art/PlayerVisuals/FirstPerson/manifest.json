@@ -1,0 +1,40 @@
+{
+  "source": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\DesertKarting\\KartDriver_Fitted\\Racing_Fit_v5\\Kart_With_MakeHuman_Racer_v5.blend",
+  "source_sha256": "09fe224ec22f6656154a2ab42a47a1b220db13933245fc7b86df925c88438bb6",
+  "source_unchanged": true,
+  "vertices": 51036,
+  "triangles": 89650,
+  "bones": 53,
+  "materials": [
+    "M_FP_Leather",
+    "M_FP_RedSuede",
+    "M_FP_WhiteFabric",
+    "M_FP_Rubber",
+    "M_FP_Stitch"
+  ],
+  "steering_frames": [
+    1,
+    25,
+    49
+  ],
+  "steering_degrees": [
+    -25,
+    0,
+    25
+  ],
+  "wheel_center_cm": [
+    62,
+    0,
+    70
+  ],
+  "wheel_radius_cm": 18.4,
+  "source_camera_anchor_cm": [
+    0,
+    0,
+    95
+  ],
+  "blender_to_unreal_expected": "X preserved, Y mirrored, Z preserved; verify import bounds/bone samples before runtime alignment.",
+  "quality": "V5-derived FP placeholder with separate padded glove panels and geometric sewn edges; manual glove/forearm art polish still required.",
+  "source_view_pitch_down_deg": 12,
+  "grip_bind_max_position_error_source_units": 1.7059844799040144e-05
+}

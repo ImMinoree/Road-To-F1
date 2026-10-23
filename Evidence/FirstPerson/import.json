@@ -1,0 +1,33 @@
+{
+  "destination": "/Game/RoadToF1/PlayerVisuals/FirstPerson",
+  "imports": [],
+  "errors": [],
+  "skeletal_material_slots": [
+    "M_FP_Leather",
+    "M_FP_RedSuede",
+    "M_FP_WhiteFabric",
+    "M_FP_Rubber",
+    "M_FP_Stitch"
+  ],
+  "skeletal_mesh": "/Game/RoadToF1/PlayerVisuals/FirstPerson/SK_FP_KartArms.SK_FP_KartArms",
+  "animation": "/Game/RoadToF1/PlayerVisuals/FirstPerson/A_FP_KartSteering.A_FP_KartSteering",
+  "animation_length_seconds": 2.0,
+  "skeleton": "/Game/RoadToF1/PlayerVisuals/FirstPerson/SK_FP_KartArms_Skeleton.SK_FP_KartArms_Skeleton",
+  "wheel": "/Game/RoadToF1/PlayerVisuals/FirstPerson/SM_FP_SteeringWheel.SM_FP_SteeringWheel",
+  "saved_assets": [
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/A_FP_KartSteering.A_FP_KartSteering",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/M_FP_BlackFabric.M_FP_BlackFabric",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/M_FP_Leather.M_FP_Leather",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/M_FP_Metal.M_FP_Metal",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/M_FP_RedSuede.M_FP_RedSuede",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/M_FP_Rubber.M_FP_Rubber",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/M_FP_Stitch.M_FP_Stitch",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/M_FP_WhiteFabric.M_FP_WhiteFabric",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/PAL_LocalCockpit.PAL_LocalCockpit",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/SK_FP_KartArms.SK_FP_KartArms",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/SK_FP_KartArms_Skeleton.SK_FP_KartArms_Skeleton",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/SM_FP_SteeringWheel.SM_FP_SteeringWheel",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/T_FP_Microfiber_N.T_FP_Microfiber_N",
+    "/Game/RoadToF1/PlayerVisuals/FirstPerson/T_FP_Microfiber_R.T_FP_Microfiber_R"
+  ]
+}

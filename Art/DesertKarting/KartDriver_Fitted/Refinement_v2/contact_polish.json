@@ -1,0 +1,81 @@
+{
+  "before": {
+    "kart_driverMesh": {
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 28,
+      "SK_Kart_Steering_Column_And_Wheel_Rubber_Grip": 308,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 40,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 28
+    },
+    "male_casualsuit04Mesh": {
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 51,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 159,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 39,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 22,
+      "SK_Kart_Fuel_Tank_And_Cap_Fuel_Tank_Clouded_Polymer": 174,
+      "SK_Kart_Fuel_Tank_And_Cap_Frame_Brushed_Chromoly": 38,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 54,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 20
+    },
+    "shoes05Mesh": {
+      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 204,
+      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 136,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 26,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 20,
+      "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 18,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 42,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 9
+    }
+  },
+  "grips": {
+    "l": {
+      "before": {
+        "vertices_inside_torus": 189,
+        "max_depth_m": 0.014064777305047384,
+        "loss": 0.005911761054433778
+      },
+      "after": {
+        "vertices_inside_torus": 0,
+        "max_depth_m": 0,
+        "loss": 0.0
+      }
+    },
+    "r": {
+      "before": {
+        "vertices_inside_torus": 194,
+        "max_depth_m": 0.014140026235353173,
+        "loss": 0.006232897849055571
+      },
+      "after": {
+        "vertices_inside_torus": 0,
+        "max_depth_m": 0,
+        "loss": 0.0
+      }
+    }
+  },
+  "after": {
+    "kart_driverMesh": {
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 28,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 40,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 28
+    },
+    "male_casualsuit04Mesh": {
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 51,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 159,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 39,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 22,
+      "SK_Kart_Fuel_Tank_And_Cap_Fuel_Tank_Clouded_Polymer": 174,
+      "SK_Kart_Fuel_Tank_And_Cap_Frame_Brushed_Chromoly": 38,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 54,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 20
+    },
+    "shoes05Mesh": {
+      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 204,
+      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 136,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite": 26,
+      "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear": 20,
+      "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly": 18,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose": 42,
+      "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless": 9
+    }
+  }
+}

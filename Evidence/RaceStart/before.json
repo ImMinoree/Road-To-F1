@@ -1,0 +1,582 @@
+{
+  "/Game/RoadToF1/Maps/DesertKarting": {
+    "game_mode": "None",
+    "actors": [
+      {
+        "label": "PlayerStart",
+        "class": "PlayerStart",
+        "location": [
+          800.0,
+          0.0,
+          40.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "label": "PlayerStart2",
+        "class": "PlayerStart",
+        "location": [
+          800.0,
+          0.0,
+          40.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "label": "PlayerStart3",
+        "class": "PlayerStart",
+        "location": [
+          800.0,
+          0.0,
+          40.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | amber",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber.SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1750.0,
+          -199.9998321533203,
+          664.0
+        ],
+        "bounds_extent": [
+          7.6083984375,
+          316.9998016357422,
+          17.0
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | dark",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark.SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1760.0000610351562,
+          -149.9998321533203,
+          674.0
+        ],
+        "bounds_extent": [
+          1.50018310546875,
+          549.9999847412109,
+          42.5
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | glass",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_glass.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_glass",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1599.001220703125,
+          -15399.99951171875,
+          144.00000762939453
+        ],
+        "bounds_extent": [
+          4551.499267578125,
+          6200.00048828125,
+          35.00000762939453
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | green",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_green.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_green",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1750.00146484375,
+          -15399.99951171875,
+          254.0
+        ],
+        "bounds_extent": [
+          4739.99951171875,
+          6290.00048828125,
+          12.5
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | metal",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_metal.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_metal",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1800.0000610351562,
+          -149.99981689453125,
+          334.0
+        ],
+        "bounds_extent": [
+          16.00006103515625,
+          766.0003662109375,
+          350.0
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | red",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_red.SM_DK_14_Timing_gantry_signs_and_pit_furniture_red",
+        "visible": false,
+        "collision": false,
+        "bounds_center": [
+          300.0,
+          -1100.0,
+          34.0
+        ],
+        "bounds_extent": [
+          4875.0,
+          30.000732421875,
+          50.0
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | white",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_white.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_white",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1750.00146484375,
+          -10499.999908447266,
+          361.5000305175781
+        ],
+        "bounds_extent": [
+          4699.99951171875,
+          11150.000091552734,
+          377.5000305175781
+        ]
+      },
+      {
+        "label": "RR_SM_Route_Finish",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertRoute/Meshes/SM_Route_Finish.SM_Route_Finish",
+        "visible": true,
+        "collision": false,
+        "bounds_center": [
+          -1800.0,
+          30.228912353515625,
+          0.17999999225139618
+        ],
+        "bounds_extent": [
+          94.64697265625,
+          602.4678039550781,
+          0.0
+        ]
+      },
+      {
+        "label": "RR_SM_Route_CornerBoards",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertRoute/Meshes/SM_Route_CornerBoards.SM_Route_CornerBoards",
+        "visible": true,
+        "collision": false,
+        "bounds_center": [
+          560.462646484375,
+          -8950.04965209961,
+          70.25000786781311
+        ],
+        "bounds_extent": [
+          6932.704345703125,
+          9813.38980102539,
+          70.75000739097595
+        ]
+      }
+    ]
+  },
+  "/Game/RoadToF1/Maps/DesertKarting_Visual": {
+    "game_mode": "<Object '/Game/RoadToF1/DesertVisual/BP_DV_EnvironmentPreview.BP_DV_EnvironmentPreview_C' (0x000001D68720C400) Class 'BlueprintGeneratedClass'>",
+    "actors": [
+      {
+        "label": "PlayerStart",
+        "class": "PlayerStart",
+        "location": [
+          800.0,
+          0.0,
+          40.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "label": "PlayerStart2",
+        "class": "PlayerStart",
+        "location": [
+          800.0,
+          0.0,
+          40.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "label": "PlayerStart3",
+        "class": "PlayerStart",
+        "location": [
+          800.0,
+          0.0,
+          40.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | amber",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber.SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1750.0,
+          -199.9998321533203,
+          664.0
+        ],
+        "bounds_extent": [
+          7.6083984375,
+          316.9998016357422,
+          17.0
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | dark",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark.SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1760.0000610351562,
+          -149.9998321533203,
+          674.0
+        ],
+        "bounds_extent": [
+          1.50018310546875,
+          549.9999847412109,
+          42.5
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | glass",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_glass.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_glass",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1599.001220703125,
+          -15399.99951171875,
+          144.00000762939453
+        ],
+        "bounds_extent": [
+          4551.499267578125,
+          6200.00048828125,
+          35.00000762939453
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | green",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_green.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_green",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1750.00146484375,
+          -15399.99951171875,
+          254.0
+        ],
+        "bounds_extent": [
+          4739.99951171875,
+          6290.00048828125,
+          12.5
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | metal",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_metal.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_metal",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1800.0000610351562,
+          -149.99981689453125,
+          334.0
+        ],
+        "bounds_extent": [
+          16.00006103515625,
+          766.0003662109375,
+          350.0
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | red",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_red.SM_DK_14_Timing_gantry_signs_and_pit_furniture_red",
+        "visible": false,
+        "collision": false,
+        "bounds_center": [
+          300.0,
+          -1100.0,
+          34.0
+        ],
+        "bounds_extent": [
+          4875.0,
+          30.000732421875,
+          50.0
+        ]
+      },
+      {
+        "label": "DK_14 Timing gantry signs and pit furniture | white",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_white.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_white",
+        "visible": true,
+        "collision": true,
+        "bounds_center": [
+          -1750.00146484375,
+          -10499.999908447266,
+          361.5000305175781
+        ],
+        "bounds_extent": [
+          4699.99951171875,
+          11150.000091552734,
+          377.5000305175781
+        ]
+      },
+      {
+        "label": "RR_SM_Route_Finish",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertRoute/Meshes/SM_Route_Finish.SM_Route_Finish",
+        "visible": true,
+        "collision": false,
+        "bounds_center": [
+          -1800.0,
+          30.228912353515625,
+          0.17999999225139618
+        ],
+        "bounds_extent": [
+          94.64697265625,
+          602.4678039550781,
+          0.0
+        ]
+      },
+      {
+        "label": "RR_SM_Route_CornerBoards",
+        "class": "StaticMeshActor",
+        "location": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "rotation": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mesh": "/Game/RoadToF1/DesertRoute/Meshes/SM_Route_CornerBoards.SM_Route_CornerBoards",
+        "visible": true,
+        "collision": false,
+        "bounds_center": [
+          560.462646484375,
+          -8950.04965209961,
+          70.25000786781311
+        ],
+        "bounds_extent": [
+          6932.704345703125,
+          9813.38980102539,
+          70.75000739097595
+        ]
+      }
+    ]
+  }
+}

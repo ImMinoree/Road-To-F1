@@ -1,0 +1,26 @@
+{
+  "map": "/Game/RoadToF1/Maps/DesertKarting",
+  "engine": "5.8.3",
+  "protected_file_failures": [],
+  "original_glb_unchanged": true,
+  "collision_rays_passed": 15,
+  "resolution": "1920x1080",
+  "screen_percentage": 75,
+  "graphics": "High scalability 2 / Balanced",
+  "cpu": "Intel Core i7-10700KF",
+  "gpu": "NVIDIA GeForce RTX 3080",
+  "fps": 139.91,
+  "average_ms": 7.147,
+  "sample_seconds": 10.0133,
+  "final_position_cm": [
+    4248.65,
+    88.56,
+    31.0
+  ],
+  "scope": "20-second standalone temporary-pawn driving smoke test; final 10 seconds sampled; no co-running editor; not a full-lap or multi-kart benchmark. Raw scope string is hardcoded in the existing pawn.",
+  "screenshots": [
+    "Driver.png",
+    "Ground.png",
+    "Overview.png"
+  ]
+}

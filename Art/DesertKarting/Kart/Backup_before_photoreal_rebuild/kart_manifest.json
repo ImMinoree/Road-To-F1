@@ -1,0 +1,10 @@
+{
+  "mesh_objects": 89,
+  "materials": 19,
+  "triangles": 101692,
+  "wheel_components": 4,
+  "units": "meters",
+  "front_axis": "+X",
+  "fbx": "Exports/SM_Kart_Reference.fbx",
+  "reference": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\DesertKarting\\Kart\\Kart_Reference.blend"
+}

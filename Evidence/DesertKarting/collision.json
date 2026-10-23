@@ -1,0 +1,156 @@
+{
+  "rays": 15,
+  "passed": 15,
+  "results": [
+    {
+      "point": [
+        800,
+        -300
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        800,
+        0
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        800,
+        300
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        1500,
+        -300
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        1500,
+        0
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        1500,
+        300
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        2500,
+        -300
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        2500,
+        0
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        2500,
+        300
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        3500,
+        -300
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        3500,
+        0
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        3500,
+        300
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        4500,
+        -300
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        4500,
+        0
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    },
+    {
+      "point": [
+        4500,
+        300
+      ],
+      "actors": [
+        "DK_02 Track surface curbs and runoff | asphalt"
+      ],
+      "road": true
+    }
+  ]
+}

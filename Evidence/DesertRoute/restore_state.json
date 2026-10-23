@@ -1,0 +1,108 @@
+{
+  "/Game/RoadToF1/Maps/DesertKarting": {
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_BeforeRoute",
+    "hidden_kart_collision": {
+      "DK_10 Race karts chassis wheels engine and drivers | blue": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | dark": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | glass": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | metal": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | red": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | rubber": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | white": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | yellow": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      }
+    }
+  },
+  "/Game/RoadToF1/Maps/DesertKarting_Visual": {
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_Visual_BeforeRoute",
+    "hidden_kart_collision": {
+      "DK_10 Race karts chassis wheels engine and drivers | blue": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | dark": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | glass": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | metal": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | red": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | rubber": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | white": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      },
+      "DK_10 Race karts chassis wheels engine and drivers | yellow": {
+        "actor_enable_collision": true,
+        "components": {
+          "StaticMeshComponent0": "QUERY_AND_PHYSICS"
+        }
+      }
+    }
+  }
+}

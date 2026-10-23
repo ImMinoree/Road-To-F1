@@ -1,0 +1,71 @@
+{
+  "map": "/Game/RoadToF1/Maps/CircuitDevelopment",
+  "saved_and_reloaded": true,
+  "instances": {
+    "FenceWire": 784,
+    "FenceFrame": 784,
+    "DrainGrate": 24,
+    "BrakingBoard50": 7,
+    "BrakingBoard100": 7,
+    "TireRed": 1191,
+    "TireWhite": 1185,
+    "TireBlack": 1185
+  },
+  "collision_modes": [
+    [
+      "FenceWire",
+      "<CollisionEnabled.NO_COLLISION: 0>"
+    ],
+    [
+      "FenceFrame",
+      "<CollisionEnabled.NO_COLLISION: 0>"
+    ],
+    [
+      "DrainGrate",
+      "<CollisionEnabled.NO_COLLISION: 0>"
+    ],
+    [
+      "BrakingBoard50",
+      "<CollisionEnabled.NO_COLLISION: 0>"
+    ],
+    [
+      "BrakingBoard100",
+      "<CollisionEnabled.NO_COLLISION: 0>"
+    ],
+    [
+      "TireRed",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    ],
+    [
+      "TireWhite",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    ],
+    [
+      "TireBlack",
+      "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+    ]
+  ],
+  "new_collision": "Simple boxes on tire walls, minimum centerline clearance >5.65m; all other scenery noncolliding",
+  "cloud_material": "Engine built-in simple volumetric cloud",
+  "missing_assets": [
+    "Licensed 3D wild grass clumps and bushes",
+    "European deciduous/cypress trees with LODs",
+    "Reference-backed paddock architecture"
+  ],
+  "original_map_and_gameplay_unchanged": true,
+  "render_inspected": true,
+  "gate_passed": false,
+  "collision_rays": 900,
+  "collision_failures": [],
+  "trace_return_types": [
+    "<class 'HitResult'>",
+    "<class 'HitResult'>"
+  ],
+  "tire_collision_probes": 12,
+  "tire_collision_hits": 12,
+  "scenery_pass_validated": true,
+  "status": "Partial: available infrastructure pass validated; vegetation and paddock acquisition remain",
+  "render_notes": "Inspected actual Driver, Ground and uncullled Overview. Tire walls and chain-link fence fit the route; wire aliasing, procedural surfaces, flat grass-ground and missing landscape/architecture remain artificial. Does not meet photographic reference. Runtime culling remains 140-240m; full overview used temporary 500-650m culling only.",
+  "gameplay_source_hashes_verified": true,
+  "original_map_hash_verified": true
+}

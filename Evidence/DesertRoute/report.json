@@ -1,0 +1,105 @@
+{
+  "length_m": 1040.0202549785622,
+  "source_geometry": {
+    "mesh": "02 Track surface curbs and runoff | asphalt.001",
+    "native_vertices": 1496,
+    "native_faces": 748,
+    "glb_vertices": 1496,
+    "glb_triangles": 1496,
+    "max_vertex_error_m": 0.0
+  },
+  "connected_main_surface_components": 1,
+  "boundary_loops": 2,
+  "nonlocal_asphalt_overlaps": 0,
+  "minimum_source_width_m": 8.217443021993862,
+  "direction": "User-confirmed +X main straight / increasing source route index",
+  "corner_numbering": "C1-C7 analytical turn complexes, not official corner numbers",
+  "maps": {
+    "/Game/RoadToF1/Maps/DesertKarting": {
+      "before_failed_support_rays": 31,
+      "before_obstructed_sweep_segments": 16,
+      "final_support_rays_passed": 2244,
+      "final_swept_segments_clear": 748,
+      "final_visible_kart_groups": 0,
+      "lighting_unchanged": true,
+      "other_collision_actors_unchanged": true
+    },
+    "/Game/RoadToF1/Maps/DesertKarting_Visual": {
+      "before_failed_support_rays": 57,
+      "before_obstructed_sweep_segments": 28,
+      "final_support_rays_passed": 2244,
+      "final_swept_segments_clear": 748,
+      "final_visible_kart_groups": 0,
+      "lighting_unchanged": true,
+      "other_collision_actors_unchanged": true
+    }
+  },
+  "new_readability_assets": 3,
+  "route_arrows": 22,
+  "corner_boards": 7,
+  "finish": "Existing gantry station; new full-width paint above road. Original hidden checker geometry preserved.",
+  "barrier_relocations": 0,
+  "pit": {
+    "proposed_entry_A": {
+      "endpoint_cm": [
+        -3850,
+        -1700,
+        0
+      ],
+      "main_asphalt_intervals_world_y_cm": [
+        [
+          -20623.43022695452,
+          -18675.008147232315
+        ],
+        [
+          -1502.8003174344874,
+          79.00508633214258
+        ]
+      ],
+      "pit_interval_world_y_cm": [
+        -2300,
+        -1100
+      ],
+      "lateral_asphalt_gap_m": 0.0,
+      "shared_asphalt_width_m": 4.028003174344874,
+      "junction_status": "Proposed only; an overlap is not an authored or approved pit connector"
+    },
+    "proposed_exit_B": {
+      "endpoint_cm": [
+        4450,
+        -1700,
+        0
+      ],
+      "main_asphalt_intervals_world_y_cm": [
+        [
+          -20796.051599059552,
+          -16382.088757250887
+        ],
+        [
+          -6508.899561071968,
+          -5033.836000075624
+        ],
+        [
+          -526.2227341464964,
+          733.9641411087683
+        ]
+      ],
+      "pit_interval_world_y_cm": [
+        -2300,
+        -1100
+      ],
+      "lateral_asphalt_gap_m": 5.737772658535037,
+      "shared_asphalt_width_m": 0.0,
+      "junction_status": "Proposed only; an overlap is not an authored or approved pit connector"
+    },
+    "junctions_modified": false,
+    "status": "No verified entry-to-exit pit route; A has an overlap but no designed taper, B has a 5.74m asphalt gap."
+  },
+  "shortcuts": "Infield/runoff remain drivable with no checkpoint enforcement. Off-track shortcuts cannot be ruled out or claimed fixed.",
+  "protected_files_verified": 373,
+  "protected_file_failures": [],
+  "original_meshes_lighting_gameplay_preserved": true,
+  "validation_scope": "Live editor line traces at 748 samples x 3 lateral positions and 28cm-radius sphere sweeps along all 748 segments. Not a completed timed lap or a full-size vehicle dynamics certification.",
+  "raw_topdown_projection": "Orthographic pitch -90\u00b0, 2400x2000; identical before/after cameras",
+  "renders_inspected": true
+}

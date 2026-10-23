@@ -1,0 +1,1412 @@
+{
+  "DesertKarting": {
+    "road_rays": 2244,
+    "road_failures": [],
+    "swept_sphere_segments": 748,
+    "sweep_radius_cm": 28,
+    "sweep_failures": [],
+    "visible_kart_groups": [],
+    "lights": {
+      "DirectionalLight": [
+        28000.0,
+        [
+          255,
+          255,
+          255,
+          0
+        ],
+        [
+          -16.999999999999993,
+          119.99999999999997,
+          -1.6629399057315032e-15
+        ]
+      ],
+      "DirectionalLight2": [
+        0.0,
+        [
+          255,
+          241,
+          221,
+          0
+        ],
+        [
+          -31.999999999999993,
+          145.0,
+          1.8752206955469954e-15
+        ]
+      ],
+      "DirectionalLight3": [
+        0.0,
+        [
+          255,
+          241,
+          221,
+          0
+        ],
+        [
+          -31.999999999999993,
+          145.0,
+          1.8752206955469954e-15
+        ]
+      ],
+      "GH_FloodPool_11": [
+        35000.0,
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          -24.072946548461914,
+          -59.64737701416016,
+          -0.0
+        ]
+      ],
+      "GH_FloodPool_12": [
+        35000.0,
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          -32.42636871337892,
+          -84.85211181640628,
+          -3.768067030107509e-15
+        ]
+      ],
+      "GH_FloodPool_17": [
+        35000.0,
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          -40.839488983154276,
+          -15.70863819122314,
+          -0.0
+        ]
+      ],
+      "GH_FloodPool_16": [
+        35000.0,
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          -41.30947113037109,
+          66.57130432128902,
+          -0.0
+        ]
+      ]
+    },
+    "collision_actors": {
+      "DK_01 Desert terrain and access roads | asphalt": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_asphalt.SM_DK_01_Desert_terrain_and_access_roads_asphalt",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_01 Desert terrain and access roads | sand": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_sand.SM_DK_01_Desert_terrain_and_access_roads_sand",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_01 Desert terrain and access roads | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_white.SM_DK_01_Desert_terrain_and_access_roads_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_02 Track surface curbs and runoff | asphalt": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_asphalt.SM_DK_02_Track_surface_curbs_and_runoff_asphalt",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_02 Track surface curbs and runoff | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_red.SM_DK_02_Track_surface_curbs_and_runoff_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_02 Track surface curbs and runoff | rubbermark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_rubbermark.SM_DK_02_Track_surface_curbs_and_runoff_rubbermark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_02 Track surface curbs and runoff | runoff": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_runoff.SM_DK_02_Track_surface_curbs_and_runoff_runoff",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_02 Track surface curbs and runoff | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_white.SM_DK_02_Track_surface_curbs_and_runoff_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_03 Infield lawns and pit lane | dark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_dark.SM_DK_03_Infield_lawns_and_pit_lane_dark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_03 Infield lawns and pit lane | grass": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_grass.SM_DK_03_Infield_lawns_and_pit_lane_grass",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_03 Infield lawns and pit lane | grassdark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_grassdark.SM_DK_03_Infield_lawns_and_pit_lane_grassdark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_03 Infield lawns and pit lane | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_red.SM_DK_03_Infield_lawns_and_pit_lane_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_04 Safety barriers and perimeter fence | green": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_green.SM_DK_04_Safety_barriers_and_perimeter_fence_green",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_04 Safety barriers and perimeter fence | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_metal.SM_DK_04_Safety_barriers_and_perimeter_fence_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_04 Safety barriers and perimeter fence | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_red.SM_DK_04_Safety_barriers_and_perimeter_fence_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_04 Safety barriers and perimeter fence | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_white.SM_DK_04_Safety_barriers_and_perimeter_fence_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | blue": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_blue.SM_DK_05_Grandstand_steps_seating_and_crowd_blue",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | cream": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_cream.SM_DK_05_Grandstand_steps_seating_and_crowd_cream",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | dark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_dark.SM_DK_05_Grandstand_steps_seating_and_crowd_dark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_metal.SM_DK_05_Grandstand_steps_seating_and_crowd_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_red.SM_DK_05_Grandstand_steps_seating_and_crowd_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | shirt": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_shirt.SM_DK_05_Grandstand_steps_seating_and_crowd_shirt",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | skin": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_skin.SM_DK_05_Grandstand_steps_seating_and_crowd_skin",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | stone": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_stone.SM_DK_05_Grandstand_steps_seating_and_crowd_stone",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_white.SM_DK_05_Grandstand_steps_seating_and_crowd_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_06 Sculpted tensile canopy roofs | canvas": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_canvas.SM_DK_06_Sculpted_tensile_canopy_roofs_canvas",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_06 Sculpted tensile canopy roofs | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_metal.SM_DK_06_Sculpted_tensile_canopy_roofs_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_06 Sculpted tensile canopy roofs | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_white.SM_DK_06_Sculpted_tensile_canopy_roofs_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | amber": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_amber.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_amber",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | cream": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_cream.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_cream",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | dark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_dark.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_dark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | lamp": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_lamp.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_lamp",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_metal.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | stone": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_stone.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_stone",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_white.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | blue": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_blue.SM_DK_08_Parking_vehicles_blue",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | dark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_dark.SM_DK_08_Parking_vehicles_dark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | glass": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_glass.SM_DK_08_Parking_vehicles_glass",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_metal.SM_DK_08_Parking_vehicles_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_red.SM_DK_08_Parking_vehicles_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | rubber": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_rubber.SM_DK_08_Parking_vehicles_rubber",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_white.SM_DK_08_Parking_vehicles_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_11 Floodlight poles and lamp arrays | lamp": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_lamp.SM_DK_11_Floodlight_poles_and_lamp_arrays_lamp",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_11 Floodlight poles and lamp arrays | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_metal.SM_DK_11_Floodlight_poles_and_lamp_arrays_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_11 Floodlight poles and lamp arrays | stone": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_stone.SM_DK_11_Floodlight_poles_and_lamp_arrays_stone",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_12 Palms shrubs rocks and landscaping | leaf": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_leaf.SM_DK_12_Palms_shrubs_rocks_and_landscaping_leaf",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_12 Palms shrubs rocks and landscaping | sandlight": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_sandlight.SM_DK_12_Palms_shrubs_rocks_and_landscaping_sandlight",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_12 Palms shrubs rocks and landscaping | trunk": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_trunk.SM_DK_12_Palms_shrubs_rocks_and_landscaping_trunk",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | asphalt": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_asphalt.SM_DK_13_Distant_illuminated_secondary_circuit_asphalt",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | canvas": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_canvas.SM_DK_13_Distant_illuminated_secondary_circuit_canvas",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | cream": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_cream.SM_DK_13_Distant_illuminated_secondary_circuit_cream",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | lamp": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_lamp.SM_DK_13_Distant_illuminated_secondary_circuit_lamp",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_metal.SM_DK_13_Distant_illuminated_secondary_circuit_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_red.SM_DK_13_Distant_illuminated_secondary_circuit_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | runoff": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_runoff.SM_DK_13_Distant_illuminated_secondary_circuit_runoff",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | stone": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_stone.SM_DK_13_Distant_illuminated_secondary_circuit_stone",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_white.SM_DK_13_Distant_illuminated_secondary_circuit_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | amber": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber.SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | dark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark.SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | glass": [
+        "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_glass.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_glass",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | green": [
+        "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_green.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_green",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | metal": [
+        "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_metal.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | white": [
+        "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_white.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_DESERT KARTING": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_DESERT_KARTING.SM_DK_DESERT_KARTING",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ]
+    },
+    "pit_lateral_probes": [
+      {
+        "cm": [
+          -3850,
+          -1700
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | runoff"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1600
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | red"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1500
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1400
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1300
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1200
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1100
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1000
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -900
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -800
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -700
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -600
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -500
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -400
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -300
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -200
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -100
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          0
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1700
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1600
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1500
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1400
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1300
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1200
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1100
+        ],
+        "hit": [
+          "DK_03 Infield lawns and pit lane | red"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1000
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -900
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -800
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | runoff"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -700
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | runoff"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -600
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | white"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -500
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -400
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -300
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -200
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -100
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          0
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      }
+    ],
+    "visible_paddock": []
+  },
+  "DesertKarting_Visual": {
+    "road_rays": 2244,
+    "road_failures": [],
+    "swept_sphere_segments": 748,
+    "sweep_radius_cm": 28,
+    "sweep_failures": [],
+    "visible_kart_groups": [],
+    "lights": {
+      "DirectionalLight": [
+        28000.0,
+        [
+          255,
+          255,
+          255,
+          0
+        ],
+        [
+          -16.999999999999993,
+          119.99999999999997,
+          -1.6629399057315032e-15
+        ]
+      ],
+      "DirectionalLight2": [
+        0.0,
+        [
+          255,
+          241,
+          221,
+          0
+        ],
+        [
+          -31.999999999999993,
+          145.0,
+          1.8752206955469954e-15
+        ]
+      ],
+      "DirectionalLight3": [
+        0.0,
+        [
+          255,
+          241,
+          221,
+          0
+        ],
+        [
+          -31.999999999999993,
+          145.0,
+          1.8752206955469954e-15
+        ]
+      ],
+      "GH_FloodPool_11": [
+        35000.0,
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          -24.072946548461914,
+          -59.64737701416016,
+          -0.0
+        ]
+      ],
+      "GH_FloodPool_12": [
+        35000.0,
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          -32.42636871337892,
+          -84.85211181640628,
+          -3.768067030107509e-15
+        ]
+      ],
+      "GH_FloodPool_17": [
+        35000.0,
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          -40.839488983154276,
+          -15.70863819122314,
+          -0.0
+        ]
+      ],
+      "GH_FloodPool_16": [
+        35000.0,
+        [
+          255,
+          255,
+          255,
+          255
+        ],
+        [
+          -41.30947113037109,
+          66.57130432128902,
+          -0.0
+        ]
+      ]
+    },
+    "collision_actors": {
+      "DK_01 Desert terrain and access roads | asphalt": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_asphalt.SM_DK_01_Desert_terrain_and_access_roads_asphalt",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_01 Desert terrain and access roads | sand": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_sand.SM_DK_01_Desert_terrain_and_access_roads_sand",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_01 Desert terrain and access roads | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_white.SM_DK_01_Desert_terrain_and_access_roads_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_02 Track surface curbs and runoff | asphalt": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_asphalt.SM_DK_02_Track_surface_curbs_and_runoff_asphalt",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_02 Track surface curbs and runoff | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_red.SM_DK_02_Track_surface_curbs_and_runoff_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_02 Track surface curbs and runoff | rubbermark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_rubbermark.SM_DK_02_Track_surface_curbs_and_runoff_rubbermark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_02 Track surface curbs and runoff | runoff": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_runoff.SM_DK_02_Track_surface_curbs_and_runoff_runoff",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_02 Track surface curbs and runoff | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_white.SM_DK_02_Track_surface_curbs_and_runoff_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_03 Infield lawns and pit lane | dark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_dark.SM_DK_03_Infield_lawns_and_pit_lane_dark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_03 Infield lawns and pit lane | grass": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_grass.SM_DK_03_Infield_lawns_and_pit_lane_grass",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_03 Infield lawns and pit lane | grassdark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_grassdark.SM_DK_03_Infield_lawns_and_pit_lane_grassdark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_03 Infield lawns and pit lane | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_red.SM_DK_03_Infield_lawns_and_pit_lane_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_04 Safety barriers and perimeter fence | green": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_green.SM_DK_04_Safety_barriers_and_perimeter_fence_green",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_04 Safety barriers and perimeter fence | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_metal.SM_DK_04_Safety_barriers_and_perimeter_fence_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_04 Safety barriers and perimeter fence | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_red.SM_DK_04_Safety_barriers_and_perimeter_fence_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_04 Safety barriers and perimeter fence | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_white.SM_DK_04_Safety_barriers_and_perimeter_fence_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | blue": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_blue.SM_DK_05_Grandstand_steps_seating_and_crowd_blue",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | cream": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_cream.SM_DK_05_Grandstand_steps_seating_and_crowd_cream",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | dark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_dark.SM_DK_05_Grandstand_steps_seating_and_crowd_dark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_metal.SM_DK_05_Grandstand_steps_seating_and_crowd_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_red.SM_DK_05_Grandstand_steps_seating_and_crowd_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | shirt": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_shirt.SM_DK_05_Grandstand_steps_seating_and_crowd_shirt",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | skin": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_skin.SM_DK_05_Grandstand_steps_seating_and_crowd_skin",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | stone": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_stone.SM_DK_05_Grandstand_steps_seating_and_crowd_stone",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_05 Grandstand steps seating and crowd | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_white.SM_DK_05_Grandstand_steps_seating_and_crowd_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_06 Sculpted tensile canopy roofs | canvas": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_canvas.SM_DK_06_Sculpted_tensile_canopy_roofs_canvas",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_06 Sculpted tensile canopy roofs | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_metal.SM_DK_06_Sculpted_tensile_canopy_roofs_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_06 Sculpted tensile canopy roofs | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_white.SM_DK_06_Sculpted_tensile_canopy_roofs_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | amber": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_amber.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_amber",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | cream": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_cream.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_cream",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | dark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_dark.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_dark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | lamp": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_lamp.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_lamp",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_metal.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | stone": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_stone.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_stone",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_07 Arabian pit building arches towers and domes | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_white.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | blue": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_blue.SM_DK_08_Parking_vehicles_blue",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | dark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_dark.SM_DK_08_Parking_vehicles_dark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | glass": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_glass.SM_DK_08_Parking_vehicles_glass",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_metal.SM_DK_08_Parking_vehicles_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_red.SM_DK_08_Parking_vehicles_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | rubber": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_rubber.SM_DK_08_Parking_vehicles_rubber",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_08 Parking vehicles | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_white.SM_DK_08_Parking_vehicles_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_11 Floodlight poles and lamp arrays | lamp": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_lamp.SM_DK_11_Floodlight_poles_and_lamp_arrays_lamp",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_11 Floodlight poles and lamp arrays | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_metal.SM_DK_11_Floodlight_poles_and_lamp_arrays_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_11 Floodlight poles and lamp arrays | stone": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_stone.SM_DK_11_Floodlight_poles_and_lamp_arrays_stone",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_12 Palms shrubs rocks and landscaping | leaf": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_leaf.SM_DK_12_Palms_shrubs_rocks_and_landscaping_leaf",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_12 Palms shrubs rocks and landscaping | sandlight": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_sandlight.SM_DK_12_Palms_shrubs_rocks_and_landscaping_sandlight",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_12 Palms shrubs rocks and landscaping | trunk": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_trunk.SM_DK_12_Palms_shrubs_rocks_and_landscaping_trunk",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | asphalt": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_asphalt.SM_DK_13_Distant_illuminated_secondary_circuit_asphalt",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | canvas": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_canvas.SM_DK_13_Distant_illuminated_secondary_circuit_canvas",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | cream": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_cream.SM_DK_13_Distant_illuminated_secondary_circuit_cream",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | lamp": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_lamp.SM_DK_13_Distant_illuminated_secondary_circuit_lamp",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | metal": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_metal.SM_DK_13_Distant_illuminated_secondary_circuit_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | red": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_red.SM_DK_13_Distant_illuminated_secondary_circuit_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | runoff": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_runoff.SM_DK_13_Distant_illuminated_secondary_circuit_runoff",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | stone": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_stone.SM_DK_13_Distant_illuminated_secondary_circuit_stone",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_13 Distant illuminated secondary circuit | white": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_white.SM_DK_13_Distant_illuminated_secondary_circuit_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | amber": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber.SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | dark": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark.SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | glass": [
+        "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_glass.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_glass",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | green": [
+        "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_green.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_green",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | metal": [
+        "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_metal.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_metal",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_14 Timing gantry signs and pit furniture | white": [
+        "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_white.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DK_DESERT KARTING": [
+        "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_DESERT_KARTING.SM_DK_DESERT_KARTING",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DV_07 Arabian pit building arches towers and domes | cream": [
+        "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_07_Arabian_pit_building_arches_towers_and_domes_cream.SM_DV_07_Arabian_pit_building_arches_towers_and_domes_cream",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DV_07 Arabian pit building arches towers and domes | stone": [
+        "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_07_Arabian_pit_building_arches_towers_and_domes_stone.SM_DV_07_Arabian_pit_building_arches_towers_and_domes_stone",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DV_07 Arabian pit building arches towers and domes | white": [
+        "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_07_Arabian_pit_building_arches_towers_and_domes_white.SM_DV_07_Arabian_pit_building_arches_towers_and_domes_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DV_04 Safety barriers and perimeter fence | white": [
+        "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_04_Safety_barriers_and_perimeter_fence_white.SM_DV_04_Safety_barriers_and_perimeter_fence_white",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DV_05 Grandstand steps seating and crowd | blue": [
+        "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_05_Grandstand_steps_seating_and_crowd_blue.SM_DV_05_Grandstand_steps_seating_and_crowd_blue",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ],
+      "DV_05 Grandstand steps seating and crowd | red": [
+        "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_05_Grandstand_steps_seating_and_crowd_red.SM_DV_05_Grandstand_steps_seating_and_crowd_red",
+        "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+      ]
+    },
+    "pit_lateral_probes": [
+      {
+        "cm": [
+          -3850,
+          -1700
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | runoff"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1600
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | red"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1500
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1400
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1300
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1200
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1100
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -1000
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -900
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -800
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -700
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -600
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -500
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -400
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -300
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -200
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          -100
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          -3850,
+          0
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1700
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1600
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1500
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1400
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1300
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1200
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1100
+        ],
+        "hit": [
+          "DK_03 Infield lawns and pit lane | red"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -1000
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -900
+        ],
+        "hit": [
+          "DK_01 Desert terrain and access roads | sand"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -800
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | runoff"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -700
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | runoff"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -600
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | white"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -500
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -400
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -300
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -200
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          -100
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      },
+      {
+        "cm": [
+          4450,
+          0
+        ],
+        "hit": [
+          "DK_02 Track surface curbs and runoff | asphalt"
+        ]
+      }
+    ],
+    "visible_paddock": []
+  }
+}

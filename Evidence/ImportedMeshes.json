@@ -1,0 +1,27 @@
+{
+  "Road": {
+    "min_cm": "<Struct 'Vector' (0x0000027FD57A8A40) {x: -0.000035, y: -3926.183105, z: 0.000000}>",
+    "max_cm": "<Struct 'Vector' (0x0000027FD57A8A58) {x: 14449.218750, y: 400.000000, z: 0.000000}>",
+    "collision": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+  },
+  "CurbLeft": {
+    "min_cm": "<Struct 'Vector' (0x0000027FD57A84C0) {x: 0.000035, y: -3289.315918, z: -4.442054}>",
+    "max_cm": "<Struct 'Vector' (0x0000027FD57A84D8) {x: 14479.478516, y: 450.000000, z: 5.000000}>",
+    "collision": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+  },
+  "CurbRight": {
+    "min_cm": "<Struct 'Vector' (0x0000027FD57A82C0) {x: -0.000039, y: -3965.987061, z: -4.442053}>",
+    "max_cm": "<Struct 'Vector' (0x0000027FD57A82D8) {x: 13965.069336, y: -400.000000, z: 5.000000}>",
+    "collision": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+  },
+  "VergeLeft": {
+    "min_cm": "<Struct 'Vector' (0x0000027FD57A8100) {x: 0.000039, y: -3249.511719, z: -44.246361}>",
+    "max_cm": "<Struct 'Vector' (0x0000027FD57A8118) {x: 15538.554688, y: 2200.000000, z: 39.431709}>",
+    "collision": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+  },
+  "VergeRight": {
+    "min_cm": "<Struct 'Vector' (0x0000027FD57A6480) {x: -0.000192, y: -5359.133301, z: -44.434540}>",
+    "max_cm": "<Struct 'Vector' (0x0000027FD57A6498) {x: 13934.809570, y: -450.000000, z: 39.245518}>",
+    "collision": "<CollisionTraceFlag.CTF_USE_COMPLEX_AS_SIMPLE: 3>"
+  }
+}
