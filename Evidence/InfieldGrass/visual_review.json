@@ -1,0 +1,8 @@
+{
+  "rendered_and_inspected": ["DesertKarting_Visual_Close.png", "DesertKarting_Visual_Aerial.png", "DesertKarting_Close.png"],
+  "resolution": [1920,1080],
+  "material_compile_errors_in_final_capture": 0,
+  "remaining_visual_limitations": ["Coverage is patchy rather than dense turf", "Existing flat ground shading remains visible between blades", "Distance culling intentionally removes grass beyond 75 metres"],
+  "performance_fps": null,
+  "performance_note": "No controlled runtime benchmark completed; concurrent native builds were running during this pass."
+}

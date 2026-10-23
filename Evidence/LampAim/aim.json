@@ -1,0 +1,150 @@
+{
+  "DesertKarting": [
+    {
+      "actor": "GH_FloodPool_11",
+      "position_cm": [
+        -3700.0,
+        800.0,
+        1723.9999999999998
+      ],
+      "old_rotation": "<Struct 'Rotator' (0x0000019339ADC9C0) {pitch: -24.072947, yaw: -59.647377, roll: -0.000000}>",
+      "new_rotation": "<Struct 'Rotator' (0x0000019339ADDD70) {pitch: -55.201565, yaw: -65.164398, roll: 0.000000}>",
+      "target_cm": [
+        -3196.7613605972415,
+        -287.3332757578586,
+        0.0
+      ],
+      "distance_cm": 2099.4567823030447,
+      "intensity": 35000.0,
+      "radius_cm": 3699.456787109375
+    },
+    {
+      "actor": "GH_FloodPool_12",
+      "position_cm": [
+        1800.0,
+        800.0,
+        2124.0
+      ],
+      "old_rotation": "<Struct 'Rotator' (0x0000019339ADD8C0) {pitch: -32.426369, yaw: -84.852112, roll: -0.000000}>",
+      "new_rotation": "<Struct 'Rotator' (0x0000019339ADC970) {pitch: -70.277557, yaw: -87.471252, roll: 0.000000}>",
+      "target_cm": [
+        1833.5952857724985,
+        39.30076494534963,
+        0.0
+      ],
+      "distance_cm": 2256.3616663644298,
+      "intensity": 35000.0,
+      "radius_cm": 3856.361572265625
+    },
+    {
+      "actor": "GH_FloodPool_17",
+      "position_cm": [
+        -3600.0,
+        -8500.0,
+        1723.9999999999998
+      ],
+      "old_rotation": "<Struct 'Rotator' (0x0000019339ADDB90) {pitch: -40.839489, yaw: -15.708638, roll: -0.000000}>",
+      "new_rotation": "<Struct 'Rotator' (0x0000019339ADDC80) {pitch: -46.260151, yaw: 179.854935, roll: 0.000000}>",
+      "target_cm": [
+        -5249.780467020649,
+        -8495.82307447005,
+        0.0
+      ],
+      "distance_cm": 2386.2038965833895,
+      "intensity": 35000.0,
+      "radius_cm": 3986.203857421875
+    },
+    {
+      "actor": "GH_FloodPool_16",
+      "position_cm": [
+        200.0,
+        -16300.0,
+        1723.9999999999998
+      ],
+      "old_rotation": "<Struct 'Rotator' (0x0000019339ADDD70) {pitch: -41.309471, yaw: 66.571304, roll: -0.000000}>",
+      "new_rotation": "<Struct 'Rotator' (0x0000019339ADC9C0) {pitch: -50.726032, yaw: 64.616730, roll: 0.000000}>",
+      "target_cm": [
+        804.3280626736307,
+        -15026.328456424077,
+        0.0
+      ],
+      "distance_cm": 2227.0221391467885,
+      "intensity": 35000.0,
+      "radius_cm": 3827.022216796875
+    }
+  ],
+  "DesertKarting_Visual": [
+    {
+      "actor": "GH_FloodPool_11",
+      "position_cm": [
+        -3700.0,
+        800.0,
+        1723.9999999999998
+      ],
+      "old_rotation": "<Struct 'Rotator' (0x0000019339ADC970) {pitch: -24.072947, yaw: -59.647377, roll: -0.000000}>",
+      "new_rotation": "<Struct 'Rotator' (0x0000019339ADC920) {pitch: -55.201565, yaw: -65.164398, roll: 0.000000}>",
+      "target_cm": [
+        -3196.7613605972415,
+        -287.3332757578586,
+        0.0
+      ],
+      "distance_cm": 2099.4567823030447,
+      "intensity": 35000.0,
+      "radius_cm": 3699.456787109375
+    },
+    {
+      "actor": "GH_FloodPool_12",
+      "position_cm": [
+        1800.0,
+        800.0,
+        2124.0
+      ],
+      "old_rotation": "<Struct 'Rotator' (0x0000019339ADDC80) {pitch: -32.426369, yaw: -84.852112, roll: -0.000000}>",
+      "new_rotation": "<Struct 'Rotator' (0x0000019339ADDB90) {pitch: -70.277557, yaw: -87.471252, roll: 0.000000}>",
+      "target_cm": [
+        1833.5952857724985,
+        39.30076494534963,
+        0.0
+      ],
+      "distance_cm": 2256.3616663644298,
+      "intensity": 35000.0,
+      "radius_cm": 3856.361572265625
+    },
+    {
+      "actor": "GH_FloodPool_17",
+      "position_cm": [
+        -3600.0,
+        -8500.0,
+        1723.9999999999998
+      ],
+      "old_rotation": "<Struct 'Rotator' (0x0000019339ADC9C0) {pitch: -40.839489, yaw: -15.708638, roll: -0.000000}>",
+      "new_rotation": "<Struct 'Rotator' (0x0000019339ADD8C0) {pitch: -46.260151, yaw: 179.854935, roll: 0.000000}>",
+      "target_cm": [
+        -5249.780467020649,
+        -8495.82307447005,
+        0.0
+      ],
+      "distance_cm": 2386.2038965833895,
+      "intensity": 35000.0,
+      "radius_cm": 3986.203857421875
+    },
+    {
+      "actor": "GH_FloodPool_16",
+      "position_cm": [
+        200.0,
+        -16300.0,
+        1723.9999999999998
+      ],
+      "old_rotation": "<Struct 'Rotator' (0x0000019339ADC920) {pitch: -41.309471, yaw: 66.571304, roll: -0.000000}>",
+      "new_rotation": "<Struct 'Rotator' (0x0000019339ADC970) {pitch: -50.726032, yaw: 64.616730, roll: 0.000000}>",
+      "target_cm": [
+        804.3280626736307,
+        -15026.328456424077,
+        0.0
+      ],
+      "distance_cm": 2227.0221391467885,
+      "intensity": 35000.0,
+      "radius_cm": 3827.022216796875
+    }
+  ]
+}

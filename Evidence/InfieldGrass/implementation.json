@@ -1,0 +1,24 @@
+{
+  "DesertKarting": {
+    "saved": true,
+    "instances": 17724,
+    "variant_counts": [
+      5907,
+      5947,
+      5870
+    ],
+    "existing_actor_transforms_and_collision_unchanged": true,
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_BeforeInfieldGrass"
+  },
+  "DesertKarting_Visual": {
+    "saved": true,
+    "instances": 17724,
+    "variant_counts": [
+      5907,
+      5947,
+      5870
+    ],
+    "existing_actor_transforms_and_collision_unchanged": true,
+    "checkpoint": "/Game/RoadToF1/Checkpoints/DesertKarting_Visual_BeforeInfieldGrass"
+  }
+}
