@@ -1,0 +1,7 @@
+{
+  "source_sha256": "193d9319c9efb8f17836239c06c2b579dc4dd98e2afedb9acf6bf7bca2c04e41",
+  "source_unchanged": true,
+  "mesh_geometry_weights_and_bind_skeleton": "unchanged",
+  "wheel_geometry_location_and_materials": "unchanged",
+  "hands_and_feet": "unchanged world transforms; knee bend-plane only"
+}

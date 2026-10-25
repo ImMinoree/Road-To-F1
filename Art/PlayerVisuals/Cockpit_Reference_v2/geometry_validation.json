@@ -1,0 +1,527 @@
+{
+  "method": "49 evaluated poses. Glove vertices compared to densely sampled contoured grip centerline minus 17mm tube radius; not a full triangle/volume collision proof.",
+  "hand_vertices": 42128,
+  "worst_signed_clearance_m": -0.0006752619594335568,
+  "maximum_vertices_deeper_than_3mm": 0,
+  "projected_driver_wheel_bounds": {
+    "1": {
+      "top_of_driver_or_wheel_fraction": 0.5999144017696381,
+      "bottom_fraction": 0.9999945652862152
+    },
+    "25": {
+      "top_of_driver_or_wheel_fraction": 0.6172012090682983,
+      "bottom_fraction": 0.9999945652862152
+    },
+    "49": {
+      "top_of_driver_or_wheel_fraction": 0.5999144017696381,
+      "bottom_fraction": 0.9999980582961143
+    }
+  },
+  "poses": [
+    {
+      "frame": 1,
+      "min_signed_glove_to_grip_m": -0.0006750384420156491,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750384420156491,
+      "right_closest_m": 0.00027057620882987854
+    },
+    {
+      "frame": 2,
+      "min_signed_glove_to_grip_m": -0.0006750067770481122,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750067770481122,
+      "right_closest_m": 0.0002707196325063693
+    },
+    {
+      "frame": 3,
+      "min_signed_glove_to_grip_m": -0.0006750272661447537,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750272661447537,
+      "right_closest_m": 0.0002706935554742801
+    },
+    {
+      "frame": 4,
+      "min_signed_glove_to_grip_m": -0.0006749117821455014,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006749117821455014,
+      "right_closest_m": 0.0002705966979265201
+    },
+    {
+      "frame": 5,
+      "min_signed_glove_to_grip_m": -0.0006751464754343045,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751464754343045,
+      "right_closest_m": 0.0002706022858619678
+    },
+    {
+      "frame": 6,
+      "min_signed_glove_to_grip_m": -0.0006750738322734845,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750738322734845,
+      "right_closest_m": 0.0002706637531518924
+    },
+    {
+      "frame": 7,
+      "min_signed_glove_to_grip_m": -0.000675077557563783,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.000675077557563783,
+      "right_closest_m": 0.00027064326405525085
+    },
+    {
+      "frame": 8,
+      "min_signed_glove_to_grip_m": -0.000675094321370126,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.000675094321370126,
+      "right_closest_m": 0.00027054640650749084
+    },
+    {
+      "frame": 9,
+      "min_signed_glove_to_grip_m": -0.0006750719696283353,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750719696283353,
+      "right_closest_m": 0.00027064326405525085
+    },
+    {
+      "frame": 10,
+      "min_signed_glove_to_grip_m": -0.0006750142276287091,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750142276287091,
+      "right_closest_m": 0.0002708258032798755
+    },
+    {
+      "frame": 11,
+      "min_signed_glove_to_grip_m": -0.0006751334369182599,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751334369182599,
+      "right_closest_m": 0.00027066002786159393
+    },
+    {
+      "frame": 12,
+      "min_signed_glove_to_grip_m": -0.0006750142276287091,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750142276287091,
+      "right_closest_m": 0.00027052778005599853
+    },
+    {
+      "frame": 13,
+      "min_signed_glove_to_grip_m": -0.000675077557563783,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.000675077557563783,
+      "right_closest_m": 0.00027067306637763855
+    },
+    {
+      "frame": 14,
+      "min_signed_glove_to_grip_m": -0.0006751129478216183,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751129478216183,
+      "right_closest_m": 0.00027079972624778625
+    },
+    {
+      "frame": 15,
+      "min_signed_glove_to_grip_m": -0.000674980700016023,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.000674980700016023,
+      "right_closest_m": 0.00027064326405525085
+    },
+    {
+      "frame": 16,
+      "min_signed_glove_to_grip_m": -0.0006749788373708737,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006749788373708737,
+      "right_closest_m": 0.0002706954181194293
+    },
+    {
+      "frame": 17,
+      "min_signed_glove_to_grip_m": -0.0006751148104667676,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751148104667676,
+      "right_closest_m": 0.0002707438468933093
+    },
+    {
+      "frame": 18,
+      "min_signed_glove_to_grip_m": -0.0006751595139503491,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751595139503491,
+      "right_closest_m": 0.00027076247334480164
+    },
+    {
+      "frame": 19,
+      "min_signed_glove_to_grip_m": -0.0006749751120805753,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006749751120805753,
+      "right_closest_m": 0.00027069728076457855
+    },
+    {
+      "frame": 20,
+      "min_signed_glove_to_grip_m": -0.0006751073598861707,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751073598861707,
+      "right_closest_m": 0.00027066189050674316
+    },
+    {
+      "frame": 21,
+      "min_signed_glove_to_grip_m": -0.000675053343176843,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.000675053343176843,
+      "right_closest_m": 0.00027066747844219086
+    },
+    {
+      "frame": 22,
+      "min_signed_glove_to_grip_m": -0.0006750980466604245,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750980466604245,
+      "right_closest_m": 0.0002706414014101016
+    },
+    {
+      "frame": 23,
+      "min_signed_glove_to_grip_m": -0.0006750123649835599,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750123649835599,
+      "right_closest_m": 0.0002706209123134601
+    },
+    {
+      "frame": 24,
+      "min_signed_glove_to_grip_m": -0.0006751222610473645,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751222610473645,
+      "right_closest_m": 0.00027074570953845856
+    },
+    {
+      "frame": 25,
+      "min_signed_glove_to_grip_m": -0.0006751148104667676,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751148104667676,
+      "right_closest_m": 0.0002706935554742801
+    },
+    {
+      "frame": 26,
+      "min_signed_glove_to_grip_m": -0.0006752023547887814,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006752023547887814,
+      "right_closest_m": 0.0002706693410873401
+    },
+    {
+      "frame": 27,
+      "min_signed_glove_to_grip_m": -0.0006751464754343045,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751464754343045,
+      "right_closest_m": 0.00027072708308696625
+    },
+    {
+      "frame": 28,
+      "min_signed_glove_to_grip_m": -0.0006750272661447537,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750272661447537,
+      "right_closest_m": 0.00027063208818435547
+    },
+    {
+      "frame": 29,
+      "min_signed_glove_to_grip_m": -0.0006750179529190076,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750179529190076,
+      "right_closest_m": 0.0002706656157970416
+    },
+    {
+      "frame": 30,
+      "min_signed_glove_to_grip_m": -0.0006750980466604245,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750980466604245,
+      "right_closest_m": 0.0002707848250865924
+    },
+    {
+      "frame": 31,
+      "min_signed_glove_to_grip_m": -0.0006748801171779645,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006748801171779645,
+      "right_closest_m": 0.00027072708308696625
+    },
+    {
+      "frame": 32,
+      "min_signed_glove_to_grip_m": -0.0006751464754343045,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751464754343045,
+      "right_closest_m": 0.0002707047313451755
+    },
+    {
+      "frame": 33,
+      "min_signed_glove_to_grip_m": -0.0006750105023384106,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750105023384106,
+      "right_closest_m": 0.0002708034515380847
+    },
+    {
+      "frame": 34,
+      "min_signed_glove_to_grip_m": -0.0006750794202089322,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750794202089322,
+      "right_closest_m": 0.0002706749290227878
+    },
+    {
+      "frame": 35,
+      "min_signed_glove_to_grip_m": -0.0006749378591775906,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006749378591775906,
+      "right_closest_m": 0.0002706265002489078
+    },
+    {
+      "frame": 36,
+      "min_signed_glove_to_grip_m": -0.0006749415844678891,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006749415844678891,
+      "right_closest_m": 0.00027076247334480164
+    },
+    {
+      "frame": 37,
+      "min_signed_glove_to_grip_m": -0.0006750179529190076,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750179529190076,
+      "right_closest_m": 0.00027084629237651703
+    },
+    {
+      "frame": 38,
+      "min_signed_glove_to_grip_m": -0.0006751371622085584,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751371622085584,
+      "right_closest_m": 0.0002707289457321155
+    },
+    {
+      "frame": 39,
+      "min_signed_glove_to_grip_m": -0.0006752619594335568,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006752619594335568,
+      "right_closest_m": 0.00027066002786159393
+    },
+    {
+      "frame": 40,
+      "min_signed_glove_to_grip_m": -0.000675077557563783,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.000675077557563783,
+      "right_closest_m": 0.0002707233577966678
+    },
+    {
+      "frame": 41,
+      "min_signed_glove_to_grip_m": -0.0006749918758869183,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006749918758869183,
+      "right_closest_m": 0.00027071031928062317
+    },
+    {
+      "frame": 42,
+      "min_signed_glove_to_grip_m": -0.000675198629498483,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.000675198629498483,
+      "right_closest_m": 0.0002706395387649524
+    },
+    {
+      "frame": 43,
+      "min_signed_glove_to_grip_m": -0.0006751297116279614,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751297116279614,
+      "right_closest_m": 0.0002708202153444278
+    },
+    {
+      "frame": 44,
+      "min_signed_glove_to_grip_m": -0.0006749695241451276,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006749695241451276,
+      "right_closest_m": 0.00027073267102241394
+    },
+    {
+      "frame": 45,
+      "min_signed_glove_to_grip_m": -0.0006750905960798276,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750905960798276,
+      "right_closest_m": 0.00027063767611980316
+    },
+    {
+      "frame": 46,
+      "min_signed_glove_to_grip_m": -0.0006750105023384106,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750105023384106,
+      "right_closest_m": 0.0002708369791507709
+    },
+    {
+      "frame": 47,
+      "min_signed_glove_to_grip_m": -0.0006750309914350522,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006750309914350522,
+      "right_closest_m": 0.0002706954181194293
+    },
+    {
+      "frame": 48,
+      "min_signed_glove_to_grip_m": -0.0006752265691757214,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006752265691757214,
+      "right_closest_m": 0.0002707233577966678
+    },
+    {
+      "frame": 49,
+      "min_signed_glove_to_grip_m": -0.0006751613765954984,
+      "vertices_deeper_than_3mm": 0,
+      "left_closest_m": -0.0006751613765954984,
+      "right_closest_m": 0.0002706171870231616
+    }
+  ],
+  "source_bone_samples_cm": {
+    "1": {
+      "hand_l": [
+        47.161597,
+        17.671975,
+        66.637069
+      ],
+      "hand_r": [
+        51.889193,
+        -15.136276,
+        81.18704
+      ],
+      "calf_l": [
+        46.954811,
+        8.135767,
+        69.186705
+      ],
+      "calf_r": [
+        46.860421,
+        -7.991257,
+        69.196254
+      ],
+      "foot_l": [
+        29.000008,
+        17.000008,
+        27.800012
+      ],
+      "foot_r": [
+        28.99999,
+        -16.999997,
+        27.79997
+      ]
+    },
+    "13": {
+      "hand_l": [
+        48.379675,
+        18.320233,
+        70.385927
+      ],
+      "hand_r": [
+        50.800866,
+        -17.021592,
+        77.837557
+      ],
+      "calf_l": [
+        46.954811,
+        8.135767,
+        69.186705
+      ],
+      "calf_r": [
+        46.860421,
+        -7.991257,
+        69.196254
+      ],
+      "foot_l": [
+        29.000008,
+        17.000008,
+        27.800012
+      ],
+      "foot_r": [
+        28.99999,
+        -16.999997,
+        27.79997
+      ]
+    },
+    "25": {
+      "hand_l": [
+        49.612224,
+        18.099965,
+        74.179369
+      ],
+      "hand_r": [
+        49.61226,
+        -18.099961,
+        74.179381
+      ],
+      "calf_l": [
+        46.954811,
+        8.135767,
+        69.186705
+      ],
+      "calf_r": [
+        46.860421,
+        -7.991257,
+        69.196254
+      ],
+      "foot_l": [
+        29.000008,
+        17.000008,
+        27.800012
+      ],
+      "foot_r": [
+        28.99999,
+        -16.999997,
+        27.79997
+      ]
+    },
+    "37": {
+      "hand_l": [
+        50.800836,
+        17.021616,
+        77.837545
+      ],
+      "hand_r": [
+        48.379701,
+        -18.320242,
+        70.385963
+      ],
+      "calf_l": [
+        46.954811,
+        8.135767,
+        69.186705
+      ],
+      "calf_r": [
+        46.860421,
+        -7.991257,
+        69.196254
+      ],
+      "foot_l": [
+        29.000008,
+        17.000008,
+        27.800012
+      ],
+      "foot_r": [
+        28.99999,
+        -16.999997,
+        27.79997
+      ]
+    },
+    "49": {
+      "hand_l": [
+        51.889151,
+        15.136293,
+        81.187028
+      ],
+      "hand_r": [
+        47.161627,
+        -17.671987,
+        66.637081
+      ],
+      "calf_l": [
+        46.954811,
+        8.135767,
+        69.186705
+      ],
+      "calf_r": [
+        46.860421,
+        -7.991257,
+        69.196254
+      ],
+      "foot_l": [
+        29.000008,
+        17.000008,
+        27.800012
+      ],
+      "foot_r": [
+        28.99999,
+        -16.999997,
+        27.79997
+      ]
+    }
+  }
+}

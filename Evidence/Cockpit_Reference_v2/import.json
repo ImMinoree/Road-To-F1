@@ -1,0 +1,38 @@
+{
+  "assets": [
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/SK_CV2_DriverPOV.SK_CV2_DriverPOV"
+  ],
+  "missing_chassis_materials": [],
+  "explicit_animation_import": [
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/A_CV2_Steering.A_CV2_Steering"
+  ],
+  "animation_seconds": 2.0,
+  "skeletal_materials": [
+    "M_CV2_RedTextile",
+    "M_CV2_SuitGraphite",
+    "M_CV2_PalmSuede",
+    "M_CV2_LightThread",
+    "M_CV2_LegFabric"
+  ],
+  "saved": [
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/A_CV2_Steering.A_CV2_Steering",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_BlueGrip.M_CV2_BlueGrip",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_BrushedAluminum.M_CV2_BrushedAluminum",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_DarkSteel.M_CV2_DarkSteel",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_LCD.M_CV2_LCD",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_LCDInk.M_CV2_LCDInk",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_LEDAmber.M_CV2_LEDAmber",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_LEDGreen.M_CV2_LEDGreen",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_LegFabric.M_CV2_LegFabric",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_LightThread.M_CV2_LightThread",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_PalmSuede.M_CV2_PalmSuede",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_RedTextile.M_CV2_RedTextile",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_SuitGraphite.M_CV2_SuitGraphite",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/M_CV2_TrimRubber.M_CV2_TrimRubber",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/PAL_CockpitV2.PAL_CockpitV2",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/SK_CV2_DriverPOV.SK_CV2_DriverPOV",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/SK_CV2_DriverPOV_Skeleton.SK_CV2_DriverPOV_Skeleton",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/SM_CV2_PlayerChassis.SM_CV2_PlayerChassis",
+    "/Game/RoadToF1/PlayerVisuals/CockpitReferenceV2/SM_CV2_SteeringWheel.SM_CV2_SteeringWheel"
+  ]
+}

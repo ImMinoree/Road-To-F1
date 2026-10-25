@@ -1,0 +1,314 @@
+{
+  "materials": {
+    "M_CT4_RedKnit": {
+      "color": [
+        0.48,
+        0.012,
+        0.022,
+        1
+      ],
+      "roughness": 0.76,
+      "metallic": 0,
+      "tile": 12
+    },
+    "M_CT4_GraphiteNomex": {
+      "color": [
+        0.028,
+        0.03,
+        0.033,
+        1
+      ],
+      "roughness": 0.82,
+      "metallic": 0,
+      "tile": 16
+    },
+    "M_CT4_LegNomex": {
+      "color": [
+        0.017,
+        0.019,
+        0.022,
+        1
+      ],
+      "roughness": 0.82,
+      "metallic": 0,
+      "tile": 14
+    },
+    "M_CT4_BlueSuede": {
+      "color": [
+        0.018,
+        0.025,
+        0.11,
+        1
+      ],
+      "roughness": 0.84,
+      "metallic": 0,
+      "tile": 11
+    },
+    "M_CT4_PalmSuede": {
+      "color": [
+        0.015,
+        0.018,
+        0.019,
+        1
+      ],
+      "roughness": 0.85,
+      "metallic": 0,
+      "tile": 14
+    },
+    "M_CT4_IvoryStitch": {
+      "color": [
+        0.64,
+        0.65,
+        0.59,
+        1
+      ],
+      "roughness": 0.83,
+      "metallic": 0,
+      "tile": null
+    },
+    "M_CT4_BlackPolymer": {
+      "color": [
+        0.007,
+        0.009,
+        0.01,
+        1
+      ],
+      "roughness": 0.44,
+      "metallic": 0,
+      "tile": null
+    },
+    "M_CT4_SatinAlloy": {
+      "color": [
+        0.6200000047683716,
+        0.6600000262260437,
+        0.699999988079071,
+        1.0
+      ],
+      "roughness": 0.4,
+      "metallic": 0.72,
+      "tile": null
+    },
+    "M_CT4_DarkSteel": {
+      "color": [
+        0.065,
+        0.073,
+        0.082,
+        1
+      ],
+      "roughness": 0.31,
+      "metallic": 0.9,
+      "tile": null
+    },
+    "M_CT4_LCD": {
+      "color": [
+        0.3,
+        0.4,
+        0.3,
+        1
+      ],
+      "roughness": 0.42,
+      "metallic": 0,
+      "tile": null,
+      "screen_texture": "T_CT4_LCD.png",
+      "backlight": 0.55
+    },
+    "M_CT4_LCDInk": {
+      "color": [
+        0.008,
+        0.022,
+        0.01,
+        1
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "tile": null
+    },
+    "M_CT4_LED_0": {
+      "color": [
+        0.8,
+        0.008,
+        0.01,
+        1
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "tile": null,
+      "emission": 0.6
+    },
+    "M_CT4_LED_1": {
+      "color": [
+        0.8,
+        0.008,
+        0.01,
+        1
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "tile": null,
+      "emission": 0.6
+    },
+    "M_CT4_LED_2": {
+      "color": [
+        0.8,
+        0.45,
+        0.008,
+        1
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "tile": null,
+      "emission": 0.6
+    },
+    "M_CT4_LED_3": {
+      "color": [
+        0.8,
+        0.45,
+        0.008,
+        1
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "tile": null,
+      "emission": 0.6
+    },
+    "M_CT4_LED_4": {
+      "color": [
+        0.012,
+        0.65,
+        0.035,
+        1
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "tile": null,
+      "emission": 0.6
+    },
+    "M_CT4_LED_5": {
+      "color": [
+        0.012,
+        0.65,
+        0.035,
+        1
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "tile": null,
+      "emission": 0.6
+    },
+    "M_CT4_LED_6": {
+      "color": [
+        0.012,
+        0.65,
+        0.035,
+        1
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "tile": null,
+      "emission": 0.6
+    },
+    "M_CT4_LED_7": {
+      "color": [
+        0.012,
+        0.65,
+        0.035,
+        1
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "tile": null,
+      "emission": 0.6
+    },
+    "M_CT4_LED_8": {
+      "color": [
+        0.012,
+        0.65,
+        0.035,
+        1
+      ],
+      "roughness": 0.35,
+      "metallic": 0,
+      "tile": null,
+      "emission": 0.6
+    },
+    "M_CT4_SlickRubber": {
+      "color": [
+        0.019,
+        0.021,
+        0.023,
+        1
+      ],
+      "roughness": 0.63,
+      "metallic": 0.02,
+      "tile": null
+    },
+    "M_CT4_Chromoly": {
+      "color": [
+        0.24,
+        0.27,
+        0.28,
+        1
+      ],
+      "roughness": 0.25,
+      "metallic": 0.88,
+      "tile": null
+    },
+    "M_CT4_BodyGraphite": {
+      "color": [
+        0.012,
+        0.016,
+        0.021,
+        1
+      ],
+      "roughness": 0.39,
+      "metallic": 0.16,
+      "tile": null
+    },
+    "M_CT4_Anodised": {
+      "color": [
+        0.025,
+        0.03,
+        0.036,
+        1
+      ],
+      "roughness": 0.34,
+      "metallic": 0.76,
+      "tile": null
+    },
+    "M_CT4_TankPolymer": {
+      "color": [
+        0.49,
+        0.46,
+        0.32,
+        1
+      ],
+      "roughness": 0.55,
+      "metallic": 0,
+      "tile": null
+    },
+    "M_CT4_BucketComposite": {
+      "color": [
+        0.015,
+        0.017,
+        0.02,
+        1
+      ],
+      "roughness": 0.52,
+      "metallic": 0.05,
+      "tile": null
+    }
+  },
+  "source_unchanged": true,
+  "source_sha256": "7a6e09dfb8edd8c4eccbd4dceca3a7d66b8b2070e3f5cdf3cf73a1d7b1ae06b0",
+  "camera_eye_m": [
+    0.05,
+    0,
+    1.05
+  ],
+  "camera_fov": 95,
+  "camera_pitch": -22,
+  "rim_vertices": 3360,
+  "kart_vertices": 55024,
+  "driver_vertices": 466304,
+  "runtime_display": "actual speed and elapsed session/race time; fixed direct-drive 1, decorative load bar"
+}

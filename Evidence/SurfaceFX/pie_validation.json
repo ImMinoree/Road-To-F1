@@ -1,0 +1,34 @@
+{
+  "actual_pie": true,
+  "world_type": "PIE",
+  "checks": {
+    "Grass": {
+      "max_wheels": 2,
+      "max_live": 30,
+      "emitted": 80
+    },
+    "Stopped": {
+      "max_wheels": 0,
+      "max_live": 0,
+      "emitted": 0
+    },
+    "Asphalt": {
+      "max_wheels": 0,
+      "max_live": 0,
+      "emitted": 0
+    },
+    "Airborne": {
+      "max_wheels": 0,
+      "max_live": 0,
+      "emitted": 0
+    },
+    "Reverse": {
+      "max_wheels": 2,
+      "max_live": 29,
+      "emitted": 75
+    }
+  },
+  "max_live": 30,
+  "maps_unchanged": true,
+  "note": "Transient diagnostic motion tests FX only, not off-track handling or tire slip"
+}

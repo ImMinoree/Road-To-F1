@@ -1,0 +1,276 @@
+{
+  "source": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\DesertKarting\\KartDriver_Fitted\\Racing_Fit_v5\\Kart_With_MakeHuman_Racer_v5.blend",
+  "source_sha256": "09fe224ec22f6656154a2ab42a47a1b220db13933245fc7b86df925c88438bb6",
+  "source_unchanged": true,
+  "parts": [
+    "kart_driverMesh",
+    "high-polyMesh",
+    "RACER | fitted one-piece suit",
+    "RACER | raised panel seam piping",
+    "RACER | seam top stitching",
+    "RACER | tailored long anatomical sleeves",
+    "RACER | right continuous red chest panel",
+    "RACER | right continuous red chest panel | sewn edges",
+    "RACER | right white chest accent",
+    "RACER | right white chest accent | sewn edges",
+    "RACER | right red thigh insert",
+    "RACER | right red thigh insert | sewn edges",
+    "RACER | right white sleeve panel",
+    "RACER | right white sleeve panel | sewn edges",
+    "RACER | right rear red panel",
+    "RACER | right rear red panel | sewn edges",
+    "RACER | left continuous red chest panel",
+    "RACER | left continuous red chest panel | sewn edges",
+    "RACER | left white chest accent",
+    "RACER | left white chest accent | sewn edges",
+    "RACER | left red thigh insert",
+    "RACER | left red thigh insert | sewn edges",
+    "RACER | left white sleeve panel",
+    "RACER | left white sleeve panel | sewn edges",
+    "RACER | left rear red panel",
+    "RACER | left rear red panel | sewn edges",
+    "RACER | central zipper placket",
+    "RACER | central zipper placket | sewn edges",
+    "RACER | sculpted racing boots",
+    "RACER | l boot lacing",
+    "RACER | r boot lacing",
+    "RACER | anatomical five-finger gloves",
+    "RACER | raised glove knuckle panels",
+    "RACER | l knitted gauntlet cuff",
+    "RACER | r knitted gauntlet cuff",
+    "RACER | raised padded collar",
+    "HELMET | profiled composite shell and chin bar",
+    "HELMET | red sweep -1",
+    "HELMET | white pinstripe -1",
+    "HELMET | red sweep 1",
+    "HELMET | white pinstripe 1",
+    "HELMET | curved smoked visor",
+    "HELMET | visor gasket and brow trim",
+    "HELMET | lower shell rolled trim",
+    "HELMET | visor pivot base -1",
+    "HELMET | visor hinge plate -1",
+    "HELMET | visor pivot screw -1",
+    "HELMET | visor pivot base 1",
+    "HELMET | visor hinge plate 1",
+    "HELMET | visor pivot screw 1",
+    "HELMET | chin vent surround -1",
+    "HELMET | recessed chin vent -1",
+    "HELMET | chin vent surround 0",
+    "HELMET | recessed chin vent 0",
+    "HELMET | chin vent surround 1",
+    "HELMET | recessed chin vent 1",
+    "HELMET | crown intake -1",
+    "HELMET | crown intake 1",
+    "HELMET | padded neck roll",
+    "RACER | smooth shoulder epaulette l",
+    "RACER | smooth shoulder epaulette r",
+    "RACER | neck underlayer"
+  ],
+  "materials": {
+    "kart_driver": {
+      "color": [
+        0.6433839797973633,
+        0.4919680058956146,
+        0.37575796246528625,
+        1.0
+      ],
+      "roughness": 0.5527864098548889,
+      "metallic": 0.0
+    },
+    "high-poly": {
+      "color": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "roughness": 0.5527864098548889,
+      "metallic": 0.0
+    },
+    "Racer | charcoal woven nylon": {
+      "color": [
+        0.003000000026077032,
+        0.004000000189989805,
+        0.006000000052154064,
+        1.0
+      ],
+      "roughness": 0.8199999928474426,
+      "metallic": 0.0
+    },
+    "Racer | crimson woven panels": {
+      "color": [
+        0.20999999344348907,
+        0.003000000026077032,
+        0.00800000037997961,
+        1.0
+      ],
+      "roughness": 0.8199999928474426,
+      "metallic": 0.0
+    },
+    "Racer | warm white woven panels": {
+      "color": [
+        0.6800000071525574,
+        0.699999988079071,
+        0.6899999976158142,
+        1.0
+      ],
+      "roughness": 0.8199999928474426,
+      "metallic": 0.0
+    },
+    "Racer | black raised seam piping": {
+      "color": [
+        0.008999999612569809,
+        0.010999999940395355,
+        0.014999999664723873,
+        1.0
+      ],
+      "roughness": 0.6499999761581421,
+      "metallic": 0.0
+    },
+    "Racer | light seam thread": {
+      "color": [
+        0.3499999940395355,
+        0.36000001430511475,
+        0.3400000035762787,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0
+    },
+    "Racer | elastic cuffs and rubber": {
+      "color": [
+        0.008999999612569809,
+        0.010999999940395355,
+        0.014000000432133675,
+        1.0
+      ],
+      "roughness": 0.699999988079071,
+      "metallic": 0.0
+    },
+    "Racer | black glove leather": {
+      "color": [
+        0.01899999938905239,
+        0.019999999552965164,
+        0.02500000037252903,
+        1.0
+      ],
+      "roughness": 0.4399999976158142,
+      "metallic": 0.0
+    },
+    "Racer | red glove leather": {
+      "color": [
+        0.3499999940395355,
+        0.012000000104308128,
+        0.019999999552965164,
+        1.0
+      ],
+      "roughness": 0.44999998807907104,
+      "metallic": 0.0
+    },
+    "Helmet | gloss black multilayer paint": {
+      "color": [
+        0.008999999612569809,
+        0.012000000104308128,
+        0.01899999938905239,
+        1.0
+      ],
+      "roughness": 0.1899999976158142,
+      "metallic": 0.18000000715255737
+    },
+    "Helmet | gloss crimson panels": {
+      "color": [
+        0.47999998927116394,
+        0.006000000052154064,
+        0.014999999664723873,
+        1.0
+      ],
+      "roughness": 0.20999999344348907,
+      "metallic": 0.10000000149011612
+    },
+    "Helmet | porcelain white graphics": {
+      "color": [
+        0.75,
+        0.7699999809265137,
+        0.7699999809265137,
+        1.0
+      ],
+      "roughness": 0.1899999976158142,
+      "metallic": 0.07999999821186066
+    },
+    "Helmet | dark smoked polycarbonate": {
+      "color": [
+        0.010999999940395355,
+        0.017999999225139618,
+        0.024000000208616257,
+        1.0
+      ],
+      "roughness": 0.0949999988079071,
+      "metallic": 0.10000000149011612
+    },
+    "Racer | brushed titanium hardware": {
+      "color": [
+        0.23999999463558197,
+        0.25,
+        0.27000001072883606,
+        1.0
+      ],
+      "roughness": 0.28999999165534973,
+      "metallic": 0.8299999833106995
+    }
+  },
+  "bones": [
+    "Root",
+    "pelvis",
+    "spine_01",
+    "spine_02",
+    "spine_03",
+    "clavicle_l",
+    "upperarm_l",
+    "lowerarm_l",
+    "hand_l",
+    "index_01_l",
+    "index_02_l",
+    "index_03_l",
+    "middle_01_l",
+    "middle_02_l",
+    "middle_03_l",
+    "pinky_01_l",
+    "pinky_02_l",
+    "pinky_03_l",
+    "ring_01_l",
+    "ring_02_l",
+    "ring_03_l",
+    "thumb_01_l",
+    "thumb_02_l",
+    "thumb_03_l",
+    "clavicle_r",
+    "upperarm_r",
+    "lowerarm_r",
+    "hand_r",
+    "index_01_r",
+    "index_02_r",
+    "index_03_r",
+    "middle_01_r",
+    "middle_02_r",
+    "middle_03_r",
+    "pinky_01_r",
+    "pinky_02_r",
+    "pinky_03_r",
+    "ring_01_r",
+    "ring_02_r",
+    "ring_03_r",
+    "thumb_01_r",
+    "thumb_02_r",
+    "thumb_03_r",
+    "neck_01",
+    "head",
+    "thigh_l",
+    "calf_l",
+    "foot_l",
+    "ball_l",
+    "thigh_r",
+    "calf_r",
+    "foot_r",
+    "ball_r"
+  ]
+}

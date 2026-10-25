@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "actual_pie": true,
+  "test_pad_transient": true,
+  "native_grid_and_lights_out_passed": true,
+  "race_restart_passed": true,
+  "max_slide_beta_deg": 10.055560111999512,
+  "max_yaw_deg_s": 78.7644271850586,
+  "recovered_at_speed": true,
+  "max_z_error_cm": 0.5000019073486328,
+  "maximum_frame_travel_cm": 225.9788479380768,
+  "surfaces_verified": [
+    "asphalt",
+    "dirt",
+    "grass"
+  ],
+  "loose_surface_debris_verified": true,
+  "maps_and_original_repository_unchanged": true,
+  "screenshots": [
+    "dirt",
+    "grid",
+    "launch",
+    "rear_slide",
+    "recovered"
+  ]
+}

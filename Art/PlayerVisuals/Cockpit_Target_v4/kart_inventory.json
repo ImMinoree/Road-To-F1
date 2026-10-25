@@ -1,0 +1,1318 @@
+[
+  {
+    "name": "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black",
+    "type": "MESH",
+    "dimensions": [
+      1.3822870254516602,
+      0.6763999462127686,
+      0.09857673943042755
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Chassis_MainFrame_Frame_Brushed_Chromoly",
+    "type": "MESH",
+    "dimensions": [
+      1.260386347770691,
+      0.6809999942779541,
+      0.08124576508998871
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Chassis_MainFrame_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      1.1200000047683716,
+      0.7300000190734863,
+      0.013999998569488525
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Chassis_MainFrame_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      1.0160000324249268,
+      0.75,
+      0.025999993085861206
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly",
+    "type": "MESH",
+    "dimensions": [
+      1.24399995803833,
+      1.159999966621399,
+      0.25378239154815674
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Axles_Steering_And_Hardware_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      1.2925000190734863,
+      0.21055105328559875,
+      0.1875
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Axles_Steering_And_Hardware_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      1.19350004196167,
+      0.14542818069458008,
+      0.18612580001354218
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Axles_Steering_And_Hardware_Rim_Satin_Aluminium",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.017548710107803345,
+      0.1300000101327896
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Front_Brake_Discs_Engine_Cast_Aluminium",
+    "type": "MESH",
+    "dimensions": [
+      0.21000000834465027,
+      0.039999961853027344,
+      0.20999997854232788
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Front_Brake_Discs_Rim_Satin_Aluminium",
+    "type": "MESH",
+    "dimensions": [
+      0.1979999840259552,
+      0.01364898681640625,
+      0.1980000138282776
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Front_Brake_Discs_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.1408935785293579,
+      0.008000016212463379,
+      0.13989773392677307
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Front_Brake_Calipers_Engine_Ignition_Red",
+    "type": "MESH",
+    "dimensions": [
+      0.08499997854232788,
+      0.06800001859664917,
+      0.0949999988079071
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Front_Brake_Calipers_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      1.246500015258789,
+      1.179295301437378,
+      0.18612580001354218
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Front_Brake_Calipers_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      1.2925000190734863,
+      0.21055105328559875,
+      0.1875
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Front_Brake_Calipers_Frame_Brushed_Chromoly",
+    "type": "MESH",
+    "dimensions": [
+      0.18000003695487976,
+      0.2192312479019165,
+      0.25378239154815674
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Front_Brake_Calipers_Rim_Satin_Aluminium",
+    "type": "MESH",
+    "dimensions": [
+      0.12999999523162842,
+      0.017548710107803345,
+      0.1300000101327896
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_FL_Tire_Slick_Rubber",
+    "type": "MESH",
+    "dimensions": [
+      0.34800001978874207,
+      0.1600000262260437,
+      0.34800001978874207
+    ],
+    "location": [
+      0.5600000023841858,
+      -0.5149999856948853,
+      0.1860000044107437
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_FL_Tire_Molded_Sidewall",
+    "type": "MESH",
+    "dimensions": [
+      0.351779967546463,
+      0.10379421710968018,
+      0.3517799973487854
+    ],
+    "location": [
+      0.5600000023841858,
+      -0.5149999856948853,
+      0.1860000044107437
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_FL_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.14963996410369873,
+      0.1600000262260437,
+      0.14963999390602112
+    ],
+    "location": [
+      0.5600000023841858,
+      -0.5149999856948853,
+      0.1860000044107437
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_FL_Rim_Satin_Aluminium",
+    "type": "MESH",
+    "dimensions": [
+      0.2065199911594391,
+      0.1911802887916565,
+      0.2065199911594391
+    ],
+    "location": [
+      0.5600000023841858,
+      -0.5149999856948853,
+      0.1860000044107437
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_FL_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.11200278997421265,
+      0.1834000051021576,
+      0.11282077431678772
+    ],
+    "location": [
+      0.5600000023841858,
+      -0.5149999856948853,
+      0.1860000044107437
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_FR_Tire_Slick_Rubber",
+    "type": "MESH",
+    "dimensions": [
+      0.34800001978874207,
+      0.1600000262260437,
+      0.34800001978874207
+    ],
+    "location": [
+      0.5600000023841858,
+      0.5149999856948853,
+      0.1860000044107437
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_FR_Tire_Molded_Sidewall",
+    "type": "MESH",
+    "dimensions": [
+      0.351779967546463,
+      0.10379421710968018,
+      0.3517799973487854
+    ],
+    "location": [
+      0.5600000023841858,
+      0.5149999856948853,
+      0.1860000044107437
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_FR_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.14963996410369873,
+      0.1600000262260437,
+      0.14963999390602112
+    ],
+    "location": [
+      0.5600000023841858,
+      0.5149999856948853,
+      0.1860000044107437
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_FR_Rim_Satin_Aluminium",
+    "type": "MESH",
+    "dimensions": [
+      0.2065199911594391,
+      0.1911802887916565,
+      0.2065199911594391
+    ],
+    "location": [
+      0.5600000023841858,
+      0.5149999856948853,
+      0.1860000044107437
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_FR_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.11200278997421265,
+      0.1834000051021576,
+      0.11282077431678772
+    ],
+    "location": [
+      0.5600000023841858,
+      0.5149999856948853,
+      0.1860000044107437
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_RL_Tire_Slick_Rubber",
+    "type": "MESH",
+    "dimensions": [
+      0.41600000858306885,
+      0.24500003457069397,
+      0.41600000858306885
+    ],
+    "location": [
+      -0.550000011920929,
+      -0.5350000262260437,
+      0.2199999988079071
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_RL_Tire_Molded_Sidewall",
+    "type": "MESH",
+    "dimensions": [
+      0.4187599718570709,
+      0.15479424595832825,
+      0.4187600016593933
+    ],
+    "location": [
+      -0.550000011920929,
+      -0.5350000262260437,
+      0.2199999988079071
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_RL_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.178879976272583,
+      0.24500003457069397,
+      0.1788800209760666
+    ],
+    "location": [
+      -0.550000011920929,
+      -0.5350000262260437,
+      0.2199999988079071
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_RL_Rim_Satin_Aluminium",
+    "type": "MESH",
+    "dimensions": [
+      0.23984003067016602,
+      0.273617684841156,
+      0.23984001576900482
+    ],
+    "location": [
+      -0.550000011920929,
+      -0.5350000262260437,
+      0.2199999988079071
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_RL_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.1272447407245636,
+      0.2675500214099884,
+      0.1282225400209427
+    ],
+    "location": [
+      -0.550000011920929,
+      -0.5350000262260437,
+      0.2199999988079071
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_RR_Tire_Slick_Rubber",
+    "type": "MESH",
+    "dimensions": [
+      0.41600000858306885,
+      0.24500003457069397,
+      0.41600000858306885
+    ],
+    "location": [
+      -0.550000011920929,
+      0.5350000262260437,
+      0.2199999988079071
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_RR_Tire_Molded_Sidewall",
+    "type": "MESH",
+    "dimensions": [
+      0.4187599718570709,
+      0.15479424595832825,
+      0.4187600016593933
+    ],
+    "location": [
+      -0.550000011920929,
+      0.5350000262260437,
+      0.2199999988079071
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_RR_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.178879976272583,
+      0.24500003457069397,
+      0.1788800209760666
+    ],
+    "location": [
+      -0.550000011920929,
+      0.5350000262260437,
+      0.2199999988079071
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_RR_Rim_Satin_Aluminium",
+    "type": "MESH",
+    "dimensions": [
+      0.23984003067016602,
+      0.273617684841156,
+      0.23984001576900482
+    ],
+    "location": [
+      -0.550000011920929,
+      0.5350000262260437,
+      0.2199999988079071
+    ]
+  },
+  {
+    "name": "SK_Kart_Wheel_RR_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.1272447407245636,
+      0.2675500214099884,
+      0.1282225400209427
+    ],
+    "location": [
+      -0.550000011920929,
+      0.5350000262260437,
+      0.2199999988079071
+    ]
+  },
+  {
+    "name": "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer",
+    "type": "MESH",
+    "dimensions": [
+      0.5317161083221436,
+      0.615600049495697,
+      0.4902558922767639
+    ],
+    "location": [
+      -0.054999999701976776,
+      0.0,
+      0.38999998569488525
+    ]
+  },
+  {
+    "name": "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black",
+    "type": "MESH",
+    "dimensions": [
+      0.5299999713897705,
+      0.5899999737739563,
+      0.48000001907348633
+    ],
+    "location": [
+      -0.054999999701976776,
+      0.0,
+      0.38999998569488525
+    ]
+  },
+  {
+    "name": "SK_Kart_Seat_Sculpted_Tub_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.47599998116493225,
+      0.5150973796844482,
+      0.04999998211860657
+    ],
+    "location": [
+      -0.054999999701976776,
+      0.0,
+      0.38999998569488525
+    ]
+  },
+  {
+    "name": "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip",
+    "type": "MESH",
+    "dimensions": [
+      0.034746892750263214,
+      0.40072527527809143,
+      0.07172426581382751
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Seat_Texture_And_Mounts_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.36000001430511475,
+      0.6050000190734863,
+      0.07499998807907104
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Seat_Texture_And_Mounts_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.24000000953674316,
+      0.6499999761581421,
+      0.019021153450012207
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite",
+    "type": "MESH",
+    "dimensions": [
+      0.5799999237060547,
+      0.8100000023841858,
+      0.19500002264976501
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear",
+    "type": "MESH",
+    "dimensions": [
+      0.5984964370727539,
+      0.8317006826400757,
+      0.15131941437721252
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Nose_And_Front_Fairing_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.025000035762786865,
+      0.48500001430511475,
+      0.012000024318695068
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite",
+    "type": "MESH",
+    "dimensions": [
+      1.0399999618530273,
+      0.35999998450279236,
+      0.257750004529953
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Left_Sidepod_Body_Edge_Wear",
+    "type": "MESH",
+    "dimensions": [
+      0.785563588142395,
+      0.12973767518997192,
+      0.1654381901025772
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Left_Sidepod_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.7239999771118164,
+      0.013000011444091797,
+      0.02399998903274536
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Left_Vent_Details_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.2599831819534302,
+      0.016232848167419434,
+      0.05500000715255737
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Left_Vent_Details_Body_Edge_Wear",
+    "type": "MESH",
+    "dimensions": [
+      0.24400000274181366,
+      0.006000041961669922,
+      0.0059999823570251465
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite",
+    "type": "MESH",
+    "dimensions": [
+      1.0399999618530273,
+      0.35999998450279236,
+      0.257750004529953
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Right_Sidepod_Body_Edge_Wear",
+    "type": "MESH",
+    "dimensions": [
+      0.785563588142395,
+      0.12943965196609497,
+      0.151397243142128
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Right_Sidepod_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.7239999771118164,
+      0.013000011444091797,
+      0.02399998903274536
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Right_Vent_Details_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.2599831819534302,
+      0.016232848167419434,
+      0.05500000715255737
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bodywork_Right_Vent_Details_Body_Edge_Wear",
+    "type": "MESH",
+    "dimensions": [
+      0.24400000274181366,
+      0.006000041961669922,
+      0.0059999823570251465
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bumpers_And_Barwork_Frame_Brushed_Chromoly",
+    "type": "MESH",
+    "dimensions": [
+      2.0655200481414795,
+      1.2709379196166992,
+      0.07825605571269989
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Bumpers_And_Barwork_Chassis_Powder_Black",
+    "type": "MESH",
+    "dimensions": [
+      0.25258684158325195,
+      1.2705587148666382,
+      0.03799998760223389
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Engine_Crankcase_125cc_Engine_Cast_Aluminium",
+    "type": "MESH",
+    "dimensions": [
+      0.3999999761581421,
+      0.4975000023841858,
+      0.6225000023841858
+    ],
+    "location": [
+      -0.4000000059604645,
+      0.0,
+      0.4300000071525574
+    ]
+  },
+  {
+    "name": "SK_Kart_Engine_Crankcase_125cc_Frame_Brushed_Chromoly",
+    "type": "MESH",
+    "dimensions": [
+      0.22800001502037048,
+      0.02399998903274536,
+      0.2279999852180481
+    ],
+    "location": [
+      -0.4000000059604645,
+      0.0,
+      0.4300000071525574
+    ]
+  },
+  {
+    "name": "SK_Kart_Engine_Crankcase_125cc_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.19500002264976501,
+      0.434598833322525,
+      0.595241904258728
+    ],
+    "location": [
+      -0.4000000059604645,
+      0.0,
+      0.4300000071525574
+    ]
+  },
+  {
+    "name": "SK_Kart_Engine_Crankcase_125cc_Engine_Fins_Dark_Alloy",
+    "type": "MESH",
+    "dimensions": [
+      0.384120374917984,
+      0.33256253600120544,
+      0.3120567202568054
+    ],
+    "location": [
+      -0.4000000059604645,
+      0.0,
+      0.4300000071525574
+    ]
+  },
+  {
+    "name": "SK_Kart_Engine_Ignition_And_Carburettor_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.5391318202018738,
+      0.41100001335144043,
+      0.7375644445419312
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Engine_Ignition_And_Carburettor_Engine_Ignition_Red",
+    "type": "MESH",
+    "dimensions": [
+      0.2239999920129776,
+      0.32899999618530273,
+      0.6549999713897705
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Engine_Ignition_And_Carburettor_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.2980000078678131,
+      0.3020000159740448,
+      0.6630000472068787
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Engine_Ignition_And_Carburettor_Engine_Cast_Aluminium",
+    "type": "MESH",
+    "dimensions": [
+      0.1499999761581421,
+      0.10000000894069672,
+      0.11000001430511475
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Engine_Ignition_And_Carburettor_Hydraulic_Brake_Hose",
+    "type": "MESH",
+    "dimensions": [
+      0.07595367729663849,
+      0.05041888356208801,
+      0.07039231061935425
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Engine_Ignition_And_Carburettor_Chain_Hardened_Steel",
+    "type": "MESH",
+    "dimensions": [
+      0.5735570192337036,
+      0.04500001668930054,
+      0.38304001092910767
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Engine_Ignition_And_Carburettor_Frame_Brushed_Chromoly",
+    "type": "MESH",
+    "dimensions": [
+      0.4513999819755554,
+      0.023398280143737793,
+      0.20183998346328735
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Drivetrain_Chain_Links_Chain_Hardened_Steel",
+    "type": "MESH",
+    "dimensions": [
+      0.5609732270240784,
+      0.039999961853027344,
+      0.25097325444221497
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Drivetrain_Chain_Links_Rim_Satin_Aluminium",
+    "type": "MESH",
+    "dimensions": [
+      0.5649999976158142,
+      0.02799999713897705,
+      0.2549999952316284
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Drivetrain_Bearing_Collars_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.1419999897480011,
+      0.7400000095367432,
+      0.1419999897480011
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Drivetrain_Bearing_Collars_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.13399997353553772,
+      0.7575486898422241,
+      0.1340000182390213
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Exhaust_Header_And_Muffler_Exhaust_Heat_Titanium",
+    "type": "MESH",
+    "dimensions": [
+      0.5666198134422302,
+      0.2027171403169632,
+      0.3524211347103119
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Exhaust_Header_And_Muffler_Frame_Brushed_Chromoly",
+    "type": "MESH",
+    "dimensions": [
+      0.164000004529953,
+      0.04400002956390381,
+      0.08799999952316284
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Exhaust_Header_And_Muffler_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.25599998235702515,
+      0.006928205490112305,
+      0.09600001573562622
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Exhaust_Header_And_Muffler_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.3799999952316284,
+      0.034999996423721313,
+      0.06499999761581421
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Fuel_Tank_And_Cap_Fuel_Tank_Clouded_Polymer",
+    "type": "MESH",
+    "dimensions": [
+      0.2038474828004837,
+      0.30248335003852844,
+      0.19727176427841187
+    ],
+    "location": [
+      0.22109131515026093,
+      0.0,
+      -0.22824059426784515
+    ]
+  },
+  {
+    "name": "SK_Kart_Fuel_Tank_And_Cap_Frame_Brushed_Chromoly",
+    "type": "MESH",
+    "dimensions": [
+      0.18355906009674072,
+      0.05155368521809578,
+      0.18885266780853271
+    ],
+    "location": [
+      0.22109131515026093,
+      0.0,
+      -0.22824059426784515
+    ]
+  },
+  {
+    "name": "SK_Kart_Fuel_Tank_And_Cap_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.0933753103017807,
+      0.0933753028512001,
+      0.03649529442191124
+    ],
+    "location": [
+      0.22109131515026093,
+      0.0,
+      -0.22824059426784515
+    ]
+  },
+  {
+    "name": "SK_Kart_Fuel_Tank_And_Cap_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.07627841085195541,
+      0.0650843009352684,
+      0.07627841085195541
+    ],
+    "location": [
+      0.22109131515026093,
+      0.0,
+      -0.22824059426784515
+    ]
+  },
+  {
+    "name": "SK_Kart_Fuel_Line_And_Clamps_Hydraulic_Brake_Hose",
+    "type": "MESH",
+    "dimensions": [
+      0.4142068028450012,
+      0.11044932901859283,
+      0.0702238380908966
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Fuel_Line_And_Clamps_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.24199998378753662,
+      0.006928175687789917,
+      0.041999995708465576
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly",
+    "type": "MESH",
+    "dimensions": [
+      0.23505884408950806,
+      0.43663671612739563,
+      0.19906044006347656
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Driver_Controls_And_Pedals_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.020335614681243896,
+      0.30033567547798157,
+      0.00599999725818634
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Steering_Column_And_Wheel_Frame_Brushed_Chromoly",
+    "type": "MESH",
+    "dimensions": [
+      0.4519383907318115,
+      0.18000000715255737,
+      0.614780843257904
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Steering_Column_And_Wheel_Rubber_Grip",
+    "type": "MESH",
+    "dimensions": [
+      0.03400003910064697,
+      0.4020000100135803,
+      0.4020000100135803
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Steering_Column_And_Wheel_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.022000014781951904,
+      0.1120000034570694,
+      0.1119999885559082
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Steering_Column_And_Wheel_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.012000024318695068,
+      0.12141267955303192,
+      0.011999964714050293
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Steering_Rod_End_Joints_Hub_Black_Anodised",
+    "type": "MESH",
+    "dimensions": [
+      0.041999995708465576,
+      0.6633315682411194,
+      0.041999995708465576
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Steering_Rod_End_Joints_Frame_Brushed_Chromoly",
+    "type": "MESH",
+    "dimensions": [
+      0.024000048637390137,
+      0.6200000047683716,
+      0.02399998903274536
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Guards_And_Fasteners_Chassis_Powder_Black",
+    "type": "MESH",
+    "dimensions": [
+      0.3400000333786011,
+      0.7850000262260437,
+      0.1599999964237213
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Guards_And_Fasteners_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.4180000126361847,
+      0.8399999737739563,
+      0.12200000882148743
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose",
+    "type": "MESH",
+    "dimensions": [
+      0.7041477560997009,
+      0.5683938264846802,
+      0.23749083280563354
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "name": "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless",
+    "type": "MESH",
+    "dimensions": [
+      0.5,
+      0.5669282078742981,
+      0.1499999761581421
+    ],
+    "location": [
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "previous_upper_shaft_start_gap_m": 0.02,
+  "new_upper_stub_length_m": 0.037,
+  "shaft_radius_m": 0.009,
+  "stub_starts_m_behind_hub_plane": -0.003,
+  "end_m": 0.034,
+  "kart_other_vertices": "unchanged; short connector added only to local cosmetic copy"
+}

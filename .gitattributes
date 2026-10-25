@@ -1,0 +1,14 @@
+Art/PlayerVisuals/Cockpit_Layout_v5/Forward_Test.blend filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVisuals/Cockpit_Target_v4/Exports/SK_CT4_DriverPOV.fbx filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVisuals/Cockpit_Target_v4/Kart_Cockpit_Target_v4.blend filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVisuals/Cockpit_Target_v4/Leg_Fit_Candidate.blend filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVisuals/Wheel_Visibility_v3/Kart_Cockpit_Wheel_Visibility_v3.blend filter=lfs diff=lfs merge=lfs -text
+Content/RoadToF1/RacingAI/SK_AI_KartDriver.uasset filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVisuals/Cockpit_Layout_v5/Layout_Test.blend filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVisuals/Cockpit_Layout_v5/Lower_Test.blend filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVisuals/Cockpit_Reference_v2/Kart_Cockpit_Reference_v2.blend filter=lfs diff=lfs merge=lfs -text
+Art/RacingAI/SK_AI_KartDriver.fbx filter=lfs diff=lfs merge=lfs -text
+Content/RoadToF1/PlayerVisuals/CockpitReferenceV2/SK_CV2_DriverPOV.uasset filter=lfs diff=lfs merge=lfs -text
+Content/RoadToF1/PlayerVisuals/CockpitTargetV4/SK_CT4_DriverPOV.uasset filter=lfs diff=lfs merge=lfs -text
+Content/RoadToF1/PlayerVisuals/WheelVisibilityV3/SK_WV3_DriverPOV.uasset filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVisuals/Cockpit_Layout_v5/*.blend filter=lfs diff=lfs merge=lfs -text

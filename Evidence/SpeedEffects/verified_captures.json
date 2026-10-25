@@ -1,0 +1,38 @@
+{
+  "actual_pie_passed": true,
+  "ownership_and_steering_regression_passed": true,
+  "screenshots": [
+    {
+      "file": "pre_start.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "decoded": true
+    },
+    {
+      "file": "driving.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "decoded": true
+    },
+    {
+      "file": "disabled.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "decoded": true
+    },
+    {
+      "file": "reset.png",
+      "dimensions": [
+        1600,
+        900
+      ],
+      "decoded": true
+    }
+  ]
+}

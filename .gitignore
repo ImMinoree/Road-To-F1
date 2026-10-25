@@ -64,3 +64,15 @@ desktop.ini
 *.blend1
 _tmp/
 
+# Native validation build outputs (keep source, reports, and captures)
+Evidence/**/*.exe
+Evidence/**/*.obj
+Evidence/**/*.lib
+Evidence/**/*.pdb
+Evidence/**/*.dll
+Evidence/**/*.ilk
+
+
+# Local compiled validation harnesses
+Evidence/**/*.exe
+

@@ -1,0 +1,12 @@
+{
+  "map": "/Game/RoadToF1/Maps/DesertKarting_Visual",
+  "before_game_mode": "<Object '/Script/Road_To_F1_New.ProofGameMode' (0x00000175A2E0E600) Class 'Class'>",
+  "game_mode": "<Object '/Script/Road_To_F1_New.ProofGameMode' (0x00000175A2E0E600) Class 'Class'>",
+  "actors_preserved": 152,
+  "save_reload_passed": true,
+  "one_gantry": true,
+  "grid_slots": 20,
+  "placed_pawns": 0,
+  "chassis": "/Game/RoadToF1/PlayerVisuals/FirstPerson/SM_PlayerKartChassis.SM_PlayerKartChassis",
+  "chassis_bounds": "<Struct 'BoxSphereBounds' (0x00000175B6F4B940) {origin: {x: 2.749477, y: 0.000004, z: 52.855503}, box_extent: {x: 104.309978, y: 67.180882, z: 51.844502}, sphere_radius: 117.011933}>"
+}

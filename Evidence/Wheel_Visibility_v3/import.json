@@ -1,0 +1,10 @@
+{
+  "assets": [
+    "/Game/RoadToF1/PlayerVisuals/WheelVisibilityV3/A_WV3_Steering.A_WV3_Steering",
+    "/Game/RoadToF1/PlayerVisuals/WheelVisibilityV3/PAL_WheelVisibilityV3.PAL_WheelVisibilityV3",
+    "/Game/RoadToF1/PlayerVisuals/WheelVisibilityV3/SK_WV3_DriverPOV.SK_WV3_DriverPOV",
+    "/Game/RoadToF1/PlayerVisuals/WheelVisibilityV3/SK_WV3_DriverPOV_Skeleton.SK_WV3_DriverPOV_Skeleton"
+  ],
+  "animation_seconds": 2.0,
+  "wheel_chassis_materials": "reuse unchanged V2"
+}

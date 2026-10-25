@@ -3,11 +3,11 @@
 #include "GameFramework/Pawn.h"
 #include "GameFramework/GameModeBase.h"
 #include "ProofPawn.generated.h"
-class UCameraComponent; class USphereComponent; class ARaceStartGantry; class AGridStartSlot; class ULocalKartDriverVisuals;
+class UCameraComponent; class USphereComponent; class ARaceStartGantry; class AGridStartSlot; class ULocalKartDriverVisuals; class UTrackRacingAI; class UKartSurfaceFX; class UKartTireDynamics;
 UENUM(BlueprintType)
 enum class ERaceStartPhase : uint8 { PreGrid, Countdown, AllRed, LightsOut, Racing };
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRaceLightsOutEvent,double,StartWorldSeconds);
-// Temporary swept kinematic driving. No production kart physics or cockpit claims.
+// Custom planar tire forces with swept collision and traced road support.
 UCLASS()
 class ROAD_TO_F1_NEW_API AProofPawn : public APawn {
  GENERATED_BODY()
@@ -18,12 +18,42 @@ public:
  virtual void Tick(float DeltaSeconds) override;
  virtual void SetupPlayerInputComponent(UInputComponent* Input) override;
  void StageForRace(const FTransform& GridTransform);
+ void ConfigureRacingAI(int32 GridPosition);
+ void SetAutonomousInput(float InThrottle,float InSteer);
+ void SetRacingDiagnosticInput(float InThrottle,float InSteer);
+ float GetDrivingSpeed() const {return Speed;}
+ virtual FVector GetVelocity()const override;
+ UKartTireDynamics* GetTireDynamics()const{return TireDynamics;}
+ float GetSteeringVisualInput()const;
+ float SteeringForCurvature(float CurvatureCm)const;
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart dynamics") bool bUseTireDynamics=true;
+ /** Explicit development test input only; inactive without -KartDynamicsTest. */
+ UFUNCTION(BlueprintCallable,Category="Kart diagnostics") void SetKartTestInput(float InThrottle,float InSteer,bool bBrake);
+ /** Shared by human and AI: maximum yaw rate at the existing 1600 cm/s speed reference. */
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart driving",meta=(ClampMin="30",ClampMax="360")) float SteeringYawRateAtTopSpeed=240.f;
+ float GetSteeringYawRate() const {return FMath::Clamp(SteeringYawRateAtTopSpeed,30.f,360.f);}
+ float GetMaximumSteeringCurvature() const;
+ UPROPERTY(BlueprintReadOnly,Category="Racing AI") bool bRacingAI=false;
 private:
  UPROPERTY() USphereComponent* Body;
  UPROPERTY() UCameraComponent* Camera;
  UPROPERTY(VisibleAnywhere,Category="Player visuals") TObjectPtr<ULocalKartDriverVisuals> LocalDriverVisuals;
+ UPROPERTY(VisibleAnywhere,Category="Surface effects") TObjectPtr<UKartSurfaceFX> SurfaceFX;
+ UPROPERTY(VisibleAnywhere,BlueprintReadOnly,Category="Kart dynamics",meta=(AllowPrivateAccess="true")) TObjectPtr<UKartTireDynamics> TireDynamics;
+ bool bBrakeHeld=false;
+#if !UE_BUILD_SHIPPING
+ bool bKartTestInputActive=false,bKartTestBrake=false;
+ float KartTestThrottle=0,KartTestSteering=0;
+#endif
+ void BrakePressed(){bBrakeHeld=true;}
+ void BrakeReleased(){bBrakeHeld=false;}
  float Throttle=0,Steer=0,Speed=0;
  float TestTime=0,SampleTime=0; int32 SampleFrames=0;
+ void TickIntegrationEvidence();
+ int32 IntegrationCaptureStage=0;
+ FVector IntegrationGridPosition=FVector::ZeroVector;
+ bool bIntegrationMovedEarly=false;
+ bool bIntegrationGridCaptured=false;
  void Drive(float V){Throttle=V;}
  void Turn(float V){Steer=V;}
  void Reset();
@@ -53,6 +83,7 @@ public:
  UFUNCTION(BlueprintCallable,Exec,Category="Race start") void RestartRaceStart();
 private:
  UPROPERTY() TObjectPtr<ARaceStartGantry> Gantry;
+ UPROPERTY(VisibleAnywhere,Category="Racing AI") TObjectPtr<UTrackRacingAI> RacingAI;
  bool bStartEnabled=false,bTesting=false,bTestMovedEarly=false;
  int32 TestEpoch=0;
  FVector TestGridPosition;

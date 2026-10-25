@@ -12,6 +12,9 @@ class USkeletalMeshComponent;
 class UStaticMesh;
 class UStaticMeshComponent;
 class UAnimSequence;
+class UTextRenderComponent;
+class UMaterialInterface;
+class UMaterialInstanceDynamic;
 
 /** Local cockpit cosmetics only. Never supplies input, collision, movement or replicated state. */
 UCLASS(ClassGroup=(Rendering), meta=(BlueprintSpawnableComponent))
@@ -32,25 +35,51 @@ public:
  bool IsEligibleLocalHuman() const;
  USkeletalMeshComponent* GetFirstPersonArms() const { return Arms; }
  UStaticMeshComponent* GetFirstPersonWheel() const { return Wheel; }
+ UStaticMeshComponent* GetKartChassis() const { return Chassis; }
 
  UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Player visuals") bool bCockpitEnabled=true;
+ /** Reversible reference-inspired local cockpit. False restores the preserved legacy cosmetics. */
+ UPROPERTY(EditAnywhere, Category="Player visuals") bool bReferenceCockpit=true;
  UPROPERTY(EditAnywhere, Category="Player visuals") TSoftObjectPtr<USkeletalMesh> ArmsAsset;
  UPROPERTY(EditAnywhere, Category="Player visuals") TSoftObjectPtr<UAnimSequence> SteeringAsset;
  UPROPERTY(EditAnywhere, Category="Player visuals") TSoftObjectPtr<UStaticMesh> WheelAsset;
- /** Camera-relative art alignment, independent of the pawn's collision/physics transform. */
+ UPROPERTY(EditAnywhere, Category="Player visuals") TSoftObjectPtr<UStaticMesh> ChassisAsset;
+ /** Pawn-relative source-art ground alignment. Camera pitch never moves the seated kart or hands. */
  UPROPERTY(EditAnywhere, Category="Player visuals") FTransform CockpitVisualTransform;
  UPROPERTY(EditAnywhere, Category="Player visuals", meta=(ClampMin="1",ClampMax="25")) float MaximumSteeringDegrees=25.f;
  UPROPERTY(EditAnywhere, Category="Player visuals") FName ThirdPersonDriverTag=TEXT("ThirdPersonDriver");
+ /** Cosmetic speed cues only; disabling restores the authored camera immediately. */
+ UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Speed perception") bool bSpeedEffectsEnabled=true;
+ UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Speed perception", meta=(ClampMin="0",ClampMax="8")) float SpeedFOVBoost=6.f;
+ UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Speed perception", meta=(ClampMin="0",ClampMax="1")) float SpeedVibrationScale=1.f;
+ UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Speed perception", meta=(ClampMin="0",ClampMax="1")) float PeripheralBlurScale=1.f;
+ UPROPERTY(EditAnywhere, Category="Speed perception") TSoftObjectPtr<UMaterialInterface> SpeedBlurAsset;
 
 private:
  UPROPERTY(Transient) TObjectPtr<USceneComponent> VisualRoot;
  UPROPERTY(Transient) TObjectPtr<USkeletalMeshComponent> Arms;
  UPROPERTY(Transient) TObjectPtr<UStaticMeshComponent> Wheel;
+ UPROPERTY(Transient) TObjectPtr<UStaticMeshComponent> Chassis;
  UPROPERTY(Transient) TObjectPtr<UMeshComponent> ThirdPersonDriver;
  UPROPERTY(Transient) TObjectPtr<UAnimSequence> ActiveSteeringSequence;
+ UPROPERTY(Transient) TObjectPtr<UTextRenderComponent> DashboardSpeed;
+ UPROPERTY(Transient) TObjectPtr<UTextRenderComponent> DashboardTime;
+ FString LastDashboardSpeed,LastDashboardTime;
  bool bOriginalOwnerNoSee=false, bOriginalCaptured=false;
  bool bActiveForLocalPlayer=false, bLoadAttempted=false;
  float SteeringInput=0.f;
+ bool bUsingLegacy=false,bCameraAdjusted=false;
+ UPROPERTY(Transient) TObjectPtr<UCameraComponent> CockpitCamera;
+ FTransform OriginalCameraTransform;
+ float OriginalCameraFOV=90.f;
+ UPROPERTY(Transient) TObjectPtr<UMaterialInstanceDynamic> SpeedBlur;
+ FTransform SpeedBaseTransform;
+ float SpeedBaseFOV=90.f,SpeedBlend=0.f;
+ double SpeedPhase=0;
+ bool bSpeedCameraApplied=false;
+ void RestoreSpeedCamera();
+ void UpdateSpeedCamera(float DeltaTime);
+ void ConfigureCockpitCamera(bool bActive);
 #if !UE_BUILD_SHIPPING
  float CaptureElapsed=0.f;
  int32 CaptureStage=0;

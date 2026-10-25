@@ -1,0 +1,105 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "1D06D6304937D7F14BAD17BD2E55DC49",
+			"instanceName": "DESKTOP-ERDHE74-31392",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.23-21.54.10",
+	"succeeded": 1,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 0.17917510867118835,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "OwnershipAndSteering",
+			"fullTestPath": "RoadToF1.PlayerVisuals.OwnershipAndSteering",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"1D06D6304937D7F14BAD17BD2E55DC49"
+			],
+			"duration": 0.17917510867118835,
+			"dateTime": "2026.10.23-21.54.10",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 0: L=X=47.160 Y=-17.670 Z=66.635 R=X=51.889 Y=15.135 Z=81.188",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.23-21.54.10"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 1: L=X=48.381 Y=-18.318 Z=70.385 R=X=50.802 Y=17.018 Z=77.837",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.23-21.54.10"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 2: L=X=49.614 Y=-18.098 Z=74.177 R=X=49.613 Y=18.098 Z=74.178",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.23-21.54.10"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 3: L=X=50.800 Y=-17.023 Z=77.836 R=X=48.380 Y=18.321 Z=70.387",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.23-21.54.10"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 4: L=X=51.889 Y=-15.136 Z=81.187 R=X=47.162 Y=17.671 Z=66.637",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.23-21.54.10"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

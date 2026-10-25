@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_tire_dynamics_pie.py", line 86, in tick
+    assert state['max_z_error']<1 and state['max_step_cm']<400
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

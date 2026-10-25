@@ -1,0 +1,118 @@
+[
+  {
+    "lift_m": 0.02,
+    "samples": [
+      {
+        "frame": 1,
+        "hidden": 40,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.5727764666080475,
+        "bottom": 0.9518549330532551
+      },
+      {
+        "frame": 25,
+        "hidden": 48,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.6108570694923401,
+        "bottom": 0.9680656604468822
+      },
+      {
+        "frame": 49,
+        "hidden": 41,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.5948988795280457,
+        "bottom": 0.9859084598720074
+      }
+    ]
+  },
+  {
+    "lift_m": 0.04,
+    "samples": [
+      {
+        "frame": 1,
+        "hidden": 36,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.5761465728282928,
+        "bottom": 0.9667202420532703
+      },
+      {
+        "frame": 25,
+        "hidden": 46,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.5920912027359009,
+        "bottom": 0.9490013122558594
+      },
+      {
+        "frame": 49,
+        "hidden": 38,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.5761466324329376,
+        "bottom": 0.9667202420532703
+      }
+    ]
+  },
+  {
+    "lift_m": 0.06,
+    "samples": [
+      {
+        "frame": 1,
+        "hidden": 32,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.5572313964366913,
+        "bottom": 0.947471484541893
+      },
+      {
+        "frame": 25,
+        "hidden": 42,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.5731616020202637,
+        "bottom": 0.9297526031732559
+      },
+      {
+        "frame": 49,
+        "hidden": 32,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.5572314560413361,
+        "bottom": 0.947471484541893
+      }
+    ]
+  },
+  {
+    "lift_m": 0.08,
+    "samples": [
+      {
+        "frame": 1,
+        "hidden": 26,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.5381510853767395,
+        "bottom": 0.9280348420143127
+      },
+      {
+        "frame": 25,
+        "hidden": 38,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.5540659725666046,
+        "bottom": 0.9103168547153473
+      },
+      {
+        "frame": 49,
+        "hidden": 28,
+        "arm_leg": 0,
+        "arm_chassis": 0,
+        "top": 0.5381510853767395,
+        "bottom": 0.9280348420143127
+      }
+    ]
+  }
+]

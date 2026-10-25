@@ -1,0 +1,40 @@
+{
+  "screenshots": "Actual Unreal 1600x900 renders, stationary diagnostic camera/visual rig at measured road samples; gameplay actors not teleported. No driving dynamics claim.",
+  "straight_pose_cm": [
+    -503.9471,
+    21.3882,
+    31
+  ],
+  "corner_pose_cm": [
+    9034.8835,
+    -1290.1299,
+    31
+  ],
+  "screen_framing": {
+    "1": {
+      "top_of_driver_or_wheel_fraction": 0.5999144017696381,
+      "bottom_fraction": 0.9999945652862152
+    },
+    "25": {
+      "top_of_driver_or_wheel_fraction": 0.6172012090682983,
+      "bottom_fraction": 0.9999945652862152
+    },
+    "49": {
+      "top_of_driver_or_wheel_fraction": 0.5999144017696381,
+      "bottom_fraction": 0.9999980582961143
+    }
+  },
+  "worst_sampled_glove_compression_mm": 0.6752619594335568,
+  "surface_check_maxima": {
+    "arm_leg_surface_pairs": 0,
+    "arm_chassis_surface_pairs": 0,
+    "leg_chassis_surface_pairs": 0,
+    "left_right_leg_surface_pairs": 0
+  },
+  "display": "Cosmetic DEMO readout, not live telemetry",
+  "images": [
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Evidence\\Cockpit_Reference_v2\\Before_After_Reference.png",
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Evidence\\Cockpit_Reference_v2\\Corner_Before_After_Reference.png",
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Evidence\\Cockpit_Reference_v2\\Unreal_Views.png"
+  ]
+}

@@ -1,5 +1,7 @@
 # Local-player cockpit visuals
 
+Update: the integrated DesertKarting_Visual game now includes the original V5 chassis, seat and front wheels at full scale, sharing the animated arms/wheel source coordinates. See `INTEGRATION.md` at the project root for current Play instructions, camera alignment, evidence and limitations. The camera transform and chassis integration described there supersede the earlier arms-only alignment below.
+
 Separate first-person **placeholder** adapted from the existing MakeHuman V5 gloves and sleeves. It adds shaped suede reinforcement, geometric sewn edging and microfiber normal textures. It is editable, skinned 3D geometry, not a rendered image. It is not a finished photorealistic glove asset: finger construction, cuff transitions, cloth folds and seam finish need manual art work.
 
 ## Files

@@ -1,0 +1,511 @@
+{
+  "rim_vertices": 3360,
+  "rim_boundary_or_nonmanifold_edges": 0,
+  "near_plane_comparison": "Camera depth is in meters. Compare to runtime near clip; the wheel is roughly 0.6m in front of the eye, not on the near plane.",
+  "trials": [
+    {
+      "knee_angle_from_source_deg": 34,
+      "frame": 1,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 560,
+      "leg_chassis_surface_pairs": 178,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 34,
+      "frame": 25,
+      "lower_rim_sections": 63,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 802,
+      "leg_chassis_surface_pairs": 178,
+      "min_rim_camera_depth_m": 0.5900314450263977,
+      "framing": {
+        "105": {
+          "top": 0.6172012090682983,
+          "bottom": 0.9963857207912952,
+          "out_of_frame_vertices": 0
+        },
+        "107": {
+          "top": 0.6130213439464569,
+          "bottom": 0.978682667016983,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.6069494187831879,
+          "bottom": 0.9529659897089005,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 34,
+      "frame": 49,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 513,
+      "leg_chassis_surface_pairs": 178,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 36,
+      "frame": 1,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 460,
+      "leg_chassis_surface_pairs": 195,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 36,
+      "frame": 25,
+      "lower_rim_sections": 63,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 502,
+      "leg_chassis_surface_pairs": 195,
+      "min_rim_camera_depth_m": 0.5900314450263977,
+      "framing": {
+        "105": {
+          "top": 0.6172012090682983,
+          "bottom": 0.9963857207912952,
+          "out_of_frame_vertices": 0
+        },
+        "107": {
+          "top": 0.6130213439464569,
+          "bottom": 0.978682667016983,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.6069494187831879,
+          "bottom": 0.9529659897089005,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 36,
+      "frame": 49,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 402,
+      "leg_chassis_surface_pairs": 195,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 38,
+      "frame": 1,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 351,
+      "leg_chassis_surface_pairs": 208,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 38,
+      "frame": 25,
+      "lower_rim_sections": 63,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 78,
+      "leg_chassis_surface_pairs": 208,
+      "min_rim_camera_depth_m": 0.5900314450263977,
+      "framing": {
+        "105": {
+          "top": 0.6172012090682983,
+          "bottom": 0.9963857207912952,
+          "out_of_frame_vertices": 0
+        },
+        "107": {
+          "top": 0.6130213439464569,
+          "bottom": 0.978682667016983,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.6069494187831879,
+          "bottom": 0.9529659897089005,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 38,
+      "frame": 49,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 257,
+      "leg_chassis_surface_pairs": 208,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 40,
+      "frame": 1,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 124,
+      "leg_chassis_surface_pairs": 180,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 40,
+      "frame": 25,
+      "lower_rim_sections": 63,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 180,
+      "min_rim_camera_depth_m": 0.5900314450263977,
+      "framing": {
+        "105": {
+          "top": 0.6172012090682983,
+          "bottom": 0.9963857207912952,
+          "out_of_frame_vertices": 0
+        },
+        "107": {
+          "top": 0.6130213439464569,
+          "bottom": 0.978682667016983,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.6069494187831879,
+          "bottom": 0.9529659897089005,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 40,
+      "frame": 49,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 10,
+      "leg_chassis_surface_pairs": 180,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 42,
+      "frame": 1,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 218,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 42,
+      "frame": 25,
+      "lower_rim_sections": 63,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 218,
+      "min_rim_camera_depth_m": 0.5900314450263977,
+      "framing": {
+        "105": {
+          "top": 0.6172012090682983,
+          "bottom": 0.9963857207912952,
+          "out_of_frame_vertices": 0
+        },
+        "107": {
+          "top": 0.6130213439464569,
+          "bottom": 0.978682667016983,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.6069494187831879,
+          "bottom": 0.9529659897089005,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 42,
+      "frame": 49,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 218,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 44,
+      "frame": 1,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 292,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 44,
+      "frame": 25,
+      "lower_rim_sections": 63,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 292,
+      "min_rim_camera_depth_m": 0.5900314450263977,
+      "framing": {
+        "105": {
+          "top": 0.6172012090682983,
+          "bottom": 0.9963857207912952,
+          "out_of_frame_vertices": 0
+        },
+        "107": {
+          "top": 0.6130213439464569,
+          "bottom": 0.978682667016983,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.6069494187831879,
+          "bottom": 0.9529659897089005,
+          "out_of_frame_vertices": 0
+        }
+      }
+    },
+    {
+      "knee_angle_from_source_deg": 44,
+      "frame": 49,
+      "lower_rim_sections": 60,
+      "lower_rim_masked": 0,
+      "masked_by_legs": 0,
+      "masked_by_chassis": 0,
+      "arm_leg_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 292,
+      "min_rim_camera_depth_m": 0.5879761576652527,
+      "framing": {
+        "105": {
+          "top": 0.5999144017696381,
+          "bottom": 1.0149226356297731,
+          "out_of_frame_vertices": 109
+        },
+        "107": {
+          "top": 0.5963510572910309,
+          "bottom": 0.996558407554403,
+          "out_of_frame_vertices": 0
+        },
+        "110": {
+          "top": 0.5911746919155121,
+          "bottom": 0.9698814768344164,
+          "out_of_frame_vertices": 0
+        }
+      }
+    }
+  ]
+}

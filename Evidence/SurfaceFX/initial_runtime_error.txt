@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_surface_fx_pie.py", line 49, in tick
+    assert checks['Stopped']['max_live']==0,checks
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'Grass': {'max_wheels': 2, 'max_live': 31, 'emitted': 45}, 'Stopped': {'max_wheels': 0, 'max_live': 3, 'emitted': 0}, 'Asphalt': {'max_wheels': 0, 'max_live': 0, 'emitted': 0}, 'Airborne': {'max_wheels': 0, 'max_live': 0, 'emitted': 0}, 'Reverse': {'max_wheels': 2, 'max_live': 30, 'emitted': 81}}

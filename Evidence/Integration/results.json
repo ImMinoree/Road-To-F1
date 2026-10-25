@@ -1,0 +1,126 @@
+{
+  "map": {
+    "map": "/Game/RoadToF1/Maps/DesertKarting_Visual",
+    "before_game_mode": "<Object '/Script/Road_To_F1_New.ProofGameMode' (0x00000175A2E0E600) Class 'Class'>",
+    "game_mode": "<Object '/Script/Road_To_F1_New.ProofGameMode' (0x00000175A2E0E600) Class 'Class'>",
+    "actors_preserved": 152,
+    "save_reload_passed": true,
+    "one_gantry": true,
+    "grid_slots": 20,
+    "placed_pawns": 0,
+    "chassis": "/Game/RoadToF1/PlayerVisuals/FirstPerson/SM_PlayerKartChassis.SM_PlayerKartChassis",
+    "chassis_bounds": "<Struct 'BoxSphereBounds' (0x00000175B6F4B940) {origin: {x: 2.749477, y: 0.000004, z: 52.855503}, box_extent: {x: 104.309978, y: 67.180882, z: 51.844502}, sphere_radius: 117.011933}>"
+  },
+  "automation_passed": true,
+  "actual_pie": true,
+  "original_movement_block_unchanged": true,
+  "screenshots": [
+    {
+      "name": "steering_left",
+      "width": 1600,
+      "height": 900,
+      "bytes": 2106225,
+      "telemetry": {
+        "time": 3.503,
+        "reds": 2,
+        "gate_closed": true,
+        "start_events": 0,
+        "moved_early": false,
+        "distance_cm": 0.0,
+        "steer": -1.0,
+        "cockpit_active": true,
+        "world_type": 3,
+        "x": 3603.484,
+        "y": -106.242,
+        "z": 31.0
+      }
+    },
+    {
+      "name": "steering_right",
+      "width": 1600,
+      "height": 900,
+      "bytes": 2116365,
+      "telemetry": {
+        "time": 5.503,
+        "reds": 4,
+        "gate_closed": true,
+        "start_events": 0,
+        "moved_early": false,
+        "distance_cm": 0.0,
+        "steer": 1.0,
+        "cockpit_active": true,
+        "world_type": 3,
+        "x": 3603.484,
+        "y": -106.242,
+        "z": 31.0
+      }
+    },
+    {
+      "name": "pre_start",
+      "width": 1600,
+      "height": 900,
+      "bytes": 2071036,
+      "telemetry": {
+        "time": 6.709,
+        "reds": 5,
+        "gate_closed": true,
+        "start_events": 0,
+        "moved_early": false,
+        "distance_cm": 0.0,
+        "steer": 0.0,
+        "cockpit_active": true,
+        "world_type": 3,
+        "x": 3603.484,
+        "y": -106.242,
+        "z": 31.0
+      }
+    },
+    {
+      "name": "driving",
+      "width": 1600,
+      "height": 900,
+      "bytes": 2039049,
+      "telemetry": {
+        "time": 11.001,
+        "reds": 0,
+        "gate_closed": false,
+        "start_events": 1,
+        "moved_early": false,
+        "distance_cm": 1855.717,
+        "steer": 0.0,
+        "cockpit_active": true,
+        "world_type": 3,
+        "x": 5459.016,
+        "y": -80.016,
+        "z": 31.0
+      }
+    },
+    {
+      "name": "driving_later",
+      "width": 1600,
+      "height": 900,
+      "bytes": 2080987,
+      "telemetry": {
+        "time": 14.007,
+        "reds": 0,
+        "gate_closed": false,
+        "start_events": 1,
+        "moved_early": false,
+        "distance_cm": 4783.588,
+        "steer": 0.0,
+        "cockpit_active": true,
+        "world_type": 3,
+        "x": 8386.594,
+        "y": -38.637,
+        "z": 31.0
+      }
+    }
+  ],
+  "limitations": [
+    "Prototype glove/sleeve art",
+    "Full-body rig remains in Blender",
+    "Source wheels/linkages are static",
+    "Original sphere collision envelope retained; no new kart-extremity collision",
+    "No full-lap or packaged-build test"
+  ]
+}

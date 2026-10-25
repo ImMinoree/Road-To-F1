@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_tire_dynamics_pie.py", line 57, in tick
+    assert slip.longitudinal_speed_mps>2 and gm.start_event_count==1
+                                             ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

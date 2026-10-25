@@ -1,5 +1,8 @@
 #include "ProofPawn.h"
+#include "KartSurfaceFX.h"
+#include "KartTireDynamics.h"
 #include "LocalKartDriverVisuals.h"
+#include "TrackRacingAI.h"
 #include "RaceStartGantry.h"
 #include "GridStartSlot.h"
 #include "TimerManager.h"
@@ -13,6 +16,7 @@
 #include "Components/InputComponent.h"
 #include "Modules/ModuleManager.h"
 #include "Engine/World.h"
+#include "Engine/GameViewportClient.h"
 #include "Misc/CommandLine.h"
 #include "Misc/Parse.h"
 #include "Misc/FileHelper.h"
@@ -23,21 +27,45 @@ AProofPawn::AProofPawn(){
  Body=CreateDefaultSubobject<USphereComponent>(TEXT("Collision")); RootComponent=Body;
  Body->InitSphereRadius(28); Body->SetCollisionProfileName(TEXT("Pawn"));
  Camera=CreateDefaultSubobject<UCameraComponent>(TEXT("DriverEye")); Camera->SetupAttachment(Body);
- Camera->SetRelativeLocation(FVector(0,0,49)); Camera->SetFieldOfView(85);
+ Camera->SetRelativeLocation(FVector(0,0,64)); Camera->SetFieldOfView(90);
+ Camera->SetRelativeRotation(FRotator(-4,0,0));
+ Camera->PostProcessSettings.bOverride_MotionBlurAmount=true;Camera->PostProcessSettings.MotionBlurAmount=0;
  LocalDriverVisuals=CreateDefaultSubobject<ULocalKartDriverVisuals>(TEXT("LocalDriverVisuals"));
+ SurfaceFX=CreateDefaultSubobject<UKartSurfaceFX>(TEXT("RearTireSurfaceFX"));
+ TireDynamics=CreateDefaultSubobject<UKartTireDynamics>(TEXT("TireDynamics"));
+ bUseTireDynamics=!FParse::Param(FCommandLine::Get(),TEXT("LegacyKartMovement"));
  AutoPossessPlayer=EAutoReceiveInput::Player0;
 }
 void AProofPawn::SetupPlayerInputComponent(UInputComponent* I){
  Super::SetupPlayerInputComponent(I); I->BindAxis("Throttle",this,&AProofPawn::Drive);
  I->BindAxis("Steer",this,&AProofPawn::Turn); I->BindAction("Reset",IE_Pressed,this,&AProofPawn::Reset);
+ I->BindAction("Brake",IE_Pressed,this,&AProofPawn::BrakePressed);I->BindAction("Brake",IE_Released,this,&AProofPawn::BrakeReleased);
 }
-void AProofPawn::StageForRace(const FTransform& T){SetActorTransform(T,false,nullptr,ETeleportType::TeleportPhysics);Speed=0;}
+void AProofPawn::StageForRace(const FTransform& T){SetActorTransform(T,false,nullptr,ETeleportType::TeleportPhysics);Speed=0;if(TireDynamics)TireDynamics->ResetMotion();}
+FVector AProofPawn::GetVelocity()const{return bUseTireDynamics&&TireDynamics?TireDynamics->GetWorldVelocity():GetActorForwardVector()*Speed;}
+float AProofPawn::GetMaximumSteeringCurvature()const{return bUseTireDynamics&&TireDynamics?TireDynamics->GetMaximumCurvatureCm():FMath::DegreesToRadians(GetSteeringYawRate())/1600.f;}
+float AProofPawn::SteeringForCurvature(float K)const{return bUseTireDynamics&&TireDynamics?TireDynamics->SteeringForCurvature(K):FMath::Clamp(K/GetMaximumSteeringCurvature(),-1.f,1.f);}
+float AProofPawn::GetSteeringVisualInput()const{return bUseTireDynamics&&TireDynamics?TireDynamics->GetSteeringVisualInput():Steer;}
+void AProofPawn::SetKartTestInput(float InThrottle,float InSteer,bool bBrake){
+#if !UE_BUILD_SHIPPING
+ if(!FParse::Param(FCommandLine::Get(),TEXT("KartDynamicsTest")))return;
+ KartTestThrottle=FMath::IsFinite(InThrottle)?FMath::Clamp(InThrottle,-1.f,1.f):0;KartTestSteering=FMath::IsFinite(InSteer)?FMath::Clamp(InSteer,-1.f,1.f):0;bKartTestBrake=bBrake;bKartTestInputActive=true;
+#endif
+}
+void AProofPawn::ConfigureRacingAI(int32 GridPosition){bRacingAI=true;AutoPossessPlayer=EAutoReceiveInput::Disabled;PreferredGridPosition=GridPosition;}
+void AProofPawn::SetAutonomousInput(float InThrottle,float InSteer){if(!bRacingAI||!HasAuthority()||IsPlayerControlled())return;Throttle=FMath::IsFinite(InThrottle)?FMath::Clamp(InThrottle,-1.f,1.f):0;Steer=FMath::IsFinite(InSteer)?FMath::Clamp(InSteer,-1.f,1.f):0;}
+void AProofPawn::SetRacingDiagnosticInput(float InThrottle,float InSteer){
+#if !UE_BUILD_SHIPPING
+ if(!IsPlayerControlled()||!FParse::Param(FCommandLine::Get(),TEXT("RacingAIPlayerTest")))return;
+ Throttle=FMath::IsFinite(InThrottle)?FMath::Clamp(InThrottle,-1.f,1.f):0;Steer=FMath::IsFinite(InSteer)?FMath::Clamp(InSteer,-1.f,1.f):0;
+#endif
+}
 void AProofPawn::Reset(){
  if(auto* GM=GetWorld()->GetAuthGameMode<AProofGameMode>())if(auto* Start=GM->GetGridSlotForPawn(this)?static_cast<APlayerStart*>(GM->GetGridSlotForPawn(this)):GM->FindPlayerStart(GetController())){FTransform T=Start->GetActorTransform();T.SetLocation(T.GetLocation()+FVector(0,0,-9));StageForRace(T);return;}
- SetActorLocationAndRotation(FVector(800,0,31),FRotator::ZeroRotator);Speed=0;
+ StageForRace(FTransform(FRotator::ZeroRotator,FVector(800,0,31)));
 }
 void AProofPawn::Tick(float Dt){
- Super::Tick(Dt); Dt=FMath::Min(Dt,0.05f);
+ Super::Tick(Dt); const float FrameDt=Dt;Dt=FMath::Min(Dt,0.05f);
  if(FParse::Param(FCommandLine::Get(),TEXT("ProofSmokeTest"))){
   const float Actual=FApp::GetDeltaTime();TestTime+=Actual;
   Throttle=TestTime<12 ? .35f : (TestTime<15 ? -1.f : 0.f);
@@ -51,17 +79,42 @@ void AProofPawn::Tick(float Dt){
   }
  }
  if(FParse::Param(FCommandLine::Get(),TEXT("RaceStartTest"))){Throttle=1.f;Steer=0.f;}
+#if !UE_BUILD_SHIPPING
+ // A latched opt-in diagnostic input survives the local controller's zero-axis callbacks.
+ if(bKartTestInputActive){Throttle=KartTestThrottle;Steer=KartTestSteering;bBrakeHeld=bKartTestBrake;}
+#endif
+ TickIntegrationEvidence();
  LocalDriverVisuals->SetSteeringInput(Steer);
- if(auto* GM=GetWorld()->GetAuthGameMode<AProofGameMode>())if(GM->IsStartGateClosed()){Speed=0;return;}
+ if(auto* GM=GetWorld()->GetAuthGameMode<AProofGameMode>())if(GM->IsStartGateClosed()){Speed=0;if(bUseTireDynamics){TireDynamics->HoldForStart(FrameDt,Steer);LocalDriverVisuals->SetSteeringInput(GetSteeringVisualInput());}return;}
+ if(bUseTireDynamics){TireDynamics->Simulate(FrameDt,Throttle,Steer,bBrakeHeld);Speed=TireDynamics->GetForwardSpeedCm();LocalDriverVisuals->SetSteeringInput(GetSteeringVisualInput());return;}
  Speed=FMath::Clamp(Speed+(Throttle*430.f-Speed*0.32f)*Dt,-350.f,1600.f);
- AddActorWorldRotation(FRotator(0,Steer*Speed/1600.f*65.f*Dt,0));
+ AddActorWorldRotation(FRotator(0,Steer*Speed/1600.f*GetSteeringYawRate()*Dt,0));
  FHitResult Hit; AddActorWorldOffset(GetActorForwardVector()*Speed*Dt,true,&Hit); if(Hit.bBlockingHit) Speed=0;
  FVector P=GetActorLocation(); FCollisionQueryParams Q;Q.AddIgnoredActor(this);
  if(GetWorld()->LineTraceSingleByChannel(Hit,P+FVector(0,0,200),P-FVector(0,0,500),ECC_Visibility,Q)){
  P.Z=Hit.ImpactPoint.Z+31; SetActorLocation(P);
  } else Reset();
 }
-AProofGameMode::AProofGameMode(){DefaultPawnClass=AProofPawn::StaticClass();HUDClass=ARaceStartHUD::StaticClass();}
+void AProofPawn::TickIntegrationEvidence(){
+#if !UE_BUILD_SHIPPING
+ if(!IsPlayerControlled()||!FParse::Param(FCommandLine::Get(),TEXT("KartIntegrationTest")))return;
+ auto* GM=GetWorld()->GetAuthGameMode<AProofGameMode>();if(!GM)return;
+ const float T=GetWorld()->GetTimeSeconds();
+ if(!bIntegrationGridCaptured&&AssignedGridPosition>0){IntegrationGridPosition=GetActorLocation();bIntegrationGridCaptured=true;}
+ Throttle=1.f;Steer=(T>2.f&&T<4.f)?-1.f:((T>=4.f&&T<6.f)?1.f:0.f);
+ if(bIntegrationGridCaptured&&GM->IsStartGateClosed()&&FVector::Dist(GetActorLocation(),IntegrationGridPosition)>1.f)bIntegrationMovedEarly=true;
+ const float Times[]={3.5f,5.5f,6.7f,11.f,14.f};
+ const TCHAR* Names[]={TEXT("steering_left"),TEXT("steering_right"),TEXT("pre_start"),TEXT("driving"),TEXT("driving_later")};
+ if(IntegrationCaptureStage<5&&T>Times[IntegrationCaptureStage]){
+  const FString Dir=FPaths::ProjectDir()/TEXT("Evidence/Integration");IFileManager::Get().MakeDirectory(*Dir,true);
+  const FString Name=Names[IntegrationCaptureStage++];
+  if(auto* Viewport=GetWorld()->GetGameViewport())Viewport->Exec(GetWorld(),*FString::Printf(TEXT("HighResShot 1600x900 filename=%s"),*(Dir/(Name+TEXT(".png")))),*GLog);
+  const FString Data=FString::Printf(TEXT("{\"time\":%.3f,\"reds\":%d,\"gate_closed\":%s,\"start_events\":%d,\"moved_early\":%s,\"distance_cm\":%.3f,\"steer\":%.2f,\"cockpit_active\":%s,\"world_type\":%d,\"x\":%.3f,\"y\":%.3f,\"z\":%.3f}"),T,GM->RedLightCount,GM->IsStartGateClosed()?TEXT("true"):TEXT("false"),GM->StartEventCount,bIntegrationMovedEarly?TEXT("true"):TEXT("false"),FVector::Dist(GetActorLocation(),IntegrationGridPosition),Steer,LocalDriverVisuals->IsFirstPersonActive()?TEXT("true"):TEXT("false"),int32(GetWorld()->WorldType),GetActorLocation().X,GetActorLocation().Y,GetActorLocation().Z);
+  FFileHelper::SaveStringToFile(Data,*(Dir/(Name+TEXT(".json"))));
+ }
+#endif
+}
+AProofGameMode::AProofGameMode(){DefaultPawnClass=AProofPawn::StaticClass();HUDClass=ARaceStartHUD::StaticClass();RacingAI=CreateDefaultSubobject<UTrackRacingAI>(TEXT("TrackRacingAI"));}
 AActor* AProofGameMode::ChoosePlayerStart_Implementation(AController* Player){
  const auto Slots=FindGridSlots();
  if(Slots.Num()){
@@ -84,12 +137,13 @@ void AProofGameMode::BeginPlay(){
   // Explicit test-only participants; never populate empty slots during normal Play.
   const auto Slots=FindGridSlots();for(auto* Slot:Slots)if(Slot->PositionNumber>1){FTransform T=Slot->GetActorTransform();T.SetLocation(T.GetLocation()+FVector(0,0,-9));auto* P=GetWorld()->SpawnActorDeferred<AProofPawn>(AProofPawn::StaticClass(),T,nullptr,nullptr,ESpawnActorCollisionHandlingMethod::AlwaysSpawn);if(P){P->AutoPossessPlayer=EAutoReceiveInput::Disabled;P->PreferredGridPosition=Slot->PositionNumber;P->FinishSpawning(T);}}
  }
- if(bStartEnabled)RestartRaceStart();
+ if(bStartEnabled){RacingAI->InitializeOpponents();RestartRaceStart();}
 }
 void AProofGameMode::EndPlay(const EEndPlayReason::Type Reason){GetWorldTimerManager().ClearAllTimersForObject(this);Super::EndPlay(Reason);}
 float AProofGameMode::GetRaceElapsedSeconds() const{return RaceStartWorldSeconds<0?0.f:float(GetWorld()->GetTimeSeconds()-RaceStartWorldSeconds);}
 void AProofGameMode::RestartRaceStart(){
  if(!bStartEnabled)return;
+ RacingAI->ResetRace();
  GetWorldTimerManager().ClearAllTimersForObject(this);RacePhase=ERaceStartPhase::PreGrid;RedLightCount=0;RaceStartWorldSeconds=-1;StartEventCount=0;++TestEpoch;
  if(IsValid(Gantry))Gantry->SetRedLightCount(0);else UE_LOG(LogTemp,Warning,TEXT("RACE_START: missing display; authoritative timer remains active"));
  StageGridParticipants();

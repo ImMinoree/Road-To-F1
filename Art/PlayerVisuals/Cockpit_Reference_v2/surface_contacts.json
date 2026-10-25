@@ -1,0 +1,446 @@
+{
+  "method": "Evaluated triangle surface overlaps, not a signed-volume or cloth simulation test.",
+  "rows": [
+    {
+      "frame": 1,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 2,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 3,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 4,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 5,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 6,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 7,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 8,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 9,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 10,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 11,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 12,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 13,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 14,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 15,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 16,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 17,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 18,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 19,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 20,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 21,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 22,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 23,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 24,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 25,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 26,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 27,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 28,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 29,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 30,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 31,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 32,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 33,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 34,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 35,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 36,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 37,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 38,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 39,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 40,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 41,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 42,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 43,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 44,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 45,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 46,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 47,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 48,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    },
+    {
+      "frame": 49,
+      "arm_leg_surface_pairs": 0,
+      "arm_chassis_surface_pairs": 0,
+      "leg_chassis_surface_pairs": 0,
+      "left_right_leg_surface_pairs": 0,
+      "leg_leg_sample_face_centers": [],
+      "arm_leg_sample_face_centers": []
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "rear_axle_cm": -55,
+  "rear_wheel_lateral_cm": 53.5,
+  "source": "Art/DesertKarting/Kart/build_kart.py, isolated rear wheel centers",
+  "authorship": "Original procedural fragment meshes; no external textures"
+}

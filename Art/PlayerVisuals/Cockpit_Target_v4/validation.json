@@ -1,0 +1,535 @@
+{
+  "rim_nonmanifold_edges": 0,
+  "projection_frames": [
+    {
+      "frame": 1,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4478105902671814,
+      "bottom_fraction": 0.8806934356689453,
+      "minimum_rim_camera_depth_m": 0.6424172520637512,
+      "lower_rim_occluded_by_legs": 0
+    },
+    {
+      "frame": 2,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4484236240386963,
+      "bottom_fraction": 0.8801226168870926,
+      "minimum_rim_camera_depth_m": 0.6424515247344971
+    },
+    {
+      "frame": 3,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4490213990211487,
+      "bottom_fraction": 0.8794841691851616,
+      "minimum_rim_camera_depth_m": 0.642485499382019
+    },
+    {
+      "frame": 4,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.44969284534454346,
+      "bottom_fraction": 0.8787799254059792,
+      "minimum_rim_camera_depth_m": 0.6425231695175171
+    },
+    {
+      "frame": 5,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.45040011405944824,
+      "bottom_fraction": 0.8781092613935471,
+      "minimum_rim_camera_depth_m": 0.6425629258155823
+    },
+    {
+      "frame": 6,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.45108622312545776,
+      "bottom_fraction": 0.8773715198040009,
+      "minimum_rim_camera_depth_m": 0.642601728439331
+    },
+    {
+      "frame": 7,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.45184558629989624,
+      "bottom_fraction": 0.8765669837594032,
+      "minimum_rim_camera_depth_m": 0.6426442861557007,
+      "lower_rim_occluded_by_legs": 0
+    },
+    {
+      "frame": 8,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.45260095596313477,
+      "bottom_fraction": 0.8757948130369186,
+      "minimum_rim_camera_depth_m": 0.6426867246627808
+    },
+    {
+      "frame": 9,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4533660411834717,
+      "bottom_fraction": 0.8749575018882751,
+      "minimum_rim_camera_depth_m": 0.6427300572395325
+    },
+    {
+      "frame": 10,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4542035460472107,
+      "bottom_fraction": 0.8741206377744675,
+      "minimum_rim_camera_depth_m": 0.6427770853042603
+    },
+    {
+      "frame": 11,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.45508384704589844,
+      "bottom_fraction": 0.8732586950063705,
+      "minimum_rim_camera_depth_m": 0.6428262591362
+    },
+    {
+      "frame": 12,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4559149146080017,
+      "bottom_fraction": 0.8724399358034134,
+      "minimum_rim_camera_depth_m": 0.6428735256195068
+    },
+    {
+      "frame": 13,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4568173885345459,
+      "bottom_fraction": 0.8717315047979355,
+      "minimum_rim_camera_depth_m": 0.642924427986145,
+      "lower_rim_occluded_by_legs": 0
+    },
+    {
+      "frame": 14,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4577908515930176,
+      "bottom_fraction": 0.871022954583168,
+      "minimum_rim_camera_depth_m": 0.6429789066314697
+    },
+    {
+      "frame": 15,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.458737850189209,
+      "bottom_fraction": 0.8703071027994156,
+      "minimum_rim_camera_depth_m": 0.6430324912071228
+    },
+    {
+      "frame": 16,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4596962332725525,
+      "bottom_fraction": 0.8695268034934998,
+      "minimum_rim_camera_depth_m": 0.6430867314338684
+    },
+    {
+      "frame": 17,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.46072494983673096,
+      "bottom_fraction": 0.8688001036643982,
+      "minimum_rim_camera_depth_m": 0.643144428730011
+    },
+    {
+      "frame": 18,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.461699903011322,
+      "bottom_fraction": 0.8680132627487183,
+      "minimum_rim_camera_depth_m": 0.643199622631073
+    },
+    {
+      "frame": 19,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.46270883083343506,
+      "bottom_fraction": 0.867268905043602,
+      "minimum_rim_camera_depth_m": 0.643256425857544,
+      "lower_rim_occluded_by_legs": 0
+    },
+    {
+      "frame": 20,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4637010097503662,
+      "bottom_fraction": 0.8664945513010025,
+      "minimum_rim_camera_depth_m": 0.6433125138282776
+    },
+    {
+      "frame": 21,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4646863341331482,
+      "bottom_fraction": 0.8657670468091965,
+      "minimum_rim_camera_depth_m": 0.6433680653572083
+    },
+    {
+      "frame": 22,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.46561580896377563,
+      "bottom_fraction": 0.8650670200586319,
+      "minimum_rim_camera_depth_m": 0.6434205770492554
+    },
+    {
+      "frame": 23,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4665122628211975,
+      "bottom_fraction": 0.8644132912158966,
+      "minimum_rim_camera_depth_m": 0.6434711217880249
+    },
+    {
+      "frame": 24,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.46732187271118164,
+      "bottom_fraction": 0.8638365864753723,
+      "minimum_rim_camera_depth_m": 0.6435168385505676
+    },
+    {
+      "frame": 25,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4679981470108032,
+      "bottom_fraction": 0.8634271025657654,
+      "minimum_rim_camera_depth_m": 0.6435549855232239,
+      "lower_rim_occluded_by_legs": 0
+    },
+    {
+      "frame": 26,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.46732187271118164,
+      "bottom_fraction": 0.8638365119695663,
+      "minimum_rim_camera_depth_m": 0.6435167789459229
+    },
+    {
+      "frame": 27,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4665122628211975,
+      "bottom_fraction": 0.8644132614135742,
+      "minimum_rim_camera_depth_m": 0.6434710621833801
+    },
+    {
+      "frame": 28,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.46561580896377563,
+      "bottom_fraction": 0.8650669902563095,
+      "minimum_rim_camera_depth_m": 0.6434205174446106
+    },
+    {
+      "frame": 29,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4646863341331482,
+      "bottom_fraction": 0.8657670468091965,
+      "minimum_rim_camera_depth_m": 0.6433680057525635
+    },
+    {
+      "frame": 30,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.463701069355011,
+      "bottom_fraction": 0.8664945214986801,
+      "minimum_rim_camera_depth_m": 0.6433124542236328
+    },
+    {
+      "frame": 31,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4627087712287903,
+      "bottom_fraction": 0.8672689646482468,
+      "minimum_rim_camera_depth_m": 0.643256425857544,
+      "lower_rim_occluded_by_legs": 0
+    },
+    {
+      "frame": 32,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.46169984340667725,
+      "bottom_fraction": 0.8680132329463959,
+      "minimum_rim_camera_depth_m": 0.643199622631073
+    },
+    {
+      "frame": 33,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.46072494983673096,
+      "bottom_fraction": 0.8688000589609146,
+      "minimum_rim_camera_depth_m": 0.643144428730011
+    },
+    {
+      "frame": 34,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.45969629287719727,
+      "bottom_fraction": 0.8695268034934998,
+      "minimum_rim_camera_depth_m": 0.6430867314338684
+    },
+    {
+      "frame": 35,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.458737850189209,
+      "bottom_fraction": 0.8703071027994156,
+      "minimum_rim_camera_depth_m": 0.6430324912071228
+    },
+    {
+      "frame": 36,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4577908515930176,
+      "bottom_fraction": 0.8710228800773621,
+      "minimum_rim_camera_depth_m": 0.6429789066314697
+    },
+    {
+      "frame": 37,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4568173885345459,
+      "bottom_fraction": 0.8717314302921295,
+      "minimum_rim_camera_depth_m": 0.642924427986145,
+      "lower_rim_occluded_by_legs": 0
+    },
+    {
+      "frame": 38,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4559149146080017,
+      "bottom_fraction": 0.872439906001091,
+      "minimum_rim_camera_depth_m": 0.6428734660148621
+    },
+    {
+      "frame": 39,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.455083966255188,
+      "bottom_fraction": 0.873258650302887,
+      "minimum_rim_camera_depth_m": 0.6428262591362
+    },
+    {
+      "frame": 40,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4542035460472107,
+      "bottom_fraction": 0.8741205781698227,
+      "minimum_rim_camera_depth_m": 0.6427770853042603
+    },
+    {
+      "frame": 41,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4533660411834717,
+      "bottom_fraction": 0.8749574571847916,
+      "minimum_rim_camera_depth_m": 0.6427299976348877
+    },
+    {
+      "frame": 42,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.45260095596313477,
+      "bottom_fraction": 0.8757947385311127,
+      "minimum_rim_camera_depth_m": 0.642686665058136
+    },
+    {
+      "frame": 43,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4518454670906067,
+      "bottom_fraction": 0.8765669465065002,
+      "minimum_rim_camera_depth_m": 0.6426442265510559,
+      "lower_rim_occluded_by_legs": 0
+    },
+    {
+      "frame": 44,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.45108622312545776,
+      "bottom_fraction": 0.8773714900016785,
+      "minimum_rim_camera_depth_m": 0.6426016688346863
+    },
+    {
+      "frame": 45,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.45040011405944824,
+      "bottom_fraction": 0.8781091868877411,
+      "minimum_rim_camera_depth_m": 0.6425628662109375
+    },
+    {
+      "frame": 46,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.44969290494918823,
+      "bottom_fraction": 0.8787798956036568,
+      "minimum_rim_camera_depth_m": 0.6425231099128723
+    },
+    {
+      "frame": 47,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.44902127981185913,
+      "bottom_fraction": 0.8794841691851616,
+      "minimum_rim_camera_depth_m": 0.642485499382019
+    },
+    {
+      "frame": 48,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.4484236240386963,
+      "bottom_fraction": 0.8801225945353508,
+      "minimum_rim_camera_depth_m": 0.6424515247344971
+    },
+    {
+      "frame": 49,
+      "out_of_frame_rim_vertices": 0,
+      "top_fraction": 0.44781064987182617,
+      "bottom_fraction": 0.8806933984160423,
+      "minimum_rim_camera_depth_m": 0.6424171924591064,
+      "lower_rim_occluded_by_legs": 0
+    }
+  ],
+  "bone_samples": [
+    {
+      "frame": 1,
+      "bones": {
+        "hand_l": [
+          0.4716159701347351,
+          0.1767197549343109,
+          0.666370689868927
+        ],
+        "hand_r": [
+          0.5188919305801392,
+          -0.15136274695396423,
+          0.8118703961372375
+        ],
+        "calf_l": [
+          0.29035329818725586,
+          0.4513993561267853,
+          0.6415864825248718
+        ],
+        "calf_r": [
+          0.2909024655818939,
+          -0.4504798650741577,
+          0.6422944664955139
+        ],
+        "foot_l": [
+          0.28999996185302734,
+          0.17000006139278412,
+          0.2780001163482666
+        ],
+        "foot_r": [
+          0.2899998724460602,
+          -0.16999995708465576,
+          0.2779996991157532
+        ]
+      }
+    },
+    {
+      "frame": 13,
+      "bones": {
+        "hand_l": [
+          0.48379674553871155,
+          0.18320232629776,
+          0.703859269618988
+        ],
+        "hand_r": [
+          0.5080086588859558,
+          -0.1702159196138382,
+          0.7783755660057068
+        ],
+        "calf_l": [
+          0.29035329818725586,
+          0.4513993561267853,
+          0.6415864825248718
+        ],
+        "calf_r": [
+          0.2909024655818939,
+          -0.4504798650741577,
+          0.6422944664955139
+        ],
+        "foot_l": [
+          0.28999996185302734,
+          0.17000006139278412,
+          0.2780001163482666
+        ],
+        "foot_r": [
+          0.2899998724460602,
+          -0.16999995708465576,
+          0.2779996991157532
+        ]
+      }
+    },
+    {
+      "frame": 25,
+      "bones": {
+        "hand_l": [
+          0.49612224102020264,
+          0.18099965155124664,
+          0.741793692111969
+        ],
+        "hand_r": [
+          0.4961225986480713,
+          -0.18099960684776306,
+          0.7417938113212585
+        ],
+        "calf_l": [
+          0.29035329818725586,
+          0.4513993561267853,
+          0.6415864825248718
+        ],
+        "calf_r": [
+          0.2909024655818939,
+          -0.4504798650741577,
+          0.6422944664955139
+        ],
+        "foot_l": [
+          0.28999996185302734,
+          0.17000006139278412,
+          0.2780001163482666
+        ],
+        "foot_r": [
+          0.2899998724460602,
+          -0.16999995708465576,
+          0.2779996991157532
+        ]
+      }
+    },
+    {
+      "frame": 37,
+      "bones": {
+        "hand_l": [
+          0.5080083608627319,
+          0.1702161580324173,
+          0.7783755660057068
+        ],
+        "hand_r": [
+          0.48379701375961304,
+          -0.1832023710012436,
+          0.7038596272468567
+        ],
+        "calf_l": [
+          0.29035329818725586,
+          0.4513993561267853,
+          0.6415864825248718
+        ],
+        "calf_r": [
+          0.2909024655818939,
+          -0.4504798650741577,
+          0.6422944664955139
+        ],
+        "foot_l": [
+          0.28999996185302734,
+          0.17000006139278412,
+          0.2780001163482666
+        ],
+        "foot_r": [
+          0.2899998724460602,
+          -0.16999995708465576,
+          0.2779996991157532
+        ]
+      }
+    },
+    {
+      "frame": 49,
+      "bones": {
+        "hand_l": [
+          0.5188915729522705,
+          0.15136292576789856,
+          0.8118703961372375
+        ],
+        "hand_r": [
+          0.471616268157959,
+          -0.17671987414360046,
+          0.6663708090782166
+        ],
+        "calf_l": [
+          0.29035329818725586,
+          0.4513993561267853,
+          0.6415864825248718
+        ],
+        "calf_r": [
+          0.2909024655818939,
+          -0.4504798650741577,
+          0.6422944664955139
+        ],
+        "foot_l": [
+          0.28999996185302734,
+          0.17000006139278412,
+          0.2780001163482666
+        ],
+        "foot_r": [
+          0.2899998724460602,
+          -0.16999995708465576,
+          0.2779996991157532
+        ]
+      }
+    }
+  ],
+  "limits": "Rim framing all 49 frames; knee line-of-sight sampled at 9 steering poses. Not a full-body penetration or cloth-simulation certification."
+}

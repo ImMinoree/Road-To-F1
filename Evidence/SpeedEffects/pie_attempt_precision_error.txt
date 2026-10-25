@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_speed_pie.py", line 49, in tick
+    assert row['camera_location']==[5.,0.,74.],row
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: {'name': 'disabled', 'world_seconds': 21.015572298318148, 'fov': 110.0, 'blur_strength': 0.0, 'camera_location': [5.000000000004973, 1.4335199693960021e-12, 74.0], 'camera_rotation': [-10.0, 5.748972346163736e-14, -2.406432466669489e-16]}

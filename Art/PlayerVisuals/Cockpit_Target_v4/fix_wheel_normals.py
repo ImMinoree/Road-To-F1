@@ -1,0 +1,3 @@
+import bpy,bmesh,json
+from pathlib import Path
+P=Path(__file__).resolve().parent;bpy.ops.wm.open_mainfile(filepath=str(P/'Kart_Cockpit_Target_v4.blend'));w=bpy.data.objects['SM_CT4_SteeringWheel'];bm=bmesh.new();bm.from_mesh(w.data);bmesh.ops.recalc_face_normals(bm,faces=list(bm.faces));bm.to_mesh(w.data);bm.free();w.data.update();bpy.ops.wm.save_as_mainfile(filepath=str(P/'Kart_Cockpit_Target_v4.blend'));bpy.ops.object.select_all(action='DESELECT');w.select_set(True);bpy.context.view_layer.objects.active=w;w.location=(0,0,0);bpy.ops.export_scene.fbx(filepath=str(P/'Exports/SM_CT4_SteeringWheel.fbx'),use_selection=True,object_types={'MESH'},axis_forward='-Y',axis_up='Z',mesh_smooth_type='FACE',bake_anim=False);print('CT4_STATIC_NORMALS_CORRECTED',flush=True)

@@ -1,0 +1,21 @@
+{
+  "checks": [
+    {
+      "path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\Maps\\DesertKarting_Visual.umap",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\Maps\\DesertKarting.umap",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\ProofPawn.cpp",
+      "unchanged": false
+    },
+    {
+      "path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\TrackRacingAI.cpp",
+      "unchanged": true
+    }
+  ],
+  "note": "This task edits only the local visual component/test and separate POV art. Concurrent project changes are not reverted."
+}

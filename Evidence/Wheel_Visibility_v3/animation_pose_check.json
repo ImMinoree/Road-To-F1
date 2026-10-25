@@ -1,0 +1,155 @@
+{
+  "max_error_cm": 0.00014825176079923786,
+  "samples": [
+    {
+      "frame": 1,
+      "bone": "hand_l",
+      "error_cm": 7.944283107004667e-05
+    },
+    {
+      "frame": 1,
+      "bone": "hand_r",
+      "error_cm": 0.00014576910005715103
+    },
+    {
+      "frame": 1,
+      "bone": "calf_l",
+      "error_cm": 3.7172432326630335e-05
+    },
+    {
+      "frame": 1,
+      "bone": "calf_r",
+      "error_cm": 2.8468425516971775e-05
+    },
+    {
+      "frame": 1,
+      "bone": "foot_l",
+      "error_cm": 3.5781910772343904e-05
+    },
+    {
+      "frame": 1,
+      "bone": "foot_r",
+      "error_cm": 3.858207499565129e-05
+    },
+    {
+      "frame": 13,
+      "bone": "hand_l",
+      "error_cm": 7.134086056918376e-05
+    },
+    {
+      "frame": 13,
+      "bone": "hand_r",
+      "error_cm": 0.00014825176079923786
+    },
+    {
+      "frame": 13,
+      "bone": "calf_l",
+      "error_cm": 3.7172432326630335e-05
+    },
+    {
+      "frame": 13,
+      "bone": "calf_r",
+      "error_cm": 2.8468425516971775e-05
+    },
+    {
+      "frame": 13,
+      "bone": "foot_l",
+      "error_cm": 3.5781910772343904e-05
+    },
+    {
+      "frame": 13,
+      "bone": "foot_r",
+      "error_cm": 3.858207499565129e-05
+    },
+    {
+      "frame": 25,
+      "bone": "hand_l",
+      "error_cm": 9.110491606929567e-05
+    },
+    {
+      "frame": 25,
+      "bone": "hand_r",
+      "error_cm": 0.00013881625244911496
+    },
+    {
+      "frame": 25,
+      "bone": "calf_l",
+      "error_cm": 3.7172432326630335e-05
+    },
+    {
+      "frame": 25,
+      "bone": "calf_r",
+      "error_cm": 2.8468425516971775e-05
+    },
+    {
+      "frame": 25,
+      "bone": "foot_l",
+      "error_cm": 3.5781910772343904e-05
+    },
+    {
+      "frame": 25,
+      "bone": "foot_r",
+      "error_cm": 3.858207499565129e-05
+    },
+    {
+      "frame": 37,
+      "bone": "hand_l",
+      "error_cm": 9.966171266696537e-05
+    },
+    {
+      "frame": 37,
+      "bone": "hand_r",
+      "error_cm": 0.00012654214453880684
+    },
+    {
+      "frame": 37,
+      "bone": "calf_l",
+      "error_cm": 3.7172432326630335e-05
+    },
+    {
+      "frame": 37,
+      "bone": "calf_r",
+      "error_cm": 2.8468425516971775e-05
+    },
+    {
+      "frame": 37,
+      "bone": "foot_l",
+      "error_cm": 3.5781910772343904e-05
+    },
+    {
+      "frame": 37,
+      "bone": "foot_r",
+      "error_cm": 3.858207499565129e-05
+    },
+    {
+      "frame": 49,
+      "bone": "hand_l",
+      "error_cm": 9.59683529278116e-05
+    },
+    {
+      "frame": 49,
+      "bone": "hand_r",
+      "error_cm": 0.00012394483447970695
+    },
+    {
+      "frame": 49,
+      "bone": "calf_l",
+      "error_cm": 3.7172432326630335e-05
+    },
+    {
+      "frame": 49,
+      "bone": "calf_r",
+      "error_cm": 2.8468425516971775e-05
+    },
+    {
+      "frame": 49,
+      "bone": "foot_l",
+      "error_cm": 3.5781910772343904e-05
+    },
+    {
+      "frame": 49,
+      "bone": "foot_r",
+      "error_cm": 3.858207499565129e-05
+    }
+  ]
+}

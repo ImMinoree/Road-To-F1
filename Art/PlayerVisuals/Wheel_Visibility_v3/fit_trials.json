@@ -1,0 +1,1394 @@
+[
+  {
+    "narrow": 0,
+    "knees": -20,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 37,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 45,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 37,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4500
+  },
+  {
+    "narrow": 0,
+    "knees": -20,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 37,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 45,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 37,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4500
+  },
+  {
+    "narrow": 0,
+    "knees": -20,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 37,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 45,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 37,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4500
+  },
+  {
+    "narrow": 0,
+    "knees": -18,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 31,
+        "arm_leg_crossings": 312,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 38,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 31,
+        "arm_leg_crossings": 367,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4167
+  },
+  {
+    "narrow": 0,
+    "knees": -18,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 31,
+        "arm_leg_crossings": 310,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 38,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 31,
+        "arm_leg_crossings": 327,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4127
+  },
+  {
+    "narrow": 0,
+    "knees": -18,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 31,
+        "arm_leg_crossings": 312,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 38,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 31,
+        "arm_leg_crossings": 299,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4112
+  },
+  {
+    "narrow": 0,
+    "knees": -16,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 25,
+        "arm_leg_crossings": 953,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 30,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 25,
+        "arm_leg_crossings": 1178,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4178
+  },
+  {
+    "narrow": 0,
+    "knees": -16,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 25,
+        "arm_leg_crossings": 920,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 30,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 25,
+        "arm_leg_crossings": 1125,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4125
+  },
+  {
+    "narrow": 0,
+    "knees": -16,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 25,
+        "arm_leg_crossings": 908,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 30,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 25,
+        "arm_leg_crossings": 1063,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4063
+  },
+  {
+    "narrow": 0,
+    "knees": -14,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 1435,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 20,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 1506,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3506
+  },
+  {
+    "narrow": 0,
+    "knees": -14,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 1473,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 20,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 1481,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3481
+  },
+  {
+    "narrow": 0,
+    "knees": -14,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 1481,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 20,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 1468,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3481
+  },
+  {
+    "narrow": 0.1,
+    "knees": -20,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 34,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 42,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 35,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4200
+  },
+  {
+    "narrow": 0.1,
+    "knees": -20,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 34,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 42,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 35,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4200
+  },
+  {
+    "narrow": 0.1,
+    "knees": -20,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 34,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 42,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 35,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4200
+  },
+  {
+    "narrow": 0.1,
+    "knees": -18,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 28,
+        "arm_leg_crossings": 78,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 35,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 29,
+        "arm_leg_crossings": 4,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3578
+  },
+  {
+    "narrow": 0.1,
+    "knees": -18,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 28,
+        "arm_leg_crossings": 78,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 35,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 29,
+        "arm_leg_crossings": 4,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3578
+  },
+  {
+    "narrow": 0.1,
+    "knees": -18,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 28,
+        "arm_leg_crossings": 78,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 35,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 29,
+        "arm_leg_crossings": 4,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3578
+  },
+  {
+    "narrow": 0.1,
+    "knees": -16,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 21,
+        "arm_leg_crossings": 819,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 26,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 22,
+        "arm_leg_crossings": 961,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3561
+  },
+  {
+    "narrow": 0.1,
+    "knees": -16,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 21,
+        "arm_leg_crossings": 802,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 26,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 22,
+        "arm_leg_crossings": 914,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3514
+  },
+  {
+    "narrow": 0.1,
+    "knees": -16,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 21,
+        "arm_leg_crossings": 740,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 26,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 22,
+        "arm_leg_crossings": 905,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3505
+  },
+  {
+    "narrow": 0.1,
+    "knees": -14,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 14,
+        "arm_leg_crossings": 1374,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 16,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 14,
+        "arm_leg_crossings": 1339,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2974
+  },
+  {
+    "narrow": 0.1,
+    "knees": -14,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 14,
+        "arm_leg_crossings": 1382,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 16,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 14,
+        "arm_leg_crossings": 1356,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2982
+  },
+  {
+    "narrow": 0.1,
+    "knees": -14,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 14,
+        "arm_leg_crossings": 1342,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 16,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 14,
+        "arm_leg_crossings": 1360,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2960
+  },
+  {
+    "narrow": 0.2,
+    "knees": -20,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 40,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4000
+  },
+  {
+    "narrow": 0.2,
+    "knees": -20,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 40,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4000
+  },
+  {
+    "narrow": 0.2,
+    "knees": -20,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 40,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 4000
+  },
+  {
+    "narrow": 0.2,
+    "knees": -18,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 25,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 26,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3200
+  },
+  {
+    "narrow": 0.2,
+    "knees": -18,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 25,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 26,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3200
+  },
+  {
+    "narrow": 0.2,
+    "knees": -18,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 25,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 26,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3200
+  },
+  {
+    "narrow": 0.2,
+    "knees": -16,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 19,
+        "arm_leg_crossings": 688,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 22,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 19,
+        "arm_leg_crossings": 788,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2988
+  },
+  {
+    "narrow": 0.2,
+    "knees": -16,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 19,
+        "arm_leg_crossings": 611,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 22,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 19,
+        "arm_leg_crossings": 753,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2953
+  },
+  {
+    "narrow": 0.2,
+    "knees": -16,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 19,
+        "arm_leg_crossings": 604,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 22,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 19,
+        "arm_leg_crossings": 738,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2938
+  },
+  {
+    "narrow": 0.2,
+    "knees": -14,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 11,
+        "arm_leg_crossings": 1279,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 11,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 11,
+        "arm_leg_crossings": 1282,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2382
+  },
+  {
+    "narrow": 0.2,
+    "knees": -14,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 11,
+        "arm_leg_crossings": 1209,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 11,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 11,
+        "arm_leg_crossings": 1278,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2378
+  },
+  {
+    "narrow": 0.2,
+    "knees": -14,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 11,
+        "arm_leg_crossings": 1177,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 11,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 11,
+        "arm_leg_crossings": 1296,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2396
+  },
+  {
+    "narrow": 0.3,
+    "knees": -20,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 29,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 36,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 29,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3600
+  },
+  {
+    "narrow": 0.3,
+    "knees": -20,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 29,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 36,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 29,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3600
+  },
+  {
+    "narrow": 0.3,
+    "knees": -20,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 29,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 36,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 29,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 3600
+  },
+  {
+    "narrow": 0.3,
+    "knees": -18,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 23,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 28,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 23,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2800
+  },
+  {
+    "narrow": 0.3,
+    "knees": -18,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 23,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 28,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 23,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2800
+  },
+  {
+    "narrow": 0.3,
+    "knees": -18,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 23,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 28,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 23,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2800
+  },
+  {
+    "narrow": 0.3,
+    "knees": -16,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 434,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 18,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 577,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2377
+  },
+  {
+    "narrow": 0.3,
+    "knees": -16,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 436,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 18,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 540,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2340
+  },
+  {
+    "narrow": 0.3,
+    "knees": -16,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 436,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 18,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 17,
+        "arm_leg_crossings": 507,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2307
+  },
+  {
+    "narrow": 0.3,
+    "knees": -14,
+    "elbow": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 9,
+        "arm_leg_crossings": 1099,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 8,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 9,
+        "arm_leg_crossings": 1219,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2119
+  },
+  {
+    "narrow": 0.3,
+    "knees": -14,
+    "elbow": 20,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 9,
+        "arm_leg_crossings": 1069,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 8,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 9,
+        "arm_leg_crossings": 1196,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2096
+  },
+  {
+    "narrow": 0.3,
+    "knees": -14,
+    "elbow": 40,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 9,
+        "arm_leg_crossings": 1083,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 8,
+        "arm_leg_crossings": 0,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 9,
+        "arm_leg_crossings": 1161,
+        "arm_chassis_crossings": 0,
+        "leg_chassis_crossings": 0
+      }
+    ],
+    "score": 2061
+  }
+]

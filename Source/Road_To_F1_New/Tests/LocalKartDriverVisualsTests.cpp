@@ -9,6 +9,7 @@
 #include "Engine/LocalPlayer.h"
 #include "Engine/World.h"
 #include "GameFramework/PlayerController.h"
+#include "Camera/CameraComponent.h"
 
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FKartLocalVisualOwnershipTest,
  "RoadToF1.PlayerVisuals.OwnershipAndSteering",
@@ -35,6 +36,9 @@ bool FKartLocalVisualOwnershipTest::RunTest(const FString&)
  V1->SetCockpitEnabled(true);V2->SetCockpitEnabled(true);VR->SetCockpitEnabled(true);VN->SetCockpitEnabled(true);
  TestTrue(TEXT("First cockpit active with imported assets"),V1->IsFirstPersonActive());
  TestTrue(TEXT("Second cockpit active with imported assets"),V2->IsFirstPersonActive());
+ auto* Eye=First->FindComponentByClass<UCameraComponent>();
+ TestTrue(TEXT("Target framing leaves full-steering viewport margin"),FMath::IsNearlyEqual(Eye->FieldOfView,95.f));
+ TestTrue(TEXT("Eye remains 1.05m above ground and above the shoulders"),Eye->GetRelativeLocation().Equals(FVector(5,0,74),.01f));
  TestNull(TEXT("Remote pawn does not create first-person mesh"),VR->GetFirstPersonArms());
  TestNull(TEXT("NPC does not create first-person mesh"),VN->GetFirstPersonArms());
  if(USkeletalMeshComponent* Arms=V1->GetFirstPersonArms())
@@ -45,9 +49,17 @@ bool FKartLocalVisualOwnershipTest::RunTest(const FString&)
   TestEqual(TEXT("Visual has no collision"),Arms->GetCollisionEnabled(),ECollisionEnabled::NoCollision);
   TestFalse(TEXT("Visual mesh is not replicated"),Arms->GetIsReplicated());
   TestFalse(TEXT("Visual component is not replicated"),V1->GetIsReplicated());
+  auto* Chassis=V1->GetKartChassis();
+  TestNotNull(TEXT("Original V5 chassis is integrated"),Chassis);
+  if(Chassis){
+   TestEqual(TEXT("Chassis preserves gameplay collision"),Chassis->GetCollisionEnabled(),ECollisionEnabled::NoCollision);
+   TestTrue(TEXT("Chassis shares arm source origin"),Chassis->GetComponentLocation().Equals(Arms->GetComponentLocation(),.01f));
+   TestTrue(TEXT("Source ground is 31cm below pawn collision center"),Chassis->GetComponentLocation().Equals(First->GetActorLocation()+FVector(0,0,-31),.01f));
+   TestTrue(TEXT("Source scale is physical centimeters"),Chassis->GetComponentScale().Equals(FVector::OneVector,.001f));
+  }
   // Compare imported/compressed bone samples to Blender source coordinates in cm (Y is mirrored).
-  const FVector LeftSamples[] = {{48,-19.878164,61.282319},{48,-21.329737,65.977365},{48,-21.699965,70.499963},{48,-21.031319,75.368589},{48,-19.455564,79.623955}};
-  const FVector RightSamples[] = {{48,19.455531,79.623979},{48,21.121818,75.000745},{48,21.699958,70.499986},{48,21.256277,65.605766},{48,19.878161,61.282349}};
+  const FVector LeftSamples[] = {{47.161597,-17.671975,66.637069}, {48.379675,-18.320233,70.385927}, {49.612224,-18.099965,74.179369}, {50.800836,-17.021616,77.837545}, {51.889151,-15.136293,81.187028}};
+  const FVector RightSamples[] = {{51.889193,15.136276,81.18704}, {50.800866,17.021592,77.837557}, {49.61226,18.099961,74.179381}, {48.379701,18.320242,70.385963}, {47.161627,17.671987,66.637081}};
   for(int32 Sample=0;Sample<5;++Sample)
   {
    V1->SetSteeringInput(-1.f+Sample*.5f);V1->TickComponent(0.f,LEVELTICK_All,nullptr);
@@ -62,7 +74,7 @@ bool FKartLocalVisualOwnershipTest::RunTest(const FString&)
   for(float Input:{-1.f,0.f,1.f})
   {
    V1->SetSteeringInput(Input);V1->TickComponent(0.f,LEVELTICK_All,nullptr);
-   TestTrue(TEXT("Wheel follows the visual steering input"),FMath::IsNearlyEqual(V1->GetFirstPersonWheel()->GetRelativeRotation().Roll,Input*25,.01f));
+   TestTrue(TEXT("Wheel follows the visual steering input"),V1->GetFirstPersonWheel()->GetRelativeRotation().Quaternion().Equals(FQuat(FVector::YAxisVector,FMath::DegreesToRadians(18.f))*FRotator(0,0,Input*25).Quaternion()*FQuat(FVector::YAxisVector,FMath::DegreesToRadians(-18.f)),.001f));
    auto* Anim=Arms->GetSingleNodeInstance();
    TestNotNull(TEXT("Independent baked steering clip is present"),Anim);
    if(Anim) TestTrue(TEXT("Animation position follows the same steering sample"),FMath::IsNearlyEqual(Anim->GetCurrentTime(),(Input+1)*.5f*Anim->GetLength(),.001f));
@@ -72,6 +84,7 @@ bool FKartLocalVisualOwnershipTest::RunTest(const FString&)
   V1->SetThirdPersonDriver(Third);TestTrue(TEXT("Third-person renderer hidden only from its owner"),Third->bOwnerNoSee);
   TestFalse(TEXT("Third-person renderer was not globally hidden"),Third->bHiddenInGame);
   V1->SetCockpitEnabled(false);TestFalse(TEXT("Third-person owner visibility restored in third-person mode"),Third->bOwnerNoSee);
+  TestTrue(TEXT("Disabling cockpit restores original camera FOV"),FMath::IsNearlyEqual(Eye->FieldOfView,90.f));
   TestTrue(TEXT("FP mesh hidden when cockpit disabled"),Arms->bHiddenInGame);
   V1->SetCockpitEnabled(true);PC1->UnPossess();V1->TickComponent(0.f,LEVELTICK_All,nullptr);
   TestFalse(TEXT("Unpossession deactivates local visual"),V1->IsFirstPersonActive());

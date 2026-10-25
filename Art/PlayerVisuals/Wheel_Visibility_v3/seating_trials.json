@@ -1,0 +1,477 @@
+[
+  {
+    "hip_back_m": 0,
+    "hip_down_m": 0.025,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 40,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 494
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 48,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 494
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 41,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 494
+      }
+    ],
+    "cost": 5294
+  },
+  {
+    "hip_back_m": 0,
+    "hip_down_m": 0.05,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 41,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 571
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 48,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 571
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 41,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 571
+      }
+    ],
+    "cost": 5371
+  },
+  {
+    "hip_back_m": 0,
+    "hip_down_m": 0.075,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 41,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 627
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 49,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 627
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 41,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 627
+      }
+    ],
+    "cost": 5527
+  },
+  {
+    "hip_back_m": 0.025,
+    "hip_down_m": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 40,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 566
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 48,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 566
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 41,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 566
+      }
+    ],
+    "cost": 5366
+  },
+  {
+    "hip_back_m": 0.025,
+    "hip_down_m": 0.025,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 41,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 472
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 48,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 472
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 41,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 472
+      }
+    ],
+    "cost": 5272
+  },
+  {
+    "hip_back_m": 0.025,
+    "hip_down_m": 0.05,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 40,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 670
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 48,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 670
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 41,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 670
+      }
+    ],
+    "cost": 5470
+  },
+  {
+    "hip_back_m": 0.025,
+    "hip_down_m": 0.075,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 39,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 927
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 49,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 927
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 42,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 927
+      }
+    ],
+    "cost": 5827
+  },
+  {
+    "hip_back_m": 0.05,
+    "hip_down_m": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 38,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 409
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 48,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 409
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 40,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 409
+      }
+    ],
+    "cost": 5209
+  },
+  {
+    "hip_back_m": 0.05,
+    "hip_down_m": 0.025,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 39,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 823
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 48,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 823
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 40,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 823
+      }
+    ],
+    "cost": 5623
+  },
+  {
+    "hip_back_m": 0.05,
+    "hip_down_m": 0.05,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 37,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 959
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 49,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 959
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 40,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 959
+      }
+    ],
+    "cost": 5859
+  },
+  {
+    "hip_back_m": 0.05,
+    "hip_down_m": 0.075,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 36,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 942
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 46,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 942
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 38,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 942
+      }
+    ],
+    "cost": 5542
+  },
+  {
+    "hip_back_m": 0.075,
+    "hip_down_m": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 36,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 534
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 47,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 534
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 38,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 534
+      }
+    ],
+    "cost": 5234
+  },
+  {
+    "hip_back_m": 0.075,
+    "hip_down_m": 0.025,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 34,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 851
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 45,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 851
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 35,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 851
+      }
+    ],
+    "cost": 5351
+  },
+  {
+    "hip_back_m": 0.075,
+    "hip_down_m": 0.05,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 1078
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 44,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 1078
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 33,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 1078
+      }
+    ],
+    "cost": 5478
+  },
+  {
+    "hip_back_m": 0.075,
+    "hip_down_m": 0.075,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 28,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 1157
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 40,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 1157
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 28,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 1157
+      }
+    ],
+    "cost": 5157
+  },
+  {
+    "hip_back_m": 0.1,
+    "hip_down_m": 0,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 29,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 609
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 42,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 609
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 609
+      }
+    ],
+    "cost": 4809
+  },
+  {
+    "hip_back_m": 0.1,
+    "hip_down_m": 0.025,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 28,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 786
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 38,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 786
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 28,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 786
+      }
+    ],
+    "cost": 4586
+  },
+  {
+    "hip_back_m": 0.1,
+    "hip_down_m": 0.05,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 24,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 964
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 37,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 964
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 25,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 964
+      }
+    ],
+    "cost": 4664
+  },
+  {
+    "hip_back_m": 0.1,
+    "hip_down_m": 0.075,
+    "samples": [
+      {
+        "frame": 1,
+        "rim_hidden_by_legs": 22,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 1184
+      },
+      {
+        "frame": 25,
+        "rim_hidden_by_legs": 32,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 1184
+      },
+      {
+        "frame": 49,
+        "rim_hidden_by_legs": 20,
+        "arm_leg_crossings": 0,
+        "leg_chassis_crossings": 1184
+      }
+    ],
+    "cost": 4384
+  }
+]

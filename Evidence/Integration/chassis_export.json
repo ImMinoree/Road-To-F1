@@ -1,0 +1,374 @@
+{
+  "source": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\DesertKarting\\KartDriver_Fitted\\Racing_Fit_v5\\Kart_With_MakeHuman_Racer_v5.blend",
+  "source_sha256": "09fe224ec22f6656154a2ab42a47a1b220db13933245fc7b86df925c88438bb6",
+  "source_unchanged": true,
+  "parts": [
+    "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black",
+    "SK_Kart_Chassis_MainFrame_Frame_Brushed_Chromoly",
+    "SK_Kart_Chassis_MainFrame_Hub_Black_Anodised",
+    "SK_Kart_Chassis_MainFrame_Fastener_Stainless",
+    "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly",
+    "SK_Kart_Axles_Steering_And_Hardware_Hub_Black_Anodised",
+    "SK_Kart_Axles_Steering_And_Hardware_Fastener_Stainless",
+    "SK_Kart_Axles_Steering_And_Hardware_Rim_Satin_Aluminium",
+    "SK_Kart_Front_Brake_Discs_Engine_Cast_Aluminium",
+    "SK_Kart_Front_Brake_Discs_Rim_Satin_Aluminium",
+    "SK_Kart_Front_Brake_Discs_Hub_Black_Anodised",
+    "SK_Kart_Front_Brake_Calipers_Engine_Ignition_Red",
+    "SK_Kart_Front_Brake_Calipers_Fastener_Stainless",
+    "SK_Kart_Front_Brake_Calipers_Hub_Black_Anodised",
+    "SK_Kart_Front_Brake_Calipers_Frame_Brushed_Chromoly",
+    "SK_Kart_Front_Brake_Calipers_Rim_Satin_Aluminium",
+    "SK_Kart_Wheel_FL_Tire_Slick_Rubber",
+    "SK_Kart_Wheel_FL_Tire_Molded_Sidewall",
+    "SK_Kart_Wheel_FL_Hub_Black_Anodised",
+    "SK_Kart_Wheel_FL_Rim_Satin_Aluminium",
+    "SK_Kart_Wheel_FL_Fastener_Stainless",
+    "SK_Kart_Wheel_FR_Tire_Slick_Rubber",
+    "SK_Kart_Wheel_FR_Tire_Molded_Sidewall",
+    "SK_Kart_Wheel_FR_Hub_Black_Anodised",
+    "SK_Kart_Wheel_FR_Rim_Satin_Aluminium",
+    "SK_Kart_Wheel_FR_Fastener_Stainless",
+    "SK_Kart_Wheel_RL_Tire_Slick_Rubber",
+    "SK_Kart_Wheel_RL_Tire_Molded_Sidewall",
+    "SK_Kart_Wheel_RL_Hub_Black_Anodised",
+    "SK_Kart_Wheel_RL_Rim_Satin_Aluminium",
+    "SK_Kart_Wheel_RL_Fastener_Stainless",
+    "SK_Kart_Wheel_RR_Tire_Slick_Rubber",
+    "SK_Kart_Wheel_RR_Tire_Molded_Sidewall",
+    "SK_Kart_Wheel_RR_Hub_Black_Anodised",
+    "SK_Kart_Wheel_RR_Rim_Satin_Aluminium",
+    "SK_Kart_Wheel_RR_Fastener_Stainless",
+    "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer",
+    "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black",
+    "SK_Kart_Seat_Sculpted_Tub_Fastener_Stainless",
+    "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip",
+    "SK_Kart_Seat_Texture_And_Mounts_Hub_Black_Anodised",
+    "SK_Kart_Seat_Texture_And_Mounts_Fastener_Stainless",
+    "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Satin_Graphite",
+    "SK_Kart_Bodywork_Nose_And_Front_Fairing_Body_Edge_Wear",
+    "SK_Kart_Bodywork_Nose_And_Front_Fairing_Fastener_Stainless",
+    "SK_Kart_Bodywork_Left_Sidepod_Body_Satin_Graphite",
+    "SK_Kart_Bodywork_Left_Sidepod_Body_Edge_Wear",
+    "SK_Kart_Bodywork_Left_Sidepod_Fastener_Stainless",
+    "SK_Kart_Bodywork_Left_Vent_Details_Hub_Black_Anodised",
+    "SK_Kart_Bodywork_Left_Vent_Details_Body_Edge_Wear",
+    "SK_Kart_Bodywork_Right_Sidepod_Body_Satin_Graphite",
+    "SK_Kart_Bodywork_Right_Sidepod_Body_Edge_Wear",
+    "SK_Kart_Bodywork_Right_Sidepod_Fastener_Stainless",
+    "SK_Kart_Bodywork_Right_Vent_Details_Hub_Black_Anodised",
+    "SK_Kart_Bodywork_Right_Vent_Details_Body_Edge_Wear",
+    "SK_Kart_Bumpers_And_Barwork_Frame_Brushed_Chromoly",
+    "SK_Kart_Bumpers_And_Barwork_Chassis_Powder_Black",
+    "SK_Kart_Engine_Crankcase_125cc_Engine_Cast_Aluminium",
+    "SK_Kart_Engine_Crankcase_125cc_Frame_Brushed_Chromoly",
+    "SK_Kart_Engine_Crankcase_125cc_Fastener_Stainless",
+    "SK_Kart_Engine_Crankcase_125cc_Engine_Fins_Dark_Alloy",
+    "SK_Kart_Engine_Ignition_And_Carburettor_Fastener_Stainless",
+    "SK_Kart_Engine_Ignition_And_Carburettor_Engine_Ignition_Red",
+    "SK_Kart_Engine_Ignition_And_Carburettor_Hub_Black_Anodised",
+    "SK_Kart_Engine_Ignition_And_Carburettor_Engine_Cast_Aluminium",
+    "SK_Kart_Engine_Ignition_And_Carburettor_Hydraulic_Brake_Hose",
+    "SK_Kart_Engine_Ignition_And_Carburettor_Chain_Hardened_Steel",
+    "SK_Kart_Engine_Ignition_And_Carburettor_Frame_Brushed_Chromoly",
+    "SK_Kart_Drivetrain_Chain_Links_Chain_Hardened_Steel",
+    "SK_Kart_Drivetrain_Chain_Links_Rim_Satin_Aluminium",
+    "SK_Kart_Drivetrain_Bearing_Collars_Hub_Black_Anodised",
+    "SK_Kart_Drivetrain_Bearing_Collars_Fastener_Stainless",
+    "SK_Kart_Exhaust_Header_And_Muffler_Exhaust_Heat_Titanium",
+    "SK_Kart_Exhaust_Header_And_Muffler_Frame_Brushed_Chromoly",
+    "SK_Kart_Exhaust_Header_And_Muffler_Fastener_Stainless",
+    "SK_Kart_Exhaust_Header_And_Muffler_Hub_Black_Anodised",
+    "SK_Kart_Fuel_Tank_And_Cap_Fuel_Tank_Clouded_Polymer",
+    "SK_Kart_Fuel_Tank_And_Cap_Frame_Brushed_Chromoly",
+    "SK_Kart_Fuel_Tank_And_Cap_Hub_Black_Anodised",
+    "SK_Kart_Fuel_Tank_And_Cap_Fastener_Stainless",
+    "SK_Kart_Fuel_Line_And_Clamps_Hydraulic_Brake_Hose",
+    "SK_Kart_Fuel_Line_And_Clamps_Fastener_Stainless",
+    "SK_Kart_Driver_Controls_And_Pedals_Frame_Brushed_Chromoly",
+    "SK_Kart_Driver_Controls_And_Pedals_Hub_Black_Anodised",
+    "SK_Kart_Steering_Column_And_Wheel_Frame_Brushed_Chromoly",
+    "SK_Kart_Steering_Rod_End_Joints_Hub_Black_Anodised",
+    "SK_Kart_Steering_Rod_End_Joints_Frame_Brushed_Chromoly",
+    "SK_Kart_Guards_And_Fasteners_Chassis_Powder_Black",
+    "SK_Kart_Guards_And_Fasteners_Fastener_Stainless",
+    "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Hydraulic_Brake_Hose",
+    "SK_Kart_Brake_Hydraulic_Lines_And_Cable_Guides_Fastener_Stainless"
+  ],
+  "materials": {
+    "M_Kart_Chassis_Powder_Black": {
+      "color": [
+        0.017999999225139618,
+        0.02199999988079071,
+        0.02500000037252903,
+        1.0
+      ],
+      "roughness": 0.3700000047683716,
+      "metallic": 0.6800000071525574,
+      "textures": {}
+    },
+    "M_Kart_Frame_Brushed_Chromoly": {
+      "color": [
+        0.23999999463558197,
+        0.27000001072883606,
+        0.2800000011920929,
+        1.0
+      ],
+      "roughness": 0.27000001072883606,
+      "metallic": 0.8199999928474426,
+      "textures": {
+        "BaseColor": "T_Kart_BrushedAlloy_BaseColor",
+        "Roughness": "T_Kart_BrushedAlloy_Roughness",
+        "Normal": "T_Kart_BrushedAlloy_Normal",
+        "Metallic": "T_Kart_BrushedAlloy_Metallic"
+      }
+    },
+    "M_Kart_Hub_Black_Anodised": {
+      "color": [
+        0.04500000178813934,
+        0.052000001072883606,
+        0.057999998331069946,
+        1.0
+      ],
+      "roughness": 0.28999999165534973,
+      "metallic": 0.7799999713897705,
+      "textures": {}
+    },
+    "M_Kart_Fastener_Stainless": {
+      "color": [
+        0.5199999809265137,
+        0.5600000023841858,
+        0.5699999928474426,
+        1.0
+      ],
+      "roughness": 0.20000000298023224,
+      "metallic": 0.8799999952316284,
+      "textures": {
+        "BaseColor": "T_Kart_BrushedAlloy_BaseColor",
+        "Roughness": "T_Kart_BrushedAlloy_Roughness",
+        "Normal": "T_Kart_BrushedAlloy_Normal",
+        "Metallic": "T_Kart_BrushedAlloy_Metallic"
+      }
+    },
+    "M_Kart_Rim_Satin_Aluminium": {
+      "color": [
+        0.30000001192092896,
+        0.3199999928474426,
+        0.3199999928474426,
+        1.0
+      ],
+      "roughness": 0.25999999046325684,
+      "metallic": 0.8299999833106995,
+      "textures": {
+        "BaseColor": "T_Kart_BrushedAlloy_BaseColor",
+        "Roughness": "T_Kart_BrushedAlloy_Roughness",
+        "Normal": "T_Kart_BrushedAlloy_Normal",
+        "Metallic": "T_Kart_BrushedAlloy_Metallic"
+      }
+    },
+    "M_Kart_Engine_Cast_Aluminium": {
+      "color": [
+        0.23000000417232513,
+        0.23999999463558197,
+        0.23000000417232513,
+        1.0
+      ],
+      "roughness": 0.3799999952316284,
+      "metallic": 0.6600000262260437,
+      "textures": {
+        "BaseColor": "T_Kart_CastAlloy_BaseColor",
+        "Roughness": "T_Kart_CastAlloy_Roughness",
+        "Normal": "T_Kart_CastAlloy_Normal",
+        "Metallic": "T_Kart_CastAlloy_Metallic"
+      }
+    },
+    "M_Kart_Engine_Ignition_Red": {
+      "color": [
+        0.47999998927116394,
+        0.03500000014901161,
+        0.017999999225139618,
+        1.0
+      ],
+      "roughness": 0.33000001311302185,
+      "metallic": 0.3700000047683716,
+      "textures": {
+        "BaseColor": "T_Kart_CastAlloy_BaseColor",
+        "Roughness": "T_Kart_CastAlloy_Roughness",
+        "Normal": "T_Kart_CastAlloy_Normal",
+        "Metallic": "T_Kart_CastAlloy_Metallic"
+      }
+    },
+    "M_Kart_Tire_Slick_Rubber": {
+      "color": [
+        0.013000000268220901,
+        0.014999999664723873,
+        0.017000000923871994,
+        1.0
+      ],
+      "roughness": 0.5899999737739563,
+      "metallic": 0.029999999329447746,
+      "textures": {
+        "BaseColor": "T_Kart_SlickRubber_BaseColor",
+        "Roughness": "T_Kart_SlickRubber_Roughness",
+        "Normal": "T_Kart_SlickRubber_Normal",
+        "Metallic": "T_Kart_SlickRubber_Metallic"
+      }
+    },
+    "M_Kart_Tire_Molded_Sidewall": {
+      "color": [
+        0.024000000208616257,
+        0.027000000700354576,
+        0.028999999165534973,
+        1.0
+      ],
+      "roughness": 0.5,
+      "metallic": 0.03999999910593033,
+      "textures": {
+        "BaseColor": "T_Kart_SlickRubber_BaseColor",
+        "Roughness": "T_Kart_SlickRubber_Roughness",
+        "Normal": "T_Kart_SlickRubber_Normal",
+        "Metallic": "T_Kart_SlickRubber_Metallic"
+      }
+    },
+    "M_Kart_Seat_Moulded_Polymer": {
+      "color": [
+        0.027000000700354576,
+        0.03099999949336052,
+        0.03400000184774399,
+        1.0
+      ],
+      "roughness": 0.4399999976158142,
+      "metallic": 0.11999999731779099,
+      "textures": {
+        "BaseColor": "T_Kart_MouldedSeat_BaseColor",
+        "Roughness": "T_Kart_MouldedSeat_Roughness",
+        "Normal": "T_Kart_MouldedSeat_Normal",
+        "Metallic": "T_Kart_MouldedSeat_Metallic"
+      }
+    },
+    "M_Kart_Rubber_Grip": {
+      "color": [
+        0.023000000044703484,
+        0.02500000037252903,
+        0.02500000037252903,
+        1.0
+      ],
+      "roughness": 0.7200000286102295,
+      "metallic": 0.0,
+      "textures": {
+        "BaseColor": "T_Kart_SlickRubber_BaseColor",
+        "Roughness": "T_Kart_SlickRubber_Roughness",
+        "Normal": "T_Kart_SlickRubber_Normal",
+        "Metallic": "T_Kart_SlickRubber_Metallic"
+      }
+    },
+    "M_Kart_Body_Satin_Graphite": {
+      "color": [
+        0.00800000037997961,
+        0.009999999776482582,
+        0.013000000268220901,
+        1.0
+      ],
+      "roughness": 0.4699999988079071,
+      "metallic": 0.10000000149011612,
+      "textures": {
+        "BaseColor": "T_Kart_Graphite_BaseColor",
+        "Roughness": "T_Kart_Graphite_Roughness",
+        "Normal": "T_Kart_Graphite_Normal",
+        "Metallic": "T_Kart_Graphite_Metallic"
+      }
+    },
+    "M_Kart_Body_Edge_Wear": {
+      "color": [
+        0.07500000298023224,
+        0.08299999684095383,
+        0.09099999815225601,
+        1.0
+      ],
+      "roughness": 0.49000000953674316,
+      "metallic": 0.2199999988079071,
+      "textures": {
+        "BaseColor": "T_Kart_Graphite_BaseColor",
+        "Roughness": "T_Kart_Graphite_Roughness",
+        "Normal": "T_Kart_Graphite_Normal",
+        "Metallic": "T_Kart_Graphite_Metallic"
+      }
+    },
+    "M_Kart_Engine_Fins_Dark_Alloy": {
+      "color": [
+        0.09000000357627869,
+        0.10000000149011612,
+        0.10499999672174454,
+        1.0
+      ],
+      "roughness": 0.2800000011920929,
+      "metallic": 0.75,
+      "textures": {
+        "BaseColor": "T_Kart_CastAlloy_BaseColor",
+        "Roughness": "T_Kart_CastAlloy_Roughness",
+        "Normal": "T_Kart_CastAlloy_Normal",
+        "Metallic": "T_Kart_CastAlloy_Metallic"
+      }
+    },
+    "M_Kart_Hydraulic_Brake_Hose": {
+      "color": [
+        0.01899999938905239,
+        0.020999999716877937,
+        0.02199999988079071,
+        1.0
+      ],
+      "roughness": 0.4300000071525574,
+      "metallic": 0.03999999910593033,
+      "textures": {}
+    },
+    "M_Kart_Chain_Hardened_Steel": {
+      "color": [
+        0.10000000149011612,
+        0.11500000208616257,
+        0.11999999731779099,
+        1.0
+      ],
+      "roughness": 0.28999999165534973,
+      "metallic": 0.7699999809265137,
+      "textures": {
+        "BaseColor": "T_Kart_BrushedAlloy_BaseColor",
+        "Roughness": "T_Kart_BrushedAlloy_Roughness",
+        "Normal": "T_Kart_BrushedAlloy_Normal",
+        "Metallic": "T_Kart_BrushedAlloy_Metallic"
+      }
+    },
+    "M_Kart_Exhaust_Heat_Titanium": {
+      "color": [
+        0.30000001192092896,
+        0.27000001072883606,
+        0.2199999988079071,
+        1.0
+      ],
+      "roughness": 0.25,
+      "metallic": 0.8199999928474426,
+      "textures": {
+        "BaseColor": "T_Kart_BrushedAlloy_BaseColor",
+        "Roughness": "T_Kart_BrushedAlloy_Roughness",
+        "Normal": "T_Kart_BrushedAlloy_Normal",
+        "Metallic": "T_Kart_BrushedAlloy_Metallic"
+      }
+    },
+    "M_Kart_Fuel_Tank_Clouded_Polymer": {
+      "color": [
+        0.47999998927116394,
+        0.44999998807907104,
+        0.3700000047683716,
+        1.0
+      ],
+      "roughness": 0.30000001192092896,
+      "metallic": 0.019999999552965164,
+      "textures": {
+        "BaseColor": "T_Kart_CloudedPolymer_BaseColor",
+        "Roughness": "T_Kart_CloudedPolymer_Roughness",
+        "Normal": "T_Kart_CloudedPolymer_Normal",
+        "Metallic": "T_Kart_CloudedPolymer_Metallic"
+      }
+    }
+  },
+  "export": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\PlayerVisuals\\FirstPerson\\Exports\\SM_PlayerKartChassis.fbx"
+}

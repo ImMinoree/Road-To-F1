@@ -1,0 +1,32 @@
+[
+  {
+    "frame": 1,
+    "leg_chassis_triangle_pairs": {
+      "SK_Kart_Engine_Crankcase_125cc_Engine_Cast_Aluminium": 967,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 356,
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 465,
+      "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 390,
+      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 190
+    }
+  },
+  {
+    "frame": 25,
+    "leg_chassis_triangle_pairs": {
+      "SK_Kart_Engine_Crankcase_125cc_Engine_Cast_Aluminium": 967,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 356,
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 465,
+      "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 390,
+      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 190
+    }
+  },
+  {
+    "frame": 49,
+    "leg_chassis_triangle_pairs": {
+      "SK_Kart_Engine_Crankcase_125cc_Engine_Cast_Aluminium": 967,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 356,
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 465,
+      "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 390,
+      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 190
+    }
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "passed": true,
+  "protected_files_unchanged": true,
+  "automation_suites_passed": 5,
+  "automation_warnings": [
+    "PIE: Mobility of /Temp/Untitled_2.SurfaceFXTestWorld:PersistentLevel.StaticMeshActor_0 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. "
+  ],
+  "ai_racers_completed_two_laps": 4,
+  "race_seconds": 271.16,
+  "actual_pie": true,
+  "max_slide_beta_deg": 10.055560111999512,
+  "recovered_at_speed": true,
+  "max_z_error_cm": 0.5000019073486328,
+  "screenshots": [
+    {
+      "path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Evidence\\TireDynamics\\dirt00000.png",
+      "dimensions": [
+        1297,
+        1284
+      ],
+      "valid": true
+    },
+    {
+      "path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Evidence\\TireDynamics\\grid00002.png",
+      "dimensions": [
+        1297,
+        1284
+      ],
+      "valid": true
+    },
+    {
+      "path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Evidence\\TireDynamics\\launch00001.png",
+      "dimensions": [
+        1297,
+        1284
+      ],
+      "valid": true
+    },
+    {
+      "path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Evidence\\TireDynamics\\rear_slide00001.png",
+      "dimensions": [
+        1297,
+        1284
+      ],
+      "valid": true
+    },
+    {
+      "path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Evidence\\TireDynamics\\recovered00000.png",
+      "dimensions": [
+        1297,
+        1284
+      ],
+      "valid": true
+    }
+  ]
+}

@@ -1,8 +1,12 @@
-# Road_To_F1_New - VisualProof
+# Road_To_F1_New - Integrated desert kart
 
-VisualProof integrated into the existing Unreal 5.8.3 C++ project. **Visual milestone is not accepted.** This is the playable foundation permitted by available verified assets. The existing project module is retained; ProofPawn is compiled into Road_To_F1_New.
+The current playable map is DesertKarting_Visual, with the original circuit, start grid and authoritative five-red-light sequence, plus the V5 kart chassis and existing animated first-person arms/wheel on ProofPawn. See [INTEGRATION.md](INTEGRATION.md) for assets, validation evidence and known prototype limitations. The earlier VisualProof milestone notes below remain historical context.
 
-Open `Road_To_F1_New.uproject` in installed Unreal 5.8.3, open `/Game/RoadToF1/Maps/VisualProof`, press Play, click viewport. W accelerates, S brakes/reverses, A/D steer, R resets, Escape exits PIE. No finished kart or driver is represented. Temporary swept kinematic pawn is capped at 57.6 km/h; road-following trace and a sphere provide basic movement only. It does not reproduce kart physics.
+Four track-edge AI opponents are described in [RACING_AI.md](RACING_AI.md). The local cockpit now has gentle speed-based FOV widening, restrained vibration and depth-masked peripheral blur; settings and validation are described in [SPEED_EFFECTS.md](SPEED_EFFECTS.md).
+
+The default pawn now uses substepped tire-force dynamics with real lateral velocity, rear-brake oversteer and countersteering recovery. See [TIRE_DYNAMICS.md](TIRE_DYNAMICS.md) for settings, diagnostics, repeatable tests and the reversible checkpoint. Space is a normal brake; W/S, A/D and R keep their existing roles. `-LegacyKartMovement` selects the previous movement for comparison.
+
+Open `Road_To_F1_New.uproject` in installed Unreal 5.8.3, open `/Game/RoadToF1/Maps/DesertKarting_Visual`, press Play, click viewport. W accelerates, S brakes/reverses, A/D steer, Space brakes, R resets, Escape exits PIE. Driving unlocks when the five red lights go out. `Tools/PlayIntegrated.ps1` launches the same map as a standalone preview. The default planar tire-force model retains swept sphere collision and traced ground support. Its starting power/drag settings approach roughly 47.4 km/h on a straight; the preserved legacy mode retains the original 57.6 km/h hard cap.
 
 `Tools/Open.ps1 -Profile Balanced` launches the game at 1920×1080, High scalability (2), 75% internal resolution, conventional shadows. `-Profile Validation` selects Epic (3), VSM and 100% internal resolution. TSR and software Lumen are configured; hardware ray tracing is disabled. No Nanite forced onto the small road meshes. Manual daylight exposure is held constant. No motion blur, bloom, grain or artificial sharpening added.
 

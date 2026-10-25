@@ -1,0 +1,3346 @@
+[
+  {
+    "name": "CameraActor_3",
+    "label": "Desert_Driver",
+    "class": "/Script/Engine.CameraActor",
+    "transform": [
+      800.0,
+      0.0,
+      80.0,
+      -3.0,
+      0.0,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "CameraActor_4",
+    "label": "Desert_Ground",
+    "class": "/Script/Engine.CameraActor",
+    "transform": [
+      3700.0,
+      650.0,
+      60.0,
+      -3.0,
+      -15.0,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "CameraActor_5",
+    "label": "Desert_Overview",
+    "class": "/Script/Engine.CameraActor",
+    "transform": [
+      32800.0,
+      27800.0,
+      18500.0,
+      -22.0,
+      -128.0,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "DirectionalLight_0",
+    "label": "DirectionalLight",
+    "class": "/Script/Engine.DirectionalLight",
+    "transform": [
+      0.0,
+      0.0,
+      1000.0,
+      -17.0,
+      120.0,
+      -0.0,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "tags": []
+  },
+  {
+    "name": "DirectionalLight_1",
+    "label": "DirectionalLight2",
+    "class": "/Script/Engine.DirectionalLight",
+    "transform": [
+      0.0,
+      0.0,
+      1000.0,
+      -32.0,
+      145.0,
+      0.0,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "tags": []
+  },
+  {
+    "name": "DirectionalLight_2",
+    "label": "DirectionalLight3",
+    "class": "/Script/Engine.DirectionalLight",
+    "transform": [
+      0.0,
+      0.0,
+      1000.0,
+      -32.0,
+      145.0,
+      0.0,
+      2.5,
+      2.5,
+      2.5
+    ],
+    "tags": []
+  },
+  {
+    "name": "ExponentialHeightFog_0",
+    "label": "ExponentialHeightFog",
+    "class": "/Script/Engine.ExponentialHeightFog",
+    "transform": [
+      0.0,
+      0.0,
+      -500.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "ExponentialHeightFog_1",
+    "label": "ExponentialHeightFog2",
+    "class": "/Script/Engine.ExponentialHeightFog",
+    "transform": [
+      0.0,
+      0.0,
+      -500.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "ExponentialHeightFog_2",
+    "label": "ExponentialHeightFog3",
+    "class": "/Script/Engine.ExponentialHeightFog",
+    "transform": [
+      0.0,
+      0.0,
+      -500.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "GridStartSlot_0",
+    "label": "Grid20_Slot_01",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      3603.48438,
+      -106.24207,
+      40.00001,
+      0.0,
+      0.80977,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot",
+      "RaceGridStart"
+    ]
+  },
+  {
+    "name": "GridStartSlot_1",
+    "label": "Grid20_Slot_02",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      3415.91626,
+      309.77576,
+      39.99998,
+      0.0,
+      1.26687,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_10",
+    "label": "Grid20_Slot_11",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      1811.04199,
+      -171.89999,
+      40.00001,
+      0.0,
+      2.52875,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_11",
+    "label": "Grid20_Slot_12",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      1613.00891,
+      239.86626,
+      40.00001,
+      0.0,
+      2.43944,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_12",
+    "label": "Grid20_Slot_13",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      1450.44812,
+      -187.39075,
+      40.00003,
+      0.0,
+      2.27596,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_13",
+    "label": "Grid20_Slot_14",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      1253.91089,
+      225.1297,
+      40.00001,
+      0.0,
+      2.27596,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_14",
+    "label": "Grid20_Slot_15",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      1089.82202,
+      -201.07864,
+      40.00001,
+      0.0,
+      2.03408,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_15",
+    "label": "Grid20_Slot_16",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      896.21838,
+      212.95416,
+      40.00001,
+      0.0,
+      1.70335,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_16",
+    "label": "Grid20_Slot_17",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      726.14136,
+      -211.30602,
+      40.00001,
+      0.0,
+      0.98878,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_17",
+    "label": "Grid20_Slot_18",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      542.27435,
+      206.71466,
+      39.99998,
+      0.0,
+      0.07072,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_18",
+    "label": "Grid20_Slot_19",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      360.05667,
+      -212.62825,
+      40.00003,
+      0.0,
+      -0.67709,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_19",
+    "label": "Grid20_Slot_20",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      187.18219,
+      210.04037,
+      40.00001,
+      0.0,
+      -1.26091,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_2",
+    "label": "Grid20_Slot_03",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      3246.66797,
+      -114.81276,
+      40.00001,
+      0.0,
+      1.6497,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_3",
+    "label": "Grid20_Slot_04",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      3053.51562,
+      299.51404,
+      40.00001,
+      0.0,
+      1.96207,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_4",
+    "label": "Grid20_Slot_05",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      2888.00122,
+      -126.40255,
+      40.00003,
+      0.0,
+      1.96207,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_5",
+    "label": "Grid20_Slot_06",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      2692.85596,
+      286.42499,
+      40.00003,
+      0.0,
+      2.20706,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_6",
+    "label": "Grid20_Slot_07",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      2529.83521,
+      -140.51573,
+      40.00001,
+      0.0,
+      2.38649,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_7",
+    "label": "Grid20_Slot_08",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      2332.09302,
+      271.50558,
+      40.00001,
+      0.0,
+      2.49952,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_8",
+    "label": "Grid20_Slot_09",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      2170.58105,
+      -155.94482,
+      40.00003,
+      0.0,
+      2.49952,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "GridStartSlot_9",
+    "label": "Grid20_Slot_10",
+    "class": "/Script/Road_To_F1_New.GridStartSlot",
+    "transform": [
+      1972.26404,
+      255.65041,
+      40.00001,
+      0.0,
+      2.54812,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RaceGridSlot"
+    ]
+  },
+  {
+    "name": "InstancedFoliageActor_0",
+    "label": "InstancedFoliageActor0",
+    "class": "/Script/Foliage.InstancedFoliageActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "PlayerStart_0",
+    "label": "PlayerStart",
+    "class": "/Script/Engine.PlayerStart",
+    "transform": [
+      -3400.0,
+      200.0,
+      40.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "PlayerStart_1",
+    "label": "PlayerStart2",
+    "class": "/Script/Engine.PlayerStart",
+    "transform": [
+      800.0,
+      0.0,
+      40.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "PlayerStart_2",
+    "label": "PlayerStart3",
+    "class": "/Script/Engine.PlayerStart",
+    "transform": [
+      800.0,
+      0.0,
+      40.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "PostProcessVolume_0",
+    "label": "PostProcessVolume",
+    "class": "/Script/Engine.PostProcessVolume",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "PostProcessVolume_1",
+    "label": "PostProcessVolume2",
+    "class": "/Script/Engine.PostProcessVolume",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "PostProcessVolume_2",
+    "label": "PostProcessVolume3",
+    "class": "/Script/Engine.PostProcessVolume",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "RaceStartGantry_0",
+    "label": "RS_FiveRedStartGantry",
+    "class": "/Script/Road_To_F1_New.RaceStartGantry",
+    "transform": [
+      4960.09163,
+      85.12352,
+      0.0,
+      0.0,
+      -3.87881,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "SkyAtmosphere_0",
+    "label": "SkyAtmosphere",
+    "class": "/Script/Engine.SkyAtmosphere",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "SkyAtmosphere_1",
+    "label": "SkyAtmosphere2",
+    "class": "/Script/Engine.SkyAtmosphere",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "SkyAtmosphere_2",
+    "label": "SkyAtmosphere3",
+    "class": "/Script/Engine.SkyAtmosphere",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "SkyLight_0",
+    "label": "SkyLight",
+    "class": "/Script/Engine.SkyLight",
+    "transform": [
+      0.0,
+      0.0,
+      300.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "SkyLight_1",
+    "label": "SkyLight2",
+    "class": "/Script/Engine.SkyLight",
+    "transform": [
+      0.0,
+      0.0,
+      300.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "SkyLight_2",
+    "label": "SkyLight3",
+    "class": "/Script/Engine.SkyLight",
+    "transform": [
+      0.0,
+      0.0,
+      300.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "SpotLight_0",
+    "label": "GH_FloodPool_11",
+    "class": "/Script/Engine.SpotLight",
+    "transform": [
+      -3700.0,
+      800.0,
+      1724.0,
+      -24.07295,
+      -59.64738,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "SpotLight_1",
+    "label": "GH_FloodPool_12",
+    "class": "/Script/Engine.SpotLight",
+    "transform": [
+      1800.0,
+      800.0,
+      2124.0,
+      -32.42637,
+      -84.85211,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "SpotLight_2",
+    "label": "GH_FloodPool_17",
+    "class": "/Script/Engine.SpotLight",
+    "transform": [
+      -3600.0,
+      -8500.0,
+      1724.0,
+      -40.83949,
+      -15.70864,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "SpotLight_3",
+    "label": "GH_FloodPool_16",
+    "class": "/Script/Engine.SpotLight",
+    "transform": [
+      200.0,
+      -16300.0,
+      1724.0,
+      -41.30947,
+      66.5713,
+      -0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  },
+  {
+    "name": "StaticMeshActor_0",
+    "label": "DV_07 Arabian pit building arches towers and domes | cream",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [],
+    "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_07_Arabian_pit_building_arches_towers_and_domes_cream.SM_DV_07_Arabian_pit_building_arches_towers_and_domes_cream",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_cream.MI_DV_cream"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_1",
+    "label": "DV_07 Arabian pit building arches towers and domes | stone",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [],
+    "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_07_Arabian_pit_building_arches_towers_and_domes_stone.SM_DV_07_Arabian_pit_building_arches_towers_and_domes_stone",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_stone.MI_DV_stone"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_10",
+    "label": "RR_SM_Route_Finish",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RouteReadability"
+    ],
+    "mesh": "/Game/RoadToF1/DesertRoute/Meshes/SM_Route_Finish.SM_Route_Finish",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_Letter.MI_DV_Letter",
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_dark.MI_DV_dark"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_100",
+    "label": "DK_14 Timing gantry signs and pit furniture | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/Grid20/Meshes/SM_Grid20_RetainedBooths.SM_Grid20_RetainedBooths",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_101",
+    "label": "DK_DESERT KARTING",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      6806.0238,
+      110.31065,
+      0.0,
+      0.0,
+      -3.87881,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_DESERT_KARTING.SM_DK_DESERT_KARTING",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_white.M_DK_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_102",
+    "label": "Grid20_StartFinish",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "Grid20",
+      "GridFinish"
+    ],
+    "mesh": "/Game/RoadToF1/Grid20/Meshes/SM_Grid20_Finish.SM_Grid20_Finish",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white",
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_dark.M_DK_dark"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_103",
+    "label": "Grid20_RelocatedOriginalBeam",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      6806.0238,
+      110.31065,
+      0.0,
+      0.0,
+      -3.87881,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [],
+    "mesh": "/Game/RoadToF1/Grid20/Meshes/SM_Grid20_OriginalBeam.SM_Grid20_OriginalBeam",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_11",
+    "label": "RR_SM_Route_CornerBoards",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "RouteReadability"
+    ],
+    "mesh": "/Game/RoadToF1/DesertRoute/Meshes/SM_Route_CornerBoards.SM_Route_CornerBoards",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_dark.MI_DV_dark",
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_metal.MI_DV_metal",
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_Letter.MI_DV_Letter"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_12",
+    "label": "OI_NaturalInfield",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "OpenInfieldVisual"
+    ],
+    "mesh": "/Game/RoadToF1/DesertOpenInfield/Meshes/SM_OI_InfieldTerrain.SM_OI_InfieldTerrain",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_grassdark.MI_DV_grassdark"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_13",
+    "label": "Grid20_Boxes",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "Grid20"
+    ],
+    "mesh": "/Game/RoadToF1/Grid20/Meshes/SM_Grid20_BoxPaint.SM_Grid20_BoxPaint",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_14",
+    "label": "Grid20_Numbers",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "Grid20"
+    ],
+    "mesh": "/Game/RoadToF1/Grid20/Meshes/SM_Grid20_Numbers.SM_Grid20_Numbers",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_15",
+    "label": "DK_01 Desert terrain and access roads | asphalt",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_asphalt.SM_DK_01_Desert_terrain_and_access_roads_asphalt",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_asphalt.MI_DV_asphalt"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_16",
+    "label": "DK_01 Desert terrain and access roads | sand",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_sand.SM_DK_01_Desert_terrain_and_access_roads_sand",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_sand.MI_DV_sand"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_17",
+    "label": "DK_01 Desert terrain and access roads | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_01_Desert_terrain_and_access_roads_white.SM_DK_01_Desert_terrain_and_access_roads_white",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_18",
+    "label": "DK_02 Track surface curbs and runoff | asphalt",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_asphalt.SM_DK_02_Track_surface_curbs_and_runoff_asphalt",
+    "materials": [
+      "/Game/RoadToF1/DesertGoldenHour/Materials/MI_GH_asphalt.MI_GH_asphalt"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_19",
+    "label": "DK_02 Track surface curbs and runoff | red",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_red.SM_DK_02_Track_surface_curbs_and_runoff_red",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_red.MI_DV_red"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_2",
+    "label": "DV_07 Arabian pit building arches towers and domes | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [],
+    "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_07_Arabian_pit_building_arches_towers_and_domes_white.SM_DV_07_Arabian_pit_building_arches_towers_and_domes_white",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_20",
+    "label": "DK_02 Track surface curbs and runoff | rubbermark",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_rubbermark.SM_DK_02_Track_surface_curbs_and_runoff_rubbermark",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_rubbermark.MI_DV_rubbermark"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_21",
+    "label": "DK_02 Track surface curbs and runoff | runoff",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_runoff.SM_DK_02_Track_surface_curbs_and_runoff_runoff",
+    "materials": [
+      "/Game/RoadToF1/DesertGoldenHour/Materials/MI_GH_runoff.MI_GH_runoff"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_22",
+    "label": "DK_02 Track surface curbs and runoff | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_02_Track_surface_curbs_and_runoff_white.SM_DK_02_Track_surface_curbs_and_runoff_white",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_23",
+    "label": "DK_03 Infield lawns and pit lane | asphalt",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_asphalt.SM_DK_03_Infield_lawns_and_pit_lane_asphalt",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_asphalt.MI_DV_asphalt"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_24",
+    "label": "DK_03 Infield lawns and pit lane | dark",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_dark.SM_DK_03_Infield_lawns_and_pit_lane_dark",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_dark.MI_DV_dark"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_25",
+    "label": "DK_03 Infield lawns and pit lane | grass",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_grass.SM_DK_03_Infield_lawns_and_pit_lane_grass",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_grass.MI_DV_grass"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_26",
+    "label": "DK_03 Infield lawns and pit lane | grassdark",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_grassdark.SM_DK_03_Infield_lawns_and_pit_lane_grassdark",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_grassdark.MI_DV_grassdark"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_27",
+    "label": "DK_03 Infield lawns and pit lane | red",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_03_Infield_lawns_and_pit_lane_red.SM_DK_03_Infield_lawns_and_pit_lane_red",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_red.MI_DV_red"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_28",
+    "label": "DK_03 Infield lawns and pit lane | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertOpenInfield/Meshes/SM_OI_StartingGridRetained.SM_OI_StartingGridRetained",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_29",
+    "label": "DK_04 Safety barriers and perimeter fence | green",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_green.SM_DK_04_Safety_barriers_and_perimeter_fence_green",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_green.MI_DV_green"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_3",
+    "label": "DV_09 Paddock transporters tents and service equipment | blue",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [],
+    "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_09_Paddock_transporters_tents_and_service_equipment_blue.SM_DV_09_Paddock_transporters_tents_and_service_equipment_blue",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_blue.MI_DV_blue"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_30",
+    "label": "DK_04 Safety barriers and perimeter fence | metal",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_metal.SM_DK_04_Safety_barriers_and_perimeter_fence_metal",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_metal.MI_DV_metal"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_31",
+    "label": "DK_04 Safety barriers and perimeter fence | red",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_red.SM_DK_04_Safety_barriers_and_perimeter_fence_red",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_red.MI_DV_red"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_32",
+    "label": "DK_04 Safety barriers and perimeter fence | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_04_Safety_barriers_and_perimeter_fence_white.SM_DK_04_Safety_barriers_and_perimeter_fence_white",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_33",
+    "label": "DK_05 Grandstand steps seating and crowd | blue",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_blue.SM_DK_05_Grandstand_steps_seating_and_crowd_blue",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_blue.MI_DV_blue"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_34",
+    "label": "DK_05 Grandstand steps seating and crowd | cream",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_cream.SM_DK_05_Grandstand_steps_seating_and_crowd_cream",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_cream.MI_DV_cream"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_35",
+    "label": "DK_05 Grandstand steps seating and crowd | dark",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_dark.SM_DK_05_Grandstand_steps_seating_and_crowd_dark",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_dark.MI_DV_dark"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_36",
+    "label": "DK_05 Grandstand steps seating and crowd | metal",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_metal.SM_DK_05_Grandstand_steps_seating_and_crowd_metal",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_metal.MI_DV_metal"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_37",
+    "label": "DK_05 Grandstand steps seating and crowd | red",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_red.SM_DK_05_Grandstand_steps_seating_and_crowd_red",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_red.MI_DV_red"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_38",
+    "label": "DK_05 Grandstand steps seating and crowd | shirt",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_shirt.SM_DK_05_Grandstand_steps_seating_and_crowd_shirt",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_shirt.MI_DV_shirt"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_39",
+    "label": "DK_05 Grandstand steps seating and crowd | skin",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_skin.SM_DK_05_Grandstand_steps_seating_and_crowd_skin",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_skin.MI_DV_skin"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_4",
+    "label": "DV_09 Paddock transporters tents and service equipment | cream",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [],
+    "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_09_Paddock_transporters_tents_and_service_equipment_cream.SM_DV_09_Paddock_transporters_tents_and_service_equipment_cream",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_cream.MI_DV_cream"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_40",
+    "label": "DK_05 Grandstand steps seating and crowd | stone",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_stone.SM_DK_05_Grandstand_steps_seating_and_crowd_stone",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_stone.MI_DV_stone"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_41",
+    "label": "DK_05 Grandstand steps seating and crowd | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_05_Grandstand_steps_seating_and_crowd_white.SM_DK_05_Grandstand_steps_seating_and_crowd_white",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_42",
+    "label": "DK_06 Sculpted tensile canopy roofs | canvas",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_canvas.SM_DK_06_Sculpted_tensile_canopy_roofs_canvas",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_canvas.MI_DV_canvas"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_43",
+    "label": "DK_06 Sculpted tensile canopy roofs | metal",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_metal.SM_DK_06_Sculpted_tensile_canopy_roofs_metal",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_metal.MI_DV_metal"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_44",
+    "label": "DK_06 Sculpted tensile canopy roofs | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_06_Sculpted_tensile_canopy_roofs_white.SM_DK_06_Sculpted_tensile_canopy_roofs_white",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_45",
+    "label": "DK_07 Arabian pit building arches towers and domes | amber",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_amber.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_amber",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_amber.M_DK_amber"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_46",
+    "label": "DK_07 Arabian pit building arches towers and domes | cream",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_cream.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_cream",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_cream.MI_DV_cream"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_47",
+    "label": "DK_07 Arabian pit building arches towers and domes | dark",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_dark.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_dark",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_dark.MI_DV_dark"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_48",
+    "label": "DK_07 Arabian pit building arches towers and domes | lamp",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_lamp.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_lamp",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_lamp.M_DK_lamp"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_49",
+    "label": "DK_07 Arabian pit building arches towers and domes | metal",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_metal.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_metal",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_metal.MI_DV_metal"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_5",
+    "label": "DV_09 Paddock transporters tents and service equipment | red",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [],
+    "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_09_Paddock_transporters_tents_and_service_equipment_red.SM_DV_09_Paddock_transporters_tents_and_service_equipment_red",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_red.MI_DV_red"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_50",
+    "label": "DK_07 Arabian pit building arches towers and domes | stone",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_stone.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_stone",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_stone.MI_DV_stone"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_51",
+    "label": "DK_07 Arabian pit building arches towers and domes | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_07_Arabian_pit_building_arches_towers_and_domes_white.SM_DK_07_Arabian_pit_building_arches_towers_and_domes_white",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_52",
+    "label": "DK_08 Parking vehicles | blue",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_blue.SM_DK_08_Parking_vehicles_blue",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_blue.M_DK_blue"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_53",
+    "label": "DK_08 Parking vehicles | dark",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_dark.SM_DK_08_Parking_vehicles_dark",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_dark.M_DK_dark"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_54",
+    "label": "DK_08 Parking vehicles | glass",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_glass.SM_DK_08_Parking_vehicles_glass",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_glass.M_DK_glass"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_55",
+    "label": "DK_08 Parking vehicles | metal",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_metal.SM_DK_08_Parking_vehicles_metal",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_metal.M_DK_metal"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_56",
+    "label": "DK_08 Parking vehicles | red",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_red.SM_DK_08_Parking_vehicles_red",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_red.M_DK_red"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_57",
+    "label": "DK_08 Parking vehicles | rubber",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_rubber.SM_DK_08_Parking_vehicles_rubber",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_rubber.M_DK_rubber"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_58",
+    "label": "DK_08 Parking vehicles | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_08_Parking_vehicles_white.SM_DK_08_Parking_vehicles_white",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_white.M_DK_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_59",
+    "label": "DK_09 Paddock transporters tents and service equipment | asphalt",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_asphalt.SM_DK_09_Paddock_transporters_tents_and_service_equipment_asphalt",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_asphalt.MI_DV_asphalt"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_6",
+    "label": "DV_09 Paddock transporters tents and service equipment | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [],
+    "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_09_Paddock_transporters_tents_and_service_equipment_white.SM_DV_09_Paddock_transporters_tents_and_service_equipment_white",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_60",
+    "label": "DK_09 Paddock transporters tents and service equipment | blue",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_blue.SM_DK_09_Paddock_transporters_tents_and_service_equipment_blue",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_blue.MI_DV_blue"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_61",
+    "label": "DK_09 Paddock transporters tents and service equipment | canvas",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_canvas.SM_DK_09_Paddock_transporters_tents_and_service_equipment_canvas",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_canvas.MI_DV_canvas"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_62",
+    "label": "DK_09 Paddock transporters tents and service equipment | cream",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_cream.SM_DK_09_Paddock_transporters_tents_and_service_equipment_cream",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_cream.MI_DV_cream"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_63",
+    "label": "DK_09 Paddock transporters tents and service equipment | dark",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_dark.SM_DK_09_Paddock_transporters_tents_and_service_equipment_dark",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_dark.MI_DV_dark"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_64",
+    "label": "DK_09 Paddock transporters tents and service equipment | glass",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_glass.SM_DK_09_Paddock_transporters_tents_and_service_equipment_glass",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_glass.MI_DV_glass"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_65",
+    "label": "DK_09 Paddock transporters tents and service equipment | metal",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_metal.SM_DK_09_Paddock_transporters_tents_and_service_equipment_metal",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_metal.MI_DV_metal"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_66",
+    "label": "DK_09 Paddock transporters tents and service equipment | red",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_red.SM_DK_09_Paddock_transporters_tents_and_service_equipment_red",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_red.MI_DV_red"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_67",
+    "label": "DK_09 Paddock transporters tents and service equipment | rubber",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_rubber.SM_DK_09_Paddock_transporters_tents_and_service_equipment_rubber",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_rubber.MI_DV_rubber"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_68",
+    "label": "DK_09 Paddock transporters tents and service equipment | shirt",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_shirt.SM_DK_09_Paddock_transporters_tents_and_service_equipment_shirt",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_shirt.MI_DV_shirt"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_69",
+    "label": "DK_09 Paddock transporters tents and service equipment | skin",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_skin.SM_DK_09_Paddock_transporters_tents_and_service_equipment_skin",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_skin.MI_DV_skin"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_7",
+    "label": "DV_04 Safety barriers and perimeter fence | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [],
+    "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_04_Safety_barriers_and_perimeter_fence_white.SM_DV_04_Safety_barriers_and_perimeter_fence_white",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_70",
+    "label": "DK_09 Paddock transporters tents and service equipment | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_09_Paddock_transporters_tents_and_service_equipment_white.SM_DK_09_Paddock_transporters_tents_and_service_equipment_white",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_71",
+    "label": "DK_10 Race karts chassis wheels engine and drivers | blue",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DV_RestoreKart",
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_blue.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_blue",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_blue.M_DK_blue"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_72",
+    "label": "DK_10 Race karts chassis wheels engine and drivers | dark",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DV_RestoreKart",
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_dark.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_dark",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_dark.M_DK_dark"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_73",
+    "label": "DK_10 Race karts chassis wheels engine and drivers | glass",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DV_RestoreKart",
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_glass.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_glass",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_glass.M_DK_glass"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_74",
+    "label": "DK_10 Race karts chassis wheels engine and drivers | metal",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DV_RestoreKart",
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_metal.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_metal",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_metal.M_DK_metal"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_75",
+    "label": "DK_10 Race karts chassis wheels engine and drivers | red",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DV_RestoreKart",
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_red.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_red",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_red.M_DK_red"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_76",
+    "label": "DK_10 Race karts chassis wheels engine and drivers | rubber",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DV_RestoreKart",
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_rubber.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_rubber",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_rubber.M_DK_rubber"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_77",
+    "label": "DK_10 Race karts chassis wheels engine and drivers | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DV_RestoreKart",
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_white.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_white",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_white.M_DK_white"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_78",
+    "label": "DK_10 Race karts chassis wheels engine and drivers | yellow",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DV_RestoreKart",
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_yellow.SM_DK_10_Race_karts_chassis_wheels_engine_and_drivers_yellow",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_yellow.M_DK_yellow"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_79",
+    "label": "DK_11 Floodlight poles and lamp arrays | lamp",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_lamp.SM_DK_11_Floodlight_poles_and_lamp_arrays_lamp",
+    "materials": [
+      "/Game/RoadToF1/DesertGoldenHour/Materials/M_GH_LampLens.M_GH_LampLens"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_8",
+    "label": "DV_05 Grandstand steps seating and crowd | blue",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [],
+    "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_05_Grandstand_steps_seating_and_crowd_blue.SM_DV_05_Grandstand_steps_seating_and_crowd_blue",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_blue.MI_DV_blue"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_80",
+    "label": "DK_11 Floodlight poles and lamp arrays | metal",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_metal.SM_DK_11_Floodlight_poles_and_lamp_arrays_metal",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_metal.M_DK_metal"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_81",
+    "label": "DK_11 Floodlight poles and lamp arrays | stone",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_11_Floodlight_poles_and_lamp_arrays_stone.SM_DK_11_Floodlight_poles_and_lamp_arrays_stone",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_stone.M_DK_stone"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_82",
+    "label": "DK_12 Palms shrubs rocks and landscaping | leaf",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_leaf.SM_DK_12_Palms_shrubs_rocks_and_landscaping_leaf",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_leaf.MI_DV_leaf"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_83",
+    "label": "DK_12 Palms shrubs rocks and landscaping | sandlight",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_sandlight.SM_DK_12_Palms_shrubs_rocks_and_landscaping_sandlight",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_sandlight.MI_DV_sandlight"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_84",
+    "label": "DK_12 Palms shrubs rocks and landscaping | trunk",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_12_Palms_shrubs_rocks_and_landscaping_trunk.SM_DK_12_Palms_shrubs_rocks_and_landscaping_trunk",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_trunk.MI_DV_trunk"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_85",
+    "label": "DK_13 Distant illuminated secondary circuit | asphalt",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_asphalt.SM_DK_13_Distant_illuminated_secondary_circuit_asphalt",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_asphalt.MI_DV_asphalt"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_86",
+    "label": "DK_13 Distant illuminated secondary circuit | canvas",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_canvas.SM_DK_13_Distant_illuminated_secondary_circuit_canvas",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_canvas.MI_DV_canvas"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_87",
+    "label": "DK_13 Distant illuminated secondary circuit | cream",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_cream.SM_DK_13_Distant_illuminated_secondary_circuit_cream",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_cream.MI_DV_cream"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_88",
+    "label": "DK_13 Distant illuminated secondary circuit | lamp",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_lamp.SM_DK_13_Distant_illuminated_secondary_circuit_lamp",
+    "materials": [
+      "/Game/RoadToF1/DesertGoldenHour/Materials/M_GH_LampLens.M_GH_LampLens"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_89",
+    "label": "DK_13 Distant illuminated secondary circuit | metal",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_metal.SM_DK_13_Distant_illuminated_secondary_circuit_metal",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_metal.MI_DV_metal"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_9",
+    "label": "DV_05 Grandstand steps seating and crowd | red",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [],
+    "mesh": "/Game/RoadToF1/DesertVisual/Meshes/SM_DV_05_Grandstand_steps_seating_and_crowd_red.SM_DV_05_Grandstand_steps_seating_and_crowd_red",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_red.MI_DV_red"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_90",
+    "label": "DK_13 Distant illuminated secondary circuit | red",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_red.SM_DK_13_Distant_illuminated_secondary_circuit_red",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_red.MI_DV_red"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_91",
+    "label": "DK_13 Distant illuminated secondary circuit | runoff",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_runoff.SM_DK_13_Distant_illuminated_secondary_circuit_runoff",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_runoff.MI_DV_runoff"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_92",
+    "label": "DK_13 Distant illuminated secondary circuit | stone",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_stone.SM_DK_13_Distant_illuminated_secondary_circuit_stone",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_stone.MI_DV_stone"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_93",
+    "label": "DK_13 Distant illuminated secondary circuit | white",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_13_Distant_illuminated_secondary_circuit_white.SM_DK_13_Distant_illuminated_secondary_circuit_white",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_white.MI_DV_white"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_94",
+    "label": "DK_14 Timing gantry signs and pit furniture | amber",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber.SM_DK_14_Timing_gantry_signs_and_pit_furniture_amber",
+    "materials": [
+      "/Game/RoadToF1/DesertKarting/Materials/M_DK_amber.M_DK_amber"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "StaticMeshActor_95",
+    "label": "DK_14 Timing gantry signs and pit furniture | dark",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      6806.0238,
+      110.31065,
+      0.0,
+      0.0,
+      -3.87881,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark.SM_DK_14_Timing_gantry_signs_and_pit_furniture_dark",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_dark.MI_DV_dark"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_96",
+    "label": "DK_14 Timing gantry signs and pit furniture | glass",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_glass.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_glass",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_glass.MI_DV_glass"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_97",
+    "label": "DK_14 Timing gantry signs and pit furniture | green",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_green.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_green",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_green.MI_DV_green"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_98",
+    "label": "DK_14 Timing gantry signs and pit furniture | metal",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      6806.0238,
+      110.31065,
+      0.0,
+      0.0,
+      -3.87881,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertClearance/Meshes/SM_Clear_14_Timing_gantry_signs_and_pit_furniture_metal.SM_Clear_14_Timing_gantry_signs_and_pit_furniture_metal",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_metal.MI_DV_metal"
+    ],
+    "collision": "<CollisionEnabled.QUERY_AND_PHYSICS: 3>"
+  },
+  {
+    "name": "StaticMeshActor_99",
+    "label": "DK_14 Timing gantry signs and pit furniture | red",
+    "class": "/Script/Engine.StaticMeshActor",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": [
+      "DesertKarting"
+    ],
+    "mesh": "/Game/RoadToF1/DesertKarting/Meshes/SM_DK_14_Timing_gantry_signs_and_pit_furniture_red.SM_DK_14_Timing_gantry_signs_and_pit_furniture_red",
+    "materials": [
+      "/Game/RoadToF1/DesertVisual/Materials/MI_DV_red.MI_DV_red"
+    ],
+    "collision": "<CollisionEnabled.NO_COLLISION: 0>"
+  },
+  {
+    "name": "VolumetricCloud_0",
+    "label": "GH_FairWeatherClouds",
+    "class": "/Script/Engine.VolumetricCloud",
+    "transform": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "tags": []
+  }
+]
