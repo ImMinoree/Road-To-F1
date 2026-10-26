@@ -18,7 +18,7 @@ for f,base in bases.items():
  for n,dz in [('pelvis',-.18),('spine_01',-.15)]:
   m=base[n].copy();m.translation.z+=dz;r.pose.bones[n].matrix=inv@m;bpy.context.view_layer.update()
  for side in ['l','r']:
-  target=base['foot_'+side].copy();target.translation.x+=.4;solve(base,['thigh_'+side,'calf_'+side,'foot_'+side],target,Vector((0,0,1)))
+  target=base['foot_'+side].copy();target.translation.x+=.55;solve(base,['thigh_'+side,'calf_'+side,'foot_'+side],target,Vector((0,0,1)))
   solve(base,['upperarm_'+side,'lowerarm_'+side,'hand_'+side],base['hand_'+side],Vector((-.3, .35 if side=='l' else -.35,-1)))
  for b in r.pose.bones:
   for prop in ['location','rotation_quaternion','scale']:b.keyframe_insert(prop,frame=f)
@@ -27,7 +27,7 @@ for p in json.loads((P/'parts.json').read_text()):
   v=k.data.vertices[i];name=p['name']
   if 'Seat_' in name:v.co.z-=.08
   elif 'Fuel_Tank' in name:pass
-  elif 'Driver_Controls' in name:v.co.x+=.4
+  elif 'Driver_Controls' in name:v.co.x+=.55
   else:v.co.x+=.35
   if 'Nose_And_Front' in name:v.co.z-=.24
 # Extend the existing shaft towards relocated steering linkage, keeping wheel end fixed.
@@ -36,3 +36,4 @@ o.name='SK_CL5_DriverPOV';k.name='SM_CL5_PlayerChassis';w.name='SM_CL5_SteeringW
 s.camera.location=(.05,0,.9);s.camera.data.angle=math.radians(95);s.camera.rotation_euler=Vector((math.cos(math.radians(10)),0,-math.sin(math.radians(10)))).to_track_quat('-Z','Y').to_euler();s.frame_set(25)
 s.cycles.samples=16;s.render.resolution_percentage=70;bpy.ops.wm.save_as_mainfile(filepath=str(P/'Kart_Cockpit_Layout_v5.blend'))
 s.render.filepath=str(P/'preview_center.png');bpy.ops.render.render(write_still=True)
+

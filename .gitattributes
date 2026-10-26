@@ -12,3 +12,6 @@ Content/RoadToF1/PlayerVisuals/CockpitReferenceV2/SK_CV2_DriverPOV.uasset filter
 Content/RoadToF1/PlayerVisuals/CockpitTargetV4/SK_CT4_DriverPOV.uasset filter=lfs diff=lfs merge=lfs -text
 Content/RoadToF1/PlayerVisuals/WheelVisibilityV3/SK_WV3_DriverPOV.uasset filter=lfs diff=lfs merge=lfs -text
 Art/PlayerVisuals/Cockpit_Layout_v5/*.blend filter=lfs diff=lfs merge=lfs -text
+Content/RoadToF1/PlayerVisuals/CockpitLayoutV5/SK_CL5_DriverPOV.uasset filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVisuals/Cockpit_Layout_v5/Exports/SK_CL5_DriverPOV.fbx filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVisuals/Cockpit_Layout_v5/Kart_Cockpit_Layout_v5.blend filter=lfs diff=lfs merge=lfs -text

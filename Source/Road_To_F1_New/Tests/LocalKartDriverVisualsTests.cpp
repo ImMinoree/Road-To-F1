@@ -38,7 +38,7 @@ bool FKartLocalVisualOwnershipTest::RunTest(const FString&)
  TestTrue(TEXT("Second cockpit active with imported assets"),V2->IsFirstPersonActive());
  auto* Eye=First->FindComponentByClass<UCameraComponent>();
  TestTrue(TEXT("Target framing leaves full-steering viewport margin"),FMath::IsNearlyEqual(Eye->FieldOfView,95.f));
- TestTrue(TEXT("Eye remains 1.05m above ground and above the shoulders"),Eye->GetRelativeLocation().Equals(FVector(5,0,74),.01f));
+ TestTrue(TEXT("Eye remains 0.90m above ground and above lowered shoulders"),Eye->GetRelativeLocation().Equals(FVector(5,0,59),.01f));
  TestNull(TEXT("Remote pawn does not create first-person mesh"),VR->GetFirstPersonArms());
  TestNull(TEXT("NPC does not create first-person mesh"),VN->GetFirstPersonArms());
  if(USkeletalMeshComponent* Arms=V1->GetFirstPersonArms())
@@ -95,3 +95,4 @@ bool FKartLocalVisualOwnershipTest::RunTest(const FString&)
  return true;
 }
 #endif
+

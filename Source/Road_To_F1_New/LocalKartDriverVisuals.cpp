@@ -27,11 +27,11 @@ ULocalKartDriverVisuals::ULocalKartDriverVisuals()
  PrimaryComponentTick.TickGroup=TG_PostPhysics;
  SetIsReplicatedByDefault(false);
  SpeedBlurAsset=TSoftObjectPtr<UMaterialInterface>(FSoftObjectPath(TEXT("/Game/RoadToF1/SpeedEffects/M_KartPeripheralSpeed.M_KartPeripheralSpeed")));
- const FString Folder=TEXT("/Game/RoadToF1/PlayerVisuals/CockpitTargetV4/");
- ArmsAsset=TSoftObjectPtr<USkeletalMesh>(FSoftObjectPath(Folder+TEXT("SK_CT4_DriverPOV.SK_CT4_DriverPOV")));
- SteeringAsset=TSoftObjectPtr<UAnimSequence>(FSoftObjectPath(Folder+TEXT("A_CT4_Steering.A_CT4_Steering")));
- WheelAsset=TSoftObjectPtr<UStaticMesh>(FSoftObjectPath(Folder+TEXT("SM_CT4_SteeringWheel.SM_CT4_SteeringWheel")));
- ChassisAsset=TSoftObjectPtr<UStaticMesh>(FSoftObjectPath(Folder+TEXT("SM_CT4_PlayerChassis.SM_CT4_PlayerChassis")));
+ const FString Folder=TEXT("/Game/RoadToF1/PlayerVisuals/CockpitLayoutV5/");
+ ArmsAsset=TSoftObjectPtr<USkeletalMesh>(FSoftObjectPath(Folder+TEXT("SK_CL5_DriverPOV.SK_CL5_DriverPOV")));
+ SteeringAsset=TSoftObjectPtr<UAnimSequence>(FSoftObjectPath(Folder+TEXT("A_CL5_Steering.A_CL5_Steering")));
+ WheelAsset=TSoftObjectPtr<UStaticMesh>(FSoftObjectPath(Folder+TEXT("SM_CL5_SteeringWheel.SM_CL5_SteeringWheel")));
+ ChassisAsset=TSoftObjectPtr<UStaticMesh>(FSoftObjectPath(Folder+TEXT("SM_CL5_PlayerChassis.SM_CL5_PlayerChassis")));
  // Full-size source kart: ground at pawn Z-31. The local eye is configured separately below.
  // Arms, wheel, seat and chassis share one measured source coordinate system.
  CockpitVisualTransform=FTransform(FRotator::ZeroRotator,FVector(0,0,-31));
@@ -140,7 +140,7 @@ void ULocalKartDriverVisuals::ConfigureCockpitCamera(bool bActive)
  if(bActive && !bCameraAdjusted)
  {
   // Eye remains above the shoulders; look down into the cockpit without scaling the kart or wheel.
-  CockpitCamera->SetRelativeTransform(FTransform(FRotator(-22,0,0),FVector(5,0,74)));
+  CockpitCamera->SetRelativeTransform(FTransform(FRotator(-10,0,0),FVector(5,0,59)));
   CockpitCamera->SetFieldOfView(95.f);bCameraAdjusted=true;
  }
  else if(!bActive && bCameraAdjusted)
@@ -267,7 +267,7 @@ void ULocalKartDriverVisuals::TickComponent(float Dt,ELevelTick TickType,FActorC
   const bool Corner=Pose>=3;
   const FTransform RoadPose(FRotator(0,Corner?-47.06099f:-2.05271f,0),Corner?FVector(9034.8835,-1290.1299,31):FVector(-503.9471,21.3882,31));
   VisualRoot->SetWorldTransform(CockpitVisualTransform*RoadPose);
-  const FTransform Eye=bUsingLegacy?OriginalCameraTransform:FTransform(FRotator(-22,0,0),FVector(5,0,74));
+  const FTransform Eye=bUsingLegacy?OriginalCameraTransform:FTransform(FRotator(-10,0,0),FVector(5,0,59));
   CockpitCamera->SetWorldTransform(Eye*RoadPose);
  }
 #endif
@@ -304,7 +304,7 @@ void ULocalKartDriverVisuals::TickComponent(float Dt,ELevelTick TickType,FActorC
   const TCHAR* Names[]={TEXT("straight_center"),TEXT("straight_left"),TEXT("straight_right"),TEXT("corner_left"),TEXT("corner_right")};
   if(CaptureStage<5 && CaptureElapsed>Times[CaptureStage])
   {
-   const FString Dir=FPaths::ProjectDir()/(bTargetCapture?TEXT("Evidence/Cockpit_Target_v4"):(bWheelVisibilityCapture?TEXT("Evidence/Wheel_Visibility_v3"):TEXT("Evidence/Cockpit_Reference_v2")))/(bUsingLegacy?TEXT("Before"):TEXT("After"));
+   const FString Dir=FPaths::ProjectDir()/(bTargetCapture?TEXT("Evidence/Cockpit_Layout_v5"):(bWheelVisibilityCapture?TEXT("Evidence/Wheel_Visibility_v3"):TEXT("Evidence/Cockpit_Reference_v2")))/(bUsingLegacy?TEXT("Before"):TEXT("After"));
    IFileManager::Get().MakeDirectory(*Dir,true);FScreenshotRequest::RequestScreenshot(Dir/(FString(Names[CaptureStage])+TEXT(".png")),false,false);++CaptureStage;
   }
   if(CaptureElapsed>37.f)FPlatformMisc::RequestExit(false);
@@ -322,4 +322,5 @@ void ULocalKartDriverVisuals::EndPlay(const EEndPlayReason::Type Reason)
  if(Arms) Arms->DestroyComponent();if(Wheel) Wheel->DestroyComponent();if(Chassis) Chassis->DestroyComponent();if(VisualRoot) VisualRoot->DestroyComponent();
  Super::EndPlay(Reason);
 }
+
 
