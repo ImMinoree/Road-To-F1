@@ -1,3 +1,9 @@
+# Current ten-kart defaults
+
+Normal Play uses nine AI in slots 1–9 and the player in slot 10. All use the current articulated player kart, distinct kart/driver colors, and a shared 38 mph top speed. See [current validation](Evidence/TenKartGrid/README.md). Full ten-kart lap completion has not been validated.
+
+The four-opponent implementation and results below are historical; the older five-pawn validation scripts target that configuration.
+
 # Four track-edge opponents
 
 Normal Play in DesertKarting_Visual creates four additional ProofPawn racers in existing grid slots 2–5. The player keeps slot 1. There are no placed duplicate pawns, second game mode or additional countdown. RestartRaceStart stages the same participants again. The existing gate blocks all five karts until the authoritative lights-out event.
@@ -23,3 +29,4 @@ The final moving-player test completed two full laps for every opponent, all 64 
 The stationary-player test also passed at 30 Hz: all four opponents completed two laps, all 64 sectors, with zero measured edge excursions or pre-start movement. Two opponents each used three clearance-checked backoffs to get past the stopped player. The final rendered PIE run confirmed five pawns, four visible moving opponents, one authoritative start and unchanged map files. The three actual PIE PNG captures are 1600 by 900 and were decoded successfully. Both Unreal automation tests passed. Tools/verify_racing_ai.py checks these saved results and writes Evidence/RacingAI/validation_summary.json; it does not substitute for running Unreal.
 
 Passing is limited to sufficiently straight approaches. Stopped queues may back off only after a sustained stop and clearance checks for karts and static geometry behind them. These rules prevent a passing attempt into the tight hairpin and give a stuck leader room to recover. Collision still uses the existing small swept sphere; production chassis/contact physics and wheel spin/linkage animation remain outside this prototype.
+

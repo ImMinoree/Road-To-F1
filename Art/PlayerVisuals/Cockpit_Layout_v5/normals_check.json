@@ -1,0 +1,52 @@
+[
+  {
+    "part": "SK_Kart_Wheel_FL_Tire_Slick_Rubber",
+    "signed_volume": -0.009516667555778967,
+    "faces": 1728
+  },
+  {
+    "part": "SK_Kart_Wheel_FL_Tire_Molded_Sidewall",
+    "signed_volume": -0.00034829130783128003,
+    "faces": 3008
+  },
+  {
+    "part": "SK_Kart_Wheel_FL_Hub_Black_Anodised",
+    "signed_volume": 0.0028058481444319058,
+    "faces": 50
+  },
+  {
+    "part": "SK_Kart_Wheel_FL_Rim_Satin_Aluminium",
+    "signed_volume": -0.0003254610146521808,
+    "faces": 988
+  },
+  {
+    "part": "SK_Kart_Wheel_FL_Fastener_Stainless",
+    "signed_volume": -0.0003866904745845191,
+    "faces": 1360
+  },
+  {
+    "part": "SK_Kart_Wheel_FR_Tire_Slick_Rubber",
+    "signed_volume": -0.00951666688604094,
+    "faces": 1728
+  },
+  {
+    "part": "SK_Kart_Wheel_FR_Tire_Molded_Sidewall",
+    "signed_volume": -0.000348292559064817,
+    "faces": 3008
+  },
+  {
+    "part": "SK_Kart_Wheel_FR_Hub_Black_Anodised",
+    "signed_volume": 0.0028058506566756686,
+    "faces": 50
+  },
+  {
+    "part": "SK_Kart_Wheel_FR_Rim_Satin_Aluminium",
+    "signed_volume": -0.0003254647309307677,
+    "faces": 988
+  },
+  {
+    "part": "SK_Kart_Wheel_FR_Fastener_Stainless",
+    "signed_volume": -0.00038669039516189406,
+    "faces": 1360
+  }
+]

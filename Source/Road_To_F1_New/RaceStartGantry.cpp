@@ -1,5 +1,10 @@
 #include "RaceStartGantry.h"
 #include "ProofPawn.h"
+#include "RaceCountdownPresentation.h"
+#include "CanvasItem.h"
+#include "Fonts/SlateFontInfo.h"
+#include "Engine/Font.h"
+#include "UObject/ConstructorHelpers.h"
 #include "Components/SceneComponent.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/InstancedStaticMeshComponent.h"
@@ -30,10 +35,28 @@ void ARaceStartGantry::SetRedLightCount(int32 Count){
  for(int32 I=0;I<LensInstances.Num();++I)if(LensInstances[I])LensInstances[I]->SetScalarParameterValue(TEXT("Emission"),I<Count?LitEmission:.015f);
 }
 void ARaceStartGantry::PlayCue(bool bLightsOut){if(bEnableAudio)if(USoundBase* S=bLightsOut?LightsOutSound.Get():CountdownSound.Get())UGameplayStatics::PlaySound2D(this,S,.18f);}
+ARaceStartHUD::ARaceStartHUD(){
+ static ConstructorHelpers::FObjectFinder<UFont> Font(TEXT("/Engine/EngineFonts/Roboto.Roboto"));
+ CountdownFont=Font.Object;
+}
 void ARaceStartHUD::DrawHUD(){
  Super::DrawHUD();auto* GM=GetWorld()->GetAuthGameMode<AProofGameMode>();
- if(Canvas&&GM&&GM->bShowLightsOutCue&&GM->RaceStartWorldSeconds>=0&&GM->GetRaceElapsedSeconds()<1.1f){
-  const FString Text=TEXT("LIGHTS OUT");float W,H;GetTextSize(Text,W,H,GEngine->GetMediumFont(),1.2f);DrawText(Text,FLinearColor(.9f,.9f,.86f), (Canvas->SizeX-W)*.5f,Canvas->SizeY*.75f,GEngine->GetMediumFont(),1.2f);
- }
+ if(!Canvas||!GM||!GEngine||!CountdownFont||!GM->bShowLightsOutCue)return;
+ const bool Started=GM->RaceStartWorldSeconds>=0;
+ if(!Started&&(!GM->IsStartGateClosed()||GM->CountdownCueWorldSeconds<0))return;
+ const double Age=Started?GM->GetRaceElapsedSeconds():GetWorld()->GetTimeSeconds()-GM->CountdownCueWorldSeconds;
+ const double Duration=Started?1.1:FMath::Max(.1f,GM->RedLightCount==5?GM->AllRedHold:GM->RedInterval);
+ const auto Cue=RaceCountdownPresentation::Sample(GM->RedLightCount,Age,Duration,Started);
+ if(Cue.Alpha<=0)return;
+ const FString Text=Cue.Number==0?TEXT("START"):FString::FromInt(Cue.Number);
+ // Rasterize at the displayed size, rather than enlarging the small engine bitmap font.
+ const float FontPixels=FMath::Min(Canvas->SizeY*(Started?.12f:.24f),Canvas->SizeX*(Started?.18f:.72f));
+ // Canvas requires the UFont asset as well as the runtime typeface/size.
+ const FSlateFontInfo Font(CountdownFont.Get(),FMath::Max(12.f,FontPixels),TEXT("Bold"));
+ const FLinearColor Color=Started?FLinearColor(.16f,1.f,.38f,float(Cue.Alpha)):FLinearColor(1.f,.035f,.025f,float(Cue.Alpha));
+ FCanvasTextItem Item(FVector2D(Canvas->SizeX*.5f,Canvas->SizeY*.43f),FText::FromString(Text),Font,Color);
+ Item.Scale=FVector2D(Cue.Scale);Item.bCentreX=true;Item.bCentreY=true;
+ Item.bOutlined=true;Item.OutlineColor=FLinearColor(0,0,0,float(Cue.Alpha)*.65f);
+ Item.EnableShadow(FLinearColor(0,0,0,float(Cue.Alpha)*.45f),FVector2D(2,3));Canvas->DrawItem(Item);
 }
 

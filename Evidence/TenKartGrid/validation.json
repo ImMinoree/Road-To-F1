@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "actual_pie": true,
+  "kart_count": 10,
+  "ai_count": 9,
+  "player_grid_slot": 10,
+  "unique_kart_colors": 10,
+  "unique_driver_colors": 10,
+  "peak_mph_by_slot": {
+    "1": 38.00000048741837,
+    "2": 38.00000048741837,
+    "3": 38.00000048741837,
+    "4": 38.00000048741837,
+    "5": 38.00000048741837,
+    "6": 38.00000048741837,
+    "7": 38.00000048741837,
+    "8": 38.00000048741837,
+    "9": 38.00000048741837,
+    "10": 38.00000048741837
+  },
+  "shots": [
+    "01_ten_kart_grid",
+    "02_matching_ai_model",
+    "03_ten_karts_racing",
+    "04_shared_38mph_test"
+  ],
+  "maps_unchanged": true
+}

@@ -11,6 +11,7 @@
 #include "Components/TextRenderComponent.h"
 #include "Engine/LocalPlayer.h"
 #include "Engine/SkeletalMesh.h"
+#include "Engine/StaticMesh.h"
 #include "Engine/World.h"
 #include "GameFramework/Pawn.h"
 #include "GameFramework/PlayerController.h"
@@ -104,7 +105,7 @@ bool ULocalKartDriverVisuals::CreateLocalVisuals(UCameraComponent* Camera)
  Arms->SetAnimation(Sequence);Arms->SetPlayRate(0);Arms->SetPosition(Sequence->GetPlayLength()*.5f,false);
  Wheel=NewObject<UStaticMeshComponent>(Owner,TEXT("LocalOnlyCockpitWheel"),RF_Transient);
  Owner->AddInstanceComponent(Wheel);Wheel->SetupAttachment(VisualRoot);
- Wheel->SetStaticMesh(WheelMesh);Wheel->SetRelativeLocation(FVector(62,0,bUsingLegacy?70:67));
+ Wheel->SetStaticMesh(WheelMesh);Wheel->SetRelativeLocation(FVector(62,0,bUsingLegacy?70:52));
  Wheel->SetOnlyOwnerSee(true);Wheel->SetCastShadow(false);Wheel->SetVisibleInRayTracing(false);
  Wheel->SetCollisionEnabled(ECollisionEnabled::NoCollision);Wheel->SetGenerateOverlapEvents(false);
  Wheel->SetCanEverAffectNavigation(false);Wheel->SetIsReplicated(false);Wheel->RegisterComponent();
@@ -140,7 +141,7 @@ void ULocalKartDriverVisuals::ConfigureCockpitCamera(bool bActive)
  if(bActive && !bCameraAdjusted)
  {
   // Eye remains above the shoulders; look down into the cockpit without scaling the kart or wheel.
-  CockpitCamera->SetRelativeTransform(FTransform(FRotator(-10,0,0),FVector(5,0,59)));
+  CockpitCamera->SetRelativeTransform(FTransform(FRotator(-10,0,0),FVector(5,0,44)));
   CockpitCamera->SetFieldOfView(95.f);bCameraAdjusted=true;
  }
  else if(!bActive && bCameraAdjusted)
@@ -228,7 +229,8 @@ void ULocalKartDriverVisuals::UpdateSpeedCamera(float Dt)
  float PhysicalBuffeting=0;
  if(Pawn->bUseTireDynamics)if(const auto* Dynamics=Pawn->GetTireDynamics()){
   const auto& Slip=Dynamics->Telemetry;
-  PhysicalBuffeting=FMath::Clamp(FMath::Abs(Slip.LateralAccelerationG)*.25f+FMath::Max(0.f,FMath::Abs(Slip.RearSlipDegrees)-3.f)/15.f,0.f,1.f);
+  PhysicalBuffeting=FMath::Clamp(FMath::Abs(Slip.LateralAccelerationG)*.25f+FMath::Max(0.f,FMath::Abs(Slip.RearSlipDegrees)-3.f)/15.f+
+   FMath::Abs(Dynamics->VerticalAccelerationG)*.08f+Dynamics->LastContactImpulseNs/1000.f,0.f,1.f);
  }
  const float V=FMath::Clamp(Intensity*.35f+PhysicalBuffeting*.65f,0.f,1.f)*FMath::Clamp(SpeedVibrationScale,0.f,1.f);
  const double P=SpeedPhase*2*PI;
@@ -243,9 +245,14 @@ void ULocalKartDriverVisuals::UpdateSpeedCamera(float Dt)
  if(SpeedBlur)SpeedBlur->SetScalarParameterValue(TEXT("SpeedStrength"),Intensity*FMath::Clamp(PeripheralBlurScale,0.f,1.f));
 }
 
+void ULocalKartDriverVisuals::UseMechanicalCamera(UCameraComponent* Camera)
+{RestoreSpeedCamera();bMechanicalCamera=true;CockpitCamera=Camera;}
+
 void ULocalKartDriverVisuals::TickComponent(float Dt,ELevelTick TickType,FActorComponentTickFunction* ThisTickFunction)
 {
- Super::TickComponent(Dt,TickType,ThisTickFunction);RestoreSpeedCamera();RefreshVisibility();
+ Super::TickComponent(Dt,TickType,ThisTickFunction);RestoreSpeedCamera();
+ if(bMechanicalCamera){const auto* Pawn=Cast<AProofPawn>(GetOwner());bActiveForLocalPlayer=IsEligibleLocalHuman()&&Pawn&&!Pawn->IsThirdPersonView();UpdateSpeedCamera(Dt);return;}
+ RefreshVisibility();
  if(!bActiveForLocalPlayer){SpeedBlend=0;return;}
 #if !UE_BUILD_SHIPPING
  // Opt-in visual-only capture. Never writes steering input back to gameplay or moves the pawn.
@@ -267,7 +274,7 @@ void ULocalKartDriverVisuals::TickComponent(float Dt,ELevelTick TickType,FActorC
   const bool Corner=Pose>=3;
   const FTransform RoadPose(FRotator(0,Corner?-47.06099f:-2.05271f,0),Corner?FVector(9034.8835,-1290.1299,31):FVector(-503.9471,21.3882,31));
   VisualRoot->SetWorldTransform(CockpitVisualTransform*RoadPose);
-  const FTransform Eye=bUsingLegacy?OriginalCameraTransform:FTransform(FRotator(-10,0,0),FVector(5,0,59));
+  const FTransform Eye=bUsingLegacy?OriginalCameraTransform:FTransform(FRotator(-10,0,0),FVector(5,0,44));
   CockpitCamera->SetWorldTransform(Eye*RoadPose);
  }
 #endif
@@ -322,5 +329,7 @@ void ULocalKartDriverVisuals::EndPlay(const EEndPlayReason::Type Reason)
  if(Arms) Arms->DestroyComponent();if(Wheel) Wheel->DestroyComponent();if(Chassis) Chassis->DestroyComponent();if(VisualRoot) VisualRoot->DestroyComponent();
  Super::EndPlay(Reason);
 }
+
+
 
 

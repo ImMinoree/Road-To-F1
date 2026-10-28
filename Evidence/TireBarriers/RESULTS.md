@@ -1,0 +1,7 @@
+Created in Blender 5.2.2 and imported into the existing UE 5.8 project. Original tire preserved and backed up. Three editable 2.19 m modules each contain twelve hollow-profile 55 cm tires; five FBXs and six PBR texture maps are supplied. All five meshes have four LODs and one simple convex collision hull.
+
+144 HISM tires form two three-high outside-corner walls in DesertKarting_Visual. Source runoff clearance is at least 2.505 m to the tire centres (over 2.23 m to the tire surface). All 748 centre-route segments were swept before/after with a 60 cm sphere radius; no new obstruction or road-support difference. A horizontal barrier trace confirmed blocking collision. All 48 columns were fitted to live traced ground; 48 additional probes found no existing structure overlap. Existing actor transforms and collision-enabled settings match before/after. 41 protected nonvisual source/config/map files match their pre-task hashes.
+
+Actual images: tire_closeup.png and barrier_modules.png (Blender); unreal_barrier_detail.png (Unreal editor); driver_eye_corner.png (actual ProofPawn camera in stationary braked Play mode). The renders were visually inspected.
+
+Limits: rigid static barriers, filled-centre convex vehicle collision, no tire deformation or impact absorption. 13,120 triangles per close tire, reduced to 35%, 12% and 4% in subsequent LODs. No complete driven lap or full-race performance certification. Earlier failed commandlet/API attempts are retained in logs and superseded error files; validation.json is the accepted result. No commit or push.

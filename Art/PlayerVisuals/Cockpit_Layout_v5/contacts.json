@@ -2,34 +2,31 @@
   {
     "frame": 1,
     "leg_chassis_triangle_pairs": {
-      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 352,
-      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 465,
-      "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 393,
-      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 568,
-      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 250,
-      "SK_Kart_Steering_Rod_End_Joints_Frame_Brushed_Chromoly": 602
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 1042,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 606,
+      "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 698,
+      "SK_Kart_Chassis_MainFrame_Frame_Brushed_Chromoly": 160,
+      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 612
     }
   },
   {
     "frame": 25,
     "leg_chassis_triangle_pairs": {
-      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 352,
-      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 465,
-      "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 393,
-      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 568,
-      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 250,
-      "SK_Kart_Steering_Rod_End_Joints_Frame_Brushed_Chromoly": 602
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 1042,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 606,
+      "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 698,
+      "SK_Kart_Chassis_MainFrame_Frame_Brushed_Chromoly": 160,
+      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 612
     }
   },
   {
     "frame": 49,
     "leg_chassis_triangle_pairs": {
-      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 352,
-      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 465,
-      "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 393,
-      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 568,
-      "SK_Kart_Chassis_MainFrame_Chassis_Powder_Black": 250,
-      "SK_Kart_Steering_Rod_End_Joints_Frame_Brushed_Chromoly": 602
+      "SK_Kart_Seat_Sculpted_Tub_Seat_Moulded_Polymer": 1042,
+      "SK_Kart_Seat_Texture_And_Mounts_Rubber_Grip": 606,
+      "SK_Kart_Seat_Sculpted_Tub_Chassis_Powder_Black": 698,
+      "SK_Kart_Chassis_MainFrame_Frame_Brushed_Chromoly": 160,
+      "SK_Kart_Axles_Steering_And_Hardware_Frame_Brushed_Chromoly": 612
     }
   }
 ]

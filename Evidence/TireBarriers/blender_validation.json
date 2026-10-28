@@ -1,0 +1,31 @@
+{
+  "blend_reopened": true,
+  "tire_dimensions_m": [
+    0.5499781370162964,
+    0.5499781370162964,
+    0.18400000035762787
+  ],
+  "nonmanifold_edges": 0,
+  "uv_layers": 1,
+  "module_individual_tires": {
+    "Module_Alternating": 12,
+    "Module_Black": 12,
+    "Module_Mixed": 12
+  },
+  "fbx": {
+    "SM_TB_Module_Alternating.fbx": 2800748,
+    "SM_TB_Module_Black.fbx": 2798284,
+    "SM_TB_Module_Mixed.fbx": 2800684,
+    "SM_TB_Tire_Black.fbx": 248060,
+    "SM_TB_Tire_Red.fbx": 248044
+  },
+  "fbx_roundtrip": {
+    "individual_tires": 12,
+    "bounds_m": [
+      2.191200017929077,
+      0.553412914276123,
+      0.5519999861717224
+    ],
+    "bottom_z_m": 0.0010000000474974513
+  }
+}

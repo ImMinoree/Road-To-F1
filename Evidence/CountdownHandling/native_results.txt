@@ -1,0 +1,6 @@
+case=0 old_peak_beta=89.611 new_peak_beta=0.292 new_end_beta=0.000 new_end_yaw=0.000 speed=5.392 bounded=1
+case=1 old_peak_beta=3.025 new_peak_beta=0.138 new_end_beta=0.000 new_end_yaw=0.000 speed=6.483 bounded=1
+case=2 old_peak_beta=0.346 new_peak_beta=0.126 new_end_beta=0.000 new_end_yaw=0.000 speed=4.045 bounded=1
+case=3 old_peak_beta=89.602 new_peak_beta=2.696 new_end_beta=0.000 new_end_yaw=0.000 speed=5.257 bounded=1
+case=4 old_peak_beta=6.743 new_peak_beta=6.523 new_end_beta=0.000 new_end_yaw=0.000 speed=4.039 bounded=1
+PASS: countdown ordering/fade endpoints, bounded tire forces and recoverable corner/brake/surface scenarios

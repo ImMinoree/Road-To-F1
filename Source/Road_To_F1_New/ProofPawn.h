@@ -3,16 +3,19 @@
 #include "GameFramework/Pawn.h"
 #include "GameFramework/GameModeBase.h"
 #include "ProofPawn.generated.h"
-class UCameraComponent; class USphereComponent; class ARaceStartGantry; class AGridStartSlot; class ULocalKartDriverVisuals; class UTrackRacingAI; class UKartSurfaceFX; class UKartTireDynamics;
+class UKartMechanicalVisuals; class UCameraComponent; class UBoxComponent; class ARaceStartGantry; class AGridStartSlot; class ULocalKartDriverVisuals; class UTrackRacingAI; class UKartSurfaceFX; class UKartTireDynamics;
+class USpringArmComponent; class UStaticMeshComponent; class USkeletalMeshComponent;
 UENUM(BlueprintType)
 enum class ERaceStartPhase : uint8 { PreGrid, Countdown, AllRed, LightsOut, Racing };
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FRaceLightsOutEvent,double,StartWorldSeconds);
-// Custom planar tire forces with swept collision and traced road support.
+// Fixed-step tire forces with Unreal swept collision; legacy movement is an explicit fallback.
 UCLASS()
 class ROAD_TO_F1_NEW_API AProofPawn : public APawn {
  GENERATED_BODY()
 public:
  AProofPawn();
+ UFUNCTION(BlueprintCallable,Category="Kart camera") void ToggleCameraView();
+ UFUNCTION(BlueprintPure,Category="Kart camera") bool IsThirdPersonView()const{return bThirdPersonView;}
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart grid",meta=(ClampMin="0",ClampMax="20")) int32 PreferredGridPosition=0;
  UPROPERTY(BlueprintReadOnly,Category="Kart grid") int32 AssignedGridPosition=0;
  virtual void Tick(float DeltaSeconds) override;
@@ -21,7 +24,9 @@ public:
  void ConfigureRacingAI(int32 GridPosition);
  void SetAutonomousInput(float InThrottle,float InSteer);
  void SetRacingDiagnosticInput(float InThrottle,float InSteer);
- float GetDrivingSpeed() const {return Speed;}
+ float GetDrivingSpeed() const;
+ float GetVisualThrottle() const { return Throttle; }
+ float GetVisualBrake() const { return bBrakeHeld?1.f:0.f; }
  virtual FVector GetVelocity()const override;
  UKartTireDynamics* GetTireDynamics()const{return TireDynamics;}
  float GetSteeringVisualInput()const;
@@ -35,8 +40,17 @@ public:
  float GetMaximumSteeringCurvature() const;
  UPROPERTY(BlueprintReadOnly,Category="Racing AI") bool bRacingAI=false;
 private:
- UPROPERTY() USphereComponent* Body;
+ UPROPERTY() UBoxComponent* Body;
  UPROPERTY() UCameraComponent* Camera;
+ UPROPERTY(VisibleAnywhere,Category="Kart camera") TObjectPtr<USpringArmComponent> ChaseArm;
+ UPROPERTY(VisibleAnywhere,Category="Kart camera") TObjectPtr<UCameraComponent> ChaseCamera;
+ UPROPERTY(Transient) TObjectPtr<UStaticMeshComponent> ExteriorChassis;
+ UPROPERTY(Transient) TObjectPtr<USkeletalMeshComponent> ExteriorDriver;
+ UPROPERTY(Transient) TObjectPtr<UStaticMeshComponent> ExteriorWheel;
+ bool bThirdPersonView=false;
+ bool CreateExteriorVisuals();
+ void UpdateExteriorSteering();
+ UPROPERTY(VisibleAnywhere,Category="Player visuals") TObjectPtr<UKartMechanicalVisuals> MechanicalVisuals;
  UPROPERTY(VisibleAnywhere,Category="Player visuals") TObjectPtr<ULocalKartDriverVisuals> LocalDriverVisuals;
  UPROPERTY(VisibleAnywhere,Category="Surface effects") TObjectPtr<UKartSurfaceFX> SurfaceFX;
  UPROPERTY(VisibleAnywhere,BlueprintReadOnly,Category="Kart dynamics",meta=(AllowPrivateAccess="true")) TObjectPtr<UKartTireDynamics> TireDynamics;
@@ -73,6 +87,7 @@ public:
  UPROPERTY(BlueprintReadOnly,Category="Race start") ERaceStartPhase RacePhase=ERaceStartPhase::PreGrid;
  UPROPERTY(BlueprintReadOnly,Category="Race start") int32 RedLightCount=0;
  UPROPERTY(BlueprintReadOnly,Category="Race start") double RaceStartWorldSeconds=-1;
+ double CountdownCueWorldSeconds=-1; // Latest authoritative RED_ON timestamp, for the local HUD fade.
  UPROPERTY(BlueprintReadOnly,Category="Race start") int32 StartEventCount=0;
  UPROPERTY(BlueprintAssignable,Category="Race start") FRaceLightsOutEvent OnLightsOut;
  UPROPERTY(BlueprintReadOnly,Category="Kart grid") int32 StagedParticipantCount=0;
@@ -97,5 +112,6 @@ private:
  void WaitForGrid(); void AddRed(); void ReleaseRace(); void EnterRacing();
  void Record(const TCHAR* Event); void Capture(const TCHAR* Name); void TestAfterRelease();
 };
+
 
 

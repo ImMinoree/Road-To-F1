@@ -1,4 +1,6 @@
 #include "ProofPawn.h"
+#include "KartMechanicalVisuals.h"
+#include "KartRaceSettings.h"
 #include "KartSurfaceFX.h"
 #include "KartTireDynamics.h"
 #include "LocalKartDriverVisuals.h"
@@ -12,7 +14,13 @@
 #include "UnrealClient.h"
 #include "HAL/FileManager.h"
 #include "Camera/CameraComponent.h"
-#include "Components/SphereComponent.h"
+#include "GameFramework/SpringArmComponent.h"
+#include "Components/StaticMeshComponent.h"
+#include "Components/SkeletalMeshComponent.h"
+#include "Engine/StaticMesh.h"
+#include "Engine/SkeletalMesh.h"
+#include "Animation/AnimSequence.h"
+#include "Components/BoxComponent.h"
 #include "Components/InputComponent.h"
 #include "Modules/ModuleManager.h"
 #include "Engine/World.h"
@@ -24,12 +32,22 @@
 #include "HAL/PlatformMisc.h"
 AProofPawn::AProofPawn(){
  PrimaryActorTick.bCanEverTick=true;
- Body=CreateDefaultSubobject<USphereComponent>(TEXT("Collision")); RootComponent=Body;
- Body->InitSphereRadius(28); Body->SetCollisionProfileName(TEXT("Pawn"));
+ Body=CreateDefaultSubobject<UBoxComponent>(TEXT("Collision")); RootComponent=Body;
+ Body->InitBoxExtent(FVector(90,60,16)); Body->SetCollisionProfileName(TEXT("Pawn"));
  Camera=CreateDefaultSubobject<UCameraComponent>(TEXT("DriverEye")); Camera->SetupAttachment(Body);
  Camera->SetRelativeLocation(FVector(0,0,64)); Camera->SetFieldOfView(90);
  Camera->SetRelativeRotation(FRotator(-4,0,0));
  Camera->PostProcessSettings.bOverride_MotionBlurAmount=true;Camera->PostProcessSettings.MotionBlurAmount=0;
+ ChaseArm=CreateDefaultSubobject<USpringArmComponent>(TEXT("ChaseArm"));ChaseArm->SetupAttachment(Body);
+ ChaseArm->SetRelativeLocation(FVector(0,0,100));ChaseArm->SetRelativeRotation(FRotator(-14,0,0));
+ ChaseArm->TargetArmLength=360.f;ChaseArm->ProbeSize=15.f;ChaseArm->bDoCollisionTest=true;
+ ChaseArm->bUsePawnControlRotation=false;ChaseArm->bEnableCameraLag=false;
+ ChaseArm->bEnableCameraRotationLag=true;ChaseArm->CameraRotationLagSpeed=16.f;ChaseArm->bUseCameraLagSubstepping=true;ChaseArm->CameraLagMaxTimeStep=1.f/120.f;
+ ChaseArm->PrimaryComponentTick.TickGroup=TG_PostPhysics;ChaseArm->AddTickPrerequisiteActor(this);
+ ChaseCamera=CreateDefaultSubobject<UCameraComponent>(TEXT("ChaseCamera"));ChaseCamera->SetupAttachment(ChaseArm,USpringArmComponent::SocketName);
+ ChaseCamera->SetFieldOfView(85.f);ChaseCamera->SetAutoActivate(false);
+ ChaseCamera->PostProcessSettings.bOverride_MotionBlurAmount=true;ChaseCamera->PostProcessSettings.MotionBlurAmount=0;
+ MechanicalVisuals=CreateDefaultSubobject<UKartMechanicalVisuals>(TEXT("MechanicalVisuals"));
  LocalDriverVisuals=CreateDefaultSubobject<ULocalKartDriverVisuals>(TEXT("LocalDriverVisuals"));
  SurfaceFX=CreateDefaultSubobject<UKartSurfaceFX>(TEXT("RearTireSurfaceFX"));
  TireDynamics=CreateDefaultSubobject<UKartTireDynamics>(TEXT("TireDynamics"));
@@ -40,8 +58,45 @@ void AProofPawn::SetupPlayerInputComponent(UInputComponent* I){
  Super::SetupPlayerInputComponent(I); I->BindAxis("Throttle",this,&AProofPawn::Drive);
  I->BindAxis("Steer",this,&AProofPawn::Turn); I->BindAction("Reset",IE_Pressed,this,&AProofPawn::Reset);
  I->BindAction("Brake",IE_Pressed,this,&AProofPawn::BrakePressed);I->BindAction("Brake",IE_Released,this,&AProofPawn::BrakeReleased);
+ I->BindAction("ToggleCamera",IE_Pressed,this,&AProofPawn::ToggleCameraView);
+}
+bool AProofPawn::CreateExteriorVisuals(){
+ if(ExteriorChassis)return true;
+ const FString FP=TEXT("/Game/RoadToF1/PlayerVisuals/FirstPerson/");
+ auto* ChassisMesh=LoadObject<UStaticMesh>(nullptr,*(FP+TEXT("SM_PlayerKartChassis.SM_PlayerKartChassis")));
+ auto* DriverMesh=LoadObject<USkeletalMesh>(nullptr,TEXT("/Game/RoadToF1/RacingAI/SK_AI_KartDriver.SK_AI_KartDriver"));
+ auto* WheelMesh=LoadObject<UStaticMesh>(nullptr,*(FP+TEXT("SM_FP_SteeringWheel.SM_FP_SteeringWheel")));
+ auto* Sequence=LoadObject<UAnimSequence>(nullptr,*(FP+TEXT("A_FP_KartSteering.A_FP_KartSteering")));
+ if(!ChassisMesh||!DriverMesh||!WheelMesh||!Sequence){UE_LOG(LogTemp,Warning,TEXT("Chase camera: existing exterior kart assets unavailable"));return false;}
+ ExteriorChassis=NewObject<UStaticMeshComponent>(this,TEXT("PlayerExteriorChassis"));AddInstanceComponent(ExteriorChassis);ExteriorChassis->SetupAttachment(Body);
+ ExteriorChassis->SetRelativeLocation(FVector(0,0,-31));ExteriorChassis->SetStaticMesh(ChassisMesh);
+ ExteriorDriver=NewObject<USkeletalMeshComponent>(this,TEXT("PlayerExteriorDriver"));AddInstanceComponent(ExteriorDriver);ExteriorDriver->SetupAttachment(ExteriorChassis);
+ ExteriorDriver->SetSkeletalMeshAsset(DriverMesh);ExteriorDriver->SetAnimationMode(EAnimationMode::AnimationSingleNode);
+ ExteriorWheel=NewObject<UStaticMeshComponent>(this,TEXT("PlayerExteriorWheel"));AddInstanceComponent(ExteriorWheel);ExteriorWheel->SetupAttachment(ExteriorChassis);
+ ExteriorWheel->SetRelativeLocation(FVector(62,0,70));ExteriorWheel->SetStaticMesh(WheelMesh);
+ for(UMeshComponent* Mesh:{static_cast<UMeshComponent*>(ExteriorChassis.Get()),static_cast<UMeshComponent*>(ExteriorDriver.Get()),static_cast<UMeshComponent*>(ExteriorWheel.Get())}){
+  Mesh->SetCollisionEnabled(ECollisionEnabled::NoCollision);Mesh->SetGenerateOverlapEvents(false);Mesh->SetCanEverAffectNavigation(false);Mesh->RegisterComponent();
+ }
+ ExteriorDriver->SetAnimation(Sequence);ExteriorDriver->SetPlayRate(0);UpdateExteriorSteering();
+ return true;
+}
+void AProofPawn::ToggleCameraView(){
+ if(!IsLocallyControlled()||bRacingAI)return;
+ if(MechanicalVisuals&&MechanicalVisuals->bReady){bThirdPersonView=!bThirdPersonView;Camera->SetActive(!bThirdPersonView);ChaseCamera->SetActive(bThirdPersonView);return;}
+ if(!bThirdPersonView&&!CreateExteriorVisuals())return;
+ bThirdPersonView=!bThirdPersonView;
+ LocalDriverVisuals->SetCockpitEnabled(!bThirdPersonView);
+ Camera->SetActive(!bThirdPersonView);ChaseCamera->SetActive(bThirdPersonView);
+ if(ExteriorChassis)ExteriorChassis->SetVisibility(bThirdPersonView,true);
+ if(ExteriorDriver)ExteriorDriver->SetComponentTickEnabled(bThirdPersonView);
+}
+void AProofPawn::UpdateExteriorSteering(){
+ const float Input=GetSteeringVisualInput();
+ if(ExteriorDriver)if(auto* Anim=Cast<UAnimSequence>(ExteriorDriver->AnimationData.AnimToPlay))ExteriorDriver->SetPosition((Input+1.f)*.5f*Anim->GetPlayLength(),false);
+ if(ExteriorWheel)ExteriorWheel->SetRelativeRotation(FRotator(0,0,Input*25.f));
 }
 void AProofPawn::StageForRace(const FTransform& T){SetActorTransform(T,false,nullptr,ETeleportType::TeleportPhysics);Speed=0;if(TireDynamics)TireDynamics->ResetMotion();}
+float AProofPawn::GetDrivingSpeed()const{return bUseTireDynamics&&TireDynamics?TireDynamics->GetForwardSpeedCm():Speed;}
 FVector AProofPawn::GetVelocity()const{return bUseTireDynamics&&TireDynamics?TireDynamics->GetWorldVelocity():GetActorForwardVector()*Speed;}
 float AProofPawn::GetMaximumSteeringCurvature()const{return bUseTireDynamics&&TireDynamics?TireDynamics->GetMaximumCurvatureCm():FMath::DegreesToRadians(GetSteeringYawRate())/1600.f;}
 float AProofPawn::SteeringForCurvature(float K)const{return bUseTireDynamics&&TireDynamics?TireDynamics->SteeringForCurvature(K):FMath::Clamp(K/GetMaximumSteeringCurvature(),-1.f,1.f);}
@@ -84,10 +139,13 @@ void AProofPawn::Tick(float Dt){
  if(bKartTestInputActive){Throttle=KartTestThrottle;Steer=KartTestSteering;bBrakeHeld=bKartTestBrake;}
 #endif
  TickIntegrationEvidence();
+ 
  LocalDriverVisuals->SetSteeringInput(Steer);
- if(auto* GM=GetWorld()->GetAuthGameMode<AProofGameMode>())if(GM->IsStartGateClosed()){Speed=0;if(bUseTireDynamics){TireDynamics->HoldForStart(FrameDt,Steer);LocalDriverVisuals->SetSteeringInput(GetSteeringVisualInput());}return;}
- if(bUseTireDynamics){TireDynamics->Simulate(FrameDt,Throttle,Steer,bBrakeHeld);Speed=TireDynamics->GetForwardSpeedCm();LocalDriverVisuals->SetSteeringInput(GetSteeringVisualInput());return;}
- Speed=FMath::Clamp(Speed+(Throttle*430.f-Speed*0.32f)*Dt,-350.f,1600.f);
+ if(auto* GM=GetWorld()->GetAuthGameMode<AProofGameMode>())if(GM->IsStartGateClosed()){Speed=0;if(bUseTireDynamics){TireDynamics->HoldForStart(FrameDt,Steer);LocalDriverVisuals->SetSteeringInput(GetSteeringVisualInput());}if(bThirdPersonView)UpdateExteriorSteering();return;}
+ if(bUseTireDynamics){TireDynamics->Simulate(FrameDt,Throttle,Steer,bBrakeHeld);Speed=TireDynamics->GetForwardSpeedCm();LocalDriverVisuals->SetSteeringInput(GetSteeringVisualInput());if(bThirdPersonView)UpdateExteriorSteering();return;}
+ if(bThirdPersonView)UpdateExteriorSteering();
+ if(bBrakeHeld)Speed=FMath::FInterpConstantTo(Speed,0.f,Dt,550.f);
+ else Speed=FMath::Clamp(Speed+(Throttle*600.f-Speed*0.32f)*Dt,-350.f,float(KartRace::TopSpeedCmps));
  AddActorWorldRotation(FRotator(0,Steer*Speed/1600.f*GetSteeringYawRate()*Dt,0));
  FHitResult Hit; AddActorWorldOffset(GetActorForwardVector()*Speed*Dt,true,&Hit); if(Hit.bBlockingHit) Speed=0;
  FVector P=GetActorLocation(); FCollisionQueryParams Q;Q.AddIgnoredActor(this);
@@ -120,6 +178,8 @@ AActor* AProofGameMode::ChoosePlayerStart_Implementation(AController* Player){
  if(Slots.Num()){
   if(const int32* Number=ControllerGridSlots.Find(Player))for(auto* Slot:Slots)if(Slot->PositionNumber==*Number)return Slot;
   TSet<int32> Used;for(const auto& E:ControllerGridSlots)if(E.Key.IsValid())Used.Add(E.Value);for(const auto& E:GridAssignments)if(E.Key.IsValid())Used.Add(E.Value);
+  if(GetWorld()->GetMapName().Contains(TEXT("DesertKarting"))&&!FParse::Param(FCommandLine::Get(),TEXT("Grid20Test"))&&!Used.Contains(KartRace::PlayerGridPosition))
+   for(auto* Slot:Slots)if(Slot->PositionNumber==KartRace::PlayerGridPosition){ControllerGridSlots.Add(Player,Slot->PositionNumber);return Slot;}
   for(auto* Slot:Slots)if(!Used.Contains(Slot->PositionNumber)){ControllerGridSlots.Add(Player,Slot->PositionNumber);return Slot;}
   return nullptr;
  }
@@ -144,7 +204,7 @@ float AProofGameMode::GetRaceElapsedSeconds() const{return RaceStartWorldSeconds
 void AProofGameMode::RestartRaceStart(){
  if(!bStartEnabled)return;
  RacingAI->ResetRace();
- GetWorldTimerManager().ClearAllTimersForObject(this);RacePhase=ERaceStartPhase::PreGrid;RedLightCount=0;RaceStartWorldSeconds=-1;StartEventCount=0;++TestEpoch;
+ GetWorldTimerManager().ClearAllTimersForObject(this);RacePhase=ERaceStartPhase::PreGrid;RedLightCount=0;RaceStartWorldSeconds=-1;CountdownCueWorldSeconds=-1;StartEventCount=0;++TestEpoch;
  if(IsValid(Gantry))Gantry->SetRedLightCount(0);else UE_LOG(LogTemp,Warning,TEXT("RACE_START: missing display; authoritative timer remains active"));
  StageGridParticipants();
  Record(TEXT("PRE_GRID"));GetWorldTimerManager().SetTimer(ReadyTimer,this,&AProofGameMode::WaitForGrid,.1f,true);
@@ -161,6 +221,7 @@ void AProofGameMode::WaitForGrid(){
 void AProofGameMode::AddRed(){
  if(RaceStartWorldSeconds>=0)return;
  RacePhase=ERaceStartPhase::Countdown;RedLightCount=FMath::Min(5,RedLightCount+1);
+ CountdownCueWorldSeconds=GetWorld()->GetTimeSeconds();
  if(IsValid(Gantry)){Gantry->SetRedLightCount(RedLightCount);Gantry->PlayCue(false);}Record(TEXT("RED_ON"));
  if(RedLightCount==5){RacePhase=ERaceStartPhase::AllRed;Record(TEXT("ALL_RED"));GetWorldTimerManager().SetTimer(SequenceTimer,this,&AProofGameMode::ReleaseRace,FMath::Max(.1f,AllRedHold),false);if(bTesting&&TestEpoch==1)GetWorldTimerManager().SetTimer(TestCaptureTimer,FTimerDelegate::CreateWeakLambda(this,[this](){Capture(TEXT("AllRed"));}),.35f,false);}
  else GetWorldTimerManager().SetTimer(SequenceTimer,this,&AProofGameMode::AddRed,FMath::Max(.1f,RedInterval),false);
@@ -234,3 +295,4 @@ bool AProofGameMode::StageGridParticipants(){
 }
 
 FString AProofGameMode::StartEvidenceDirectory() const{return FPaths::ProjectDir()/ (FParse::Param(FCommandLine::Get(),TEXT("Grid20Test"))?TEXT("Evidence/Grid20"):TEXT("Evidence/RaceStart"));}
+

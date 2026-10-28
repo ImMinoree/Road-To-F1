@@ -3,7 +3,7 @@
 #include "Components/ActorComponent.h"
 #include "KartTireModel.h"
 #include "KartTireDynamics.generated.h"
-class USoundBase;class UAudioComponent;
+class USoundBase;class UAudioComponent;struct FHitResult;
 UENUM(BlueprintType)
 enum class EKartGripSurface:uint8 { Asphalt,Curb,Grass,Dirt,Unknown,Airborne };
 
@@ -61,20 +61,27 @@ public:
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart dynamics") float CGToFrontAxleM=.60f;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart dynamics") float TrackWidthM=1.06f;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart dynamics") float CGHeightM=.28f;
- UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart tires") float FrontCorneringStiffness=15000;
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart tires") float FrontCorneringStiffness=12000;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart tires") float RearCorneringStiffness=21000;
- UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart tires") float RearGripScale=1.10f;
- UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart tires") float SlidingGripDrop=.12f;
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart tires") float RearGripScale=1.20f;
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart tires") float SlidingGripDrop=.06f;
+ /** Beginner-friendly rear torque modulation; zero restores unassisted combined-grip behavior. */
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart tires",meta=(ClampMin="0",ClampMax="0.95")) float RearLateralGripReserve=.95f;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart tires") float RelaxationLengthM=.18f;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart tires") float RearAxleScrub=8;
- UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart power") float EngineForceN=710;
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart power") float EngineForceN=1000;
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart power",meta=(ClampMin="1",ClampMax="100",Units="mph")) float MaximumForwardSpeedMph=38;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart power") float BrakeForceN=550;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart power",meta=(ClampMin="0",ClampMax="1")) float RearBrakeBias=1;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart power") float LinearDragPerSecond=.32f;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart power") float RollingResistanceN=15;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart steering") float MaximumSteeringDegrees=24;
- UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart steering") float SteeringRateRadPerSecond=3.2f;
- UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart steering") float HighSpeedSteeringReduction=.45f;
+ // Gentler keyboard turn-in, retaining full low-speed lock for the circuit's tight bends.
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart steering") float SteeringRateRadPerSecond=2.f;
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart steering") float HighSpeedSteeringReduction=.75f;
+ /** Curvature request envelope for digital steering; not a physical cap on lateral acceleration. */
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart steering",meta=(ClampMin="0",ClampMax="1.5")) float SteeringLateralAccelerationG=.85f;
+ UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart steering",meta=(ClampMin="0",ClampMax="0.5")) float SteeringResponseSeconds=.16f;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart surfaces") float AsphaltGrip=1.05f;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart surfaces") float CurbGrip=.85f;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Kart surfaces") float GrassGrip=.48f;
@@ -91,15 +98,25 @@ public:
  UPROPERTY(BlueprintReadOnly,Category="Kart diagnostics") float DroppedSimulationSeconds=0;
  UPROPERTY(BlueprintReadOnly,Category="Kart diagnostics") int32 CollisionCount=0;
  UPROPERTY(BlueprintReadOnly,Category="Kart diagnostics") int32 StepCount=0;
+ UPROPERTY(BlueprintReadOnly,Category="Kart diagnostics") float LastContactImpulseNs=0;
+ UPROPERTY(BlueprintReadOnly,Category="Kart diagnostics") float MaximumContactImpulseNs=0;
+ UPROPERTY(BlueprintReadOnly,Category="Kart diagnostics") float MaximumPenetrationCm=0;
+ UPROPERTY(BlueprintReadOnly,Category="Kart diagnostics") float VerticalAccelerationG=0;
+ /** Critically damped support, not an instantaneous road-height constraint. */
+ UPROPERTY(EditAnywhere,Category="Kart contact",meta=(ClampMin="10",ClampMax="40")) float GroundResponseRadPerSecond=24;
+ UPROPERTY(EditAnywhere,Category="Kart contact",meta=(ClampMin="0",ClampMax=".2")) float ContactRestitution=.05f;
+ UPROPERTY(EditAnywhere,Category="Kart contact",meta=(ClampMin="0",ClampMax="1")) float ContactFriction=.35f;
 private:
  KartDynamics::State State;
  KartDynamics::Contact Contact;
  double Accumulator=0,VerticalSpeed=0,LogClock=0,FlushClock=0;
  bool bHasGround=false;
  float GroundHeight=0;
+ FVector GroundNormal=FVector::UpVector;
  FString LogPath,LogRows;
  UPROPERTY(Transient) TObjectPtr<UAudioComponent> ScrubAudio;
  void ProbeGround();
  void Publish();
  void WriteLog(float Dt);
+ void ResolveHit(const FHitResult& Hit);
 };

@@ -1,0 +1,64 @@
+{
+  "verified": true,
+  "automation_suites": 7,
+  "automation_failures": 0,
+  "automation_warning_suites": 1,
+  "contact_final_passed": true,
+  "moving_and_stationary_player_ai_races_passed": true,
+  "maps_unchanged": true,
+  "original_physics_sources_unchanged": true,
+  "screenshots": [
+    {
+      "file": "chase_recovery00000.png",
+      "width": 2547,
+      "height": 1270,
+      "bytes": 4317231
+    },
+    {
+      "file": "cockpit_return00000.png",
+      "width": 2547,
+      "height": 1270,
+      "bytes": 3985308
+    },
+    {
+      "file": "dirt00000.png",
+      "width": 2547,
+      "height": 1270,
+      "bytes": 4040946
+    },
+    {
+      "file": "grid00000.png",
+      "width": 2547,
+      "height": 1270,
+      "bytes": 4813794
+    },
+    {
+      "file": "launch00000.png",
+      "width": 2547,
+      "height": 1270,
+      "bytes": 4476784
+    },
+    {
+      "file": "rear_slide00000.png",
+      "width": 2547,
+      "height": 1270,
+      "bytes": 4120522
+    },
+    {
+      "file": "recovered00000.png",
+      "width": 2547,
+      "height": 1270,
+      "bytes": 4018097
+    }
+  ],
+  "contact_metrics": {
+    "rear_contact_impulse_ns": 563.0657,
+    "side_contact_impulse_ns": 584.9713,
+    "barrier_entry_mps": 12.5815,
+    "barrier_impulse_ns": 2179.8853,
+    "kerb_peak_z_cm": 38.2857,
+    "maximum_vertical_step_cm": 0.3061,
+    "max_penetration_cm": 0.0,
+    "frame_group_position_error_cm": 0.0
+  }
+}

@@ -3,7 +3,7 @@
 #include "GameFramework/Actor.h"
 #include "GameFramework/HUD.h"
 #include "RaceStartGantry.generated.h"
-class UStaticMesh; class UMaterialInterface; class UMaterialInstanceDynamic;
+class UStaticMesh; class UMaterialInterface; class UMaterialInstanceDynamic; class UFont;
 class UStaticMeshComponent; class UInstancedStaticMeshComponent; class USoundBase;
 UCLASS()
 class ROAD_TO_F1_NEW_API ARaceStartGantry : public AActor {
@@ -33,5 +33,9 @@ private:
 UCLASS()
 class ROAD_TO_F1_NEW_API ARaceStartHUD : public AHUD {
  GENERATED_BODY()
-public: virtual void DrawHUD() override;
+public:
+ ARaceStartHUD();
+ virtual void DrawHUD() override;
+private:
+ UPROPERTY() TObjectPtr<UFont> CountdownFont;
 };

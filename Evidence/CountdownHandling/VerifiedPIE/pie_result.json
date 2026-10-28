@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "actual_pie": true,
+  "map_files_unchanged": true,
+  "numbers": [
+    5,
+    4,
+    3,
+    2,
+    1
+  ],
+  "screenshots": [
+    "fade_in_5",
+    "countdown_5",
+    "fade_out_5",
+    "countdown_4",
+    "countdown_3",
+    "countdown_2",
+    "countdown_1",
+    "start",
+    "handling_left",
+    "handling_right",
+    "brake_corner",
+    "restart_pregrid",
+    "restart_5"
+  ],
+  "max_beta_degrees": 2.6268386840820312,
+  "held_throttle_blocked": true,
+  "released": true,
+  "dirt_transition": true,
+  "recoveries_checked": 2,
+  "error": null
+}

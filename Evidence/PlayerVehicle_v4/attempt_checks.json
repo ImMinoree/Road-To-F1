@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "A": true,
+    "B": true,
+    "C": true,
+    "D": true,
+    "L": true,
+    "E": true,
+    "G": true,
+    "I": true,
+    "H": true,
+    "J": true,
+    "F": true
+  },
+  "hand_error": 0.005477148189925819,
+  "rod_error": 3.3612025163165526e-07
+}

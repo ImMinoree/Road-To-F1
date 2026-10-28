@@ -1,0 +1,7 @@
+Pre-task solver:
+case=4 max_beta=2.861821088 drift_steps=0
+case=5 max_beta=3.081029473 drift_steps=0
+Final solver:
+case=4 max_beta=2.861821088 drift_steps=0
+case=5 max_beta=3.081029473 drift_steps=0
+The pre-existing brake-slide assertions fail identically. Eight other automation tests pass.

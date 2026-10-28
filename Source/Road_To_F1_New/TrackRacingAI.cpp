@@ -1,5 +1,8 @@
 #include "TrackRacingAI.h"
 #include "ProofPawn.h"
+#include "KartMechanicalVisuals.h"
+#include "KartTireDynamics.h"
+#include "KartRaceSettings.h"
 #include "GridStartSlot.h"
 #include "EngineUtils.h"
 #include "Animation/AnimSequence.h"
@@ -45,16 +48,17 @@ void UTrackRacingAI::InitializeOpponents(){
  TArray<AGridStartSlot*> Slots;for(TActorIterator<AGridStartSlot> It(GetWorld());It;++It)Slots.Add(*It);
  if(Slots.Num()!=20){UE_LOG(LogTemp,Error,TEXT("RACING_AI: expected existing 20-slot grid"));return;}
  Slots.Sort([](const AGridStartSlot& A,const AGridStartSlot& B){return A.PositionNumber<B.PositionNumber;});
- for(int32 I=0;I<FMath::Clamp(OpponentCount,0,4);++I){
-  FTransform T=Slots[I+1]->GetActorTransform();T.AddToTranslation(FVector(0,0,-9));
+ for(int32 I=0;I<FMath::Clamp(OpponentCount,0,KartRace::OpponentCount);++I){
+  FTransform T=Slots[I]->GetActorTransform();T.AddToTranslation(FVector(0,0,-9));
   auto* P=GetWorld()->SpawnActorDeferred<AProofPawn>(AProofPawn::StaticClass(),T,nullptr,nullptr,ESpawnActorCollisionHandlingMethod::AlwaysSpawn);
-  if(!P)continue;P->ConfigureRacingAI(I+2);P->FinishSpawning(T);P->AddTickPrerequisiteComponent(this);
-  FTrackOpponent S;S.Pawn=P;S.Slot=I+2;S.CruiseSpeed=1060.f-I*35.f;S.Preference=0;Opponents.Add(S);CreatePresentation(Opponents.Last());
+  if(!P)continue;P->ConfigureRacingAI(I+1);P->FinishSpawning(T);P->AddTickPrerequisiteComponent(this);
+  FTrackOpponent S;S.Pawn=P;S.Slot=I+1;S.CruiseSpeed=float(KartRace::TopSpeedCmps);S.Preference=0;Opponents.Add(S);CreatePresentation(Opponents.Last());
  }
  UE_LOG(LogTemp,Display,TEXT("RACING_AI: %d opponents, %d paired asphalt-edge samples, %.1fm circuit"),Opponents.Num(),Route->Center.Num(),RouteLength/100);
 }
 void UTrackRacingAI::CreatePresentation(FTrackOpponent& S){
  auto* P=S.Pawn.Get();if(!P)return;
+ if(auto* Mechanical=P->FindComponentByClass<UKartMechanicalVisuals>())if(Mechanical->bReady)return;
  const FString FP=TEXT("/Game/RoadToF1/PlayerVisuals/FirstPerson/");
  auto* Chassis=NewObject<UStaticMeshComponent>(P);P->AddInstanceComponent(Chassis);Chassis->SetupAttachment(P->GetRootComponent());Chassis->SetRelativeLocation(FVector(0,0,-31));
  Chassis->SetStaticMesh(LoadObject<UStaticMesh>(nullptr,*(FP+TEXT("SM_PlayerKartChassis.SM_PlayerKartChassis"))));Chassis->SetCollisionEnabled(ECollisionEnabled::NoCollision);Chassis->SetGenerateOverlapEvents(false);Chassis->SetCanEverAffectNavigation(false);Chassis->RegisterComponent();
@@ -85,7 +89,7 @@ void UTrackRacingAI::TickComponent(float Dt,ELevelTick Type,FActorComponentTickF
  TArray<AProofPawn*> Traffic;for(TActorIterator<AProofPawn> It(GetWorld());It;++It)Traffic.Add(*It);
  TArray<FTrackOpponent*> Agents;for(auto& S:Opponents)Agents.Add(&S);
 #if !UE_BUILD_SHIPPING
- if(bTesting&&FParse::Param(FCommandLine::Get(),TEXT("RacingAIPlayerTest"))){for(auto* P:Traffic)if(P->IsPlayerControlled()){TestPlayer.Pawn=P;TestPlayer.CruiseSpeed=1120;TestPlayer.Preference=0;Agents.Add(&TestPlayer);break;}}
+ if(bTesting&&FParse::Param(FCommandLine::Get(),TEXT("RacingAIPlayerTest"))){for(auto* P:Traffic)if(P->IsPlayerControlled()){TestPlayer.Pawn=P;TestPlayer.CruiseSpeed=float(KartRace::TopSpeedCmps);TestPlayer.Preference=0;Agents.Add(&TestPlayer);break;}}
 #endif
  TMap<AProofPawn*,float> TrafficArc;for(auto* P:Traffic){int32 Segment=INDEX_NONE;for(auto* Agent:Agents)if(Agent->Pawn.Get()==P){Segment=Agent->Segment;break;}TrafficArc.Add(P,SegmentArc(P->GetActorLocation(),NearestSegment(P->GetActorLocation(),Segment)));}
  const bool Gate=GM->IsStartGateClosed();
@@ -131,7 +135,9 @@ void UTrackRacingAI::TickComponent(float Dt,ELevelTick Type,FActorComponentTickF
   bool RearClear=true;for(auto* Other:Traffic){if(Other==P)continue;const FVector LocalOther=P->GetActorRotation().UnrotateVector(Other->GetActorLocation()-Pos);if(LocalOther.X<150&&LocalOther.X>-650&&FMath::Abs(LocalOther.Y)<190)RearClear=false;}
   FHitResult RearHit;FCollisionQueryParams Query;Query.AddIgnoredActor(P);if(GetWorld()->SweepSingleByChannel(RearHit,Pos,Pos-P->GetActorForwardVector()*450,P->GetActorQuat(),ECC_Visibility,FCollisionShape::MakeSphere(28),Query))RearClear=false;
   if(S.StuckTime>3&&S.Cooldown<=0&&RearClear){S.ReverseTime=StoppedLeader?2.2f:1.2f;S.Cooldown=8;S.StuckTime=0;++S.Recoveries;}
-  float Throttle=FMath::Clamp((TargetSpeed-Speed)*.006f+TargetSpeed*.32f/430.f,-1.f,1.f);
+  const auto* Power=P->GetTireDynamics();
+  const float FeedForward=Power?float(KartDynamics::ThrottleForDriveForce(Power->EngineForceN,TargetSpeed*.01f*Power->MassKg*Power->LinearDragPerSecond+Power->RollingResistanceN)):TargetSpeed*.32f/600.f;
+  float Throttle=FMath::Clamp((TargetSpeed-Speed)*.006f+FeedForward,-1.f,1.f);
   if(S.ReverseTime>0&&RearClear){S.ReverseTime-=Dt;Throttle=-.8f;S.Steering=-S.Steering;}else S.ReverseTime=0;
   Input(Throttle,S.Steering);
   const float VisualSteer=P->GetSteeringVisualInput();
@@ -142,16 +148,16 @@ void UTrackRacingAI::TickComponent(float Dt,ELevelTick Type,FActorComponentTickF
   ReportClock+=Dt;if(!Gate)TestRaceSeconds+=Dt;
   if(Gate&&GM->RedLightCount==5&&!bGateCaptured){bGateCaptured=true;WriteEvidence(false);if(auto* V=GetWorld()->GetGameViewport())V->Exec(GetWorld(),*FString::Printf(TEXT("HighResShot 1600x900 filename=%s"),*(FPaths::ProjectDir()/TEXT("Evidence/RacingAI/grid.png"))),*GLog);}
   if(ReportClock>5){ReportClock=0;WriteEvidence(false);}
-  bool Completed=Opponents.Num()==4;for(const auto& S:Opponents)Completed=Completed&&S.Laps>=2;
+  bool Completed=Opponents.Num()==FMath::Clamp(OpponentCount,0,KartRace::OpponentCount);for(const auto& S:Opponents)Completed=Completed&&S.Laps>=2;
   if(!bReported&&(Completed||TestRaceSeconds>420)){bReported=true;WriteEvidence(true);if(GetWorld()->WorldType!=EWorldType::PIE)FPlatformMisc::RequestExit(false);}
  }
 }
 void UTrackRacingAI::WriteEvidence(bool Final){
  const FString Dir=FPaths::ProjectDir()/TEXT("Evidence/RacingAI");IFileManager::Get().MakeDirectory(*Dir,true);auto* GM=Cast<AProofGameMode>(GetOwner());
- bool Passed=Final&&Opponents.Num()==4&&GM&&GM->StartEventCount==1&&bGateCaptured;
+ bool Passed=Final&&Opponents.Num()==FMath::Clamp(OpponentCount,0,KartRace::OpponentCount)&&GM&&GM->StartEventCount==1&&bGateCaptured;
  FString Rows;for(const auto& S:Opponents){Passed=Passed&&S.Laps>=2&&S.Visited.Num()==64&&S.MaximumGridMovement<1&&S.MaximumEdgeExcess<5;
   if(!Rows.IsEmpty())Rows+=TEXT(",");auto* P=S.Pawn.Get();const FVector Pos=P?P->GetActorLocation():FVector::ZeroVector;
-  Rows+=FString::Printf(TEXT("{\"slot\":%d,\"laps\":%d,\"distance_cm\":%.2f,\"visited_sectors\":%d,\"maximum_grid_movement_cm\":%.3f,\"maximum_edge_excess_cm\":%.3f,\"off_track_frames\":%d,\"recoveries\":%d,\"maximum_speed_cms\":%.2f,\"x\":%.2f,\"y\":%.2f,\"driver_visible\":%s}"),S.Slot,S.Laps,S.Distance,S.Visited.Num(),S.MaximumGridMovement,S.MaximumEdgeExcess,S.OffTrackFrames,S.Recoveries,S.MaximumSpeed,Pos.X,Pos.Y,S.Driver.IsValid()&&S.Driver->GetSkeletalMeshAsset()?TEXT("true"):TEXT("false"));
+  Rows+=FString::Printf(TEXT("{\"slot\":%d,\"laps\":%d,\"distance_cm\":%.2f,\"visited_sectors\":%d,\"maximum_grid_movement_cm\":%.3f,\"maximum_edge_excess_cm\":%.3f,\"off_track_frames\":%d,\"recoveries\":%d,\"maximum_speed_cms\":%.2f,\"x\":%.2f,\"y\":%.2f,\"driver_visible\":%s}"),S.Slot,S.Laps,S.Distance,S.Visited.Num(),S.MaximumGridMovement,S.MaximumEdgeExcess,S.OffTrackFrames,S.Recoveries,S.MaximumSpeed,Pos.X,Pos.Y,P&&((P->FindComponentByClass<UKartMechanicalVisuals>()&&P->FindComponentByClass<UKartMechanicalVisuals>()->bReady)||(S.Driver.IsValid()&&S.Driver->GetSkeletalMeshAsset()))?TEXT("true"):TEXT("false"));
  }
  const FString PlayerDebug=FString::Printf(TEXT("{\"segment\":%d,\"distance\":%.1f,\"speed\":%.1f,\"target\":%.1f,\"steer\":%.3f,\"x\":%.1f,\"y\":%.1f,\"recoveries\":%d}"),TestPlayer.Segment,TestPlayer.Distance,TestPlayer.Pawn.IsValid()?TestPlayer.Pawn->GetDrivingSpeed():0,TestPlayer.DebugTargetSpeed,TestPlayer.Steering,TestPlayer.Pawn.IsValid()?TestPlayer.Pawn->GetActorLocation().X:0,TestPlayer.Pawn.IsValid()?TestPlayer.Pawn->GetActorLocation().Y:0,TestPlayer.Recoveries);
  const FString Data=FString::Printf(TEXT("{\"final\":%s,\"passed\":%s,\"world_type\":%d,\"race_seconds\":%.2f,\"opponents\":%d,\"staged\":%d,\"start_events\":%d,\"five_red_gate_captured\":%s,\"route_samples\":%d,\"route_length_cm\":%.2f,\"test_player\":%s,\"racers\":[%s]}"),Final?TEXT("true"):TEXT("false"),Passed?TEXT("true"):TEXT("false"),int32(GetWorld()->WorldType),TestRaceSeconds,Opponents.Num(),GM?GM->StagedParticipantCount:0,GM?GM->StartEventCount:0,bGateCaptured?TEXT("true"):TEXT("false"),Route->Center.Num(),RouteLength,*PlayerDebug,*Rows);

@@ -1,0 +1,15 @@
+{
+  "source_sha256": "80f416907252960174adc53a624ed8f0ced6ec050cf1c183ad5a3336e3fe86ab",
+  "objects": [
+    {
+      "name": "Torus",
+      "type": "MESH",
+      "dimensions": [
+        0.6200000047683716,
+        0.6200000047683716,
+        0.1599999964237213
+      ],
+      "vertices": 960
+    }
+  ]
+}

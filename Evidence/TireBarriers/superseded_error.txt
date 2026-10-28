@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:\Boring\GitHub\Road-To-F1-New\Road_To_F1_New\Tools\tire_barriers_place_validate.py", line 53, in tick
+    assert signature()==state['signature'],'An existing actor transform/collision setting changed'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: An existing actor transform/collision setting changed

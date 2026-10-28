@@ -1,0 +1,47 @@
+{
+  "final_scene": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Art\\PlayerVisuals\\Cockpit_Layout_v5\\Kart_Cockpit_Layout_v5.blend",
+  "files": {
+    "Art\\PlayerVisuals\\Cockpit_Layout_v5\\Kart_Cockpit_Layout_v5.blend": {
+      "sha256": "1bd6803da7b4cda1e619b46874436954854ef84b71f6a4db2ccea22a64caaeae",
+      "bytes": 56141921
+    },
+    "Art\\PlayerVisuals\\Cockpit_Layout_v5\\Exports\\SK_CL5_DriverPOV.fbx": {
+      "sha256": "c087a19c834d35a3c1782e9c4da9d87102226170e749b8ec9b04a8c4ec868dac",
+      "bytes": 36023740
+    },
+    "Art\\PlayerVisuals\\Cockpit_Layout_v5\\Exports\\SM_CL5_PlayerChassis.fbx": {
+      "sha256": "b52a25ca1ba34f3bbd13a9c0e01040d4456ef56187e9d0507e33f6e6398b6021",
+      "bytes": 2752908
+    },
+    "Art\\PlayerVisuals\\Cockpit_Layout_v5\\Exports\\SM_CL5_SteeringWheel.fbx": {
+      "sha256": "6f53b671172e3074d7e0917abf091465721e194a3e16afe2c6eb3d6a0b9280f7",
+      "bytes": 332140
+    }
+  },
+  "rim_nonmanifold_edges": 0,
+  "max_rim_vertices_outside_frame": 0,
+  "maximum_sampled_arm_leg_triangle_contacts": 0,
+  "limitations": "Residual seat/frame/boot-linkage contacts are recorded in contacts.json. Visual reference quality is not fully matched.",
+  "unreal_screenshots": {
+    "corner_left.png": [
+      1600,
+      900
+    ],
+    "corner_right.png": [
+      1600,
+      900
+    ],
+    "straight_center.png": [
+      1600,
+      900
+    ],
+    "straight_left.png": [
+      1600,
+      900
+    ],
+    "straight_right.png": [
+      1600,
+      900
+    ]
+  }
+}

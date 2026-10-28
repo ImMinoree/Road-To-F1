@@ -35,7 +35,7 @@ struct FTrackOpponent {
  float DebugTargetSpeed=0;
 };
 
-/** Four deterministic edge-aware drivers. Supplies input to the existing pawn; owns no vehicle physics. */
+/** Nine edge-aware opponents. Supplies input to the shared kart pawn. */
 UCLASS()
 class ROAD_TO_F1_NEW_API UTrackRacingAI : public UActorComponent {
  GENERATED_BODY()
@@ -44,7 +44,7 @@ public:
  void InitializeOpponents();
  void ResetRace();
  virtual void TickComponent(float Dt,ELevelTick TickType,FActorComponentTickFunction* ThisTickFunction) override;
- UPROPERTY(EditDefaultsOnly,Category="Racing AI",meta=(ClampMin="0",ClampMax="4")) int32 OpponentCount=4;
+ UPROPERTY(EditDefaultsOnly,Category="Racing AI",meta=(ClampMin="0",ClampMax="9")) int32 OpponentCount=9;
  UPROPERTY(EditDefaultsOnly,Category="Racing AI") TSoftObjectPtr<UTrackEdgeRoute> RouteAsset;
 private:
  UPROPERTY() TObjectPtr<UTrackEdgeRoute> Route;

@@ -1,0 +1,65 @@
+{
+  "meshes": [
+    {
+      "name": "SM_TB_Module_Alternating",
+      "dimensions_cm": [
+        219.12001037597656,
+        55.341299057006836,
+        55.19999923557043
+      ],
+      "lods": 4,
+      "simple_collision_count": 0,
+      "convex_collision_count": 1
+    },
+    {
+      "name": "SM_TB_Module_Black",
+      "dimensions_cm": [
+        219.13579559326172,
+        55.276580810546875,
+        55.19999923557043
+      ],
+      "lods": 4,
+      "simple_collision_count": 0,
+      "convex_collision_count": 1
+    },
+    {
+      "name": "SM_TB_Module_Mixed",
+      "dimensions_cm": [
+        219.10450744628906,
+        55.38068771362305,
+        55.19999923557043
+      ],
+      "lods": 4,
+      "simple_collision_count": 0,
+      "convex_collision_count": 1
+    },
+    {
+      "name": "SM_TB_Tire_Black",
+      "dimensions_cm": [
+        54.9978141784668,
+        54.9978141784668,
+        18.399999998509884
+      ],
+      "lods": 4,
+      "simple_collision_count": 0,
+      "convex_collision_count": 1
+    },
+    {
+      "name": "SM_TB_Tire_Red",
+      "dimensions_cm": [
+        54.9978141784668,
+        54.9978141784668,
+        18.399999998509884
+      ],
+      "lods": 4,
+      "simple_collision_count": 0,
+      "convex_collision_count": 1
+    }
+  ],
+  "materials": [
+    "/Game/RoadToF1/Trackside/TireBarriers/Materials/MI_Tire_Black.MI_Tire_Black",
+    "/Game/RoadToF1/Trackside/TireBarriers/Materials/MI_Tire_Red.MI_Tire_Red"
+  ],
+  "import_succeeded": true,
+  "protected_files_unchanged": 42
+}

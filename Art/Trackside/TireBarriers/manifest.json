@@ -1,0 +1,53 @@
+{
+  "outer_diameter_m": 0.55,
+  "section_width_m": 0.184,
+  "bead_inner_diameter_m": 0.326,
+  "module_length_m": 2.191,
+  "module_height_m": 0.554,
+  "individual_tire_triangles": 13120,
+  "radial_segments": 80,
+  "profile_points": 82,
+  "assets": [
+    {
+      "name": "SM_TB_Tire_Black",
+      "tires": 1,
+      "triangles": 13120
+    },
+    {
+      "name": "SM_TB_Tire_Red",
+      "tires": 1,
+      "triangles": 13120
+    },
+    {
+      "name": "SM_TB_Module_Black",
+      "tires": 12,
+      "triangles": 157440
+    },
+    {
+      "name": "SM_TB_Module_Alternating",
+      "tires": 12,
+      "triangles": 157440
+    },
+    {
+      "name": "SM_TB_Module_Mixed",
+      "tires": 12,
+      "triangles": 157440
+    }
+  ],
+  "seed": 281026,
+  "source_inspection": [
+    {
+      "name": "Torus",
+      "type": "MESH",
+      "dimensions": [
+        0.6200000047683716,
+        0.6200000047683716,
+        0.1599999964237213
+      ],
+      "vertices": 960
+    }
+  ],
+  "portable_maps": "Generated seamless 1024px base color, roughness and tangent normal maps; supplemental Blender micro Noise->Bump detail",
+  "axis": "FBX forward -Y / up Z; meters converted by importer to cm; origin bottom centre",
+  "limitations": "No brand logos, cords or tire deformation. Reused passenger-car tire dimensions, not racing kart wheel dimensions."
+}

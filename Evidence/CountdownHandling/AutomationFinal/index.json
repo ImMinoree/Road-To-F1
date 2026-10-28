@@ -1,0 +1,281 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "D954A6E34DB9A17CB012D999016010B9",
+			"instanceName": "DESKTOP-ERDHE74-12012",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "D3D12_SM6",
+			"rHI": "D3D12 (SM6)",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.28-08.34.05",
+	"succeeded": 10,
+	"succeededWithWarnings": 1,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 2.9774312973022461,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "ImpulseAndSteering",
+			"fullTestPath": "RoadToF1.Contact.ImpulseAndSteering",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D954A6E34DB9A17CB012D999016010B9"
+			],
+			"duration": 0.018925998359918594,
+			"dateTime": "2026.10.28-08.34.02",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "SweepsKerbsAndTraffic",
+			"fullTestPath": "RoadToF1.Contact.SweepsKerbsAndTraffic",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D954A6E34DB9A17CB012D999016010B9"
+			],
+			"duration": 0.31240659952163696,
+			"dateTime": "2026.10.28-08.34.02",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "High-speed barrier: 16.988 m/s, 2943.088 N s; side-contact impulse: 723.728 N s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.28-08.34.02"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "FixedRodSteering",
+			"fullTestPath": "RoadToF1.PlayerVehicleV4.FixedRodSteering",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D954A6E34DB9A17CB012D999016010B9"
+			],
+			"duration": 0.098670698702335358,
+			"dateTime": "2026.10.28-08.34.02",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "OwnershipAndSteering",
+			"fullTestPath": "RoadToF1.PlayerVisuals.OwnershipAndSteering",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D954A6E34DB9A17CB012D999016010B9"
+			],
+			"duration": 2.1146824359893799,
+			"dateTime": "2026.10.28-08.34.02",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 0: L=X=47.161 Y=-17.673 Z=51.636 R=X=51.889 Y=15.137 Z=66.189",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.28-08.34.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 1: L=X=48.382 Y=-18.319 Z=55.386 R=X=50.803 Y=17.021 Z=62.835",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.28-08.34.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 2: L=X=49.614 Y=-18.096 Z=59.176 R=X=49.615 Y=18.097 Z=59.176",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.28-08.34.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 3: L=X=50.802 Y=-17.023 Z=62.834 R=X=48.381 Y=18.320 Z=55.386",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.28-08.34.03"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 4: L=X=51.889 Y=-15.137 Z=66.187 R=X=47.162 Y=17.671 Z=51.639",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.28-08.34.03"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "TenKartDefaultsAnd38Mph",
+			"fullTestPath": "RoadToF1.Race.TenKartDefaultsAnd38Mph",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D954A6E34DB9A17CB012D999016010B9"
+			],
+			"duration": 0.021394401788711548,
+			"dateTime": "2026.10.28-08.34.05",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "CountdownPresentation",
+			"fullTestPath": "RoadToF1.RaceStart.CountdownPresentation",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D954A6E34DB9A17CB012D999016010B9"
+			],
+			"duration": 0.17428320646286011,
+			"dateTime": "2026.10.28-08.34.05",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "EdgesAndPresentation",
+			"fullTestPath": "RoadToF1.RacingAI.EdgesAndPresentation",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D954A6E34DB9A17CB012D999016010B9"
+			],
+			"duration": 0.023160301148891449,
+			"dateTime": "2026.10.28-08.34.05",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "ContactAndPooling",
+			"fullTestPath": "RoadToF1.SurfaceFX.ContactAndPooling",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D954A6E34DB9A17CB012D999016010B9"
+			],
+			"duration": 0.075352698564529419,
+			"dateTime": "2026.10.28-08.34.05",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Warning",
+						"message": "PIE: Mobility of /Temp/Untitled_3.SurfaceFXTestWorld:PersistentLevel.StaticMeshActor_0 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. ",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.28-08.34.05"
+				}
+			],
+			"warnings": 1,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "AssistedCornerRecovery",
+			"fullTestPath": "RoadToF1.TireDynamics.AssistedCornerRecovery",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D954A6E34DB9A17CB012D999016010B9"
+			],
+			"duration": 0.018414098769426346,
+			"dateTime": "2026.10.28-08.34.05",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "ForceScenarios",
+			"fullTestPath": "RoadToF1.TireDynamics.ForceScenarios",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D954A6E34DB9A17CB012D999016010B9"
+			],
+			"duration": 0.060800801962614059,
+			"dateTime": "2026.10.28-08.34.05",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "GroundCollisionAndReset",
+			"fullTestPath": "RoadToF1.TireDynamics.GroundCollisionAndReset",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"D954A6E34DB9A17CB012D999016010B9"
+			],
+			"duration": 0.059339899569749832,
+			"dateTime": "2026.10.28-08.34.05",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

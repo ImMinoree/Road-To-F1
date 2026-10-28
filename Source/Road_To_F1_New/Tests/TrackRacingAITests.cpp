@@ -4,6 +4,7 @@
 #include "../ProofPawn.h"
 #include "Engine/SkeletalMesh.h"
 #include "Animation/AnimSequence.h"
+#include "UObject/Package.h"
 IMPLEMENT_SIMPLE_AUTOMATION_TEST(FTrackEdgesTest,"RoadToF1.RacingAI.EdgesAndPresentation",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
 bool FTrackEdgesTest::RunTest(const FString&){
  auto* Route=LoadObject<UTrackEdgeRoute>(nullptr,TEXT("/Game/RoadToF1/RacingAI/DA_DesertTrackEdges.DA_DesertTrackEdges"));

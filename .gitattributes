@@ -15,3 +15,8 @@ Art/PlayerVisuals/Cockpit_Layout_v5/*.blend filter=lfs diff=lfs merge=lfs -text
 Content/RoadToF1/PlayerVisuals/CockpitLayoutV5/SK_CL5_DriverPOV.uasset filter=lfs diff=lfs merge=lfs -text
 Art/PlayerVisuals/Cockpit_Layout_v5/Exports/SK_CL5_DriverPOV.fbx filter=lfs diff=lfs merge=lfs -text
 Art/PlayerVisuals/Cockpit_Layout_v5/Kart_Cockpit_Layout_v5.blend filter=lfs diff=lfs merge=lfs -text
+Content/RoadToF1/PlayerVehicleV4/SK_V4_DriverFull.uasset filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVehicle_v4/Hands/BackupUnreal/SK_V4_DriverFull.uasset filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVehicle_v4/Hands/BackupUnreal/SK_V4_DriverPOV.uasset filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVehicle_v4/Hands/BeforePolish/SK_V4_DriverFull.uasset filter=lfs diff=lfs merge=lfs -text
+Art/PlayerVehicle_v4/Hands/BeforeStructure_20261028/SK_V4_DriverFull.uasset filter=lfs diff=lfs merge=lfs -text

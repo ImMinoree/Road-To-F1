@@ -2,6 +2,7 @@
 #include "Misc/AutomationTest.h"
 #include "../KartTireModel.h"
 #include "../KartTireDynamics.h"
+#include "../RaceCountdownPresentation.h"
 #include "../ProofPawn.h"
 #include "Components/BoxComponent.h"
 #include "Engine/Engine.h"
@@ -34,8 +35,8 @@ bool FKartForceScenarios::RunTest(const FString&){
   TestTrue(FString(Names[C])+TEXT(": finite and within both friction circles"),Valid);
   if(C==0){TestTrue(TEXT("Straight braking stops without yaw or reverse"),std::hypot(S.U,S.V)<.05&&MaxYaw<.001);}
   if(C==1||C==2||C==7)TestEqual(FString(Names[C])+TEXT(": no false drift from steering/body angle alone"),Drift,0);
-  if(C==3)TestTrue(TEXT("Excessive corner demand saturates tires"),MaxFront>10||MaxRear>10);
-  if(C==4||C==5){TestTrue(TEXT("Brake entry produces a sustained controllable rear slide"),Drift>0&&MaxBeta>6&&MaxBeta<15);TestTrue(TEXT("Grip recovers at driving speed without a spin"),std::abs(Deg(S.Beta))<1&&std::abs(Deg(S.R))<2&&S.U>6);}
+  if(C==3)TestTrue(TEXT("Held corner input stays controllable with the digital steering envelope"),MaxBeta<10&&S.U>1);
+  if(C==4||C==5){TestTrue(TEXT("Normal brake entry does not force a drift or spin"),MaxBeta<10);TestTrue(TEXT("Grip recovers at driving speed without a spin"),std::abs(Deg(S.Beta))<1&&std::abs(Deg(S.R))<2&&S.U>6);}
   if(C==7)TestTrue(TEXT("Steering at rest never translates or yaws the kart"),S.X==0&&S.Y==0&&S.Heading==0);
   Summary+=FString::Printf(TEXT("%s,%.4f,%.4f,%.4f,%.4f,%.4f,%.4f,%.4f,%d\n"),Names[C],MaxBeta,MaxYaw,MaxFront,MaxRear,std::hypot(S.U,S.V),Deg(S.Beta),Deg(S.R),Drift);
   FFileHelper::SaveStringToFile(Csv,*(Dir/(FString(TEXT("engine_"))+Names[C]+TEXT(".csv"))));
@@ -72,4 +73,35 @@ bool FKartSweptWorld::RunTest(const FString&){
  TestTrue(TEXT("Missing road support falls under gravity instead of resetting/teleporting"),Pawn->GetActorLocation().Z<OldZ-20);
  GEngine->DestroyWorldContext(World);World->DestroyWorld(false);return true;
 }
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FKartAssistedRecovery,"RoadToF1.TireDynamics.AssistedCornerRecovery",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
+bool FKartAssistedRecovery::RunTest(const FString&){
+ using namespace KartDynamics;
+ for(int Scenario:{0,1})for(double Sign:{-1.,1.}){
+  Parameters P;State S;Contact C;S.U=Scenario?11:16;if(Scenario){S.V=-1.2*Sign;S.R=.7*Sign;}
+  double Peak=0;bool Bounded=true;
+  for(int K=0;K<2400;++K){const bool Turn=Scenario==0&&K<480;
+   Input I{Turn?1.:(Scenario?.3:.35),Turn?Sign:std::clamp(S.Beta*1.5-S.R*.12,-.8,.8),0};Step(S,P,C,I);
+   Peak=std::max(Peak,std::abs(Deg(S.Beta)));Bounded=Bounded&&std::isfinite(S.U)&&std::isfinite(S.V)&&std::isfinite(S.R)&&S.FrontUtilization<=1.000001&&S.RearUtilization<=1.000001;
+  }
+  TestTrue(TEXT("Both turn directions remain finite and friction bounded"),Bounded);
+  TestTrue(TEXT("Full-key turn or established slide avoids a spin"),Peak<10);
+  if(Scenario)TestTrue(TEXT("Recovery actually starts from significant sideslip"),Peak>6);
+  TestTrue(TEXT("Countersteering recovers at forward speed"),std::abs(Deg(S.Beta))<1&&std::abs(Deg(S.R))<2&&S.U>3);
+ }
+ return true;
+}
+IMPLEMENT_SIMPLE_AUTOMATION_TEST(FRaceCountdownFade,"RoadToF1.RaceStart.CountdownPresentation",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
+bool FRaceCountdownFade::RunTest(const FString&){
+ using namespace RaceCountdownPresentation;
+ for(int Reds=1;Reds<=5;++Reds){
+  const double Duration=Reds==5?1.25:1;const auto Cue=Sample(Reds,.4,Duration,false);
+  TestEqual(TEXT("Each authoritative red light presents the next descending number"),Cue.Number,6-Reds);
+  TestTrue(TEXT("Number fades in, remains readable and fades out"),Sample(Reds,0,Duration,false).Alpha==0&&Cue.Alpha>.9&&Sample(Reds,Duration,Duration,false).Alpha==0);
+ }
+ TestTrue(TEXT("Pre-grid and reset have no stale numeral"),Sample(0,.4,1,false).Alpha==0&&Sample(1,-1,1,false).Alpha==0);
+ TestEqual(TEXT("START is selected only from the lights-out state"),Sample(0,.4,1.1,true).Number,0);
+ TestTrue(TEXT("START clears after its fade"),Sample(0,1.1,1.1,true).Alpha==0);
+ return true;
+}
 #endif
+

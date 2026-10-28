@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_player_vehicle_v4.py", line 53, in tick
+    pawn.set_kart_test_input(1,0,False);camera((230,-260,130),(0,0,20))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_player_vehicle_v4.py", line 36, in camera
+    if 'camera' not in state:state['camera']=spawn(world,u.CameraActor,u.Vector())
+                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_player_vehicle_v4.py", line 11, in spawn
+    tr=u.Transform(location=location);a=u.GameplayStatics.begin_deferred_actor_spawn_from_class(world,cls,tr,u.SpawnActorCollisionHandlingMethod.ALWAYS_SPAWN);return u.GameplayStatics.finish_spawning_actor(a,tr)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'GameplayStatics' has no attribute 'begin_deferred_actor_spawn_from_class'

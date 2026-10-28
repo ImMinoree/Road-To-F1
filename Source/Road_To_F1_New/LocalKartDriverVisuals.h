@@ -32,6 +32,7 @@ public:
  /** Explicit opt-in: never guesses which kart/world meshes should be hidden. */
  UFUNCTION(BlueprintCallable, Category="Player visuals") void SetThirdPersonDriver(UMeshComponent* Mesh);
  UFUNCTION(BlueprintPure, Category="Player visuals") bool IsFirstPersonActive() const { return bActiveForLocalPlayer; }
+ void UseMechanicalCamera(UCameraComponent* Camera);
  bool IsEligibleLocalHuman() const;
  USkeletalMeshComponent* GetFirstPersonArms() const { return Arms; }
  UStaticMeshComponent* GetFirstPersonWheel() const { return Wheel; }
@@ -77,6 +78,7 @@ private:
  float SpeedBaseFOV=90.f,SpeedBlend=0.f;
  double SpeedPhase=0;
  bool bSpeedCameraApplied=false;
+ bool bMechanicalCamera=false;
  void RestoreSpeedCamera();
  void UpdateSpeedCamera(float DeltaTime);
  void ConfigureCockpitCamera(bool bActive);
@@ -88,3 +90,4 @@ private:
  bool CreateLocalVisuals(UCameraComponent* Camera);
  void RestoreThirdPersonVisibility();
 };
+

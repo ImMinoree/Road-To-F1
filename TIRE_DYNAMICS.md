@@ -1,6 +1,8 @@
 # Tire-force kart dynamics
 
-The existing `AProofPawn` now defaults to custom planar vehicle dynamics. `KartTireModel` integrates mass, local longitudinal/lateral velocity and yaw inertia at a fixed **240 Hz**. `UKartTireDynamics` supplies contact friction, traced road support, gravity when unsupported, swept collision and diagnostics. This is a force-driven 2.5D model, not Chaos Vehicles or a full 3D rigid-body kart. No second pawn, module, race start, HUD or map was created.
+**Current default: tire-force dynamics restored for the handling-refinement request.** See [HANDLING_REFINEMENT.md](HANDLING_REFINEMENT.md) for current collision/support behavior and new validation. The earlier no-drift fallback is retained behind `-LegacyKartMovement`. The original implementation notes and historical results below describe the preceding physics pass, including its now-replaced sphere collision and road-height constraint.
+
+The optional custom planar vehicle dynamics use the existing `AProofPawn`. `KartTireModel` integrates mass, local longitudinal/lateral velocity and yaw inertia at a fixed **240 Hz**. `UKartTireDynamics` supplies contact friction, traced road support, gravity when unsupported, swept collision and diagnostics. This is a force-driven 2.5D model, not Chaos Vehicles or a full 3D rigid-body kart. No second pawn, module, race start, HUD or map was created.
 
 The previous `ProofPawn` directly rotated from steering and moved only forward. Inspection of the original repository found the same general swept approach in its playable `AKartPawn`; its separate `ARoadToF1Pawn` uses the Chaos vehicle template. Neither supplied a compatible measured kart tire model to reuse. The original repository was read only. The Instagram clip could not be fetched, so no motion-matching claim is made.
 

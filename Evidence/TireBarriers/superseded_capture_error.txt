@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/tire_barriers_capture.py", line 21, in tick
+    path=g['paths'][0];p=path['spline_cm'][12];road=route[path['route_index']];n=u.Vector(road[0]-p[0],road[1]-p[1],0).get_safe_normal()
+                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Vector' object has no attribute 'get_safe_normal'

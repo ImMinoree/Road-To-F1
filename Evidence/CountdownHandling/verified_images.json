@@ -1,0 +1,90 @@
+{
+  "pngs_valid": true,
+  "red_visibility_scores": {
+    "fade_in_500000.png": 584573,
+    "countdown_500000.png": 666778,
+    "fade_out_500000.png": 466588
+  },
+  "fade_visibility_verified": true,
+  "images": [
+    {
+      "file": "brake_corner00000.png",
+      "bytes": 989418,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "countdown_100000.png",
+      "bytes": 1161180,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "countdown_200000.png",
+      "bytes": 1163244,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "countdown_300000.png",
+      "bytes": 1162296,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "countdown_400000.png",
+      "bytes": 1158234,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "countdown_500000.png",
+      "bytes": 1157865,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "fade_in_500000.png",
+      "bytes": 1161124,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "fade_out_500000.png",
+      "bytes": 1164203,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "handling_left00000.png",
+      "bytes": 931892,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "handling_right00000.png",
+      "bytes": 890960,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "restart_500000.png",
+      "bytes": 1161191,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "restart_pregrid00000.png",
+      "bytes": 1164115,
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "start00000.png",
+      "bytes": 1142261,
+      "width": 1267,
+      "height": 550
+    }
+  ],
+  "material_warnings_absent": true
+}

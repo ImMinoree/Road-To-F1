@@ -38,7 +38,7 @@ bool FKartLocalVisualOwnershipTest::RunTest(const FString&)
  TestTrue(TEXT("Second cockpit active with imported assets"),V2->IsFirstPersonActive());
  auto* Eye=First->FindComponentByClass<UCameraComponent>();
  TestTrue(TEXT("Target framing leaves full-steering viewport margin"),FMath::IsNearlyEqual(Eye->FieldOfView,95.f));
- TestTrue(TEXT("Eye remains 0.90m above ground and above lowered shoulders"),Eye->GetRelativeLocation().Equals(FVector(5,0,59),.01f));
+ TestTrue(TEXT("Eye remains 0.75m above ground and above lowered shoulders"),Eye->GetRelativeLocation().Equals(FVector(5,0,44),.01f));
  TestNull(TEXT("Remote pawn does not create first-person mesh"),VR->GetFirstPersonArms());
  TestNull(TEXT("NPC does not create first-person mesh"),VN->GetFirstPersonArms());
  if(USkeletalMeshComponent* Arms=V1->GetFirstPersonArms())
@@ -67,8 +67,8 @@ bool FKartLocalVisualOwnershipTest::RunTest(const FString&)
    const FVector L=Arms->GetSocketTransform(TEXT("hand_l"),RTS_Component).GetLocation();
    const FVector R=Arms->GetSocketTransform(TEXT("hand_r"),RTS_Component).GetLocation();
    AddInfo(FString::Printf(TEXT("Steering sample %d: L=%s R=%s"),Sample,*L.ToString(),*R.ToString()));
-   TestTrue(TEXT("Imported left grip follows baked source within 5 mm"),L.Equals(LeftSamples[Sample],.5f));
-   TestTrue(TEXT("Imported right grip follows baked source within 5 mm"),R.Equals(RightSamples[Sample],.5f));
+   TestTrue(TEXT("Imported left grip follows baked source within 5 mm"),L.Equals(LeftSamples[Sample]-FVector(0,0,15),.5f));
+   TestTrue(TEXT("Imported right grip follows baked source within 5 mm"),R.Equals(RightSamples[Sample]-FVector(0,0,15),.5f));
   }
   const FVector PawnBefore=First->GetActorLocation();
   for(float Input:{-1.f,0.f,1.f})
@@ -80,6 +80,20 @@ bool FKartLocalVisualOwnershipTest::RunTest(const FString&)
    if(Anim) TestTrue(TEXT("Animation position follows the same steering sample"),FMath::IsNearlyEqual(Anim->GetCurrentTime(),(Input+1)*.5f*Anim->GetLength(),.001f));
   }
   TestTrue(TEXT("Changing visuals did not move the pawn"),PawnBefore.Equals(First->GetActorLocation()));
+  First->ToggleCameraView();
+  TestTrue(TEXT("Local player can select chase view"),First->IsThirdPersonView());
+  TestFalse(TEXT("Chase view deactivates cockpit camera"),Eye->IsActive());
+  TestFalse(TEXT("Chase view hides cockpit cosmetics"),V1->IsFirstPersonActive());
+  UCameraComponent* Chase=nullptr;
+  TArray<UCameraComponent*> Cameras;First->GetComponents(Cameras);
+  for(auto* Candidate:Cameras)if(Candidate->GetName()==TEXT("ChaseCamera"))Chase=Candidate;
+  TestTrue(TEXT("Chase camera becomes active"),Chase&&Chase->IsActive());
+  First->ToggleCameraView();V1->TickComponent(0.f,LEVELTICK_All,nullptr);
+  TestFalse(TEXT("Second toggle returns to cockpit"),First->IsThirdPersonView());
+  TestTrue(TEXT("Cockpit camera and cosmetics restored"),Eye->IsActive()&&V1->IsFirstPersonActive());
+  TestTrue(TEXT("View switching preserves kart position"),PawnBefore.Equals(First->GetActorLocation()));
+  TestTrue(TEXT("View switching restores authored cockpit framing"),Eye->GetRelativeLocation().Equals(FVector(5,0,44),.01f));
+  NPC->ToggleCameraView();TestFalse(TEXT("Unpossessed kart cannot select player camera"),NPC->IsThirdPersonView());
   auto* Third=NewObject<USkeletalMeshComponent>(First);First->AddInstanceComponent(Third);Third->RegisterComponent();
   V1->SetThirdPersonDriver(Third);TestTrue(TEXT("Third-person renderer hidden only from its owner"),Third->bOwnerNoSee);
   TestFalse(TEXT("Third-person renderer was not globally hidden"),Third->bHiddenInGame);
@@ -95,4 +109,5 @@ bool FKartLocalVisualOwnershipTest::RunTest(const FString&)
  return true;
 }
 #endif
+
 

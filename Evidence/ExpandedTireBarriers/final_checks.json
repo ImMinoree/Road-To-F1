@@ -1,0 +1,39 @@
+{
+  "expanded": {
+    "frames": 464,
+    "median_slate_frame_ms": 10.630149394273758,
+    "p95_slate_frame_ms": 12.025799602270126,
+    "stats": {
+      "STAT_FrameTime": 0.0,
+      "STAT_DrawPrimitiveCalls": 0.0,
+      "STAT_RHITriangles": 0.0
+    }
+  },
+  "transient_PIE_instances_removed_for_comparison": 1581,
+  "original_144": {
+    "frames": 465,
+    "median_slate_frame_ms": 10.641701519489288,
+    "p95_slate_frame_ms": 11.957500129938126,
+    "stats": {
+      "STAT_FrameTime": 0.0,
+      "STAT_DrawPrimitiveCalls": 0.0,
+      "STAT_RHITriangles": 0.0
+    }
+  },
+  "PIE_low_speed_corner_probe": {
+    "start": [
+      7190.203857421875,
+      -260.5682373046875,
+      40.0
+    ],
+    "end": [
+      7777.045492745363,
+      -620.4668450223319,
+      31.00804443230944
+    ],
+    "distance_cm": 688.4700197184884,
+    "upright_roll": 0.0046449771378766205,
+    "duration_seconds": 3.0160000000032596
+  },
+  "limitations": "Slate frame intervals in offscreen editor PIE, not a packaged GPU benchmark. No full lap or high-speed barrier impact test. Temporary aerial culling/PIE comparison changes were never saved."
+}

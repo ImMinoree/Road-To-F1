@@ -1,6 +1,6 @@
 # Play the integrated kart
 
-Four additional track-edge AI opponents now spawn in normal Play. See `RACING_AI.md` for their implementation and validation. The user approved a later shared steering-limit adjustment from the original 65 to 240 coefficient for both the player and AI, retaining the movement formula, to negotiate the circuit's tight bends.
+Nine track-edge AI opponents now spawn in slots 1–9 in normal Play, with the player in slot 10. All karts share a 38 mph top speed and the current articulated kart model with distinct kart and driver colors. See Evidence/TenKartGrid/README.md for current validation. See `RACING_AI.md` for their implementation and validation. The user approved a later shared steering-limit adjustment from the original 65 to 240 coefficient for both the player and AI, retaining the movement formula, to negotiate the circuit's tight bends.
 
 Open `Road_To_F1_New.uproject` in Unreal 5.8, open `/Game/RoadToF1/Maps/DesertKarting_Visual`, and press Play (Selected Viewport). Click the viewport for keyboard focus. W accelerates, S brakes/reverses, A/D steer, R resets to the assigned grid slot. Hold W through the five red lights; the existing ProofGameMode gate releases movement at lights-out. Stop and Play again to restart the countdown.
 
@@ -23,3 +23,4 @@ The full-body V5 rig remains an editable Blender asset. The game uses its existi
 Build Road_To_F1_NewEditor Win64 Development. Run Blender in background with `Tools/integrate_kart_export.py` to regenerate the chassis only. Run UnrealEditor with this project, `-ExecutePythonScript=<absolute path to Tools/integrate_kart_unreal.py> -KartIntegrationTest` to import, save/reload the visual map and request actual PIE. For subsequent validation without reimporting art, use `Tools/validate_integrated_pie.py` instead. The opt-in development-only test holds gameplay throttle, steers left/right on the grid, and captures 1600x900 driver-view screenshots and telemetry to `Evidence/Integration`. The script checks the final telemetry timestamp to exclude stale evidence. Normal play never overrides player input.
 
 The validation script asserts a single gantry, twenty start slots, no placed duplicate pawn, and preserved map actor transforms/mesh/material references across save/reload. Native telemetry records PIE world type, gate state, red count, movement and single start event. See the evidence directory for actual results; successful compilation alone does not establish runtime success.
+

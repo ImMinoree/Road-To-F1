@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "actual_pie": true,
+  "test_pad_transient": true,
+  "native_grid_and_lights_out_passed": true,
+  "race_restart_passed": true,
+  "max_slide_beta_deg": 10.015527725219727,
+  "max_yaw_deg_s": 79.05411529541016,
+  "recovered_at_speed": true,
+  "max_z_error_cm": 0.059305478220018415,
+  "maximum_frame_travel_cm": 240.3884999100787,
+  "surfaces_verified": [
+    "asphalt",
+    "dirt",
+    "grass"
+  ],
+  "loose_surface_debris_verified": true,
+  "maps_unchanged": true,
+  "cockpit_and_chase_toggled": true,
+  "screenshots": [
+    "chase_recovery",
+    "cockpit_return",
+    "dirt",
+    "grid",
+    "launch",
+    "rear_slide",
+    "recovered"
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "actual_pie": true,
+  "map": "/Game/RoadToF1/Maps/UEDPIE_0_DesertKarting_Visual.DesertKarting_Visual",
+  "game_mode": "/Script/Road_To_F1_New.ProofGameMode",
+  "player_class": "/Script/Road_To_F1_New.ProofPawn",
+  "pawns": 5,
+  "ai_opponents": 4,
+  "grid_slots": 20,
+  "start_gantries": 1,
+  "grass_instances": 17724,
+  "aimed_floodlight_actors": 4,
+  "cockpit_active": true,
+  "skeletal_meshes": [
+    {
+      "component": "LocalOnlyKartArms",
+      "asset": "/Game/RoadToF1/PlayerVisuals/CockpitLayoutV5/SK_CL5_DriverPOV.SK_CL5_DriverPOV",
+      "visible": true
+    }
+  ],
+  "static_meshes": [
+    {
+      "component": "CameraProxyMeshComponent_0",
+      "asset": "/Engine/EditorMeshes/MatineeCam_SM.MatineeCam_SM",
+      "visible": false
+    },
+    {
+      "component": "LocalOnlyCockpitWheel",
+      "asset": "/Game/RoadToF1/PlayerVisuals/CockpitLayoutV5/SM_CL5_SteeringWheel.SM_CL5_SteeringWheel",
+      "visible": true
+    },
+    {
+      "component": "LocalOnlyKartChassis",
+      "asset": "/Game/RoadToF1/PlayerVisuals/CockpitLayoutV5/SM_CL5_PlayerChassis.SM_CL5_PlayerChassis",
+      "visible": true
+    },
+    {
+      "component": "InstancedStaticMeshComponent_0",
+      "asset": "/Game/RoadToF1/SurfaceFX/Meshes/SM_SoilChip.SM_SoilChip",
+      "visible": true
+    },
+    {
+      "component": "InstancedStaticMeshComponent_1",
+      "asset": "/Game/RoadToF1/SurfaceFX/Meshes/SM_GrassClipping.SM_GrassClipping",
+      "visible": true
+    },
+    {
+      "component": "InstancedStaticMeshComponent_2",
+      "asset": "/Game/RoadToF1/SurfaceFX/Meshes/SM_DustQuad.SM_DustQuad",
+      "visible": true
+    }
+  ],
+  "camera": {
+    "position_cm": [
+      4.999999999999995,
+      -2.339672712839934e-15,
+      44.0
+    ],
+    "rotation": [
+      -10.000000000000004,
+      0.0,
+      -0.0
+    ],
+    "fov": 95.0
+  },
+  "tire_dynamics_enabled": true,
+  "dynamics_component": true,
+  "surface_effects_component": true,
+  "speed_blendables": 1,
+  "maps_unchanged": true
+}

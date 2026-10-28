@@ -1,0 +1,38 @@
+{
+  "actual_pie": true,
+  "checks": {
+    "A": true,
+    "B": true,
+    "C": true,
+    "D": true,
+    "L": true,
+    "E": true,
+    "G": true,
+    "I": true,
+    "H": true,
+    "J": true,
+    "F": true,
+    "K": true
+  },
+  "maximum_rod_length_error_cm": 3.166960311773437e-07,
+  "maximum_hand_relative_wheel_error_cm": 0.005477148189925819,
+  "screenshots": [
+    "01_front_three_quarter",
+    "02_steering_center",
+    "03_full_left",
+    "04_full_right",
+    "motion_00",
+    "motion_02",
+    "motion_04",
+    "06_cockpit_countersteer",
+    "motion_06",
+    "motion_08",
+    "motion_09",
+    "05_cockpit_center",
+    "07_external_driving"
+  ],
+  "frames": 1178,
+  "wheel_rotation_frames": 893,
+  "limits": "Wheel spin uses ground velocity; no tire angular-speed state exists. Mesh surface intersections require visual review.",
+  "passed": true
+}

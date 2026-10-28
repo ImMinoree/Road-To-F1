@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\Boring\GitHub\Road-To-F1-New\Road_To_F1_New\Tools\validate_player_vehicle_v4.py", line 27, in tick
+    assert mech and mech.get_editor_property('ready'),'versioned visual assembly failed to initialize'
+AssertionError: versioned visual assembly failed to initialize

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_player_vehicle_v4.py", line 53, in tick
+    assert (phase=='restart' and age<.1) or abs((row['left_deg']+row['right_deg'])*.5-slip.steering_degrees)<.05,('physics visual disagreement',row)
+                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('physics visual disagreement', {'t': 29.36688134074211, 'phase': 'restart', 'u_mps': 0.0, 'steer_deg': 0.0, 'left_deg': 15.722702026367188, 'right_deg': 16.872394561767578, 'column_deg': 18.586292266845703, 'rear_roll_deg': 286.8448791503906, 'rod_error_cm': 3.0305872655844723e-07, 'grip_error_cm': 0.0033173547481749406, 'brake': 0.0, 'throttle': 1.0, 'rear_slip_deg': 0.0, 'drifting': False, 'collision_count': 1, 'grounded': 0, 'x': 3603.484375, 'y': -106.2420654296875, 'z': 31.00000762939453})

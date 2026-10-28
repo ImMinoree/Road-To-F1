@@ -1,0 +1,166 @@
+[
+  {
+    "path": "Source\\Road_To_F1_New.Target.cs",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_NewEditor.Target.cs",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\GridStartSlot.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\GridStartSlot.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\KartMechanicalVisuals.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\KartMechanicalVisuals.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\KartRaceSettings.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\KartSurfaceFX.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\KartSurfaceFX.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\KartTireDynamics.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\KartTireDynamics.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\KartTireModel.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\KartTireModel.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\KartVisualKinematics.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\LocalKartDriverVisuals.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\LocalKartDriverVisuals.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\ProofPawn.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\ProofPawn.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\RaceCountdownPresentation.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\RaceStartGantry.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\RaceStartGantry.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\Road_To_F1_New.Build.cs",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\Road_To_F1_New.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\Road_To_F1_New.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\TrackRacingAI.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\TrackRacingAI.h",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\Tests\\KartContactTests.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\Tests\\KartMechanicalVisualsTests.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\Tests\\KartSurfaceFXTests.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\Tests\\KartTireDynamicsTests.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\Tests\\LocalKartDriverVisualsTests.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\Tests\\TenKartRaceTests.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Source\\Road_To_F1_New\\Tests\\TrackRacingAITests.cpp",
+    "unchanged": true
+  },
+  {
+    "path": "Config\\DefaultEditor.ini",
+    "unchanged": true
+  },
+  {
+    "path": "Config\\DefaultEngine.ini",
+    "unchanged": true
+  },
+  {
+    "path": "Config\\DefaultGame.ini",
+    "unchanged": true
+  },
+  {
+    "path": "Config\\DefaultGameUserSettings.ini",
+    "unchanged": true
+  },
+  {
+    "path": "Config\\DefaultInput.ini",
+    "unchanged": true
+  },
+  {
+    "path": "Content\\RoadToF1\\Maps\\CircuitDevelopment.umap",
+    "unchanged": true
+  },
+  {
+    "path": "Content\\RoadToF1\\Maps\\DesertKarting.umap",
+    "unchanged": true
+  },
+  {
+    "path": "Content\\RoadToF1\\Maps\\VisualProof.umap",
+    "unchanged": true
+  }
+]

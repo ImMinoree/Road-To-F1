@@ -1,0 +1,11 @@
+{
+  "seat_vertices_adjusted": 62,
+  "max_seat_vertex_move_m": 0.09429362319994307,
+  "tank_uniform_scale": 0.65,
+  "tank_translation_m": [
+    0.25,
+    0,
+    -0.04
+  ],
+  "scope": "local cosmetic V5 copy only"
+}

@@ -1,0 +1,221 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "6BB3402C49D239F026335EBCADC1B5C4",
+			"instanceName": "DESKTOP-ERDHE74-32052",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.26-07.21.22",
+	"succeeded": 6,
+	"succeededWithWarnings": 1,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 1.9109207391738892,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "ImpulseAndSteering",
+			"fullTestPath": "RoadToF1.Contact.ImpulseAndSteering",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"6BB3402C49D239F026335EBCADC1B5C4"
+			],
+			"duration": 0.0080621987581253052,
+			"dateTime": "2026.10.26-07.21.20",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "SweepsKerbsAndTraffic",
+			"fullTestPath": "RoadToF1.Contact.SweepsKerbsAndTraffic",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"6BB3402C49D239F026335EBCADC1B5C4"
+			],
+			"duration": 0.24565860629081726,
+			"dateTime": "2026.10.26-07.21.20",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "High-speed barrier: 12.582 m/s, 2179.885 N s; side-contact impulse: 584.971 N s",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.26-07.21.20"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "OwnershipAndSteering",
+			"fullTestPath": "RoadToF1.PlayerVisuals.OwnershipAndSteering",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"6BB3402C49D239F026335EBCADC1B5C4"
+			],
+			"duration": 1.5775356292724609,
+			"dateTime": "2026.10.26-07.21.20",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 0: L=X=47.161 Y=-17.673 Z=51.636 R=X=51.889 Y=15.137 Z=66.189",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.26-07.21.21"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 1: L=X=48.382 Y=-18.319 Z=55.386 R=X=50.803 Y=17.021 Z=62.835",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.26-07.21.21"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 2: L=X=49.614 Y=-18.096 Z=59.176 R=X=49.615 Y=18.097 Z=59.176",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.26-07.21.21"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 3: L=X=50.802 Y=-17.023 Z=62.834 R=X=48.381 Y=18.320 Z=55.386",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.26-07.21.21"
+				},
+				{
+					"event":
+					{
+						"type": "Info",
+						"message": "Steering sample 4: L=X=51.889 Y=-15.137 Z=66.187 R=X=47.162 Y=17.671 Z=51.639",
+						"context": "",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.26-07.21.21"
+				}
+			],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "EdgesAndPresentation",
+			"fullTestPath": "RoadToF1.RacingAI.EdgesAndPresentation",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"6BB3402C49D239F026335EBCADC1B5C4"
+			],
+			"duration": 0.003244202584028244,
+			"dateTime": "2026.10.26-07.21.22",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "ContactAndPooling",
+			"fullTestPath": "RoadToF1.SurfaceFX.ContactAndPooling",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"6BB3402C49D239F026335EBCADC1B5C4"
+			],
+			"duration": 0.011426601558923721,
+			"dateTime": "2026.10.26-07.21.22",
+			"entries": [
+				{
+					"event":
+					{
+						"type": "Warning",
+						"message": "PIE: Mobility of /Temp/Untitled_3.SurfaceFXTestWorld:PersistentLevel.StaticMeshActor_0 : StaticMeshComponent0 has to be 'Movable' if you'd like to move. ",
+						"context": "log",
+						"artifact": "00000000000000000000000000000000"
+					},
+					"filename": "",
+					"lineNumber": -1,
+					"timestamp": "2026.10.26-07.21.22"
+				}
+			],
+			"warnings": 1,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "ForceScenarios",
+			"fullTestPath": "RoadToF1.TireDynamics.ForceScenarios",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"6BB3402C49D239F026335EBCADC1B5C4"
+			],
+			"duration": 0.031657598912715912,
+			"dateTime": "2026.10.26-07.21.22",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "GroundCollisionAndReset",
+			"fullTestPath": "RoadToF1.TireDynamics.GroundCollisionAndReset",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"6BB3402C49D239F026335EBCADC1B5C4"
+			],
+			"duration": 0.03333599865436554,
+			"dateTime": "2026.10.26-07.21.22",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

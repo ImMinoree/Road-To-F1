@@ -1,0 +1,36 @@
+{
+  "assets": [
+    "/Game/RoadToF1/PlayerVehicleV4/SK_V4_DriverFull.SK_V4_DriverFull",
+    "/Game/RoadToF1/PlayerVehicleV4/SK_V4_DriverPOV.SK_V4_DriverPOV",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_BrakeDisc.SM_V4_BrakeDisc",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_Caliper.SM_V4_Caliper",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_ChainLink.SM_V4_ChainLink",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_Chassis.SM_V4_Chassis",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_Column.SM_V4_Column",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_KnuckleFL.SM_V4_KnuckleFL",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_KnuckleFR.SM_V4_KnuckleFR",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_Pedall.SM_V4_Pedall",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_Pedalr.SM_V4_Pedalr",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_Pitman.SM_V4_Pitman",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_RearAxle.SM_V4_RearAxle",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_Sprocket.SM_V4_Sprocket",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_SteeringWheel.SM_V4_SteeringWheel",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_TieRod.SM_V4_TieRod",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_WheelFL.SM_V4_WheelFL",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_WheelFR.SM_V4_WheelFR",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_WheelRL.SM_V4_WheelRL",
+    "/Game/RoadToF1/PlayerVehicleV4/SM_V4_WheelRR.SM_V4_WheelRR"
+  ],
+  "shared_skeleton": "/Game/RoadToF1/PlayerVehicleV4/SK_V4_DriverFull_Skeleton.SK_V4_DriverFull_Skeleton",
+  "protected_hashes": {
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\Maps\\CircuitDevelopment.umap": "3b033060f11dda12df68b462758d011d981d66ea0b1c74a01b13896ce672a6b1",
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\Maps\\DesertKarting.umap": "12764934907cc0d5baee908b321080d4f600c859fee7c27987b9c99b030c69be",
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\Maps\\DesertKarting_Visual.umap": "b8460807ec07556fcfbed43270018a8de76aefe42b58f64839be28b99761cfb6",
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\Maps\\VisualProof.umap": "81fedf27e7c8a5bc0f0322c114d7d55d9558e4754a0e4b9ec15650adf4fbaa7f",
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartTireDynamics.cpp": "2566f0a189b4044c77522b3150eb96173d02508fa63aa7ef4cbba41dd8a5c760",
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartTireDynamics.h": "70bb4786189ed26f149072cca9f781e4444c37e52b8064af09202ca6d85b6d4a",
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartTireModel.cpp": "7f65c82504ceaefd0ae065df3e8e12da0656ecc1b355cf9b15f0219bf69fc45e",
+    "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartTireModel.h": "f73791721d1a7350895da1ff24b9c6dc54c9664416f2ec4315610bfd591a2c94"
+  },
+  "maps_and_physics_unchanged": true
+}

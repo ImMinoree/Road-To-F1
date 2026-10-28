@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_player_vehicle_v4.py", line 77, in tick
+    if age>6 and slip.longitudinal_speed_mps<=3:raise AssertionError(('acceleration',row))
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('acceleration', {'t': 15.013887844979763, 'phase': 'forward', 'u_mps': 0.0, 'steer_deg': 0.0, 'left_deg': -0.00014900771202519536, 'right_deg': -0.00014910174650140107, 'column_deg': -0.000171661376953125, 'rear_roll_deg': 191.69384765625, 'rod_error_cm': 5.613287612504791e-13, 'grip_error_cm': 1.036955817402572e-12, 'brake': 0.0, 'throttle': 1.0, 'rear_slip_deg': 0.0, 'drifting': False, 'collision_count': 1016, 'grounded': 4, 'x': -59540.00319214966, 'y': -60000.0, 'z': 2031.0})

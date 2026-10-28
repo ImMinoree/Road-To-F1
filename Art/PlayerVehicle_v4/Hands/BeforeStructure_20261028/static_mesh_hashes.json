@@ -1,0 +1,74 @@
+[
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_BrakeDisc.uasset",
+    "Hash": "5C47E8C662DF596645CBF69EF7CCFFCFF2B9032A0EF66D9C839B4CEC65B72710"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_Caliper.uasset",
+    "Hash": "34759C6345C19E051CDBD7CD02AD2251CB66B96A65B7E903C46C9C8F8ACEC84B"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_ChainLink.uasset",
+    "Hash": "166B9A11CB4155D30DC8DA33C7A9D50F599D868C3E7030D4B741F59331FF07A8"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_Chassis.uasset",
+    "Hash": "1007DBE2490B31F7F638B599E1B77FFC63A6C566760A419E01D945A511E6D7CB"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_Column.uasset",
+    "Hash": "EBF4D339224E30C12764159D8035822822A410671609ECE86862AF972F7F8240"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_KnuckleFL.uasset",
+    "Hash": "73E48F533D3E2D96AAA02E06E7D84F294A56E7EAEDD517BC6A39AFCF783BE43B"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_KnuckleFR.uasset",
+    "Hash": "427FED2C03E2C3121543C3079C91DCEB91E0870A69F952A960F28263E5DC99F2"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_Pedall.uasset",
+    "Hash": "BCF95E777DC79D01450E2385DB8A4040F01B18EA198B0AE1BAC3D0F489800CD0"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_Pedalr.uasset",
+    "Hash": "FD56C7BE8AE4B0033D668D551A856B1AD14C8A3712157498FC199710F46AD714"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_Pitman.uasset",
+    "Hash": "D2504A8504E8A42B74CEE3C9E8CAC956A46170EA362CE8A432C726453070BF07"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_RearAxle.uasset",
+    "Hash": "10C793B05EC33C3F6C7D2E16A45B158A266CA622476C5F62227FB3366756DC12"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_Sprocket.uasset",
+    "Hash": "D75C6A46282967FD96FBAB9B285FAA3E65E409AEB045EACD51545743ED5CD639"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_SteeringWheel.uasset",
+    "Hash": "CC85753A7E4A295147CDFC4A17F365E0563B9A61DA7EFD2E51EDD3AC7E1C12E2"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_TieRod.uasset",
+    "Hash": "182844C1D1C80342A1CDD21AC09E0859DD5723A17481CD539D601A0A0E88E399"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_WheelFL.uasset",
+    "Hash": "4A2F173AAEB8C66B6FFB0629699886FE2697DFE015B2D690EC1EDCD72E2AB737"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_WheelFR.uasset",
+    "Hash": "8382BEE76420D66C254D858636EEB35BB942DD6CF8E5649AA1C1224A09336D91"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_WheelRL.uasset",
+    "Hash": "513473CC1320844316B3636CC8C2EE504C190571E93B09B5430436D1C9172FEB"
+  },
+  {
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Content\\RoadToF1\\PlayerVehicleV4\\SM_V4_WheelRR.uasset",
+    "Hash": "1EBD7EFE745C0271ABCD3415B91EA35C2F59C64872EB7EB0D7BC6E1CF361459E"
+  }
+]

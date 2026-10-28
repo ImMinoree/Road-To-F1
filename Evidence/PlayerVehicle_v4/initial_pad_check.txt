@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_player_vehicle_v4.py", line 77, in tick
+    if age>3:shot('07_external_driving');assert slip.longitudinal_speed_mps>3;state['checks']['E']=True;next_phase('rolling_turn')
+                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

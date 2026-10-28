@@ -1,5 +1,6 @@
 #if WITH_DEV_AUTOMATION_TESTS
 #include "Misc/AutomationTest.h"
+#include "Engine/StaticMesh.h"
 #include "../KartSurfaceFX.h"
 #include "Engine/Engine.h"
 #include "Engine/World.h"

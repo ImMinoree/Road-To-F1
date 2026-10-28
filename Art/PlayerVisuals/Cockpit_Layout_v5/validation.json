@@ -4,37 +4,37 @@
     {
       "frame": 1,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4317737817764282,
-      "bottom_fraction": 0.9320022910833359,
+      "top_fraction": 0.431773841381073,
+      "bottom_fraction": 0.9320023357868195,
       "minimum_rim_camera_depth_m": 0.5619289875030518,
       "lower_rim_occluded_by_legs": 0
     },
     {
       "frame": 2,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.43240809440612793,
-      "bottom_fraction": 0.9312616735696793,
+      "top_fraction": 0.4324081540107727,
+      "bottom_fraction": 0.9312617182731628,
       "minimum_rim_camera_depth_m": 0.5619974136352539
     },
     {
       "frame": 3,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.43302714824676514,
-      "bottom_fraction": 0.9304322600364685,
+      "top_fraction": 0.4330272674560547,
+      "bottom_fraction": 0.9304323419928551,
       "minimum_rim_camera_depth_m": 0.562073290348053
     },
     {
       "frame": 4,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4337225556373596,
-      "bottom_fraction": 0.9295169934630394,
+      "top_fraction": 0.4337226152420044,
+      "bottom_fraction": 0.9295170307159424,
       "minimum_rim_camera_depth_m": 0.5621565580368042
     },
     {
       "frame": 5,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.43445509672164917,
-      "bottom_fraction": 0.9286481440067291,
+      "bottom_fraction": 0.9286481887102127,
       "minimum_rim_camera_depth_m": 0.5622373223304749
     },
     {
@@ -47,36 +47,36 @@
     {
       "frame": 7,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.43595343828201294,
-      "bottom_fraction": 0.9266472533345222,
+      "top_fraction": 0.4359534978866577,
+      "bottom_fraction": 0.9266473352909088,
       "minimum_rim_camera_depth_m": 0.5624203681945801,
       "lower_rim_occluded_by_legs": 0
     },
     {
       "frame": 8,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4367367625236511,
-      "bottom_fraction": 0.9256478920578957,
+      "top_fraction": 0.4367368817329407,
+      "bottom_fraction": 0.9256479740142822,
       "minimum_rim_camera_depth_m": 0.5625130534172058
     },
     {
       "frame": 9,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.4375309944152832,
-      "bottom_fraction": 0.9245631173253059,
+      "bottom_fraction": 0.9245631545782089,
       "minimum_rim_camera_depth_m": 0.5626125335693359
     },
     {
       "frame": 10,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.43840014934539795,
-      "bottom_fraction": 0.9234801307320595,
+      "bottom_fraction": 0.9234802201390266,
       "minimum_rim_camera_depth_m": 0.5627123713493347
     },
     {
       "frame": 11,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4393141269683838,
+      "top_fraction": 0.43931418657302856,
       "bottom_fraction": 0.9223648905754089,
       "minimum_rim_camera_depth_m": 0.5628149509429932
     },
@@ -84,43 +84,43 @@
       "frame": 12,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.4401779770851135,
-      "bottom_fraction": 0.9213061556220055,
+      "bottom_fraction": 0.9213062450289726,
       "minimum_rim_camera_depth_m": 0.5629124045372009
     },
     {
       "frame": 13,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4411160945892334,
-      "bottom_fraction": 0.9203903749585152,
+      "top_fraction": 0.44111621379852295,
+      "bottom_fraction": 0.9203904569149017,
       "minimum_rim_camera_depth_m": 0.5629967451095581,
       "lower_rim_occluded_by_legs": 0
     },
     {
       "frame": 14,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4421283006668091,
+      "top_fraction": 0.44212836027145386,
       "bottom_fraction": 0.9194746091961861,
       "minimum_rim_camera_depth_m": 0.5630808472633362
     },
     {
       "frame": 15,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.44311386346817017,
-      "bottom_fraction": 0.9185504093766212,
+      "top_fraction": 0.44311392307281494,
+      "bottom_fraction": 0.9185504987835884,
       "minimum_rim_camera_depth_m": 0.5631662011146545
     },
     {
       "frame": 16,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.44411182403564453,
-      "bottom_fraction": 0.9175422266125679,
+      "top_fraction": 0.4441118836402893,
+      "bottom_fraction": 0.9175423085689545,
       "minimum_rim_camera_depth_m": 0.5632585883140564
     },
     {
       "frame": 17,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.44518303871154785,
-      "bottom_fraction": 0.9166054651141167,
+      "bottom_fraction": 0.9166055098176003,
       "minimum_rim_camera_depth_m": 0.5633454918861389
     },
     {
@@ -133,7 +133,7 @@
     {
       "frame": 19,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.44725126028060913,
+      "top_fraction": 0.4472513794898987,
       "bottom_fraction": 0.9146309867501259,
       "minimum_rim_camera_depth_m": 0.5635275840759277,
       "lower_rim_occluded_by_legs": 0
@@ -142,42 +142,42 @@
       "frame": 20,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.44828665256500244,
-      "bottom_fraction": 0.9136328920722008,
+      "bottom_fraction": 0.9136329814791679,
       "minimum_rim_camera_depth_m": 0.5636194944381714
     },
     {
       "frame": 21,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.44931501150131226,
-      "bottom_fraction": 0.912695936858654,
+      "top_fraction": 0.44931507110595703,
+      "bottom_fraction": 0.9126959815621376,
       "minimum_rim_camera_depth_m": 0.56370609998703
     },
     {
       "frame": 22,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.45028573274612427,
-      "bottom_fraction": 0.9117947146296501,
+      "top_fraction": 0.45028579235076904,
+      "bottom_fraction": 0.9117947518825531,
       "minimum_rim_camera_depth_m": 0.5637893080711365
     },
     {
       "frame": 23,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.45122241973876953,
-      "bottom_fraction": 0.9109533652663231,
-      "minimum_rim_camera_depth_m": 0.5638670325279236
+      "top_fraction": 0.4512225389480591,
+      "bottom_fraction": 0.9109534472227097,
+      "minimum_rim_camera_depth_m": 0.5638669729232788
     },
     {
       "frame": 24,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.45206886529922485,
-      "bottom_fraction": 0.9102113246917725,
+      "bottom_fraction": 0.9102114140987396,
       "minimum_rim_camera_depth_m": 0.5639355182647705
     },
     {
       "frame": 25,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.4527759552001953,
-      "bottom_fraction": 0.9096847847104073,
+      "bottom_fraction": 0.9096848219633102,
       "minimum_rim_camera_depth_m": 0.563984215259552,
       "lower_rim_occluded_by_legs": 0
     },
@@ -185,42 +185,42 @@
       "frame": 26,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.45206886529922485,
-      "bottom_fraction": 0.9102113246917725,
+      "bottom_fraction": 0.910211369395256,
       "minimum_rim_camera_depth_m": 0.5639355182647705
     },
     {
       "frame": 27,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4512224793434143,
-      "bottom_fraction": 0.9109533652663231,
+      "top_fraction": 0.4512225389480591,
+      "bottom_fraction": 0.9109534099698067,
       "minimum_rim_camera_depth_m": 0.5638669729232788
     },
     {
       "frame": 28,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.45028573274612427,
-      "bottom_fraction": 0.9117947146296501,
+      "top_fraction": 0.45028579235076904,
+      "bottom_fraction": 0.9117947518825531,
       "minimum_rim_camera_depth_m": 0.5637893080711365
     },
     {
       "frame": 29,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.44931501150131226,
-      "bottom_fraction": 0.9126958921551704,
+      "top_fraction": 0.44931507110595703,
+      "bottom_fraction": 0.912695936858654,
       "minimum_rim_camera_depth_m": 0.56370609998703
     },
     {
       "frame": 30,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.44828665256500244,
-      "bottom_fraction": 0.9136328548192978,
+      "bottom_fraction": 0.9136329367756844,
       "minimum_rim_camera_depth_m": 0.5636194944381714
     },
     {
       "frame": 31,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4472513198852539,
-      "bottom_fraction": 0.9146310240030289,
+      "top_fraction": 0.4472513794898987,
+      "bottom_fraction": 0.9146310687065125,
       "minimum_rim_camera_depth_m": 0.563527524471283,
       "lower_rim_occluded_by_legs": 0
     },
@@ -228,7 +228,7 @@
       "frame": 32,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.44619929790496826,
-      "bottom_fraction": 0.9155901521444321,
+      "bottom_fraction": 0.915590226650238,
       "minimum_rim_camera_depth_m": 0.5634388327598572
     },
     {
@@ -241,29 +241,29 @@
     {
       "frame": 34,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.44411182403564453,
-      "bottom_fraction": 0.9175422266125679,
+      "top_fraction": 0.4441118836402893,
+      "bottom_fraction": 0.9175423085689545,
       "minimum_rim_camera_depth_m": 0.5632585883140564
     },
     {
       "frame": 35,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4431138038635254,
-      "bottom_fraction": 0.9185504093766212,
+      "top_fraction": 0.44311386346817017,
+      "bottom_fraction": 0.9185504987835884,
       "minimum_rim_camera_depth_m": 0.5631662011146545
     },
     {
       "frame": 36,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4421283006668091,
+      "top_fraction": 0.44212836027145386,
       "bottom_fraction": 0.9194746091961861,
       "minimum_rim_camera_depth_m": 0.5630808472633362
     },
     {
       "frame": 37,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4411160945892334,
-      "bottom_fraction": 0.9203903302550316,
+      "top_fraction": 0.44111621379852295,
+      "bottom_fraction": 0.9203904196619987,
       "minimum_rim_camera_depth_m": 0.5629967451095581,
       "lower_rim_occluded_by_legs": 0
     },
@@ -271,13 +271,13 @@
       "frame": 38,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.4401779770851135,
-      "bottom_fraction": 0.9213061556220055,
+      "bottom_fraction": 0.9213062450289726,
       "minimum_rim_camera_depth_m": 0.5629124641418457
     },
     {
       "frame": 39,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4393141269683838,
+      "top_fraction": 0.43931418657302856,
       "bottom_fraction": 0.9223648905754089,
       "minimum_rim_camera_depth_m": 0.5628149509429932
     },
@@ -285,28 +285,28 @@
       "frame": 40,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.43840014934539795,
-      "bottom_fraction": 0.9234800934791565,
+      "bottom_fraction": 0.9234801754355431,
       "minimum_rim_camera_depth_m": 0.5627123713493347
     },
     {
       "frame": 41,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.4375309944152832,
-      "bottom_fraction": 0.9245631173253059,
+      "bottom_fraction": 0.9245631545782089,
       "minimum_rim_camera_depth_m": 0.5626125335693359
     },
     {
       "frame": 42,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4367368221282959,
-      "bottom_fraction": 0.9256478473544121,
+      "top_fraction": 0.4367368817329407,
+      "bottom_fraction": 0.9256479367613792,
       "minimum_rim_camera_depth_m": 0.5625130534172058
     },
     {
       "frame": 43,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.43595343828201294,
-      "bottom_fraction": 0.9266472533345222,
+      "top_fraction": 0.4359534978866577,
+      "bottom_fraction": 0.9266473352909088,
       "minimum_rim_camera_depth_m": 0.5624203681945801,
       "lower_rim_occluded_by_legs": 0
     },
@@ -321,36 +321,36 @@
       "frame": 45,
       "out_of_frame_rim_vertices": 0,
       "top_fraction": 0.43445509672164917,
-      "bottom_fraction": 0.9286480620503426,
+      "bottom_fraction": 0.9286481440067291,
       "minimum_rim_camera_depth_m": 0.5622373223304749
     },
     {
       "frame": 46,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4337225556373596,
-      "bottom_fraction": 0.9295169934630394,
+      "top_fraction": 0.4337226152420044,
+      "bottom_fraction": 0.9295170307159424,
       "minimum_rim_camera_depth_m": 0.5621565580368042
     },
     {
       "frame": 47,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.43302708864212036,
-      "bottom_fraction": 0.9304322600364685,
+      "top_fraction": 0.4330272078514099,
+      "bottom_fraction": 0.9304323419928551,
       "minimum_rim_camera_depth_m": 0.562073290348053
     },
     {
       "frame": 48,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.43240803480148315,
-      "bottom_fraction": 0.9312616735696793,
+      "top_fraction": 0.43240809440612793,
+      "bottom_fraction": 0.9312617182731628,
       "minimum_rim_camera_depth_m": 0.5619974136352539
     },
     {
       "frame": 49,
       "out_of_frame_rim_vertices": 0,
-      "top_fraction": 0.4317737817764282,
-      "bottom_fraction": 0.9320022910833359,
-      "minimum_rim_camera_depth_m": 0.5619289875030518,
+      "top_fraction": 0.431773841381073,
+      "bottom_fraction": 0.9320023357868195,
+      "minimum_rim_camera_depth_m": 0.561928927898407,
       "lower_rim_occluded_by_legs": 0
     }
   ],
@@ -361,32 +361,32 @@
         "hand_l": [
           0.4716159701347351,
           0.17671968042850494,
-          0.666370689868927
+          0.5163705348968506
         ],
         "hand_r": [
           0.5188919305801392,
-          -0.15136277675628662,
-          0.811870276927948
+          -0.15136276185512543,
+          0.6618701815605164
         ],
         "calf_l": [
-          0.4609187841415405,
-          0.1359434872865677,
-          0.5359115600585938
+          0.44906020164489746,
+          0.10399344563484192,
+          0.3702315092086792
         ],
         "calf_r": [
-          0.46038544178009033,
-          -0.13599826395511627,
-          0.5351323485374451
+          0.44875261187553406,
+          -0.1043424978852272,
+          0.3692217469215393
         ],
         "foot_l": [
-          0.8399999141693115,
-          0.16999998688697815,
-          0.27799999713897705
+          0.8899999856948853,
+          0.17000000178813934,
+          0.25799983739852905
         ],
         "foot_r": [
-          0.8399997353553772,
-          -0.17000003159046173,
-          0.2779996395111084
+          0.8899996876716614,
+          -0.17000004649162292,
+          0.2579994797706604
         ]
       }
     },
@@ -395,33 +395,33 @@
       "bones": {
         "hand_l": [
           0.4837966561317444,
-          0.18320238590240479,
-          0.7038591504096985
+          0.1832023710012436,
+          0.5538591146469116
         ],
         "hand_r": [
           0.5080087184906006,
-          -0.170215904712677,
-          0.7783756852149963
+          -0.1702159196138382,
+          0.6283756494522095
         ],
         "calf_l": [
-          0.4609187841415405,
-          0.1359434872865677,
-          0.5359115600585938
+          0.44906020164489746,
+          0.10399344563484192,
+          0.3702315092086792
         ],
         "calf_r": [
-          0.46038544178009033,
-          -0.13599826395511627,
-          0.5351323485374451
+          0.44875261187553406,
+          -0.1043424978852272,
+          0.3692217469215393
         ],
         "foot_l": [
-          0.8399999141693115,
-          0.16999998688697815,
-          0.27799999713897705
+          0.8899999856948853,
+          0.17000000178813934,
+          0.25799983739852905
         ],
         "foot_r": [
-          0.8399997353553772,
-          -0.17000003159046173,
-          0.2779996395111084
+          0.8899996876716614,
+          -0.17000004649162292,
+          0.2579994797706604
         ]
       }
     },
@@ -430,33 +430,33 @@
       "bones": {
         "hand_l": [
           0.496122270822525,
-          0.18099969625473022,
-          0.7417938113212585
+          0.18099965155124664,
+          0.5917938351631165
         ],
         "hand_r": [
-          0.4961225986480713,
+          0.4961226284503937,
           -0.18099960684776306,
-          0.7417938113212585
+          0.5917937159538269
         ],
         "calf_l": [
-          0.4609187841415405,
-          0.1359434872865677,
-          0.5359115600585938
+          0.44906020164489746,
+          0.10399344563484192,
+          0.3702315092086792
         ],
         "calf_r": [
-          0.46038544178009033,
-          -0.13599826395511627,
-          0.5351323485374451
+          0.44875261187553406,
+          -0.1043424978852272,
+          0.3692217469215393
         ],
         "foot_l": [
-          0.8399999141693115,
-          0.16999998688697815,
-          0.27799999713897705
+          0.8899999856948853,
+          0.17000000178813934,
+          0.25799983739852905
         ],
         "foot_r": [
-          0.8399997353553772,
-          -0.17000003159046173,
-          0.2779996395111084
+          0.8899996876716614,
+          -0.17000004649162292,
+          0.2579994797706604
         ]
       }
     },
@@ -464,34 +464,34 @@
       "frame": 37,
       "bones": {
         "hand_l": [
-          0.5080083608627319,
-          0.17021618783473969,
-          0.7783754467964172
+          0.5080081820487976,
+          0.17021621763706207,
+          0.628375232219696
         ],
         "hand_r": [
-          0.4837970435619354,
+          0.48379701375961304,
           -0.1832023710012436,
-          0.7038596272468567
+          0.5538594722747803
         ],
         "calf_l": [
-          0.4609187841415405,
-          0.1359434872865677,
-          0.5359115600585938
+          0.44906020164489746,
+          0.10399344563484192,
+          0.3702315092086792
         ],
         "calf_r": [
-          0.46038544178009033,
-          -0.13599826395511627,
-          0.5351323485374451
+          0.44875261187553406,
+          -0.1043424978852272,
+          0.3692217469215393
         ],
         "foot_l": [
-          0.8399999141693115,
-          0.16999998688697815,
-          0.27799999713897705
+          0.8899999856948853,
+          0.17000000178813934,
+          0.25799983739852905
         ],
         "foot_r": [
-          0.8399997353553772,
-          -0.17000003159046173,
-          0.2779996395111084
+          0.8899996876716614,
+          -0.17000004649162292,
+          0.2579994797706604
         ]
       }
     },
@@ -499,34 +499,34 @@
       "frame": 49,
       "bones": {
         "hand_l": [
-          0.5188915133476257,
-          0.15136294066905975,
-          0.811870276927948
+          0.5188913941383362,
+          0.15136292576789856,
+          0.6618701815605164
         ],
         "hand_r": [
-          0.4716161787509918,
-          -0.17671991884708405,
-          0.666370689868927
+          0.47161608934402466,
+          -0.17671990394592285,
+          0.5163705348968506
         ],
         "calf_l": [
-          0.4609187841415405,
-          0.1359434872865677,
-          0.5359115600585938
+          0.44906020164489746,
+          0.10399344563484192,
+          0.3702315092086792
         ],
         "calf_r": [
-          0.46038544178009033,
-          -0.13599826395511627,
-          0.5351323485374451
+          0.44875261187553406,
+          -0.1043424978852272,
+          0.3692217469215393
         ],
         "foot_l": [
-          0.8399999141693115,
-          0.16999998688697815,
-          0.27799999713897705
+          0.8899999856948853,
+          0.17000000178813934,
+          0.25799983739852905
         ],
         "foot_r": [
-          0.8399997353553772,
-          -0.17000003159046173,
-          0.2779996395111084
+          0.8899996876716614,
+          -0.17000004649162292,
+          0.2579994797706604
         ]
       }
     }

@@ -1,6 +1,7 @@
 #pragma once
 #include <algorithm>
 #include <cmath>
+#include "KartRaceSettings.h"
 
 // SI units, X forward/Y right, positive yaw turns right. No Unreal/world dependency.
 // The same solver is used by gameplay, the native tuning harness and automation tests.
@@ -11,12 +12,27 @@ inline double Deg(double Radians){return Radians*180.0/Pi;}
 inline double Smooth(double A,double B,double X){double T=std::clamp((X-A)/(B-A),0.0,1.0);return T*T*(3-2*T);}
 struct Parameters {
  double Mass=165,Inertia=65,Wheelbase=1.04,FrontDistance=.60,Track=1.06,CGHeight=.28;
- double FrontStiffness=15000,RearStiffness=21000,RearGripScale=1.10,SlidingDrop=.12;
- double EngineForce=710,BrakeForce=550,RearBrakeBias=1,LinearDrag=.32,RollingForce=15;
- double MaxSteerDegrees=24,SteerRate=3.2,HighSpeedSteerReduction=.45,RelaxationLength=.18,AxleScrub=8;
+ double FrontStiffness=12000,RearStiffness=21000,RearGripScale=1.20,SlidingDrop=.06;
+ // Grip-aware rear torque modulation: retain lateral authority instead of locking/spinning the axle.
+ double RearLateralGripReserve=.95;
+ double EngineForce=1000,BrakeForce=550,RearBrakeBias=1,LinearDrag=.32,RollingForce=15;
+ double MaximumForwardSpeed=KartRace::TopSpeedMps;
+ double MaxSteerDegrees=24,SteerRate=2,HighSpeedSteerReduction=.75,RelaxationLength=.18,AxleScrub=8;
+ double SteeringLateralAccelerationG=.85; // Digital-input steering envelope; 0 disables the assistance.
+ double SteeringResponseSeconds=.16;
  double DriftEnterDegrees=6,DriftExitDegrees=3,DriftMinSpeed=3,DriftHold=.12,RecoveryHold=.18;
 };
 struct Contact {double FrontMu=1.05,RearMu=1.05,FrontSupport=1,RearSupport=1;};
+// Retain established corner/partial-throttle response; extra power arrives smoothly at full throttle.
+inline double DriveForceForThrottle(double PeakForce,double Throttle){
+ const double Baseline=std::min(PeakForce,710.0);
+ return Throttle*(Baseline+(PeakForce-Baseline)*Smooth(.85,1.0,std::max(0.0,Throttle)));
+}
+inline double ThrottleForDriveForce(double PeakForce,double Force){
+ double Lo=0,Hi=1;
+ for(int I=0;I<16;++I){const double Mid=(Lo+Hi)*.5;if(DriveForceForThrottle(PeakForce,Mid)<Force)Lo=Mid;else Hi=Mid;}
+ return (Lo+Hi)*.5;
+}
 struct Input {double Throttle=0,Steering=0,Brake=0;};
 struct State {
  double X=0,Y=0,Heading=0,U=0,V=0,R=0,Steer=0,Ax=0,Ay=0;
@@ -29,4 +45,7 @@ struct State {
 double MaxSteer(const Parameters& P,double Speed);
 void UpdateSteering(State& S,const Parameters& P,double Steering,double Dt);
 void Step(State& S,const Parameters& P,const Contact& C,const Input& I,double Dt=StepSeconds);
+// SI contact impulse. Normal points from B toward A; a null B is an immovable barrier.
+double ResolveContact(State& A,const Parameters& PA,State* B,const Parameters* PB,
+ double AX,double AY,double BX,double BY,double PX,double PY,double NX,double NY,double Friction=.35,double Restitution=.05);
 }

@@ -1,10 +1,45 @@
 #include "KartTireModel.h"
 
 namespace KartDynamics {
-double MaxSteer(const Parameters& P,double Speed){return Rad(P.MaxSteerDegrees)/(1+P.HighSpeedSteerReduction*Speed*Speed/(18*18));}
+double ResolveContact(State& A,const Parameters& PA,State* B,const Parameters* PB,
+ double AX,double AY,double BX,double BY,double PX,double PY,double NX,double NY,double Friction,double Restitution){
+ const double Length=std::hypot(NX,NY);if(Length<1e-8)return 0;
+ NX/=Length;NY/=Length;
+ const double InvA=1/PA.Mass,InvIA=1/PA.Inertia,InvB=B&&PB?1/PB->Mass:0,InvIB=B&&PB?1/PB->Inertia:0;
+ const double RAX=PX-AX,RAY=PY-AY,RBX=PX-BX,RBY=PY-BY;
+ auto Velocity=[](const State& S,double RX,double RY,double& X,double& Y){
+  X=std::cos(S.Heading)*S.U-std::sin(S.Heading)*S.V-S.R*RY;
+  Y=std::sin(S.Heading)*S.U+std::cos(S.Heading)*S.V+S.R*RX;
+ };
+ auto Apply=[](State& S,double X,double Y,double RX,double RY,double InvM,double InvI){
+  S.U+=(std::cos(S.Heading)*X+std::sin(S.Heading)*Y)*InvM;
+  S.V+=(-std::sin(S.Heading)*X+std::cos(S.Heading)*Y)*InvM;S.R+=(RX*Y-RY*X)*InvI;
+ };
+ double VAX,VAY,VBX=0,VBY=0;Velocity(A,RAX,RAY,VAX,VAY);if(B)Velocity(*B,RBX,RBY,VBX,VBY);
+ const double Closing=(VAX-VBX)*NX+(VAY-VBY)*NY;if(Closing>=0)return 0;
+ const double CrossA=RAX*NY-RAY*NX,CrossB=RBX*NY-RBY*NX;
+ // No restitution in resting contacts: held throttle must not create repeated bounce.
+ const double J=-(1+(Closing<-.5?std::clamp(Restitution,0.0,.2):0))*Closing/(InvA+InvB+CrossA*CrossA*InvIA+CrossB*CrossB*InvIB);
+ Apply(A,J*NX,J*NY,RAX,RAY,InvA,InvIA);if(B)Apply(*B,-J*NX,-J*NY,RBX,RBY,InvB,InvIB);
+ Velocity(A,RAX,RAY,VAX,VAY);if(B)Velocity(*B,RBX,RBY,VBX,VBY);
+ const double TX=-NY,TY=NX,TA=RAX*TY-RAY*TX,TB=RBX*TY-RBY*TX;
+ const double JT=std::clamp(-((VAX-VBX)*TX+(VAY-VBY)*TY)/(InvA+InvB+TA*TA*InvIA+TB*TB*InvIB),-Friction*J,Friction*J);
+ Apply(A,JT*TX,JT*TY,RAX,RAY,InvA,InvIA);if(B)Apply(*B,-JT*TX,-JT*TY,RBX,RBY,InvB,InvIB);
+ A.Beta=std::atan2(A.V,std::max(.1,std::abs(A.U)));if(B)B->Beta=std::atan2(B->V,std::max(.1,std::abs(B->U)));
+ return J;
+}
+double MaxSteer(const Parameters& P,double Speed){
+ const double Mechanical=Rad(P.MaxSteerDegrees)/(1+P.HighSpeedSteerReduction*Speed*Speed/(18*18));
+ // Limit the driver's requested curvature, never lateral velocity or physical yaw.
+ // Full keyboard lock remains available at walking pace; high-speed bends require slowing down.
+ return P.SteeringLateralAccelerationG>0?std::min(Mechanical,std::atan(P.SteeringLateralAccelerationG*Gravity*P.Wheelbase/std::max(1.0,Speed*Speed))):Mechanical;
+}
 void UpdateSteering(State& S,const Parameters& P,double Steering,double Dt){
  const double Desired=std::clamp(Steering,-1.0,1.0)*MaxSteer(P,std::abs(S.U));
- S.Steer+=std::clamp(Desired-S.Steer,-P.SteerRate*Dt,P.SteerRate*Dt);
+ const double Blend=P.SteeringResponseSeconds>0?1-std::exp(-Dt/P.SteeringResponseSeconds):1;
+ S.Steer+=std::clamp((Desired-S.Steer)*Blend,-P.SteerRate*Dt,P.SteerRate*Dt);
+ // Remove an imperceptible exponential tail when the driver releases the steering.
+ if(std::abs(Steering)<1e-6&&std::abs(S.Steer)<Rad(.005)&&std::abs(S.Steer)<=P.SteerRate*Dt)S.Steer=0;
 }
 void Step(State& S,const Parameters& P,const Contact& C,const Input& I,double Dt){
  UpdateSteering(S,P,I.Steering,Dt);
@@ -28,13 +63,20 @@ void Step(State& S,const Parameters& P,const Contact& C,const Input& I,double Dt
  double Brake=std::clamp(I.Brake,0.0,1.0),Drive=std::clamp(I.Throttle,-1.0,1.0);
  if(Drive*S.U<0&&std::abs(S.U)>.35){Brake=std::max(Brake,std::abs(Drive));Drive=0;}
  if(Brake>0)Drive=0;
- double DriveForce=Drive*P.EngineForce;
+ double DriveForce=DriveForceForThrottle(P.EngineForce,Drive);
  if(Drive<0)DriveForce*=.65*(1-Smooth(2.5,3.5,-S.U));
  const double Direction=S.U>.02?1:(S.U<-.02?-1:0);
  const double BrakeRequest=Brake*P.BrakeForce*Direction;
  const double FrontRequest=-BrakeRequest*(1-P.RearBrakeBias),RearRequest=DriveForce-BrakeRequest*P.RearBrakeBias;
  S.FrontFx=std::clamp(FrontRequest,-S.FrontCapacity*.985,S.FrontCapacity*.985);
- S.RearFx=std::clamp(RearRequest,-S.RearCapacity*.985,S.RearCapacity*.985);
+ const double RearLateralDemand=S.RearCapacity*std::tanh(P.RearStiffness*std::pow(S.RearLoad/(M*Gravity*A/P.Wheelbase),.85)*std::abs(S.RearAlpha)/std::max(.01,S.RearCapacity));
+ const double FrontCornerDemand=S.FrontCapacity*std::tanh(P.FrontStiffness*std::pow(S.FrontLoad/(M*Gravity*B/P.Wheelbase),.85)*std::abs(S.FrontAlpha)/std::max(.01,S.FrontCapacity));
+ // Reserve rear cornering capacity as turn-in begins, before a large rear slip has developed.
+ const double RearDemand=std::max(RearLateralDemand,FrontCornerDemand*A/B);
+ const double ReservedLateral=std::min(RearDemand,S.RearCapacity*std::clamp(P.RearLateralGripReserve,0.0,.95));
+ const double RearLongLimit=.985*std::sqrt(std::max(0.0,S.RearCapacity*S.RearCapacity-ReservedLateral*ReservedLateral));
+ // Modulate only requested drive/brake torque. Tire forces still determine all lateral motion and yaw.
+ S.RearFx=std::clamp(RearRequest,-RearLongLimit,RearLongLimit);
  S.RearLongDemand=std::abs(RearRequest)/std::max(1.0,S.RearCapacity);
  const double FrontLateral=std::sqrt(std::max(0.0,S.FrontCapacity*S.FrontCapacity-S.FrontFx*S.FrontFx));
  const double RearLateral=std::sqrt(std::max(0.0,S.RearCapacity*S.RearCapacity-S.RearFx*S.RearFx));
@@ -56,6 +98,8 @@ void Step(State& S,const Parameters& P,const Contact& C,const Input& I,double Dt
  S.Ax=Fx/M;S.Ay=Fy/M;
  const double OldU=S.U;
  S.U+=(S.Ax+S.R*S.V)*Dt;S.V+=(S.Ay-S.R*OldU)*Dt;S.R+=Torque/P.Inertia*Dt;
+ // Shared forward governor; braking, reverse and tire forces keep their existing behavior.
+ S.U=std::min(S.U,P.MaximumForwardSpeed);
  if(Brake>0&&OldU*S.U<0)S.U=0; // A brake cannot propel the kart backwards.
  if(std::abs(Drive)<.001&&std::abs(S.U)<.025&&std::abs(S.V)<.025&&std::abs(S.R)<.03)S.ClearMotion();
  S.Heading=std::remainder(S.Heading+S.R*Dt,2*Pi);
