@@ -1,0 +1,20 @@
+{
+  "actual_pie": true,
+  "input_test_method": "Component actions invoked through Unreal Python; OS keyboard/mouse input was not synthesized.",
+  "screenshots": [
+    "minimap_countdown",
+    "full_map_overview",
+    "full_map_waypoint_zoom",
+    "minimap_waypoint_driving",
+    "minimap_third_person"
+  ],
+  "full_map_pauses_player_AI_and_countdown": true,
+  "waypoint_snaps_to_real_circuit": true,
+  "forward_waypoint_distance_m": 247.60255432128906,
+  "zoom_bounds_pan_recenter_clear_passed": true,
+  "held_throttle_gate_and_single_lights_out_preserved": true,
+  "post_map_driving_distance_cm": 435.93872341704656,
+  "does_not_unpause_an_externally_paused_race": true,
+  "restart_and_both_camera_views_passed": true,
+  "protected_map_ai_physics_files_unchanged": 50
+}

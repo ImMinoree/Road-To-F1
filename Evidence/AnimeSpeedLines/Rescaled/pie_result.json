@@ -1,0 +1,48 @@
+{
+  "samples": [
+    {
+      "name": "grid",
+      "actual_kmh": 0.0,
+      "strength": 0.0,
+      "material_strength": 0.0
+    },
+    {
+      "name": "02_15kmh_no_lines",
+      "actual_kmh": 15.04890251159668,
+      "strength": 0.0,
+      "material_strength": 0.0
+    },
+    {
+      "name": "03_35kmh_subtle",
+      "actual_kmh": 35.010398864746094,
+      "strength": 0.14213989675045013,
+      "material_strength": 0.14213989675045013
+    },
+    {
+      "name": "04_50kmh_noticeable",
+      "actual_kmh": 50.03273391723633,
+      "strength": 0.5959780216217041,
+      "material_strength": 0.5959780216217041
+    },
+    {
+      "name": "50kmh_driving",
+      "actual_kmh": 50.03273391723633,
+      "strength": 0.5959780216217041,
+      "material_strength": 0.5959780216217041
+    },
+    {
+      "name": "rescaled_strength_at_real_50",
+      "actual_kmh": 50.03273391723633,
+      "strength": 0.5959780216217041,
+      "material_strength": 0.5959780216217041
+    }
+  ],
+  "input_method": "Existing development throttle action, real vehicle velocity. No physics parameters changed.",
+  "above_cap_preview": "No simulated speed or strength override: actual vehicle velocity drives every capture. Full strength at 61 km/h is covered by the speed-response unit test.",
+  "test_lane": "Other existing karts parked away only in unsaved PIE to remove traffic variability.",
+  "toggle_immediately_clears_lines": true,
+  "third_person_has_no_speed_lines": true,
+  "restart_clears_lines": true,
+  "single_start_controller": true,
+  "protected_files_unchanged": true
+}

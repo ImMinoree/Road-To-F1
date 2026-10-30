@@ -1,0 +1,80 @@
+{
+  "Baseline": {
+    "runs": 2,
+    "actual_planning_budgets": [
+      265.0,
+      265.0
+    ],
+    "ai_laps": 16,
+    "ai_lap_median": 113.51250457763672,
+    "ai_lap_range": [
+      108.62500762939453,
+      119.6500015258789
+    ],
+    "ai_flying_median": 111.75000762939453,
+    "player_lap_samples": [
+      113.5250015258789,
+      108.87500762939453,
+      116.6500015258789,
+      108.62500762939453
+    ],
+    "ai_exchanges": 6,
+    "all_exchanges": 11,
+    "defensive_holds": 16,
+    "committed_passes": 0,
+    "abort_events": 42,
+    "contacts": 0,
+    "offtrack": 0,
+    "stuck_seconds": 0.0,
+    "mean_speed_kmh": 33.81404645324123,
+    "tight_corner_mean_kmh": 13.692765767441859,
+    "braking_fraction": 0.16936769394261425,
+    "player_nearby_20m_seconds": 421.0,
+    "player_alone_seconds": 49.0,
+    "nearby_fraction": 0.8957446808510638,
+    "ai_retakes_after_player_pass": 0,
+    "initial_player_behind_all_opponents_verified": true,
+    "completion_rate": 1.0,
+    "error": null,
+    "safety_failure": null
+  },
+  "After": {
+    "runs": 2,
+    "actual_planning_budgets": [
+      420.0,
+      420.0
+    ],
+    "ai_laps": 16,
+    "ai_lap_median": 94.13750457763672,
+    "ai_lap_range": [
+      91.37500762939453,
+      103.4000015258789
+    ],
+    "ai_flying_median": 92.62500762939453,
+    "player_lap_samples": [
+      97.5250015258789,
+      93.87500762939453,
+      98.9000015258789,
+      92.37500762939453
+    ],
+    "ai_exchanges": 5,
+    "all_exchanges": 13,
+    "defensive_holds": 22,
+    "committed_passes": 0,
+    "abort_events": 37,
+    "contacts": 0,
+    "offtrack": 0,
+    "stuck_seconds": 0.0,
+    "mean_speed_kmh": 40.309721923485654,
+    "tight_corner_mean_kmh": 16.28303229946524,
+    "braking_fraction": 0.17919766206163656,
+    "player_nearby_20m_seconds": 445.625,
+    "player_alone_seconds": 24.375,
+    "nearby_fraction": 0.9481382978723404,
+    "ai_retakes_after_player_pass": 3,
+    "initial_player_behind_all_opponents_verified": true,
+    "completion_rate": 1.0,
+    "error": null,
+    "safety_failure": null
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "changed_protected_files": [],
+  "changed_pawn_game_mode_functions": [
+    "AProofPawn::SetRacingDiagnosticInput"
+  ],
+  "images": [
+    {
+      "path": "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Evidence/GameplayCompetition/Feedback/feedback00000.png",
+      "width": 1267,
+      "height": 550,
+      "valid_png": true
+    },
+    {
+      "path": "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Evidence/GameplayCompetition/Feedback/staged00000.png",
+      "width": 1267,
+      "height": 550,
+      "valid_png": true
+    }
+  ],
+  "comparison_process_exit_codes": {
+    "Baseline": 0,
+    "After": 0,
+    "Feedback": -1073741819
+  },
+  "render_shutdown_note": "Feedback images/results valid; editor exited with access violation after QUIT_EDITOR during shutdown.",
+  "fixed_reference_comparison_verified": true
+}

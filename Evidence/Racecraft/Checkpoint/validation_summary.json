@@ -1,0 +1,44 @@
+{
+  "moving_player": {
+    "passed": true,
+    "race_seconds": 270.66,
+    "recoveries": [
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "stopped_player": {
+    "passed": true,
+    "race_seconds": 310.68,
+    "recoveries": [
+      0,
+      3,
+      0,
+      3
+    ]
+  },
+  "automation_tests_passed": 2,
+  "rendered_pie_passed": true,
+  "screenshots": [
+    {
+      "file": "four_ai_grid.png",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "file": "four_ai_launch.png",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    },
+    {
+      "file": "four_ai_racing.png",
+      "width": 1600,
+      "height": 900,
+      "valid": true
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "staging": "Existing AI karts repositioned only in unsaved PIE for dot visibility and close-arrow screenshots.",
+  "all_karts_on_map": 10,
+  "error": "Traceback (most recent call last):\n  File \"D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_tilted_map.py\", line 39, in tick\n    heading=nav.get_editor_property('minimap_heading');delta=(heading-s['target_yaw']+180)%360-180;assert abs(delta)<.5;r['heading_tracks_90_degree_turn']=True;r['heading_error_degrees']=delta;shot('tilted_rotated_90_degrees');nxt()\n                                                                                                          ^^^^^^^^^^^^^\nAssertionError\n"
+}

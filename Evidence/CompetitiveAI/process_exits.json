@@ -1,0 +1,12 @@
+{
+  "FinalPack": 0,
+  "FinalPassing": 0,
+  "FinalDefense": 0,
+  "Systems": 0,
+  "Scale20": 0,
+  "Restart": 0,
+  "KnownLowGrip": 0,
+  "Rendered": 0,
+  "DebugView": -1073741819,
+  "note": "DebugView produced valid captures/results then failed during shutdown after QUIT_EDITOR. Exit 0 does not turn the retained Systems/Scale20 stress failures into passes."
+}

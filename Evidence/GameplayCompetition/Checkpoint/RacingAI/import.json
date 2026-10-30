@@ -1,0 +1,10 @@
+{
+  "mesh": "/Game/RoadToF1/RacingAI/SK_AI_KartDriver.SK_AI_KartDriver",
+  "skeleton": "/Game/RoadToF1/PlayerVisuals/FirstPerson/SK_FP_KartArms_Skeleton.SK_FP_KartArms_Skeleton",
+  "material_slots": 15,
+  "parts": 62,
+  "route": "/Game/RoadToF1/RacingAI/DA_DesertTrackEdges.DA_DesertTrackEdges",
+  "edge_samples": 748,
+  "maps_unchanged": true,
+  "source_unchanged": true
+}

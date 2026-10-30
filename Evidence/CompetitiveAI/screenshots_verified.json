@@ -1,0 +1,37 @@
+[
+  {
+    "path": "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Evidence/CompetitiveAI/Rendered/debug00000.png",
+    "width": 1267,
+    "height": 550,
+    "bytes": 1030711,
+    "crc_and_decompression_valid": true
+  },
+  {
+    "path": "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Evidence/CompetitiveAI/Rendered/grid00000.png",
+    "width": 1267,
+    "height": 550,
+    "bytes": 1071507,
+    "crc_and_decompression_valid": true
+  },
+  {
+    "path": "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Evidence/CompetitiveAI/Rendered/racing00000.png",
+    "width": 1267,
+    "height": 550,
+    "bytes": 1027679,
+    "crc_and_decompression_valid": true
+  },
+  {
+    "path": "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Evidence/CompetitiveAI/DebugView/debug00000.png",
+    "width": 1280,
+    "height": 720,
+    "bytes": 1152432,
+    "crc_and_decompression_valid": true
+  },
+  {
+    "path": "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Evidence/CompetitiveAI/DebugView/grid00000.png",
+    "width": 1267,
+    "height": 550,
+    "bytes": 1103782,
+    "crc_and_decompression_valid": true
+  }
+]

@@ -109,10 +109,24 @@ void AProofPawn::SetKartTestInput(float InThrottle,float InSteer,bool bBrake){
 }
 void AProofPawn::ConfigureRacingAI(int32 GridPosition){bRacingAI=true;AutoPossessPlayer=EAutoReceiveInput::Disabled;PreferredGridPosition=GridPosition;}
 void AProofPawn::SetAutonomousInput(float InThrottle,float InSteer){if(!bRacingAI||!HasAuthority()||IsPlayerControlled())return;Throttle=FMath::IsFinite(InThrottle)?FMath::Clamp(InThrottle,-1.f,1.f):0;Steer=FMath::IsFinite(InSteer)?FMath::Clamp(InSteer,-1.f,1.f):0;}
+void AProofPawn::SetAutonomousControls(float T,float S,float B){
+ if(!bRacingAI||!HasAuthority()||IsPlayerControlled())return;
+ B=FMath::Clamp(B,0.f,1.f);bBrakeHeld=B>.01f&&FMath::Abs(GetDrivingSpeed())<40;
+ // Existing tire model maps opposite drive to proportional service braking above 0.35 m/s.
+ SetAutonomousInput(bBrakeHeld?0:B>.01f?-B:T,S);
+}
+void AProofPawn::SetRacingDiagnosticControls(float T,float S,float B){
+#if !UE_BUILD_SHIPPING
+ if(!IsPlayerControlled()||!FParse::Param(FCommandLine::Get(),TEXT("RacingAIPlayerTest")))return;
+ B=FMath::Clamp(B,0.f,1.f);bBrakeHeld=B>.01f&&FMath::Abs(GetDrivingSpeed())<40;SetRacingDiagnosticInput(bBrakeHeld?0:B>.01f?-B:T,S);
+#endif
+}
 void AProofPawn::SetRacingDiagnosticInput(float InThrottle,float InSteer){
 #if !UE_BUILD_SHIPPING
  if(!IsPlayerControlled()||!FParse::Param(FCommandLine::Get(),TEXT("RacingAIPlayerTest")))return;
  Throttle=FMath::IsFinite(InThrottle)?FMath::Clamp(InThrottle,-1.f,1.f):0;Steer=FMath::IsFinite(InSteer)?FMath::Clamp(InSteer,-1.f,1.f):0;
+ // Retain diagnostic commands between AI ticks, just as autonomous karts do.
+ KartTestThrottle=Throttle;KartTestSteering=Steer;bKartTestBrake=bBrakeHeld;bKartTestInputActive=true;
 #endif
 }
 void AProofPawn::Reset(){

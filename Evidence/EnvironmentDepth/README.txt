@@ -1,0 +1,15 @@
+Environment depth pass — /Game/RoadToF1/Maps/DesertKarting_Visual
+
+Reference: https://www.instagram.com/p/De-ALBPIpU1/ was opened and played in the browser after the direct fetch failed. Observed a cockpit race start and a later racing frame with repeated trackside signs, fencing, vegetation, buildings and hills. These layering cues were adapted to the existing dry desert kart circuit; no F1 logos, footage, wet-weather handling or weather system were copied.
+
+Placed and saved: 6 distant dune ridges; 16 source-derived palms; 44 source-derived rocks; 384 existing grass clumps; 7 original circuit branding boards; 2 numbered turn markers; 1 event pennant; 1 small marshal shade station. Total 461 visual instances across 15 new HISM components. Of 818 planned instances, 357 were rejected by terrain/structure checks. Unplaced marker variants remain reusable assets; no claim that every planned marker was installed.
+
+Assets: /Game/RoadToF1/EnvironmentDepth/Meshes and /Instancing. New source art: Art/EnvironmentDepth/EnvironmentDepth.blend and Meshes/. Palms/rock were extracted from the existing original circuit GLB. Existing /Game/RoadToF1/DesertVisual/Materials PBR instances and /Game/RoadToF1/InfieldGrass/Meshes were reused without modification. New scenery has no collision, three LODs where useful and bounded foliage culling. Grass/horizon shadow casting is disabled; original light settings are unchanged.
+
+The 10,713 existing tire transforms, all original foliage, original actor transforms/visibility/collision references and light parameters were checked before saving and after reloading. Source/config/tire assets and other maps remained hash-identical. 2,264 kart-sized road-edge/center/grid sweeps matched baseline, including the same eight pre-existing outer-edge hits; no new driving obstruction. No physics, AI, camera, countdown, race, track geometry or paddock changes were made during this pass.
+
+Actual PIE before/after screenshots use the same existing first-person ProofPawn camera at route index 54. Additional views at 184 and 690. PNGs decoded and were visually inspected. Short offscreen editor frame probe: median 13.599 ms before / 13.956 ms after; p95 16.530 / 16.433 ms. This is a brief editor sample, not a packaged GPU benchmark or full-lap test. Race lights-out fired normally during both PIE sessions. The editor reported an access-violation exit code during teardown after save/reload, PIE and evidence completed; no map or evidence failure was logged.
+
+Evidence: driver_before00000.png, driver_after00000.png, driver_hairpin_depth00000.png, driver_west_depth00000.png, aerial_depth.png. The aerial uses original foliage culling, so tires/grass can cull at its high camera altitude. Driver views show the actual playable presentation.
+
+Checkpoint/DesertKarting_Visual.umap is the exact map immediately before this depth pass, including the closer full-edge tires and smoother countdown development state. Restore only with Unreal closed and after preserving newer edits. No commit or push performed.

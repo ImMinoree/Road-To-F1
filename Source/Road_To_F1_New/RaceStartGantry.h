@@ -3,6 +3,9 @@
 #include "GameFramework/Actor.h"
 #include "GameFramework/HUD.h"
 #include "RaceStartGantry.generated.h"
+class UKartNavigationMap;
+class UKartRaceAwareness;
+class UKartSpeedLines;
 class UStaticMesh; class UMaterialInterface; class UMaterialInstanceDynamic; class UFont;
 class UStaticMeshComponent; class UInstancedStaticMeshComponent; class USoundBase;
 UCLASS()
@@ -38,4 +41,7 @@ public:
  virtual void DrawHUD() override;
 private:
  UPROPERTY() TObjectPtr<UFont> CountdownFont;
+ UPROPERTY(VisibleAnywhere,Category="Navigation") TObjectPtr<UKartNavigationMap> NavigationMap;
+ UPROPERTY(VisibleAnywhere,Category="Awareness") TObjectPtr<UKartRaceAwareness> RaceAwareness;
+ UPROPERTY(VisibleAnywhere,Category="Speed lines") TObjectPtr<UKartSpeedLines> SpeedLines;
 };

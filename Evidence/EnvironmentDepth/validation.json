@@ -1,0 +1,2391 @@
+{
+  "saved": true,
+  "reference_viewed_in_browser": true,
+  "before_clearance": {
+    "sweeps": 2264,
+    "blocked": [
+      [
+        525,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        526,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        527,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        528,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        531,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        532,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        533,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        534,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ]
+    ]
+  },
+  "editor_frame_probe": {
+    "before": {
+      "frames": 289,
+      "median_ms": 13.599198311567307,
+      "p95_ms": 16.530301421880722
+    },
+    "after": {
+      "frames": 284,
+      "median_ms": 13.956401497125626,
+      "p95_ms": 16.4325013756752
+    }
+  },
+  "instances": {
+    "SM_ED_Ridge_0": 2,
+    "SM_ED_Ridge_1": 2,
+    "SM_ED_Ridge_2": 2,
+    "SM_ED_Palm_1": 7,
+    "SM_ED_Rock": 44,
+    "Grass0": 134,
+    "Grass1": 128,
+    "Grass2": 122,
+    "SM_ED_Palm_0": 9,
+    "SM_ED_Turn_01": 1,
+    "SM_ED_Turn_07": 1,
+    "SM_ED_EventPennant": 1,
+    "SM_ED_MarshalShade": 1,
+    "SM_ED_Board_Series": 3,
+    "SM_ED_Board_Circuit": 4
+  },
+  "imported_meshes": [
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Palm_0.SM_ED_Palm_0",
+      "lods": 3,
+      "triangles": 1728
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Palm_1.SM_ED_Palm_1",
+      "lods": 3,
+      "triangles": 1792
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Rock.SM_ED_Rock",
+      "lods": 1,
+      "triangles": 42
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Ridge_0.SM_ED_Ridge_0",
+      "lods": 3,
+      "triangles": 6000
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Ridge_1.SM_ED_Ridge_1",
+      "lods": 3,
+      "triangles": 6000
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Ridge_2.SM_ED_Ridge_2",
+      "lods": 3,
+      "triangles": 6000
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Board_Circuit.SM_ED_Board_Circuit",
+      "lods": 3,
+      "triangles": 1440
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Board_Series.SM_ED_Board_Series",
+      "lods": 3,
+      "triangles": 1040
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Turn_01.SM_ED_Turn_01",
+      "lods": 3,
+      "triangles": 872
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Turn_02.SM_ED_Turn_02",
+      "lods": 3,
+      "triangles": 1016
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Turn_03.SM_ED_Turn_03",
+      "lods": 3,
+      "triangles": 1108
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Turn_04.SM_ED_Turn_04",
+      "lods": 3,
+      "triangles": 920
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Turn_05.SM_ED_Turn_05",
+      "lods": 3,
+      "triangles": 1000
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Turn_06.SM_ED_Turn_06",
+      "lods": 3,
+      "triangles": 1064
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_Turn_07.SM_ED_Turn_07",
+      "lods": 3,
+      "triangles": 880
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_EventPennant.SM_ED_EventPennant",
+      "lods": 1,
+      "triangles": 68
+    },
+    {
+      "asset": "/Game/RoadToF1/EnvironmentDepth/Meshes/SM_ED_MarshalShade.SM_ED_MarshalShade",
+      "lods": 3,
+      "triangles": 986
+    }
+  ],
+  "rejected_placements": [
+    [
+      "SM_ED_Palm_0",
+      2579.9092171926636,
+      2480.897617527806,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_0",
+      2336.3066439474733,
+      2420.5765558995104,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2518.555041971742,
+      2249.5122916514474,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      3014.209574147655,
+      -2992.884853814639,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      3094.489277176097,
+      -3180.600114313398,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      2994.5554502678824,
+      -3088.3027597635164,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2545.0145086594853,
+      -2967.7082256522112,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2590.1817533427507,
+      -3178.2390989889127,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2668.2472601890972,
+      -3236.6341631039713,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2874.1353733503074,
+      -3310.687974539993,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2852.59432769407,
+      -2715.5887802121697,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2990.5858331650784,
+      -3087.1601231265954,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2910.4540851019874,
+      -3100.5972123428155,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2900.222131251635,
+      -2637.051354212816,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2336.6905696667236,
+      -3175.241591548971,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2494.3478877829584,
+      -2999.599524681408,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2572.4901229042925,
+      -3065.4693004563183,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2985.1929374018264,
+      -3421.4062026689257,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2629.0478426472605,
+      -2827.8838302512836,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2731.511865963657,
+      -3205.591689328526,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2296.6876952604234,
+      -3052.1361807830704,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2973.8495014223854,
+      -2992.818973526869,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2481.480892743622,
+      -2911.909901817061,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2514.4515677250947,
+      -3303.1915775678244,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2878.999769721728,
+      -3362.450075031026,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2587.305113649926,
+      -2647.305542922379,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2348.581620183606,
+      -3098.947084277975,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2467.3221001155093,
+      -3427.0911947880963,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      3103.807881180892,
+      -3403.7155437206857,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2851.7951488210215,
+      -2967.090853456003,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2817.852678026197,
+      -2869.527520840305,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2532.5291064134453,
+      -2976.051852663992,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_0",
+      7554.658175092387,
+      2373.2993773192147,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_1",
+      7632.823430253607,
+      2469.3558682923776,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      7862.637826160733,
+      2744.071588942148,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      7841.1693666399715,
+      2554.0261934158975,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      7825.484398235742,
+      2703.1876514804826,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7041.996112166172,
+      2478.0011612014423,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7158.870655340114,
+      2241.645919706378,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7246.408117242522,
+      2356.0678376882547,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7174.497211611164,
+      2548.7073080249093,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7383.948949026174,
+      2734.3427602389843,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7053.83733382112,
+      2188.399758106038,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7244.3216491530775,
+      2050.189922825374,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7801.167575976573,
+      2347.5069577504046,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7525.461628038514,
+      2201.081029673043,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7624.8839691463245,
+      2243.067485970147,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7402.089756087562,
+      2268.6159482055195,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7399.028393353232,
+      2224.3772905929445,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7771.3556578716525,
+      2186.8289452672693,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7315.493069455026,
+      2616.313417282794,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7588.958253318674,
+      2145.0086645306355,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7907.243295903773,
+      2182.7142416958936,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7345.606650328509,
+      2392.22546833635,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7662.44112465357,
+      2374.00883704184,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7697.422834715578,
+      2523.1560034671857,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7591.6831991048575,
+      2168.319487742141,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7609.590054133886,
+      2287.819005897582,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7342.641195022969,
+      2466.2850464778694,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7717.731286234171,
+      2058.4520800204896,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7090.975715349281,
+      2255.4917219182153,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7736.035451649093,
+      2496.594100112163,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7637.127376580733,
+      2624.2075890448696,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      6221.6910911853265,
+      -2811.6670240590306,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      6695.571174452699,
+      -2186.3090321723125,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      6061.060853518654,
+      -2261.8327381411523,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      6268.501259231192,
+      -2526.721103671323,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      6426.252095258661,
+      -2122.697494420373,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      6744.531254905823,
+      -2567.9485145246103,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      6160.879106108583,
+      -2769.9679643425243,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      6061.654057483543,
+      -2533.670123678926,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      6464.7888431701,
+      -2205.7389610949285,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      6638.540821228002,
+      -2540.145628407904,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      6680.6031212002,
+      -2521.6841784045464,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      6690.883975036356,
+      -2452.7499299364786,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      6553.491529403504,
+      -2754.4507007897932,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      6407.238563271838,
+      -2346.086041250618,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      6836.6566738919055,
+      -2294.8530671111707,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      6463.757097850689,
+      -2666.8624399745954,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      6427.73265817085,
+      -2185.136136458286,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      6611.062972977051,
+      -2939.947171581235,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      6125.38100538942,
+      -2828.390955146219,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      6290.2445047654755,
+      -2967.547948841278,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      6515.638881525761,
+      -2377.819726283452,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      6179.275893968607,
+      -2549.960892337825,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      6410.724359623116,
+      -2385.737042071175,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      6143.618521719784,
+      -2513.1543114538745,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      6534.890530357846,
+      -2454.1694292616617,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      6141.170305102408,
+      -2738.1016215642085,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      6304.851873909395,
+      -2583.0644186149493,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      6752.284301526451,
+      -2376.0276444027004,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      6894.774693423146,
+      -2450.8505864930385,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      7851.462503685791,
+      -2969.893516448305,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      7574.287752812233,
+      -3132.015679399491,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      7487.705831717743,
+      -3133.1060780321895,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7578.146776585338,
+      -2891.464487928223,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7673.971678904394,
+      -3012.6262824927935,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7631.283200535308,
+      -2934.4719869672817,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7973.179257496975,
+      -2924.0150875163836,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7351.948932186079,
+      -3428.0463521311804,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7542.245402848981,
+      -3297.0022099482626,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7306.964139350302,
+      -3139.4774050117553,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7767.681075564204,
+      -3348.979045095628,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7806.964822070214,
+      -3415.8249446327386,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7538.498562571839,
+      -3331.216610976445,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7498.999753982519,
+      -3375.0771711662046,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7210.601294717646,
+      -2999.7864778607627,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7385.030629149655,
+      -3030.0747799767046,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7616.731001495958,
+      -2977.4476890768715,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7934.127886424234,
+      -3450.814350215604,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7186.9847350601785,
+      -3121.436522064941,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7870.135986655279,
+      -3090.6469127181767,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7642.764075478276,
+      -3381.6443154326194,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7868.148432511046,
+      -3432.5961218842554,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7626.80292083226,
+      -3428.825120134192,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7761.817838145918,
+      -3559.693131054085,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7596.965513542822,
+      -2971.6381156074826,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7325.489598119579,
+      -2870.531585772261,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      7530.98145597248,
+      -3029.7274578212528,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7572.523639596738,
+      -2992.69523152859,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7726.27064537942,
+      -2858.400568936792,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      13253.953129611238,
+      -17753.792293532064,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      13253.959132383465,
+      -17820.82610724285,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_0",
+      9135.73912127972,
+      -23117.048990241947,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      2268.3137914288645,
+      -20007.71353201239,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      2279.8959435312495,
+      -19967.74762306215,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      2022.1919272361365,
+      -20063.913967866705,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      1868.984011355324,
+      -19633.66758918103,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1859.617501408343,
+      -19566.987702217906,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      1968.7259222107655,
+      -19532.138703930857,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2054.261517110741,
+      -19512.968693504856,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2056.0004743603276,
+      -19928.312688898302,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      1699.0691992774528,
+      -19923.14696657196,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2087.265348423596,
+      -19330.602418009945,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2334.1686208935575,
+      -19788.143944240546,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      1974.286647799386,
+      -19791.06293107919,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2167.784094139861,
+      -19785.631872023707,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2053.9850974730216,
+      -19985.544666612863,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2297.2197794310055,
+      -19799.27361049945,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2293.5193631169304,
+      -19553.22775663292,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2259.3468831150994,
+      -19807.037689890753,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2026.0511655370074,
+      -19266.836513133087,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2231.786114631319,
+      -19349.177670214976,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2324.2246890676097,
+      -19998.123731982887,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2338.200144212604,
+      -19684.6614240908,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      1639.972715405619,
+      -19730.53283539882,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      2012.340579277025,
+      -19482.22149670824,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      2132.898321469072,
+      -20063.66871586311,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      2126.94175428725,
+      -19442.387340901834,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1813.4654108833352,
+      -19717.33929667546,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      1868.2147358802174,
+      -19789.218952936062,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      1999.6723744712385,
+      -19520.436516007983,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1918.4836467697046,
+      -19607.11673629556,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      8359.741899558552,
+      -4250.779170325357,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      7660.163951112876,
+      -4478.932496625086,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7634.478664560074,
+      -4574.329816136076,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      7652.333195872561,
+      -4486.713568571821,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      8157.521256447549,
+      -3998.411357520812,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      8402.977022126797,
+      -4211.481086934402,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      7605.916217425726,
+      -4379.682164731173,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      3983.6353212004296,
+      -3640.2003130665234,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      3995.4003544448906,
+      -3761.2222106054533,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      3839.2004018604425,
+      -3576.1286263428037,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      4218.196635273934,
+      -3426.8289168903616,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      4157.892451541434,
+      -3318.145841577768,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      3566.613968530036,
+      -3168.9700108705683,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      4030.754315427672,
+      -3563.153316078762,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      3622.7736103720504,
+      -3482.9867676633935,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      4176.928341822804,
+      -3796.7018011797763,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      4166.016003624315,
+      -3688.572286562035,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      4264.089274302724,
+      -3489.6246916784494,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      3762.509892983327,
+      -3302.727659867866,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      4161.187563422303,
+      -3431.4755004173935,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      3993.947210495963,
+      -3397.5999133944365,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      3654.413263665623,
+      -3103.897309288779,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      3719.580700098692,
+      -3358.2660288007555,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      4056.162587140075,
+      -3287.948613874603,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      4107.777375417087,
+      -3216.7672560032797,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      4315.4167144447365,
+      -3544.463204854986,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      3747.041978901025,
+      -3536.7220369149445,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      3752.5404769001316,
+      -3576.092466274116,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      3869.7510634147143,
+      -3130.7627869257803,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      3691.86669042243,
+      -3732.848341533715,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      3716.4539934888326,
+      -3635.9964826864357,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      3610.517110989251,
+      -3055.5969159411397,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      3578.4290850140014,
+      -3275.034516210378,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      3978.172109572489,
+      -3247.424464449235,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      3807.5394617407583,
+      -3600.6609643455386,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      3894.9323798920173,
+      -3645.3792993381767,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_0",
+      1242.3565080508645,
+      -6764.072380885797,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_1",
+      1290.623665753634,
+      -6982.970398237615,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_0",
+      1089.1660530483705,
+      -6527.245651282871,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      1615.5988724410936,
+      -6828.249993248581,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      1148.9085492776476,
+      -6846.687982755391,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      1631.4848826822038,
+      -7139.0319434823705,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      1281.8670674407263,
+      -7223.3445133602845,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1480.3284384664655,
+      -7008.612054357154,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      900.633344968782,
+      -6539.856919160017,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      832.6371778146181,
+      -6843.233018695019,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1654.1540770181512,
+      -6557.792940079092,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      1274.384098816077,
+      -6512.101994115398,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      1039.3487582768728,
+      -6477.992016220352,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1663.3461694793184,
+      -6676.368414927998,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      1597.152947918716,
+      -6679.410974468931,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      899.6743460761619,
+      -6992.503744470564,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1573.7480061779474,
+      -6572.0626469544395,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      1431.2781630317404,
+      -6370.418345858142,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      879.2194849987102,
+      -6591.441502173869,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1179.139817212415,
+      -6902.107154598759,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      846.5224050425053,
+      -6853.970878944154,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      1189.3921117721202,
+      -6440.409472223972,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1411.6140593183336,
+      -7029.58722939189,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      1136.1437059173238,
+      -6895.300701814737,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      1206.9755940950135,
+      -6575.893275805934,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1169.8575996745099,
+      -6683.748418857701,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      1097.6922928650486,
+      -6551.184561024696,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      1391.8218510012669,
+      -6836.891680977846,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1405.9090713612786,
+      -6632.193648295475,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      1585.6761301904912,
+      -6868.561618777664,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      1375.160495105132,
+      -6538.933658618846,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      1324.145458935408,
+      -7102.136845855345,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      5121.548624084234,
+      -13547.247751279783,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      5548.114367331168,
+      -14030.565120293415,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      5582.017436871533,
+      -13637.147599378033,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      5333.65582234839,
+      -13815.746735994633,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      5573.084608531269,
+      -13793.664098825664,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      5574.435202883675,
+      -13880.151129278069,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      5826.300744171264,
+      -13978.422907108741,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      5698.587874130563,
+      -14118.543491344353,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      5102.3302421255,
+      -13643.821756094394,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      5627.394755562481,
+      -13963.816818202862,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      5172.417646461749,
+      -14168.95675047911,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      5471.288318199258,
+      -13577.426928312007,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      5313.559673259143,
+      -14249.274901753564,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      5616.860599109425,
+      -13603.361431629673,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      5294.3433389512065,
+      -13963.37959218157,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      5551.214605700718,
+      -13801.957037769214,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      5320.129801847214,
+      -14291.634547456613,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      5235.572737074603,
+      -14195.452091799458,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      5728.910669144205,
+      -13622.81353537973,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      5262.4652925457185,
+      -14299.25473851401,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      5626.8989488653615,
+      -14041.717990313258,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      5764.034402241955,
+      -13939.837360739783,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      5209.701565048241,
+      -13581.151861696846,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      5784.805725790924,
+      -14093.018588988656,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      5405.566582872372,
+      -13742.79424296671,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      5435.235827464704,
+      -14133.348238321523,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      5585.630936966505,
+      -13970.78176394716,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      5180.936773171799,
+      -14008.651466967598,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      5006.405017781093,
+      -13933.791372176092,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_0",
+      -2877.3312745341805,
+      -8611.425626768072,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_1",
+      -2936.8043113331028,
+      -8697.193564630144,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      -2783.9026448277355,
+      -8685.113613299274,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      -2509.546619919196,
+      -8564.741694285301,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      -2596.7958222950692,
+      -8383.303241840458,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2970.352717473283,
+      -8432.009460676582,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2470.9724798344314,
+      -8367.569419259997,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2515.4980882194473,
+      -8099.312888816223,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2820.7100535411205,
+      -8082.742045409652,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2683.9826344831918,
+      -8099.772333768291,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2752.8236031784586,
+      -8609.297740200243,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2574.062829959731,
+      -8239.620693099392,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2847.954696362693,
+      -8530.523282130935,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2941.2665277553533,
+      -8616.84920013332,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2417.557977864681,
+      -8444.072761698837,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2951.0678074174803,
+      -8411.712048814892,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2855.3724979691824,
+      -8605.0836340961,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2883.9568861710527,
+      -8693.402996481858,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2699.306487249554,
+      -8557.270111376249,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2416.0515055339556,
+      -8687.381333333917,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2700.9859797437134,
+      -8591.096213786841,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -3185.5848302274067,
+      -8440.765047056102,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2865.628058169046,
+      -8398.708557062633,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2394.2137329866473,
+      -8469.777792782137,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2832.949893112651,
+      -8656.111305201723,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2766.997717777235,
+      -8168.037920237433,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -3005.6126815946714,
+      -8178.748783667226,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2834.221444231718,
+      -8692.376967106555,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2389.307609333181,
+      -8321.85788390767,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2772.0313473387264,
+      -8264.589769503837,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -3131.103500607455,
+      -8482.071345023849,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_0",
+      -6489.128603537653,
+      -21013.48173257762,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_1",
+      -6041.619127799636,
+      -20991.983618858103,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_0",
+      -6356.4823610370195,
+      -21147.830043562197,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -6368.399131004788,
+      -20765.117871680835,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -6286.707096523178,
+      -20776.260247488543,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -6273.022090133578,
+      -20713.489919908658,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -6314.280096105964,
+      -20715.072921098454,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      -8150.70337908738,
+      -16317.977346329651,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -8567.624582598944,
+      -16015.21221934302,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -8496.311699585653,
+      -16305.700629125016,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -8589.601517319015,
+      -16094.786491405954,
+      "elevated structure"
+    ],
+    [
+      "Grass1",
+      -8680.820666655969,
+      -16116.478551132182,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -8564.277380321018,
+      -16447.636592515235,
+      "elevated structure"
+    ],
+    [
+      "Grass0",
+      -8200.44313427903,
+      -15999.685094907336,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -8210.548898696701,
+      -15986.369447066458,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -8203.317669915294,
+      -16015.32659451716,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_0",
+      -2652.0202089951154,
+      -4238.7030558345805,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_1",
+      -2228.2478548883296,
+      -4357.048850774005,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Palm_0",
+      -2312.30579983104,
+      -4241.266751861416,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      -2200.6560753449326,
+      -3936.1122894564714,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      -2817.7238891198194,
+      -4471.451889762625,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      -2045.4095692817918,
+      -4442.172991344581,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2469.310902479365,
+      -3957.4767572368573,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2852.038109903505,
+      -4082.625808652783,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2362.0300941379023,
+      -4043.648296055397,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2612.8105149217636,
+      -4128.919705171759,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2262.1086730353886,
+      -4265.931960421071,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2526.3491195092874,
+      -4277.83562842761,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2648.546377640626,
+      -4060.418880285584,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2667.4929972068735,
+      -4283.63684753005,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2658.6222697939206,
+      -4092.4759068669878,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2294.9874172910977,
+      -3964.257646800543,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2599.788294609297,
+      -4203.0522804266,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2192.8671763212183,
+      -4119.859416956505,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2279.8538534612635,
+      -4519.359227305109,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2766.1850510027357,
+      -4112.634976623061,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2159.7459496278143,
+      -4348.333081684806,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2489.735577187999,
+      -4472.0169366843165,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2366.6777838760213,
+      -4004.218738889864,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2575.225226792828,
+      -4367.0954386373,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2031.4260080864565,
+      -4423.369592504743,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2802.7441169343765,
+      -4430.921696485004,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2279.334460348016,
+      -4055.3009025270244,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -1995.7682377460544,
+      -4310.8934569361645,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2633.0545771834286,
+      -3828.1577935201476,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -2198.168832257025,
+      -4040.410202774906,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -2246.7553439048925,
+      -4193.561994117511,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -2295.509890440617,
+      -4047.4910433374384,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Rock",
+      -6976.613476434359,
+      1228.7661718070126,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -6550.5057538313995,
+      1125.0988102569383,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -7040.984068408047,
+      1145.232088095529,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -6638.391518053948,
+      1327.098675095145,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -6492.515239094391,
+      1259.7800547831011,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -6352.978266570936,
+      1177.5073410602552,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -6614.063916041426,
+      1135.097551444175,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -6478.5936530129675,
+      1449.7777523000675,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -6810.208105845251,
+      1375.2233461833016,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -6680.560836311654,
+      1184.0821162393795,
+      "existing structure overlap"
+    ],
+    [
+      "Grass1",
+      -6924.47555314477,
+      1061.9443193073762,
+      "existing structure overlap"
+    ],
+    [
+      "Grass2",
+      -6658.323282349274,
+      1192.5222126911524,
+      "existing structure overlap"
+    ],
+    [
+      "Grass0",
+      -6523.024775972296,
+      1332.6028154476794,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_EventPennant",
+      7744.36572265625,
+      1226.6552734375,
+      "elevated structure"
+    ],
+    [
+      "SM_ED_Turn_02",
+      2917.775146484375,
+      -18621.70703125,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_EventPennant",
+      2618.51416015625,
+      -18642.75390625,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_MarshalShade",
+      2119.74609375,
+      -18677.828125,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Turn_03",
+      6823.28955078125,
+      -4793.36181640625,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_EventPennant",
+      6998.90771484375,
+      -4550.13720703125,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Turn_04",
+      2169.74853515625,
+      -16223.962890625,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_EventPennant",
+      2270.845703125,
+      -16506.4140625,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Turn_05",
+      471.09197998046875,
+      -10252.9609375,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_EventPennant",
+      695.46240234375,
+      -10053.818359375,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_MarshalShade",
+      1069.4130859375,
+      -9721.9130859375,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Turn_06",
+      -441.6491394042969,
+      -17214.08984375,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_EventPennant",
+      -218.724365234375,
+      -17013.330078125,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Board_Series",
+      3563.115234375,
+      1683.353515625,
+      "existing structure overlap"
+    ],
+    [
+      "SM_ED_Board_Series",
+      -744.1098022460938,
+      -16085.345703125,
+      "existing structure overlap"
+    ]
+  ],
+  "added_hism_components": 15,
+  "after_clearance": {
+    "sweeps": 2264,
+    "blocked": [
+      [
+        525,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        526,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        527,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        528,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        531,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        532,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        533,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        534,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ]
+    ]
+  },
+  "original_tire_instances_preserved": 10713,
+  "existing_foliage_unchanged": true,
+  "existing_actors_lighting_unchanged": true,
+  "reloaded": true
+}

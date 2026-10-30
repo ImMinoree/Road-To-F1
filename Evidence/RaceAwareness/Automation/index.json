@@ -1,0 +1,44 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "C03F4EE04DD58FDF3AC41F8BE6363EEF",
+			"instanceName": "DESKTOP-ERDHE74-11592",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "SM6",
+			"rHI": "",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.28-14.37.40",
+	"succeeded": 1,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 0.0084923990070819855,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "RelativeMotion",
+			"fullTestPath": "RoadToF1.RaceAwareness.RelativeMotion",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"C03F4EE04DD58FDF3AC41F8BE6363EEF"
+			],
+			"duration": 0.0084923990070819855,
+			"dateTime": "2026.10.28-14.37.40",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

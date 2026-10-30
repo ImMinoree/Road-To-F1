@@ -1,0 +1,1409 @@
+{
+  "saved": false,
+  "before_corridor": {
+    "sweeps": 2264,
+    "blocked": [
+      [
+        525,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        526,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        527,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        528,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        531,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        532,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        533,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        534,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ]
+    ]
+  },
+  "previous_instances": 1725,
+  "planned_columns": 3855,
+  "rejected_columns": [
+    [
+      "left",
+      63,
+      "service opening"
+    ],
+    [
+      "left",
+      64,
+      "service opening"
+    ],
+    [
+      "left",
+      65,
+      "service opening"
+    ],
+    [
+      "left",
+      66,
+      "service opening"
+    ],
+    [
+      "left",
+      67,
+      "service opening"
+    ],
+    [
+      "left",
+      68,
+      "service opening"
+    ],
+    [
+      "left",
+      69,
+      "service opening"
+    ],
+    [
+      "left",
+      70,
+      "service opening"
+    ],
+    [
+      "left",
+      71,
+      "service opening"
+    ],
+    [
+      "left",
+      72,
+      "service opening"
+    ],
+    [
+      "left",
+      73,
+      "service opening"
+    ],
+    [
+      "left",
+      74,
+      "service opening"
+    ],
+    [
+      "left",
+      75,
+      "service opening"
+    ],
+    [
+      "left",
+      76,
+      "service opening"
+    ],
+    [
+      "left",
+      77,
+      "service opening"
+    ],
+    [
+      "left",
+      78,
+      "service opening"
+    ],
+    [
+      "left",
+      79,
+      "service opening"
+    ],
+    [
+      "left",
+      1023,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1024,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1025,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1026,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1027,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1028,
+      "fixed object or uneven ground"
+    ],
+    [
+      "left",
+      1029,
+      "fixed object or uneven ground"
+    ],
+    [
+      "left",
+      1030,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1031,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1032,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1033,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1035,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1297,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1298,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1299,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1300,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1301,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1302,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1303,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1304,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1305,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1306,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1307,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1308,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1316,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1317,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1318,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1319,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1320,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1321,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1322,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1323,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1324,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1325,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1326,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1327,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1329,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1343,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1344,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1345,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1346,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1347,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1348,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1349,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1350,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1351,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1352,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1353,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1354,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1355,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1356,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1357,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1358,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1359,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1360,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1361,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1362,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1363,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1364,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1365,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1366,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1367,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1368,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1369,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1370,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1371,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1372,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1373,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1374,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1375,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1376,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1377,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1378,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1379,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1380,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1381,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1382,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1383,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1384,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1389,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1390,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1391,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1392,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1393,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1394,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1395,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1396,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1397,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1398,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1399,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1400,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1401,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1402,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1403,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1404,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1405,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1406,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1407,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1408,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1409,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1410,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1411,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1418,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1419,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1420,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1421,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1422,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1423,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1424,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1425,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1426,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1427,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1428,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1429,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1430,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1431,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "left",
+      1434,
+      "opposing edge wall clearance"
+    ],
+    [
+      "left",
+      1674,
+      "service opening"
+    ],
+    [
+      "left",
+      1675,
+      "service opening"
+    ],
+    [
+      "left",
+      1676,
+      "service opening"
+    ],
+    [
+      "left",
+      1677,
+      "service opening"
+    ],
+    [
+      "left",
+      1678,
+      "service opening"
+    ],
+    [
+      "left",
+      1679,
+      "service opening"
+    ],
+    [
+      "left",
+      1680,
+      "service opening"
+    ],
+    [
+      "left",
+      1681,
+      "service opening"
+    ],
+    [
+      "left",
+      1682,
+      "service opening"
+    ],
+    [
+      "left",
+      1683,
+      "service opening"
+    ],
+    [
+      "left",
+      1684,
+      "service opening"
+    ],
+    [
+      "left",
+      1685,
+      "service opening"
+    ],
+    [
+      "left",
+      1686,
+      "service opening"
+    ],
+    [
+      "left",
+      1687,
+      "service opening"
+    ],
+    [
+      "left",
+      1688,
+      "service opening"
+    ],
+    [
+      "left",
+      1689,
+      "service opening"
+    ],
+    [
+      "left",
+      1690,
+      "service opening"
+    ],
+    [
+      "left",
+      1691,
+      "service opening"
+    ],
+    [
+      "left",
+      1692,
+      "service opening"
+    ],
+    [
+      "left",
+      1835,
+      "fixed object or uneven ground"
+    ],
+    [
+      "left",
+      1841,
+      "fixed object or uneven ground"
+    ],
+    [
+      "right",
+      15,
+      "fixed object or uneven ground"
+    ],
+    [
+      "right",
+      16,
+      "fixed object or uneven ground"
+    ],
+    [
+      "right",
+      50,
+      "service opening"
+    ],
+    [
+      "right",
+      51,
+      "service opening"
+    ],
+    [
+      "right",
+      52,
+      "service opening"
+    ],
+    [
+      "right",
+      53,
+      "service opening"
+    ],
+    [
+      "right",
+      54,
+      "service opening"
+    ],
+    [
+      "right",
+      55,
+      "service opening"
+    ],
+    [
+      "right",
+      56,
+      "service opening"
+    ],
+    [
+      "right",
+      57,
+      "service opening"
+    ],
+    [
+      "right",
+      58,
+      "service opening"
+    ],
+    [
+      "right",
+      59,
+      "service opening"
+    ],
+    [
+      "right",
+      60,
+      "service opening"
+    ],
+    [
+      "right",
+      61,
+      "service opening"
+    ],
+    [
+      "right",
+      62,
+      "service opening"
+    ],
+    [
+      "right",
+      63,
+      "service opening"
+    ],
+    [
+      "right",
+      64,
+      "service opening"
+    ],
+    [
+      "right",
+      65,
+      "service opening"
+    ],
+    [
+      "right",
+      66,
+      "service opening"
+    ],
+    [
+      "right",
+      67,
+      "service opening"
+    ],
+    [
+      "right",
+      68,
+      "service opening"
+    ],
+    [
+      "right",
+      614,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      615,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      616,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      617,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      618,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      619,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      621,
+      "opposing edge wall clearance"
+    ],
+    [
+      "right",
+      622,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      623,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      624,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      625,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      627,
+      "opposing edge wall clearance"
+    ],
+    [
+      "right",
+      1131,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1132,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1133,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1134,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1148,
+      "opposing edge wall clearance"
+    ],
+    [
+      "right",
+      1149,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1150,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1151,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1152,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1153,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1155,
+      "opposing edge wall clearance"
+    ],
+    [
+      "right",
+      1156,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1157,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1158,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1159,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1160,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1161,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1163,
+      "opposing edge wall clearance"
+    ],
+    [
+      "right",
+      1420,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1421,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1422,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1423,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1424,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1425,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1426,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1427,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1428,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1429,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1430,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1435,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1436,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1437,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1438,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1439,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1440,
+      "fixed object or uneven ground"
+    ],
+    [
+      "right",
+      1441,
+      "fixed object or uneven ground"
+    ],
+    [
+      "right",
+      1442,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1443,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1444,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1445,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1446,
+      "road/curb/runoff clearance"
+    ],
+    [
+      "right",
+      1448,
+      "opposing edge wall clearance"
+    ],
+    [
+      "right",
+      1496,
+      "service opening"
+    ],
+    [
+      "right",
+      1497,
+      "service opening"
+    ],
+    [
+      "right",
+      1498,
+      "service opening"
+    ],
+    [
+      "right",
+      1499,
+      "service opening"
+    ],
+    [
+      "right",
+      1500,
+      "service opening"
+    ],
+    [
+      "right",
+      1501,
+      "service opening"
+    ],
+    [
+      "right",
+      1502,
+      "service opening"
+    ],
+    [
+      "right",
+      1503,
+      "service opening"
+    ],
+    [
+      "right",
+      1504,
+      "service opening"
+    ],
+    [
+      "right",
+      1505,
+      "service opening"
+    ],
+    [
+      "right",
+      1506,
+      "service opening"
+    ],
+    [
+      "right",
+      1507,
+      "service opening"
+    ],
+    [
+      "right",
+      1508,
+      "service opening"
+    ],
+    [
+      "right",
+      1509,
+      "service opening"
+    ],
+    [
+      "right",
+      1809,
+      "fixed object or uneven ground"
+    ],
+    [
+      "right",
+      1810,
+      "fixed object or uneven ground"
+    ],
+    [
+      "right",
+      1811,
+      "fixed object or uneven ground"
+    ],
+    [
+      "right",
+      1812,
+      "fixed object or uneven ground"
+    ],
+    [
+      "right",
+      1813,
+      "fixed object or uneven ground"
+    ]
+  ],
+  "sections": [
+    {
+      "side": "left",
+      "columns": 63,
+      "first_route_index": 0,
+      "last_route_index": 17
+    },
+    {
+      "side": "left",
+      "columns": 943,
+      "first_route_index": 23,
+      "last_route_index": 320
+    },
+    {
+      "side": "left",
+      "columns": 261,
+      "first_route_index": 341,
+      "last_route_index": 457
+    },
+    {
+      "side": "left",
+      "columns": 13,
+      "first_route_index": 469,
+      "last_route_index": 475
+    },
+    {
+      "side": "left",
+      "columns": 239,
+      "first_route_index": 560,
+      "last_route_index": 657
+    },
+    {
+      "side": "left",
+      "columns": 142,
+      "first_route_index": 663,
+      "last_route_index": 691
+    },
+    {
+      "side": "left",
+      "columns": 199,
+      "first_route_index": 693,
+      "last_route_index": 747
+    },
+    {
+      "side": "right",
+      "columns": 15,
+      "first_route_index": 0,
+      "last_route_index": 6
+    },
+    {
+      "side": "right",
+      "columns": 33,
+      "first_route_index": 7,
+      "last_route_index": 17
+    },
+    {
+      "side": "right",
+      "columns": 545,
+      "first_route_index": 23,
+      "last_route_index": 213
+    },
+    {
+      "side": "right",
+      "columns": 503,
+      "first_route_index": 229,
+      "last_route_index": 433
+    },
+    {
+      "side": "right",
+      "columns": 13,
+      "first_route_index": 445,
+      "last_route_index": 455
+    },
+    {
+      "side": "right",
+      "columns": 256,
+      "first_route_index": 471,
+      "last_route_index": 586
+    },
+    {
+      "side": "right",
+      "columns": 47,
+      "first_route_index": 626,
+      "last_route_index": 657
+    },
+    {
+      "side": "right",
+      "columns": 299,
+      "first_route_index": 663,
+      "last_route_index": 744
+    }
+  ],
+  "colors": {
+    "Black": 5418,
+    "Red": 5295
+  }
+}

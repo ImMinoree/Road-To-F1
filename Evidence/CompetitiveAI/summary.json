@@ -1,0 +1,492 @@
+{
+  "Baseline": {
+    "error": null,
+    "safety_failure": null,
+    "runs": [
+      {
+        "seconds": 180.02500915527344,
+        "participants": 5,
+        "staged": 5,
+        "start_events": 1,
+        "total_laps": 5,
+        "ai_laps": 4,
+        "position_exchanges": 14,
+        "ai_position_exchanges": 6,
+        "defensive_holds": 4,
+        "aborted_maneuvers": 11,
+        "collision_episodes": 0,
+        "offtrack_episodes": 0,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 0,
+        "side_by_side_corner_kart_seconds": 0,
+        "lap_time_range_seconds": null,
+        "lap_time_median_seconds": null,
+        "planning": null
+      }
+    ],
+    "surface_test": null,
+    "restart": false
+  },
+  "FinalPack": {
+    "error": null,
+    "safety_failure": null,
+    "runs": [
+      {
+        "seconds": 300.0500183105469,
+        "participants": 5,
+        "staged": 5,
+        "start_events": 1,
+        "total_laps": 10,
+        "ai_laps": 8,
+        "position_exchanges": 3,
+        "ai_position_exchanges": 3,
+        "defensive_holds": 5,
+        "aborted_maneuvers": 26,
+        "collision_episodes": 0,
+        "offtrack_episodes": 0,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 0.42500001192092896,
+        "side_by_side_corner_kart_seconds": 0,
+        "lap_time_range_seconds": [
+          108.87500762939453,
+          116.6500015258789
+        ],
+        "lap_time_median_seconds": 112.9000015258789,
+        "planning": {
+          "ai_cpu_mean_ms": 0.09421,
+          "ai_cpu_max_ms": 0.3506,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 2,
+          "samples": 748,
+          "minimum_speed_cms": 269.754,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 265.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.227
+        }
+      },
+      {
+        "seconds": 300.0500183105469,
+        "participants": 5,
+        "staged": 5,
+        "start_events": 1,
+        "total_laps": 10,
+        "ai_laps": 8,
+        "position_exchanges": 3,
+        "ai_position_exchanges": 3,
+        "defensive_holds": 5,
+        "aborted_maneuvers": 21,
+        "collision_episodes": 0,
+        "offtrack_episodes": 0,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 0.42500001192092896,
+        "side_by_side_corner_kart_seconds": 0,
+        "lap_time_range_seconds": [
+          109.62500762939453,
+          119.5250015258789
+        ],
+        "lap_time_median_seconds": 112.07500457763672,
+        "planning": {
+          "ai_cpu_mean_ms": 0.09353,
+          "ai_cpu_max_ms": 0.2608,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 2,
+          "samples": 748,
+          "minimum_speed_cms": 269.754,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 265.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.227
+        }
+      }
+    ],
+    "surface_test": null,
+    "restart": false
+  },
+  "FinalPassing": {
+    "error": null,
+    "safety_failure": null,
+    "runs": [
+      {
+        "seconds": 60.025001525878906,
+        "participants": 2,
+        "staged": 3,
+        "start_events": 1,
+        "total_laps": 0,
+        "ai_laps": 0,
+        "position_exchanges": 1,
+        "ai_position_exchanges": 1,
+        "defensive_holds": 1,
+        "aborted_maneuvers": 2,
+        "collision_episodes": 0,
+        "offtrack_episodes": 0,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 0.20000000298023224,
+        "side_by_side_corner_kart_seconds": 0,
+        "lap_time_range_seconds": null,
+        "lap_time_median_seconds": null,
+        "planning": {
+          "ai_cpu_mean_ms": 0.0571,
+          "ai_cpu_max_ms": 0.1614,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 2,
+          "samples": 748,
+          "minimum_speed_cms": 269.754,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 265.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.227
+        }
+      },
+      {
+        "seconds": 60.025001525878906,
+        "participants": 2,
+        "staged": 3,
+        "start_events": 1,
+        "total_laps": 0,
+        "ai_laps": 0,
+        "position_exchanges": 0,
+        "ai_position_exchanges": 0,
+        "defensive_holds": 1,
+        "aborted_maneuvers": 1,
+        "collision_episodes": 0,
+        "offtrack_episodes": 0,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 0.20000000298023224,
+        "side_by_side_corner_kart_seconds": 0,
+        "lap_time_range_seconds": null,
+        "lap_time_median_seconds": null,
+        "planning": {
+          "ai_cpu_mean_ms": 0.05606,
+          "ai_cpu_max_ms": 0.1148,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 2,
+          "samples": 748,
+          "minimum_speed_cms": 269.754,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 265.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.227
+        }
+      }
+    ],
+    "surface_test": null,
+    "restart": false
+  },
+  "FinalDefense": {
+    "error": null,
+    "safety_failure": null,
+    "runs": [
+      {
+        "seconds": 75.0250015258789,
+        "participants": 2,
+        "staged": 3,
+        "start_events": 1,
+        "total_laps": 0,
+        "ai_laps": 0,
+        "position_exchanges": 1,
+        "ai_position_exchanges": 1,
+        "defensive_holds": 1,
+        "aborted_maneuvers": 2,
+        "collision_episodes": 0,
+        "offtrack_episodes": 0,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 0.20000000298023224,
+        "side_by_side_corner_kart_seconds": 0,
+        "lap_time_range_seconds": null,
+        "lap_time_median_seconds": null,
+        "planning": {
+          "ai_cpu_mean_ms": 0.05869,
+          "ai_cpu_max_ms": 0.1274,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 2,
+          "samples": 748,
+          "minimum_speed_cms": 269.754,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 265.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.227
+        }
+      }
+    ],
+    "surface_test": null,
+    "restart": false
+  },
+  "Systems": {
+    "error": null,
+    "safety_failure": "Stop before broader testing: contacts, sustained off-track or stuck time",
+    "runs": [
+      {
+        "seconds": 95.0250015258789,
+        "participants": 5,
+        "staged": 5,
+        "start_events": 1,
+        "total_laps": 0,
+        "ai_laps": 0,
+        "position_exchanges": 5,
+        "ai_position_exchanges": 5,
+        "defensive_holds": 0,
+        "aborted_maneuvers": 9,
+        "collision_episodes": 1,
+        "offtrack_episodes": 0,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 0.625,
+        "side_by_side_corner_kart_seconds": 30.75,
+        "lap_time_range_seconds": null,
+        "lap_time_median_seconds": null,
+        "planning": {
+          "ai_cpu_mean_ms": 0.09382,
+          "ai_cpu_max_ms": 0.223,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 4,
+          "samples": 748,
+          "minimum_speed_cms": 269.754,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 265.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.227
+        }
+      }
+    ],
+    "surface_test": {
+      "method": "Transient PIE road tags only; no assets saved",
+      "road_components": 1,
+      "start": 15.02500057220459,
+      "minimum_grip_ratio": 0.457,
+      "end": 25.024999618530273
+    },
+    "restart": true
+  },
+  "Scale4": {
+    "error": null,
+    "safety_failure": null,
+    "runs": [
+      {
+        "seconds": 60.025001525878906,
+        "participants": 4,
+        "staged": 4,
+        "start_events": 1,
+        "total_laps": 0,
+        "ai_laps": 0,
+        "position_exchanges": 2,
+        "ai_position_exchanges": 2,
+        "defensive_holds": 0,
+        "aborted_maneuvers": 4,
+        "collision_episodes": 0,
+        "offtrack_episodes": 0,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 0.42500001192092896,
+        "side_by_side_corner_kart_seconds": 12.0,
+        "lap_time_range_seconds": null,
+        "lap_time_median_seconds": null,
+        "planning": {
+          "ai_cpu_mean_ms": 0.07131,
+          "ai_cpu_max_ms": 0.164,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 2,
+          "samples": 748,
+          "minimum_speed_cms": 269.754,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 265.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.227
+        }
+      }
+    ],
+    "surface_test": null,
+    "restart": false
+  },
+  "Scale20": {
+    "error": null,
+    "safety_failure": "Stop before broader testing: contacts, sustained off-track or stuck time",
+    "runs": [
+      {
+        "seconds": 90.0250015258789,
+        "participants": 20,
+        "staged": 20,
+        "start_events": 1,
+        "total_laps": 0,
+        "ai_laps": 0,
+        "position_exchanges": 56,
+        "ai_position_exchanges": 46,
+        "defensive_holds": 11,
+        "aborted_maneuvers": 57,
+        "collision_episodes": 0,
+        "offtrack_episodes": 1,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 4.75,
+        "side_by_side_corner_kart_seconds": 269.4250011444092,
+        "lap_time_range_seconds": null,
+        "lap_time_median_seconds": null,
+        "planning": {
+          "ai_cpu_mean_ms": 0.38476,
+          "ai_cpu_max_ms": 0.8104,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 2,
+          "samples": 748,
+          "minimum_speed_cms": 269.754,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 265.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.227
+        }
+      }
+    ],
+    "surface_test": null,
+    "restart": false
+  },
+  "Restart": {
+    "error": null,
+    "safety_failure": null,
+    "runs": [
+      {
+        "seconds": 95.0250015258789,
+        "participants": 5,
+        "staged": 5,
+        "start_events": 1,
+        "total_laps": 0,
+        "ai_laps": 0,
+        "position_exchanges": 2,
+        "ai_position_exchanges": 2,
+        "defensive_holds": 4,
+        "aborted_maneuvers": 11,
+        "collision_episodes": 0,
+        "offtrack_episodes": 0,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 0.42500001192092896,
+        "side_by_side_corner_kart_seconds": 44.82500076293945,
+        "lap_time_range_seconds": null,
+        "lap_time_median_seconds": null,
+        "planning": {
+          "ai_cpu_mean_ms": 0.09105,
+          "ai_cpu_max_ms": 0.3334,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 2,
+          "samples": 748,
+          "minimum_speed_cms": 269.754,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 265.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.227
+        }
+      }
+    ],
+    "surface_test": null,
+    "restart": true
+  },
+  "KnownLowGrip": {
+    "error": null,
+    "safety_failure": null,
+    "runs": [
+      {
+        "seconds": 40.025001525878906,
+        "participants": 5,
+        "staged": 5,
+        "start_events": 1,
+        "total_laps": 0,
+        "ai_laps": 0,
+        "position_exchanges": 2,
+        "ai_position_exchanges": 2,
+        "defensive_holds": 0,
+        "aborted_maneuvers": 4,
+        "collision_episodes": 0,
+        "offtrack_episodes": 0,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 0.42500001192092896,
+        "side_by_side_corner_kart_seconds": 6.0,
+        "lap_time_range_seconds": null,
+        "lap_time_median_seconds": null,
+        "planning": {
+          "ai_cpu_mean_ms": 0.07956,
+          "ai_cpu_max_ms": 0.1729,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 4,
+          "samples": 748,
+          "minimum_speed_cms": 269.754,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 265.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.227
+        }
+      }
+    ],
+    "surface_test": {
+      "method": "Transient PIE grass surface tag applied before lights-out; no assets saved",
+      "road_components": 1,
+      "start": 0,
+      "minimum_grip_ratio": 0.457,
+      "end": 35.025001525878906
+    },
+    "restart": false
+  },
+  "Rendered": {
+    "error": null,
+    "safety_failure": null,
+    "runs": [
+      {
+        "seconds": 35.025001525878906,
+        "participants": 5,
+        "staged": 5,
+        "start_events": 1,
+        "total_laps": 0,
+        "ai_laps": 0,
+        "position_exchanges": 2,
+        "ai_position_exchanges": 2,
+        "defensive_holds": 1,
+        "aborted_maneuvers": 3,
+        "collision_episodes": 0,
+        "offtrack_episodes": 0,
+        "stuck_seconds": 0.0,
+        "longest_stop_seconds": 0.42500001192092896,
+        "side_by_side_corner_kart_seconds": 8.200000762939453,
+        "lap_time_range_seconds": null,
+        "lap_time_median_seconds": null,
+        "planning": {
+          "ai_cpu_mean_ms": 0.11624,
+          "ai_cpu_max_ms": 0.4347,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 2,
+          "samples": 748,
+          "minimum_speed_cms": 269.754,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 265.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.227
+        }
+      }
+    ],
+    "surface_test": null,
+    "restart": false
+  },
+  "source_hashes": {
+    "TrackRacingAI.cpp": "3be9e45014a0cb7e59692998132f0aaf332a25df11ffcfa2094f856c849453c0",
+    "TrackRacingAI.h": "b75551a75313ecfa1ba7a66304d3b0ebec07eecdc9d9ae4b6e851f93e79408fa",
+    "KartRacecraft.cpp": "5a54c12c8af231129adf5ab2504a845e20ab759938f57307140e03287c9d61ea",
+    "KartAITrackPlan.cpp": "132fa7a3e9c81625e7e0f4e46c1be3eb9890605b1dae6443caf521547824af3a",
+    "KartAIPerception.cpp": "8c693bd36c422bd843cbadf68a5f16a73d901271f5f16870cf33ebc418b8e11e",
+    "KartAIDifficulty.cpp": "a93171493282c0bba3e8cd37fd85763250f6cc81ca4742968e485c269df531a9",
+    "KartAIDebug.cpp": "5285d27a643e28252be03ffc2683751993ee2a9b731451b9cc519dd89ffe68e7"
+  }
+}

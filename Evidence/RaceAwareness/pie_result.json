@@ -1,0 +1,20 @@
+{
+  "input_method": "Existing bound actions invoked via Unreal Python, not synthesized keyboard input.",
+  "mirror_capture_size": [
+    640,
+    160
+  ],
+  "kart_count": 10,
+  "rear_camera_active": true,
+  "camera_restore_both_modes": true,
+  "nearby_count": 9,
+  "observed_mirror_hz": 15.376984126959265,
+  "mirror_off_stops_rendering": true,
+  "map_suppresses_and_restores_camera": true,
+  "final_cameras": {
+    "DriverEye": true,
+    "ChaseCamera": false,
+    "KartLookBackCamera": false
+  },
+  "map_and_route_unchanged": true
+}

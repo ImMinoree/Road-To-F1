@@ -1,0 +1,12 @@
+{
+  "ui_only_straight_line_test": true,
+  "normal_player_progress_observer": true,
+  "race_seconds": 10.02500057220459,
+  "start_events": 1,
+  "pawns": 5,
+  "player_collisions": 0,
+  "shots": [
+    "staged",
+    "feedback"
+  ]
+}

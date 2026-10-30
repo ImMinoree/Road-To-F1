@@ -1,0 +1,186 @@
+{
+  "clearance": {
+    "sweeps": 2264,
+    "blocked": [
+      [
+        525,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        526,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        527,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        528,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        531,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        532,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        533,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        534,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ]
+    ]
+  },
+  "frame_probe": {
+    "before_straight": {
+      "median_ms": 16.66330173611641,
+      "frames": 301
+    },
+    "before_hairpin": {
+      "median_ms": 16.65310189127922,
+      "frames": 301
+    },
+    "before_west": {
+      "median_ms": 16.67179726064205,
+      "frames": 300
+    },
+    "after_straight": {
+      "median_ms": 16.64169877767563,
+      "frames": 301
+    },
+    "after_hairpin": {
+      "median_ms": 16.66409894824028,
+      "frames": 301
+    },
+    "after_west": {
+      "median_ms": 16.681503504514694,
+      "frames": 301
+    },
+    "final_straight": {
+      "median_ms": 16.658201813697815,
+      "frames": 301
+    },
+    "final_hairpin": {
+      "median_ms": 16.671299934387207,
+      "frames": 301
+    },
+    "final_west": {
+      "median_ms": 16.674701124429703,
+      "frames": 301
+    },
+    "verified_straight": {
+      "median_ms": 16.666099429130554,
+      "frames": 301
+    },
+    "verified_hairpin": {
+      "median_ms": 16.675200313329697,
+      "frames": 301
+    },
+    "verified_west": {
+      "median_ms": 16.664698719978333,
+      "frames": 301
+    }
+  },
+  "meshes": [
+    {
+      "path": "/Game/RoadToF1/OuterScenery/Meshes/SM_OS_DuneApron.SM_OS_DuneApron",
+      "triangles": 36864,
+      "lods": 3
+    },
+    {
+      "path": "/Game/RoadToF1/OuterScenery/Meshes/SM_OS_DuneRange.SM_OS_DuneRange",
+      "triangles": 36864,
+      "lods": 3
+    },
+    {
+      "path": "/Game/RoadToF1/OuterScenery/Meshes/SM_OS_RockyMassifs.SM_OS_RockyMassifs",
+      "triangles": 36864,
+      "lods": 3
+    },
+    {
+      "path": "/Game/RoadToF1/OuterScenery/Meshes/SM_OS_Scrub_0.SM_OS_Scrub_0",
+      "triangles": 720,
+      "lods": 3
+    },
+    {
+      "path": "/Game/RoadToF1/OuterScenery/Meshes/SM_OS_Scrub_1.SM_OS_Scrub_1",
+      "triangles": 720,
+      "lods": 3
+    }
+  ],
+  "instances": {
+    "SM_OS_DuneApron": 1,
+    "SM_OS_DuneRange": 1,
+    "SM_OS_RockyMassifs": 1,
+    "SM_OS_Scrub_0": 58,
+    "SM_OS_Scrub_1": 49,
+    "SM_ED_Rock": 38
+  },
+  "ground_rejected": 0,
+  "saved_reloaded": true,
+  "actors_lighting_cameras_preserved": true,
+  "corridor_unchanged": true,
+  "refinement": "Lower irregular mountain ridgelines; upward terrain normals; distant-only atmospheric material fill; existing fog and lighting unchanged.",
+  "final_process_exit_code": 0,
+  "verified_images": [
+    {
+      "file": "before_straight00000.png",
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "verified_straight00000.png",
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "before_hairpin00000.png",
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "verified_hairpin00000.png",
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "before_west00000.png",
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "verified_west00000.png",
+      "width": 1267,
+      "height": 550
+    }
+  ]
+}

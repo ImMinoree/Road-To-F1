@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_racing_ai_pie.py", line 29, in tick
+    camera=u.GameplayStatics.begin_deferred_actor_spawn_from_class(world,u.CameraActor,transform,u.SpawnActorCollisionHandlingMethod.ALWAYS_SPAWN)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'GameplayStatics' has no attribute 'begin_deferred_actor_spawn_from_class'

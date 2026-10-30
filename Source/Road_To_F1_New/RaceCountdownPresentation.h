@@ -10,9 +10,10 @@ inline Frame Sample(int RedCount,double Age,double Duration,bool Started){
  if(Duration<=0 || Age<0 || Age>=Duration || (!Started && (RedCount<1 || RedCount>5)))return Result;
  Result.Number=Started?0:6-RedCount;
  const double T=Age/Duration;
- auto Ease=[](double X){X=std::clamp(X,0.0,1.0);return X*X*(3-2*X);};
- Result.Alpha=Ease(T/.16)*(1-Ease((T-.70)/.30));
- Result.Scale=1+.10*(1-Ease(T/.28));
+ auto Ease=[](double X){X=std::clamp(X,0.0,1.0);return X*X*X*(X*(X*6-15)+10);};
+ Result.Alpha=Ease(T/.18)*(1-Ease((T-.42)/.58));
+ Result.Scale=1;
  return Result;
 }
 }
+

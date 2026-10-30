@@ -1,0 +1,3619 @@
+{
+  "label": "after",
+  "race_seconds": 90.0,
+  "route_length_cm": 104002.02549785623,
+  "runs": [
+    {
+      "grid_order": "normal",
+      "elapsed": 90.0250015258789,
+      "start_events": 1,
+      "staged": 20,
+      "racers": {
+        "ProofPawn_0": {
+          "segment": 495,
+          "distance": 64786.69192894379,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 33.14363582163961,
+          "samples": 724,
+          "lane_square": 44776406.37708742,
+          "arc": 69797.74311961934,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 1.225000023841858,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 1.625,
+          "maximum_steering_step": 0.342,
+          "last_steering": 0.422,
+          "braking_seconds": 3.4500000327825546,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 5011.051190675619
+        },
+        "ProofPawn_1": {
+          "segment": 649,
+          "distance": 77371.7815388294,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.118965399704635,
+          "samples": 724,
+          "lane_square": 14251175.225353573,
+          "arc": 84002.8327010978,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 0.20000000298023224,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 0,
+          "maximum_steering_step": 0.413,
+          "last_steering": -0.263,
+          "braking_seconds": 16.125,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 6631.051162268369
+        },
+        "ProofPawn_2": {
+          "segment": 635,
+          "distance": 75990.01688147397,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.14933201986947,
+          "samples": 724,
+          "lane_square": 25501587.50780828,
+          "arc": 82441.06799440575,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 0.20000000298023224,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 17.625,
+          "maximum_steering_step": 0.362,
+          "last_steering": -0.261,
+          "braking_seconds": 14.5,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 6451.051112931771
+        },
+        "ProofPawn_3": {
+          "segment": 661,
+          "distance": 79490.17444783876,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 60.610621174849655,
+          "samples": 724,
+          "lane_square": 40544287.0730187,
+          "arc": 85761.22567774069,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 0.42500001192092896,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 0,
+          "maximum_steering_step": 0.275,
+          "last_steering": -0.322,
+          "braking_seconds": 16.600000008940697,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 6271.051229901945
+        },
+        "ProofPawn_4": {
+          "segment": 611,
+          "distance": 74362.71448692144,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.10650593924315,
+          "samples": 724,
+          "lane_square": 41565429.5979766,
+          "arc": 80453.76550290055,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 0.42500001192092896,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 26.225000381469727,
+          "maximum_steering_step": 0.279,
+          "last_steering": -0.38,
+          "braking_seconds": 14.25,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 6091.051015979123
+        },
+        "ProofPawn_5": {
+          "segment": 627,
+          "distance": 75841.18392792858,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 60.61117516514626,
+          "samples": 724,
+          "lane_square": 60437852.75113819,
+          "arc": 81752.23506666967,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 0.6500000357627869,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 25.125,
+          "maximum_steering_step": 0.413,
+          "last_steering": -0.227,
+          "braking_seconds": 15.700000032782555,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 5911.0511387411625
+        },
+        "ProofPawn_6": {
+          "segment": 588,
+          "distance": 73019.98081008162,
+          "laps": 0,
+          "stuck_seconds": 0.125,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 1,
+          "offtrack_seconds": 0.375,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.12536615937748,
+          "samples": 724,
+          "lane_square": 61607793.31853073,
+          "arc": 78751.03182670886,
+          "stationary_clock": 0,
+          "stationary_seconds": 3.75,
+          "longest_stop_seconds": 3.75,
+          "maximum_body_edge_excess_cm": 93.92456575041626,
+          "side_by_side_corner_seconds": 20.625,
+          "maximum_steering_step": 0.4119999999999999,
+          "last_steering": -0.261,
+          "braking_seconds": 19.325000390410423,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 5731.051016627226,
+          "first_body_edge_excursion": {
+            "time": 78.2750015258789,
+            "segment": 505,
+            "excess_cm": 81.52766483508026
+          }
+        },
+        "ProofPawn_7": {
+          "segment": 633,
+          "distance": 76710.48959194699,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 60.70701837912353,
+          "samples": 724,
+          "lane_square": 32438840.758134123,
+          "arc": 82261.54070891926,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 0.9000000357627869,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 24.875,
+          "maximum_steering_step": 0.41300000000000003,
+          "last_steering": -0.309,
+          "braking_seconds": 14.450000032782555,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 5551.051116972315
+        },
+        "ProofPawn_8": {
+          "segment": 606,
+          "distance": 74744.3263767855,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.152746268350235,
+          "samples": 724,
+          "lane_square": 36432265.05375068,
+          "arc": 80115.37759384247,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 0.7750000357627869,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 25.0,
+          "maximum_steering_step": 0.41300000000000003,
+          "last_steering": -0.293,
+          "braking_seconds": 14.200000032782555,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 5371.051217056972
+        },
+        "ProofPawn_9": {
+          "segment": 621,
+          "distance": 75989.41042296807,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 60.577574001653296,
+          "samples": 724,
+          "lane_square": 47675388.48003017,
+          "arc": 81180.46177526192,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 1.225000023841858,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 20.350000381469727,
+          "maximum_steering_step": 0.41200000000000003,
+          "last_steering": -0.197,
+          "braking_seconds": 13.200000509619713,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 5191.0513522938845
+        },
+        "ProofPawn_10": {
+          "segment": 578,
+          "distance": 72662.1175323534,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 60.61168715781237,
+          "samples": 724,
+          "lane_square": 49904841.45986393,
+          "arc": 77493.16884738216,
+          "stationary_clock": 0,
+          "stationary_seconds": 1.75,
+          "longest_stop_seconds": 1.5,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 14.475000381469727,
+          "maximum_steering_step": 0.41300000000000003,
+          "last_steering": 0.196,
+          "braking_seconds": 15.425000473856926,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 4831.051315028774
+        },
+        "ProofPawn_11": {
+          "segment": 555,
+          "distance": 68924.53111150322,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 53.0409627252886,
+          "samples": 724,
+          "lane_square": 33074724.168352224,
+          "arc": 73575.5821872596,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 1.4250000715255737,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 10.375,
+          "maximum_steering_step": 0.413,
+          "last_steering": 0.237,
+          "braking_seconds": 12.775000378489494,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 4651.051075756345
+        },
+        "ProofPawn_12": {
+          "segment": 599,
+          "distance": 75093.83432492892,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 60.822601885518274,
+          "samples": 724,
+          "lane_square": 44234048.40529154,
+          "arc": 79564.8855283423,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 1.5500000715255737,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 10.75,
+          "maximum_steering_step": 0.32599999999999996,
+          "last_steering": -0.217,
+          "braking_seconds": 17.47500042617321,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 4471.051203413399
+        },
+        "ProofPawn_13": {
+          "segment": 552,
+          "distance": 68810.95405318592,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 52.93605873605981,
+          "samples": 724,
+          "lane_square": 48597437.61065705,
+          "arc": 73102.0052971245,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 1.6750000715255737,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 13.0,
+          "maximum_steering_step": 0.28500000000000003,
+          "last_steering": 0.06,
+          "braking_seconds": 12.825000450015068,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 4291.051243938556
+        },
+        "ProofPawn_14": {
+          "segment": 569,
+          "distance": 72210.79668744557,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 60.64185030241829,
+          "samples": 724,
+          "lane_square": 46052994.84491294,
+          "arc": 76321.84787103835,
+          "stationary_clock": 0,
+          "stationary_seconds": 0.5,
+          "longest_stop_seconds": 1.8000000715255737,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 0.25,
+          "maximum_steering_step": 0.359,
+          "last_steering": 0.209,
+          "braking_seconds": 15.9750005453825,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 4111.05118359276
+        },
+        "ProofPawn_15": {
+          "segment": 528,
+          "distance": 67376.22651932511,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 52.55809689184052,
+          "samples": 724,
+          "lane_square": 49760717.867859386,
+          "arc": 71307.27765533235,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 1.9250000715255737,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 12.25,
+          "maximum_steering_step": 0.413,
+          "last_steering": 0.178,
+          "braking_seconds": 12.575000450015068,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 3931.0511360072483
+        },
+        "ProofPawn_16": {
+          "segment": 592,
+          "distance": 75300.49097189154,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 60.81584106122405,
+          "samples": 724,
+          "lane_square": 57914717.08781721,
+          "arc": 79051.54217387135,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 2.0250000953674316,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 2.25,
+          "maximum_steering_step": 0.34800000000000003,
+          "last_steering": -0.317,
+          "braking_seconds": 16.47500006854534,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 3751.0512019797948
+        },
+        "ProofPawn_17": {
+          "segment": 523,
+          "distance": 67444.97995237153,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 52.339096967493965,
+          "samples": 724,
+          "lane_square": 52775692.08252506,
+          "arc": 71016.03113944599,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 2.2750000953674316,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 14.75,
+          "maximum_steering_step": 0.413,
+          "last_steering": 0.202,
+          "braking_seconds": 12.9500000923872,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 3571.0511870744076
+        },
+        "ProofPawn_18": {
+          "segment": 563,
+          "distance": 71925.4468849355,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.11023591459829,
+          "samples": 724,
+          "lane_square": 27349339.96939947,
+          "arc": 75316.49809904982,
+          "stationary_clock": 0,
+          "stationary_seconds": 0.875,
+          "longest_stop_seconds": 2.2750000953674316,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 0,
+          "maximum_steering_step": 0.413,
+          "last_steering": 0.144,
+          "braking_seconds": 14.225000068545341,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 3391.051214114296
+        },
+        "ProofPawn_19": {
+          "segment": 538,
+          "distance": 68655.3113433399,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 52.13347518166444,
+          "samples": 724,
+          "lane_square": 49352193.84457632,
+          "arc": 71866.36252307321,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 2.5250000953674316,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 14.875,
+          "maximum_steering_step": 0.41200000000000003,
+          "last_steering": 0.477,
+          "braking_seconds": 14.7000000923872,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 3211.051179733354
+        }
+      },
+      "pairwise_position_changes": 49,
+      "pairs": {
+        "ProofPawn_0|ProofPawn_1": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_10": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 6.275000095367432
+        },
+        "ProofPawn_0|ProofPawn_11": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 30.05000114440918
+        },
+        "ProofPawn_0|ProofPawn_12": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 7.275000095367432
+        },
+        "ProofPawn_0|ProofPawn_13": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 31.17500114440918
+        },
+        "ProofPawn_0|ProofPawn_14": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 8.40000057220459
+        },
+        "ProofPawn_0|ProofPawn_15": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 33.775001525878906
+        },
+        "ProofPawn_0|ProofPawn_16": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 11.15000057220459
+        },
+        "ProofPawn_0|ProofPawn_17": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 41.650001525878906
+        },
+        "ProofPawn_0|ProofPawn_18": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 12.65000057220459
+        },
+        "ProofPawn_0|ProofPawn_19": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 46.275001525878906
+        },
+        "ProofPawn_0|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_5": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_6": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_7": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_8": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_9": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 2.2750000953674316
+        },
+        "ProofPawn_1|ProofPawn_10": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_11": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_12": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_13": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_14": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_15": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_16": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_17": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_18": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_19": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_2": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 2.2750000953674316
+        },
+        "ProofPawn_1|ProofPawn_3": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 24.30000114440918
+        },
+        "ProofPawn_1|ProofPawn_4": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_5": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_6": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_7": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_8": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_9": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_11": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 2.5250000953674316
+        },
+        "ProofPawn_10|ProofPawn_12": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 53.775001525878906
+        },
+        "ProofPawn_10|ProofPawn_13": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_14": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_15": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_16": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 74.4000015258789
+        },
+        "ProofPawn_10|ProofPawn_17": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_18": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_19": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_5": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_6": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_7": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_10|ProofPawn_8": {
+          "sign": -1,
+          "changes": 2,
+          "candidate": 0,
+          "since": 50.900001525878906
+        },
+        "ProofPawn_10|ProofPawn_9": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_12": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 6.400000095367432
+        },
+        "ProofPawn_11|ProofPawn_13": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_14": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 7.400000095367432
+        },
+        "ProofPawn_11|ProofPawn_15": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_16": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 8.90000057220459
+        },
+        "ProofPawn_11|ProofPawn_17": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_18": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 10.27500057220459
+        },
+        "ProofPawn_11|ProofPawn_19": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_5": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_6": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_7": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_8": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_11|ProofPawn_9": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_13": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 4.275000095367432
+        },
+        "ProofPawn_12|ProofPawn_14": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_15": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_16": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_17": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_18": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_19": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_5": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_6": {
+          "sign": 1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 74.1500015258789
+        },
+        "ProofPawn_12|ProofPawn_7": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_8": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_12|ProofPawn_9": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_13|ProofPawn_14": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 6.525000095367432
+        },
+        "ProofPawn_13|ProofPawn_15": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_13|ProofPawn_16": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 8.02500057220459
+        },
+        "ProofPawn_13|ProofPawn_17": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_13|ProofPawn_18": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 9.15000057220459
+        },
+        "ProofPawn_13|ProofPawn_19": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_13|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_13|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_13|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_13|ProofPawn_5": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_13|ProofPawn_6": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_13|ProofPawn_7": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_13|ProofPawn_8": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_13|ProofPawn_9": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_14|ProofPawn_15": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 4.275000095367432
+        },
+        "ProofPawn_14|ProofPawn_16": {
+          "sign": -1,
+          "changes": 3,
+          "candidate": 0,
+          "since": 70.5250015258789
+        },
+        "ProofPawn_14|ProofPawn_17": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_14|ProofPawn_18": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_14|ProofPawn_19": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_14|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_14|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_14|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_14|ProofPawn_5": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_14|ProofPawn_6": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_14|ProofPawn_7": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_14|ProofPawn_8": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_14|ProofPawn_9": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_15|ProofPawn_16": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 7.150000095367432
+        },
+        "ProofPawn_15|ProofPawn_17": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_15|ProofPawn_18": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 8.40000057220459
+        },
+        "ProofPawn_15|ProofPawn_19": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 88.2750015258789
+        },
+        "ProofPawn_15|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_15|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_15|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_15|ProofPawn_5": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_15|ProofPawn_6": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_15|ProofPawn_7": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_15|ProofPawn_8": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_15|ProofPawn_9": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_16|ProofPawn_17": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 5.275000095367432
+        },
+        "ProofPawn_16|ProofPawn_18": {
+          "sign": 1,
+          "changes": 2,
+          "candidate": 0,
+          "since": 65.7750015258789
+        },
+        "ProofPawn_16|ProofPawn_19": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_16|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_16|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_16|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_16|ProofPawn_5": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_16|ProofPawn_6": {
+          "sign": 1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 75.9000015258789
+        },
+        "ProofPawn_16|ProofPawn_7": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_16|ProofPawn_8": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_16|ProofPawn_9": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_17|ProofPawn_18": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 7.525000095367432
+        },
+        "ProofPawn_17|ProofPawn_19": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 61.275001525878906
+        },
+        "ProofPawn_17|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_17|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_17|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_17|ProofPawn_5": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_17|ProofPawn_6": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_17|ProofPawn_7": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_17|ProofPawn_8": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_17|ProofPawn_9": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_18|ProofPawn_19": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 5.775000095367432
+        },
+        "ProofPawn_18|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_18|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_18|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_18|ProofPawn_5": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_18|ProofPawn_6": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_18|ProofPawn_7": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_18|ProofPawn_8": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_18|ProofPawn_9": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_19|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_19|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_19|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_19|ProofPawn_5": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_19|ProofPawn_6": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_19|ProofPawn_7": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_19|ProofPawn_8": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_19|ProofPawn_9": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_2|ProofPawn_3": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 8.40000057220459
+        },
+        "ProofPawn_2|ProofPawn_4": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_2|ProofPawn_5": {
+          "sign": 1,
+          "changes": 2,
+          "candidate": 0,
+          "since": 47.150001525878906
+        },
+        "ProofPawn_2|ProofPawn_6": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_2|ProofPawn_7": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_2|ProofPawn_8": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_2|ProofPawn_9": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_3|ProofPawn_4": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 2.7750000953674316
+        },
+        "ProofPawn_3|ProofPawn_5": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_3|ProofPawn_6": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_3|ProofPawn_7": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_3|ProofPawn_8": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_3|ProofPawn_9": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_4|ProofPawn_5": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 8.27500057220459
+        },
+        "ProofPawn_4|ProofPawn_6": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_4|ProofPawn_7": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 21.92500114440918
+        },
+        "ProofPawn_4|ProofPawn_8": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_4|ProofPawn_9": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 75.6500015258789
+        },
+        "ProofPawn_5|ProofPawn_6": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 2.9000000953674316
+        },
+        "ProofPawn_5|ProofPawn_7": {
+          "sign": -1,
+          "changes": 3,
+          "candidate": 0,
+          "since": 75.1500015258789
+        },
+        "ProofPawn_5|ProofPawn_8": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_5|ProofPawn_9": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_6|ProofPawn_7": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 8.90000057220459
+        },
+        "ProofPawn_6|ProofPawn_8": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 74.0250015258789
+        },
+        "ProofPawn_6|ProofPawn_9": {
+          "sign": -1,
+          "changes": 3,
+          "candidate": 0,
+          "since": 72.6500015258789
+        },
+        "ProofPawn_7|ProofPawn_8": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 3.0250000953674316
+        },
+        "ProofPawn_7|ProofPawn_9": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_8|ProofPawn_9": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 9.77500057220459
+        }
+      },
+      "decisions": [
+        {
+          "slot": 1,
+          "intent": 2,
+          "attempts": 4,
+          "completed": 0,
+          "aborted": 3,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -105.7,
+          "desired": -244.42,
+          "id": "ProofPawn_1",
+          "state": "OVERTAKE_INSIDE",
+          "speed_cms": 808.92,
+          "target_cms": 834.98,
+          "throttle": 0.824,
+          "brake": 0.0,
+          "steering": -0.263,
+          "line_error_cm": 70.98,
+          "grip": 1.0,
+          "nearest_gap_cm": 1730.23,
+          "ttc": 1000.0,
+          "state_entries": [
+            1,
+            1,
+            1,
+            4,
+            9,
+            11,
+            0,
+            1,
+            3,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_2",
+              "gap": -1538.55,
+              "lane": 263.5,
+              "relative_speed": -172.79,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_3",
+              "gap": 1745.04,
+              "lane": 6.49,
+              "relative_speed": 291.85,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_5",
+              "gap": -2242.05,
+              "lane": -177.08,
+              "relative_speed": -155.07,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_7",
+              "gap": -1741.96,
+              "lane": -214.22,
+              "relative_speed": -140.0,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_9",
+              "gap": -2806.52,
+              "lane": -260.92,
+              "relative_speed": -303.65,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "intent": 1,
+          "attempts": 2,
+          "completed": 0,
+          "aborted": 1,
+          "defensive_holds": 2,
+          "blocked_seconds": 0.0,
+          "lane": 268.97,
+          "desired": 268.97,
+          "id": "ProofPawn_2",
+          "state": "OVERTAKE_OUTSIDE",
+          "speed_cms": 629.78,
+          "target_cms": 618.2,
+          "throttle": 0.399,
+          "brake": 0.0,
+          "steering": -0.261,
+          "line_error_cm": -5.47,
+          "grip": 1.0,
+          "nearest_gap_cm": 2200.0,
+          "ttc": 1000.0,
+          "state_entries": [
+            1,
+            2,
+            2,
+            2,
+            6,
+            9,
+            2,
+            5,
+            1,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_1",
+              "gap": 1538.54,
+              "lane": -34.72,
+              "relative_speed": 172.79,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_3",
+              "gap": 3283.59,
+              "lane": 6.49,
+              "relative_speed": 464.64,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_4",
+              "gap": -1996.43,
+              "lane": -108.15,
+              "relative_speed": -84.87,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_5",
+              "gap": -703.49,
+              "lane": -177.08,
+              "relative_speed": 17.72,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_7",
+              "gap": -203.43,
+              "lane": -214.22,
+              "relative_speed": 32.79,
+              "ttc": 1000.0,
+              "alongside": true
+            },
+            {
+              "id": "ProofPawn_8",
+              "gap": -2339.21,
+              "lane": 160.3,
+              "relative_speed": -5.34,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_9",
+              "gap": -1267.97,
+              "lane": -260.92,
+              "relative_speed": -130.86,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_12",
+              "gap": -2882.55,
+              "lane": -83.27,
+              "relative_speed": -150.77,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_16",
+              "gap": -3394.05,
+              "lane": 6.07,
+              "relative_speed": -183.49,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "intent": 0,
+          "attempts": 1,
+          "completed": 0,
+          "aborted": 1,
+          "defensive_holds": 4,
+          "blocked_seconds": 0.0,
+          "lane": 0.0,
+          "desired": 0.0,
+          "id": "ProofPawn_3",
+          "state": "FOLLOW_RACING_LINE",
+          "speed_cms": 1097.97,
+          "target_cms": 1102.6,
+          "throttle": 0.878,
+          "brake": 0.0,
+          "steering": -0.322,
+          "line_error_cm": 6.49,
+          "grip": 1.0,
+          "nearest_gap_cm": 2200.0,
+          "ttc": 1000.0,
+          "state_entries": [
+            7,
+            0,
+            1,
+            1,
+            2,
+            0,
+            7,
+            1,
+            2,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_1",
+              "gap": -1745.05,
+              "lane": -34.72,
+              "relative_speed": -291.85,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_2",
+              "gap": -3283.6,
+              "lane": 263.5,
+              "relative_speed": -464.64,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_7",
+              "gap": -3487.02,
+              "lane": -214.22,
+              "relative_speed": -431.84,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "intent": 4,
+          "attempts": 3,
+          "completed": 0,
+          "aborted": 3,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -105.14,
+          "desired": -105.14,
+          "id": "ProofPawn_4",
+          "state": "YIELD_OR_ABORT",
+          "speed_cms": 535.17,
+          "target_cms": 498.12,
+          "throttle": 0.0,
+          "brake": 0.147,
+          "steering": -0.38,
+          "line_error_cm": -3.01,
+          "grip": 1.0,
+          "nearest_gap_cm": 736.5,
+          "ttc": 6.456,
+          "state_entries": [
+            0,
+            0,
+            2,
+            3,
+            5,
+            6,
+            0,
+            6,
+            4,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_2",
+              "gap": 1996.42,
+              "lane": 263.5,
+              "relative_speed": 84.87,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_5",
+              "gap": 1292.92,
+              "lane": -177.08,
+              "relative_speed": 102.59,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_6",
+              "gap": -1701.96,
+              "lane": 275.74,
+              "relative_speed": 19.83,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_7",
+              "gap": 1793.0,
+              "lane": -214.22,
+              "relative_speed": 117.66,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_8",
+              "gap": -342.8,
+              "lane": 160.3,
+              "relative_speed": 79.53,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_9",
+              "gap": 728.45,
+              "lane": -260.92,
+              "relative_speed": -45.99,
+              "ttc": 11.895,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_10",
+              "gap": -2967.55,
+              "lane": -53.63,
+              "relative_speed": 170.06,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_12",
+              "gap": -886.13,
+              "lane": -83.27,
+              "relative_speed": -65.9,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_16",
+              "gap": -1397.63,
+              "lane": 6.07,
+              "relative_speed": -98.62,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 5,
+          "intent": 2,
+          "attempts": 3,
+          "completed": 0,
+          "aborted": 2,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -170.22,
+          "desired": -170.22,
+          "id": "ProofPawn_5",
+          "state": "OVERTAKE_OUTSIDE",
+          "speed_cms": 652.97,
+          "target_cms": 673.72,
+          "throttle": 0.667,
+          "brake": 0.0,
+          "steering": -0.227,
+          "line_error_cm": -6.86,
+          "grip": 1.0,
+          "nearest_gap_cm": 499.42,
+          "ttc": 1000.0,
+          "state_entries": [
+            0,
+            0,
+            1,
+            3,
+            8,
+            6,
+            0,
+            5,
+            4,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_1",
+              "gap": 2242.04,
+              "lane": -34.72,
+              "relative_speed": 155.07,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_2",
+              "gap": 703.48,
+              "lane": 263.5,
+              "relative_speed": -17.72,
+              "ttc": 29.4,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_4",
+              "gap": -1292.93,
+              "lane": -108.15,
+              "relative_speed": -102.59,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_6",
+              "gap": -2994.86,
+              "lane": 275.74,
+              "relative_speed": -82.76,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_7",
+              "gap": 500.07,
+              "lane": -214.22,
+              "relative_speed": 15.07,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_8",
+              "gap": -1635.71,
+              "lane": 160.3,
+              "relative_speed": -23.06,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_9",
+              "gap": -564.49,
+              "lane": -260.92,
+              "relative_speed": -148.57,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_12",
+              "gap": -2179.05,
+              "lane": -83.27,
+              "relative_speed": -168.49,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_16",
+              "gap": -2690.55,
+              "lane": 6.07,
+              "relative_speed": -201.21,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 6,
+          "intent": 1,
+          "attempts": 3,
+          "completed": 0,
+          "aborted": 2,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 286.51,
+          "desired": 286.51,
+          "id": "ProofPawn_6",
+          "state": "OVERTAKE_OUTSIDE",
+          "speed_cms": 555.7,
+          "target_cms": 535.89,
+          "throttle": 0.0,
+          "brake": 0.093,
+          "steering": -0.261,
+          "line_error_cm": -10.77,
+          "grip": 1.0,
+          "nearest_gap_cm": 1356.51,
+          "ttc": 0.974,
+          "state_entries": [
+            0,
+            0,
+            1,
+            3,
+            6,
+            7,
+            0,
+            34,
+            4,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_4",
+              "gap": 1701.95,
+              "lane": -108.15,
+              "relative_speed": -19.83,
+              "ttc": 76.686,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_5",
+              "gap": 2994.86,
+              "lane": -177.08,
+              "relative_speed": 82.76,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_7",
+              "gap": 3494.95,
+              "lane": -214.22,
+              "relative_speed": 97.84,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_8",
+              "gap": 1359.15,
+              "lane": 160.3,
+              "relative_speed": 59.7,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_9",
+              "gap": 2430.39,
+              "lane": -260.92,
+              "relative_speed": -65.81,
+              "ttc": 34.171,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_10",
+              "gap": -1265.61,
+              "lane": -53.63,
+              "relative_speed": 150.23,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_12",
+              "gap": 815.82,
+              "lane": -83.27,
+              "relative_speed": -85.73,
+              "ttc": 7.387,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_14",
+              "gap": -2441.77,
+              "lane": -80.7,
+              "relative_speed": 273.38,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_16",
+              "gap": 304.32,
+              "lane": 6.07,
+              "relative_speed": -118.45,
+              "ttc": 1.043,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_18",
+              "gap": -3461.29,
+              "lane": 158.6,
+              "relative_speed": 494.89,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 7,
+          "intent": 2,
+          "attempts": 3,
+          "completed": 0,
+          "aborted": 2,
+          "defensive_holds": 1,
+          "blocked_seconds": 0.0,
+          "lane": -288.85,
+          "desired": -430.67,
+          "id": "ProofPawn_7",
+          "state": "OVERTAKE_INSIDE",
+          "speed_cms": 650.21,
+          "target_cms": 598.59,
+          "throttle": 0.0,
+          "brake": 0.198,
+          "steering": -0.309,
+          "line_error_cm": 74.63,
+          "grip": 0.905,
+          "nearest_gap_cm": 1735.0,
+          "ttc": 1.361,
+          "state_entries": [
+            2,
+            4,
+            1,
+            3,
+            10,
+            7,
+            1,
+            8,
+            3,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_1",
+              "gap": 1741.95,
+              "lane": -34.72,
+              "relative_speed": 140.0,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_2",
+              "gap": 203.42,
+              "lane": 263.5,
+              "relative_speed": -32.79,
+              "ttc": 0.637,
+              "alongside": true
+            },
+            {
+              "id": "ProofPawn_3",
+              "gap": 3487.01,
+              "lane": 6.49,
+              "relative_speed": 431.84,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_4",
+              "gap": -1793.0,
+              "lane": -108.15,
+              "relative_speed": -117.66,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_5",
+              "gap": -500.08,
+              "lane": -177.08,
+              "relative_speed": -15.07,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_6",
+              "gap": -3494.96,
+              "lane": 275.74,
+              "relative_speed": -97.84,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_8",
+              "gap": -2135.8,
+              "lane": 160.3,
+              "relative_speed": -38.13,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_9",
+              "gap": -1064.55,
+              "lane": -260.92,
+              "relative_speed": -163.65,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_12",
+              "gap": -2679.13,
+              "lane": -83.27,
+              "relative_speed": -183.56,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_16",
+              "gap": -3190.63,
+              "lane": 6.07,
+              "relative_speed": -216.29,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 8,
+          "intent": 1,
+          "attempts": 6,
+          "completed": 0,
+          "aborted": 5,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 169.32,
+          "desired": 169.32,
+          "id": "ProofPawn_8",
+          "state": "OVERTAKE_OUTSIDE",
+          "speed_cms": 629.96,
+          "target_cms": 651.39,
+          "throttle": 0.655,
+          "brake": 0.0,
+          "steering": -0.293,
+          "line_error_cm": -9.03,
+          "grip": 1.0,
+          "nearest_gap_cm": 2338.57,
+          "ttc": 3.346,
+          "state_entries": [
+            0,
+            1,
+            5,
+            6,
+            6,
+            9,
+            0,
+            9,
+            6,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_2",
+              "gap": 2339.2,
+              "lane": 263.5,
+              "relative_speed": 5.34,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_4",
+              "gap": 342.79,
+              "lane": -108.15,
+              "relative_speed": -79.53,
+              "ttc": 2.029,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_5",
+              "gap": 1635.7,
+              "lane": -177.08,
+              "relative_speed": 23.06,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_6",
+              "gap": -1359.16,
+              "lane": 275.74,
+              "relative_speed": -59.7,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_7",
+              "gap": 2135.79,
+              "lane": -214.22,
+              "relative_speed": 38.13,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_9",
+              "gap": 1071.23,
+              "lane": -260.92,
+              "relative_speed": -125.52,
+              "ttc": 7.089,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_10",
+              "gap": -2624.77,
+              "lane": -53.63,
+              "relative_speed": 90.52,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_12",
+              "gap": -543.33,
+              "lane": -83.27,
+              "relative_speed": -145.43,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_16",
+              "gap": -1054.83,
+              "lane": 6.07,
+              "relative_speed": -178.16,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 9,
+          "intent": 2,
+          "attempts": 3,
+          "completed": 0,
+          "aborted": 2,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -247.38,
+          "desired": -247.38,
+          "id": "ProofPawn_9",
+          "state": "OVERTAKE_OUTSIDE",
+          "speed_cms": 508.96,
+          "target_cms": 556.44,
+          "throttle": 0.768,
+          "brake": 0.0,
+          "steering": -0.197,
+          "line_error_cm": -13.53,
+          "grip": 1.0,
+          "nearest_gap_cm": 556.98,
+          "ttc": 1000.0,
+          "state_entries": [
+            0,
+            0,
+            1,
+            3,
+            10,
+            9,
+            0,
+            6,
+            5,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_1",
+              "gap": 2806.51,
+              "lane": -34.72,
+              "relative_speed": 303.65,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_2",
+              "gap": 1267.96,
+              "lane": 263.5,
+              "relative_speed": 130.86,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_4",
+              "gap": -728.46,
+              "lane": -108.15,
+              "relative_speed": 45.99,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_5",
+              "gap": 564.48,
+              "lane": -177.08,
+              "relative_speed": 148.57,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_6",
+              "gap": -2430.39,
+              "lane": 275.74,
+              "relative_speed": 65.81,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_7",
+              "gap": 1064.54,
+              "lane": -214.22,
+              "relative_speed": 163.65,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_8",
+              "gap": -1071.24,
+              "lane": 160.3,
+              "relative_speed": 125.52,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_12",
+              "gap": -1614.58,
+              "lane": -83.27,
+              "relative_speed": -19.91,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_16",
+              "gap": -2126.08,
+              "lane": 6.07,
+              "relative_speed": -52.64,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 11,
+          "intent": 2,
+          "attempts": 4,
+          "completed": 0,
+          "aborted": 3,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -52.67,
+          "desired": -52.67,
+          "id": "ProofPawn_10",
+          "state": "OVERTAKE_OUTSIDE",
+          "speed_cms": 721.78,
+          "target_cms": 750.33,
+          "throttle": 0.779,
+          "brake": 0.0,
+          "steering": 0.196,
+          "line_error_cm": -0.97,
+          "grip": 1.0,
+          "nearest_gap_cm": 1583.96,
+          "ttc": 5.626,
+          "state_entries": [
+            0,
+            0,
+            1,
+            4,
+            6,
+            6,
+            0,
+            17,
+            6,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_4",
+              "gap": 2967.54,
+              "lane": -108.15,
+              "relative_speed": -170.06,
+              "ttc": 16.383,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_6",
+              "gap": 1265.61,
+              "lane": 275.74,
+              "relative_speed": -150.23,
+              "ttc": 7.204,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_8",
+              "gap": 2624.76,
+              "lane": 160.3,
+              "relative_speed": -90.52,
+              "ttc": 27.007,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_12",
+              "gap": 2081.42,
+              "lane": -83.27,
+              "relative_speed": -235.95,
+              "ttc": 8.048,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_14",
+              "gap": -1176.18,
+              "lane": -80.7,
+              "relative_speed": 123.15,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_16",
+              "gap": 1569.92,
+              "lane": 6.07,
+              "relative_speed": -268.68,
+              "ttc": 5.17,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_18",
+              "gap": -2195.68,
+              "lane": 158.6,
+              "relative_speed": 344.66,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 12,
+          "intent": 5,
+          "attempts": 2,
+          "completed": 1,
+          "aborted": 1,
+          "defensive_holds": 4,
+          "blocked_seconds": 0.0,
+          "lane": 0.0,
+          "desired": 0.0,
+          "id": "ProofPawn_11",
+          "state": "PREPARE_OVERTAKE",
+          "speed_cms": 992.21,
+          "target_cms": 1005.27,
+          "throttle": 0.861,
+          "brake": 0.0,
+          "steering": 0.237,
+          "line_error_cm": 35.51,
+          "grip": 1.0,
+          "nearest_gap_cm": 1733.23,
+          "ttc": 19.9,
+          "state_entries": [
+            6,
+            1,
+            2,
+            3,
+            7,
+            8,
+            4,
+            7,
+            2,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_13",
+              "gap": -469.77,
+              "lane": -173.37,
+              "relative_speed": -81.17,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_14",
+              "gap": 2757.11,
+              "lane": -80.7,
+              "relative_speed": -149.71,
+              "ttc": 17.199,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_15",
+              "gap": -2246.46,
+              "lane": -403.3,
+              "relative_speed": -417.33,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_17",
+              "gap": -2534.47,
+              "lane": -1.85,
+              "relative_speed": -499.7,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_18",
+              "gap": 1737.59,
+              "lane": 158.6,
+              "relative_speed": 71.79,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_19",
+              "gap": -1693.77,
+              "lane": -3.17,
+              "relative_speed": -307.2,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 13,
+          "intent": 2,
+          "attempts": 5,
+          "completed": 0,
+          "aborted": 4,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -66.74,
+          "desired": -66.74,
+          "id": "ProofPawn_12",
+          "state": "OVERTAKE_OUTSIDE",
+          "speed_cms": 488.95,
+          "target_cms": 535.99,
+          "throttle": 0.749,
+          "brake": 0.0,
+          "steering": -0.217,
+          "line_error_cm": -16.53,
+          "grip": 1.0,
+          "nearest_gap_cm": 881.11,
+          "ttc": 1000.0,
+          "state_entries": [
+            1,
+            0,
+            2,
+            5,
+            10,
+            7,
+            0,
+            5,
+            8,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_2",
+              "gap": 2882.54,
+              "lane": 263.5,
+              "relative_speed": 150.77,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_4",
+              "gap": 886.12,
+              "lane": -108.15,
+              "relative_speed": 65.9,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_5",
+              "gap": 2179.04,
+              "lane": -177.08,
+              "relative_speed": 168.49,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_6",
+              "gap": -815.83,
+              "lane": 275.74,
+              "relative_speed": 85.73,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_7",
+              "gap": 2679.12,
+              "lane": -214.22,
+              "relative_speed": 183.56,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_8",
+              "gap": 543.32,
+              "lane": 160.3,
+              "relative_speed": 145.43,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_9",
+              "gap": 1614.57,
+              "lane": -260.92,
+              "relative_speed": 19.91,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_10",
+              "gap": -2081.43,
+              "lane": -53.63,
+              "relative_speed": 235.95,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_14",
+              "gap": -3257.6,
+              "lane": -80.7,
+              "relative_speed": 359.11,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_16",
+              "gap": -511.5,
+              "lane": 6.07,
+              "relative_speed": -32.73,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 14,
+          "intent": 2,
+          "attempts": 4,
+          "completed": 0,
+          "aborted": 3,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -170.57,
+          "desired": -170.57,
+          "id": "ProofPawn_13",
+          "state": "OVERTAKE_INSIDE",
+          "speed_cms": 923.8,
+          "target_cms": 953.14,
+          "throttle": 0.996,
+          "brake": 0.0,
+          "steering": 0.06,
+          "line_error_cm": -2.79,
+          "grip": 1.0,
+          "nearest_gap_cm": 2200.0,
+          "ttc": 57.152,
+          "state_entries": [
+            0,
+            0,
+            1,
+            4,
+            12,
+            11,
+            0,
+            6,
+            4,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_0",
+              "gap": -3271.05,
+              "lane": -231.74,
+              "relative_speed": -464.79,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_11",
+              "gap": 469.76,
+              "lane": 35.51,
+              "relative_speed": 81.17,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_14",
+              "gap": 3226.86,
+              "lane": -80.7,
+              "relative_speed": -68.53,
+              "ttc": 44.424,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_15",
+              "gap": -1776.69,
+              "lane": -403.3,
+              "relative_speed": -336.15,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_17",
+              "gap": -2064.71,
+              "lane": -1.85,
+              "relative_speed": -418.53,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_18",
+              "gap": 2207.36,
+              "lane": 158.6,
+              "relative_speed": 152.97,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_19",
+              "gap": -1224.02,
+              "lane": -3.17,
+              "relative_speed": -226.03,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 15,
+          "intent": 2,
+          "attempts": 4,
+          "completed": 0,
+          "aborted": 3,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -80.2,
+          "desired": -80.2,
+          "id": "ProofPawn_14",
+          "state": "OVERTAKE_INSIDE",
+          "speed_cms": 837.59,
+          "target_cms": 822.48,
+          "throttle": 0.526,
+          "brake": 0.0,
+          "steering": 0.209,
+          "line_error_cm": -0.5,
+          "grip": 1.0,
+          "nearest_gap_cm": 1182.51,
+          "ttc": 6.624,
+          "state_entries": [
+            0,
+            1,
+            2,
+            4,
+            13,
+            12,
+            0,
+            2,
+            3,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_6",
+              "gap": 2441.76,
+              "lane": 275.74,
+              "relative_speed": -273.38,
+              "ttc": 8.261,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_10",
+              "gap": 1176.17,
+              "lane": -53.63,
+              "relative_speed": -123.15,
+              "ttc": 8.082,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_11",
+              "gap": -2757.11,
+              "lane": 35.51,
+              "relative_speed": 149.71,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_12",
+              "gap": 3257.59,
+              "lane": -83.27,
+              "relative_speed": -359.11,
+              "ttc": 8.563,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_13",
+              "gap": -3226.86,
+              "lane": -173.37,
+              "relative_speed": 68.53,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_16",
+              "gap": 2746.09,
+              "lane": 6.07,
+              "relative_speed": -391.83,
+              "ttc": 6.547,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_18",
+              "gap": -1019.52,
+              "lane": 158.6,
+              "relative_speed": 221.5,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 16,
+          "intent": 2,
+          "attempts": 4,
+          "completed": 0,
+          "aborted": 3,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -413.6,
+          "desired": -413.6,
+          "id": "ProofPawn_15",
+          "state": "OVERTAKE_OUTSIDE",
+          "speed_cms": 578.29,
+          "target_cms": 612.6,
+          "throttle": 0.717,
+          "brake": 0.0,
+          "steering": 0.178,
+          "line_error_cm": 10.3,
+          "grip": 1.0,
+          "nearest_gap_cm": 2200.0,
+          "ttc": 1000.0,
+          "state_entries": [
+            0,
+            1,
+            2,
+            4,
+            12,
+            13,
+            0,
+            7,
+            6,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_0",
+              "gap": -1494.36,
+              "lane": -231.74,
+              "relative_speed": -128.63,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_11",
+              "gap": 2246.45,
+              "lane": 35.51,
+              "relative_speed": 417.33,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_13",
+              "gap": 1776.68,
+              "lane": -173.37,
+              "relative_speed": 336.15,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_17",
+              "gap": -288.02,
+              "lane": -1.85,
+              "relative_speed": -82.37,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_19",
+              "gap": 552.67,
+              "lane": -3.17,
+              "relative_speed": 110.13,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 17,
+          "intent": 0,
+          "attempts": 5,
+          "completed": 2,
+          "aborted": 3,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 22.05,
+          "desired": -17.5,
+          "id": "ProofPawn_16",
+          "state": "FOLLOW_OPPONENT",
+          "speed_cms": 447.77,
+          "target_cms": 445.55,
+          "throttle": 0.336,
+          "brake": 0.0,
+          "steering": -0.317,
+          "line_error_cm": -15.98,
+          "grip": 1.0,
+          "nearest_gap_cm": 505.29,
+          "ttc": 1000.0,
+          "state_entries": [
+            0,
+            0,
+            4,
+            5,
+            11,
+            14,
+            0,
+            3,
+            3,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_2",
+              "gap": 3394.04,
+              "lane": 263.5,
+              "relative_speed": 183.49,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_4",
+              "gap": 1397.62,
+              "lane": -108.15,
+              "relative_speed": 98.62,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_5",
+              "gap": 2690.54,
+              "lane": -177.08,
+              "relative_speed": 201.21,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_6",
+              "gap": -304.33,
+              "lane": 275.74,
+              "relative_speed": 118.45,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_7",
+              "gap": 3190.62,
+              "lane": -214.22,
+              "relative_speed": 216.29,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_8",
+              "gap": 1054.82,
+              "lane": 160.3,
+              "relative_speed": 178.16,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_9",
+              "gap": 2126.07,
+              "lane": -260.92,
+              "relative_speed": 52.64,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_10",
+              "gap": -1569.93,
+              "lane": -53.63,
+              "relative_speed": 268.68,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_12",
+              "gap": 511.5,
+              "lane": -83.27,
+              "relative_speed": 32.73,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_14",
+              "gap": -2746.1,
+              "lane": -80.7,
+              "relative_speed": 391.83,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 18,
+          "intent": 1,
+          "attempts": 5,
+          "completed": 0,
+          "aborted": 4,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 40.4,
+          "desired": 323.14,
+          "id": "ProofPawn_17",
+          "state": "OVERTAKE_INSIDE",
+          "speed_cms": 495.31,
+          "target_cms": 526.46,
+          "throttle": 0.63,
+          "brake": 0.0,
+          "steering": 0.202,
+          "line_error_cm": -42.25,
+          "grip": 1.0,
+          "nearest_gap_cm": 831.14,
+          "ttc": 1000.0,
+          "state_entries": [
+            0,
+            1,
+            1,
+            5,
+            14,
+            15,
+            0,
+            6,
+            5,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_0",
+              "gap": -1206.35,
+              "lane": -231.74,
+              "relative_speed": -46.26,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_11",
+              "gap": 2534.46,
+              "lane": 35.51,
+              "relative_speed": 499.7,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_13",
+              "gap": 2064.7,
+              "lane": -173.37,
+              "relative_speed": 418.53,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_15",
+              "gap": 288.01,
+              "lane": -403.3,
+              "relative_speed": 82.37,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_19",
+              "gap": 840.7,
+              "lane": -3.17,
+              "relative_speed": 192.5,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 19,
+          "intent": 1,
+          "attempts": 5,
+          "completed": 0,
+          "aborted": 4,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 168.86,
+          "desired": 168.86,
+          "id": "ProofPawn_18",
+          "state": "OVERTAKE_INSIDE",
+          "speed_cms": 1058.68,
+          "target_cms": 1041.03,
+          "throttle": 0.671,
+          "brake": 0.0,
+          "steering": 0.144,
+          "line_error_cm": -10.25,
+          "grip": 1.0,
+          "nearest_gap_cm": 2200.0,
+          "ttc": 3.372,
+          "state_entries": [
+            0,
+            0,
+            7,
+            5,
+            14,
+            12,
+            1,
+            2,
+            6,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_6",
+              "gap": 3461.28,
+              "lane": 275.74,
+              "relative_speed": -494.89,
+              "ttc": 6.624,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_10",
+              "gap": 2195.67,
+              "lane": -53.63,
+              "relative_speed": -344.66,
+              "ttc": 5.846,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_11",
+              "gap": -1737.6,
+              "lane": 35.51,
+              "relative_speed": -71.79,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_13",
+              "gap": -2207.36,
+              "lane": -173.37,
+              "relative_speed": -152.97,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_14",
+              "gap": 1019.51,
+              "lane": -80.7,
+              "relative_speed": -221.5,
+              "ttc": 3.78,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_19",
+              "gap": -3431.36,
+              "lane": -3.17,
+              "relative_speed": -379.0,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 20,
+          "intent": 1,
+          "attempts": 4,
+          "completed": 0,
+          "aborted": 3,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 43.6,
+          "desired": 326.15,
+          "id": "ProofPawn_19",
+          "state": "OVERTAKE_INSIDE",
+          "speed_cms": 688.88,
+          "target_cms": 727.8,
+          "throttle": 0.833,
+          "brake": 0.0,
+          "steering": 0.477,
+          "line_error_cm": -46.77,
+          "grip": 1.0,
+          "nearest_gap_cm": 1214.46,
+          "ttc": 1000.0,
+          "state_entries": [
+            0,
+            1,
+            1,
+            4,
+            16,
+            12,
+            0,
+            9,
+            5,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_0",
+              "gap": -2047.05,
+              "lane": -231.74,
+              "relative_speed": -238.76,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_11",
+              "gap": 1693.76,
+              "lane": 35.51,
+              "relative_speed": 307.2,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_13",
+              "gap": 1224.01,
+              "lane": -173.37,
+              "relative_speed": 226.03,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_15",
+              "gap": -552.68,
+              "lane": -403.3,
+              "relative_speed": -110.13,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_17",
+              "gap": -840.71,
+              "lane": -1.85,
+              "relative_speed": -192.5,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_18",
+              "gap": 3431.36,
+              "lane": 158.6,
+              "relative_speed": 379.0,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 0,
+          "intent": 2,
+          "attempts": 3,
+          "completed": 0,
+          "aborted": 2,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -288.85,
+          "desired": -356.36,
+          "id": "ProofPawn_0",
+          "state": "OVERTAKE_OUTSIDE",
+          "speed_cms": 439.92,
+          "target_cms": 441.34,
+          "throttle": 0.334,
+          "brake": 0.0,
+          "steering": 0.422,
+          "line_error_cm": 57.11,
+          "grip": 1.0,
+          "nearest_gap_cm": 1487.54,
+          "ttc": 1000.0,
+          "state_entries": [
+            3,
+            2,
+            1,
+            3,
+            4,
+            6,
+            0,
+            2,
+            2,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_13",
+              "gap": 3271.04,
+              "lane": -173.37,
+              "relative_speed": 464.79,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_15",
+              "gap": 1494.36,
+              "lane": -403.3,
+              "relative_speed": 128.63,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_17",
+              "gap": 1206.34,
+              "lane": -1.85,
+              "relative_speed": 46.26,
+              "ttc": 1000.0,
+              "alongside": false
+            },
+            {
+              "id": "ProofPawn_19",
+              "gap": 2047.04,
+              "lane": -3.17,
+              "relative_speed": 238.76,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        }
+      ],
+      "track_plan": {
+        "ai_cpu_mean_ms": 0.41309,
+        "ai_cpu_max_ms": 41.1445,
+        "control_hz": 20,
+        "perception_hz": 10,
+        "difficulty": 2,
+        "samples": 748,
+        "minimum_speed_cms": 269.754,
+        "maximum_speed_cms": 1698.752,
+        "minimum_width_cm": 821.74,
+        "lateral_budget_cms2": 265.0,
+        "braking_budget_cms2": 233.333,
+        "braking_envelope_violation": 0.227
+      }
+    }
+  ],
+  "stuck_definition": "Speed below 30cm/s with target above 150cm/s, or any continuous stop over 5s; commanded short yields separately counted as stationary time.",
+  "metric_definition": "Pairwise order exchanges require +/-250 cm longitudinal clearance and 1s confirmation, counted after 5s. Collision episodes are per-kart starts of non-ground swept contacts, separated by 0.5s. Off-track episodes use projected collider half-extents and 0.3s confirmation. Player uses the existing opt-in AI diagnostic driver.",
+  "initial_spawn_count": 20,
+  "identical_physics": {
+    "mass_kg": 165.0,
+    "engine_force_n": 1000.0,
+    "maximum_forward_speed_mph": 38.0,
+    "maximum_steering_degrees": 24.0,
+    "front_cornering_stiffness": 12000.0,
+    "rear_cornering_stiffness": 21000.0
+  },
+  "safety_failure": "Stop before broader testing: contacts, sustained off-track or stuck time"
+}

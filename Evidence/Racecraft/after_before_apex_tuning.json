@@ -1,0 +1,451 @@
+{
+  "label": "after",
+  "race_seconds": 180.0,
+  "route_length_cm": 104002.02549785623,
+  "runs": [
+    {
+      "grid_order": "normal",
+      "elapsed": 180.02500915527344,
+      "start_events": 1,
+      "staged": 5,
+      "racers": {
+        "ProofPawn_0": {
+          "segment": 356,
+          "distance": 154300.26939725308,
+          "laps": 1,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.15130742810839,
+          "samples": 1444,
+          "lane_square": 41598835.14827374,
+          "arc": 55309.29509007231,
+          "maximum_body_edge_excess_cm": 0,
+          "initial_arc": 5011.051190675619
+        },
+        "ProofPawn_1": {
+          "segment": 350,
+          "distance": 152047.70828283837,
+          "laps": 1,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.121403060753494,
+          "samples": 1444,
+          "lane_square": 12751065.86438352,
+          "arc": 54676.73394725047,
+          "maximum_body_edge_excess_cm": 0,
+          "initial_arc": 6631.051162268369
+        },
+        "ProofPawn_2": {
+          "segment": 410,
+          "distance": 160151.2924354922,
+          "laps": 1,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.125,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.15498633912729,
+          "samples": 1444,
+          "lane_square": 23665702.36697955,
+          "arc": 62600.318050567774,
+          "maximum_body_edge_excess_cm": 23.082731670981133,
+          "initial_arc": 6451.051112931771,
+          "first_body_edge_excursion": {
+            "time": 77.1500015258789,
+            "segment": 506,
+            "excess_cm": 23.082731670981133
+          }
+        },
+        "ProofPawn_3": {
+          "segment": 343,
+          "distance": 151895.36929319092,
+          "laps": 1,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.15417740633183,
+          "samples": 1444,
+          "lane_square": 61322986.35136911,
+          "arc": 54164.39502523674,
+          "maximum_body_edge_excess_cm": 0,
+          "initial_arc": 6271.051229901945
+        },
+        "ProofPawn_4": {
+          "segment": 403,
+          "distance": 159645.64021767012,
+          "laps": 1,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.15326154127896,
+          "samples": 1444,
+          "lane_square": 50939159.882550806,
+          "arc": 61734.665735792616,
+          "maximum_body_edge_excess_cm": 0,
+          "initial_arc": 6091.051015979123
+        }
+      },
+      "pairwise_position_changes": 15,
+      "pairs": {
+        "ProofPawn_0|ProofPawn_1": {
+          "sign": 1,
+          "changes": 3,
+          "candidate": 0,
+          "since": 176.27500915527344
+        },
+        "ProofPawn_0|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_3": {
+          "sign": 1,
+          "changes": 3,
+          "candidate": 0,
+          "since": 172.90000915527344
+        },
+        "ProofPawn_0|ProofPawn_4": {
+          "sign": -1,
+          "changes": 4,
+          "candidate": 0,
+          "since": 96.1500015258789
+        },
+        "ProofPawn_1|ProofPawn_2": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 48.775001525878906
+        },
+        "ProofPawn_1|ProofPawn_3": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_4": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 99.2750015258789
+        },
+        "ProofPawn_2|ProofPawn_3": {
+          "sign": 1,
+          "changes": 2,
+          "candidate": 0,
+          "since": 49.150001525878906
+        },
+        "ProofPawn_2|ProofPawn_4": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 36.275001525878906
+        },
+        "ProofPawn_3|ProofPawn_4": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 57.525001525878906
+        }
+      },
+      "decisions": [
+        {
+          "slot": 1,
+          "intent": 1,
+          "attempts": 3,
+          "completed": 0,
+          "aborted": 2,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 98.83,
+          "desired": 423.7
+        },
+        {
+          "slot": 2,
+          "intent": 0,
+          "attempts": 0,
+          "completed": 0,
+          "aborted": 0,
+          "defensive_holds": 4,
+          "blocked_seconds": 0.0,
+          "lane": -68.12,
+          "desired": 35.0
+        },
+        {
+          "slot": 3,
+          "intent": 4,
+          "attempts": 4,
+          "completed": 0,
+          "aborted": 4,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 0.0,
+          "desired": 0.0
+        },
+        {
+          "slot": 4,
+          "intent": 1,
+          "attempts": 5,
+          "completed": 1,
+          "aborted": 3,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 359.63,
+          "desired": 359.63
+        }
+      ]
+    },
+    {
+      "grid_order": "reversed_AI_grid",
+      "elapsed": 180.02500915527344,
+      "start_events": 1,
+      "staged": 5,
+      "racers": {
+        "ProofPawn_0": {
+          "segment": 395,
+          "distance": 159723.94186703238,
+          "laps": 1,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.125,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.150843593246194,
+          "samples": 1444,
+          "lane_square": 75915822.09177262,
+          "arc": 60732.96755985205,
+          "maximum_body_edge_excess_cm": 31.326760937669803,
+          "initial_arc": 5011.051190675619,
+          "first_body_edge_excursion": {
+            "time": 80.1500015258789,
+            "segment": 510,
+            "excess_cm": 31.326760937669803
+          }
+        },
+        "ProofPawn_1": {
+          "segment": 319,
+          "distance": 150056.17460804895,
+          "laps": 1,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.07422612428154,
+          "samples": 1444,
+          "lane_square": 37484416.311865054,
+          "arc": 52145.20012617212,
+          "maximum_body_edge_excess_cm": 0,
+          "initial_arc": 6091.051015979123
+        },
+        "ProofPawn_2": {
+          "segment": 396,
+          "distance": 158606.15895389675,
+          "laps": 1,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.13484679135698,
+          "samples": 1444,
+          "lane_square": 20587969.943761747,
+          "arc": 60875.18468594231,
+          "maximum_body_edge_excess_cm": 0,
+          "initial_arc": 6271.051229901945
+        },
+        "ProofPawn_3": {
+          "segment": 351,
+          "distance": 152303.90058310487,
+          "laps": 1,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.1507422836927,
+          "samples": 1444,
+          "lane_square": 63985869.26749544,
+          "arc": 54752.92619818027,
+          "maximum_body_edge_excess_cm": 0,
+          "initial_arc": 6451.051112931771
+        },
+        "ProofPawn_4": {
+          "segment": 450,
+          "distance": 163424.52521316992,
+          "laps": 1,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.152744404121016,
+          "samples": 1444,
+          "lane_square": 4654851.423372867,
+          "arc": 66053.5508775819,
+          "maximum_body_edge_excess_cm": 0,
+          "initial_arc": 6631.051162268369
+        }
+      },
+      "pairwise_position_changes": 7,
+      "pairs": {
+        "ProofPawn_0|ProofPawn_1": {
+          "sign": 1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 30.05000114440918
+        },
+        "ProofPawn_0|ProofPawn_2": {
+          "sign": -1,
+          "changes": 2,
+          "candidate": 0,
+          "since": 49.400001525878906
+        },
+        "ProofPawn_0|ProofPawn_3": {
+          "sign": 1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 54.025001525878906
+        },
+        "ProofPawn_0|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 2.0250000953674316
+        },
+        "ProofPawn_1|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_2|ProofPawn_3": {
+          "sign": 1,
+          "changes": 3,
+          "candidate": 0,
+          "since": 49.650001525878906
+        },
+        "ProofPawn_2|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_3|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 4.275000095367432
+        }
+      },
+      "decisions": [
+        {
+          "slot": 1,
+          "intent": 0,
+          "attempts": 6,
+          "completed": 0,
+          "aborted": 6,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -35.0,
+          "desired": -35.0
+        },
+        {
+          "slot": 2,
+          "intent": 0,
+          "attempts": 4,
+          "completed": 0,
+          "aborted": 4,
+          "defensive_holds": 4,
+          "blocked_seconds": 0.0,
+          "lane": 35.0,
+          "desired": 35.0
+        },
+        {
+          "slot": 3,
+          "intent": 0,
+          "attempts": 4,
+          "completed": 1,
+          "aborted": 3,
+          "defensive_holds": 1,
+          "blocked_seconds": 0.0,
+          "lane": 0.0,
+          "desired": 0.0
+        },
+        {
+          "slot": 4,
+          "intent": 0,
+          "attempts": 0,
+          "completed": 0,
+          "aborted": 0,
+          "defensive_holds": 4,
+          "blocked_seconds": 0.0,
+          "lane": -17.5,
+          "desired": -17.5
+        }
+      ]
+    }
+  ],
+  "metric_definition": "Pairwise order exchanges require +/-250 cm longitudinal clearance and 1s confirmation, counted after 5s. Collision episodes are per-kart starts of non-ground swept contacts, separated by 0.5s. Off-track episodes use projected collider half-extents and 0.3s confirmation. Player uses the existing opt-in AI diagnostic driver.",
+  "initial_spawn_count": 5,
+  "identical_physics": {
+    "mass_kg": 165.0,
+    "engine_force_n": 1000.0,
+    "maximum_forward_speed_mph": 38.0,
+    "maximum_steering_degrees": 24.0,
+    "front_cornering_stiffness": 12000.0,
+    "rear_cornering_stiffness": 21000.0
+  }
+}

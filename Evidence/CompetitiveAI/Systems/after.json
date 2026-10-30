@@ -1,0 +1,1786 @@
+{
+  "label": "after",
+  "race_seconds": 95.0,
+  "route_length_cm": 104002.02549785623,
+  "runs": [
+    {
+      "grid_order": "normal",
+      "elapsed": 95.0250015258789,
+      "start_events": 1,
+      "staged": 5,
+      "racers": {
+        "ProofPawn_0": {
+          "segment": 566,
+          "distance": 70885.01955258026,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 33.147803961886254,
+          "samples": 764,
+          "lane_square": 3808339.6229314147,
+          "arc": 75896.07074325588,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 0.20000000298023224,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 0,
+          "maximum_steering_step": 0.30000000000000004,
+          "last_steering": 0.3,
+          "braking_seconds": 5.0,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 5011.051190675619
+        },
+        "ProofPawn_1": {
+          "segment": 718,
+          "distance": 93498.25309195237,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.12335792758695,
+          "samples": 764,
+          "lane_square": 2018367.302219267,
+          "arc": 100129.30425422071,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 0.10000000149011612,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 10.625,
+          "maximum_steering_step": 0.416,
+          "last_steering": -0.345,
+          "braking_seconds": 18.850000001490116,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 6631.051162268369
+        },
+        "ProofPawn_2": {
+          "segment": 679,
+          "distance": 83552.95447321644,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.15303920735951,
+          "samples": 764,
+          "lane_square": 21265932.081139132,
+          "arc": 90004.00558614818,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 0.10000000149011612,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 4.875,
+          "maximum_steering_step": 0.442,
+          "last_steering": 0.144,
+          "braking_seconds": 16.5,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 6451.051112931771
+        },
+        "ProofPawn_3": {
+          "segment": 678,
+          "distance": 83605.7999699257,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 1,
+          "contact_count": 5659,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.25,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": 0.0,
+          "max_speed_kmh": 60.697490703656726,
+          "samples": 764,
+          "lane_square": 54472902.56253265,
+          "arc": 89876.85119982761,
+          "stationary_clock": 0,
+          "stationary_seconds": 0.625,
+          "longest_stop_seconds": 0.625,
+          "maximum_body_edge_excess_cm": 66.93791981085579,
+          "contact_events": [
+            {
+              "time": 0.0,
+              "segment": 32,
+              "speed": 0.0,
+              "impulse_ns": 0.0
+            }
+          ],
+          "side_by_side_corner_seconds": 11.75,
+          "maximum_steering_step": 0.514,
+          "last_steering": 0.12,
+          "braking_seconds": 17.825000382959843,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 6271.051229901945,
+          "first_body_edge_excursion": {
+            "time": 69.0250015258789,
+            "segment": 506,
+            "excess_cm": 66.93791981085579
+          }
+        },
+        "ProofPawn_4": {
+          "segment": 701,
+          "distance": 90535.45854816311,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.12273122966395,
+          "samples": 764,
+          "lane_square": 52088574.21732239,
+          "arc": 96626.50956414222,
+          "stationary_clock": 0,
+          "stationary_seconds": 0,
+          "longest_stop_seconds": 0.30000001192092896,
+          "maximum_body_edge_excess_cm": 0,
+          "side_by_side_corner_seconds": 3.5,
+          "maximum_steering_step": 0.421,
+          "last_steering": -0.102,
+          "braking_seconds": 17.875,
+          "maximum_impulse_ns": 0.0,
+          "initial_arc": 6091.051015979123
+        }
+      },
+      "pairwise_position_changes": 5,
+      "pairs": {
+        "ProofPawn_0|ProofPawn_1": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_2": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_3": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_0|ProofPawn_4": {
+          "sign": -1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_2": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 2.1500000953674316
+        },
+        "ProofPawn_1|ProofPawn_3": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_1|ProofPawn_4": {
+          "sign": 1,
+          "changes": 0,
+          "candidate": 0,
+          "since": 0.0
+        },
+        "ProofPawn_2|ProofPawn_3": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 7.650000095367432
+        },
+        "ProofPawn_2|ProofPawn_4": {
+          "sign": -1,
+          "changes": 3,
+          "candidate": 0,
+          "since": 60.150001525878906
+        },
+        "ProofPawn_3|ProofPawn_4": {
+          "sign": -1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 66.2750015258789
+        }
+      },
+      "decisions": [
+        {
+          "slot": 1,
+          "intent": 0,
+          "attempts": 0,
+          "completed": 0,
+          "aborted": 0,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -35.0,
+          "desired": -35.0,
+          "id": "ProofPawn_1",
+          "state": "FOLLOW_RACING_LINE",
+          "speed_cms": 1138.07,
+          "target_cms": 1126.07,
+          "throttle": 0.771,
+          "brake": 0.0,
+          "steering": -0.345,
+          "line_error_cm": 4.27,
+          "grip": 1.0,
+          "nearest_gap_cm": 2200.0,
+          "ttc": 1000.0,
+          "state_entries": [
+            2,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            2,
+            0,
+            0
+          ],
+          "perception": []
+        },
+        {
+          "slot": 2,
+          "intent": 0,
+          "attempts": 3,
+          "completed": 0,
+          "aborted": 3,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 35.0,
+          "desired": 35.0,
+          "id": "ProofPawn_2",
+          "state": "SIDE_BY_SIDE",
+          "speed_cms": 1584.24,
+          "target_cms": 1664.46,
+          "throttle": 1.0,
+          "brake": 0.0,
+          "steering": 0.144,
+          "line_error_cm": -3.58,
+          "grip": 1.0,
+          "nearest_gap_cm": 2200.0,
+          "ttc": 1000.0,
+          "state_entries": [
+            3,
+            1,
+            1,
+            3,
+            13,
+            14,
+            1,
+            3,
+            3,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_3",
+              "gap": -126.63,
+              "lane": 309.4,
+              "relative_speed": -7.32,
+              "ttc": 1000.0,
+              "alongside": true
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "intent": 1,
+          "attempts": 4,
+          "completed": 0,
+          "aborted": 3,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 311.48,
+          "desired": 311.48,
+          "id": "ProofPawn_3",
+          "state": "SIDE_BY_SIDE",
+          "speed_cms": 1577.04,
+          "target_cms": 1660.49,
+          "throttle": 1.0,
+          "brake": 0.0,
+          "steering": 0.12,
+          "line_error_cm": -2.08,
+          "grip": 1.0,
+          "nearest_gap_cm": 2200.0,
+          "ttc": 1000.0,
+          "state_entries": [
+            0,
+            0,
+            1,
+            4,
+            12,
+            9,
+            0,
+            3,
+            6,
+            0
+          ],
+          "perception": [
+            {
+              "id": "ProofPawn_2",
+              "gap": 126.62,
+              "lane": 31.42,
+              "relative_speed": 7.32,
+              "ttc": 1000.0,
+              "alongside": true
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "intent": 0,
+          "attempts": 3,
+          "completed": 1,
+          "aborted": 2,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -17.5,
+          "desired": -17.5,
+          "id": "ProofPawn_4",
+          "state": "FOLLOW_RACING_LINE",
+          "speed_cms": 1697.85,
+          "target_cms": 1697.87,
+          "throttle": 0.96,
+          "brake": 0.0,
+          "steering": -0.102,
+          "line_error_cm": 3.33,
+          "grip": 1.0,
+          "nearest_gap_cm": 2200.0,
+          "ttc": 1000.0,
+          "state_entries": [
+            2,
+            3,
+            1,
+            3,
+            9,
+            10,
+            2,
+            2,
+            2,
+            0
+          ],
+          "perception": []
+        },
+        {
+          "slot": 0,
+          "intent": 0,
+          "attempts": 1,
+          "completed": 0,
+          "aborted": 1,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 0.0,
+          "desired": 0.0,
+          "id": "ProofPawn_0",
+          "state": "FOLLOW_RACING_LINE",
+          "speed_cms": 863.15,
+          "target_cms": 1017.11,
+          "throttle": 1.0,
+          "brake": 0.0,
+          "steering": 0.3,
+          "line_error_cm": -17.78,
+          "grip": 1.0,
+          "nearest_gap_cm": 2200.0,
+          "ttc": 1000.0,
+          "state_entries": [
+            1,
+            0,
+            0,
+            1,
+            2,
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "perception": []
+        }
+      ],
+      "track_plan": {
+        "ai_cpu_mean_ms": 0.09382,
+        "ai_cpu_max_ms": 0.223,
+        "control_hz": 20,
+        "perception_hz": 10,
+        "difficulty": 4,
+        "samples": 748,
+        "minimum_speed_cms": 269.754,
+        "maximum_speed_cms": 1698.752,
+        "minimum_width_cm": 821.74,
+        "lateral_budget_cms2": 265.0,
+        "braking_budget_cms2": 233.333,
+        "braking_envelope_violation": 0.227
+      }
+    }
+  ],
+  "stuck_definition": "Speed below 30cm/s with target above 150cm/s, or any continuous stop over 5s; commanded short yields separately counted as stationary time.",
+  "metric_definition": "Pairwise order exchanges require +/-250 cm longitudinal clearance and 1s confirmation, counted after 5s. Collision episodes are per-kart starts of non-ground swept contacts, separated by 0.5s. Off-track episodes use projected collider half-extents and 0.3s confirmation. Player uses the existing opt-in AI diagnostic driver.",
+  "initial_spawn_count": 5,
+  "identical_physics": {
+    "mass_kg": 165.0,
+    "engine_force_n": 1000.0,
+    "maximum_forward_speed_mph": 38.0,
+    "maximum_steering_degrees": 24.0,
+    "front_cornering_stiffness": 12000.0,
+    "rear_cornering_stiffness": 21000.0
+  },
+  "surface_test": {
+    "method": "Transient PIE road tags only; no assets saved",
+    "road_components": 1,
+    "start": 15.02500057220459,
+    "minimum_grip_ratio": 0.457,
+    "end": 25.024999618530273
+  },
+  "before_restart": {
+    "events": 1,
+    "staged": 5,
+    "participant_count": 5,
+    "racers": {
+      "ProofPawn_0": {
+        "segment": 209,
+        "distance": 32403.477451159866,
+        "laps": 0,
+        "stuck_seconds": 0.0,
+        "collision_episodes": 0,
+        "contact_count": 0,
+        "offtrack_events": 0,
+        "offtrack_seconds": 0.0,
+        "offclock": 0,
+        "offactive": false,
+        "last_hit": -100,
+        "max_speed_kmh": 32.77152731282212,
+        "samples": 363,
+        "lane_square": 1474285.7600501974,
+        "arc": 37414.52864183551,
+        "stationary_clock": 0,
+        "stationary_seconds": 0,
+        "longest_stop_seconds": 0.20000000298023224,
+        "maximum_body_edge_excess_cm": 0,
+        "side_by_side_corner_seconds": 0,
+        "maximum_steering_step": 0.30000000000000004,
+        "last_steering": -0.227,
+        "braking_seconds": 0.625,
+        "maximum_impulse_ns": 0.0,
+        "initial_arc": 5011.051190675619
+      },
+      "ProofPawn_1": {
+        "segment": 326,
+        "distance": 46169.493371047945,
+        "laps": 0,
+        "stuck_seconds": 0.0,
+        "collision_episodes": 0,
+        "contact_count": 0,
+        "offtrack_events": 0,
+        "offtrack_seconds": 0.0,
+        "offclock": 0,
+        "offactive": false,
+        "last_hit": -100,
+        "max_speed_kmh": 61.10290995276232,
+        "samples": 363,
+        "lane_square": 1543113.358743856,
+        "arc": 52800.54453331632,
+        "stationary_clock": 0,
+        "stationary_seconds": 0,
+        "longest_stop_seconds": 0.10000000149011612,
+        "maximum_body_edge_excess_cm": 0,
+        "side_by_side_corner_seconds": 0,
+        "maximum_steering_step": 0.30000000000000004,
+        "last_steering": 0.422,
+        "braking_seconds": 6.25,
+        "maximum_impulse_ns": 0.0,
+        "initial_arc": 6631.051162268369
+      },
+      "ProofPawn_2": {
+        "segment": 307,
+        "distance": 44450.275575256535,
+        "laps": 0,
+        "stuck_seconds": 0.0,
+        "collision_episodes": 0,
+        "contact_count": 0,
+        "offtrack_events": 0,
+        "offtrack_seconds": 0.0,
+        "offclock": 0,
+        "offactive": false,
+        "last_hit": -100,
+        "max_speed_kmh": 61.15303920735951,
+        "samples": 363,
+        "lane_square": 9408641.571182402,
+        "arc": 50901.32668818829,
+        "stationary_clock": 0,
+        "stationary_seconds": 0,
+        "longest_stop_seconds": 0.10000000149011612,
+        "maximum_body_edge_excess_cm": 0,
+        "side_by_side_corner_seconds": 6.375,
+        "maximum_steering_step": 0.353,
+        "last_steering": 0.367,
+        "braking_seconds": 6.875000953674316,
+        "maximum_impulse_ns": 0.0,
+        "initial_arc": 6451.051112931771
+      },
+      "ProofPawn_3": {
+        "segment": 137,
+        "distance": 21274.50206400558,
+        "laps": 0,
+        "stuck_seconds": 24.975000381469727,
+        "collision_episodes": 3,
+        "contact_count": 5631,
+        "offtrack_events": 1,
+        "offtrack_seconds": 27.100000381469727,
+        "offclock": 27.100000381469727,
+        "offactive": true,
+        "last_hit": 44.900001525878906,
+        "max_speed_kmh": 60.46870189529603,
+        "samples": 363,
+        "lane_square": 135918050.44128978,
+        "arc": 27545.553293907527,
+        "stationary_clock": 7.125,
+        "stationary_seconds": 24.975000381469727,
+        "longest_stop_seconds": 14.475000381469727,
+        "maximum_body_edge_excess_cm": 222.61983212738886,
+        "side_by_side_corner_seconds": 0,
+        "maximum_steering_step": 1.351,
+        "last_steering": 0.512,
+        "braking_seconds": 1.8500000014901161,
+        "maximum_impulse_ns": 493.13409423828125,
+        "initial_arc": 6271.051229901945,
+        "first_body_edge_excursion": {
+          "time": 17.92500114440918,
+          "segment": 137,
+          "excess_cm": 7.06758602577969
+        },
+        "center_offtrack_seconds": 26.475000381469727,
+        "contact_events": [
+          {
+            "time": 19.05000114440918,
+            "segment": 137,
+            "speed": 6.860226874477842,
+            "impulse_ns": 299.1009521484375
+          },
+          {
+            "time": 19.17500114440918,
+            "segment": 137,
+            "speed": 2.53602163079146,
+            "impulse_ns": 24.55170249938965
+          },
+          {
+            "time": 19.30000114440918,
+            "segment": 137,
+            "speed": 0.5351771390974044,
+            "impulse_ns": 4.1569132804870605
+          },
+          {
+            "time": 19.42500114440918,
+            "segment": 137,
+            "speed": 0.075417093941057,
+            "impulse_ns": 7.585600852966309
+          },
+          {
+            "time": 19.55000114440918,
+            "segment": 137,
+            "speed": 0.15643742681471495,
+            "impulse_ns": 7.606812477111816
+          },
+          {
+            "time": 19.67500114440918,
+            "segment": 137,
+            "speed": 0.0017682007566561608,
+            "impulse_ns": 4.164514541625977
+          },
+          {
+            "time": 19.80000114440918,
+            "segment": 137,
+            "speed": 0.032706532659816795,
+            "impulse_ns": 4.166261196136475
+          },
+          {
+            "time": 19.92500114440918,
+            "segment": 137,
+            "speed": 0.0023025344070057665,
+            "impulse_ns": 4.166647434234619
+          },
+          {
+            "time": 20.05000114440918,
+            "segment": 137,
+            "speed": 0.006815210910446802,
+            "impulse_ns": 4.166657447814941
+          },
+          {
+            "time": 20.17500114440918,
+            "segment": 137,
+            "speed": 0.0013413765633588407,
+            "impulse_ns": 4.166650772094727
+          },
+          {
+            "time": 20.30000114440918,
+            "segment": 137,
+            "speed": 0.001746748617996255,
+            "impulse_ns": 4.16666841506958
+          },
+          {
+            "time": 20.42500114440918,
+            "segment": 137,
+            "speed": 0.001114930149469939,
+            "impulse_ns": 4.1666693687438965
+          },
+          {
+            "time": 20.55000114440918,
+            "segment": 137,
+            "speed": 0.0011232067952332177,
+            "impulse_ns": 4.166667461395264
+          },
+          {
+            "time": 20.67500114440918,
+            "segment": 137,
+            "speed": 0.0010914434789949209,
+            "impulse_ns": 4.166666030883789
+          },
+          {
+            "time": 20.80000114440918,
+            "segment": 137,
+            "speed": 0.0010908973780249568,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 20.92500114440918,
+            "segment": 137,
+            "speed": 0.001089694878860987,
+            "impulse_ns": 4.1666669845581055
+          },
+          {
+            "time": 21.05000114440918,
+            "segment": 137,
+            "speed": 0.0010896211006625309,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 21.17500114440918,
+            "segment": 137,
+            "speed": 0.0010895795281046948,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 21.30000114440918,
+            "segment": 137,
+            "speed": 0.0010895745944779801,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 21.42500114440918,
+            "segment": 137,
+            "speed": 0.0010895731563947352,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 21.55000114440918,
+            "segment": 137,
+            "speed": 0.0010895727190893207,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 21.67500114440918,
+            "segment": 137,
+            "speed": 0.0010895726920682183,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 21.80000114440918,
+            "segment": 137,
+            "speed": 0.001089572694566315,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 21.92500114440918,
+            "segment": 137,
+            "speed": 0.0010895726925352909,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 22.05000114440918,
+            "segment": 137,
+            "speed": 5.548905924859242,
+            "impulse_ns": 2.5272109508514404
+          },
+          {
+            "time": 22.80000114440918,
+            "segment": 137,
+            "speed": 8.109261147352775,
+            "impulse_ns": 143.06109619140625
+          },
+          {
+            "time": 22.92500114440918,
+            "segment": 137,
+            "speed": 0.07862841802114666,
+            "impulse_ns": 20.598068237304688
+          },
+          {
+            "time": 23.05000114440918,
+            "segment": 137,
+            "speed": 0.076481990696091,
+            "impulse_ns": 4.160213470458984
+          },
+          {
+            "time": 23.17500114440918,
+            "segment": 137,
+            "speed": 0.012603829550738112,
+            "impulse_ns": 4.165437698364258
+          },
+          {
+            "time": 23.30000114440918,
+            "segment": 137,
+            "speed": 0.01666977956906052,
+            "impulse_ns": 4.166360378265381
+          },
+          {
+            "time": 23.42500114440918,
+            "segment": 137,
+            "speed": 0.0017509834231062163,
+            "impulse_ns": 4.166571617126465
+          },
+          {
+            "time": 23.55000114440918,
+            "segment": 137,
+            "speed": 0.003579073877321457,
+            "impulse_ns": 4.166663646697998
+          },
+          {
+            "time": 23.67500114440918,
+            "segment": 137,
+            "speed": 0.0001759073966167602,
+            "impulse_ns": 4.166671276092529
+          },
+          {
+            "time": 23.80000114440918,
+            "segment": 137,
+            "speed": 0.0007576604834394418,
+            "impulse_ns": 4.166666030883789
+          },
+          {
+            "time": 23.92500114440918,
+            "segment": 137,
+            "speed": 3.331670302691597e-06,
+            "impulse_ns": 4.166665077209473
+          },
+          {
+            "time": 24.05000114440918,
+            "segment": 137,
+            "speed": 0.00015839295350659658,
+            "impulse_ns": 4.1666669845581055
+          },
+          {
+            "time": 24.17500114440918,
+            "segment": 137,
+            "speed": 9.240462950786633e-06,
+            "impulse_ns": 4.1666669845581055
+          },
+          {
+            "time": 24.30000114440918,
+            "segment": 137,
+            "speed": 3.2501877182024655e-05,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 24.42500114440918,
+            "segment": 137,
+            "speed": 3.5288360609393336e-06,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 24.55000114440918,
+            "segment": 137,
+            "speed": 6.739243035469894e-06,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 24.67500114440918,
+            "segment": 137,
+            "speed": 1.2259123872663967e-06,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 24.80000114440918,
+            "segment": 137,
+            "speed": 1.214186137799253e-06,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 24.92500114440918,
+            "segment": 137,
+            "speed": 1.9087028868452203e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 25.05000114440918,
+            "segment": 137,
+            "speed": 3.737555989247439e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 25.17500114440918,
+            "segment": 137,
+            "speed": 1.8975527670990135e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 25.30000114440918,
+            "segment": 137,
+            "speed": 6.190987413455106e-08,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 25.42500114440918,
+            "segment": 137,
+            "speed": 9.359572708719674e-08,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 25.55000114440918,
+            "segment": 137,
+            "speed": 1.220135599902355e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 25.67500114440918,
+            "segment": 137,
+            "speed": 1.1689695200726323e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 25.80000114440918,
+            "segment": 137,
+            "speed": 1.1068249083108679e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 25.92500114440918,
+            "segment": 137,
+            "speed": 1.1142235255364365e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 26.05000114440918,
+            "segment": 137,
+            "speed": 1.1276120538810294e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 26.17500114440918,
+            "segment": 137,
+            "speed": 1.1267760560913233e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 26.30000114440918,
+            "segment": 137,
+            "speed": 1.1239318874596063e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 26.42500114440918,
+            "segment": 137,
+            "speed": 1.1239556087908787e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 26.55000114440918,
+            "segment": 137,
+            "speed": 1.1245516425738436e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 26.67500114440918,
+            "segment": 137,
+            "speed": 1.1245783448116599e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 26.80000114440918,
+            "segment": 137,
+            "speed": 1.1244551166759064e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 26.92500114440918,
+            "segment": 137,
+            "speed": 1.1244429888337777e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 27.05000114440918,
+            "segment": 137,
+            "speed": 1.1244681237603638e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 27.17500114440918,
+            "segment": 137,
+            "speed": 1.1244720007571209e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 27.30000114440918,
+            "segment": 137,
+            "speed": 1.1244669373499894e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 27.42500114440918,
+            "segment": 137,
+            "speed": 1.1244658567411032e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 27.55000114440918,
+            "segment": 137,
+            "speed": 1.1244668609786694e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 27.67500114440918,
+            "segment": 137,
+            "speed": 1.1244671406156218e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 27.80000114440918,
+            "segment": 137,
+            "speed": 1.1244669449470013e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 27.92500114440918,
+            "segment": 137,
+            "speed": 1.1244668759635743e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 28.05000114440918,
+            "segment": 137,
+            "speed": 1.1244669133231917e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 28.17500114440918,
+            "segment": 137,
+            "speed": 1.1244669297774274e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 28.30000114440918,
+            "segment": 137,
+            "speed": 1.1244669227926647e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 28.42500114440918,
+            "segment": 137,
+            "speed": 1.1244669189874487e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 28.55000114440918,
+            "segment": 137,
+            "speed": 1.1244669202495683e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 28.67500114440918,
+            "segment": 137,
+            "speed": 1.1244669211141736e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 28.80000114440918,
+            "segment": 137,
+            "speed": 1.1244669208955086e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 28.92500114440918,
+            "segment": 137,
+            "speed": 1.1244669207026724e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 29.05000114440918,
+            "segment": 137,
+            "speed": 1.1244669207382716e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 29.17500114440918,
+            "segment": 137,
+            "speed": 1.1244669207805825e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 29.30000114440918,
+            "segment": 137,
+            "speed": 1.1244669207753645e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 29.42500114440918,
+            "segment": 137,
+            "speed": 1.1244669207662193e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 29.55000114440918,
+            "segment": 137,
+            "speed": 1.1244669207668279e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 29.67500114440918,
+            "segment": 137,
+            "speed": 1.1244669207687774e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 29.80000114440918,
+            "segment": 137,
+            "speed": 1.1244669207687533e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 29.92500114440918,
+            "segment": 137,
+            "speed": 1.1244669207683434e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 30.05000114440918,
+            "segment": 137,
+            "speed": 1.1244669207683266e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 30.17500114440918,
+            "segment": 137,
+            "speed": 1.1244669207684108e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 30.30000114440918,
+            "segment": 137,
+            "speed": 1.1244669207684194e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 30.42500114440918,
+            "segment": 137,
+            "speed": 1.1244669207684028e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 30.55000114440918,
+            "segment": 137,
+            "speed": 1.1244669207683994e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 30.67500114440918,
+            "segment": 137,
+            "speed": 1.1244669207684027e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 30.80000114440918,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 30.92500114440918,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 31.05000114440918,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 31.17500114440918,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 31.30000114440918,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 31.42500114440918,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 31.55000114440918,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 31.67500114440918,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 31.80000114440918,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 31.92500114440918,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 32.025001525878906,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 32.150001525878906,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 32.275001525878906,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 32.400001525878906,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 32.525001525878906,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 32.650001525878906,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 32.775001525878906,
+            "segment": 137,
+            "speed": 1.1244669207684031e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 32.900001525878906,
+            "segment": 137,
+            "speed": 1.1244560064992056e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 33.025001525878906,
+            "segment": 137,
+            "speed": 1.1244725208183641e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 33.150001525878906,
+            "segment": 137,
+            "speed": 1.1244401908621963e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 33.275001525878906,
+            "segment": 137,
+            "speed": 1.1243965875216863e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 33.400001525878906,
+            "segment": 137,
+            "speed": 1.1243531947962137e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 33.525001525878906,
+            "segment": 137,
+            "speed": 1.1243102358190424e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 33.650001525878906,
+            "segment": 137,
+            "speed": 1.1242675631900557e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 33.775001525878906,
+            "segment": 137,
+            "speed": 1.1242266941607634e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 33.900001525878906,
+            "segment": 137,
+            "speed": 1.1241877731806703e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 34.025001525878906,
+            "segment": 137,
+            "speed": 1.1241510383900728e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 34.150001525878906,
+            "segment": 137,
+            "speed": 1.1241160858516381e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 34.275001525878906,
+            "segment": 137,
+            "speed": 1.1240831063204197e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 34.400001525878906,
+            "segment": 137,
+            "speed": 1.1240517852647802e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 34.525001525878906,
+            "segment": 137,
+            "speed": 1.1240222483089641e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 34.650001525878906,
+            "segment": 137,
+            "speed": 1.1239941998092029e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 34.775001525878906,
+            "segment": 137,
+            "speed": 1.1239678510704778e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 34.900001525878906,
+            "segment": 137,
+            "speed": 1.1239428105404483e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 35.025001525878906,
+            "segment": 137,
+            "speed": 1.1239191118525918e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 35.150001525878906,
+            "segment": 137,
+            "speed": 1.123896677112482e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 35.275001525878906,
+            "segment": 137,
+            "speed": 1.1238755329992005e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 35.400001525878906,
+            "segment": 137,
+            "speed": 1.123855362611585e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 35.525001525878906,
+            "segment": 137,
+            "speed": 1.1238442716012108e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 35.650001525878906,
+            "segment": 137,
+            "speed": 1.1238389258555843e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 35.775001525878906,
+            "segment": 137,
+            "speed": 1.1238367777191342e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 35.900001525878906,
+            "segment": 137,
+            "speed": 1.123835882947222e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 36.025001525878906,
+            "segment": 137,
+            "speed": 1.1238353890714093e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 36.150001525878906,
+            "segment": 137,
+            "speed": 1.1238351867692378e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 36.275001525878906,
+            "segment": 137,
+            "speed": 1.1238350744516831e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 36.400001525878906,
+            "segment": 137,
+            "speed": 1.123835028102952e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 36.525001525878906,
+            "segment": 137,
+            "speed": 1.1238350115078878e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 36.650001525878906,
+            "segment": 137,
+            "speed": 1.1238350022634125e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 36.775001525878906,
+            "segment": 137,
+            "speed": 1.1238349979310764e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 36.900001525878906,
+            "segment": 137,
+            "speed": 1.1238349961581303e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 37.025001525878906,
+            "segment": 137,
+            "speed": 1.1238349951841741e-07,
+            "impulse_ns": 4.166666507720947
+          },
+          {
+            "time": 37.900001525878906,
+            "segment": 137,
+            "speed": 23.94070644305662,
+            "impulse_ns": 38.29716491699219
+          },
+          {
+            "time": 38.025001525878906,
+            "segment": 137,
+            "speed": 0.2292681595189233,
+            "impulse_ns": 20.58888816833496
+          },
+          {
+            "time": 38.150001525878906,
+            "segment": 137,
+            "speed": 2.5264143756113917,
+            "impulse_ns": 9.085230827331543
+          },
+          {
+            "time": 38.275001525878906,
+            "segment": 137,
+            "speed": 2.501564315136812,
+            "impulse_ns": 8.517909049987793
+          },
+          {
+            "time": 38.400001525878906,
+            "segment": 137,
+            "speed": 1.5079106444306754,
+            "impulse_ns": 4.399725437164307
+          },
+          {
+            "time": 38.525001525878906,
+            "segment": 137,
+            "speed": 2.1057937808731544,
+            "impulse_ns": 5.263200283050537
+          },
+          {
+            "time": 38.650001525878906,
+            "segment": 137,
+            "speed": 1.896596661619932,
+            "impulse_ns": 5.281158924102783
+          },
+          {
+            "time": 38.775001525878906,
+            "segment": 137,
+            "speed": 1.8955826754879543,
+            "impulse_ns": 5.281454086303711
+          },
+          {
+            "time": 38.900001525878906,
+            "segment": 137,
+            "speed": 1.9257367023272838,
+            "impulse_ns": 5.273418426513672
+          },
+          {
+            "time": 39.025001525878906,
+            "segment": 137,
+            "speed": 1.8895099184098783,
+            "impulse_ns": 5.27683687210083
+          },
+          {
+            "time": 39.150001525878906,
+            "segment": 137,
+            "speed": 1.8911073416176694,
+            "impulse_ns": 5.274477958679199
+          },
+          {
+            "time": 39.275001525878906,
+            "segment": 137,
+            "speed": 1.8738760857640564,
+            "impulse_ns": 4.357575416564941
+          },
+          {
+            "time": 39.400001525878906,
+            "segment": 137,
+            "speed": 1.8696296600700935,
+            "impulse_ns": 4.356814384460449
+          },
+          {
+            "time": 39.525001525878906,
+            "segment": 137,
+            "speed": 1.8516769152947474,
+            "impulse_ns": 4.356010913848877
+          },
+          {
+            "time": 39.650001525878906,
+            "segment": 137,
+            "speed": 3.393767068170257,
+            "impulse_ns": 4.354682922363281
+          },
+          {
+            "time": 39.775001525878906,
+            "segment": 137,
+            "speed": 3.3812100188178627,
+            "impulse_ns": 4.353903293609619
+          },
+          {
+            "time": 39.900001525878906,
+            "segment": 137,
+            "speed": 1.8328265594751538,
+            "impulse_ns": 8.684165000915527
+          },
+          {
+            "time": 40.025001525878906,
+            "segment": 137,
+            "speed": 1.8360387025749536,
+            "impulse_ns": 8.681824684143066
+          },
+          {
+            "time": 40.150001525878906,
+            "segment": 137,
+            "speed": 1.831954792689182,
+            "impulse_ns": 8.67935562133789
+          },
+          {
+            "time": 40.275001525878906,
+            "segment": 137,
+            "speed": 1.8415740706384125,
+            "impulse_ns": 8.676361083984375
+          },
+          {
+            "time": 40.400001525878906,
+            "segment": 137,
+            "speed": 1.8232771681998028,
+            "impulse_ns": 8.67607593536377
+          },
+          {
+            "time": 40.525001525878906,
+            "segment": 137,
+            "speed": 1.8226823589224175,
+            "impulse_ns": 8.674492835998535
+          },
+          {
+            "time": 40.650001525878906,
+            "segment": 137,
+            "speed": 1.8167103914046827,
+            "impulse_ns": 5.259774208068848
+          },
+          {
+            "time": 40.775001525878906,
+            "segment": 137,
+            "speed": 1.8108212565062467,
+            "impulse_ns": 5.25830602645874
+          },
+          {
+            "time": 40.900001525878906,
+            "segment": 137,
+            "speed": 1.8045843528064498,
+            "impulse_ns": 5.256303310394287
+          },
+          {
+            "time": 41.025001525878906,
+            "segment": 137,
+            "speed": 1.7821560519945598,
+            "impulse_ns": 5.256711006164551
+          },
+          {
+            "time": 41.150001525878906,
+            "segment": 137,
+            "speed": 1.7675219029413134,
+            "impulse_ns": 4.343120574951172
+          },
+          {
+            "time": 41.275001525878906,
+            "segment": 137,
+            "speed": 3.326207345237446,
+            "impulse_ns": 4.341832160949707
+          },
+          {
+            "time": 41.400001525878906,
+            "segment": 137,
+            "speed": 1.7532091058371264,
+            "impulse_ns": 8.657822608947754
+          },
+          {
+            "time": 41.525001525878906,
+            "segment": 137,
+            "speed": 1.7597808197563367,
+            "impulse_ns": 8.65864372253418
+          },
+          {
+            "time": 41.650001525878906,
+            "segment": 137,
+            "speed": 1.7548544555630978,
+            "impulse_ns": 8.656696319580078
+          },
+          {
+            "time": 41.775001525878906,
+            "segment": 137,
+            "speed": 1.7605681331504999,
+            "impulse_ns": 8.6544771194458
+          },
+          {
+            "time": 41.900001525878906,
+            "segment": 137,
+            "speed": 1.7520145308946422,
+            "impulse_ns": 5.247842311859131
+          },
+          {
+            "time": 42.025001525878906,
+            "segment": 137,
+            "speed": 1.7369520872957895,
+            "impulse_ns": 5.24671745300293
+          },
+          {
+            "time": 42.150001525878906,
+            "segment": 137,
+            "speed": 1.7317421565194042,
+            "impulse_ns": 5.245416641235352
+          },
+          {
+            "time": 42.275001525878906,
+            "segment": 137,
+            "speed": 1.707370475603561,
+            "impulse_ns": 4.334181308746338
+          },
+          {
+            "time": 42.400001525878906,
+            "segment": 137,
+            "speed": 1.7022108417366029,
+            "impulse_ns": 8.645108222961426
+          },
+          {
+            "time": 42.525001525878906,
+            "segment": 137,
+            "speed": 1.7106340686000483,
+            "impulse_ns": 8.643218994140625
+          },
+          {
+            "time": 42.650001525878906,
+            "segment": 137,
+            "speed": 1.7116047447837828,
+            "impulse_ns": 8.641551971435547
+          },
+          {
+            "time": 42.775001525878906,
+            "segment": 137,
+            "speed": 1.7072912093334212,
+            "impulse_ns": 5.240399360656738
+          },
+          {
+            "time": 42.900001525878906,
+            "segment": 137,
+            "speed": 1.6973767075983888,
+            "impulse_ns": 5.23940896987915
+          },
+          {
+            "time": 43.025001525878906,
+            "segment": 137,
+            "speed": 1.6826185119280725,
+            "impulse_ns": 5.238422393798828
+          },
+          {
+            "time": 43.150001525878906,
+            "segment": 137,
+            "speed": 1.6644461564734234,
+            "impulse_ns": 4.327998638153076
+          },
+          {
+            "time": 43.275001525878906,
+            "segment": 137,
+            "speed": 1.6586262355184171,
+            "impulse_ns": 8.632737159729004
+          },
+          {
+            "time": 43.400001525878906,
+            "segment": 137,
+            "speed": 1.6681176289087345,
+            "impulse_ns": 8.631653785705566
+          },
+          {
+            "time": 43.525001525878906,
+            "segment": 137,
+            "speed": 1.6721123508275286,
+            "impulse_ns": 8.629398345947266
+          },
+          {
+            "time": 43.650001525878906,
+            "segment": 137,
+            "speed": 1.6617941398684881,
+            "impulse_ns": 5.2333292961120605
+          },
+          {
+            "time": 43.775001525878906,
+            "segment": 137,
+            "speed": 1.6491474890669513,
+            "impulse_ns": 5.232059955596924
+          },
+          {
+            "time": 43.900001525878906,
+            "segment": 137,
+            "speed": 1.6238696624611177,
+            "impulse_ns": 4.322887420654297
+          },
+          {
+            "time": 44.025001525878906,
+            "segment": 137,
+            "speed": 1.6231933205509557,
+            "impulse_ns": 8.623208999633789
+          },
+          {
+            "time": 44.150001525878906,
+            "segment": 137,
+            "speed": 1.6321447088399945,
+            "impulse_ns": 8.621626853942871
+          },
+          {
+            "time": 44.275001525878906,
+            "segment": 137,
+            "speed": 1.6355867369059551,
+            "impulse_ns": 8.619623184204102
+          },
+          {
+            "time": 44.400001525878906,
+            "segment": 137,
+            "speed": 1.6288213424730396,
+            "impulse_ns": 5.22688627243042
+          },
+          {
+            "time": 44.525001525878906,
+            "segment": 137,
+            "speed": 1.6103762649262887,
+            "impulse_ns": 5.226301670074463
+          },
+          {
+            "time": 44.650001525878906,
+            "segment": 137,
+            "speed": 3.1986378021823696,
+            "impulse_ns": 4.318388938903809
+          },
+          {
+            "time": 44.775001525878906,
+            "segment": 137,
+            "speed": 1.5971773316148958,
+            "impulse_ns": 8.612870216369629
+          },
+          {
+            "time": 44.900001525878906,
+            "segment": 137,
+            "speed": 1.5993470338892963,
+            "impulse_ns": 8.612678527832031
+          }
+        ]
+      },
+      "ProofPawn_4": {
+        "segment": 307,
+        "distance": 44868.355680864595,
+        "laps": 0,
+        "stuck_seconds": 0.0,
+        "collision_episodes": 0,
+        "contact_count": 0,
+        "offtrack_events": 0,
+        "offtrack_seconds": 0.0,
+        "offclock": 0,
+        "offactive": false,
+        "last_hit": -100,
+        "max_speed_kmh": 61.11073979301939,
+        "samples": 363,
+        "lane_square": 38446280.05367637,
+        "arc": 50959.40669684373,
+        "stationary_clock": 0,
+        "stationary_seconds": 0,
+        "longest_stop_seconds": 0.30000001192092896,
+        "maximum_body_edge_excess_cm": 0,
+        "side_by_side_corner_seconds": 6.225000381469727,
+        "maximum_steering_step": 0.301,
+        "last_steering": 0.325,
+        "braking_seconds": 5.850000381469727,
+        "maximum_impulse_ns": 0.0,
+        "initial_arc": 6091.051015979123
+      }
+    }
+  },
+  "safety_failure": "Stop before broader testing: contacts, sustained off-track or stuck time"
+}

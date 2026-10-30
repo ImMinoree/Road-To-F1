@@ -1,0 +1,88 @@
+{
+  "Baseline": {
+    "runs": 2,
+    "actual_planning_budgets": [
+      265.0,
+      265.0
+    ],
+    "reference_player_budgets": [
+      420.0,
+      420.0
+    ],
+    "ai_laps": 16,
+    "ai_lap_median": 112.93750762939453,
+    "ai_lap_range": [
+      108.75000762939453,
+      118.9000015258789
+    ],
+    "ai_flying_median": 110.75000762939453,
+    "player_lap_samples": [
+      100.9000015258789,
+      91.37500762939453,
+      98.2750015258789,
+      91.37500762939453
+    ],
+    "ai_exchanges": 6,
+    "all_exchanges": 14,
+    "defensive_holds": 17,
+    "committed_passes": 0,
+    "abort_events": 36,
+    "contacts": 0,
+    "offtrack": 0,
+    "stuck_seconds": 0.0,
+    "mean_speed_kmh": 34.13453920297555,
+    "tight_corner_mean_kmh": 13.398964549763033,
+    "braking_fraction": 0.16823857598299682,
+    "player_nearby_20m_seconds": 120.24999999999997,
+    "player_alone_seconds": 349.75,
+    "nearby_fraction": 0.2558510638297872,
+    "ai_retakes_after_player_pass": 0,
+    "initial_player_behind_all_opponents_verified": true,
+    "completion_rate": 1.0,
+    "error": null,
+    "safety_failure": null
+  },
+  "After": {
+    "runs": 2,
+    "actual_planning_budgets": [
+      420.0,
+      420.0
+    ],
+    "reference_player_budgets": [
+      420.0,
+      420.0
+    ],
+    "ai_laps": 16,
+    "ai_lap_median": 94.13750457763672,
+    "ai_lap_range": [
+      91.37500762939453,
+      103.4000015258789
+    ],
+    "ai_flying_median": 92.62500762939453,
+    "player_lap_samples": [
+      97.5250015258789,
+      93.87500762939453,
+      98.9000015258789,
+      92.37500762939453
+    ],
+    "ai_exchanges": 5,
+    "all_exchanges": 13,
+    "defensive_holds": 22,
+    "committed_passes": 0,
+    "abort_events": 37,
+    "contacts": 0,
+    "offtrack": 0,
+    "stuck_seconds": 0.0,
+    "mean_speed_kmh": 40.309721923485654,
+    "tight_corner_mean_kmh": 16.28303229946524,
+    "braking_fraction": 0.17919766206163656,
+    "player_nearby_20m_seconds": 445.625,
+    "player_alone_seconds": 24.375,
+    "nearby_fraction": 0.9481382978723404,
+    "ai_retakes_after_player_pass": 3,
+    "initial_player_behind_all_opponents_verified": true,
+    "completion_rate": 1.0,
+    "error": null,
+    "safety_failure": null
+  }
+}

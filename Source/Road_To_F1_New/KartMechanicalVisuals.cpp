@@ -18,12 +18,12 @@
 #include "Misc/CommandLine.h"
 #include "Misc/Parse.h"
 
-namespace {const FString Folder=TEXT("/Game/RoadToF1/PlayerVehicleV4/");constexpr float FrontRadius=17.589f,RearRadius=20.938f;
+namespace {const FString MechanicalAssetFolder=TEXT("/Game/RoadToF1/PlayerVehicleV4/");constexpr float FrontRadius=17.589f,RearRadius=20.938f;
 void Cosmetic(UMeshComponent* C){C->SetCollisionEnabled(ECollisionEnabled::NoCollision);C->SetGenerateOverlapEvents(false);C->SetCanEverAffectNavigation(false);C->SetIsReplicated(false);}
 }
 UKartMechanicalVisuals::UKartMechanicalVisuals(){PrimaryComponentTick.bCanEverTick=true;PrimaryComponentTick.TickGroup=TG_PostUpdateWork;SetIsReplicatedByDefault(false);}
 UStaticMeshComponent* UKartMechanicalVisuals::Add(const FString& Name,USceneComponent* Parent,const FVector& Location){
- auto* Mesh=LoadObject<UStaticMesh>(nullptr,*(Folder+TEXT("SM_V4_")+Name+TEXT(".SM_V4_")+Name));if(!Mesh)return nullptr;
+ auto* Mesh=LoadObject<UStaticMesh>(nullptr,*(MechanicalAssetFolder+TEXT("SM_V4_")+Name+TEXT(".SM_V4_")+Name));if(!Mesh)return nullptr;
  auto* C=NewObject<UStaticMeshComponent>(GetOwner(),*FString::Printf(TEXT("V4_%s_%d"),*Name,Parts.Num()));GetOwner()->AddInstanceComponent(C);C->SetupAttachment(Parent);C->SetStaticMesh(Mesh);C->SetRelativeLocation(Location);Cosmetic(C);C->RegisterComponent();Parts.Add(C);return C;
 }
 void UKartMechanicalVisuals::BeginPlay(){
@@ -31,9 +31,9 @@ void UKartMechanicalVisuals::BeginPlay(){
  if(!bEnabled||!Pawn||GetNetMode()==NM_DedicatedServer||FParse::Param(FCommandLine::Get(),TEXT("LegacyKartVisuals")))return;
  // Validate every reference before touching the existing renderer.
  for(const TCHAR* N:{TEXT("Chassis"),TEXT("Column"),TEXT("Pitman"),TEXT("KnuckleFL"),TEXT("KnuckleFR"),TEXT("WheelFL"),TEXT("WheelFR"),TEXT("WheelRL"),TEXT("WheelRR"),TEXT("TieRod"),TEXT("RearAxle"),TEXT("BrakeDisc"),TEXT("Sprocket"),TEXT("Caliper"),TEXT("Pedall"),TEXT("Pedalr"),TEXT("SteeringWheel"),TEXT("ChainLink")}){
-  const FString Path=Folder+TEXT("SM_V4_")+N;if(!LoadObject<UStaticMesh>(nullptr,*(Path+TEXT(".SM_V4_")+N))){UE_LOG(LogTemp,Error,TEXT("V4 visual asset missing: %s; preserving legacy"),*Path);return;}
+  const FString Path=MechanicalAssetFolder+TEXT("SM_V4_")+N;if(!LoadObject<UStaticMesh>(nullptr,*(Path+TEXT(".SM_V4_")+N))){UE_LOG(LogTemp,Error,TEXT("V4 visual asset missing: %s; preserving legacy"),*Path);return;}
  }
- auto* Full=LoadObject<USkeletalMesh>(nullptr,*(Folder+TEXT("SK_V4_DriverFull.SK_V4_DriverFull")));auto* Cockpit=Pawn->bRacingAI?Full:LoadObject<USkeletalMesh>(nullptr,*(Folder+TEXT("SK_V4_DriverPOV.SK_V4_DriverPOV")));Steering=LoadObject<UAnimSequence>(nullptr,*(Folder+TEXT("A_V4_Steering.A_V4_Steering")));
+ auto* Full=LoadObject<USkeletalMesh>(nullptr,*(MechanicalAssetFolder+TEXT("SK_V4_DriverFull.SK_V4_DriverFull")));auto* Cockpit=Pawn->bRacingAI?Full:LoadObject<USkeletalMesh>(nullptr,*(MechanicalAssetFolder+TEXT("SK_V4_DriverPOV.SK_V4_DriverPOV")));Steering=LoadObject<UAnimSequence>(nullptr,*(MechanicalAssetFolder+TEXT("A_V4_Steering.A_V4_Steering")));
  if(!Full||!Cockpit||!Steering||!Full->GetSkeleton()||!Cockpit->GetSkeleton()||!Steering->GetSkeleton()||Full->GetSkeleton()!=Steering->GetSkeleton()||Cockpit->GetSkeleton()!=Steering->GetSkeleton()){UE_LOG(LogTemp,Error,TEXT("V4 incompatible driver skeleton; preserving legacy"));return;}
  Root=NewObject<USceneComponent>(Pawn,TEXT("V4_Assembly"));Pawn->AddInstanceComponent(Root);Root->SetupAttachment(Pawn->GetRootComponent());Root->SetRelativeLocation(FVector(0,0,-31));Root->RegisterComponent();AddTickPrerequisiteActor(Pawn);
  Add(TEXT("Chassis"),Root);Add(TEXT("Column"),Root,KartVisual::WheelCenter());Add(TEXT("Pitman"),Root,KartVisual::ColumnBottom());
@@ -50,7 +50,7 @@ void UKartMechanicalVisuals::BeginPlay(){
  auto CreateDriver=[&](const TCHAR* Name,USkeletalMesh* Mesh){auto* C=NewObject<UPoseableMeshComponent>(Pawn,Name);Pawn->AddInstanceComponent(C);C->SetupAttachment(Root);C->SetSkinnedAssetAndUpdate(Mesh);Cosmetic(C);C->RegisterComponent();return C;};
  Driver=CreateDriver(TEXT("V4_SeatedDriver"),Full);Driver->SetOwnerNoSee(!Pawn->bRacingAI);
  if(!Pawn->bRacingAI){POV=CreateDriver(TEXT("V4_CockpitDriver"),Cockpit);POV->SetOnlyOwnerSee(true);POV->SetCastShadow(false);}
- Chain=NewObject<UInstancedStaticMeshComponent>(Pawn,TEXT("V4_Chain"));Pawn->AddInstanceComponent(Chain);Chain->SetupAttachment(Root);Chain->SetStaticMesh(LoadObject<UStaticMesh>(nullptr,*(Folder+TEXT("SM_V4_ChainLink.SM_V4_ChainLink"))));Cosmetic(Chain);Chain->RegisterComponent();for(int I=0;I<70;++I)Chain->AddInstance(FTransform::Identity);
+ Chain=NewObject<UInstancedStaticMeshComponent>(Pawn,TEXT("V4_Chain"));Pawn->AddInstanceComponent(Chain);Chain->SetupAttachment(Root);Chain->SetStaticMesh(LoadObject<UStaticMesh>(nullptr,*(MechanicalAssetFolder+TEXT("SM_V4_ChainLink.SM_V4_ChainLink"))));Cosmetic(Chain);Chain->RegisterComponent();for(int I=0;I<70;++I)Chain->AddInstance(FTransform::Identity);
  bReady=true;
  if(auto* Old=Pawn->FindComponentByClass<ULocalKartDriverVisuals>())Old->SetCockpitEnabled(false);
  // Eye is fitted to the lowered seated head; preserve camera switching and chase rig.

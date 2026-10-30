@@ -1,0 +1,63 @@
+{
+  "actual_pie": true,
+  "passed": true,
+  "samples": [
+    {
+      "phase": "01_stationary",
+      "kmh": 0.0,
+      "longitudinal_mps": 0.0,
+      "expected_kmh_display": 0,
+      "expected_mph_display": 0
+    },
+    {
+      "phase": "02_accelerating_kmh",
+      "kmh": 22.639820045259988,
+      "longitudinal_mps": 6.288838863372803,
+      "expected_kmh_display": 23,
+      "expected_mph_display": 14
+    },
+    {
+      "phase": "03_accelerating_mph",
+      "kmh": 43.78817318487996,
+      "longitudinal_mps": 12.163381576538086,
+      "expected_kmh_display": 44,
+      "expected_mph_display": 27
+    },
+    {
+      "phase": "04_reverse",
+      "kmh": 11.044050654488936,
+      "longitudinal_mps": -3.0677919387817383,
+      "expected_kmh_display": 11,
+      "expected_mph_display": 7
+    },
+    {
+      "phase": "05_braked",
+      "kmh": 0.0,
+      "longitudinal_mps": 0.0,
+      "expected_kmh_display": 0,
+      "expected_mph_display": 0
+    },
+    {
+      "phase": "06_full_map",
+      "kmh": 0.0,
+      "longitudinal_mps": 0.0,
+      "expected_kmh_display": 0,
+      "expected_mph_display": 0
+    }
+  ],
+  "screenshots": [
+    "01_stationary",
+    "02_accelerating_kmh",
+    "03_accelerating_mph",
+    "04_reverse",
+    "05_braked",
+    "06_full_map"
+  ],
+  "maps_unchanged": true,
+  "source": "AProofPawn::GetVelocity() planar magnitude, cm/s to km/h; optional mph conversion",
+  "limits": "Arc is speed, not RPM. No simulated gearbox is displayed.",
+  "rendered_log_samples_checked": 80,
+  "conversion_checks_passed": true,
+  "final_screenshots_inspected": true,
+  "main_screenshot": "speed_gauge.png"
+}

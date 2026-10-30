@@ -1,0 +1,103 @@
+{
+  "order": 0,
+  "seconds": 40.900001525878906,
+  "racers": {
+    "ProofPawn_0": {
+      "segment": 311,
+      "distance": 46300.53029277469,
+      "laps": 0,
+      "stuck_seconds": 0.0,
+      "collision_episodes": 0,
+      "contact_count": 0,
+      "offtrack_events": 0,
+      "offtrack_seconds": 0.0,
+      "offclock": 0,
+      "offactive": false,
+      "last_hit": -100,
+      "max_speed_kmh": 61.154531629230995,
+      "samples": 331,
+      "lane_square": 15663107.385377271,
+      "arc": 51311.581483450274,
+      "maximum_body_edge_excess_cm": 0,
+      "initial_arc": 5011.051190675619
+    },
+    "ProofPawn_1": {
+      "segment": 304,
+      "distance": 45315.687676693036,
+      "laps": 0,
+      "stuck_seconds": 0.0,
+      "collision_episodes": 0,
+      "contact_count": 0,
+      "offtrack_events": 0,
+      "offtrack_seconds": 0.0,
+      "offclock": 0,
+      "offactive": false,
+      "last_hit": -100,
+      "max_speed_kmh": 61.15448662880107,
+      "samples": 331,
+      "lane_square": 2704936.9680903447,
+      "arc": 50506.73902898691,
+      "maximum_body_edge_excess_cm": 0,
+      "initial_arc": 5191.0513522938845
+    }
+  },
+  "decisions": [
+    {
+      "slot": 1,
+      "intent": 1,
+      "attempts": 1,
+      "completed": 0,
+      "aborted": 0,
+      "defensive_holds": 0,
+      "blocked_seconds": 0.0,
+      "lane": 18.96,
+      "desired": 18.96,
+      "perception": [
+        {
+          "id": "ProofPawn_0",
+          "gap": 808.29,
+          "lane": -11.5,
+          "relative_speed": -129.95,
+          "ttc": 4.835,
+          "alongside": false
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "intent": 0,
+      "attempts": 0,
+      "completed": 0,
+      "aborted": 0,
+      "defensive_holds": 0,
+      "blocked_seconds": 0.0,
+      "lane": 209.77,
+      "desired": 209.77,
+      "perception": []
+    },
+    {
+      "slot": 3,
+      "intent": 0,
+      "attempts": 0,
+      "completed": 0,
+      "aborted": 0,
+      "defensive_holds": 0,
+      "blocked_seconds": 0.0,
+      "lane": -210.35,
+      "desired": -210.35,
+      "perception": []
+    },
+    {
+      "slot": 4,
+      "intent": 0,
+      "attempts": 0,
+      "completed": 0,
+      "aborted": 0,
+      "defensive_holds": 0,
+      "blocked_seconds": 0.0,
+      "lane": 209.6,
+      "desired": 209.6,
+      "perception": []
+    }
+  ]
+}

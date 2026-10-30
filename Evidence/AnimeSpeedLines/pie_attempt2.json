@@ -1,0 +1,26 @@
+{
+  "samples": [
+    {
+      "name": "grid",
+      "actual_kmh": 0.0,
+      "strength": 0.0,
+      "material_strength": 0.0
+    },
+    {
+      "name": "02_20kmh_no_lines",
+      "actual_kmh": 20.03289794921875,
+      "strength": 0.0,
+      "material_strength": 0.0
+    },
+    {
+      "name": "03_35kmh_subtle",
+      "actual_kmh": 35.04841613769531,
+      "strength": 0.054119475185871124,
+      "material_strength": 0.054119475185871124
+    }
+  ],
+  "input_method": "Existing development throttle action, real vehicle velocity. No physics parameters changed.",
+  "above_cap_preview": "80 km/h screenshot overrides only post-process parameters while PIE is paused; not a driving test.",
+  "error": "Traceback (most recent call last):\n  File \"D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/validate_anime_speed_lines.py\", line 41, in tick\n    elif age>35:raise RuntimeError('Could not reach 50kmh on the straight; current speed '+str(speed))\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: Could not reach 50kmh on the straight; current speed 5.81220804818372e-09\n",
+  "protected_files_unchanged": true
+}

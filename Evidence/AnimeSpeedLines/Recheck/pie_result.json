@@ -1,0 +1,42 @@
+{
+  "samples": [
+    {
+      "name": "grid",
+      "actual_kmh": 0.0,
+      "strength": 0.0,
+      "material_strength": 0.0
+    },
+    {
+      "name": "02_20kmh_no_lines",
+      "actual_kmh": 20.0738525390625,
+      "strength": 0.0,
+      "material_strength": 0.0
+    },
+    {
+      "name": "03_35kmh_subtle",
+      "actual_kmh": 35.05326461791992,
+      "strength": 0.05384024232625961,
+      "material_strength": 0.05384024232625961
+    },
+    {
+      "name": "04_50kmh_noticeable",
+      "actual_kmh": 50.03273391723633,
+      "strength": 0.19786863029003143,
+      "material_strength": 0.19786863029003143
+    },
+    {
+      "name": "50kmh_driving",
+      "actual_kmh": 50.03273391723633,
+      "strength": 0.19786863029003143,
+      "material_strength": 0.19786863029003143
+    }
+  ],
+  "input_method": "Existing development throttle action, real vehicle velocity. No physics parameters changed.",
+  "above_cap_preview": "80 km/h screenshot overrides only post-process parameters while PIE is paused; not a driving test.",
+  "test_lane": "Other existing karts parked away only in unsaved PIE to remove traffic variability.",
+  "toggle_immediately_clears_lines": true,
+  "third_person_has_no_speed_lines": true,
+  "restart_clears_lines": true,
+  "single_start_controller": true,
+  "protected_files_unchanged": true
+}

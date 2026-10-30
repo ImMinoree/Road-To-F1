@@ -1,0 +1,134 @@
+{
+  "label": "after",
+  "race_seconds": 45.0,
+  "route_length_cm": 104002.02549785623,
+  "runs": [
+    {
+      "grid_order": "normal",
+      "elapsed": 45.025001525878906,
+      "start_events": 1,
+      "staged": 2,
+      "racers": {
+        "ProofPawn_0": {
+          "segment": 345,
+          "distance": 49301.71541909249,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.154531629230995,
+          "samples": 364,
+          "lane_square": 15845765.563838154,
+          "arc": 54312.76660976808,
+          "maximum_body_edge_excess_cm": 0,
+          "initial_arc": 5011.051190675619
+        },
+        "ProofPawn_1": {
+          "segment": 337,
+          "distance": 48460.477799902364,
+          "laps": 0,
+          "stuck_seconds": 0.0,
+          "collision_episodes": 0,
+          "contact_count": 0,
+          "offtrack_events": 0,
+          "offtrack_seconds": 0.0,
+          "offclock": 0,
+          "offactive": false,
+          "last_hit": -100,
+          "max_speed_kmh": 61.15448662880107,
+          "samples": 364,
+          "lane_square": 2719579.9450993333,
+          "arc": 53651.529152196235,
+          "maximum_body_edge_excess_cm": 0,
+          "initial_arc": 5191.0513522938845
+        }
+      },
+      "pairwise_position_changes": 1,
+      "pairs": {
+        "ProofPawn_0|ProofPawn_1": {
+          "sign": 1,
+          "changes": 1,
+          "candidate": 0,
+          "since": 25.42500114440918
+        }
+      },
+      "decisions": [
+        {
+          "slot": 1,
+          "intent": 1,
+          "attempts": 1,
+          "completed": 0,
+          "aborted": 0,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 18.96,
+          "desired": 18.96,
+          "perception": [
+            {
+              "id": "ProofPawn_0",
+              "gap": 654.81,
+              "lane": 57.5,
+              "relative_speed": 134.54,
+              "ttc": 1000.0,
+              "alongside": false
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "intent": 0,
+          "attempts": 0,
+          "completed": 0,
+          "aborted": 0,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 209.77,
+          "desired": 209.77,
+          "perception": []
+        },
+        {
+          "slot": 3,
+          "intent": 0,
+          "attempts": 0,
+          "completed": 0,
+          "aborted": 0,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": -210.35,
+          "desired": -210.35,
+          "perception": []
+        },
+        {
+          "slot": 4,
+          "intent": 0,
+          "attempts": 0,
+          "completed": 0,
+          "aborted": 0,
+          "defensive_holds": 0,
+          "blocked_seconds": 0.0,
+          "lane": 209.6,
+          "desired": 209.6,
+          "perception": []
+        }
+      ]
+    }
+  ],
+  "metric_definition": "Pairwise order exchanges require +/-250 cm longitudinal clearance and 1s confirmation, counted after 5s. Collision episodes are per-kart starts of non-ground swept contacts, separated by 0.5s. Off-track episodes use projected collider half-extents and 0.3s confirmation. Player uses the existing opt-in AI diagnostic driver.",
+  "initial_spawn_count": 2,
+  "identical_physics": {
+    "mass_kg": 165.0,
+    "engine_force_n": 1000.0,
+    "maximum_forward_speed_mph": 38.0,
+    "maximum_steering_degrees": 24.0,
+    "front_cornering_stiffness": 12000.0,
+    "rear_cornering_stiffness": 21000.0
+  },
+  "seen_nearby": true,
+  "seen_alongside": true,
+  "seen_ahead": true
+}

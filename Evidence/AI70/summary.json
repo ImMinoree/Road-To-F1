@@ -1,0 +1,173 @@
+{
+  "Baseline": {
+    "runs": [
+      {
+        "order": "normal",
+        "ai_first_laps": [
+          94.1500015258789,
+          97.1500015258789,
+          95.6500015258789,
+          103.4000015258789
+        ],
+        "player_first_lap": 97.5250015258789,
+        "fastest_first_lap_kart": "ProofPawn_1",
+        "contacts": 0,
+        "offtrack": 0,
+        "stuck_seconds": 0.0,
+        "completed_ai_laps": 8,
+        "ai_max_kmh": 61.15415825923271,
+        "player_max_kmh": 61.12188594576213,
+        "position_changes": 8,
+        "start_events": 1,
+        "participants": 5,
+        "cpu": {
+          "reference_player_corner_budget": 420.0,
+          "ai_cpu_mean_ms": 0.0883,
+          "ai_cpu_max_ms": 0.234,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 2,
+          "samples": 748,
+          "minimum_speed_cms": 339.601,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 420.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.344
+        }
+      },
+      {
+        "order": "reversed_AI_grid",
+        "ai_first_laps": [
+          100.5250015258789,
+          92.7750015258789,
+          99.2750015258789,
+          95.0250015258789
+        ],
+        "player_first_lap": 98.9000015258789,
+        "fastest_first_lap_kart": "ProofPawn_2",
+        "contacts": 0,
+        "offtrack": 0,
+        "stuck_seconds": 0.0,
+        "completed_ai_laps": 8,
+        "ai_max_kmh": 61.15420806394883,
+        "player_max_kmh": 61.154359981644156,
+        "position_changes": 5,
+        "start_events": 1,
+        "participants": 5,
+        "cpu": {
+          "reference_player_corner_budget": 420.0,
+          "ai_cpu_mean_ms": 0.09014,
+          "ai_cpu_max_ms": 0.2268,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 2,
+          "samples": 748,
+          "minimum_speed_cms": 339.601,
+          "maximum_speed_cms": 1698.752,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 420.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.344
+        }
+      }
+    ],
+    "first_lap_median": 96.4000015258789,
+    "all_lap_median": 94.13750457763672,
+    "error": null,
+    "safety_failure": null,
+    "governors_kmh": {
+      "ProofPawn_0": 61.155072000000004,
+      "ProofPawn_1": 61.155072000000004,
+      "ProofPawn_2": 61.155072000000004,
+      "ProofPawn_3": 61.155072000000004,
+      "ProofPawn_4": 61.155072000000004
+    }
+  },
+  "After": {
+    "runs": [
+      {
+        "order": "normal",
+        "ai_first_laps": [
+          89.2750015258789,
+          92.6500015258789,
+          91.0250015258789,
+          97.6500015258789
+        ],
+        "player_first_lap": 96.6500015258789,
+        "fastest_first_lap_kart": "ProofPawn_1",
+        "contacts": 0,
+        "offtrack": 0,
+        "stuck_seconds": 0.0,
+        "completed_ai_laps": 8,
+        "ai_max_kmh": 66.01243409249004,
+        "player_max_kmh": 61.15478521737521,
+        "position_changes": 5,
+        "start_events": 1,
+        "participants": 5,
+        "cpu": {
+          "reference_player_corner_budget": 420.0,
+          "ai_cpu_mean_ms": 0.10188,
+          "ai_cpu_max_ms": 0.278,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 3,
+          "samples": 748,
+          "minimum_speed_cms": 351.521,
+          "maximum_speed_cms": 1944.444,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 450.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.367
+        }
+      },
+      {
+        "order": "reversed_AI_grid",
+        "ai_first_laps": [
+          92.1500015258789,
+          88.0250015258789,
+          94.5250015258789,
+          89.2750015258789
+        ],
+        "player_first_lap": 97.7750015258789,
+        "fastest_first_lap_kart": "ProofPawn_2",
+        "contacts": 0,
+        "offtrack": 1,
+        "stuck_seconds": 0.0,
+        "completed_ai_laps": 8,
+        "ai_max_kmh": 66.01221400873625,
+        "player_max_kmh": 61.15486105030228,
+        "position_changes": 7,
+        "start_events": 1,
+        "participants": 5,
+        "cpu": {
+          "reference_player_corner_budget": 420.0,
+          "ai_cpu_mean_ms": 0.09892,
+          "ai_cpu_max_ms": 0.3263,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 3,
+          "samples": 748,
+          "minimum_speed_cms": 351.521,
+          "maximum_speed_cms": 1944.444,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 450.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.367
+        }
+      }
+    ],
+    "first_lap_median": 91.5875015258789,
+    "all_lap_median": 89.2750015258789,
+    "error": null,
+    "safety_failure": "Stop before broader testing: contacts, sustained off-track or stuck time",
+    "governors_kmh": {
+      "ProofPawn_0": 61.155072000000004,
+      "ProofPawn_1": 69.99999946435547,
+      "ProofPawn_2": 69.99999946435547,
+      "ProofPawn_3": 69.99999946435547,
+      "ProofPawn_4": 69.99999946435547
+    }
+  },
+  "protected_changes": []
+}

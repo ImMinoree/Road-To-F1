@@ -1,0 +1,8 @@
+{
+  "staging": "Existing AI karts repositioned only in unsaved PIE for dot visibility and close-arrow screenshots.",
+  "all_karts_on_map": 10,
+  "heading_tracks_90_degree_turn": true,
+  "heading_error_degrees": -3.814697265625e-06,
+  "full_screen_map_opens": true,
+  "pie_completed": true
+}

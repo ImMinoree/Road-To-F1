@@ -1,0 +1,302 @@
+[
+  {
+    "Algorithm": "SHA256",
+    "Hash": "D533BF3DBAAC5AC4B7C1CC63029FEA0A2F33030DE8E7B62280B47776DC5B6184",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New.Target.cs"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "6B549179732D133C23DBF2DE869CCAE832E13C66C3037A3CA25A5B2F06B430BC",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_NewEditor.Target.cs"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "4C79662AFD652AD574B8FA398748128B6EF27FECDDC2F5BB8FA00014788D81E8",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\GridStartSlot.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "C93BF97C13F3D7B6EDC27E1CD0752E85E6A417438ABFABCC6B12612FEC4CFD91",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\GridStartSlot.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "5285D27A643E28252BE03FFC2683751993EE2A9B731451B9CC519DD89FFE68E7",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartAIDebug.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "A93171493282C0BBA3E8CD37FD85763250F6CC81CA4742968E485C269DF531A9",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartAIDifficulty.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "8C693BD36C422BD843CBADF68A5F16A73D901271F5F16870CF33EBC418B8E11E",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartAIPerception.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "CAC1D10D5EE65D85F023FEF737406F86AFC4F191A127711BCFF2076EC0D276F3",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartAITrackPlan.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "1B104163B2826D9300B6C570F89451291034CC02810B15AB5B4228C62CD063A0",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartAITrackPlan.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3A3860E897405AED2DA14E8931BB28FD99B8C6630BD30DBC5AB1F39DEF1FD833",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartMechanicalVisuals.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "75AF485170503919947799F452243AA64CAD12DB6267FB77082EEDAF7DFC832B",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartMechanicalVisuals.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "4F4D2E6835871E59F167B32FD1E633D68CCC7DB992ECE2050C4B39256E9767F9",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartNavigationMap.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "71A4239ABD89BC9EA32F6611909728A6AC5852C99BE69780C4F36A90F3B00AD0",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartNavigationMap.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "8D587C49ACA5177F2833DDD11F0E3ADA7F44C4EB6E58C6ABD3345D4491DBEF14",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartNavigationMath.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "7887D833A5430BA563819B5FD272BF09BEBE0526B4DB61866C8F4C0B4ABC5DA6",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartRaceAwareness.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "E4C15F69AD044351C3BCDFF5A8A555F88A6528FE94ECB332C1190C5B18ABBD33",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartRaceAwareness.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "16AE4284874F8E9BEA5E343F4E4ADE8DB50204877A64206A24CBCDBE2AD2E8C1",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartRaceAwarenessMath.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "E4D74296A618D398E5F4F7FCC3DDFFFD1F183D83C8653A73B5659A588B83B8F1",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartRacecraft.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "1889AA4BF9666E9585851187057991BD9B9AFBF1487BE7DEC1476330FBF20688",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartRacecraftMath.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "1620E334C9B8D3147D92125EFBC7DA1BC6399987F1108525F9A8EA668CEC69AF",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartRaceSettings.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "76ACF66194519AC25FDDD607E57332C84E0183E4E0F307C3F64521E275D71C1D",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartRaceStatus.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "4F55C1350BF3CA7DC885A32B6632B493F36CD4B6D6A617B5B67215CE812A3C6E",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartSpeedLines.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "58E1969C9D5AE4A430D18F1207BA6EA65D3ABC2830870D64D7D2EFA270254140",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartSpeedLines.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "5CC79FB25B7F155F3B3721E3183AA984A0486A9F74386E56ECCD7CC1BB2A1C56",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartSpeedLinesMath.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "F5FF43346ABD48B3A1DD133E5A742667E5A4EAE1D54C4344356A12D199ABC77F",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartSurfaceFX.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "7FB5234A73CB9D2ADED2020975D0296F5144541E8D8803862D5B41D8C76D8A9E",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartSurfaceFX.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "13E65F49C8ECB6541BD6F198BC704F69EF91393843480515959F2B6C6FB7A266",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartTireDynamics.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "0B99D572977A14B4E2AA974409E631EF9404377CD92828A613B5DB7B1EEA2820",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartTireDynamics.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "23AB692C57E0B1D936FAAF1045FE91C74475069CAEE1012DA617AB3382341772",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartTireModel.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "674E576E62519663E491D49A393F95C48072E66FEF94901C20D83C939050687A",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartTireModel.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "AAAA0496FD9A6671DD18F5D6E07F2A4F00C492ED2494BE82E199A1636A6F255E",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\KartVisualKinematics.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "63D6C96436E15EAEDEA4C83F4B438BA4E28C66B8421BD0A93DC88830B1211BA8",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\LocalKartDriverVisuals.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "FA3A240847279DC70AB87B2A450B890189B0108FEF00CC3BD3371B93D8F76971",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\LocalKartDriverVisuals.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "2349865CF67B40CE81D7505F13088C0DDB37285B09C74F9A9B09460ACBA20989",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\ProofPawn.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "4E59A28B5307B09A245E854DA6CDF8184F97AA452A3824C590AA5B82B5EE30EC",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\ProofPawn.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "6CDD6E4957DA3E831BFBA5CCE7BBA4369BFA288440892B2025CECAAB8C98A328",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\RaceCountdownPresentation.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "407F59A77E0E61382CF7518B4DD6F3FE50BBEF98E33C5FF23F2FEF9EE9387606",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\RaceStartGantry.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "F0783F1C6F870543C59436E0BA02D1A2503A770EC4E32D5E92DCC27DBBAC5217",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\RaceStartGantry.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "497E559B08D8D6C235A5DD671F1F9673F67279AD5D9C4D7A891ECB5FCCC1D3B4",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Road_To_F1_New.Build.cs"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "4B45BFAC7FEE356A89715E9BB428E1474837D26D57F958F3676E3E01533C98AB",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Road_To_F1_New.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "4694B655856B269FC41B195971214F8E629857C7E5D6F34002A066CD4AF3037C",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Road_To_F1_New.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "D94C862D4C2EBDFFF6E48C2E455533064A7B148E2DD8C5E1A8227E0821C3240B",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\TrackRacingAI.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "71B6A3AB3068B6F428D4922F7E00C817BF0E3E8AE4E8EB6C6B099D28CDD0C89C",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\TrackRacingAI.h"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "37F57E142D9C1D8D2C84F2E994FC93F1EE1132E1BEE539A020B15F17460D27DE",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\KartCompetitiveAITests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "F900E5191A96CF41581957077A3035873912495AAA503BB31ABA597ED65D5F4C",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\KartContactTests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "568C7FA75552559A99734B05DE6EA7B41DE7CA95A5568C1085A046429DF4CBCF",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\KartMechanicalVisualsTests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "48106892AF4759AE07511FC38415A42C83AED6D3BC83B536BBC7674043C65487",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\KartNavigationMapTests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "36DCF94175B165D0FE629F4822C395A20F4CB07F88D48F8E41DC4B6012781FB2",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\KartRaceAwarenessTests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "FC6AAD11A5117853FA3E09367984BB5F1D68ECC756417C9494F34790D0FE27D6",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\KartRacecraftTests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "CC18966C0E33AD996D5BA9C45DAE02447422A8C9D754083EAD76DD8102A9AF87",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\KartSpeedLinesTests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "5124F60969C47BEBF18C35B8881BD15D09AE43273A4912CEE529C46A57F65D1B",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\KartSurfaceFXTests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "CFC28F046C234B6A5B5B16D0D84457FCF45F668E9B6E791267880101A27E66DD",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\KartTireDynamicsTests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "4B4D7D85C380F8C9B5C7FAD5908CBD2C062BB2153FCAB864D3E1BE717DED342F",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\LocalKartDriverVisualsTests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "B804D688C86703E283C769E2B5559AB956084C39DBE0C8B9A1286AB4B28CE67F",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\TenKartRaceTests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "63AEED5E50B467980B268846C06098DDCA17A4C6C9852F08DF25908576ACE8E8",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Source\\Road_To_F1_New\\Tests\\TrackRacingAITests.cpp"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Config\\DefaultEditor.ini"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "3BF5D3AD755C74A9A487706CE27E858740A58590747AD2EA014C5CA757413554",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Config\\DefaultEngine.ini"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "FA851FD5A60C28346F3016531390142CFF35EFE58414EA01C531F835724E4EE8",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Config\\DefaultGame.ini"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "ECCC9A8CF91F53B9BB645AF45A56835D4FA6FD432B3AF1800409EFB18E968310",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Config\\DefaultGameUserSettings.ini"
+  },
+  {
+    "Algorithm": "SHA256",
+    "Hash": "57397F6E6FED8CD2277DFD826038F07063A8218759783B971551043B4B82956A",
+    "Path": "D:\\Boring\\GitHub\\Road-To-F1-New\\Road_To_F1_New\\Config\\DefaultInput.ini"
+  }
+]

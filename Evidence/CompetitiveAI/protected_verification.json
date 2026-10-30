@@ -1,0 +1,8 @@
+{
+  "changed_protected_files": [],
+  "changed_existing_pawn_gamemode_functions": [],
+  "new_functions": [
+    "AProofPawn::SetRacingDiagnosticControls",
+    "AProofPawn::SetAutonomousControls"
+  ]
+}

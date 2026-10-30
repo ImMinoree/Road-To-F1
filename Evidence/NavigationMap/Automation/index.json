@@ -1,0 +1,59 @@
+﻿{
+	"devices": [
+		{
+			"deviceName": "DESKTOP-ERDHE74",
+			"instance": "5DB9CB564D58F954400AC4A97F97509E",
+			"instanceName": "DESKTOP-ERDHE74-18400",
+			"platform": "WindowsEditor",
+			"oSVersion": "Windows 10 (22H2) [10.0.19045.6466] ",
+			"model": "Default",
+			"gPU": "NVIDIA GeForce RTX 3080",
+			"cPUModel": "Intel(R) Core(TM) i7-10700KF CPU @ 3.80GHz",
+			"rAMInGB": 32,
+			"renderMode": "D3D12_SM6",
+			"rHI": "D3D12 (SM6)",
+			"appInstanceLog": ""
+		}
+	],
+	"reportCreatedOn": "2026.10.28-14.09.13",
+	"succeeded": 2,
+	"succeededWithWarnings": 0,
+	"failed": 0,
+	"notRun": 0,
+	"inProcess": 0,
+	"totalDuration": 0.022811498492956161,
+	"comparisonExported": false,
+	"comparisonExportDirectory": "",
+	"tests": [
+		{
+			"testDisplayName": "ForwardWaypointRoute",
+			"fullTestPath": "RoadToF1.Navigation.ForwardWaypointRoute",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"5DB9CB564D58F954400AC4A97F97509E"
+			],
+			"duration": 0.016341999173164368,
+			"dateTime": "2026.10.28-14.09.12",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		},
+		{
+			"testDisplayName": "ProjectionAndClipping",
+			"fullTestPath": "RoadToF1.Navigation.ProjectionAndClipping",
+			"tags": [],
+			"state": "Success",
+			"deviceInstance": [
+				"5DB9CB564D58F954400AC4A97F97509E"
+			],
+			"duration": 0.0064694993197917938,
+			"dateTime": "2026.10.28-14.09.13",
+			"entries": [],
+			"warnings": 0,
+			"errors": 0,
+			"artifacts": []
+		}
+	]
+}

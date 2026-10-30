@@ -23,6 +23,8 @@ public:
  void StageForRace(const FTransform& GridTransform);
  void ConfigureRacingAI(int32 GridPosition);
  void SetAutonomousInput(float InThrottle,float InSteer);
+ void SetAutonomousControls(float InThrottle,float InSteer,float ServiceBrake);
+ void SetRacingDiagnosticControls(float InThrottle,float InSteer,float ServiceBrake);
  void SetRacingDiagnosticInput(float InThrottle,float InSteer);
  float GetDrivingSpeed() const;
  float GetVisualThrottle() const { return Throttle; }
