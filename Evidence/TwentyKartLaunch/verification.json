@@ -1,0 +1,11 @@
+{
+  "grid_and_launch_checks_passed": true,
+  "native_automation_test_passed": true,
+  "png_size": [
+    1280,
+    720
+  ],
+  "png_crc_and_decompression_valid": true,
+  "speed_goal_most_time_65_70_achieved": false,
+  "known_boundary_excursions": 1
+}

@@ -11,6 +11,10 @@ void FKartAITrackPlan::Build(const UTrackEdgeRoute* Route,const UKartTireDynamic
   S.Curvature=2.f*FVector::CrossProduct(AB,AC).Z/FMath::Max(1.f,float(AB.Size2D()*BC.Size2D()*AC.Size2D()));
   S.Grade=(C.Z-A.Z)/FMath::Max(1.f,float(AC.Size2D()));S.Speed=FMath::Min(D->MaximumForwardSpeedMph*44.704f,FMath::Sqrt(LateralAcceleration/FMath::Max(.00001f,FMath::Abs(S.Curvature))));
  }
+ // Cache the corner/braking ceiling separately from the conservative exit ramp.
+ // On a settled clear straight the controller may demand full available motor torque.
+ for(int32 Pass=0;Pass<4;++Pass)for(int32 I=N-1;I>=0;--I){const int32 J=(I+1)%N;const float Ds=FVector::Dist2D(Samples[I].Position,Samples[J].Position);const float Decel=FMath::Max(100.f,BrakeDeceleration+981.f*Samples[I].Grade);Samples[I].Speed=FMath::Min(Samples[I].Speed,FMath::Sqrt(FMath::Square(Samples[J].Speed)+2*Decel*Ds));}
+ for(auto& Sample:Samples)Sample.BrakingSpeed=Sample.Speed;
  // Cyclic backward braking pass, followed by physically bounded exit acceleration.
  for(int32 Pass=0;Pass<4;++Pass){for(int32 I=N-1;I>=0;--I){const int32 J=(I+1)%N;const float Ds=FVector::Dist2D(Samples[I].Position,Samples[J].Position);const float Decel=FMath::Max(100.f,BrakeDeceleration+981.f*Samples[I].Grade);Samples[I].Speed=FMath::Min(Samples[I].Speed,FMath::Sqrt(FMath::Square(Samples[J].Speed)+2*Decel*Ds));}
   for(int32 I=0;I<N;++I){const int32 J=(I+1)%N;const float Ds=FVector::Dist2D(Samples[I].Position,Samples[J].Position);Samples[J].Speed=FMath::Min(Samples[J].Speed,FMath::Sqrt(FMath::Square(Samples[I].Speed)+2*Acceleration*Ds));}

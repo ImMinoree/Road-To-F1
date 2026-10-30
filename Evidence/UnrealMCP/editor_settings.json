@@ -1,0 +1,10 @@
+{
+  "auto_start_server": true,
+  "server_port_number": 8000,
+  "server_url_path": "/mcp",
+  "enable_tool_search": true,
+  "plugins": {
+    "ModelContextProtocol": true,
+    "AllToolsets": true
+  }
+}

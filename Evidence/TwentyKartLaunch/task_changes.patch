@@ -1,0 +1,127 @@
+--- before/KartMechanicalVisuals.cpp
++++ Source\Road_To_F1_New\KartMechanicalVisuals.cpp
+@@ -100,7 +100,10 @@
+  static const FLinearColor Palette[]={
+   FLinearColor(.72f,.015f,.025f),FLinearColor(1.f,.18f,.008f),FLinearColor(.95f,.68f,.01f),
+   FLinearColor(.38f,.85f,.015f),FLinearColor(.008f,.40f,.12f),FLinearColor(.005f,.72f,.82f),
+-  FLinearColor(.015f,.055f,.8f),FLinearColor(.30f,.02f,.65f),FLinearColor(.85f,.01f,.30f),FLinearColor(.85f,.88f,.94f)};
++  FLinearColor(.015f,.055f,.8f),FLinearColor(.30f,.02f,.65f),FLinearColor(.85f,.01f,.30f),FLinearColor(.85f,.88f,.94f),
++  FLinearColor(.13f,.006f,.015f),FLinearColor(.46f,.09f,.015f),FLinearColor(.75f,.40f,.08f),
++  FLinearColor(.20f,.33f,.08f),FLinearColor(.01f,.18f,.16f),FLinearColor(.16f,.50f,.85f),
++  FLinearColor(.006f,.012f,.10f),FLinearColor(.54f,.24f,.80f),FLinearColor(.95f,.25f,.43f),FLinearColor(.12f,.15f,.19f)};
+  const int32 Index=(FMath::Max(1,Slot)-1)%UE_ARRAY_COUNT(Palette);
+  auto* Paint=LoadObject<UMaterialInterface>(nullptr,TEXT("/Game/RoadToF1/RaceLiveries/M_GridPaint.M_GridPaint"));
+  auto* Fabric=LoadObject<UMaterialInterface>(nullptr,TEXT("/Game/RoadToF1/RaceLiveries/M_GridFabric.M_GridFabric"));
+--- before/KartRacecraftTests.cpp
++++ Source\Road_To_F1_New\Tests\KartRacecraftTests.cpp
+@@ -18,7 +18,7 @@
+  TestTrue(TEXT("Single rear-cleared blocked-route backoff permitted"),MayBackOff(true,false,0));
+  TestFalse(TEXT("No blocked-route reversing loop"),MayBackOff(true,false,1));
+  TestFalse(TEXT("Never reverse while alongside"),MayBackOff(false,true,0));
+- const auto* AI=GetDefault<UTrackRacingAI>();TestEqual(TEXT("Four requested opponents"),AI->OpponentCount,4);TestEqual(TEXT("Four configurable personalities"),AI->Drivers.Num(),4);
++ const auto* AI=GetDefault<UTrackRacingAI>();TestEqual(TEXT("Nineteen requested opponents"),AI->OpponentCount,19);TestEqual(TEXT("Four configurable personalities"),AI->Drivers.Num(),4);
+  return true;
+ }
+ #endif
+--- before/KartRaceSettings.h
++++ Source\Road_To_F1_New\KartRaceSettings.h
+@@ -2,7 +2,7 @@
+ 
+ // Shared race defaults. SI solver and Unreal presentation use the same ceiling.
+ namespace KartRace {
+-constexpr int KartCount=10, OpponentCount=KartCount-1, PlayerGridPosition=10;
++constexpr int KartCount=20, OpponentCount=KartCount-1, PlayerGridPosition=10;
+ constexpr double TopSpeedMph=38.0;
+ constexpr double TopSpeedMps=TopSpeedMph*.44704;
+ constexpr double TopSpeedCmps=TopSpeedMps*100.0;
+--- before/TenKartRaceTests.cpp
++++ Source\Road_To_F1_New\Tests\TenKartRaceTests.cpp
+@@ -4,11 +4,12 @@
+ #include "../KartTireModel.h"
+ #include "../TrackRacingAI.h"
+ #include "../KartTireDynamics.h"
+-IMPLEMENT_SIMPLE_AUTOMATION_TEST(FTenKartDefaultsTest,"RoadToF1.Race.TenKartDefaultsAnd38Mph",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
++IMPLEMENT_SIMPLE_AUTOMATION_TEST(FTenKartDefaultsTest,"RoadToF1.Race.TwentyKartDefaultsAndPlayer38Mph",EAutomationTestFlags::EditorContext|EAutomationTestFlags::EngineFilter)
+ bool FTenKartDefaultsTest::RunTest(const FString&){
+- TestEqual(TEXT("Nine opponents plus one player"),GetDefault<UTrackRacingAI>()->OpponentCount+1,KartRace::KartCount);
++ TestEqual(TEXT("Nineteen opponents plus one player"),GetDefault<UTrackRacingAI>()->OpponentCount+1,KartRace::KartCount);
+  TestEqual(TEXT("Player starts tenth"),KartRace::PlayerGridPosition,10);
+- TestEqual(TEXT("All spawned karts inherit 38mph ceiling"),GetDefault<UKartTireDynamics>()->MaximumForwardSpeedMph,38.f);
++ TestEqual(TEXT("Player physics retains 38mph ceiling"),GetDefault<UKartTireDynamics>()->MaximumForwardSpeedMph,38.f);
++ TestEqual(TEXT("AI governor is 70 km/h"),GetDefault<UTrackRacingAI>()->AITopSpeedKmh,70.f);
+  KartDynamics::Parameters P;KartDynamics::State S;KartDynamics::Contact C;KartDynamics::Input I;I.Throttle=1;double Peak=0;
+  for(int N=0;N<240*25;++N){KartDynamics::Step(S,P,C,I,KartDynamics::StepSeconds);Peak=FMath::Max(Peak,S.U);}
+  TestTrue(TEXT("Straight acceleration reaches 38mph"),FMath::Abs(S.U-KartRace::TopSpeedMps)<.01);
+--- before/TrackRacingAI.cpp
++++ Source\Road_To_F1_New\TrackRacingAI.cpp
+@@ -118,7 +118,8 @@
+   if(S.Segment==INDEX_NONE){S.Segment=NearestSegment(Pos,INDEX_NONE);S.StartArc=S.PreviousArc=SegmentArc(Pos,S.Segment);S.Lane=S.DesiredLane=Lateral(Pos,S.Segment);S.GridPosition=Pos;S.Previous=Pos;S.Random.Initialize(303+S.Slot*997);}
+   auto Input=[&](float Throttle,float Steering,float Brake=0.f){if(P->bRacingAI)P->SetAutonomousControls(Throttle,Steering,Brake);else P->SetRacingDiagnosticControls(Throttle,Steering,Brake);};
+   if(Gate){S.MaximumGridMovement=FMath::Max(S.MaximumGridMovement,float(FVector::Dist(Pos,S.GridPosition)));Input(bTesting?1.f:0.f,0);continue;}
+-  if(GM->GetRaceElapsedSeconds()<Tuning.Reaction+S.Personality.ReactionDelay){Input(0,0,1);continue;}
++  // Opponents launch on the existing lights-out event, without an extra reaction hold.
++  if(!P->bRacingAI&&GM->GetRaceElapsedSeconds()<Tuning.Reaction+S.Personality.ReactionDelay){Input(0,0,1);continue;}
+   S.Segment=NearestSegment(Pos,S.Segment);const float Arc=SegmentArc(Pos,S.Segment);float Advance=Arc-S.PreviousArc;if(Advance<-RouteLength*.5f)Advance+=RouteLength;if(Advance>RouteLength*.5f)Advance-=RouteLength;
+   if(FVector::Dist2D(Pos,S.Previous)<350.f)S.Distance+=Advance;
+   S.Previous=Pos;S.PreviousArc=Arc;const int32 OldLaps=S.Laps;S.Laps=FMath::Max(S.Laps,FMath::FloorToInt(FMath::Max(0.f,S.Distance)/RouteLength));S.Visited.Add(S.Segment*64/Route->Center.Num());if(S.Laps>OldLaps){S.LapTimes.Add(GM->GetRaceElapsedSeconds()-S.LastLapSeconds);S.LastLapSeconds=GM->GetRaceElapsedSeconds();}
+@@ -126,8 +127,12 @@
+   const float L=FVector::DotProduct(Route->Left[S.Segment]-Route->Center[S.Segment],Normal),R=FVector::DotProduct(Route->Right[S.Segment]-Route->Center[S.Segment],Normal);
+   const float Excess=FMath::Max(ActualLane+75-L,R-ActualLane+75);S.MaximumEdgeExcess=FMath::Max(S.MaximumEdgeExcess,Excess);if(Excess>5)++S.OffTrackFrames;
+   S.MaximumSpeed=FMath::Max(S.MaximumSpeed,Speed);S.DecisionTime-=Dt;S.Cooldown=FMath::Max(0.f,S.Cooldown-Dt);
++  const bool Launch=P->bRacingAI&&GM->GetRaceElapsedSeconds()<1.25f;
+   float TrafficSpeed=S.CruiseSpeed;bool StoppedLeader=false;
+-  if(bUseAdvancedPlanner&&!bEnableRacecraft){S.DesiredLane=Route->Guide.Num()==Route->Center.Num()?Lateral(Route->Guide[S.Segment],S.Segment):0;S.Lane=FMath::FInterpConstantTo(S.Lane,S.DesiredLane,Dt,110);}
++  // Keep the staged lane during the initial launch; do not merge the whole grid
++  // toward the guide or demand a cruising headway before anybody has accelerated.
++  if(Launch){S.DesiredLane=S.Lane;S.State=EKartAIState::FOLLOW_RACING_LINE;}
++  else if(bUseAdvancedPlanner&&!bEnableRacecraft){S.DesiredLane=Route->Guide.Num()==Route->Center.Num()?Lateral(Route->Guide[S.Segment],S.Segment):0;S.Lane=FMath::FInterpConstantTo(S.Lane,S.DesiredLane,Dt,110);}
+   else if(bEnableRacecraft){S.StrategyClock+=Dt;if(S.StrategyClock>=FMath::Max(.1f,.1f+Tuning.Reaction*.15f+S.Personality.ReactionDelay)){S.CachedTrafficLimit=PlanRacecraft(S,Traffic,TrafficArc,Arc,Speed,S.StrategyClock);S.StrategyClock=0;}TrafficSpeed=S.CachedTrafficLimit;StoppedLeader=S.BlockedSeconds>0;S.Lane=FMath::FInterpConstantTo(S.Lane,S.DesiredLane,Dt,85+S.Personality.Aggressiveness*40);}
+   else {
+   auto ClearLane=[&](float Lane){if(!FMath::IsNearlyEqual(Route->ClampLane(S.Segment,Lane),Lane,1.f))return false;for(auto* Other:Traffic){if(Other==P)continue;const FVector D=Other->GetActorLocation()-Pos;const float Ahead=FVector::DotProduct(D,Route->Tangent(S.Segment));const float Side=ActualLane+FVector::DotProduct(D,Normal);if(Ahead>-500&&Ahead<750&&FMath::Abs(Side-Lane)<190)return false;}return true;};
+@@ -153,7 +158,17 @@
+     const int32 OI=NearestSegment(Other->GetActorLocation(),S.Segment);const float Side=Lateral(Other->GetActorLocation(),OI);
+     const FVector ON=FVector::CrossProduct(FVector::UpVector,Route->Tangent(OI));const float OtherWidth=90*FMath::Abs(FVector::DotProduct(Other->GetActorForwardVector(),ON))+60*FMath::Abs(FVector::DotProduct(Other->GetActorRightVector(),ON));const float Room=OwnWidth+OtherWidth+MinimumRacingRoomCm;
+     if(FMath::Abs(Gap)<360&&FMath::Abs(Side-S.DesiredLane)<Room&&FMath::Abs(Side-S.DesiredLane)<FMath::Abs(Side-ActualLane)){S.DesiredLane=ActualLane;S.bAlongside=true;}
+-    if(Gap>0&&(FMath::Abs(Side-ActualLane)<Room||FMath::Abs(Side-S.Lane)<Room)){const float Clearance=350+Speed*.15f;TrafficSpeed=FMath::Min(TrafficSpeed,FMath::Max(0.f,Other->GetDrivingSpeed()+(Gap-Clearance)*.6f));}
++    if(Gap>0&&(FMath::Abs(Side-ActualLane)<Room||FMath::Abs(Side-S.Lane)<Room)){
++     if(Launch){
++      // Equal-power launch: allow acceleration inside the existing staggered grid,
++      // but retain bumper clearance plus physically available stopping distance.
++      const auto* Dynamics=P->GetTireDynamics();
++      const float Decel=Dynamics?FMath::Max(100.f,Dynamics->BrakeForceN/Dynamics->MassKg*70.f):200.f;
++      const float LeaderSpeed=FMath::Max(0.f,Other->GetDrivingSpeed());
++      const float Available=FMath::Max(0.f,Gap-220.f-Speed*.1f);
++      TrafficSpeed=FMath::Min(TrafficSpeed,FMath::Sqrt(LeaderSpeed*LeaderSpeed+2*Decel*Available));
++     }else{const float Clearance=350+Speed*.15f;TrafficSpeed=FMath::Min(TrafficSpeed,FMath::Max(0.f,Other->GetDrivingSpeed()+(Gap-Clearance)*.6f));}
++    }
+    }
+   }
+   float LookAhead=FMath::Clamp(350.f+Speed*.45f,400.f,900.f);
+@@ -193,6 +208,11 @@
+   float Brake=0;
+   if(bUseAdvancedPlanner&&S.ReverseTime<=0){Brake=Speed>TargetSpeed+25?FMath::Clamp((Speed-TargetSpeed)*.003f,0.f,1.f):0;Throttle=Brake>0?0:FMath::Clamp(Throttle,0.f,1.f);S.SteeringCommand=FMath::FInterpConstantTo(S.SteeringCommand,S.Steering,Dt,FMath::Lerp(4.f,1.5f,(Tuning.Smoothness+S.Personality.SteeringSmoothness)*.5f));S.Steering=S.SteeringCommand;}
+   if(TargetSpeed<20&&S.ReverseTime<=0){Brake=1;Throttle=0;}
++  // Demand full power at launch and on fast sections while below the already-safe
++  // traffic/curvature/braking target. Never override braking, recovery or the governor.
++  const bool FastSection=TargetSpeed>=65.f/.036f&&S.GripEstimate>.97f;
++  if(P->bRacingAI&&(Launch||FastSection)&&S.ReverseTime<=0&&Brake<=0&&
++     Speed<TargetSpeed-10.f&&S.State!=EKartAIState::RECOVER_TO_TRACK)Throttle=1.f;
+   S.ThrottleCommand=Throttle;S.BrakeCommand=Brake;Input(Throttle,S.Steering,Brake);
+   const float VisualSteer=P->GetSteeringVisualInput();
+   if(auto* Driver=S.Driver.Get())if(auto* Anim=Cast<UAnimSequence>(Driver->AnimationData.AnimToPlay))Driver->SetPosition((VisualSteer+1.f)*.5f*Anim->GetPlayLength(),false);
+@@ -225,4 +245,4 @@
+  for(int32 I=0;I<TrackPlan.Samples.Num();++I){const auto& A=TrackPlan.Samples[I];const auto& B=TrackPlan.Samples[(I+1)%TrackPlan.Samples.Num()];Minimum=FMath::Min(Minimum,A.Speed);Maximum=FMath::Max(Maximum,A.Speed);Width=FMath::Min(Width,A.Width);const float Ds=FVector::Dist2D(A.Position,B.Position);Violation=FMath::Max(Violation,FMath::Square(A.Speed)-FMath::Square(B.Speed)-2*FMath::Max(100.f,TrackPlan.BrakeDeceleration+981.f*A.Grade)*Ds);}
+  const FString Cost=FString::Printf(TEXT("\"ai_cpu_mean_ms\":%.5f,\"ai_cpu_max_ms\":%.5f,\"control_hz\":20,\"perception_hz\":10,\"difficulty\":%d,"),CpuSamples?CpuTotalMs/CpuSamples:0,CpuMaxMs,int32(Difficulty));
+  return FString::Printf(TEXT("{\"reference_player_corner_budget\":%.1f,"),BenchmarkPlayerPlan.Samples.IsEmpty()?0.f:BenchmarkPlayerPlan.LateralAcceleration)+Cost+FString::Printf(TEXT("\"samples\":%d,\"minimum_speed_cms\":%.3f,\"maximum_speed_cms\":%.3f,\"minimum_width_cm\":%.2f,\"lateral_budget_cms2\":%.3f,\"braking_budget_cms2\":%.3f,\"braking_envelope_violation\":%.3f}"),TrackPlan.Samples.Num(),Minimum,Maximum,Width,TrackPlan.LateralAcceleration,TrackPlan.BrakeDeceleration,Violation);
+-}+}
+--- before/TrackRacingAI.h
++++ Source\Road_To_F1_New\TrackRacingAI.h
+@@ -84,7 +84,7 @@
+  void ResetRace();
+  bool PlayerRaceStatus(FKartRaceStatus& Status)const;
+  virtual void TickComponent(float Dt,ELevelTick TickType,FActorComponentTickFunction* ThisTickFunction) override;
+- UPROPERTY(EditDefaultsOnly,Category="Racing AI",meta=(ClampMin="0",ClampMax="19")) int32 OpponentCount=4;
++ UPROPERTY(EditDefaultsOnly,Category="Racing AI",meta=(ClampMin="0",ClampMax="19")) int32 OpponentCount=19;
+  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Racing AI") EKartAIDifficulty Difficulty=EKartAIDifficulty::PRO;
+  UFUNCTION(BlueprintCallable,Category="Racing AI") void SetDifficulty(EKartAIDifficulty Value);
+  static FKartDifficultySettings Preset(EKartAIDifficulty Value);

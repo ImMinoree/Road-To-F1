@@ -1,0 +1,132 @@
+{
+  "build_passed": true,
+  "final_process_exit_codes": {
+    "After": 0,
+    "TenKart": 0
+  },
+  "protected_changes": [],
+  "boundary_details": {
+    "After": [
+      {
+        "kart": "ProofPawn_2",
+        "body_outside_seconds": 4.0,
+        "first_body_edge_excursion": {
+          "time": 59.900001525878906,
+          "segment": 498,
+          "excess_cm": -288.0855809403834
+        },
+        "diagnostic": {
+          "time": 63.900001525878906,
+          "segment": 505,
+          "polygon_outside": true,
+          "position": [
+            -819.6365964433797,
+            -11107.478351034133
+          ],
+          "front_surface": "<KartGripSurface.ASPHALT: 0>",
+          "rear_surface": "<KartGripSurface.ASPHALT: 0>",
+          "body": [
+            [
+              -712.9453884155854,
+              -11125.282455324153
+            ],
+            [
+              -753.9907313272236,
+              -11169.046365401591
+            ],
+            [
+              -795.0360742388617,
+              -11212.810275479029
+            ],
+            [
+              -778.5912535317416,
+              -11063.714440956695
+            ],
+            [
+              -819.6365964433797,
+              -11107.478351034133
+            ],
+            [
+              -860.6819393550179,
+              -11151.24226111157
+            ],
+            [
+              -844.2371186478978,
+              -11002.146426589237
+            ],
+            [
+              -885.2824615595359,
+              -11045.910336666675
+            ],
+            [
+              -926.3278044711741,
+              -11089.674246744113
+            ]
+          ]
+        }
+      }
+    ],
+    "TenKart": [
+      {
+        "kart": "ProofPawn_7",
+        "body_outside_seconds": 2.0,
+        "first_body_edge_excursion": {
+          "time": 61.275001525878906,
+          "segment": 498,
+          "excess_cm": -291.6651097768108
+        },
+        "diagnostic": {
+          "time": 63.650001525878906,
+          "segment": 504,
+          "polygon_outside": false,
+          "position": [
+            -811.4000463421092,
+            -11112.073586495324
+          ],
+          "front_surface": "<KartGripSurface.ASPHALT: 0>",
+          "rear_surface": "<KartGripSurface.ASPHALT: 0>",
+          "body": [
+            [
+              -705.3188768968546,
+              -11133.210887390356
+            ],
+            [
+              -747.7149140623327,
+              -11175.667642243541
+            ],
+            [
+              -790.1109512278108,
+              -11218.124397096726
+            ],
+            [
+              -769.0040091766311,
+              -11069.616831642139
+            ],
+            [
+              -811.4000463421092,
+              -11112.073586495324
+            ],
+            [
+              -853.7960835075874,
+              -11154.530341348509
+            ],
+            [
+              -832.6891414564077,
+              -11006.022775893922
+            ],
+            [
+              -875.0851786218858,
+              -11048.479530747107
+            ],
+            [
+              -917.4812157873639,
+              -11090.936285600292
+            ]
+          ]
+        }
+      }
+    ]
+  },
+  "broader_validation_stopped": true,
+  "note": "A body-footprint boundary warning in each normal-grid run prevents a fully clean varied-grid claim. Quad-corridor and local-plane diagnostics disagree at the tight hairpin; durations are retained. No collisions; no player physics or map changes."
+}

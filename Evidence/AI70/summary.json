@@ -89,61 +89,26 @@
       {
         "order": "normal",
         "ai_first_laps": [
-          89.2750015258789,
-          92.6500015258789,
-          91.0250015258789,
-          97.6500015258789
+          94.0250015258789,
+          100.1500015258789,
+          91.9000015258789,
+          97.7750015258789
         ],
-        "player_first_lap": 96.6500015258789,
-        "fastest_first_lap_kart": "ProofPawn_1",
+        "player_first_lap": 97.4000015258789,
+        "fastest_first_lap_kart": "ProofPawn_3",
         "contacts": 0,
-        "offtrack": 0,
-        "stuck_seconds": 0.0,
+        "offtrack": 1,
+        "stuck_seconds": 0.125,
         "completed_ai_laps": 8,
-        "ai_max_kmh": 66.01243409249004,
-        "player_max_kmh": 61.15478521737521,
+        "ai_max_kmh": 65.34136394857258,
+        "player_max_kmh": 61.144441686274355,
         "position_changes": 5,
         "start_events": 1,
         "participants": 5,
         "cpu": {
           "reference_player_corner_budget": 420.0,
-          "ai_cpu_mean_ms": 0.10188,
-          "ai_cpu_max_ms": 0.278,
-          "control_hz": 20,
-          "perception_hz": 10,
-          "difficulty": 3,
-          "samples": 748,
-          "minimum_speed_cms": 351.521,
-          "maximum_speed_cms": 1944.444,
-          "minimum_width_cm": 821.74,
-          "lateral_budget_cms2": 450.0,
-          "braking_budget_cms2": 233.333,
-          "braking_envelope_violation": 0.367
-        }
-      },
-      {
-        "order": "reversed_AI_grid",
-        "ai_first_laps": [
-          92.1500015258789,
-          88.0250015258789,
-          94.5250015258789,
-          89.2750015258789
-        ],
-        "player_first_lap": 97.7750015258789,
-        "fastest_first_lap_kart": "ProofPawn_2",
-        "contacts": 0,
-        "offtrack": 1,
-        "stuck_seconds": 0.0,
-        "completed_ai_laps": 8,
-        "ai_max_kmh": 66.01221400873625,
-        "player_max_kmh": 61.15486105030228,
-        "position_changes": 7,
-        "start_events": 1,
-        "participants": 5,
-        "cpu": {
-          "reference_player_corner_budget": 420.0,
-          "ai_cpu_mean_ms": 0.09892,
-          "ai_cpu_max_ms": 0.3263,
+          "ai_cpu_mean_ms": 0.10132,
+          "ai_cpu_max_ms": 0.296,
           "control_hz": 20,
           "perception_hz": 10,
           "difficulty": 3,
@@ -157,8 +122,8 @@
         }
       }
     ],
-    "first_lap_median": 91.5875015258789,
-    "all_lap_median": 89.2750015258789,
+    "first_lap_median": 95.9000015258789,
+    "all_lap_median": 91.63750457763672,
     "error": null,
     "safety_failure": "Stop before broader testing: contacts, sustained off-track or stuck time",
     "governors_kmh": {
@@ -167,6 +132,66 @@
       "ProofPawn_2": 69.99999946435547,
       "ProofPawn_3": 69.99999946435547,
       "ProofPawn_4": 69.99999946435547
+    }
+  },
+  "TenKart": {
+    "runs": [
+      {
+        "order": "normal",
+        "ai_first_laps": [
+          93.5250015258789,
+          100.4000015258789,
+          92.1500015258789,
+          95.5250015258789,
+          93.7750015258789,
+          102.0250015258789,
+          98.6500015258789,
+          102.5250015258789,
+          97.2750015258789
+        ],
+        "player_first_lap": 104.1500015258789,
+        "fastest_first_lap_kart": "ProofPawn_3",
+        "contacts": 0,
+        "offtrack": 1,
+        "stuck_seconds": 0.125,
+        "completed_ai_laps": 9,
+        "ai_max_kmh": 65.41592636667956,
+        "player_max_kmh": 61.15486738559039,
+        "position_changes": 16,
+        "start_events": 1,
+        "participants": 10,
+        "cpu": {
+          "reference_player_corner_budget": 420.0,
+          "ai_cpu_mean_ms": 0.19153,
+          "ai_cpu_max_ms": 0.4486,
+          "control_hz": 20,
+          "perception_hz": 10,
+          "difficulty": 3,
+          "samples": 748,
+          "minimum_speed_cms": 351.521,
+          "maximum_speed_cms": 1944.444,
+          "minimum_width_cm": 821.74,
+          "lateral_budget_cms2": 450.0,
+          "braking_budget_cms2": 233.333,
+          "braking_envelope_violation": 0.367
+        }
+      }
+    ],
+    "first_lap_median": 97.2750015258789,
+    "all_lap_median": 97.2750015258789,
+    "error": null,
+    "safety_failure": "Stop before broader testing: contacts, sustained off-track or stuck time",
+    "governors_kmh": {
+      "ProofPawn_0": 61.155072000000004,
+      "ProofPawn_1": 69.99999946435547,
+      "ProofPawn_2": 69.99999946435547,
+      "ProofPawn_3": 69.99999946435547,
+      "ProofPawn_4": 69.99999946435547,
+      "ProofPawn_5": 69.99999946435547,
+      "ProofPawn_6": 69.99999946435547,
+      "ProofPawn_7": 69.99999946435547,
+      "ProofPawn_8": 69.99999946435547,
+      "ProofPawn_9": 69.99999946435547
     }
   },
   "protected_changes": []

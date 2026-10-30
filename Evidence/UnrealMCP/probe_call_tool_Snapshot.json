@@ -1,0 +1,87 @@
+{
+  "initialize": {
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "resources": {},
+      "tools": {
+        "listChanged": true
+      }
+    },
+    "serverInfo": {
+      "name": "",
+      "title": "",
+      "version": ""
+    }
+  },
+  "native_tools": {
+    "tools": [
+      {
+        "name": "list_toolsets",
+        "description": "List all available toolsets with names and descriptions.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        }
+      },
+      {
+        "name": "describe_toolset",
+        "description": "Get detailed information about a toolset including all tool names, descriptions, and input schemas.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "toolset_name": {
+              "type": "string",
+              "description": "Name of the toolset to describe. Use list_toolsets to see available names."
+            }
+          },
+          "required": [
+            "toolset_name"
+          ]
+        }
+      },
+      {
+        "name": "call_tool",
+        "description": "Call a tool by name. Provide toolset_name to call a toolset tool, or omit it to call a top-level MCP tool. Use list_toolsets and describe_toolset to discover available tools and their input schemas.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "toolset_name": {
+              "type": "string",
+              "description": "Optional. Name of the toolset containing the tool. Omit to call a top-level MCP tool. Use list_toolsets to discover toolset names."
+            },
+            "tool_name": {
+              "type": "string",
+              "description": "Name of the tool to call, without toolset prefix. Use describe_toolset to discover tool names and input schemas."
+            },
+            "arguments": {
+              "type": "object",
+              "description": "Arguments to pass to the tool. Must match the tool's input schema. Defaults to an empty object."
+            }
+          },
+          "required": [
+            "tool_name"
+          ]
+        }
+      }
+    ]
+  },
+  "tool_call": {
+    "name": "call_tool",
+    "arguments": {
+      "toolset_name": "SlateInspectorToolset.SlateInspectorToolset",
+      "tool_name": "Snapshot",
+      "arguments": {
+        "ref": "w17",
+        "maxDepth": 15
+      }
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"returnValue\":\"window \\\"Project Settings\\\" [pos=947,276 size=1670,942] [ref=w17]\\n  image [pos=947,276 size=1670,942] [ref=i42]\\n  image [pos=947,276 size=1670,942] [ref=i43]\\n  image [pos=949,278 size=1666,938] [ref=i44]\\n  splitter [pos=950,279 size=1664,936] [ref=sp9]\\n    image [pos=950,312 size=1664,0] [ref=i47]\\n  generic \\\"System Menu\\\" [pos=950,279 size=28,28] [ref=g46]\\n  button \\\"Minimize\\\" [pos=2488,279 size=42,23] [ref=b53]\\n    image \\\"Minimize\\\" [pos=2488,279 size=42,23] [ref=i55]\\n  button \\\"Maximize\\\" [pos=2530,279 size=42,23] [ref=b54]\\n    image \\\"Maximize\\\" [pos=2530,279 size=42,23] [ref=i56]\\n  button \\\"Close\\\" [pos=2572,279 size=42,23] [ref=b55]\\n    image \\\"Close\\\" [pos=2572,279 size=42,23] [ref=i57]\\n\"}"
+        }
+      ]
+    }
+  }
+}

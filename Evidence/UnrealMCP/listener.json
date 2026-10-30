@@ -1,0 +1,8 @@
+{
+  "note": "MCP read-only calls succeeded; the Editor session subsequently closed. Auto-start is configured for the next project open.",
+  "address": "127.0.0.1",
+  "final_listener_present": false,
+  "verified_owner_pid": 26788,
+  "verified_project": "D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Road_To_F1_New.uproject",
+  "port": 8000
+}

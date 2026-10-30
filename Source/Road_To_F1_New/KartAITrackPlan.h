@@ -3,7 +3,7 @@
 class UTrackEdgeRoute;class UKartTireDynamics;
 struct FKartTrackSample {
  FVector Position=FVector::ZeroVector;
- float Curvature=0,Width=0,Grade=0,Speed=0,BendDistance=0,Grip=1,Left=0,Right=0;
+ float Curvature=0,Width=0,Grade=0,Speed=0,BrakingSpeed=0,BendDistance=0,Grip=1,Left=0,Right=0;
  int32 Zone=0; // straight, entry, apex, exit
 };
 struct FKartAITrackPlan {

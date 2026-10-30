@@ -1,0 +1,56 @@
+{
+  "before": {
+    "samples": 10458,
+    "full_throttle_percent": 46.21342512908778,
+    "target_at_least_69kmh_percent": 11.321476381717346,
+    "speed_at_least_60kmh_percent": 8.940524000764965,
+    "speed_at_least_65kmh_percent": 0.31554790590935167,
+    "max_kmh": 65.41596
+  },
+  "after": {
+    "samples": 10458,
+    "full_throttle_percent": 46.75846242111302,
+    "target_at_least_69kmh_percent": 11.149359342130426,
+    "speed_at_least_60kmh_percent": 8.605851979345955,
+    "speed_at_least_65kmh_percent": 0.40160642570281124,
+    "max_kmh": 65.41596
+  },
+  "race": {
+    "participants": 10,
+    "start_events": 1,
+    "ai_laps": 9,
+    "ai_first_lap_times": [
+      93.9000015258789,
+      96.5250015258789,
+      92.1500015258789,
+      95.4000015258789,
+      94.0250015258789,
+      100.6500015258789,
+      98.7750015258789,
+      100.6500015258789,
+      96.4000015258789
+    ],
+    "player_first_lap": 103.9000015258789,
+    "contacts": 0,
+    "boundary_events": 0,
+    "stuck_seconds": 0.25,
+    "position_changes": 17,
+    "error": null,
+    "safety_failure": null,
+    "track_plan": {
+      "reference_player_corner_budget": 420.0,
+      "ai_cpu_mean_ms": 0.23891,
+      "ai_cpu_max_ms": 16.1655,
+      "control_hz": 20,
+      "perception_hz": 10,
+      "difficulty": 3,
+      "samples": 748,
+      "minimum_speed_cms": 351.521,
+      "maximum_speed_cms": 1944.444,
+      "minimum_width_cm": 821.74,
+      "lateral_budget_cms2": 450.0,
+      "braking_budget_cms2": 233.333,
+      "braking_envelope_violation": 0.367
+    }
+  }
+}

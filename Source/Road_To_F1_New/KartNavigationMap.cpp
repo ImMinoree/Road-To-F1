@@ -19,7 +19,7 @@
 
 namespace {
 FLinearColor Ink(uint8 R,uint8 G,uint8 B,float A=1){auto C=FLinearColor::FromSRGBColor(FColor(R,G,B));C.A=A;return C;}
-const FLinearColor Ground=Ink(36,39,39),Road=Ink(174,180,176),Edge=Ink(214,219,215),Purple=Ink(183,117,230),PlayerColor=Ink(235,42,46),White=Ink(255,255,255),Muted=Ink(150,163,158);
+const FLinearColor NavMapGround=Ink(36,39,39),Road=Ink(174,180,176),Edge=Ink(214,219,215),Purple=Ink(183,117,230),PlayerColor=Ink(235,42,46),NavMapWhite=Ink(255,255,255),NavMapMuted=Ink(150,163,158);
 void NavFillRect(UCanvas* C,FVector2D P,FVector2D Size,FLinearColor Color){FCanvasTileItem I(P,Size,Color);I.BlendMode=SE_BLEND_Translucent;C->DrawItem(I);}
 void Line(UCanvas* C,FVector2D A,FVector2D B,FLinearColor Color,float Width=1){FCanvasLineItem I(A,B);I.SetColor(Color);I.LineThickness=Width;C->DrawItem(I);}
 void Label(UCanvas* C,UFont* Font,const FString& Text,FVector2D P,float Size,FLinearColor Color,bool Center=false){FSlateFontInfo Info(Font,FMath::Max(10.f,Size),TEXT("Bold"));FCanvasTextItem I(P,FText::FromString(Text),Info,Color);I.bCentreX=Center;I.bCentreY=Center;C->DrawItem(I);}
@@ -84,7 +84,7 @@ void UKartNavigationMap::SetWaypointWorld(FVector Location){
 }
 void UKartNavigationMap::ClearWaypoint(){bHasWaypoint=false;WaypointDistanceMeters=0;}
 void UKartNavigationMap::DrawTrack(UCanvas* C,const KartNavigation::FView& V,float Scale){
- NavFillRect(C,V.Pixels.Min,V.Pixels.GetSize(),Ground);TArray<FCanvasUVTri> Tris;Tris.Reserve(Route->Center.Num()*2);
+ NavFillRect(C,V.Pixels.Min,V.Pixels.GetSize(),NavMapGround);TArray<FCanvasUVTri> Tris;Tris.Reserve(Route->Center.Num()*2);
  // A restrained map grid supplies distance context without another rendered world camera.
  for(double X=FMath::FloorToDouble(WorldBounds.Min.X/2500)*2500;X<=WorldBounds.Max.X+2500;X+=2500)BoundedLine(C,V,{X,WorldBounds.Min.Y-3500},{X,WorldBounds.Max.Y+3500},Ink(48,52,51),1);
  for(double Y=FMath::FloorToDouble(WorldBounds.Min.Y/2500)*2500;Y<=WorldBounds.Max.Y+2500;Y+=2500)BoundedLine(C,V,{WorldBounds.Min.X-3500,Y},{WorldBounds.Max.X+3500,Y},Ink(48,52,51),1);
@@ -102,16 +102,16 @@ void UKartNavigationMap::DrawTrack(UCanvas* C,const KartNavigation::FView& V,flo
 }
 void UKartNavigationMap::DrawBlips(UCanvas* C,UFont* Font,const KartNavigation::FView& V,AProofPawn* Pawn,float Scale,bool Full){
  if(GetWorld()->GetRealTimeSeconds()-LastKartRefresh>.5){LastKartRefresh=GetWorld()->GetRealTimeSeconds();Karts.Reset();for(TActorIterator<AProofPawn> It(GetWorld());It;++It)Karts.Add(*It);}
- DisplayedKartCount=0;for(auto& Weak:Karts)if(auto* Kart=Weak.Get()){++DisplayedKartCount;if(Kart==Pawn)continue;const FVector2D P=V.Project(FVector2D(Kart->GetActorLocation()));if(Fits(V,P,6*Scale)){SmoothDot(C,P,3.8*Scale,Ink(19,22,22));SmoothDot(C,P,2.3*Scale,White);}}
+ DisplayedKartCount=0;for(auto& Weak:Karts)if(auto* Kart=Weak.Get()){++DisplayedKartCount;if(Kart==Pawn)continue;const FVector2D P=V.Project(FVector2D(Kart->GetActorLocation()));if(Fits(V,P,6*Scale)){SmoothDot(C,P,3.8*Scale,Ink(19,22,22));SmoothDot(C,P,2.3*Scale,NavMapWhite);}}
  const FVector2D Finish=V.Project(StartPoint);if(Fits(V,Finish,7*Scale)){
-  NavFillRect(C,Finish-FVector2D(7,5)*Scale,FVector2D(14,10)*Scale,Ink(18,21,21));for(int32 Y=0;Y<2;++Y)for(int32 X=0;X<4;++X)if((X+Y)%2==0)NavFillRect(C,Finish+FVector2D(X*3-6,Y*4-4)*Scale,FVector2D(3,4)*Scale,White);
-  if(Full)Label(C,Font,TEXT("START / FINISH"),Finish+FVector2D(10,8)*Scale,12*Scale,White);
+  NavFillRect(C,Finish-FVector2D(7,5)*Scale,FVector2D(14,10)*Scale,Ink(18,21,21));for(int32 Y=0;Y<2;++Y)for(int32 X=0;X<4;++X)if((X+Y)%2==0)NavFillRect(C,Finish+FVector2D(X*3-6,Y*4-4)*Scale,FVector2D(3,4)*Scale,NavMapWhite);
+  if(Full)Label(C,Font,TEXT("START / FINISH"),Finish+FVector2D(10,8)*Scale,12*Scale,NavMapWhite);
  }
  if(Full){
-  constexpr int32 Corners[]={64,220,329,439,505,593,724};for(int32 I=0;I<7;++I)if(Route->Center.IsValidIndex(Corners[I])){const FVector2D P=V.Project(FVector2D(Route->Center[Corners[I]]));if(Fits(V,P,12*Scale)){Disc(C,P,11*Scale,Ink(23,27,26));Label(C,Font,FString::Printf(TEXT("%d"),I+1),P,12*Scale,White,true);}}
-  if(bHasPits){const auto P=V.Project(PitPoint);if(Fits(V,P,10*Scale)){NavFillRect(C,P-FVector2D(5,5)*Scale,FVector2D(10,10)*Scale,Muted);Label(C,Font,TEXT("PITS"),P+FVector2D(10,-5)*Scale,12*Scale,Muted);}}
+  constexpr int32 Corners[]={64,220,329,439,505,593,724};for(int32 I=0;I<7;++I)if(Route->Center.IsValidIndex(Corners[I])){const FVector2D P=V.Project(FVector2D(Route->Center[Corners[I]]));if(Fits(V,P,12*Scale)){Disc(C,P,11*Scale,Ink(23,27,26));Label(C,Font,FString::Printf(TEXT("%d"),I+1),P,12*Scale,NavMapWhite,true);}}
+  if(bHasPits){const auto P=V.Project(PitPoint);if(Fits(V,P,10*Scale)){NavFillRect(C,P-FVector2D(5,5)*Scale,FVector2D(10,10)*Scale,NavMapMuted);Label(C,Font,TEXT("PITS"),P+FVector2D(10,-5)*Scale,12*Scale,NavMapMuted);}}
  }
- if(bHasWaypoint){const auto P=V.Project(Waypoint.Position);if(Fits(V,P,9*Scale)){Disc(C,P,8*Scale,Ink(27,21,34));Disc(C,P,5*Scale,Purple);Disc(C,P,2*Scale,White);}}
+ if(bHasWaypoint){const auto P=V.Project(Waypoint.Position);if(Fits(V,P,9*Scale)){Disc(C,P,8*Scale,Ink(27,21,34));Disc(C,P,5*Scale,Purple);Disc(C,P,2*Scale,NavMapWhite);}}
  const FVector2D P=V.Project(FVector2D(Pawn->GetActorLocation()));if(Fits(V,P,8*Scale)){SmoothDot(C,P,5.3*Scale,Ink(15,15,15));SmoothDot(C,P,3.7*Scale,PlayerColor);}
 }
 void UKartNavigationMap::Draw(UCanvas* C,UFont* Font){
@@ -127,21 +127,21 @@ void UKartNavigationMap::Draw(UCanvas* C,UFont* Font){
   TArray<FVector2D> Path;Path.Reserve(Route->Center.Num());for(const auto& Point:Route->Center)Path.Add(V.Project(FVector2D(Point)));
   SmoothLoop(C,Path,7*S,Ink(9,12,15,.75f),FVector2D(0,4*S));SmoothLoop(C,Path,5*S,Ink(26,32,37));SmoothLoop(C,Path,2.8f*S,Ink(209,218,224));
   DrawBlips(C,Font,V,Pawn,S,false);
-  Label(C,Font,TEXT("M  CIRCUIT MAP"),P+FVector2D(2*S,Size.Y+8*S),12*S,White);
+  Label(C,Font,TEXT("M  CIRCUIT MAP"),P+FVector2D(2*S,Size.Y+8*S),12*S,NavMapWhite);
   if(bHasWaypoint)Label(C,Font,FString::Printf(TEXT("%.0f m"),WaypointDistanceMeters),P+FVector2D(Size.X-62*S,Size.Y+8*S),12*S,Purple);
   return;
  }
- NavFillRect(C,FVector2D::ZeroVector,FVector2D(C->SizeX,C->SizeY),Ink(17,21,20,.98f));Label(C,Font,TEXT("DESERT KARTING"),FVector2D(36*S,26*S),28*S,White);Label(C,Font,TEXT("CIRCUIT MAP"),FVector2D(37*S,62*S),13*S,Muted);
+ NavFillRect(C,FVector2D::ZeroVector,FVector2D(C->SizeX,C->SizeY),Ink(17,21,20,.98f));Label(C,Font,TEXT("DESERT KARTING"),FVector2D(36*S,26*S),28*S,NavMapWhite);Label(C,Font,TEXT("CIRCUIT MAP"),FVector2D(37*S,62*S),13*S,NavMapMuted);
  Label(C,Font,UGameplayStatics::IsGamePaused(this)?TEXT("RACE PAUSED"):TEXT("LIVE SESSION"),FVector2D(C->SizeX-205*S,38*S),14*S,PlayerColor);
  const FBox2D R(FVector2D(34*S,100*S),FVector2D(C->SizeX-280*S,C->SizeY-90*S));FullView.Pixels=R;FullView.WorldCenter=PanCenter;FullView.YawDegrees=0;FullView.PixelOrigin=R.GetCenter();const FVector2D Span=WorldBounds.GetSize()+FVector2D(3200,3200);FullView.PixelsPerCm=FMath::Min(R.GetSize().X/Span.Y,R.GetSize().Y/Span.X)*FullMapZoom;
- DrawTrack(C,FullView,S);DrawBlips(C,Font,FullView,Pawn,S,true);Label(C,Font,TEXT("N"),R.Min+FVector2D(20,22)*S,15*S,White,true);Line(C,R.Min+FVector2D(20,40)*S,R.Min+FVector2D(20,55)*S,White,2*S);
- const double X=C->SizeX-246*S;Label(C,Font,TEXT("LEGEND"),FVector2D(X,111*S),15*S,White);
- const TArray<FString> Names={TEXT("YOU"),TEXT("OTHER KARTS"),TEXT("START / FINISH"),TEXT("TURN NUMBERS"),TEXT("WAYPOINT")};const FLinearColor Colors[]={PlayerColor,White,White,Muted,Purple};
+ DrawTrack(C,FullView,S);DrawBlips(C,Font,FullView,Pawn,S,true);Label(C,Font,TEXT("N"),R.Min+FVector2D(20,22)*S,15*S,NavMapWhite,true);Line(C,R.Min+FVector2D(20,40)*S,R.Min+FVector2D(20,55)*S,NavMapWhite,2*S);
+ const double X=C->SizeX-246*S;Label(C,Font,TEXT("LEGEND"),FVector2D(X,111*S),15*S,NavMapWhite);
+ const TArray<FString> Names={TEXT("YOU"),TEXT("OTHER KARTS"),TEXT("START / FINISH"),TEXT("TURN NUMBERS"),TEXT("WAYPOINT")};const FLinearColor Colors[]={PlayerColor,NavMapWhite,NavMapWhite,NavMapMuted,Purple};
  for(int32 I=0;I<Names.Num();++I){const double Y=(151+I*34)*S;Disc(C,FVector2D(X+5*S,Y+5*S),4*S,Colors[I]);Label(C,Font,Names[I],FVector2D(X+20*S,Y),12*S,Colors[I]);}
- Label(C,Font,FString::Printf(TEXT("%d KARTS"),DisplayedKartCount),FVector2D(X,350*S),13*S,Muted);Label(C,Font,FString::Printf(TEXT("ZOOM  %.2fx"),FullMapZoom),FVector2D(X,380*S),13*S,Muted);
+ Label(C,Font,FString::Printf(TEXT("%d KARTS"),DisplayedKartCount),FVector2D(X,350*S),13*S,NavMapMuted);Label(C,Font,FString::Printf(TEXT("ZOOM  %.2fx"),FullMapZoom),FVector2D(X,380*S),13*S,NavMapMuted);
  if(bHasWaypoint){Label(C,Font,TEXT("FORWARD ROUTE"),FVector2D(X,425*S),12*S,Purple);Label(C,Font,FString::Printf(TEXT("%.0f m"),WaypointDistanceMeters),FVector2D(X,451*S),23*S,Purple);}
- Label(C,Font,TEXT("M  CLOSE     WHEEL  ZOOM     ARROWS  PAN     HOME  RESET VIEW"),FVector2D(36*S,C->SizeY-62*S),13*S,White);
- Label(C,Font,TEXT("LEFT CLICK  SET WAYPOINT     RIGHT CLICK  CLEAR     Route follows the racing direction"),FVector2D(36*S,C->SizeY-35*S),12*S,Muted);
+ Label(C,Font,TEXT("M  CLOSE     WHEEL  ZOOM     ARROWS  PAN     HOME  RESET VIEW"),FVector2D(36*S,C->SizeY-62*S),13*S,NavMapWhite);
+ Label(C,Font,TEXT("LEFT CLICK  SET WAYPOINT     RIGHT CLICK  CLEAR     Route follows the racing direction"),FVector2D(36*S,C->SizeY-35*S),12*S,NavMapMuted);
 }
 
 

@@ -18,7 +18,7 @@ bool FKartRacecraftTest::RunTest(const FString&){
  TestTrue(TEXT("Single rear-cleared blocked-route backoff permitted"),MayBackOff(true,false,0));
  TestFalse(TEXT("No blocked-route reversing loop"),MayBackOff(true,false,1));
  TestFalse(TEXT("Never reverse while alongside"),MayBackOff(false,true,0));
- const auto* AI=GetDefault<UTrackRacingAI>();TestEqual(TEXT("Four requested opponents"),AI->OpponentCount,4);TestEqual(TEXT("Four configurable personalities"),AI->Drivers.Num(),4);
+ const auto* AI=GetDefault<UTrackRacingAI>();TestEqual(TEXT("Nineteen requested opponents"),AI->OpponentCount,19);TestEqual(TEXT("Four configurable personalities"),AI->Drivers.Num(),4);
  return true;
 }
 #endif

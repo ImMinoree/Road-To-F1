@@ -1,0 +1,1383 @@
+{
+  "order": 0,
+  "seconds": 220.90000915527344,
+  "racers": {
+    "ProofPawn_0": {
+      "segment": 255,
+      "distance": 245249.3796485086,
+      "laps": 2,
+      "stuck_seconds": 0.0,
+      "collision_episodes": 0,
+      "contact_count": 0,
+      "offtrack_events": 0,
+      "offtrack_seconds": 0.0,
+      "offclock": 0,
+      "offactive": false,
+      "last_hit": -100,
+      "max_speed_kmh": 61.154166307859,
+      "samples": 1771,
+      "lane_square": 33585063.64940917,
+      "arc": 42256.37984347186,
+      "stationary_clock": 0,
+      "stationary_seconds": 0,
+      "longest_stop_seconds": 0.20000000298023224,
+      "maximum_body_edge_excess_cm": 0,
+      "speed_profile": {
+        "1": {
+          "samples": 94,
+          "speed_sum_kmh": 4109.9641508635195,
+          "braking_seconds": 0.875,
+          "throttle_sum": 79.91500000000002
+        },
+        "2": {
+          "samples": 64,
+          "speed_sum_kmh": 2777.9432686160185,
+          "braking_seconds": 1.625,
+          "throttle_sum": 45.15700000000001
+        },
+        "3": {
+          "samples": 71,
+          "speed_sum_kmh": 3613.4681266154757,
+          "braking_seconds": 0.25,
+          "throttle_sum": 68.355
+        },
+        "4": {
+          "samples": 80,
+          "speed_sum_kmh": 4758.721592447837,
+          "braking_seconds": 0,
+          "throttle_sum": 78.51599999999992
+        },
+        "5": {
+          "samples": 91,
+          "speed_sum_kmh": 5487.4495773728895,
+          "braking_seconds": 0.375,
+          "throttle_sum": 84.67999999999985
+        },
+        "6": {
+          "samples": 84,
+          "speed_sum_kmh": 3996.4861372924697,
+          "braking_seconds": 3.5,
+          "throttle_sum": 50.14899999999997
+        },
+        "7": {
+          "samples": 64,
+          "speed_sum_kmh": 1959.9265420668805,
+          "braking_seconds": 3.0,
+          "throttle_sum": 26.827999999999996
+        },
+        "8": {
+          "samples": 62,
+          "speed_sum_kmh": 2017.6394530552775,
+          "braking_seconds": 1.0,
+          "throttle_sum": 43.64600000000001
+        },
+        "9": {
+          "samples": 73,
+          "speed_sum_kmh": 2043.6717882562675,
+          "braking_seconds": 2.5,
+          "throttle_sum": 39.32599999999999
+        },
+        "10": {
+          "samples": 52,
+          "speed_sum_kmh": 2136.2609375476563,
+          "braking_seconds": 1.4750003814697266,
+          "throttle_sum": 37.974
+        },
+        "11": {
+          "samples": 49,
+          "speed_sum_kmh": 2192.871357121522,
+          "braking_seconds": 0.125,
+          "throttle_sum": 45.229
+        },
+        "12": {
+          "samples": 46,
+          "speed_sum_kmh": 2287.4603555004296,
+          "braking_seconds": 2.125,
+          "throttle_sum": 26.899000000000004
+        },
+        "13": {
+          "samples": 41,
+          "speed_sum_kmh": 1348.3951950200676,
+          "braking_seconds": 3.125,
+          "throttle_sum": 10.882
+        },
+        "14": {
+          "samples": 37,
+          "speed_sum_kmh": 969.6456609580755,
+          "braking_seconds": 0.75,
+          "throttle_sum": 22.038
+        },
+        "15": {
+          "samples": 45,
+          "speed_sum_kmh": 1604.5336844214658,
+          "braking_seconds": 0,
+          "throttle_sum": 41.06099999999999
+        },
+        "16": {
+          "samples": 46,
+          "speed_sum_kmh": 2025.0455125579533,
+          "braking_seconds": 0.25,
+          "throttle_sum": 37.342
+        },
+        "17": {
+          "samples": 41,
+          "speed_sum_kmh": 1586.4075750719628,
+          "braking_seconds": 1.25,
+          "throttle_sum": 24.744000000000007
+        },
+        "18": {
+          "samples": 50,
+          "speed_sum_kmh": 1277.8352320987517,
+          "braking_seconds": 2.375,
+          "throttle_sum": 17.561000000000003
+        },
+        "19": {
+          "samples": 50,
+          "speed_sum_kmh": 1344.614626406968,
+          "braking_seconds": 0.625,
+          "throttle_sum": 31.411999999999995
+        },
+        "20": {
+          "samples": 66,
+          "speed_sum_kmh": 1128.441478275737,
+          "braking_seconds": 3.125,
+          "throttle_sum": 18.701
+        },
+        "21": {
+          "samples": 43,
+          "speed_sum_kmh": 637.2468976405427,
+          "braking_seconds": 1.75,
+          "throttle_sum": 15.067
+        },
+        "22": {
+          "samples": 31,
+          "speed_sum_kmh": 814.1953741371684,
+          "braking_seconds": 0,
+          "throttle_sum": 29.126
+        },
+        "23": {
+          "samples": 38,
+          "speed_sum_kmh": 1673.1647309741236,
+          "braking_seconds": 0.25,
+          "throttle_sum": 34.62500000000001
+        },
+        "24": {
+          "samples": 60,
+          "speed_sum_kmh": 2095.656260897453,
+          "braking_seconds": 2.75,
+          "throttle_sum": 27.786
+        },
+        "25": {
+          "samples": 43,
+          "speed_sum_kmh": 976.2033860534772,
+          "braking_seconds": 1.625,
+          "throttle_sum": 20.400000000000002
+        },
+        "26": {
+          "samples": 40,
+          "speed_sum_kmh": 1031.5994049337362,
+          "braking_seconds": 1.0,
+          "throttle_sum": 24.798999999999992
+        },
+        "27": {
+          "samples": 44,
+          "speed_sum_kmh": 1439.1559990785577,
+          "braking_seconds": 0.625,
+          "throttle_sum": 34.04
+        },
+        "28": {
+          "samples": 54,
+          "speed_sum_kmh": 2834.004447478623,
+          "braking_seconds": 0,
+          "throttle_sum": 54.0
+        },
+        "29": {
+          "samples": 68,
+          "speed_sum_kmh": 4136.325321710503,
+          "braking_seconds": 0.125,
+          "throttle_sum": 64.98800000000001
+        },
+        "30": {
+          "samples": 53,
+          "speed_sum_kmh": 2523.2800274389033,
+          "braking_seconds": 2.625,
+          "throttle_sum": 27.022000000000002
+        },
+        "31": {
+          "samples": 39,
+          "speed_sum_kmh": 1603.4340436640762,
+          "braking_seconds": 0.25,
+          "throttle_sum": 32.594
+        },
+        "0": {
+          "samples": 52,
+          "speed_sum_kmh": 2476.36999146351,
+          "braking_seconds": 0.25,
+          "throttle_sum": 49.536
+        }
+      },
+      "maximum_impulse_ns": 0.0,
+      "initial_arc": 5011.051190675619,
+      "lap_times": [
+        96.7750015258789,
+        95.37500762939453
+      ],
+      "last_lap": 192.15000915527344
+    },
+    "ProofPawn_1": {
+      "segment": 270,
+      "distance": 245643.29164886315,
+      "laps": 2,
+      "stuck_seconds": 0.0,
+      "collision_episodes": 0,
+      "contact_count": 0,
+      "offtrack_events": 0,
+      "offtrack_seconds": 0.0,
+      "offclock": 0,
+      "offactive": false,
+      "last_hit": -100,
+      "max_speed_kmh": 64.08067152922217,
+      "samples": 1771,
+      "lane_square": 50873312.713487975,
+      "arc": 44270.29181541882,
+      "stationary_clock": 0,
+      "stationary_seconds": 0,
+      "longest_stop_seconds": 0.20000000298023224,
+      "maximum_body_edge_excess_cm": 0,
+      "speed_profile": {
+        "1": {
+          "samples": 84,
+          "speed_sum_kmh": 3631.5426517999667,
+          "braking_seconds": 0.875,
+          "throttle_sum": 72.244
+        },
+        "2": {
+          "samples": 68,
+          "speed_sum_kmh": 2766.4051344260124,
+          "braking_seconds": 3.0,
+          "throttle_sum": 38.773
+        },
+        "3": {
+          "samples": 72,
+          "speed_sum_kmh": 3428.0184796193967,
+          "braking_seconds": 0.375,
+          "throttle_sum": 67.768
+        },
+        "4": {
+          "samples": 84,
+          "speed_sum_kmh": 4806.318134952175,
+          "braking_seconds": 0,
+          "throttle_sum": 84.0
+        },
+        "5": {
+          "samples": 94,
+          "speed_sum_kmh": 5510.342688212409,
+          "braking_seconds": 1.5,
+          "throttle_sum": 81.09899999999999
+        },
+        "6": {
+          "samples": 85,
+          "speed_sum_kmh": 3795.130775241504,
+          "braking_seconds": 4.0,
+          "throttle_sum": 46.890999999999984
+        },
+        "7": {
+          "samples": 62,
+          "speed_sum_kmh": 1841.0483841234047,
+          "braking_seconds": 3.0,
+          "throttle_sum": 23.314999999999998
+        },
+        "8": {
+          "samples": 61,
+          "speed_sum_kmh": 1889.3220672315094,
+          "braking_seconds": 0.375,
+          "throttle_sum": 45.63600000000001
+        },
+        "9": {
+          "samples": 71,
+          "speed_sum_kmh": 1945.4945776641682,
+          "braking_seconds": 2.625,
+          "throttle_sum": 37.539
+        },
+        "10": {
+          "samples": 55,
+          "speed_sum_kmh": 2188.112130234213,
+          "braking_seconds": 0.875,
+          "throttle_sum": 43.692
+        },
+        "11": {
+          "samples": 68,
+          "speed_sum_kmh": 2775.2793777062748,
+          "braking_seconds": 1.375,
+          "throttle_sum": 54.692
+        },
+        "12": {
+          "samples": 48,
+          "speed_sum_kmh": 2407.023339699273,
+          "braking_seconds": 2.125,
+          "throttle_sum": 28.558000000000007
+        },
+        "13": {
+          "samples": 46,
+          "speed_sum_kmh": 1468.2558715848797,
+          "braking_seconds": 3.25,
+          "throttle_sum": 12.864
+        },
+        "14": {
+          "samples": 41,
+          "speed_sum_kmh": 1120.472704253358,
+          "braking_seconds": 0.375,
+          "throttle_sum": 26.222999999999995
+        },
+        "15": {
+          "samples": 47,
+          "speed_sum_kmh": 1702.283348475983,
+          "braking_seconds": 0,
+          "throttle_sum": 42.992000000000004
+        },
+        "16": {
+          "samples": 47,
+          "speed_sum_kmh": 1987.8791059857579,
+          "braking_seconds": 1.5,
+          "throttle_sum": 32.072
+        },
+        "17": {
+          "samples": 39,
+          "speed_sum_kmh": 1442.0450348831898,
+          "braking_seconds": 1.375,
+          "throttle_sum": 21.816000000000003
+        },
+        "18": {
+          "samples": 40,
+          "speed_sum_kmh": 980.7376494931788,
+          "braking_seconds": 2.0,
+          "throttle_sum": 12.538
+        },
+        "19": {
+          "samples": 44,
+          "speed_sum_kmh": 1162.6499886626739,
+          "braking_seconds": 1.0,
+          "throttle_sum": 27.016000000000005
+        },
+        "20": {
+          "samples": 45,
+          "speed_sum_kmh": 1101.769946268259,
+          "braking_seconds": 2.375,
+          "throttle_sum": 14.817000000000002
+        },
+        "21": {
+          "samples": 39,
+          "speed_sum_kmh": 570.2115990856256,
+          "braking_seconds": 1.125,
+          "throttle_sum": 12.779999999999998
+        },
+        "22": {
+          "samples": 32,
+          "speed_sum_kmh": 824.9419946847623,
+          "braking_seconds": 0.125,
+          "throttle_sum": 27.758000000000003
+        },
+        "23": {
+          "samples": 40,
+          "speed_sum_kmh": 1689.0471403917738,
+          "braking_seconds": 0.375,
+          "throttle_sum": 35.56400000000001
+        },
+        "24": {
+          "samples": 62,
+          "speed_sum_kmh": 2123.0917005804667,
+          "braking_seconds": 2.875,
+          "throttle_sum": 28.736
+        },
+        "25": {
+          "samples": 42,
+          "speed_sum_kmh": 925.5606014422216,
+          "braking_seconds": 1.875,
+          "throttle_sum": 18.098
+        },
+        "26": {
+          "samples": 40,
+          "speed_sum_kmh": 1012.439540166973,
+          "braking_seconds": 1.625,
+          "throttle_sum": 21.198999999999995
+        },
+        "27": {
+          "samples": 43,
+          "speed_sum_kmh": 1395.5051982711834,
+          "braking_seconds": 0.375,
+          "throttle_sum": 34.312999999999995
+        },
+        "28": {
+          "samples": 56,
+          "speed_sum_kmh": 2819.9223255336888,
+          "braking_seconds": 0.375,
+          "throttle_sum": 52.913
+        },
+        "29": {
+          "samples": 69,
+          "speed_sum_kmh": 4151.552457370489,
+          "braking_seconds": 0.125,
+          "throttle_sum": 67.58700000000002
+        },
+        "30": {
+          "samples": 54,
+          "speed_sum_kmh": 2467.5762120872973,
+          "braking_seconds": 3.375,
+          "throttle_sum": 23.264999999999993
+        },
+        "31": {
+          "samples": 40,
+          "speed_sum_kmh": 1467.9947320593255,
+          "braking_seconds": 1.375,
+          "throttle_sum": 26.598000000000003
+        },
+        "0": {
+          "samples": 53,
+          "speed_sum_kmh": 2400.5089777054486,
+          "braking_seconds": 0,
+          "throttle_sum": 51.644000000000005
+        }
+      },
+      "maximum_impulse_ns": 0.0,
+      "initial_arc": 6631.051162268369,
+      "lap_times": [
+        96.7750015258789,
+        93.87500762939453
+      ],
+      "last_lap": 190.65000915527344
+    },
+    "ProofPawn_2": {
+      "segment": 211,
+      "distance": 239319.36391847866,
+      "laps": 2,
+      "stuck_seconds": 0.0,
+      "collision_episodes": 0,
+      "contact_count": 0,
+      "offtrack_events": 0,
+      "offtrack_seconds": 0.0,
+      "offclock": 0,
+      "offactive": false,
+      "last_hit": -100,
+      "max_speed_kmh": 64.1542883851123,
+      "samples": 1771,
+      "lane_square": 37689567.57709644,
+      "arc": 37766.36403569814,
+      "stationary_clock": 0,
+      "stationary_seconds": 0,
+      "longest_stop_seconds": 0.20000000298023224,
+      "maximum_body_edge_excess_cm": 0,
+      "speed_profile": {
+        "1": {
+          "samples": 91,
+          "speed_sum_kmh": 3715.0170356164303,
+          "braking_seconds": 1.725000023841858,
+          "throttle_sum": 72.461
+        },
+        "2": {
+          "samples": 71,
+          "speed_sum_kmh": 2899.841893794004,
+          "braking_seconds": 2.5,
+          "throttle_sum": 45.388999999999996
+        },
+        "3": {
+          "samples": 74,
+          "speed_sum_kmh": 3491.7973072074847,
+          "braking_seconds": 0.875,
+          "throttle_sum": 66.249
+        },
+        "4": {
+          "samples": 85,
+          "speed_sum_kmh": 4844.310926699586,
+          "braking_seconds": 0,
+          "throttle_sum": 85.0
+        },
+        "5": {
+          "samples": 88,
+          "speed_sum_kmh": 5529.348850888036,
+          "braking_seconds": 0.625,
+          "throttle_sum": 82.10799999999999
+        },
+        "6": {
+          "samples": 87,
+          "speed_sum_kmh": 3993.7926416843784,
+          "braking_seconds": 4.375,
+          "throttle_sum": 45.791
+        },
+        "7": {
+          "samples": 67,
+          "speed_sum_kmh": 2005.6768764845633,
+          "braking_seconds": 3.125,
+          "throttle_sum": 28.174999999999994
+        },
+        "8": {
+          "samples": 65,
+          "speed_sum_kmh": 2074.899118678485,
+          "braking_seconds": 0.625,
+          "throttle_sum": 47.071
+        },
+        "9": {
+          "samples": 52,
+          "speed_sum_kmh": 1444.3710929265524,
+          "braking_seconds": 1.5,
+          "throttle_sum": 29.09500000000001
+        },
+        "10": {
+          "samples": 39,
+          "speed_sum_kmh": 1465.7349302392317,
+          "braking_seconds": 1.0000076293945312,
+          "throttle_sum": 28.814999999999998
+        },
+        "11": {
+          "samples": 51,
+          "speed_sum_kmh": 2114.4225681393855,
+          "braking_seconds": 1.0,
+          "throttle_sum": 41.725
+        },
+        "12": {
+          "samples": 48,
+          "speed_sum_kmh": 2416.429375350018,
+          "braking_seconds": 2.125,
+          "throttle_sum": 28.865000000000006
+        },
+        "13": {
+          "samples": 49,
+          "speed_sum_kmh": 1418.1339734198762,
+          "braking_seconds": 3.375,
+          "throttle_sum": 12.313
+        },
+        "14": {
+          "samples": 46,
+          "speed_sum_kmh": 1024.2962331240353,
+          "braking_seconds": 0.875,
+          "throttle_sum": 29.084999999999997
+        },
+        "15": {
+          "samples": 44,
+          "speed_sum_kmh": 1569.3349988243865,
+          "braking_seconds": 0,
+          "throttle_sum": 40.407
+        },
+        "16": {
+          "samples": 50,
+          "speed_sum_kmh": 2035.6536943795065,
+          "braking_seconds": 2.875,
+          "throttle_sum": 24.970000000000002
+        },
+        "17": {
+          "samples": 41,
+          "speed_sum_kmh": 1512.3893052423234,
+          "braking_seconds": 1.5,
+          "throttle_sum": 25.212999999999997
+        },
+        "18": {
+          "samples": 43,
+          "speed_sum_kmh": 1114.8045899387569,
+          "braking_seconds": 1.5,
+          "throttle_sum": 17.497
+        },
+        "19": {
+          "samples": 45,
+          "speed_sum_kmh": 1211.6040096419072,
+          "braking_seconds": 1.75,
+          "throttle_sum": 24.057000000000002
+        },
+        "20": {
+          "samples": 49,
+          "speed_sum_kmh": 1090.5050351627813,
+          "braking_seconds": 2.875,
+          "throttle_sum": 16.236
+        },
+        "21": {
+          "samples": 34,
+          "speed_sum_kmh": 508.47546645745433,
+          "braking_seconds": 1.75,
+          "throttle_sum": 9.651
+        },
+        "22": {
+          "samples": 28,
+          "speed_sum_kmh": 720.6438586546186,
+          "braking_seconds": 0,
+          "throttle_sum": 25.913999999999998
+        },
+        "23": {
+          "samples": 39,
+          "speed_sum_kmh": 1663.022882009707,
+          "braking_seconds": 0.5,
+          "throttle_sum": 34.132
+        },
+        "24": {
+          "samples": 57,
+          "speed_sum_kmh": 1967.0720474702107,
+          "braking_seconds": 2.875,
+          "throttle_sum": 24.668
+        },
+        "25": {
+          "samples": 53,
+          "speed_sum_kmh": 1239.6558236816563,
+          "braking_seconds": 1.375,
+          "throttle_sum": 26.110999999999997
+        },
+        "26": {
+          "samples": 47,
+          "speed_sum_kmh": 1255.480266624023,
+          "braking_seconds": 0.75,
+          "throttle_sum": 28.740000000000006
+        },
+        "27": {
+          "samples": 49,
+          "speed_sum_kmh": 1666.0518735529586,
+          "braking_seconds": 0.625,
+          "throttle_sum": 38.278999999999996
+        },
+        "28": {
+          "samples": 58,
+          "speed_sum_kmh": 2888.323402322427,
+          "braking_seconds": 0.625,
+          "throttle_sum": 52.599000000000004
+        },
+        "29": {
+          "samples": 69,
+          "speed_sum_kmh": 4135.20262325367,
+          "braking_seconds": 0.5,
+          "throttle_sum": 64.902
+        },
+        "30": {
+          "samples": 54,
+          "speed_sum_kmh": 2505.9381779710006,
+          "braking_seconds": 2.625,
+          "throttle_sum": 28.299
+        },
+        "31": {
+          "samples": 42,
+          "speed_sum_kmh": 1606.4401032695118,
+          "braking_seconds": 0.625,
+          "throttle_sum": 32.309
+        },
+        "0": {
+          "samples": 56,
+          "speed_sum_kmh": 2470.9783149673167,
+          "braking_seconds": 0.75,
+          "throttle_sum": 49.079
+        }
+      },
+      "maximum_impulse_ns": 0.0,
+      "initial_arc": 6451.051112931771,
+      "lap_times": [
+        99.1500015258789,
+        97.75000762939453
+      ],
+      "last_lap": 196.90000915527344
+    },
+    "ProofPawn_3": {
+      "segment": 274,
+      "distance": 246706.41444607126,
+      "laps": 2,
+      "stuck_seconds": 0.0,
+      "collision_episodes": 0,
+      "contact_count": 0,
+      "offtrack_events": 0,
+      "offtrack_seconds": 0.0,
+      "offclock": 0,
+      "offactive": false,
+      "last_hit": -100,
+      "max_speed_kmh": 64.53392712253705,
+      "samples": 1771,
+      "lane_square": 35055037.05134494,
+      "arc": 44973.41468026047,
+      "stationary_clock": 0,
+      "stationary_seconds": 0,
+      "longest_stop_seconds": 0.42500001192092896,
+      "maximum_body_edge_excess_cm": 0,
+      "speed_profile": {
+        "1": {
+          "samples": 88,
+          "speed_sum_kmh": 3737.3855610825617,
+          "braking_seconds": 0.9750000089406967,
+          "throttle_sum": 73.89800000000001
+        },
+        "2": {
+          "samples": 67,
+          "speed_sum_kmh": 2756.135647172883,
+          "braking_seconds": 3.125,
+          "throttle_sum": 36.52
+        },
+        "3": {
+          "samples": 74,
+          "speed_sum_kmh": 3421.9677912390644,
+          "braking_seconds": 0.875,
+          "throttle_sum": 66.76500000000001
+        },
+        "4": {
+          "samples": 87,
+          "speed_sum_kmh": 4827.595403035286,
+          "braking_seconds": 0.375,
+          "throttle_sum": 83.789
+        },
+        "5": {
+          "samples": 87,
+          "speed_sum_kmh": 5443.7386093903915,
+          "braking_seconds": 0.7250003814697266,
+          "throttle_sum": 80.031
+        },
+        "6": {
+          "samples": 86,
+          "speed_sum_kmh": 3832.3749436784333,
+          "braking_seconds": 3.625,
+          "throttle_sum": 49.795
+        },
+        "7": {
+          "samples": 61,
+          "speed_sum_kmh": 1797.4513709150654,
+          "braking_seconds": 3.25,
+          "throttle_sum": 22.215999999999998
+        },
+        "8": {
+          "samples": 64,
+          "speed_sum_kmh": 1991.2907118952153,
+          "braking_seconds": 0.625,
+          "throttle_sum": 47.353
+        },
+        "9": {
+          "samples": 73,
+          "speed_sum_kmh": 2025.040011467927,
+          "braking_seconds": 2.5,
+          "throttle_sum": 39.114999999999995
+        },
+        "10": {
+          "samples": 54,
+          "speed_sum_kmh": 2155.4884725825905,
+          "braking_seconds": 1.5,
+          "throttle_sum": 39.358000000000004
+        },
+        "11": {
+          "samples": 66,
+          "speed_sum_kmh": 2867.8376914143064,
+          "braking_seconds": 0.5,
+          "throttle_sum": 59.655
+        },
+        "12": {
+          "samples": 47,
+          "speed_sum_kmh": 2358.088607969374,
+          "braking_seconds": 2.2500076293945312,
+          "throttle_sum": 27.351
+        },
+        "13": {
+          "samples": 45,
+          "speed_sum_kmh": 1464.2334627120097,
+          "braking_seconds": 3.375,
+          "throttle_sum": 11.833
+        },
+        "14": {
+          "samples": 39,
+          "speed_sum_kmh": 1031.0060063658457,
+          "braking_seconds": 0.375,
+          "throttle_sum": 25.042000000000005
+        },
+        "15": {
+          "samples": 46,
+          "speed_sum_kmh": 1631.4418455013322,
+          "braking_seconds": 0,
+          "throttle_sum": 41.308
+        },
+        "16": {
+          "samples": 49,
+          "speed_sum_kmh": 2019.5944544693398,
+          "braking_seconds": 2.75,
+          "throttle_sum": 24.717999999999996
+        },
+        "17": {
+          "samples": 39,
+          "speed_sum_kmh": 1456.6791771594976,
+          "braking_seconds": 1.5,
+          "throttle_sum": 22.705999999999992
+        },
+        "18": {
+          "samples": 42,
+          "speed_sum_kmh": 1075.9950322847762,
+          "braking_seconds": 1.5,
+          "throttle_sum": 16.988
+        },
+        "19": {
+          "samples": 45,
+          "speed_sum_kmh": 1216.136002567915,
+          "braking_seconds": 1.375,
+          "throttle_sum": 26.244999999999997
+        },
+        "20": {
+          "samples": 43,
+          "speed_sum_kmh": 1086.9925249156086,
+          "braking_seconds": 2.0,
+          "throttle_sum": 16.165999999999997
+        },
+        "21": {
+          "samples": 34,
+          "speed_sum_kmh": 528.9769160572755,
+          "braking_seconds": 1.75,
+          "throttle_sum": 9.581000000000001
+        },
+        "22": {
+          "samples": 29,
+          "speed_sum_kmh": 750.613848030559,
+          "braking_seconds": 0,
+          "throttle_sum": 27.297999999999995
+        },
+        "23": {
+          "samples": 38,
+          "speed_sum_kmh": 1647.903357449827,
+          "braking_seconds": 0.375,
+          "throttle_sum": 34.19
+        },
+        "24": {
+          "samples": 60,
+          "speed_sum_kmh": 2077.3918553580106,
+          "braking_seconds": 3.0,
+          "throttle_sum": 26.06
+        },
+        "25": {
+          "samples": 45,
+          "speed_sum_kmh": 1041.8726066176403,
+          "braking_seconds": 1.75,
+          "throttle_sum": 20.133
+        },
+        "26": {
+          "samples": 42,
+          "speed_sum_kmh": 1094.389819316335,
+          "braking_seconds": 1.625,
+          "throttle_sum": 21.853
+        },
+        "27": {
+          "samples": 46,
+          "speed_sum_kmh": 1500.3376465019167,
+          "braking_seconds": 0.125,
+          "throttle_sum": 37.607
+        },
+        "28": {
+          "samples": 57,
+          "speed_sum_kmh": 2842.522181614614,
+          "braking_seconds": 0.25,
+          "throttle_sum": 55.0
+        },
+        "29": {
+          "samples": 68,
+          "speed_sum_kmh": 4168.783909680531,
+          "braking_seconds": 0.375,
+          "throttle_sum": 64.663
+        },
+        "30": {
+          "samples": 53,
+          "speed_sum_kmh": 2480.1512682712573,
+          "braking_seconds": 2.875,
+          "throttle_sum": 24.961000000000006
+        },
+        "31": {
+          "samples": 43,
+          "speed_sum_kmh": 1560.2155902365967,
+          "braking_seconds": 1.0,
+          "throttle_sum": 30.539
+        },
+        "0": {
+          "samples": 54,
+          "speed_sum_kmh": 2460.152144490276,
+          "braking_seconds": 0.5,
+          "throttle_sum": 49.217
+        }
+      },
+      "maximum_impulse_ns": 0.0,
+      "initial_arc": 6271.051229901945,
+      "lap_times": [
+        95.2750015258789,
+        94.12500762939453
+      ],
+      "last_lap": 189.40000915527344
+    },
+    "ProofPawn_4": {
+      "segment": 211,
+      "distance": 239607.32822957943,
+      "laps": 2,
+      "stuck_seconds": 0.0,
+      "collision_episodes": 0,
+      "contact_count": 0,
+      "offtrack_events": 1,
+      "offtrack_seconds": 0.375,
+      "offclock": 0,
+      "offactive": false,
+      "last_hit": -100,
+      "max_speed_kmh": 64.86855936132295,
+      "samples": 1771,
+      "lane_square": 106120323.33622222,
+      "arc": 37694.32824984626,
+      "stationary_clock": 0,
+      "stationary_seconds": 0.625,
+      "longest_stop_seconds": 0.625,
+      "maximum_body_edge_excess_cm": 113.82061633731016,
+      "speed_profile": {
+        "1": {
+          "samples": 95,
+          "speed_sum_kmh": 3875.4833387194963,
+          "braking_seconds": 1.0,
+          "throttle_sum": 77.65999999999998
+        },
+        "2": {
+          "samples": 70,
+          "speed_sum_kmh": 2893.3174829428845,
+          "braking_seconds": 3.125,
+          "throttle_sum": 41.221000000000004
+        },
+        "3": {
+          "samples": 76,
+          "speed_sum_kmh": 3486.5169141152905,
+          "braking_seconds": 0.875,
+          "throttle_sum": 68.047
+        },
+        "4": {
+          "samples": 85,
+          "speed_sum_kmh": 4816.841373649437,
+          "braking_seconds": 0.375,
+          "throttle_sum": 81.995
+        },
+        "5": {
+          "samples": 88,
+          "speed_sum_kmh": 5453.0498699172185,
+          "braking_seconds": 1.0,
+          "throttle_sum": 78.66200000000002
+        },
+        "6": {
+          "samples": 86,
+          "speed_sum_kmh": 3860.6172411879033,
+          "braking_seconds": 4.125,
+          "throttle_sum": 45.972
+        },
+        "7": {
+          "samples": 61,
+          "speed_sum_kmh": 1740.5155505363982,
+          "braking_seconds": 3.5,
+          "throttle_sum": 20.948
+        },
+        "8": {
+          "samples": 61,
+          "speed_sum_kmh": 1863.263826818543,
+          "braking_seconds": 0.5,
+          "throttle_sum": 44.77499999999999
+        },
+        "9": {
+          "samples": 47,
+          "speed_sum_kmh": 1270.135720184404,
+          "braking_seconds": 2.125,
+          "throttle_sum": 23.990999999999996
+        },
+        "10": {
+          "samples": 38,
+          "speed_sum_kmh": 1544.2219853066874,
+          "braking_seconds": 1.0,
+          "throttle_sum": 27.987
+        },
+        "11": {
+          "samples": 54,
+          "speed_sum_kmh": 2313.358448032286,
+          "braking_seconds": 0.625,
+          "throttle_sum": 46.657999999999994
+        },
+        "12": {
+          "samples": 48,
+          "speed_sum_kmh": 2402.5797425650267,
+          "braking_seconds": 1.375,
+          "throttle_sum": 34.388999999999996
+        },
+        "13": {
+          "samples": 49,
+          "speed_sum_kmh": 1587.8823953878907,
+          "braking_seconds": 2.75,
+          "throttle_sum": 17.999000000000002
+        },
+        "14": {
+          "samples": 42,
+          "speed_sum_kmh": 1105.7747321644954,
+          "braking_seconds": 0.375,
+          "throttle_sum": 27.423000000000005
+        },
+        "15": {
+          "samples": 49,
+          "speed_sum_kmh": 1684.3165157595986,
+          "braking_seconds": 0,
+          "throttle_sum": 43.03
+        },
+        "16": {
+          "samples": 49,
+          "speed_sum_kmh": 2034.5979207629325,
+          "braking_seconds": 1.625,
+          "throttle_sum": 33.04600000000001
+        },
+        "17": {
+          "samples": 40,
+          "speed_sum_kmh": 1525.3974895291253,
+          "braking_seconds": 1.5,
+          "throttle_sum": 22.557
+        },
+        "18": {
+          "samples": 45,
+          "speed_sum_kmh": 1138.9721475424603,
+          "braking_seconds": 2.5,
+          "throttle_sum": 15.579999999999998
+        },
+        "19": {
+          "samples": 48,
+          "speed_sum_kmh": 1280.4915651479182,
+          "braking_seconds": 0.875,
+          "throttle_sum": 30.101000000000006
+        },
+        "20": {
+          "samples": 43,
+          "speed_sum_kmh": 1054.705616930265,
+          "braking_seconds": 2.625,
+          "throttle_sum": 13.848999999999998
+        },
+        "21": {
+          "samples": 62,
+          "speed_sum_kmh": 566.2857285464908,
+          "braking_seconds": 2.75,
+          "throttle_sum": 15.096999999999998
+        },
+        "22": {
+          "samples": 30,
+          "speed_sum_kmh": 756.4536945664044,
+          "braking_seconds": 0,
+          "throttle_sum": 28.403000000000002
+        },
+        "23": {
+          "samples": 40,
+          "speed_sum_kmh": 1724.2102804896265,
+          "braking_seconds": 0.25,
+          "throttle_sum": 37.26
+        },
+        "24": {
+          "samples": 61,
+          "speed_sum_kmh": 2074.2690474177784,
+          "braking_seconds": 3.5,
+          "throttle_sum": 24.797
+        },
+        "25": {
+          "samples": 46,
+          "speed_sum_kmh": 1027.0754289261763,
+          "braking_seconds": 1.25,
+          "throttle_sum": 24.014999999999997
+        },
+        "26": {
+          "samples": 41,
+          "speed_sum_kmh": 1062.6967327423272,
+          "braking_seconds": 1.375,
+          "throttle_sum": 22.939
+        },
+        "27": {
+          "samples": 44,
+          "speed_sum_kmh": 1431.2768976579127,
+          "braking_seconds": 0.375,
+          "throttle_sum": 35.408
+        },
+        "28": {
+          "samples": 57,
+          "speed_sum_kmh": 2836.583261850891,
+          "braking_seconds": 0.375,
+          "throttle_sum": 54.0
+        },
+        "29": {
+          "samples": 68,
+          "speed_sum_kmh": 4143.212169154112,
+          "braking_seconds": 0.25,
+          "throttle_sum": 65.81
+        },
+        "30": {
+          "samples": 52,
+          "speed_sum_kmh": 2442.9766826063396,
+          "braking_seconds": 2.75,
+          "throttle_sum": 25.051999999999996
+        },
+        "31": {
+          "samples": 42,
+          "speed_sum_kmh": 1496.5249067803718,
+          "braking_seconds": 1.0,
+          "throttle_sum": 29.444
+        },
+        "0": {
+          "samples": 54,
+          "speed_sum_kmh": 2447.7283875458684,
+          "braking_seconds": 0.125,
+          "throttle_sum": 51.431
+        }
+      },
+      "maximum_impulse_ns": 0.0,
+      "initial_arc": 6091.051015979123,
+      "first_body_edge_excursion": {
+        "time": 64.5250015258789,
+        "segment": 504,
+        "excess_cm": 43.63870073132398
+      },
+      "center_offtrack_seconds": 0.125,
+      "lap_times": [
+        100.6500015258789,
+        96.50000762939453
+      ],
+      "last_lap": 197.15000915527344
+    }
+  },
+  "decisions": [
+    {
+      "slot": 1,
+      "intent": 2,
+      "attempts": 10,
+      "completed": 0,
+      "aborted": 10,
+      "defensive_holds": 0,
+      "blocked_seconds": 0.0,
+      "lane": -80.8,
+      "desired": -196.21,
+      "id": "ProofPawn_1",
+      "state": "OVERTAKE_OUTSIDE",
+      "speed_cms": 1221.54,
+      "target_cms": 1364.39,
+      "throttle": 1.0,
+      "brake": 0.0,
+      "steering": 0.013,
+      "line_error_cm": 54.37,
+      "grip": 1.0,
+      "nearest_gap_cm": 700.64,
+      "ttc": 1000.0,
+      "state_entries": [
+        1,
+        4,
+        5,
+        11,
+        11,
+        9,
+        0,
+        4,
+        10,
+        0
+      ],
+      "perception": [
+        {
+          "id": "ProofPawn_0",
+          "gap": -2012.71,
+          "lane": -238.01,
+          "relative_speed": -40.13,
+          "ttc": 1000.0,
+          "alongside": false
+        },
+        {
+          "id": "ProofPawn_3",
+          "gap": 700.64,
+          "lane": 70.53,
+          "relative_speed": 47.11,
+          "ttc": 1000.0,
+          "alongside": false
+        }
+      ],
+      "mistakes": 0,
+      "laps": 2,
+      "recoveries": 0
+    },
+    {
+      "slot": 2,
+      "intent": 0,
+      "attempts": 6,
+      "completed": 0,
+      "aborted": 6,
+      "defensive_holds": 4,
+      "blocked_seconds": 0.0,
+      "lane": 35.0,
+      "desired": 35.0,
+      "id": "ProofPawn_2",
+      "state": "SIDE_BY_SIDE",
+      "speed_cms": 916.1,
+      "target_cms": 895.07,
+      "throttle": 0.55,
+      "brake": 0.0,
+      "steering": -0.279,
+      "line_error_cm": 17.06,
+      "grip": 1.0,
+      "nearest_gap_cm": 2200.0,
+      "ttc": 1000.0,
+      "state_entries": [
+        10,
+        7,
+        2,
+        6,
+        8,
+        9,
+        5,
+        6,
+        9,
+        0
+      ],
+      "perception": [
+        {
+          "id": "ProofPawn_4",
+          "gap": -71.86,
+          "lane": -252.87,
+          "relative_speed": -3.29,
+          "ttc": 1000.0,
+          "alongside": true
+        }
+      ],
+      "mistakes": 0,
+      "laps": 2,
+      "recoveries": 0
+    },
+    {
+      "slot": 3,
+      "intent": 0,
+      "attempts": 1,
+      "completed": 0,
+      "aborted": 1,
+      "defensive_holds": 15,
+      "blocked_seconds": 0.0,
+      "lane": 46.85,
+      "desired": 0.0,
+      "id": "ProofPawn_3",
+      "state": "FOLLOW_RACING_LINE",
+      "speed_cms": 1268.28,
+      "target_cms": 1485.26,
+      "throttle": 1.0,
+      "brake": 0.0,
+      "steering": -0.177,
+      "line_error_cm": 23.68,
+      "grip": 1.0,
+      "nearest_gap_cm": 2200.0,
+      "ttc": 1000.0,
+      "state_entries": [
+        17,
+        0,
+        1,
+        1,
+        2,
+        0,
+        16,
+        2,
+        1,
+        0
+      ],
+      "perception": [
+        {
+          "id": "ProofPawn_0",
+          "gap": -2713.36,
+          "lane": -238.01,
+          "relative_speed": -87.25,
+          "ttc": 1000.0,
+          "alongside": false
+        },
+        {
+          "id": "ProofPawn_1",
+          "gap": -700.64,
+          "lane": -26.43,
+          "relative_speed": -47.11,
+          "ttc": 1000.0,
+          "alongside": false
+        }
+      ],
+      "mistakes": 0,
+      "laps": 2,
+      "recoveries": 0
+    },
+    {
+      "slot": 4,
+      "intent": 2,
+      "attempts": 9,
+      "completed": 0,
+      "aborted": 8,
+      "defensive_holds": 0,
+      "blocked_seconds": 0.0,
+      "lane": -265.29,
+      "desired": -265.29,
+      "id": "ProofPawn_4",
+      "state": "SIDE_BY_SIDE",
+      "speed_cms": 905.69,
+      "target_cms": 865.11,
+      "throttle": 0.0,
+      "brake": 0.148,
+      "steering": -0.305,
+      "line_error_cm": 12.42,
+      "grip": 1.0,
+      "nearest_gap_cm": 2200.0,
+      "ttc": 1000.0,
+      "state_entries": [
+        3,
+        8,
+        3,
+        9,
+        12,
+        10,
+        0,
+        22,
+        11,
+        0
+      ],
+      "perception": [
+        {
+          "id": "ProofPawn_2",
+          "gap": 71.86,
+          "lane": 52.06,
+          "relative_speed": 3.29,
+          "ttc": 1000.0,
+          "alongside": true
+        }
+      ],
+      "mistakes": 0,
+      "laps": 2,
+      "recoveries": 0
+    },
+    {
+      "slot": 0,
+      "intent": 2,
+      "attempts": 8,
+      "completed": 2,
+      "aborted": 5,
+      "defensive_holds": 1,
+      "blocked_seconds": 0.0,
+      "lane": -242.82,
+      "desired": -242.82,
+      "id": "ProofPawn_0",
+      "state": "OVERTAKE_OUTSIDE",
+      "speed_cms": 1165.72,
+      "target_cms": 1141.28,
+      "throttle": 0.0,
+      "brake": 0.105,
+      "steering": 0.395,
+      "line_error_cm": 4.81,
+      "grip": 1.0,
+      "nearest_gap_cm": 2200.0,
+      "ttc": 1000.0,
+      "state_entries": [
+        8,
+        9,
+        2,
+        8,
+        10,
+        5,
+        5,
+        6,
+        7,
+        0
+      ],
+      "perception": [
+        {
+          "id": "ProofPawn_1",
+          "gap": 2012.7,
+          "lane": -26.43,
+          "relative_speed": 40.13,
+          "ttc": 1000.0,
+          "alongside": false
+        },
+        {
+          "id": "ProofPawn_3",
+          "gap": 2713.36,
+          "lane": 70.53,
+          "relative_speed": 87.25,
+          "ttc": 1000.0,
+          "alongside": false
+        }
+      ],
+      "mistakes": 0,
+      "laps": 2,
+      "recoveries": 0
+    }
+  ]
+}

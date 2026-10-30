@@ -1,0 +1,692 @@
+{
+  "scenario": "19 simulated AI plus existing opt-in reference player driver",
+  "timing": "real-time PIE, capped at 60 FPS, unchanged 240 Hz solver",
+  "racers": {
+    "ProofPawn_0": {
+      "grid": [
+        1972.2640380859375,
+        255.65040588378906,
+        31.00000762939453
+      ],
+      "distance_cm": 138.6307416136624,
+      "arc": 5149.681932289292,
+      "segment": 27,
+      "laps": 0,
+      "peak_kmh": 13.011470006258037,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false
+    },
+    "ProofPawn_1": {
+      "grid": [
+        3603.484375,
+        -106.2420654296875,
+        31.00000762939453
+      ],
+      "distance_cm": 257.785605844605,
+      "arc": 6888.836768112968,
+      "segment": 35,
+      "laps": 0,
+      "peak_kmh": 17.954353762524274,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.475358484656693
+      }
+    },
+    "ProofPawn_2": {
+      "grid": [
+        3415.916259765625,
+        309.7757568359375,
+        30.999984741210938
+      ],
+      "distance_cm": 254.14259728971956,
+      "arc": 6705.193710221487,
+      "segment": 34,
+      "laps": 0,
+      "peak_kmh": 17.95431905058026,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.4753582129483873
+      }
+    },
+    "ProofPawn_3": {
+      "grid": [
+        3246.66796875,
+        -114.81275939941406,
+        31.00000762939453
+      ],
+      "distance_cm": 257.2191119455092,
+      "arc": 6528.270341847462,
+      "segment": 33,
+      "laps": 0,
+      "peak_kmh": 17.954295802321237,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.4753577239130964
+      }
+    },
+    "ProofPawn_4": {
+      "grid": [
+        3053.515625,
+        299.5140380859375,
+        31.00000762939453
+      ],
+      "distance_cm": 254.66935062579432,
+      "arc": 6345.7203666049245,
+      "segment": 32,
+      "laps": 0,
+      "peak_kmh": 17.954295070449454,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.475356956816022
+      }
+    },
+    "ProofPawn_5": {
+      "grid": [
+        2888.001220703125,
+        -126.40254974365234,
+        31.000030517578125
+      ],
+      "distance_cm": 256.9622642017639,
+      "arc": 6168.0134029429255,
+      "segment": 32,
+      "laps": 0,
+      "peak_kmh": 17.954388799042434,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.475358864123565
+      }
+    },
+    "ProofPawn_6": {
+      "grid": [
+        2692.85595703125,
+        286.42498779296875,
+        31.000030517578125
+      ],
+      "distance_cm": 254.9185187915282,
+      "arc": 5985.9695354187625,
+      "segment": 31,
+      "laps": 0,
+      "peak_kmh": 17.954379429730068,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.4753588163647295
+      }
+    },
+    "ProofPawn_7": {
+      "grid": [
+        2529.835205078125,
+        -140.51573181152344,
+        31.00000762939453
+      ],
+      "distance_cm": 256.4735119504621,
+      "arc": 5807.52462892277,
+      "segment": 30,
+      "laps": 0,
+      "peak_kmh": 17.954379085203872,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.475358782981952
+      }
+    },
+    "ProofPawn_8": {
+      "grid": [
+        2332.093017578125,
+        271.5055847167969,
+        31.00000762939453
+      ],
+      "distance_cm": 255.40134670484986,
+      "arc": 5626.452563761823,
+      "segment": 29,
+      "laps": 0,
+      "peak_kmh": 17.954387128603784,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.47535882986193
+      }
+    },
+    "ProofPawn_9": {
+      "grid": [
+        2170.5810546875,
+        -155.94482421875,
+        31.000030517578125
+      ],
+      "distance_cm": 256.2303287993491,
+      "arc": 5447.281681093234,
+      "segment": 29,
+      "laps": 0,
+      "peak_kmh": 17.954401884630947,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.4753590274259616
+      }
+    },
+    "ProofPawn_10": {
+      "grid": [
+        1811.0419921875,
+        -171.89999389648438,
+        31.00000762939453
+      ],
+      "distance_cm": 255.7448429246142,
+      "arc": 5086.796157953381,
+      "segment": 27,
+      "laps": 0,
+      "peak_kmh": 17.954403756570894,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.475359042049061
+      }
+    },
+    "ProofPawn_11": {
+      "grid": [
+        1613.0089111328125,
+        239.8662567138672,
+        31.00000762939453
+      ],
+      "distance_cm": 201.84783081148635,
+      "arc": 4852.898906567826,
+      "segment": 26,
+      "laps": 0,
+      "peak_kmh": 12.700457310790016,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.5510010719299316,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.4753588181401445
+      }
+    },
+    "ProofPawn_12": {
+      "grid": [
+        1450.4481201171875,
+        -187.3907470703125,
+        31.000030517578125
+      ],
+      "distance_cm": 254.88879701892438,
+      "arc": 4725.940000432317,
+      "segment": 26,
+      "laps": 0,
+      "peak_kmh": 17.954372795850063,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.4753573678012355
+      }
+    },
+    "ProofPawn_13": {
+      "grid": [
+        1253.910888671875,
+        225.12969970703125,
+        31.00000762939453
+      ],
+      "distance_cm": 232.50399629404274,
+      "arc": 4523.555240232599,
+      "segment": 25,
+      "laps": 0,
+      "peak_kmh": 13.97414275976336,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.6599391102790833,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.4753589706845203
+      }
+    },
+    "ProofPawn_14": {
+      "grid": [
+        1089.822021484375,
+        -201.07864379882812,
+        31.00000762939453
+      ],
+      "distance_cm": 254.92979645190644,
+      "arc": 4365.980980044669,
+      "segment": 24,
+      "laps": 0,
+      "peak_kmh": 17.95438074086768,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.4753587140583337
+      }
+    },
+    "ProofPawn_15": {
+      "grid": [
+        896.2183837890625,
+        212.95416259765625,
+        31.00000762939453
+      ],
+      "distance_cm": 248.28553443574492,
+      "arc": 4179.336670442993,
+      "segment": 23,
+      "laps": 0,
+      "peak_kmh": 15.862035480210626,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.7636634111404419,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.475357541521121
+      }
+    },
+    "ProofPawn_16": {
+      "grid": [
+        726.141357421875,
+        -211.30601501464844,
+        31.00000762939453
+      ],
+      "distance_cm": 253.1946770472714,
+      "arc": 4004.245879027052,
+      "segment": 22,
+      "laps": 0,
+      "peak_kmh": 17.95410955191634,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.4753502354784773
+      }
+    },
+    "ProofPawn_17": {
+      "grid": [
+        542.2743530273438,
+        206.71466064453125,
+        30.999984741210938
+      ],
+      "distance_cm": 256.02893672767823,
+      "arc": 3827.080123802084,
+      "segment": 21,
+      "laps": 0,
+      "peak_kmh": 16.837780258351515,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.8701092600822449,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.4753418530985254
+      }
+    },
+    "ProofPawn_18": {
+      "grid": [
+        360.0566711425781,
+        -212.6282501220703,
+        31.000030517578125
+      ],
+      "distance_cm": 252.29249430070195,
+      "arc": 3643.3437084150005,
+      "segment": 20,
+      "laps": 0,
+      "peak_kmh": 17.953702256813582,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.475347477971038
+      }
+    },
+    "ProofPawn_19": {
+      "grid": [
+        187.18218994140625,
+        210.04037475585938,
+        31.00000762939453
+      ],
+      "distance_cm": 260.7003103744719,
+      "arc": 3471.751490107826,
+      "segment": 20,
+      "laps": 0,
+      "peak_kmh": 17.95381064288219,
+      "seconds_65_70": 0.0,
+      "full_throttle_seconds": 0.974587082862854,
+      "low_speed_seconds": 0.0,
+      "contacts": 0,
+      "max_impulse_ns": 0.0,
+      "dropped_simulation_seconds": 0.0,
+      "offclock": 0.0,
+      "offactive": false,
+      "first_control": {
+        "seconds": 0.11987979710102081,
+        "throttle": 1.0,
+        "brake": 0.0,
+        "speed_kmh": 2.475350746872011
+      }
+    }
+  },
+  "gated_max_displacement_cm": 0.0,
+  "runs": [],
+  "colors": {
+    "ProofPawn_0": [
+      0.8500000238418579,
+      0.8799999952316284,
+      0.9399999976158142,
+      1.0
+    ],
+    "ProofPawn_1": [
+      0.7200000286102295,
+      0.014999999664723873,
+      0.02500000037252903,
+      1.0
+    ],
+    "ProofPawn_2": [
+      1.0,
+      0.18000000715255737,
+      0.00800000037997961,
+      1.0
+    ],
+    "ProofPawn_3": [
+      0.949999988079071,
+      0.6800000071525574,
+      0.009999999776482582,
+      1.0
+    ],
+    "ProofPawn_4": [
+      0.3799999952316284,
+      0.8500000238418579,
+      0.014999999664723873,
+      1.0
+    ],
+    "ProofPawn_5": [
+      0.00800000037997961,
+      0.4000000059604645,
+      0.11999999731779099,
+      1.0
+    ],
+    "ProofPawn_6": [
+      0.004999999888241291,
+      0.7200000286102295,
+      0.8199999928474426,
+      1.0
+    ],
+    "ProofPawn_7": [
+      0.014999999664723873,
+      0.054999999701976776,
+      0.800000011920929,
+      1.0
+    ],
+    "ProofPawn_8": [
+      0.30000001192092896,
+      0.019999999552965164,
+      0.6499999761581421,
+      1.0
+    ],
+    "ProofPawn_9": [
+      0.8500000238418579,
+      0.009999999776482582,
+      0.30000001192092896,
+      1.0
+    ],
+    "ProofPawn_10": [
+      0.12999999523162842,
+      0.006000000052154064,
+      0.014999999664723873,
+      1.0
+    ],
+    "ProofPawn_11": [
+      0.46000000834465027,
+      0.09000000357627869,
+      0.014999999664723873,
+      1.0
+    ],
+    "ProofPawn_12": [
+      0.75,
+      0.4000000059604645,
+      0.07999999821186066,
+      1.0
+    ],
+    "ProofPawn_13": [
+      0.20000000298023224,
+      0.33000001311302185,
+      0.07999999821186066,
+      1.0
+    ],
+    "ProofPawn_14": [
+      0.009999999776482582,
+      0.18000000715255737,
+      0.1599999964237213,
+      1.0
+    ],
+    "ProofPawn_15": [
+      0.1599999964237213,
+      0.5,
+      0.8500000238418579,
+      1.0
+    ],
+    "ProofPawn_16": [
+      0.006000000052154064,
+      0.012000000104308128,
+      0.10000000149011612,
+      1.0
+    ],
+    "ProofPawn_17": [
+      0.5400000214576721,
+      0.23999999463558197,
+      0.800000011920929,
+      1.0
+    ],
+    "ProofPawn_18": [
+      0.949999988079071,
+      0.25,
+      0.4300000071525574,
+      1.0
+    ],
+    "ProofPawn_19": [
+      0.11999999731779099,
+      0.15000000596046448,
+      0.1899999976158142,
+      1.0
+    ]
+  },
+  "slots": [
+    10,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "governors_kmh": {
+    "ProofPawn_0": 61.155072000000004,
+    "ProofPawn_1": 69.99999946435547,
+    "ProofPawn_2": 69.99999946435547,
+    "ProofPawn_3": 69.99999946435547,
+    "ProofPawn_4": 69.99999946435547,
+    "ProofPawn_5": 69.99999946435547,
+    "ProofPawn_6": 69.99999946435547,
+    "ProofPawn_7": 69.99999946435547,
+    "ProofPawn_8": 69.99999946435547,
+    "ProofPawn_9": 69.99999946435547,
+    "ProofPawn_10": 69.99999946435547,
+    "ProofPawn_11": 69.99999946435547,
+    "ProofPawn_12": 69.99999946435547,
+    "ProofPawn_13": 69.99999946435547,
+    "ProofPawn_14": 69.99999946435547,
+    "ProofPawn_15": 69.99999946435547,
+    "ProofPawn_16": 69.99999946435547,
+    "ProofPawn_17": 69.99999946435547,
+    "ProofPawn_18": 69.99999946435547,
+    "ProofPawn_19": 69.99999946435547
+  },
+  "shared_power_and_steering": [
+    165.0,
+    1000.0,
+    0.3199999928474426,
+    24.0
+  ],
+  "command_line": "-NoSplash -NoSound -unattended -NoLiveCoding -RacingAITest -RacingAIPlayerTest -Kart20Batch -ExecCmds=\"Automation RunTests RoadToF1.Race.TwentyKartDefaultsAndPlayer38Mph\" -ExecutePythonScript=D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Tools/kart20_validate_live.py -abslog=D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Evidence/TwentyKartLaunch/race.log"
+}

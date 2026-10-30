@@ -84,7 +84,7 @@ public:
  void ResetRace();
  bool PlayerRaceStatus(FKartRaceStatus& Status)const;
  virtual void TickComponent(float Dt,ELevelTick TickType,FActorComponentTickFunction* ThisTickFunction) override;
- UPROPERTY(EditDefaultsOnly,Category="Racing AI",meta=(ClampMin="0",ClampMax="19")) int32 OpponentCount=4;
+ UPROPERTY(EditDefaultsOnly,Category="Racing AI",meta=(ClampMin="0",ClampMax="19")) int32 OpponentCount=19;
  UPROPERTY(EditAnywhere,BlueprintReadWrite,Category="Racing AI") EKartAIDifficulty Difficulty=EKartAIDifficulty::PRO;
  UFUNCTION(BlueprintCallable,Category="Racing AI") void SetDifficulty(EKartAIDifficulty Value);
  static FKartDifficultySettings Preset(EKartAIDifficulty Value);

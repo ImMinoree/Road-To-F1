@@ -71,7 +71,7 @@ void UTrackRacingAI::InitializeOpponents(){
  if(Opponents.Num()&&Opponents[0].Pawn.IsValid())TrackPlan.Build(Route,Opponents[0].Pawn->GetTireDynamics(),CornerAccelerationCmps2,ExitAccelerationCmps2);
 #if !UE_BUILD_SHIPPING
  // A fixed, adaptive reference driver makes old/new opponent comparisons meaningful.
- if(bTesting&&FParse::Param(FCommandLine::Get(),TEXT("RacingAIPlayerTest"))&&Opponents.Num())BenchmarkPlayerPlan.Build(Route,Opponents[0].Pawn->GetTireDynamics(),420,300);
+ if(bTesting&&FParse::Param(FCommandLine::Get(),TEXT("RacingAIPlayerTest"))&&Opponents.Num())BenchmarkPlayerPlan.Build(Route,GetDefault<UKartTireDynamics>(),420,300);
 #endif
  UE_LOG(LogTemp,Display,TEXT("RACING_AI: %d opponents, %d paired asphalt-edge samples, %.1fm circuit"),Opponents.Num(),Route->Center.Num(),RouteLength/100);
 }
@@ -118,7 +118,8 @@ void UTrackRacingAI::TickComponent(float Dt,ELevelTick Type,FActorComponentTickF
   if(S.Segment==INDEX_NONE){S.Segment=NearestSegment(Pos,INDEX_NONE);S.StartArc=S.PreviousArc=SegmentArc(Pos,S.Segment);S.Lane=S.DesiredLane=Lateral(Pos,S.Segment);S.GridPosition=Pos;S.Previous=Pos;S.Random.Initialize(303+S.Slot*997);}
   auto Input=[&](float Throttle,float Steering,float Brake=0.f){if(P->bRacingAI)P->SetAutonomousControls(Throttle,Steering,Brake);else P->SetRacingDiagnosticControls(Throttle,Steering,Brake);};
   if(Gate){S.MaximumGridMovement=FMath::Max(S.MaximumGridMovement,float(FVector::Dist(Pos,S.GridPosition)));Input(bTesting?1.f:0.f,0);continue;}
-  if(GM->GetRaceElapsedSeconds()<Tuning.Reaction+S.Personality.ReactionDelay){Input(0,0,1);continue;}
+  // Opponents launch on the existing lights-out event, without an extra reaction hold.
+  if(!P->bRacingAI&&GM->GetRaceElapsedSeconds()<Tuning.Reaction+S.Personality.ReactionDelay){Input(0,0,1);continue;}
   S.Segment=NearestSegment(Pos,S.Segment);const float Arc=SegmentArc(Pos,S.Segment);float Advance=Arc-S.PreviousArc;if(Advance<-RouteLength*.5f)Advance+=RouteLength;if(Advance>RouteLength*.5f)Advance-=RouteLength;
   if(FVector::Dist2D(Pos,S.Previous)<350.f)S.Distance+=Advance;
   S.Previous=Pos;S.PreviousArc=Arc;const int32 OldLaps=S.Laps;S.Laps=FMath::Max(S.Laps,FMath::FloorToInt(FMath::Max(0.f,S.Distance)/RouteLength));S.Visited.Add(S.Segment*64/Route->Center.Num());if(S.Laps>OldLaps){S.LapTimes.Add(GM->GetRaceElapsedSeconds()-S.LastLapSeconds);S.LastLapSeconds=GM->GetRaceElapsedSeconds();}
@@ -126,8 +127,12 @@ void UTrackRacingAI::TickComponent(float Dt,ELevelTick Type,FActorComponentTickF
   const float L=FVector::DotProduct(Route->Left[S.Segment]-Route->Center[S.Segment],Normal),R=FVector::DotProduct(Route->Right[S.Segment]-Route->Center[S.Segment],Normal);
   const float Excess=FMath::Max(ActualLane+75-L,R-ActualLane+75);S.MaximumEdgeExcess=FMath::Max(S.MaximumEdgeExcess,Excess);if(Excess>5)++S.OffTrackFrames;
   S.MaximumSpeed=FMath::Max(S.MaximumSpeed,Speed);S.DecisionTime-=Dt;S.Cooldown=FMath::Max(0.f,S.Cooldown-Dt);
+  const bool Launch=P->bRacingAI&&GM->GetRaceElapsedSeconds()<1.25f;
   float TrafficSpeed=S.CruiseSpeed;bool StoppedLeader=false;
-  if(bUseAdvancedPlanner&&!bEnableRacecraft){S.DesiredLane=Route->Guide.Num()==Route->Center.Num()?Lateral(Route->Guide[S.Segment],S.Segment):0;S.Lane=FMath::FInterpConstantTo(S.Lane,S.DesiredLane,Dt,110);}
+  // Keep the staged lane during the initial launch; do not merge the whole grid
+  // toward the guide or demand a cruising headway before anybody has accelerated.
+  if(Launch){S.DesiredLane=S.Lane;S.State=EKartAIState::FOLLOW_RACING_LINE;}
+  else if(bUseAdvancedPlanner&&!bEnableRacecraft){S.DesiredLane=Route->Guide.Num()==Route->Center.Num()?Lateral(Route->Guide[S.Segment],S.Segment):0;S.Lane=FMath::FInterpConstantTo(S.Lane,S.DesiredLane,Dt,110);}
   else if(bEnableRacecraft){S.StrategyClock+=Dt;if(S.StrategyClock>=FMath::Max(.1f,.1f+Tuning.Reaction*.15f+S.Personality.ReactionDelay)){S.CachedTrafficLimit=PlanRacecraft(S,Traffic,TrafficArc,Arc,Speed,S.StrategyClock);S.StrategyClock=0;}TrafficSpeed=S.CachedTrafficLimit;StoppedLeader=S.BlockedSeconds>0;S.Lane=FMath::FInterpConstantTo(S.Lane,S.DesiredLane,Dt,85+S.Personality.Aggressiveness*40);}
   else {
   auto ClearLane=[&](float Lane){if(!FMath::IsNearlyEqual(Route->ClampLane(S.Segment,Lane),Lane,1.f))return false;for(auto* Other:Traffic){if(Other==P)continue;const FVector D=Other->GetActorLocation()-Pos;const float Ahead=FVector::DotProduct(D,Route->Tangent(S.Segment));const float Side=ActualLane+FVector::DotProduct(D,Normal);if(Ahead>-500&&Ahead<750&&FMath::Abs(Side-Lane)<190)return false;}return true;};
@@ -153,11 +158,23 @@ void UTrackRacingAI::TickComponent(float Dt,ELevelTick Type,FActorComponentTickF
     const int32 OI=NearestSegment(Other->GetActorLocation(),S.Segment);const float Side=Lateral(Other->GetActorLocation(),OI);
     const FVector ON=FVector::CrossProduct(FVector::UpVector,Route->Tangent(OI));const float OtherWidth=90*FMath::Abs(FVector::DotProduct(Other->GetActorForwardVector(),ON))+60*FMath::Abs(FVector::DotProduct(Other->GetActorRightVector(),ON));const float Room=OwnWidth+OtherWidth+MinimumRacingRoomCm;
     if(FMath::Abs(Gap)<360&&FMath::Abs(Side-S.DesiredLane)<Room&&FMath::Abs(Side-S.DesiredLane)<FMath::Abs(Side-ActualLane)){S.DesiredLane=ActualLane;S.bAlongside=true;}
-    if(Gap>0&&(FMath::Abs(Side-ActualLane)<Room||FMath::Abs(Side-S.Lane)<Room)){const float Clearance=350+Speed*.15f;TrafficSpeed=FMath::Min(TrafficSpeed,FMath::Max(0.f,Other->GetDrivingSpeed()+(Gap-Clearance)*.6f));}
+    if(Gap>0&&(FMath::Abs(Side-ActualLane)<Room||FMath::Abs(Side-S.Lane)<Room)){
+     if(Launch){
+      // Equal-power launch: allow acceleration inside the existing staggered grid,
+      // but retain bumper clearance plus physically available stopping distance.
+      const auto* Dynamics=P->GetTireDynamics();
+      const float Decel=Dynamics?FMath::Max(100.f,Dynamics->BrakeForceN/Dynamics->MassKg*70.f):200.f;
+      const float LeaderSpeed=FMath::Max(0.f,Other->GetDrivingSpeed());
+      const float Available=FMath::Max(0.f,Gap-220.f-Speed*.1f);
+      TrafficSpeed=FMath::Min(TrafficSpeed,FMath::Sqrt(LeaderSpeed*LeaderSpeed+2*Decel*Available));
+     }else{const float Clearance=350+Speed*.15f;TrafficSpeed=FMath::Min(TrafficSpeed,FMath::Max(0.f,Other->GetDrivingSpeed()+(Gap-Clearance)*.6f));}
+    }
    }
   }
   float LookAhead=FMath::Clamp(350.f+Speed*.45f,400.f,900.f);
   if(bUseAdvancedPlanner&&ControlPlan.Samples.IsValidIndex(S.Segment)){const auto& Plan=ControlPlan.Samples[S.Segment];LookAhead=FMath::Clamp(320.f+Speed*.34f,350.f,Plan.BendDistance<1000?550.f:800.f);}
+  // Do not aim across a tight apex when crawling around it: retain a short local arc.
+  if(P->bRacingAI&&bUseAdvancedPlanner&&ControlPlan.Samples.IsValidIndex(S.Segment)&&Speed<700){const float K=FMath::Abs(ControlPlan.Samples[S.Segment].Curvature);if(K>.0015f)LookAhead=FMath::Min(LookAhead,FMath::Max(180.f,.65f/K));}
   const int32 TargetIndex=AheadIndex(S.Segment,LookAhead);
   const float GuideLane=Route->Guide.Num()==Route->Center.Num()?Lateral(Route->Guide[S.Segment],S.Segment):0;
   const FVector Target=(bEnableRacecraft||bUseAdvancedPlanner)?Route->LanePoint(TargetIndex,S.Lane-GuideLane,175):Route->LanePoint(TargetIndex,S.Lane);const FVector Local=P->GetActorRotation().UnrotateVector(Target-Pos);
@@ -169,10 +186,15 @@ void UTrackRacingAI::TickComponent(float Dt,ELevelTick Type,FActorComponentTickF
   if(FMath::Abs(FMath::Atan2(Local.Y,Local.X))>.7f)TargetSpeed=FMath::Min(TargetSpeed,420.f);
   if(Excess>0)TargetSpeed=FMath::Min(TargetSpeed,420.f);
   S.GripEstimate=1;
-  if(bUseAdvancedPlanner&&ControlPlan.Samples.IsValidIndex(S.Segment)){const auto* D=P->GetTireDynamics();S.GripEstimate=D?FMath::Clamp(FMath::Min(D->Telemetry.FrontGrip,D->Telemetry.RearGrip)/FMath::Max(.1f,D->AsphaltGrip),.25f,1.f):1;const int32 BrakeIndex=AheadIndex(S.Segment,Speed*(Tuning.BrakeMargin+(1-S.Personality.BrakingConfidence)*.4f));TargetSpeed=FMath::Min(S.CruiseSpeed,FMath::Min(ControlPlan.Samples[S.Segment].Speed,ControlPlan.Samples[BrakeIndex].Speed)*FMath::Sqrt(Tuning.LateralScale))*DriverPace(S,Dt)*FMath::Sqrt(S.GripEstimate);TargetSpeed=FMath::Min(TargetSpeed,TrafficSpeed);if(Excess>0)TargetSpeed=FMath::Min(TargetSpeed,350.f);}
+  if(bUseAdvancedPlanner&&ControlPlan.Samples.IsValidIndex(S.Segment)){const auto* D=P->GetTireDynamics();S.GripEstimate=D?FMath::Clamp(FMath::Min(D->Telemetry.FrontGrip,D->Telemetry.RearGrip)/FMath::Max(.1f,D->AsphaltGrip),.25f,1.f):1;const int32 BrakeIndex=AheadIndex(S.Segment,Speed*(Tuning.BrakeMargin+(1-S.Personality.BrakingConfidence)*.4f));const bool ClearStraight=P->bRacingAI&&S.Intent==0&&!S.bAlongside&&S.NearestGap>1500&&S.MistakeTimer<=0&&S.GripEstimate>.97f&&FMath::Abs(ActualLane-S.Lane)<60&&FMath::Abs(Curvature)<.00015f&&FMath::Abs(ControlPlan.Samples[S.Segment].Curvature)<.00015f;
+   const float Envelope=ClearStraight?FMath::Min(ControlPlan.Samples[S.Segment].BrakingSpeed,ControlPlan.Samples[BrakeIndex].BrakingSpeed):FMath::Min(ControlPlan.Samples[S.Segment].Speed,ControlPlan.Samples[BrakeIndex].Speed);
+   TargetSpeed=FMath::Min(S.CruiseSpeed,Envelope*FMath::Sqrt(Tuning.LateralScale))*(ClearStraight?1.f:DriverPace(S,Dt))*FMath::Sqrt(S.GripEstimate);TargetSpeed=FMath::Min(TargetSpeed,TrafficSpeed);if(Excess>0)TargetSpeed=FMath::Min(TargetSpeed,350.f);}
   if(bUseAdvancedPlanner&&ControlPlan.Samples.IsValidIndex(S.Segment)){const float K=ControlPlan.Samples[S.Segment].Curvature;TargetSpeed*=FMath::Sqrt(FMath::Clamp(1-K*(S.Lane-GuideLane),.5f,1.f));}
   if(Excess>5||Local.X<0){S.State=EKartAIState::RECOVER_TO_TRACK;TargetSpeed=FMath::Min(TargetSpeed,200.f+150.f*FMath::Clamp(S.Personality.RecoverySkill,0.f,1.f));}
   if(S.Intent==4&&FMath::Abs(ActualLane-S.DesiredLane)>80&&ControlPlan.Samples.IsValidIndex(S.Segment)&&ControlPlan.Samples[S.Segment].BendDistance<1200)TargetSpeed=FMath::Min(TargetSpeed,150.f);
+  // Bound the demanded pursuit/lane-change arc, not just the centreline curvature.
+  // High straight-line pace must not carry into a tighter corrective steering path.
+  if(P->bRacingAI&&bUseAdvancedPlanner)TargetSpeed=FMath::Min(TargetSpeed,FMath::Sqrt(ControlPlan.LateralAcceleration/FMath::Max(.00001f,FMath::Abs(Curvature))));
   S.LineError=ActualLane-S.Lane;S.DebugTargetSpeed=TargetSpeed;
   S.StuckTime=Speed<30&&(TargetSpeed>150||StoppedLeader)?S.StuckTime+Dt:0;
   bool RearClear=true;for(auto* Other:Traffic){if(Other==P)continue;const FVector LocalOther=P->GetActorRotation().UnrotateVector(Other->GetActorLocation()-Pos);if(LocalOther.X<150&&LocalOther.X>-650&&FMath::Abs(LocalOther.Y)<190)RearClear=false;if(LocalOther.X<0&&LocalOther.X>-2000&&FMath::Abs(LocalOther.Y)<220&&Other->GetDrivingSpeed()-Speed>0&&(-LocalOther.X)/(Other->GetDrivingSpeed()-Speed)<2.5f)RearClear=false;}
@@ -186,6 +208,11 @@ void UTrackRacingAI::TickComponent(float Dt,ELevelTick Type,FActorComponentTickF
   float Brake=0;
   if(bUseAdvancedPlanner&&S.ReverseTime<=0){Brake=Speed>TargetSpeed+25?FMath::Clamp((Speed-TargetSpeed)*.003f,0.f,1.f):0;Throttle=Brake>0?0:FMath::Clamp(Throttle,0.f,1.f);S.SteeringCommand=FMath::FInterpConstantTo(S.SteeringCommand,S.Steering,Dt,FMath::Lerp(4.f,1.5f,(Tuning.Smoothness+S.Personality.SteeringSmoothness)*.5f));S.Steering=S.SteeringCommand;}
   if(TargetSpeed<20&&S.ReverseTime<=0){Brake=1;Throttle=0;}
+  // Demand full power at launch and on fast sections while below the already-safe
+  // traffic/curvature/braking target. Never override braking, recovery or the governor.
+  const bool FastSection=TargetSpeed>=65.f/.036f&&S.GripEstimate>.97f;
+  if(P->bRacingAI&&(Launch||FastSection)&&S.ReverseTime<=0&&Brake<=0&&
+     Speed<TargetSpeed-10.f&&S.State!=EKartAIState::RECOVER_TO_TRACK)Throttle=1.f;
   S.ThrottleCommand=Throttle;S.BrakeCommand=Brake;Input(Throttle,S.Steering,Brake);
   const float VisualSteer=P->GetSteeringVisualInput();
   if(auto* Driver=S.Driver.Get())if(auto* Anim=Cast<UAnimSequence>(Driver->AnimationData.AnimToPlay))Driver->SetPosition((VisualSteer+1.f)*.5f*Anim->GetPlayLength(),false);

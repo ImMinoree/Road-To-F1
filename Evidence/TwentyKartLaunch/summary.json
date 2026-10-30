@@ -1,0 +1,49 @@
+{
+  "scenario": "19 simulated AI plus existing opt-in reference player driver",
+  "launch_sample_definition": "First sampled positive target at least 0.05s after lights-out; ignores stale gate telemetry before the first 20 Hz control update. Sampling cadence approximately 0.1s.",
+  "grid_count": 20,
+  "unique_colors": 20,
+  "gated_max_displacement_cm": 0.0,
+  "runs": [
+    {
+      "run": 0,
+      "seconds": 150.01235961914062,
+      "staged": 20,
+      "lights_out_events": 1,
+      "ai_with_lap_completed": 19,
+      "full_throttle_first_decisions": 19,
+      "first_decision_samples": 19,
+      "peak_kmh": 65.44455766241512,
+      "seconds_65_70_percent": 0.2862302942953052,
+      "full_throttle_percent": 43.468839536157446,
+      "contact_count": 0,
+      "offtrack_events": 1,
+      "low_speed_seconds": 0.25942230224609375,
+      "max_dropped_simulation_seconds": 0.0,
+      "ai_cpu_mean_ms": 0.4206,
+      "ai_cpu_max_ms": 1.1548,
+      "first_lap_min": 91.7176513671875,
+      "first_lap_max": 114.57356262207031,
+      "first_lap_mean": 101.58762680856805
+    },
+    {
+      "run": 1,
+      "seconds": 8.016254425048828,
+      "staged": 20,
+      "lights_out_events": 1,
+      "ai_with_lap_completed": 0,
+      "full_throttle_first_decisions": 19,
+      "first_decision_samples": 19,
+      "peak_kmh": 48.33076672503308,
+      "seconds_65_70_percent": 0.0,
+      "full_throttle_percent": 45.65492909445116,
+      "contact_count": 0,
+      "offtrack_events": 0,
+      "low_speed_seconds": 0.0,
+      "max_dropped_simulation_seconds": 0.0,
+      "ai_cpu_mean_ms": 0.27433,
+      "ai_cpu_max_ms": 0.8465
+    }
+  ],
+  "protected_files_unchanged": true
+}

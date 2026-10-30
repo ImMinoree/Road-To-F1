@@ -1,0 +1,32 @@
+Using bundled DotNet SDK version: 10.0 win-x64
+Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" Road_To_F1_NewEditor Win64 Development -Project=D:/Boring/GitHub/Road-To-F1-New/Road_To_F1_New/Road_To_F1_New.uproject -WaitMutex -NoHotReloadFromIDE -NoUBA -MaxParallelActions=1
+Log file: C:\Users\GBURG-4\AppData\Local\UnrealBuildTool\Log.txt
+Executing up to 1 actions based on MaxProcessorCount override
+Using 'git status' to determine working set for adaptive non-unity build (D:\Boring\GitHub\Road-To-F1-New\Road_To_F1_New).
+UbaSessionServer - Disable remote execution (remote sessions will finish current processes)
+Invalidating makefile for Road_To_F1_NewEditor (DefaultGame.ini modified)
+Building Road_To_F1_NewEditor...
+===== Toolchain Information =====
+Using ISPC compiler (D:\Boring\UE_5.8\Engine\Source\ThirdParty\Intel\ISPC\bin\Windows\ispc.exe)
+  Intel(r) Implicit SPMD Program Compiler (Intel(r) ISPC), 1.24.0 (build commit  @ 20250404, LLVM 18.1.2) 
+Using Visual Studio 14.44.35229 toolchain (C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.44.35207) and Windows 10.0.22621.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[Adaptive Build] Excluded from Road_To_F1_New unity file: KartAITrackPlan.cpp, KartNavigationMap.cpp, TrackRacingAI.cpp
+=================================
+Using Unreal Build Accelerator local executor to run 7 action(s)
+  CPU 8 physical cores, 16 logical cores
+  Memory 31.9 GB physical, 20.22 GB/36.8 GB committed
+  UBA Storage capacity 40 GB
+[1/7] Compile [x64] KartAITrackPlan.cpp [NoUba]
+[2/7] Compile [x64] KartNavigationMap.cpp [NoUba]
+[3/7] Compile [x64] Module.Road_To_F1_New.cpp [NoUba]
+[4/7] Compile [x64] TrackRacingAI.cpp [NoUba]
+[5/7] Link [x64] UnrealEditor-Road_To_F1_New.dll [NoUba]
+[6/7] Link [x64] UnrealEditor-Road_To_F1_New.lib [NoUba]
+[7/7] WriteMetadata Road_To_F1_NewEditor.target [NoUba]
+
+Total time in Unreal Build Accelerator local executor: 18.71 seconds
+Output binary: D:\Boring\UE_5.8\Engine\Binaries\Win64\UnrealEditor.exe
+
+Result: Succeeded
+Total execution time: 23.23 seconds
+Trace written to file C:\Users\GBURG-4\AppData\Local\UnrealBuildTool\Trace.uba with size 5.6kb

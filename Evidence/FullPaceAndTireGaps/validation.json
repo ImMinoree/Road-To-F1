@@ -1,0 +1,572 @@
+{
+  "saved": true,
+  "before_corridor": {
+    "sweeps": 2264,
+    "blocked": [
+      [
+        525,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        526,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        527,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        528,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        531,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        532,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        533,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        534,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ]
+    ]
+  },
+  "previous_instances": 10980,
+  "terrain_adjustments": 12,
+  "obstacle_counts": {
+    "StaticMeshActor_97": 1,
+    "height_variation": 1
+  },
+  "obstacle_examples": [
+    {
+      "xy": [
+        -6130.130407775636,
+        -9197.30675973304
+      ],
+      "heights": [
+        -6.000006675720215,
+        -6.000006675720215,
+        -6.000006675720215,
+        -6.000006675720215,
+        -6.000006675720215,
+        179.00000762939453,
+        -6.000006675720215,
+        -6.000006675720215
+      ],
+      "hits": [
+        "StaticMeshActor_97"
+      ]
+    },
+    {
+      "xy": [
+        -2768.238388974996,
+        -1058.5731806848723
+      ],
+      "heights": [
+        -6.000006675720215,
+        -6.000006675720215,
+        -6.000006675720215,
+        -6.000006675720215,
+        -6.000006675720215,
+        -2.2499923706054688,
+        -2.2499923706054688,
+        -2.2499923706054688
+      ],
+      "hits": []
+    }
+  ],
+  "planned_columns": 3736,
+  "rejected_columns": [
+    [
+      "outer",
+      155,
+      "service opening"
+    ],
+    [
+      "outer",
+      156,
+      "service opening"
+    ],
+    [
+      "outer",
+      157,
+      "service opening"
+    ],
+    [
+      "outer",
+      158,
+      "service opening"
+    ],
+    [
+      "outer",
+      159,
+      "service opening"
+    ],
+    [
+      "outer",
+      160,
+      "service opening"
+    ],
+    [
+      "outer",
+      161,
+      "service opening"
+    ],
+    [
+      "outer",
+      162,
+      "service opening"
+    ],
+    [
+      "outer",
+      163,
+      "service opening"
+    ],
+    [
+      "outer",
+      164,
+      "service opening"
+    ],
+    [
+      "outer",
+      165,
+      "service opening"
+    ],
+    [
+      "outer",
+      166,
+      "service opening"
+    ],
+    [
+      "outer",
+      167,
+      "service opening"
+    ],
+    [
+      "outer",
+      168,
+      "service opening"
+    ],
+    [
+      "outer",
+      169,
+      "service opening"
+    ],
+    [
+      "outer",
+      170,
+      "service opening"
+    ],
+    [
+      "outer",
+      1652,
+      "service opening"
+    ],
+    [
+      "outer",
+      1653,
+      "service opening"
+    ],
+    [
+      "outer",
+      1654,
+      "service opening"
+    ],
+    [
+      "outer",
+      1655,
+      "service opening"
+    ],
+    [
+      "outer",
+      1656,
+      "service opening"
+    ],
+    [
+      "outer",
+      1657,
+      "service opening"
+    ],
+    [
+      "outer",
+      1658,
+      "service opening"
+    ],
+    [
+      "outer",
+      1659,
+      "service opening"
+    ],
+    [
+      "outer",
+      1660,
+      "service opening"
+    ],
+    [
+      "outer",
+      1661,
+      "service opening"
+    ],
+    [
+      "outer",
+      1662,
+      "service opening"
+    ],
+    [
+      "outer",
+      1663,
+      "service opening"
+    ],
+    [
+      "outer",
+      1664,
+      "service opening"
+    ],
+    [
+      "outer",
+      1665,
+      "service opening"
+    ],
+    [
+      "outer",
+      1666,
+      "service opening"
+    ],
+    [
+      "outer",
+      1667,
+      "service opening"
+    ],
+    [
+      "outer",
+      1668,
+      "service opening"
+    ],
+    [
+      "outer",
+      1669,
+      "service opening"
+    ],
+    [
+      "outer",
+      1820,
+      "fixed object or uneven ground"
+    ],
+    [
+      "island_1",
+      1289,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1290,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1291,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1292,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1293,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1294,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1295,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1296,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1297,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1298,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1299,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1300,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1301,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1302,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1303,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1304,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1305,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1306,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1357,
+      "fixed object or uneven ground"
+    ],
+    [
+      "island_1",
+      1663,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1664,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1665,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1666,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1667,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1668,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1669,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1670,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1671,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1672,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1673,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1674,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1675,
+      "service opening"
+    ],
+    [
+      "island_1",
+      1676,
+      "service opening"
+    ]
+  ],
+  "sections": [
+    {
+      "side": "outer",
+      "columns": 155,
+      "first_route_index": 717,
+      "last_route_index": 17
+    },
+    {
+      "side": "outer",
+      "columns": 1481,
+      "first_route_index": 23,
+      "last_route_index": 657
+    },
+    {
+      "side": "outer",
+      "columns": 150,
+      "first_route_index": 663,
+      "last_route_index": 693
+    },
+    {
+      "side": "outer",
+      "columns": 108,
+      "first_route_index": 693,
+      "last_route_index": 717
+    },
+    {
+      "side": "island_1",
+      "columns": 1289,
+      "first_route_index": 565,
+      "last_route_index": 23
+    },
+    {
+      "side": "island_1",
+      "columns": 50,
+      "first_route_index": 17,
+      "last_route_index": 747
+    },
+    {
+      "side": "island_1",
+      "columns": 305,
+      "first_route_index": 746,
+      "last_route_index": 663
+    },
+    {
+      "side": "island_1",
+      "columns": 130,
+      "first_route_index": 657,
+      "last_route_index": 565
+    }
+  ],
+  "colors": {
+    "Black": 5523,
+    "Red": 5481
+  },
+  "after_corridor": {
+    "sweeps": 2264,
+    "blocked": [
+      [
+        525,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        526,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        527,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        528,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        531,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ],
+      [
+        532,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        533,
+        520.0,
+        [
+          "StaticMeshActor_32"
+        ]
+      ],
+      [
+        534,
+        520.0,
+        [
+          "StaticMeshActor_29"
+        ]
+      ]
+    ]
+  },
+  "instances": 11004,
+  "hism_components": 2,
+  "collision_sections_passed": 8,
+  "unchanged_existing_actors": true,
+  "reload_verified": true,
+  "other_foliage_preserved": true
+}

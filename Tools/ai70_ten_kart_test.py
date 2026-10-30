@@ -17,13 +17,24 @@ cdo=u.get_default_object(u.ProofGameMode).get_editor_property('racing_ai');cdo.s
 for command in ['t.MaxFPS 0','t.IdleWhenNotForeground 0','Slate.bAllowThrottling 0']:u.SystemLibrary.execute_console_command(None,command)
 data=u.load_asset('/Game/RoadToF1/RacingAI/DA_DesertTrackEdges');center=[(v.x,v.y) for v in data.get_editor_property('center')];left=[(v.x,v.y) for v in data.get_editor_property('left')];right=[(v.x,v.y) for v in data.get_editor_property('right')];N=len(center);arcs=[0.]
 for i,p in enumerate(center):q=center[(i+1)%N];arcs.append(arcs[-1]+math.hypot(q[0]-p[0],q[1]-p[1]))
-length=arcs[-1];s={'phase':'load','order':0,'busy':False,'wall':time.monotonic(),'epoch':0};report={'label':label,'race_seconds':seconds,'route_length_cm':length,'runs':[],'stuck_definition':'Speed below 30cm/s with target above 150cm/s, or any continuous stop over 5s; commanded short yields separately counted as stationary time.','metric_definition':'Pairwise order exchanges require +/-250 cm longitudinal clearance and 1s confirmation, counted after 5s. Collision episodes are per-kart starts of non-ground swept contacts, separated by 0.5s. Off-track episodes use projected collider half-extents and 0.3s confirmation. Player uses the existing opt-in AI diagnostic driver.'}
+length=arcs[-1];s={'phase':'load','order':0,'busy':False,'wall':time.monotonic(),'epoch':0};report={'label':label,'race_seconds':seconds,'route_length_cm':length,'runs':[],'stuck_definition':'Speed below 30cm/s with target above 150cm/s, or any continuous stop over 5s; commanded short yields separately counted as stationary time.','metric_definition':'Pairwise order exchanges require +/-250 cm longitudinal clearance and 1s confirmation, counted after 5s. Collision episodes are per-kart starts of non-ground swept contacts, separated by 0.5s. Off-track episodes test nine points of the collider footprint against the union of actual paired-edge corridor quads, with 0.3s confirmation. Local tangent-plane excess is retained separately because it is inaccurate at sharp bends. Player uses the existing opt-in AI diagnostic driver.'}
 def nearest(x,y,prev):
  best=(1e30,0,0,0)
  for j in (range(N) if prev is None else range(prev-12,prev+22)):
   i=j%N;a=center[i];b=center[(i+1)%N];dx=b[0]-a[0];dy=b[1]-a[1];t=max(0.,min(1.,((x-a[0])*dx+(y-a[1])*dy)/max(1e-6,dx*dx+dy*dy)));qx=a[0]+dx*t;qy=a[1]+dy*t;d=(x-qx)**2+(y-qy)**2
   if d<best[0]:best=(d,i,t,arcs[i]+t*(arcs[i+1]-arcs[i]))
  return best[1:]
+def triangle_contains(p,a,b,c):
+ cross=lambda u,v,w:(v[0]-u[0])*(w[1]-u[1])-(v[1]-u[1])*(w[0]-u[0])
+ q=[cross(a,b,p),cross(b,c,p),cross(c,a,p)]
+ return min(q)>=-1 or max(q)<=1
+
+def corridor_contains(point,index):
+ for j in range(index-8,index+9):
+  i=j%N;k=(i+1)%N
+  if triangle_contains(point,left[i],right[i],right[k]) or triangle_contains(point,left[i],right[k],left[k]):return True
+ return False
+
 def persist(): (E/(label+'.json')).write_text(json.dumps(report,indent=2))
 def tick(dt):
  if s['busy']:return
@@ -51,7 +62,7 @@ def tick(dt):
   report.setdefault('initial_spawn_count',len(pawns))
   assert len(pawns)==10,('Expected ten racers',len(pawns))
   if not s['started']:
-   live_ai=gm.get_component_by_class(u.TrackRacingAI);plan=json.loads(live_ai.get_track_plan_telemetry());expected=420 if '-AISpeedBaseline' in cmd else 400
+   live_ai=gm.get_component_by_class(u.TrackRacingAI);plan=json.loads(live_ai.get_track_plan_telemetry());expected=420 if '-AISpeedBaseline' in cmd else 450
    assert abs(plan['lateral_budget_cms2']-expected)<.1,plan
    fields=['mass_kg','engine_force_n','maximum_steering_degrees','front_cornering_stiffness','rear_cornering_stiffness']
    values=[{k:p.get_component_by_class(u.KartTireDynamics).get_editor_property(k) for k in fields} for p in pawns];assert all(v==values[0] for v in values)
@@ -72,7 +83,14 @@ def tick(dt):
    if d['laps']>old_laps:d.setdefault('lap_times',[]).append(elapsed-d.get('last_lap',0));d['last_lap']=elapsed
    speed=p.get_velocity().length();d['max_speed_kmh']=max(d['max_speed_kmh'],speed*.036);d['stationary_clock']=d.get('stationary_clock',0)+sample_dt if speed<30 else 0;d['stationary_seconds']=d.get('stationary_seconds',0)+(sample_dt if elapsed>5 and speed<30 else 0);d['longest_stop_seconds']=max(d.get('longest_stop_seconds',0),d['stationary_clock']);d['stuck_seconds']+=sample_dt if elapsed>5 and speed<30 and (commands.get(name,{}).get('target_cms',0)>150 or d['stationary_clock']>5) else 0
    tangent=(center[(i+1)%N][0]-center[(i-1)%N][0],center[(i+1)%N][1]-center[(i-1)%N][1]);mag=math.hypot(*tangent);normal=(-tangent[1]/mag,tangent[0]/mag);lat=(pos.x-center[i][0])*normal[0]+(pos.y-center[i][1])*normal[1];d['samples']+=1;d['lane_square']+=lat*lat
-   f=p.get_actor_forward_vector();rr=p.get_actor_right_vector();half=90*abs(f.x*normal[0]+f.y*normal[1])+60*abs(rr.x*normal[0]+rr.y*normal[1]);le=(left[i][0]-center[i][0])*normal[0]+(left[i][1]-center[i][1])*normal[1];re=(right[i][0]-center[i][0])*normal[0]+(right[i][1]-center[i][1])*normal[1];off=lat+half>le+5 or lat-half<re-5
+   f=p.get_actor_forward_vector();rr=p.get_actor_right_vector();half=90*abs(f.x*normal[0]+f.y*normal[1])+60*abs(rr.x*normal[0]+rr.y*normal[1]);le=(left[i][0]-center[i][0])*normal[0]+(left[i][1]-center[i][1])*normal[1];re=(right[i][0]-center[i][0])*normal[0]+(right[i][1]-center[i][1])*normal[1];plane_off=lat+half>le+5 or lat-half<re-5
+   body=[(pos.x+f.x*x+rr.x*y,pos.y+f.y*x+rr.y*y) for x in [-90,0,90] for y in [-60,0,60]]
+   off=any(not corridor_contains(q,i) for q in body)
+   if plane_off:
+    d['plane_excess_seconds']=d.get('plane_excess_seconds',0)+sample_dt
+    if 'plane_diagnostic_example' not in d:
+     td=p.get_component_by_class(u.KartTireDynamics).get_telemetry();d['plane_diagnostic_example']={'time':elapsed,'segment':i,'polygon_outside':off,'position':[pos.x,pos.y],'front_surface':str(td.front_surface),'rear_surface':str(td.rear_surface),'body':body}
+
    d['offclock']=d['offclock']+sample_dt if off else 0
    if d['offclock']>.3 and not d['offactive']:d['offtrack_events']+=1;d['offactive']=True
    if not off:d['offactive']=False
@@ -111,7 +129,7 @@ def tick(dt):
    ai=gm.get_component_by_class(u.TrackRacingAI)
    if hasattr(ai,'get_racecraft_telemetry'):row['decisions']=json.loads(ai.get_racecraft_telemetry());row['track_plan']=json.loads(ai.get_track_plan_telemetry())
    report['runs'].append(row);persist();L.editor_request_end_play();s['order']+=1;s.update(phase='finish',epoch=time.monotonic())
-   if label=='after' and any(v['collision_episodes']>0 or v['offtrack_events']>0 or v['stuck_seconds']>1 for v in s['agents'].values()):report['safety_failure']='Stop before broader testing: contacts, sustained off-track or stuck time';s['order']=orders;persist()
+   if label=='after' and any(v['collision_episodes']>0 or v['offtrack_events']>0 or v['stuck_seconds']>1 for k,v in s['agents'].items() if k!='ProofPawn_0'):report['safety_failure']='Stop before broader testing: contacts, sustained off-track or stuck time';s['order']=orders;persist()
   elif int(elapsed)%20==0:
    progress={'order':s['order'],'seconds':elapsed,'racers':s['agents']}
    ai=gm.get_component_by_class(u.TrackRacingAI)

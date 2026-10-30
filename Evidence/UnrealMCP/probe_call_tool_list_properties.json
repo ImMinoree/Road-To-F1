@@ -1,0 +1,88 @@
+{
+  "initialize": {
+    "protocolVersion": "2025-11-25",
+    "capabilities": {
+      "resources": {},
+      "tools": {
+        "listChanged": true
+      }
+    },
+    "serverInfo": {
+      "name": "",
+      "title": "",
+      "version": ""
+    }
+  },
+  "native_tools": {
+    "tools": [
+      {
+        "name": "list_toolsets",
+        "description": "List all available toolsets with names and descriptions.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        }
+      },
+      {
+        "name": "describe_toolset",
+        "description": "Get detailed information about a toolset including all tool names, descriptions, and input schemas.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "toolset_name": {
+              "type": "string",
+              "description": "Name of the toolset to describe. Use list_toolsets to see available names."
+            }
+          },
+          "required": [
+            "toolset_name"
+          ]
+        }
+      },
+      {
+        "name": "call_tool",
+        "description": "Call a tool by name. Provide toolset_name to call a toolset tool, or omit it to call a top-level MCP tool. Use list_toolsets and describe_toolset to discover available tools and their input schemas.",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "toolset_name": {
+              "type": "string",
+              "description": "Optional. Name of the toolset containing the tool. Omit to call a top-level MCP tool. Use list_toolsets to discover toolset names."
+            },
+            "tool_name": {
+              "type": "string",
+              "description": "Name of the tool to call, without toolset prefix. Use describe_toolset to discover tool names and input schemas."
+            },
+            "arguments": {
+              "type": "object",
+              "description": "Arguments to pass to the tool. Must match the tool's input schema. Defaults to an empty object."
+            }
+          },
+          "required": [
+            "tool_name"
+          ]
+        }
+      }
+    ]
+  },
+  "tool_call": {
+    "name": "call_tool",
+    "arguments": {
+      "toolset_name": "editor_toolset.toolsets.object.ObjectTools",
+      "tool_name": "list_properties",
+      "arguments": {
+        "instance": {
+          "refPath": "/Script/PythonScriptPlugin.PythonScriptPluginSettings"
+        }
+      }
+    },
+    "result": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"returnValue\":\"{\\\"startupScripts\\\":{\\\"type\\\":\\\"array\\\",\\\"items\\\":{\\\"type\\\":\\\"string\\\"},\\\"description\\\":\\\"Array of Python scripts to run at start-up (run before the first Tick after the Engine has initialized).\\\"},\\\"additionalPaths\\\":{\\\"type\\\":\\\"array\\\",\\\"items\\\":{\\\"title\\\":\\\"DirectoryPath\\\",\\\"type\\\":\\\"object\\\",\\\"properties\\\":{\\\"path\\\":{\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"The path to the directory.\\\"}},\\\"required\\\":[\\\"path\\\"]},\\\"description\\\":\\\"Array of additional paths to add to the Python system paths.\\\"},\\\"bIsolateInterpreterEnvironment\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"Should the embedded interpreter be run in isolation mode. In isolation, the standard PYTHON* environment variables (PYTHONPATH,\\\\nPYTHONHOME, etc), the script's directory and the user's site-packages directory are ignored by the interpreter. This\\\\nprevents incompabible software to crash the engine. Consider turning this option off if you tightly control your Python\\\\nenvironment and you are sure everything is compatible. Note that the UE_PYTHONPATH environment variable is added to 'sys.path'\\\\nwhether the interpreter runs in insolation mode or not.\\\"},\\\"bDeveloperMode\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"Should Developer Mode be enabled on the Python interpreter *for all users of the project*\\\\nNote: Most of the time you want to enable bDeveloperMode in the Editor Preferences instead!\\\\n\\\\n(will also enable extra warnings (e.g., for deprecated code), and enable stub code generation for\\\\nuse with external IDEs).\\\"},\\\"bRunPipInstallOnStartup\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"Should the pip install task be run on python engine initialization.\\\\n\\\\nNOTE: The project pip install directory: <ProjectDir>/Intermediate/PipInstall/Lib/site-packages\\\\n      will still be added to site package path, to allow for pre-populated or deferred installs.\\\\n\\\\n      See <ProjectDir>/Intermediate/PipInstall/merged_requirements.in for listing of required packages.\\\"},\\\"bPipStrictHashCheck\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"Require pip to use strict hash checking for all packages\\\\nWARNING: Disabling this setting is a security risk, particularly when combined with IndexUrl override\\\"},\\\"bOfflineOnly\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"Only run pip to generate merged requirements and/or validate requested packages are installed\\\"},\\\"overrideIndexURL\\\":{\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"Override all index/extra-index URLs, this is useful for internal NAT installs (using e.g. devpi or similar index cache)\\\\nWARNING: Strict hash checks should be enabled if an override index url is used\\\"},\\\"extraInstallArgs\\\":{\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"Additional arguments passed to main pip install call, useful to add e.g. --cert or other proxy options for restrictive firewalls\\\\n     NOTE: Do not use this to add --index-url or --extra-index-url, instead use OverrideIndexURL setting or ExtraIndexUrls uplugin property, respectively\\\"},\\\"bRemoteExecution\\\":{\\\"type\\\":\\\"boolean\\\",\\\"description\\\":\\\"Should remote Python execution be enabled?\\\"},\\\"remoteExecutionMulticastGroupEndpoint\\\":{\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"The multicast group endpoint (in the form of IP_ADDRESS:PORT_NUMBER) that the UDP multicast socket should join\\\"},\\\"remoteExecutionMulticastBindAddress\\\":{\\\"type\\\":\\\"string\\\",\\\"description\\\":\\\"The adapter address that the UDP multicast socket should bind to, or 0.0.0.0 to bind to all adapters\\\"},\\\"remoteExecutionSendBufferSizeBytes\\\":{\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"Size of the send buffer for the remote endpoint connection\\\"},\\\"remoteExecutionReceiveBufferSizeBytes\\\":{\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"Size of the receive buffer for the remote endpoint connection\\\"},\\\"remoteExecutionMulticastTtl\\\":{\\\"type\\\":\\\"integer\\\",\\\"description\\\":\\\"The TTL that the UDP multicast socket should use (0 is limited to the local host, 1 is limited to the local subnet)\\\"}}\"}"
+        }
+      ]
+    }
+  }
+}

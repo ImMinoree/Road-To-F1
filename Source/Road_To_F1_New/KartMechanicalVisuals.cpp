@@ -100,7 +100,10 @@ void UKartMechanicalVisuals::ApplyLivery(int32 Slot){
  static const FLinearColor Palette[]={
   FLinearColor(.72f,.015f,.025f),FLinearColor(1.f,.18f,.008f),FLinearColor(.95f,.68f,.01f),
   FLinearColor(.38f,.85f,.015f),FLinearColor(.008f,.40f,.12f),FLinearColor(.005f,.72f,.82f),
-  FLinearColor(.015f,.055f,.8f),FLinearColor(.30f,.02f,.65f),FLinearColor(.85f,.01f,.30f),FLinearColor(.85f,.88f,.94f)};
+  FLinearColor(.015f,.055f,.8f),FLinearColor(.30f,.02f,.65f),FLinearColor(.85f,.01f,.30f),FLinearColor(.85f,.88f,.94f),
+  FLinearColor(.13f,.006f,.015f),FLinearColor(.46f,.09f,.015f),FLinearColor(.75f,.40f,.08f),
+  FLinearColor(.20f,.33f,.08f),FLinearColor(.01f,.18f,.16f),FLinearColor(.16f,.50f,.85f),
+  FLinearColor(.006f,.012f,.10f),FLinearColor(.54f,.24f,.80f),FLinearColor(.95f,.25f,.43f),FLinearColor(.12f,.15f,.19f)};
  const int32 Index=(FMath::Max(1,Slot)-1)%UE_ARRAY_COUNT(Palette);
  auto* Paint=LoadObject<UMaterialInterface>(nullptr,TEXT("/Game/RoadToF1/RaceLiveries/M_GridPaint.M_GridPaint"));
  auto* Fabric=LoadObject<UMaterialInterface>(nullptr,TEXT("/Game/RoadToF1/RaceLiveries/M_GridFabric.M_GridFabric"));

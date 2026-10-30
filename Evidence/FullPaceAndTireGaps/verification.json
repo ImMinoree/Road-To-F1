@@ -1,0 +1,53 @@
+{
+  "protected_changes": [],
+  "original_tire_instances": 10713,
+  "final_tire_instances": 11004,
+  "added": 291,
+  "hism_groups": 2,
+  "clearance_sweeps": 2264,
+  "existing_lane_hits": 8,
+  "new_lane_hits": 0,
+  "max_adjacent_stack_center_cm": 94.73142204653199,
+  "max_adjacent_clear_gap_cm": 39.73142204653199,
+  "rejected_columns": {
+    "service opening": 66,
+    "fixed object or uneven ground": 2
+  },
+  "screenshots": [
+    {
+      "file": "before_gap_west00000.png",
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "after_gap_west00005.png",
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "before_gap_hairpin00000.png",
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "after_gap_hairpin00005.png",
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "before_gap_sweeper00000.png",
+      "width": 1267,
+      "height": 550
+    },
+    {
+      "file": "after_gap_sweeper00005.png",
+      "width": 1267,
+      "height": 550
+    }
+  ],
+  "editor_exits": {
+    "placement": 0,
+    "race": 0
+  },
+  "source_assets_unchanged": true
+}
